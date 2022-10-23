@@ -1,0 +1,49 @@
+{
+  "documentInfo": {
+    "documentType": "https://xbrl.org/2021/xbrl-csv",
+    "namespaces": {
+      "adc": "http://www.xbrl.jp/audit-data-collection",
+      "iso4217": "http://www.xbrl.org/2003/iso4217",
+      "scheme": "http://www.example.com",
+      "xbrl": "https://xbrl.org/2021"
+    },
+    "taxonomy": [
+      "../taxonomy/ADC/core.xsd"
+    ]
+  },
+  "tables": {
+    "facts": {
+      "template": "facts",
+      "url": "adc-instance2-facts.csv"
+    }
+  },
+  "tableTemplates": {
+    "facts": {
+      "rowIdColumn": "id",
+      "dimensions": {
+        "concept": "$concept",
+        "entity": "$entity",
+        "period": "$period",
+        "unit": "$unit",
+        "adc:d_A001": "$adc_d_A001",
+        "adc:d_A025": "$adc_d_A025",
+        "adc:d_A026": "$adc_d_A026"
+      },
+      "columns": {
+        "id": {},
+        "concept": {},
+        "decimals": {},
+        "entity": {},
+        "period": {},
+        "unit": {},
+        "adc_d_A001": {},
+        "adc_d_A025": {},
+        "adc_d_A026": {},
+        "value": {
+          "dimensions": {}
+        }
+      },
+      "decimals": "$decimals"
+    }
+  }
+}
