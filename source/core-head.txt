@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- (c) 2022 XBRL Japan  inc. -->
+<schema 
+	targetNamespace="http://www.xbrl.jp/ADC" 
+	elementFormDefault="qualified" 
+	xmlns:altovaext="http://www.altova.com/xslt-extensions" 
+	xmlns:altova-xfi="http://www.altova.com/xslt-extensions/xbrl" 
+	xmlns:model="http://www.eurofiling.info/xbrl/ext/model" 
+	xmlns:xlink="http://www.w3.org/1999/xlink" 
+	xmlns="http://www.w3.org/2001/XMLSchema" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:adc="http://www.xbrl.jp/ADC" 
+	xmlns:xl="http://www.xbrl.org/2003/XLink" 
+	xmlns:xbrli="http://www.xbrl.org/2003/instance" 
+	xmlns:link="http://www.xbrl.org/2003/linkbase" 
+	xmlns:xfi="http://www.xbrl.org/2008/function/instance" 
+	xmlns:xff="http://www.xbrl.org/2010/function/formula" 
+	xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric" 
+	xmlns:num="http://www.xbrl.org/dtr/type/numeric" 
+	xmlns:e="http://www.xbrl.org/int/gl/cen/2020-12-31" 
+	xmlns:c="http://www.xbrl.org/int/gl/cor/2020-12-31" 
+	xmlns:xbrldt="http://xbrl.org/2005/xbrldt" 
+	xmlns:ca="http://xbrl.org/2008/assertion/consistency" 
+	xmlns:ea="http://xbrl.org/2008/assertion/existence" 
+	xmlns:va="http://xbrl.org/2008/assertion/value" 
+	xmlns:bf="http://xbrl.org/2008/filter/boolean" 
+	xmlns:cf="http://xbrl.org/2008/filter/concept" 
+	xmlns:df="http://xbrl.org/2008/filter/dimension" 
+	xmlns:ef="http://xbrl.org/2008/filter/entity" 
+	xmlns:gf="http://xbrl.org/2008/filter/general" 
+	xmlns:mf="http://xbrl.org/2008/filter/match" 
+	xmlns:pf="http://xbrl.org/2008/filter/period" 
+	xmlns:rf="http://xbrl.org/2008/filter/relative" 
+	xmlns:ssf="http://xbrl.org/2008/filter/segment-scenario" 
+	xmlns:tf="http://xbrl.org/2008/filter/tuple" 
+	xmlns:uf="http://xbrl.org/2008/filter/unit" 
+	xmlns:vf="http://xbrl.org/2008/filter/value" 
+	xmlns:formula="http://xbrl.org/2008/formula" 
+	xmlns:gen="http://xbrl.org/2008/generic" 
+	xmlns:label="http://xbrl.org/2008/label" 
+	xmlns:reference="http://xbrl.org/2008/reference" 
+	xmlns:validation="http://xbrl.org/2008/validation" 
+	xmlns:variable="http://xbrl.org/2008/variable" 
+	xmlns:msg="http://xbrl.org/2010/message" 
+	xmlns:valm="http://xbrl.org/2010/message/validation" 
+	xmlns:table="http://xbrl.org/2014/table" 
+	xmlns:sev="http://xbrl.org/2016/assertion-severity">
+
+	<import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+	<import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+	<import namespace="http://www.xbrl.org/dtr/type/numeric" schemaLocation="http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd"/>
+	<import namespace="http://xbrl.org/2014/table" schemaLocation="http://www.xbrl.org/2014/table.xsd"/>
+	<import namespace="http://xbrl.org/2008/label" schemaLocation="http://www.xbrl.org/2008/generic-label.xsd"/>
+	<import namespace="http://xbrl.org/2008/reference" schemaLocation="http://www.xbrl.org/2008/generic-reference.xsd"/>
+	<import namespace="http://xbrl.org/2008/filter/boolean" schemaLocation="http://www.xbrl.org/2008/boolean-filter.xsd"/>
+	<import namespace="http://xbrl.org/2008/filter/concept" schemaLocation="http://www.xbrl.org/2008/concept-filter.xsd"/>
+	<import namespace="http://xbrl.org/2008/filter/dimension" schemaLocation="http://www.xbrl.org/2008/dimension-filter.xsd"/>
+	<import namespace="http://xbrl.org/2008/filter/entity" schemaLocation="http://www.xbrl.org/2008/entity-filter.xsd"/>
+	<import namespace="http://xbrl.org/2008/filter/general" schemaLocation="http://www.xbrl.org/2008/general-filter.xsd"/>
+	<import namespace="http://xbrl.org/2008/filter/match" schemaLocation="http://www.xbrl.org/2008/match-filter.xsd"/>
+	<import namespace="http://xbrl.org/2008/filter/period" schemaLocation="http://www.xbrl.org/2008/period-filter.xsd"/>
+	<import namespace="http://xbrl.org/2008/filter/relative" schemaLocation="http://www.xbrl.org/2008/relative-filter.xsd"/>
+	<import namespace="http://xbrl.org/2008/filter/segment-scenario" schemaLocation="http://www.xbrl.org/2008/segment-scenario-filter.xsd"/>
+	<import namespace="http://xbrl.org/2008/filter/tuple" schemaLocation="http://www.xbrl.org/2008/tuple-filter.xsd"/>
+	<import namespace="http://xbrl.org/2008/filter/unit" schemaLocation="http://www.xbrl.org/2008/unit-filter.xsd"/>
+	<import namespace="http://xbrl.org/2008/filter/value" schemaLocation="http://www.xbrl.org/2008/value-filter.xsd"/>
+	<import namespace="http://xbrl.org/2008/validation" schemaLocation="http://www.xbrl.org/2008/validation.xsd"/>
+	<import namespace="http://xbrl.org/2008/assertion/consistency" schemaLocation="http://www.xbrl.org/2008/consistency-assertion.xsd"/>
+	<import namespace="http://xbrl.org/2008/assertion/existence" schemaLocation="http://www.xbrl.org/2008/existence-assertion.xsd"/>
+	<import namespace="http://xbrl.org/2008/assertion/value" schemaLocation="http://www.xbrl.org/2008/value-assertion.xsd"/>
+	<import namespace="http://www.eurofiling.info/xbrl/ext/model" schemaLocation="http://www.eurofiling.info/eu/fr/xbrl/ext/model.xsd"/>
+	<import namespace="http://www.xbrl.org/dtr/type/non-numeric" schemaLocation="http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd"/>
+	<element name="_v" id="_v">
+		<simpleType>
+			<restriction base="string"/>
+		</simpleType>
+	</element>
+	<!-- <element name="_uncl4461" id="_uncl4461">
+		<simpleType>
+			<restriction base="string">
+				<pattern value="\s*(1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|31|32|33|34|35|36|37|38|39|40|41|42|43|44|45|46|47|48|49|50|51|52|53|54|55|56|57|58|59|60|61|62|63|64|65|66|67|68|70|74|75|76|77|78|91|92|93|94|95|96|97|ZZZ|Z01|Z02)\s*"/>
+			</restriction>
+		</simpleType>
+	</element>-->
+	<!-- Hypercube -->
+	<element name="H_purchaseOrder" id="adc_H_purchaseOrder" substitutionGroup="xbrldt:hypercubeItem" nillable="true" abstract="true" type="xbrli:stringItemType" xbrli:periodType="instant"/>
+	<element name="H_purchaseOrderLine" id="adc_H_purchaseOrderLine" substitutionGroup="xbrldt:hypercubeItem" nillable="true" abstract="true" type="xbrli:stringItemType" xbrli:periodType="instant"/>
+	<element name="H_transactionTaxN" id="adc_H_transactionTaxN" substitutionGroup="xbrldt:hypercubeItem" nillable="true" abstract="true" type="xbrli:stringItemType" xbrli:periodType="instant"/>
+	<!-- Dimension -->
+	<element name="H_A51" id="adc_purchaseOrderID" substitutionGroup="xbrldt:dimensionItem" nillable="true" abstract="true" type="xbrli:stringItemType" xbrli:periodType="instant" xbrldt:typedDomainRef="#_v"/>
+	<element name="H_A52" id="adc_purchaseOrderLineID" substitutionGroup="xbrldt:dimensionItem" nillable="true" abstract="true" type="xbrli:stringItemType" xbrli:periodType="instant" xbrldt:typedDomainRef="#_v"/>
+	<element name="H_A80" id="adc_transactionTaxNID" substitutionGroup="xbrldt:dimensionItem" nillable="true" abstract="true" type="xbrli:stringItemType" xbrli:periodType="instant" xbrldt:typedDomainRef="#_v"/>
+	<!-- Domain item -->
+
+	<!-- item type -->
+	<complexType name="amountItemType">
+		<simpleContent>
+		<restriction base="xbrli:monetaryItemType"/>
+		</simpleContent>
+	</complexType>
+	<complexType name="percentageItemType">
+		<simpleContent>
+		<restriction base="xbrli:pureItemType"/>
+		</simpleContent>
+	</complexType>
+	<complexType name="quantityItemType">
+		<simpleContent>
+		<restriction base="xbrli:intItemType"/>
+		</simpleContent>
+	</complexType>
+	<complexType name="textItemType">
+		<simpleContent>
+		<restriction base="xbrli:stringItemType"/>
+		</simpleContent>
+	</complexType>
+	<complexType name="codeItemType">
+		<simpleContent>
+		<restriction base="xbrli:tokenItemType"/>
+		</simpleContent>
+	</complexType>
+	<complexType name="unitPriceAmountItemType">
+		<simpleContent>
+		<restriction base="xbrli:monetaryItemType"/>
+		</simpleContent>
+	</complexType>
+	<complexType name="dateItemType">
+		<simpleContent>
+		<restriction base="xbrli:dateTimeItemType"/>
+		</simpleContent>
+	</complexType>
+		<complexType name="timeItemType">
+		<simpleContent>
+		<restriction base="xbrli:dateTimeItemType"/>
+		</simpleContent>
+	</complexType>
+	<complexType name="identifierItemType">
+		<simpleContent>
+		<restriction base="xbrli:tokenItemType"/>
+		</simpleContent>
+	</complexType>
+	<complexType name="documentReferenceItemType">
+		<simpleContent>
+		<restriction base="xbrli:tokenItemType"/>
+		</simpleContent>
+	</complexType>
+	<complexType name="binaryObjectItemType">
+		<simpleContent>
+		<restriction base="xbrli:stringItemType"/>
+		</simpleContent>
+	</complexType>
+	<complexType name="street3ItemType">
+		<simpleContent>
+		<restriction base="xbrli:stringItemType"/>
+		</simpleContent>
+	</complexType>
+	<complexType name="tradingNameItemType">
+		<simpleContent>
+		<restriction base="xbrli:stringItemType"/>
+		</simpleContent>
+	</complexType> 

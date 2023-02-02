@@ -1,0 +1,164 @@
+{
+    "documentInfo": {
+        "documentType": "https://xbrl.org/2021/xbrl-csv",
+        "namespaces": {
+            "adc": "http://www.xbrl.jp/audit-data-collection",
+            "ns0": "http://www.example.com",
+            "link": "http://www.xbrl.org/2003/linkbase",
+            "iso4217": "http://www.xbrl.org/2003/iso4217",
+            "xsi": "http://www.w3.org/2001/XMLSchema-instance",
+            "xbrli": "http://www.xbrl.org/2003/instance",
+            "xbrldi": "http://xbrl.org/2006/xbrldi",
+            "xlink": "http://www.w3.org/1999/xlink"
+        },
+        "taxonomy": [
+            "../taxonomy/core.xsd"
+        ]
+    },
+    "tableTemplates": {
+        "adc": {
+            "columns": {
+                "d_A025": {},
+                "d_A026": {},
+                "d_A001": {},
+                "A025-008": {
+                    "dimensions": {
+                        "concept": "adc:A025-008"
+                    }
+                },
+                "A025-007": {
+                    "dimensions": {
+                        "concept": "adc:A025-007"
+                    }
+                },
+                "A025-A075-001": {
+                    "dimensions": {
+                        "concept": "adc:A025-A075-001"
+                    }
+                },
+                "A025-A075-002": {
+                    "dimensions": {
+                        "concept": "adc:A025-A075-002"
+                    }
+                },
+                "A025-A075-003": {
+                    "dimensions": {
+                        "concept": "adc:A025-A075-003"
+                    }
+                },
+                "A025-A001-001": {
+                    "dimensions": {
+                        "concept": "adc:A025-A001-001"
+                    }
+                },
+                "A025-A001-002": {
+                    "dimensions": {
+                        "concept": "adc:A025-A001-002"
+                    }
+                },
+                "A025-A001-003": {
+                    "dimensions": {
+                        "concept": "adc:A025-A001-003"
+                    }
+                },
+                "A025-009": {
+                    "dimensions": {
+                        "concept": "adc:A025-009"
+                    }
+                },
+                "A025-002": {
+                    "dimensions": {
+                        "concept": "adc:A025-002"
+                    }
+                },
+                "A025-A09-001": {
+                    "dimensions": {
+                        "concept": "adc:A025-A09-001"
+                    }
+                },
+                "A025-A09-002": {
+                    "dimensions": {
+                        "concept": "adc:A025-A09-002"
+                    }
+                },
+                "A025-A09-003": {
+                    "dimensions": {
+                        "concept": "adc:A025-A09-003"
+                    }
+                },
+                "A025-A09-007": {
+                    "dimensions": {
+                        "concept": "adc:A025-A09-007"
+                    }
+                },
+                "A025-A09-006": {
+                    "dimensions": {
+                        "concept": "adc:A025-A09-006"
+                    }
+                },
+                "A025-0027": {
+                    "dimensions": {
+                        "concept": "adc:A025-0027"
+                    }
+                },
+                "A025-A088-001": {
+                    "dimensions": {
+                        "concept": "adc:A025-A088-001"
+                    }
+                },
+                "A025-A088-002": {
+                    "dimensions": {
+                        "concept": "adc:A025-A088-002"
+                    }
+                },
+                "A025-006": {
+                    "dimensions": {
+                        "concept": "adc:A025-006"
+                    }
+                },
+                "A025-A09-010": {
+                    "dimensions": {
+                        "concept": "adc:A025-A09-010"
+                    }
+                },
+                "A025-010": {
+                    "dimensions": {
+                        "concept": "adc:A025-010"
+                    }
+                },
+                "A026-A001-001": {
+                    "dimensions": {
+                        "concept": "adc:A026-A001-001"
+                    }
+                },
+                "A026-A001-002": {
+                    "dimensions": {
+                        "concept": "adc:A026-A001-002"
+                    }
+                },
+                "A026-A001-003": {
+                    "dimensions": {
+                        "concept": "adc:A026-A001-003"
+                    }
+                },
+                "A026-A001-004": {
+                    "dimensions": {
+                        "concept": "adc:A026-A001-004"
+                    }
+                }
+            },
+            "dimensions": {
+                "adc:d_A025": "$d_A025",
+                "adc:d_A026": "$d_A026",
+                "adc:d_A001": "$d_A001",
+                "period": "2023-11-01T00:00:00",
+                "entity": "ns0:Example Co."
+            }
+        }
+    },
+    "tables": {
+        "adc": {
+            "url": "adc-instances.csv"
+        }
+    }
+}
