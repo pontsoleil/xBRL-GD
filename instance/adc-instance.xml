@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--extracted from OIM C:\Users\nobuy\OneDrive\ドキュメント\GitHub\ISO_TC295\xBRL-GD\instance\adc-instance.json-->
-<xbrl
-  xmlns="http://www.xbrl.org/2003/instance"
-  xmlns:link="http://www.xbrl.org/2003/linkbase"
-  xmlns:xlink="http://www.w3.org/1999/xlink">
-    <link:schemaRef xlink:href="../taxonomy/core.xsd" xlink:type="simple"/>
-</xbrl>
