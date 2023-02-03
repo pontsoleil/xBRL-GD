@@ -39,9 +39,9 @@ VERBOSE = True
 SEP = os.sep
 
 source = './'
-gl_instanceFile  = 'xbrl-instances.csv'
-adc_instanceFile = 'adc-instances.csv'
-adc_instanceMeta = 'adc-instances.json'
+gl_instanceFile  = 'xbrl-instances0.csv'
+adc_instanceFile = 'adc-instances0.csv'
+adc_instanceMeta = 'adc-instances0.json'
 
 
 def file_path(pathname):
@@ -95,7 +95,7 @@ if __name__ == '__main__':
         records.append(data)
 
     records2 = []
-    header2 = header[:3]+header[8:10]+header[18:22]+header[24:34]+header[36:40]
+    header2 = header[:6]+header[8:11]+header[18:23]+header[24:35]+header[36:41]
     if DEBUG:
         print(header2)
     for data in records:
@@ -116,32 +116,24 @@ if __name__ == '__main__':
                     elif 'A026-A001-004' == k:
                         record['A026-A001-004'] = data['R']
                     else:
-                        record[k] = ''
+                        record[k] = str(v)
             else:
                 for k,v in data.items():
                     if not k in header2:
                         continue
-                    record[k] = v
+                    record[k] = str(v)
             records2.append(record)
         else:
             for k,v in data.items():
                 if not k in header2:
                     continue
-                elif not k in ['A026-A001-003','A026-A001-001','A026-A001-002','A026-A001-004']:
-                    record[k] = v
-                else:
-                    record[k] = ''
-            records2.append(record)
-            record = {}
-            for k,v in data.items():
-                if not k in header2:
-                    continue
-                if k in ['d_A025','d_A026','d_A001','A026-A001-001','A026-A001-002','A026-A001-004']:
-                    record[k] = str(v)
-                elif k=='A026-A001-003':
+                # if k in ['d_A025','d_A026','d_A001','A026-A001-001','A026-A001-002','A026-A001-004']:
+                #     record[k] = str(v)
+                # el
+                if k=='A026-A001-003':
                     record[k] = 'trading partner'                 
                 else:
-                    record[k] = ''            
+                    record[k] = str(v)
             records2.append(record)
 
     adc_instance_file = f'{source}{adc_instanceFile}'.replace('/',SEP)
@@ -196,7 +188,9 @@ if __name__ == '__main__':
     for id in records2[0].keys():
         if not id in ['d_A025','d_A026','d_A001']:
             metadata['tableTemplates']['adc']['columns'][id] = {"dimensions": {"concept": f"adc:{id}"}}
-
+            if id =='A026-A089-001':
+                metadata['tableTemplates']['adc']['columns'][id]['dimensions']['unit'] = 'iso4217:JPY'
+                
     print(json.dumps(metadata))
 
     adc_instance_meta = f'{source}{adc_instanceMeta}'.replace('/',SEP)
