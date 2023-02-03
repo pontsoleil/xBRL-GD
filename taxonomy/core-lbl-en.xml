@@ -270,20 +270,38 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#A006-009" xlink:label="A006-009" xlink:title="A006-009"/>
         <link:label xlink:type="resource" xlink:label="label_A006-009" xlink:title="label_A006-009" id="label_A006-009" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Physical Address ADCS Address</link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A006-009" xlink:to="label_A006-009" xlink:title="label: A006-009 to label_A006-009"/>
-        <link:label xlink:type="resource" xlink:label="description_A006-009" xlink:title="description_A006-009" id="description_A006-009" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The customer's physical address.</link:label>
+        <link:label xlink:type="resource" xlink:label="description_A006-009" xlink:title="description_A006-009" id="description_A006-009" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A006-009" xlink:to="description_A006-009" xlink:title="label: A006-009 to label_A006-009"/>
+        <!-- A006-A077 Physical Address ADCS Address -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A006-A077" xlink:label="A006-A077" xlink:title="A006-A077"/>
+        <link:label xlink:type="resource" xlink:label="label_A006-A077" xlink:title="label_A006-A077" id="label_A006-A077" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Physical Address ADCS Address</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A006-A077" xlink:to="label_A006-A077" xlink:title="label: A006-A077 to label_A006-A077"/>
+        <link:label xlink:type="resource" xlink:label="description_A006-A077" xlink:title="description_A006-A077" id="description_A006-A077" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A006-A077" xlink:to="description_A006-A077" xlink:title="label: A006-A077 to label_A006-A077"/>
         <!-- A006-015 Billing Address ADCS Address -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A006-015" xlink:label="A006-015" xlink:title="A006-015"/>
         <link:label xlink:type="resource" xlink:label="label_A006-015" xlink:title="label_A006-015" id="label_A006-015" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Billing Address ADCS Address</link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A006-015" xlink:to="label_A006-015" xlink:title="label: A006-015 to label_A006-015"/>
-        <link:label xlink:type="resource" xlink:label="description_A006-015" xlink:title="description_A006-015" id="description_A006-015" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The customer's billing address.</link:label>
+        <link:label xlink:type="resource" xlink:label="description_A006-015" xlink:title="description_A006-015" id="description_A006-015" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A006-015" xlink:to="description_A006-015" xlink:title="label: A006-015 to label_A006-015"/>
+        <!-- A006-A077 Billing Address ADCS Address -->
+            <!-- link:loc defined -->
+            <!-- link:label http://www.xbrl.org/2003/role/label defined -->
+            <!-- link:labelArc http://www.xbrl.org/2003/arcrole/concept-label defined -->
+            <!-- link:label http://www.xbrl.jp/audit-data-collection/role/description defined -->
+            <!-- link:labelArc http://www.xbrl.jp/audit-data-collection/arcrole/concept-description defined -->
         <!-- A006-021 Crresponding ADCS Primary Contact -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A006-021" xlink:label="A006-021" xlink:title="A006-021"/>
         <link:label xlink:type="resource" xlink:label="label_A006-021" xlink:title="label_A006-021" id="label_A006-021" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Crresponding ADCS Primary Contact</link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A006-021" xlink:to="label_A006-021" xlink:title="label: A006-021 to label_A006-021"/>
-        <link:label xlink:type="resource" xlink:label="description_A006-021" xlink:title="description_A006-021" id="description_A006-021" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The name of the primary contact for the customer.</link:label>
+        <link:label xlink:type="resource" xlink:label="description_A006-021" xlink:title="description_A006-021" id="description_A006-021" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A006-021" xlink:to="description_A006-021" xlink:title="label: A006-021 to label_A006-021"/>
+        <!-- A006-A078 Crresponding ADCS Primary Contact -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A006-A078" xlink:label="A006-A078" xlink:title="A006-A078"/>
+        <link:label xlink:type="resource" xlink:label="label_A006-A078" xlink:title="label_A006-A078" id="label_A006-A078" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Crresponding ADCS Primary Contact</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A006-A078" xlink:to="label_A006-A078" xlink:title="label: A006-A078 to label_A006-A078"/>
+        <link:label xlink:type="resource" xlink:label="description_A006-A078" xlink:title="description_A006-A078" id="description_A006-A078" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A006-A078" xlink:to="description_A006-A078" xlink:title="label: A006-A078 to label_A006-A078"/>
         <!-- A006-024 Inactive Date -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A006-024" xlink:label="A006-024" xlink:title="A006-024"/>
         <link:label xlink:type="resource" xlink:label="label_A006-024" xlink:title="label_A006-024" id="label_A006-024" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Inactive Date</link:label>
@@ -324,7 +342,7 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#A006-030" xlink:label="A006-030" xlink:title="A006-030"/>
         <link:label xlink:type="resource" xlink:label="label_A006-030" xlink:title="label_A006-030" id="label_A006-030" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Recorded ADCS User Activity</link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A006-030" xlink:to="label_A006-030" xlink:title="label: A006-030 to label_A006-030"/>
-        <link:label xlink:type="resource" xlink:label="description_A006-030" xlink:title="description_A006-030" id="description_A006-030" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The unique identifier for the person who created the record. Typically autogenerated by the system. Shall match the User_ID in the BAS_User table.</link:label>
+        <link:label xlink:type="resource" xlink:label="description_A006-030" xlink:title="description_A006-030" id="description_A006-030" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A006-030" xlink:to="description_A006-030" xlink:title="label: A006-030 to label_A006-030"/>
         <!-- A007 Supplier Type -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A007" xlink:label="A007" xlink:title="A007"/>
@@ -414,20 +432,38 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#A008-009" xlink:label="A008-009" xlink:title="A008-009"/>
         <link:label xlink:type="resource" xlink:label="label_A008-009" xlink:title="label_A008-009" id="label_A008-009" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Physical Address ADCS Address</link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A008-009" xlink:to="label_A008-009" xlink:title="label: A008-009 to label_A008-009"/>
-        <link:label xlink:type="resource" xlink:label="description_A008-009" xlink:title="description_A008-009" id="description_A008-009" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The supplier's physical address.</link:label>
+        <link:label xlink:type="resource" xlink:label="description_A008-009" xlink:title="description_A008-009" id="description_A008-009" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A008-009" xlink:to="description_A008-009" xlink:title="label: A008-009 to label_A008-009"/>
+        <!-- A008-A077 Physical Address ADCS Address -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A008-A077" xlink:label="A008-A077" xlink:title="A008-A077"/>
+        <link:label xlink:type="resource" xlink:label="label_A008-A077" xlink:title="label_A008-A077" id="label_A008-A077" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Physical Address ADCS Address</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A008-A077" xlink:to="label_A008-A077" xlink:title="label: A008-A077 to label_A008-A077"/>
+        <link:label xlink:type="resource" xlink:label="description_A008-A077" xlink:title="description_A008-A077" id="description_A008-A077" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A008-A077" xlink:to="description_A008-A077" xlink:title="label: A008-A077 to label_A008-A077"/>
         <!-- A008-015 Billing Address ADCS Address -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A008-015" xlink:label="A008-015" xlink:title="A008-015"/>
         <link:label xlink:type="resource" xlink:label="label_A008-015" xlink:title="label_A008-015" id="label_A008-015" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Billing Address ADCS Address</link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A008-015" xlink:to="label_A008-015" xlink:title="label: A008-015 to label_A008-015"/>
-        <link:label xlink:type="resource" xlink:label="description_A008-015" xlink:title="description_A008-015" id="description_A008-015" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The supplier's billing address.</link:label>
+        <link:label xlink:type="resource" xlink:label="description_A008-015" xlink:title="description_A008-015" id="description_A008-015" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A008-015" xlink:to="description_A008-015" xlink:title="label: A008-015 to label_A008-015"/>
+        <!-- A008-A077 Billing Address ADCS Address -->
+            <!-- link:loc defined -->
+            <!-- link:label http://www.xbrl.org/2003/role/label defined -->
+            <!-- link:labelArc http://www.xbrl.org/2003/arcrole/concept-label defined -->
+            <!-- link:label http://www.xbrl.jp/audit-data-collection/role/description defined -->
+            <!-- link:labelArc http://www.xbrl.jp/audit-data-collection/arcrole/concept-description defined -->
         <!-- A008-021 Corresponding ADCS Primary Contact -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A008-021" xlink:label="A008-021" xlink:title="A008-021"/>
         <link:label xlink:type="resource" xlink:label="label_A008-021" xlink:title="label_A008-021" id="label_A008-021" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Corresponding ADCS Primary Contact</link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A008-021" xlink:to="label_A008-021" xlink:title="label: A008-021 to label_A008-021"/>
-        <link:label xlink:type="resource" xlink:label="description_A008-021" xlink:title="description_A008-021" id="description_A008-021" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The name of the primary contact for the supplier.</link:label>
+        <link:label xlink:type="resource" xlink:label="description_A008-021" xlink:title="description_A008-021" id="description_A008-021" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A008-021" xlink:to="description_A008-021" xlink:title="label: A008-021 to label_A008-021"/>
+        <!-- A008-A078 Corresponding ADCS Primary Contact -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A008-A078" xlink:label="A008-A078" xlink:title="A008-A078"/>
+        <link:label xlink:type="resource" xlink:label="label_A008-A078" xlink:title="label_A008-A078" id="label_A008-A078" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Corresponding ADCS Primary Contact</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A008-A078" xlink:to="label_A008-A078" xlink:title="label: A008-A078 to label_A008-A078"/>
+        <link:label xlink:type="resource" xlink:label="description_A008-A078" xlink:title="description_A008-A078" id="description_A008-A078" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A008-A078" xlink:to="description_A008-A078" xlink:title="label: A008-A078 to label_A008-A078"/>
         <!-- A008-024 Supplier Group -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A008-024" xlink:label="A008-024" xlink:title="A008-024"/>
         <link:label xlink:type="resource" xlink:label="label_A008-024" xlink:title="label_A008-024" id="label_A008-024" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Supplier Group</link:label>
@@ -474,7 +510,7 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#A008-031" xlink:label="A008-031" xlink:title="A008-031"/>
         <link:label xlink:type="resource" xlink:label="label_A008-031" xlink:title="label_A008-031" id="label_A008-031" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Recorded ADCS User Activity</link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A008-031" xlink:to="label_A008-031" xlink:title="label: A008-031 to label_A008-031"/>
-        <link:label xlink:type="resource" xlink:label="description_A008-031" xlink:title="description_A008-031" id="description_A008-031" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The unique identifier for the person who created the record. Typically autogenerated by the system. Shall match the User_ID in the BAS_User table.</link:label>
+        <link:label xlink:type="resource" xlink:label="description_A008-031" xlink:title="description_A008-031" id="description_A008-031" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A008-031" xlink:to="description_A008-031" xlink:title="label: A008-031 to label_A008-031"/>
         <!-- A009 Chart Of Accounts -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A009" xlink:label="A009" xlink:title="A009"/>
@@ -546,13 +582,13 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#A009-011" xlink:label="A009-011" xlink:title="A009-011"/>
         <link:label xlink:type="resource" xlink:label="label_A009-011" xlink:title="label_A009-011" id="label_A009-011" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">X ADCS Business Segment</link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A009-011" xlink:to="label_A009-011" xlink:title="label: A009-011 to label_A009-011"/>
-        <link:label xlink:type="resource" xlink:label="description_A009-011" xlink:title="description_A009-011" id="description_A009-011" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">A reserved field that shall be used for business segments/structures. The 'X' signifies an organizational level. Each number used to replace the 'X' is associated with a unique reference level. For example, division, department, business unit, purchasing organization, project or legal entity.</link:label>
+        <link:label xlink:type="resource" xlink:label="description_A009-011" xlink:title="description_A009-011" id="description_A009-011" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A009-011" xlink:to="description_A009-011" xlink:title="label: A009-011 to label_A009-011"/>
         <!-- A009-A001 X ADCS Business Segment -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A009-A001" xlink:label="A009-A001" xlink:title="A009-A001"/>
         <link:label xlink:type="resource" xlink:label="label_A009-A001" xlink:title="label_A009-A001" id="label_A009-A001" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">X ADCS Business Segment</link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A009-A001" xlink:to="label_A009-A001" xlink:title="label: A009-A001 to label_A009-A001"/>
-        <link:label xlink:type="resource" xlink:label="description_A009-A001" xlink:title="description_A009-A001" id="description_A009-A001" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">A reserved field that shall be used for business segments/structures. The 'X' signifies an organizational level. Each number used to replace the 'X' is associated with a unique reference level. For example, division, department, business unit, purchasing organization, project or legal entity.</link:label>
+        <link:label xlink:type="resource" xlink:label="description_A009-A001" xlink:title="description_A009-A001" id="description_A009-A001" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A009-A001" xlink:to="description_A009-A001" xlink:title="label: A009-A001 to label_A009-A001"/>
         <!-- A010 Accounting Period -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A010" xlink:label="A010" xlink:title="A010"/>
@@ -804,14 +840,8 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#A017-007" xlink:label="A017-007" xlink:title="A017-007"/>
         <link:label xlink:type="resource" xlink:label="label_A017-007" xlink:title="label_A017-007" id="label_A017-007" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">X ADCS Business Segment</link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A017-007" xlink:to="label_A017-007" xlink:title="label: A017-007 to label_A017-007"/>
-        <link:label xlink:type="resource" xlink:label="description_A017-007" xlink:title="description_A017-007" id="description_A017-007" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">A reserved field that shall be used for business segments/structures. The 'X' signifies an organizational level. Each number used to replace the 'X' is associated with a unique reference level. For example, division, department, business unit, purchasing organization, project or legal entity.</link:label>
+        <link:label xlink:type="resource" xlink:label="description_A017-007" xlink:title="description_A017-007" id="description_A017-007" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A017-007" xlink:to="description_A017-007" xlink:title="label: A017-007 to label_A017-007"/>
-        <!-- A017-A001 X ADCS Business Segment -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#A017-A001" xlink:label="A017-A001" xlink:title="A017-A001"/>
-        <link:label xlink:type="resource" xlink:label="label_A017-A001" xlink:title="label_A017-A001" id="label_A017-A001" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">X ADCS Business Segment</link:label>
-        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A017-A001" xlink:to="label_A017-A001" xlink:title="label: A017-A001 to label_A017-A001"/>
-        <link:label xlink:type="resource" xlink:label="description_A017-A001" xlink:title="description_A017-A001" id="description_A017-A001" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">A reserved field that shall be used for business segments/structures. The 'X' signifies an organizational level. Each number used to replace the 'X' is associated with a unique reference level. For example, division, department, business unit, purchasing organization, project or legal entity.</link:label>
-        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A017-A001" xlink:to="description_A017-A001" xlink:title="label: A017-A001 to label_A017-A001"/>
         <!-- A018 Bank Account -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A018" xlink:label="A018" xlink:title="A018"/>
         <link:label xlink:type="resource" xlink:label="label_A018" xlink:title="label_A018" id="label_A018" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Bank Account</link:label>
@@ -876,14 +906,8 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#A018-010" xlink:label="A018-010" xlink:title="A018-010"/>
         <link:label xlink:type="resource" xlink:label="label_A018-010" xlink:title="label_A018-010" id="label_A018-010" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">X ADCS Business Segment</link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A018-010" xlink:to="label_A018-010" xlink:title="label: A018-010 to label_A018-010"/>
-        <link:label xlink:type="resource" xlink:label="description_A018-010" xlink:title="description_A018-010" id="description_A018-010" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">A reserved field that shall be used for business segments/structures. The 'X' signifies an organizational level. Each number used to replace the 'X' is associated with a unique reference level. For example, division, department, business unit, purchasing organization, project or legal entity.</link:label>
+        <link:label xlink:type="resource" xlink:label="description_A018-010" xlink:title="description_A018-010" id="description_A018-010" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A018-010" xlink:to="description_A018-010" xlink:title="label: A018-010 to label_A018-010"/>
-        <!-- A018-A001 X ADCS Business Segment -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#A018-A001" xlink:label="A018-A001" xlink:title="A018-A001"/>
-        <link:label xlink:type="resource" xlink:label="label_A018-A001" xlink:title="label_A018-A001" id="label_A018-A001" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">X ADCS Business Segment</link:label>
-        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A018-A001" xlink:to="label_A018-A001" xlink:title="label: A018-A001 to label_A018-A001"/>
-        <link:label xlink:type="resource" xlink:label="description_A018-A001" xlink:title="description_A018-A001" id="description_A018-A001" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">A reserved field that shall be used for business segments/structures. The 'X' signifies an organizational level. Each number used to replace the 'X' is associated with a unique reference level. For example, division, department, business unit, purchasing organization, project or legal entity.</link:label>
-        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A018-A001" xlink:to="description_A018-A001" xlink:title="label: A018-A001 to label_A018-A001"/>
         <!-- A019 Tax Regulatory -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A019" xlink:label="A019" xlink:title="A019"/>
         <link:label xlink:type="resource" xlink:label="label_A019" xlink:title="label_A019" id="label_A019" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Tax Regulatory</link:label>
@@ -960,14 +984,8 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#A019-012" xlink:label="A019-012" xlink:title="A019-012"/>
         <link:label xlink:type="resource" xlink:label="label_A019-012" xlink:title="label_A019-012" id="label_A019-012" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">X ADCS Business Segment</link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A019-012" xlink:to="label_A019-012" xlink:title="label: A019-012 to label_A019-012"/>
-        <link:label xlink:type="resource" xlink:label="description_A019-012" xlink:title="description_A019-012" id="description_A019-012" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">A reserved field that shall be used for business segments/structures. The 'X' signifies an organizational level. Each number used to replace the 'X' is associated with a unique reference level. For example, division, department, business unit, purchasing organization, project or legal entity.</link:label>
+        <link:label xlink:type="resource" xlink:label="description_A019-012" xlink:title="description_A019-012" id="description_A019-012" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A019-012" xlink:to="description_A019-012" xlink:title="label: A019-012 to label_A019-012"/>
-        <!-- A019-A001 X ADCS Business Segment -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#A019-A001" xlink:label="A019-A001" xlink:title="A019-A001"/>
-        <link:label xlink:type="resource" xlink:label="label_A019-A001" xlink:title="label_A019-A001" id="label_A019-A001" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">X ADCS Business Segment</link:label>
-        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A019-A001" xlink:to="label_A019-A001" xlink:title="label: A019-A001 to label_A019-A001"/>
-        <link:label xlink:type="resource" xlink:label="description_A019-A001" xlink:title="description_A019-A001" id="description_A019-A001" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">A reserved field that shall be used for business segments/structures. The 'X' signifies an organizational level. Each number used to replace the 'X' is associated with a unique reference level. For example, division, department, business unit, purchasing organization, project or legal entity.</link:label>
-        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A019-A001" xlink:to="description_A019-A001" xlink:title="label: A019-A001 to label_A019-A001"/>
         <!-- A020 Tax Type -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A020" xlink:label="A020" xlink:title="A020"/>
         <link:label xlink:type="resource" xlink:label="label_A020" xlink:title="label_A020" id="label_A020" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Tax Type</link:label>
@@ -1014,14 +1032,8 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#A020-007" xlink:label="A020-007" xlink:title="A020-007"/>
         <link:label xlink:type="resource" xlink:label="label_A020-007" xlink:title="label_A020-007" id="label_A020-007" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">X ADCS Business Segment</link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A020-007" xlink:to="label_A020-007" xlink:title="label: A020-007 to label_A020-007"/>
-        <link:label xlink:type="resource" xlink:label="description_A020-007" xlink:title="description_A020-007" id="description_A020-007" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">A reserved field that shall be used for business segments/structures. The 'X' signifies an organizational level. Each number used to replace the 'X' is associated with a unique reference level. For example, division, department, business unit, purchasing organization, project or legal entity.</link:label>
+        <link:label xlink:type="resource" xlink:label="description_A020-007" xlink:title="description_A020-007" id="description_A020-007" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A020-007" xlink:to="description_A020-007" xlink:title="label: A020-007 to label_A020-007"/>
-        <!-- A020-A001 X ADCS Business Segment -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#A020-A001" xlink:label="A020-A001" xlink:title="A020-A001"/>
-        <link:label xlink:type="resource" xlink:label="label_A020-A001" xlink:title="label_A020-A001" id="label_A020-A001" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">X ADCS Business Segment</link:label>
-        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A020-A001" xlink:to="label_A020-A001" xlink:title="label: A020-A001 to label_A020-A001"/>
-        <link:label xlink:type="resource" xlink:label="description_A020-A001" xlink:title="description_A020-A001" id="description_A020-A001" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">A reserved field that shall be used for business segments/structures. The 'X' signifies an organizational level. Each number used to replace the 'X' is associated with a unique reference level. For example, division, department, business unit, purchasing organization, project or legal entity.</link:label>
-        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A020-A001" xlink:to="description_A020-A001" xlink:title="label: A020-A001 to label_A020-A001"/>
         <!-- A021 Customized Account Segment -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A021" xlink:label="A021" xlink:title="A021"/>
         <link:label xlink:type="resource" xlink:label="label_A021" xlink:title="label_A021" id="label_A021" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Customized Account Segment</link:label>
@@ -1188,14 +1200,8 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#A023-013" xlink:label="A023-013" xlink:title="A023-013"/>
         <link:label xlink:type="resource" xlink:label="label_A023-013" xlink:title="label_A023-013" id="label_A023-013" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">X ADCS Business Segment</link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A023-013" xlink:to="label_A023-013" xlink:title="label: A023-013 to label_A023-013"/>
-        <link:label xlink:type="resource" xlink:label="description_A023-013" xlink:title="description_A023-013" id="description_A023-013" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">A reserved field that shall be used for business segments/structures. The 'X' signifies an organizational level. Each number used to replace the 'X' is associated with a unique reference level. For example, division, department, business unit, purchasing organization, project or legal entity.</link:label>
+        <link:label xlink:type="resource" xlink:label="description_A023-013" xlink:title="description_A023-013" id="description_A023-013" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A023-013" xlink:to="description_A023-013" xlink:title="label: A023-013 to label_A023-013"/>
-        <!-- A023-A001 X ADCS Business Segment -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#A023-A001" xlink:label="A023-A001" xlink:title="A023-A001"/>
-        <link:label xlink:type="resource" xlink:label="label_A023-A001" xlink:title="label_A023-A001" id="label_A023-A001" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">X ADCS Business Segment</link:label>
-        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A023-A001" xlink:to="label_A023-A001" xlink:title="label: A023-A001 to label_A023-A001"/>
-        <link:label xlink:type="resource" xlink:label="description_A023-A001" xlink:title="description_A023-A001" id="description_A023-A001" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">A reserved field that shall be used for business segments/structures. The 'X' signifies an organizational level. Each number used to replace the 'X' is associated with a unique reference level. For example, division, department, business unit, purchasing organization, project or legal entity.</link:label>
-        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A023-A001" xlink:to="description_A023-A001" xlink:title="label: A023-A001 to label_A023-A001"/>
         <!-- A024 Trial Balance -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A024" xlink:label="A024" xlink:title="A024"/>
         <link:label xlink:type="resource" xlink:label="label_A024" xlink:title="label_A024" id="label_A024" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Trial Balance</link:label>
@@ -1236,19 +1242,31 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#A024-009" xlink:label="A024-009" xlink:title="A024-009"/>
         <link:label xlink:type="resource" xlink:label="label_A024-009" xlink:title="label_A024-009" id="label_A024-009" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Beginning Balance ADCS Multi Currency Amount</link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A024-009" xlink:to="label_A024-009" xlink:title="label: A024-009 to label_A024-009"/>
-        <link:label xlink:type="resource" xlink:label="description_A024-009" xlink:title="description_A024-009" id="description_A024-009" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">Beginning balance amount of the period (same amount as the ending balance from the prior period)</link:label>
+        <link:label xlink:type="resource" xlink:label="description_A024-009" xlink:title="description_A024-009" id="description_A024-009" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A024-009" xlink:to="description_A024-009" xlink:title="label: A024-009 to label_A024-009"/>
+        <!-- A024-A089 Beginning Balance ADCS Multi Currency Amount -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A024-A089" xlink:label="A024-A089" xlink:title="A024-A089"/>
+        <link:label xlink:type="resource" xlink:label="label_A024-A089" xlink:title="label_A024-A089" id="label_A024-A089" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Beginning Balance ADCS Multi Currency Amount</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A024-A089" xlink:to="label_A024-A089" xlink:title="label: A024-A089 to label_A024-A089"/>
+        <link:label xlink:type="resource" xlink:label="description_A024-A089" xlink:title="description_A024-A089" id="description_A024-A089" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A024-A089" xlink:to="description_A024-A089" xlink:title="label: A024-A089 to label_A024-A089"/>
         <!-- A024-013 Ending Balance ADCS Multi Currency Amount -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A024-013" xlink:label="A024-013" xlink:title="A024-013"/>
         <link:label xlink:type="resource" xlink:label="label_A024-013" xlink:title="label_A024-013" id="label_A024-013" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Ending Balance ADCS Multi Currency Amount</link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A024-013" xlink:to="label_A024-013" xlink:title="label: A024-013 to label_A024-013"/>
-        <link:label xlink:type="resource" xlink:label="description_A024-013" xlink:title="description_A024-013" id="description_A024-013" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">Ending balance amount for the period.</link:label>
+        <link:label xlink:type="resource" xlink:label="description_A024-013" xlink:title="description_A024-013" id="description_A024-013" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A024-013" xlink:to="description_A024-013" xlink:title="label: A024-013 to label_A024-013"/>
+        <!-- A024-A089 Ending Balance ADCS Multi Currency Amount -->
+            <!-- link:loc defined -->
+            <!-- link:label http://www.xbrl.org/2003/role/label defined -->
+            <!-- link:labelArc http://www.xbrl.org/2003/arcrole/concept-label defined -->
+            <!-- link:label http://www.xbrl.jp/audit-data-collection/role/description defined -->
+            <!-- link:labelArc http://www.xbrl.jp/audit-data-collection/arcrole/concept-description defined -->
         <!-- A024-017 X ADCS Business Segment -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A024-017" xlink:label="A024-017" xlink:title="A024-017"/>
         <link:label xlink:type="resource" xlink:label="label_A024-017" xlink:title="label_A024-017" id="label_A024-017" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">X ADCS Business Segment</link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A024-017" xlink:to="label_A024-017" xlink:title="label: A024-017 to label_A024-017"/>
-        <link:label xlink:type="resource" xlink:label="description_A024-017" xlink:title="description_A024-017" id="description_A024-017" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">A reserved field that shall be used for business segments/structures. The 'X' signifies an organizational level. Each number used to replace the 'X' is associated with a unique reference level. For example, division, department, business unit, purchasing organization, project or legal entity.</link:label>
+        <link:label xlink:type="resource" xlink:label="description_A024-017" xlink:title="description_A024-017" id="description_A024-017" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A024-017" xlink:to="description_A024-017" xlink:title="label: A024-017 to label_A024-017"/>
         <!-- A025 General Ledger -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A025" xlink:label="A025" xlink:title="A025"/>
@@ -1286,18 +1304,12 @@
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A025-009" xlink:to="label_A025-009" xlink:title="label: A025-009 to label_A025-009"/>
         <link:label xlink:type="resource" xlink:label="description_A025-009" xlink:title="description_A025-009" id="description_A025-009" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">Description of the entire journal entry as described by the journal entry header.</link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A025-009" xlink:to="description_A025-009" xlink:title="label: A025-009 to label_A025-009"/>
-        <!-- A025-010 Specified ADCS General Ledger Line -->
+        <!-- A025-010 Lines ADCS General Ledger Line -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A025-010" xlink:label="A025-010" xlink:title="A025-010"/>
-        <link:label xlink:type="resource" xlink:label="label_A025-010" xlink:title="label_A025-010" id="label_A025-010" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Specified ADCS General Ledger Line</link:label>
+        <link:label xlink:type="resource" xlink:label="label_A025-010" xlink:title="label_A025-010" id="label_A025-010" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Lines ADCS General Ledger Line</link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A025-010" xlink:to="label_A025-010" xlink:title="label: A025-010 to label_A025-010"/>
         <link:label xlink:type="resource" xlink:label="description_A025-010" xlink:title="description_A025-010" id="description_A025-010" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A025-010" xlink:to="description_A025-010" xlink:title="label: A025-010 to label_A025-010"/>
-        <!-- A025-A026 Specified ADCS General Ledger Line -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#A025-A026" xlink:label="A025-A026" xlink:title="A025-A026"/>
-        <link:label xlink:type="resource" xlink:label="label_A025-A026" xlink:title="label_A025-A026" id="label_A025-A026" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Specified ADCS General Ledger Line</link:label>
-        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A025-A026" xlink:to="label_A025-A026" xlink:title="label: A025-A026 to label_A025-A026"/>
-        <link:label xlink:type="resource" xlink:label="description_A025-A026" xlink:title="description_A025-A026" id="description_A025-A026" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
-        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A025-A026" xlink:to="description_A025-A026" xlink:title="label: A025-A026 to label_A025-A026"/>
         <!-- A026 General Ledger Line -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A026" xlink:label="A026" xlink:title="A026"/>
         <link:label xlink:type="resource" xlink:label="label_A026" xlink:title="label_A026" id="label_A026" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">General Ledger Line</link:label>
@@ -1358,18 +1370,12 @@
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A026-014" xlink:to="label_A026-014" xlink:title="label: A026-014 to label_A026-014"/>
         <link:label xlink:type="resource" xlink:label="description_A026-014" xlink:title="description_A026-014" id="description_A026-014" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The date of the bill.</link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A026-014" xlink:to="description_A026-014" xlink:title="label: A026-014 to label_A026-014"/>
-        <!-- A029-015 Quantity -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#A029-015" xlink:label="A029-015" xlink:title="A029-015"/>
-        <link:label xlink:type="resource" xlink:label="label_A029-015" xlink:title="label_A029-015" id="label_A029-015" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Quantity</link:label>
-        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A029-015" xlink:to="label_A029-015" xlink:title="label: A029-015 to label_A029-015"/>
-        <link:label xlink:type="resource" xlink:label="description_A029-015" xlink:title="description_A029-015" id="description_A029-015" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The quantity of items referenced in the journal entry line.</link:label>
-        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A029-015" xlink:to="description_A029-015" xlink:title="label: A029-015 to label_A029-015"/>
-        <!-- A030-016 Unit of Measurement Code -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#A030-016" xlink:label="A030-016" xlink:title="A030-016"/>
-        <link:label xlink:type="resource" xlink:label="label_A030-016" xlink:title="label_A030-016" id="label_A030-016" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Unit of Measurement Code</link:label>
-        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A030-016" xlink:to="label_A030-016" xlink:title="label: A030-016 to label_A030-016"/>
-        <link:label xlink:type="resource" xlink:label="description_A030-016" xlink:title="description_A030-016" id="description_A030-016" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The code of the physical measurement scale for inventory and PPE referred to as a unit of measurement (UOM).</link:label>
-        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A030-016" xlink:to="description_A030-016" xlink:title="label: A030-016 to label_A030-016"/>
+        <!-- A026-015 Quantity ADCS Measurement Quantity -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A026-015" xlink:label="A026-015" xlink:title="A026-015"/>
+        <link:label xlink:type="resource" xlink:label="label_A026-015" xlink:title="label_A026-015" id="label_A026-015" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Quantity ADCS Measurement Quantity</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A026-015" xlink:to="label_A026-015" xlink:title="label: A026-015 to label_A026-015"/>
+        <link:label xlink:type="resource" xlink:label="description_A026-015" xlink:title="description_A026-015" id="description_A026-015" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A026-015" xlink:to="description_A026-015" xlink:title="label: A026-015 to label_A026-015"/>
         <!-- A026-017 Unit Price -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A026-017" xlink:label="A026-017" xlink:title="A026-017"/>
         <link:label xlink:type="resource" xlink:label="label_A026-017" xlink:title="label_A026-017" id="label_A026-017" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Unit Price</link:label>
@@ -1500,7 +1506,7 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#A026-041" xlink:label="A026-041" xlink:title="A026-041"/>
         <link:label xlink:type="resource" xlink:label="label_A026-041" xlink:title="label_A026-041" id="label_A026-041" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">X ADCS Business Segment</link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A026-041" xlink:to="label_A026-041" xlink:title="label: A026-041 to label_A026-041"/>
-        <link:label xlink:type="resource" xlink:label="description_A026-041" xlink:title="description_A026-041" id="description_A026-041" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">A reserved field that shall be used for business segments/structures. The 'X' signifies an organizational level. Each number used to replace the 'X' is associated with a unique reference level. For example, division, department, business unit, purchasing organization, project or legal entity.</link:label>
+        <link:label xlink:type="resource" xlink:label="description_A026-041" xlink:title="description_A026-041" id="description_A026-041" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A026-041" xlink:to="description_A026-041" xlink:title="label: A026-041 to label_A026-041"/>
         <!-- A027 General Ledger Source -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A027" xlink:label="A027" xlink:title="A027"/>
@@ -1614,38 +1620,74 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#A029-004" xlink:label="A029-004" xlink:title="A029-004"/>
         <link:label xlink:type="resource" xlink:label="label_A029-004" xlink:title="label_A029-004" id="label_A029-004" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Debit ADCS Measurement Quantity</link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A029-004" xlink:to="label_A029-004" xlink:title="label: A029-004 to label_A029-004"/>
-        <link:label xlink:type="resource" xlink:label="description_A029-004" xlink:title="description_A029-004" id="description_A029-004" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The quantity information associated with debiting inventory or PPE.</link:label>
+        <link:label xlink:type="resource" xlink:label="description_A029-004" xlink:title="description_A029-004" id="description_A029-004" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A029-004" xlink:to="description_A029-004" xlink:title="label: A029-004 to label_A029-004"/>
+        <!-- A029-A093 Debit ADCS Measurement Quantity -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A029-A093" xlink:label="A029-A093" xlink:title="A029-A093"/>
+        <link:label xlink:type="resource" xlink:label="label_A029-A093" xlink:title="label_A029-A093" id="label_A029-A093" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Debit ADCS Measurement Quantity</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A029-A093" xlink:to="label_A029-A093" xlink:title="label: A029-A093 to label_A029-A093"/>
+        <link:label xlink:type="resource" xlink:label="description_A029-A093" xlink:title="description_A029-A093" id="description_A029-A093" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A029-A093" xlink:to="description_A029-A093" xlink:title="label: A029-A093 to label_A029-A093"/>
         <!-- A029-005 Credit ADCS Measurement Quantity -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A029-005" xlink:label="A029-005" xlink:title="A029-005"/>
         <link:label xlink:type="resource" xlink:label="label_A029-005" xlink:title="label_A029-005" id="label_A029-005" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Credit ADCS Measurement Quantity</link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A029-005" xlink:to="label_A029-005" xlink:title="label: A029-005 to label_A029-005"/>
-        <link:label xlink:type="resource" xlink:label="description_A029-005" xlink:title="description_A029-005" id="description_A029-005" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The quantity information associated with crediting inventory or PPE.</link:label>
+        <link:label xlink:type="resource" xlink:label="description_A029-005" xlink:title="description_A029-005" id="description_A029-005" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A029-005" xlink:to="description_A029-005" xlink:title="label: A029-005 to label_A029-005"/>
+        <!-- A029-A093 Credit ADCS Measurement Quantity -->
+            <!-- link:loc defined -->
+            <!-- link:label http://www.xbrl.org/2003/role/label defined -->
+            <!-- link:labelArc http://www.xbrl.org/2003/arcrole/concept-label defined -->
+            <!-- link:label http://www.xbrl.jp/audit-data-collection/role/description defined -->
+            <!-- link:labelArc http://www.xbrl.jp/audit-data-collection/arcrole/concept-description defined -->
         <!-- A029-006 Beginning ADCS Measurement Quantity -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A029-006" xlink:label="A029-006" xlink:title="A029-006"/>
         <link:label xlink:type="resource" xlink:label="label_A029-006" xlink:title="label_A029-006" id="label_A029-006" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Beginning ADCS Measurement Quantity</link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A029-006" xlink:to="label_A029-006" xlink:title="label: A029-006 to label_A029-006"/>
-        <link:label xlink:type="resource" xlink:label="description_A029-006" xlink:title="description_A029-006" id="description_A029-006" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The beginning quantity of inventory or PPE account.</link:label>
+        <link:label xlink:type="resource" xlink:label="description_A029-006" xlink:title="description_A029-006" id="description_A029-006" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A029-006" xlink:to="description_A029-006" xlink:title="label: A029-006 to label_A029-006"/>
+        <!-- A029-A093 Beginning ADCS Measurement Quantity -->
+            <!-- link:loc defined -->
+            <!-- link:label http://www.xbrl.org/2003/role/label defined -->
+            <!-- link:labelArc http://www.xbrl.org/2003/arcrole/concept-label defined -->
+            <!-- link:label http://www.xbrl.jp/audit-data-collection/role/description defined -->
+            <!-- link:labelArc http://www.xbrl.jp/audit-data-collection/arcrole/concept-description defined -->
         <!-- A029-007 Ending ADCS Measurement Quantity -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A029-007" xlink:label="A029-007" xlink:title="A029-007"/>
         <link:label xlink:type="resource" xlink:label="label_A029-007" xlink:title="label_A029-007" id="label_A029-007" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Ending ADCS Measurement Quantity</link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A029-007" xlink:to="label_A029-007" xlink:title="label: A029-007 to label_A029-007"/>
-        <link:label xlink:type="resource" xlink:label="description_A029-007" xlink:title="description_A029-007" id="description_A029-007" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The ending quantity of inventory or PPE account.</link:label>
+        <link:label xlink:type="resource" xlink:label="description_A029-007" xlink:title="description_A029-007" id="description_A029-007" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A029-007" xlink:to="description_A029-007" xlink:title="label: A029-007 to label_A029-007"/>
+        <!-- A029-A093 Ending ADCS Measurement Quantity -->
+            <!-- link:loc defined -->
+            <!-- link:label http://www.xbrl.org/2003/role/label defined -->
+            <!-- link:labelArc http://www.xbrl.org/2003/arcrole/concept-label defined -->
+            <!-- link:label http://www.xbrl.jp/audit-data-collection/role/description defined -->
+            <!-- link:labelArc http://www.xbrl.jp/audit-data-collection/arcrole/concept-description defined -->
         <!-- A029-009 Debit ADCS Multi Currency Amount -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A029-009" xlink:label="A029-009" xlink:title="A029-009"/>
         <link:label xlink:type="resource" xlink:label="label_A029-009" xlink:title="label_A029-009" id="label_A029-009" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Debit ADCS Multi Currency Amount</link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A029-009" xlink:to="label_A029-009" xlink:title="label: A029-009 to label_A029-009"/>
-        <link:label xlink:type="resource" xlink:label="description_A029-009" xlink:title="description_A029-009" id="description_A029-009" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The cumulative debit total of multi currency during the Accounting_Period.</link:label>
+        <link:label xlink:type="resource" xlink:label="description_A029-009" xlink:title="description_A029-009" id="description_A029-009" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A029-009" xlink:to="description_A029-009" xlink:title="label: A029-009 to label_A029-009"/>
+        <!-- A029-A089 Debit ADCS Multi Currency Amount -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A029-A089" xlink:label="A029-A089" xlink:title="A029-A089"/>
+        <link:label xlink:type="resource" xlink:label="label_A029-A089" xlink:title="label_A029-A089" id="label_A029-A089" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Debit ADCS Multi Currency Amount</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A029-A089" xlink:to="label_A029-A089" xlink:title="label: A029-A089 to label_A029-A089"/>
+        <link:label xlink:type="resource" xlink:label="description_A029-A089" xlink:title="description_A029-A089" id="description_A029-A089" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A029-A089" xlink:to="description_A029-A089" xlink:title="label: A029-A089 to label_A029-A089"/>
         <!-- A029-013 Credit ADCS Multi Currency Amount -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A029-013" xlink:label="A029-013" xlink:title="A029-013"/>
         <link:label xlink:type="resource" xlink:label="label_A029-013" xlink:title="label_A029-013" id="label_A029-013" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Credit ADCS Multi Currency Amount</link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A029-013" xlink:to="label_A029-013" xlink:title="label: A029-013 to label_A029-013"/>
-        <link:label xlink:type="resource" xlink:label="description_A029-013" xlink:title="description_A029-013" id="description_A029-013" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The cumulative credit total amount of multi currency during the Accounting_Period.</link:label>
+        <link:label xlink:type="resource" xlink:label="description_A029-013" xlink:title="description_A029-013" id="description_A029-013" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A029-013" xlink:to="description_A029-013" xlink:title="label: A029-013 to label_A029-013"/>
+        <!-- A029-A089 Credit ADCS Multi Currency Amount -->
+            <!-- link:loc defined -->
+            <!-- link:label http://www.xbrl.org/2003/role/label defined -->
+            <!-- link:labelArc http://www.xbrl.org/2003/arcrole/concept-label defined -->
+            <!-- link:label http://www.xbrl.jp/audit-data-collection/role/description defined -->
+            <!-- link:labelArc http://www.xbrl.jp/audit-data-collection/arcrole/concept-description defined -->
         <!-- A029-017 Beginning Balance Indicator -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A029-017" xlink:label="A029-017" xlink:title="A029-017"/>
         <link:label xlink:type="resource" xlink:label="label_A029-017" xlink:title="label_A029-017" id="label_A029-017" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Beginning Balance Indicator</link:label>
@@ -1662,14 +1704,26 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#A029-019" xlink:label="A029-019" xlink:title="A029-019"/>
         <link:label xlink:type="resource" xlink:label="label_A029-019" xlink:title="label_A029-019" id="label_A029-019" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Beginning Balance ADCS Multi Currency Amount</link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A029-019" xlink:to="label_A029-019" xlink:title="label: A029-019 to label_A029-019"/>
-        <link:label xlink:type="resource" xlink:label="description_A029-019" xlink:title="description_A029-019" id="description_A029-019" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The beginning balance of multi currency.</link:label>
+        <link:label xlink:type="resource" xlink:label="description_A029-019" xlink:title="description_A029-019" id="description_A029-019" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A029-019" xlink:to="description_A029-019" xlink:title="label: A029-019 to label_A029-019"/>
+        <!-- A029-A089 Beginning Balance ADCS Multi Currency Amount -->
+            <!-- link:loc defined -->
+            <!-- link:label http://www.xbrl.org/2003/role/label defined -->
+            <!-- link:labelArc http://www.xbrl.org/2003/arcrole/concept-label defined -->
+            <!-- link:label http://www.xbrl.jp/audit-data-collection/role/description defined -->
+            <!-- link:labelArc http://www.xbrl.jp/audit-data-collection/arcrole/concept-description defined -->
         <!-- A029-023 Ending Balance ADCS Multi Currency Amount -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A029-023" xlink:label="A029-023" xlink:title="A029-023"/>
         <link:label xlink:type="resource" xlink:label="label_A029-023" xlink:title="label_A029-023" id="label_A029-023" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Ending Balance ADCS Multi Currency Amount</link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A029-023" xlink:to="label_A029-023" xlink:title="label: A029-023 to label_A029-023"/>
-        <link:label xlink:type="resource" xlink:label="description_A029-023" xlink:title="description_A029-023" id="description_A029-023" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The ending balance of multi currency.</link:label>
+        <link:label xlink:type="resource" xlink:label="description_A029-023" xlink:title="description_A029-023" id="description_A029-023" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A029-023" xlink:to="description_A029-023" xlink:title="label: A029-023 to label_A029-023"/>
+        <!-- A029-A089 Ending Balance ADCS Multi Currency Amount -->
+            <!-- link:loc defined -->
+            <!-- link:label http://www.xbrl.org/2003/role/label defined -->
+            <!-- link:labelArc http://www.xbrl.org/2003/arcrole/concept-label defined -->
+            <!-- link:label http://www.xbrl.jp/audit-data-collection/role/description defined -->
+            <!-- link:labelArc http://www.xbrl.jp/audit-data-collection/arcrole/concept-description defined -->
         <!-- A029-031 Account Segment Employee -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A029-031" xlink:label="A029-031" xlink:title="A029-031"/>
         <link:label xlink:type="resource" xlink:label="label_A029-031" xlink:title="label_A029-031" id="label_A029-031" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Account Segment Employee</link:label>
@@ -1698,14 +1752,122 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#A029-035" xlink:label="A029-035" xlink:title="A029-035"/>
         <link:label xlink:type="resource" xlink:label="label_A029-035" xlink:title="label_A029-035" id="label_A029-035" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">X ADCS Business Segment</link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A029-035" xlink:to="label_A029-035" xlink:title="label: A029-035 to label_A029-035"/>
-        <link:label xlink:type="resource" xlink:label="description_A029-035" xlink:title="description_A029-035" id="description_A029-035" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">A reserved field that shall be used for business segments/structures. The 'X' signifies an organizational level. Each number used to replace the 'X' is associated with a unique reference level. For example, division, department, business unit, purchasing organization, project or legal entity.</link:label>
+        <link:label xlink:type="resource" xlink:label="description_A029-035" xlink:title="description_A029-035" id="description_A029-035" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A029-035" xlink:to="description_A029-035" xlink:title="label: A029-035 to label_A029-035"/>
-        <!-- A029-A001 X ADCS Business Segment -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#A029-A001" xlink:label="A029-A001" xlink:title="A029-A001"/>
-        <link:label xlink:type="resource" xlink:label="label_A029-A001" xlink:title="label_A029-A001" id="label_A029-A001" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">X ADCS Business Segment</link:label>
-        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A029-A001" xlink:to="label_A029-A001" xlink:title="label: A029-A001 to label_A029-A001"/>
-        <link:label xlink:type="resource" xlink:label="description_A029-A001" xlink:title="description_A029-A001" id="description_A029-A001" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">A reserved field that shall be used for business segments/structures. The 'X' signifies an organizational level. Each number used to replace the 'X' is associated with a unique reference level. For example, division, department, business unit, purchasing organization, project or legal entity.</link:label>
-        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A029-A001" xlink:to="description_A029-A001" xlink:title="label: A029-A001 to label_A029-A001"/>
+        <!-- A076 User Activity -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A076" xlink:label="A076" xlink:title="A076"/>
+        <link:label xlink:type="resource" xlink:label="label_A076" xlink:title="label_A076" id="label_A076" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">User Activity</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A076" xlink:to="label_A076" xlink:title="label: A076 to label_A076"/>
+        <link:label xlink:type="resource" xlink:label="description_A076" xlink:title="description_A076" id="description_A076" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">User Activitys</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A076" xlink:to="description_A076" xlink:title="label: A076 to label_A076"/>
+        <!-- A076-001 Type -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A076-001" xlink:label="A076-001" xlink:title="A076-001"/>
+        <link:label xlink:type="resource" xlink:label="label_A076-001" xlink:title="label_A076-001" id="label_A076-001" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Type</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A076-001" xlink:to="label_A076-001" xlink:title="label: A076-001 to label_A076-001"/>
+        <link:label xlink:type="resource" xlink:label="description_A076-001" xlink:title="description_A076-001" id="description_A076-001" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The type of this transaction</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A076-001" xlink:to="description_A076-001" xlink:title="label: A076-001 to label_A076-001"/>
+        <!-- A076-002 By ADCS User -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A076-002" xlink:label="A076-002" xlink:title="A076-002"/>
+        <link:label xlink:type="resource" xlink:label="label_A076-002" xlink:title="label_A076-002" id="label_A076-002" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">By ADCS User</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A076-002" xlink:to="label_A076-002" xlink:title="label: A076-002 to label_A076-002"/>
+        <link:label xlink:type="resource" xlink:label="description_A076-002" xlink:title="description_A076-002" id="description_A076-002" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The unique identifier for the person who created the record.</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A076-002" xlink:to="description_A076-002" xlink:title="label: A076-002 to label_A076-002"/>
+        <!-- A076-003 Date -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A076-003" xlink:label="A076-003" xlink:title="A076-003"/>
+        <link:label xlink:type="resource" xlink:label="label_A076-003" xlink:title="label_A076-003" id="label_A076-003" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Date</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A076-003" xlink:to="label_A076-003" xlink:title="label: A076-003 to label_A076-003"/>
+        <link:label xlink:type="resource" xlink:label="description_A076-003" xlink:title="description_A076-003" id="description_A076-003" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The date the transaction was created in the system. This should be a system generated date (rather than usercreated date), when possible. This is sometimes referred to as the creation date.</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A076-003" xlink:to="description_A076-003" xlink:title="label: A076-003 to label_A076-003"/>
+        <!-- A076-004 Time -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A076-004" xlink:label="A076-004" xlink:title="A076-004"/>
+        <link:label xlink:type="resource" xlink:label="label_A076-004" xlink:title="label_A076-004" id="label_A076-004" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Time</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A076-004" xlink:to="label_A076-004" xlink:title="label: A076-004 to label_A076-004"/>
+        <link:label xlink:type="resource" xlink:label="description_A076-004" xlink:title="description_A076-004" id="description_A076-004" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The time this transaction record was created into the system.</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A076-004" xlink:to="description_A076-004" xlink:title="label: A076-004 to label_A076-004"/>
+        <!-- A077 Address -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A077" xlink:label="A077" xlink:title="A077"/>
+        <link:label xlink:type="resource" xlink:label="label_A077" xlink:title="label_A077" id="label_A077" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Address</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A077" xlink:to="label_A077" xlink:title="label: A077 to label_A077"/>
+        <link:label xlink:type="resource" xlink:label="description_A077" xlink:title="description_A077" id="description_A077" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A077" xlink:to="description_A077" xlink:title="label: A077 to label_A077"/>
+        <!-- A077-001 Street Address1 -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A077-001" xlink:label="A077-001" xlink:title="A077-001"/>
+        <link:label xlink:type="resource" xlink:label="label_A077-001" xlink:title="label_A077-001" id="label_A077-001" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Street Address1</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A077-001" xlink:to="label_A077-001" xlink:title="label: A077-001 to label_A077-001"/>
+        <link:label xlink:type="resource" xlink:label="description_A077-001" xlink:title="description_A077-001" id="description_A077-001" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">Line 1 of the rganization's billing address.</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A077-001" xlink:to="description_A077-001" xlink:title="label: A077-001 to label_A077-001"/>
+        <!-- A077-002 Street Address2 -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A077-002" xlink:label="A077-002" xlink:title="A077-002"/>
+        <link:label xlink:type="resource" xlink:label="label_A077-002" xlink:title="label_A077-002" id="label_A077-002" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Street Address2</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A077-002" xlink:to="label_A077-002" xlink:title="label: A077-002 to label_A077-002"/>
+        <link:label xlink:type="resource" xlink:label="description_A077-002" xlink:title="description_A077-002" id="description_A077-002" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">Line 2 of the organization's billing address.</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A077-002" xlink:to="description_A077-002" xlink:title="label: A077-002 to label_A077-002"/>
+        <!-- A077-003 City -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A077-003" xlink:label="A077-003" xlink:title="A077-003"/>
+        <link:label xlink:type="resource" xlink:label="label_A077-003" xlink:title="label_A077-003" id="label_A077-003" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">City</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A077-003" xlink:to="label_A077-003" xlink:title="label: A077-003 to label_A077-003"/>
+        <link:label xlink:type="resource" xlink:label="description_A077-003" xlink:title="description_A077-003" id="description_A077-003" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The billing city of the organization.</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A077-003" xlink:to="description_A077-003" xlink:title="label: A077-003 to label_A077-003"/>
+        <!-- A077-004 State Province Code -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A077-004" xlink:label="A077-004" xlink:title="A077-004"/>
+        <link:label xlink:type="resource" xlink:label="label_A077-004" xlink:title="label_A077-004" id="label_A077-004" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">State Province Code</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A077-004" xlink:to="label_A077-004" xlink:title="label: A077-004 to label_A077-004"/>
+        <link:label xlink:type="resource" xlink:label="description_A077-004" xlink:title="description_A077-004" id="description_A077-004" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The billing state or province of the organization (ISO 3166-2).</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A077-004" xlink:to="description_A077-004" xlink:title="label: A077-004 to label_A077-004"/>
+        <!-- A077-005 Postal Code -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A077-005" xlink:label="A077-005" xlink:title="A077-005"/>
+        <link:label xlink:type="resource" xlink:label="label_A077-005" xlink:title="label_A077-005" id="label_A077-005" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Postal Code</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A077-005" xlink:to="label_A077-005" xlink:title="label: A077-005 to label_A077-005"/>
+        <link:label xlink:type="resource" xlink:label="description_A077-005" xlink:title="description_A077-005" id="description_A077-005" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The billing postal code of the organization's city.</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A077-005" xlink:to="description_A077-005" xlink:title="label: A077-005 to label_A077-005"/>
+        <!-- A077-006 Country Code -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A077-006" xlink:label="A077-006" xlink:title="A077-006"/>
+        <link:label xlink:type="resource" xlink:label="label_A077-006" xlink:title="label_A077-006" id="label_A077-006" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Country Code</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A077-006" xlink:to="label_A077-006" xlink:title="label: A077-006 to label_A077-006"/>
+        <link:label xlink:type="resource" xlink:label="description_A077-006" xlink:title="description_A077-006" id="description_A077-006" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The billing country code of the organization (ISO 3166-1).</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A077-006" xlink:to="description_A077-006" xlink:title="label: A077-006 to label_A077-006"/>
+        <!-- A078 Primary Contact -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A078" xlink:label="A078" xlink:title="A078"/>
+        <link:label xlink:type="resource" xlink:label="label_A078" xlink:title="label_A078" id="label_A078" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Primary Contact</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A078" xlink:to="label_A078" xlink:title="label: A078 to label_A078"/>
+        <link:label xlink:type="resource" xlink:label="description_A078" xlink:title="description_A078" id="description_A078" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A078" xlink:to="description_A078" xlink:title="label: A078 to label_A078"/>
+        <!-- A078-001 Name -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A078-001" xlink:label="A078-001" xlink:title="A078-001"/>
+        <link:label xlink:type="resource" xlink:label="label_A078-001" xlink:title="label_A078-001" id="label_A078-001" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Name</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A078-001" xlink:to="label_A078-001" xlink:title="label: A078-001 to label_A078-001"/>
+        <link:label xlink:type="resource" xlink:label="description_A078-001" xlink:title="description_A078-001" id="description_A078-001" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The name of the primary contact for the organization.</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A078-001" xlink:to="description_A078-001" xlink:title="label: A078-001 to label_A078-001"/>
+        <!-- A078-002 Phone Number Code -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A078-002" xlink:label="A078-002" xlink:title="A078-002"/>
+        <link:label xlink:type="resource" xlink:label="label_A078-002" xlink:title="label_A078-002" id="label_A078-002" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Phone Number Code</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A078-002" xlink:to="label_A078-002" xlink:title="label: A078-002 to label_A078-002"/>
+        <link:label xlink:type="resource" xlink:label="description_A078-002" xlink:title="description_A078-002" id="description_A078-002" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The phone number of the primary contact for the organization.</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A078-002" xlink:to="description_A078-002" xlink:title="label: A078-002 to label_A078-002"/>
+        <!-- A078-003 Email Address Code -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A078-003" xlink:label="A078-003" xlink:title="A078-003"/>
+        <link:label xlink:type="resource" xlink:label="label_A078-003" xlink:title="label_A078-003" id="label_A078-003" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Email Address Code</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A078-003" xlink:to="label_A078-003" xlink:title="label: A078-003 to label_A078-003"/>
+        <link:label xlink:type="resource" xlink:label="description_A078-003" xlink:title="description_A078-003" id="description_A078-003" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The email address of the primary contact for the organization.</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A078-003" xlink:to="description_A078-003" xlink:title="label: A078-003 to label_A078-003"/>
+        <!-- A080 Local Tax -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A080" xlink:label="A080" xlink:title="A080"/>
+        <link:label xlink:type="resource" xlink:label="label_A080" xlink:title="label_A080" id="label_A080" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Local Tax</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A080" xlink:to="label_A080" xlink:title="label: A080 to label_A080"/>
+        <link:label xlink:type="resource" xlink:label="description_A080" xlink:title="description_A080" id="description_A080" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A080" xlink:to="description_A080" xlink:title="label: A080 to label_A080"/>
+        <!-- A080-001 Tax Type ADCS Tax Type -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A080-001" xlink:label="A080-001" xlink:title="A080-001"/>
+        <link:label xlink:type="resource" xlink:label="label_A080-001" xlink:title="label_A080-001" id="label_A080-001" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Tax Type ADCS Tax Type</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A080-001" xlink:to="label_A080-001" xlink:title="label: A080-001 to label_A080-001"/>
+        <link:label xlink:type="resource" xlink:label="description_A080-001" xlink:title="description_A080-001" id="description_A080-001" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The code of Tax4 type. Shall match the Tax_Type_Code in the BAS_Tax_Type table.</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A080-001" xlink:to="description_A080-001" xlink:title="label: A080-001 to label_A080-001"/>
+        <!-- A080-002 Tax ADCS Local Currency Amount -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A080-002" xlink:label="A080-002" xlink:title="A080-002"/>
+        <link:label xlink:type="resource" xlink:label="label_A080-002" xlink:title="label_A080-002" id="label_A080-002" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Tax ADCS Local Currency Amount</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A080-002" xlink:to="label_A080-002" xlink:title="label: A080-002 to label_A080-002"/>
+        <link:label xlink:type="resource" xlink:label="description_A080-002" xlink:title="description_A080-002" id="description_A080-002" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The amount of Tax4 included in the transaction. Recorded in local currency.</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A080-002" xlink:to="description_A080-002" xlink:title="label: A080-002 to label_A080-002"/>
         <!-- A080-003 Tax Name -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A080-003" xlink:label="A080-003" xlink:title="A080-003"/>
         <link:label xlink:type="resource" xlink:label="label_A080-003" xlink:title="label_A080-003" id="label_A080-003" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Tax Name</link:label>
@@ -1740,14 +1902,38 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#A080-008" xlink:label="A080-008" xlink:title="A080-008"/>
         <link:label xlink:type="resource" xlink:label="label_A080-008" xlink:title="label_A080-008" id="label_A080-008" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">X ADCS Business Segment</link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A080-008" xlink:to="label_A080-008" xlink:title="label: A080-008 to label_A080-008"/>
-        <link:label xlink:type="resource" xlink:label="description_A080-008" xlink:title="description_A080-008" id="description_A080-008" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">A reserved field that shall be used for business segments/structures. The 'X' signifies an organizational level. Each number used to replace the 'X' is associated with a unique reference level. For example, division, department, business unit, purchasing organization, project or legal entity.</link:label>
+        <link:label xlink:type="resource" xlink:label="description_A080-008" xlink:title="description_A080-008" id="description_A080-008" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A080-008" xlink:to="description_A080-008" xlink:title="label: A080-008 to label_A080-008"/>
-        <!-- A080-A001 X ADCS Business Segment -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#A080-A001" xlink:label="A080-A001" xlink:title="A080-A001"/>
-        <link:label xlink:type="resource" xlink:label="label_A080-A001" xlink:title="label_A080-A001" id="label_A080-A001" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">X ADCS Business Segment</link:label>
-        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A080-A001" xlink:to="label_A080-A001" xlink:title="label: A080-A001 to label_A080-A001"/>
-        <link:label xlink:type="resource" xlink:label="description_A080-A001" xlink:title="description_A080-A001" id="description_A080-A001" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">A reserved field that shall be used for business segments/structures. The 'X' signifies an organizational level. Each number used to replace the 'X' is associated with a unique reference level. For example, division, department, business unit, purchasing organization, project or legal entity.</link:label>
-        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A080-A001" xlink:to="description_A080-A001" xlink:title="label: A080-A001 to label_A080-A001"/>
+        <!-- A080-009 Tax Debit GL Account Number ADCS Chart Of Accounts -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A080-009" xlink:label="A080-009" xlink:title="A080-009"/>
+        <link:label xlink:type="resource" xlink:label="label_A080-009" xlink:title="label_A080-009" id="label_A080-009" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Tax Debit GL Account Number ADCS Chart Of Accounts</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A080-009" xlink:to="label_A080-009" xlink:title="label: A080-009 to label_A080-009"/>
+        <link:label xlink:type="resource" xlink:label="description_A080-009" xlink:title="description_A080-009" id="description_A080-009" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The GL account number on which the debit side of the Tax4 transaction has been posted. Shall match the GL_Account_Number in the BAS_Chart_Of_Accounts table.</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A080-009" xlink:to="description_A080-009" xlink:title="label: A080-009 to label_A080-009"/>
+        <!-- A080-010 Tax Credit GL Account Number ADCS Chart Of Accounts -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A080-010" xlink:label="A080-010" xlink:title="A080-010"/>
+        <link:label xlink:type="resource" xlink:label="label_A080-010" xlink:title="label_A080-010" id="label_A080-010" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Tax Credit GL Account Number ADCS Chart Of Accounts</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A080-010" xlink:to="label_A080-010" xlink:title="label: A080-010 to label_A080-010"/>
+        <link:label xlink:type="resource" xlink:label="description_A080-010" xlink:title="description_A080-010" id="description_A080-010" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The GL account number on which the credit side of the Tax4 transaction has been posted. Shall match the GL_Account_Number in the BAS_Chart_Of_Accounts table.</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A080-010" xlink:to="description_A080-010" xlink:title="label: A080-010 to label_A080-010"/>
+        <!-- A082 Transaction Tax -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A082" xlink:label="A082" xlink:title="A082"/>
+        <link:label xlink:type="resource" xlink:label="label_A082" xlink:title="label_A082" id="label_A082" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Transaction Tax</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A082" xlink:to="label_A082" xlink:title="label: A082 to label_A082"/>
+        <link:label xlink:type="resource" xlink:label="description_A082" xlink:title="description_A082" id="description_A082" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A082" xlink:to="description_A082" xlink:title="label: A082 to label_A082"/>
+        <!-- A082-001 Tax Type ADCS Tax Type -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A082-001" xlink:label="A082-001" xlink:title="A082-001"/>
+        <link:label xlink:type="resource" xlink:label="label_A082-001" xlink:title="label_A082-001" id="label_A082-001" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Tax Type ADCS Tax Type</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A082-001" xlink:to="label_A082-001" xlink:title="label: A082-001 to label_A082-001"/>
+        <link:label xlink:type="resource" xlink:label="description_A082-001" xlink:title="description_A082-001" id="description_A082-001" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The code of Tax1 type. Shall match the Tax_Type_Code in the BAS_Tax_Type table.</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A082-001" xlink:to="description_A082-001" xlink:title="label: A082-001 to label_A082-001"/>
+        <!-- A082-002 Transaction Amount -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A082-002" xlink:label="A082-002" xlink:title="A082-002"/>
+        <link:label xlink:type="resource" xlink:label="label_A082-002" xlink:title="label_A082-002" id="label_A082-002" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Transaction Amount</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A082-002" xlink:to="label_A082-002" xlink:title="label: A082-002 to label_A082-002"/>
+        <link:label xlink:type="resource" xlink:label="description_A082-002" xlink:title="description_A082-002" id="description_A082-002" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The amount of Tax1 included in the transaction. Recorded in transac currency.</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A082-002" xlink:to="description_A082-002" xlink:title="label: A082-002 to label_A082-002"/>
         <!-- A082-003 Tax Name -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A082-003" xlink:label="A082-003" xlink:title="A082-003"/>
         <link:label xlink:type="resource" xlink:label="label_A082-003" xlink:title="label_A082-003" id="label_A082-003" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Tax Name</link:label>
@@ -1782,14 +1968,284 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#A082-008" xlink:label="A082-008" xlink:title="A082-008"/>
         <link:label xlink:type="resource" xlink:label="label_A082-008" xlink:title="label_A082-008" id="label_A082-008" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">X ADCS Business Segment</link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A082-008" xlink:to="label_A082-008" xlink:title="label: A082-008 to label_A082-008"/>
-        <link:label xlink:type="resource" xlink:label="description_A082-008" xlink:title="description_A082-008" id="description_A082-008" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">A reserved field that shall be used for business segments/structures. The 'X' signifies an organizational level. Each number used to replace the 'X' is associated with a unique reference level. For example, division, department, business unit, purchasing organization, project or legal entity.</link:label>
+        <link:label xlink:type="resource" xlink:label="description_A082-008" xlink:title="description_A082-008" id="description_A082-008" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A082-008" xlink:to="description_A082-008" xlink:title="label: A082-008 to label_A082-008"/>
-        <!-- A082-A001 X ADCS Business Segment -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#A082-A001" xlink:label="A082-A001" xlink:title="A082-A001"/>
-        <link:label xlink:type="resource" xlink:label="label_A082-A001" xlink:title="label_A082-A001" id="label_A082-A001" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">X ADCS Business Segment</link:label>
-        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A082-A001" xlink:to="label_A082-A001" xlink:title="label: A082-A001 to label_A082-A001"/>
-        <link:label xlink:type="resource" xlink:label="description_A082-A001" xlink:title="description_A082-A001" id="description_A082-A001" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">A reserved field that shall be used for business segments/structures. The 'X' signifies an organizational level. Each number used to replace the 'X' is associated with a unique reference level. For example, division, department, business unit, purchasing organization, project or legal entity.</link:label>
-        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A082-A001" xlink:to="description_A082-A001" xlink:title="label: A082-A001 to label_A082-A001"/>
+        <!-- A082-009 Tax Debit GL Account Number ADCS Chart Of Accounts -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A082-009" xlink:label="A082-009" xlink:title="A082-009"/>
+        <link:label xlink:type="resource" xlink:label="label_A082-009" xlink:title="label_A082-009" id="label_A082-009" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Tax Debit GL Account Number ADCS Chart Of Accounts</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A082-009" xlink:to="label_A082-009" xlink:title="label: A082-009 to label_A082-009"/>
+        <link:label xlink:type="resource" xlink:label="description_A082-009" xlink:title="description_A082-009" id="description_A082-009" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The GL account number on which the debit side of the Tax1 transaction has been posted. Shall match the GL_Account_Number in the BAS_Chart_Of_Accounts table.</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A082-009" xlink:to="description_A082-009" xlink:title="label: A082-009 to label_A082-009"/>
+        <!-- A082-010 Tax Credit GL Account Number ADCS Chart Of Accounts -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A082-010" xlink:label="A082-010" xlink:title="A082-010"/>
+        <link:label xlink:type="resource" xlink:label="label_A082-010" xlink:title="label_A082-010" id="label_A082-010" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Tax Credit GL Account Number ADCS Chart Of Accounts</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A082-010" xlink:to="label_A082-010" xlink:title="label: A082-010 to label_A082-010"/>
+        <link:label xlink:type="resource" xlink:label="description_A082-010" xlink:title="description_A082-010" id="description_A082-010" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The GL account number on which the credit side of the Tax1 transaction has been posted. Shall match the GL_Account_Number in the BAS_Chart_Of_Accounts table.</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A082-010" xlink:to="description_A082-010" xlink:title="label: A082-010 to label_A082-010"/>
+        <!-- A089 Multi Currency Amount -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A089" xlink:label="A089" xlink:title="A089"/>
+        <link:label xlink:type="resource" xlink:label="label_A089" xlink:title="label_A089" id="label_A089" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Multi Currency Amount</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A089" xlink:to="label_A089" xlink:title="label: A089 to label_A089"/>
+        <link:label xlink:type="resource" xlink:label="description_A089" xlink:title="description_A089" id="description_A089" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">Multi currency monetary amount</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A089" xlink:to="description_A089" xlink:title="label: A089 to label_A089"/>
+        <!-- A089-001 Amount -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A089-001" xlink:label="A089-001" xlink:title="A089-001"/>
+        <link:label xlink:type="resource" xlink:label="label_A089-001" xlink:title="label_A089-001" id="label_A089-001" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Amount</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A089-001" xlink:to="label_A089-001" xlink:title="label: A089-001 to label_A089-001"/>
+        <link:label xlink:type="resource" xlink:label="description_A089-001" xlink:title="description_A089-001" id="description_A089-001" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The monetary amount of functional currency.</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A089-001" xlink:to="description_A089-001" xlink:title="label: A089-001 to label_A089-001"/>
+        <!-- A089-002 Currency Code -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A089-002" xlink:label="A089-002" xlink:title="A089-002"/>
+        <link:label xlink:type="resource" xlink:label="label_A089-002" xlink:title="label_A089-002" id="label_A089-002" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Currency Code</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A089-002" xlink:to="label_A089-002" xlink:title="label: A089-002 to label_A089-002"/>
+        <link:label xlink:type="resource" xlink:label="description_A089-002" xlink:title="description_A089-002" id="description_A089-002" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The currency code of functional currency.</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A089-002" xlink:to="description_A089-002" xlink:title="label: A089-002 to label_A089-002"/>
+        <!-- A089-003 Reporting Amount -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A089-003" xlink:label="A089-003" xlink:title="A089-003"/>
+        <link:label xlink:type="resource" xlink:label="label_A089-003" xlink:title="label_A089-003" id="label_A089-003" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Reporting Amount</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A089-003" xlink:to="label_A089-003" xlink:title="label: A089-003 to label_A089-003"/>
+        <link:label xlink:type="resource" xlink:label="description_A089-003" xlink:title="description_A089-003" id="description_A089-003" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The monetary amount of reporting currency.</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A089-003" xlink:to="description_A089-003" xlink:title="label: A089-003 to label_A089-003"/>
+        <!-- A089-004 Reporting Currency Code -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A089-004" xlink:label="A089-004" xlink:title="A089-004"/>
+        <link:label xlink:type="resource" xlink:label="label_A089-004" xlink:title="label_A089-004" id="label_A089-004" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Reporting Currency Code</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A089-004" xlink:to="label_A089-004" xlink:title="label: A089-004 to label_A089-004"/>
+        <link:label xlink:type="resource" xlink:label="description_A089-004" xlink:title="description_A089-004" id="description_A089-004" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The currency code of reporting currency.</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A089-004" xlink:to="description_A089-004" xlink:title="label: A089-004 to label_A089-004"/>
+        <!-- A089-005 Local Amount -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A089-005" xlink:label="A089-005" xlink:title="A089-005"/>
+        <link:label xlink:type="resource" xlink:label="label_A089-005" xlink:title="label_A089-005" id="label_A089-005" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Local Amount</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A089-005" xlink:to="label_A089-005" xlink:title="label: A089-005 to label_A089-005"/>
+        <link:label xlink:type="resource" xlink:label="description_A089-005" xlink:title="description_A089-005" id="description_A089-005" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The monetary amount of local currency.</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A089-005" xlink:to="description_A089-005" xlink:title="label: A089-005 to label_A089-005"/>
+        <!-- A089-006 Local Currency Code -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A089-006" xlink:label="A089-006" xlink:title="A089-006"/>
+        <link:label xlink:type="resource" xlink:label="label_A089-006" xlink:title="label_A089-006" id="label_A089-006" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Local Currency Code</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A089-006" xlink:to="label_A089-006" xlink:title="label: A089-006 to label_A089-006"/>
+        <link:label xlink:type="resource" xlink:label="description_A089-006" xlink:title="description_A089-006" id="description_A089-006" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The currency code of local currency.</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A089-006" xlink:to="description_A089-006" xlink:title="label: A089-006 to label_A089-006"/>
+        <!-- A089-007 Transaction Amount -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A089-007" xlink:label="A089-007" xlink:title="A089-007"/>
+        <link:label xlink:type="resource" xlink:label="label_A089-007" xlink:title="label_A089-007" id="label_A089-007" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Transaction Amount</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A089-007" xlink:to="label_A089-007" xlink:title="label: A089-007 to label_A089-007"/>
+        <link:label xlink:type="resource" xlink:label="description_A089-007" xlink:title="description_A089-007" id="description_A089-007" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The monetary amount of transaction currency.</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A089-007" xlink:to="description_A089-007" xlink:title="label: A089-007 to label_A089-007"/>
+        <!-- A089-008 Transaction Currency Code -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A089-008" xlink:label="A089-008" xlink:title="A089-008"/>
+        <link:label xlink:type="resource" xlink:label="label_A089-008" xlink:title="label_A089-008" id="label_A089-008" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Transaction Currency Code</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A089-008" xlink:to="label_A089-008" xlink:title="label: A089-008 to label_A089-008"/>
+        <link:label xlink:type="resource" xlink:label="description_A089-008" xlink:title="description_A089-008" id="description_A089-008" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The currency code of transaction currency.</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A089-008" xlink:to="description_A089-008" xlink:title="label: A089-008 to label_A089-008"/>
+        <!-- A090 Transaction Currency Amount -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A090" xlink:label="A090" xlink:title="A090"/>
+        <link:label xlink:type="resource" xlink:label="label_A090" xlink:title="label_A090" id="label_A090" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Transaction Currency Amount</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A090" xlink:to="label_A090" xlink:title="label: A090 to label_A090"/>
+        <link:label xlink:type="resource" xlink:label="description_A090" xlink:title="description_A090" id="description_A090" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">Transaction currency monetary amount</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A090" xlink:to="description_A090" xlink:title="label: A090 to label_A090"/>
+        <!-- A090-001 Transaction Amount -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A090-001" xlink:label="A090-001" xlink:title="A090-001"/>
+        <link:label xlink:type="resource" xlink:label="label_A090-001" xlink:title="label_A090-001" id="label_A090-001" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Transaction Amount</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A090-001" xlink:to="label_A090-001" xlink:title="label: A090-001 to label_A090-001"/>
+        <link:label xlink:type="resource" xlink:label="description_A090-001" xlink:title="description_A090-001" id="description_A090-001" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The monetary amount of transaction currency.</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A090-001" xlink:to="description_A090-001" xlink:title="label: A090-001 to label_A090-001"/>
+        <!-- A090-002 Transaction Currency Code -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A090-002" xlink:label="A090-002" xlink:title="A090-002"/>
+        <link:label xlink:type="resource" xlink:label="label_A090-002" xlink:title="label_A090-002" id="label_A090-002" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Transaction Currency Code</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A090-002" xlink:to="label_A090-002" xlink:title="label: A090-002 to label_A090-002"/>
+        <link:label xlink:type="resource" xlink:label="description_A090-002" xlink:title="description_A090-002" id="description_A090-002" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The currency code of transaction currency.</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A090-002" xlink:to="description_A090-002" xlink:title="label: A090-002 to label_A090-002"/>
+        <!-- A091 Local Currency Amount -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A091" xlink:label="A091" xlink:title="A091"/>
+        <link:label xlink:type="resource" xlink:label="label_A091" xlink:title="label_A091" id="label_A091" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Local Currency Amount</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A091" xlink:to="label_A091" xlink:title="label: A091 to label_A091"/>
+        <link:label xlink:type="resource" xlink:label="description_A091" xlink:title="description_A091" id="description_A091" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">Local currency monetary amount</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A091" xlink:to="description_A091" xlink:title="label: A091 to label_A091"/>
+        <!-- A091-001 Local Amount -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A091-001" xlink:label="A091-001" xlink:title="A091-001"/>
+        <link:label xlink:type="resource" xlink:label="label_A091-001" xlink:title="label_A091-001" id="label_A091-001" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Local Amount</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A091-001" xlink:to="label_A091-001" xlink:title="label: A091-001 to label_A091-001"/>
+        <link:label xlink:type="resource" xlink:label="description_A091-001" xlink:title="description_A091-001" id="description_A091-001" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The monetary amount of local currency.</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A091-001" xlink:to="description_A091-001" xlink:title="label: A091-001 to label_A091-001"/>
+        <!-- A091-002 Local Currency Code -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A091-002" xlink:label="A091-002" xlink:title="A091-002"/>
+        <link:label xlink:type="resource" xlink:label="label_A091-002" xlink:title="label_A091-002" id="label_A091-002" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Local Currency Code</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A091-002" xlink:to="label_A091-002" xlink:title="label: A091-002 to label_A091-002"/>
+        <link:label xlink:type="resource" xlink:label="description_A091-002" xlink:title="description_A091-002" id="description_A091-002" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The currency code of local currency.</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A091-002" xlink:to="description_A091-002" xlink:title="label: A091-002 to label_A091-002"/>
+        <!-- A093 Measurement Quantity -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A093" xlink:label="A093" xlink:title="A093"/>
+        <link:label xlink:type="resource" xlink:label="label_A093" xlink:title="label_A093" id="label_A093" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Measurement Quantity</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A093" xlink:to="label_A093" xlink:title="label: A093 to label_A093"/>
+        <link:label xlink:type="resource" xlink:label="description_A093" xlink:title="description_A093" id="description_A093" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A093" xlink:to="description_A093" xlink:title="label: A093 to label_A093"/>
+        <!-- A093-001 Quantity -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A093-001" xlink:label="A093-001" xlink:title="A093-001"/>
+        <link:label xlink:type="resource" xlink:label="label_A093-001" xlink:title="label_A093-001" id="label_A093-001" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Quantity</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A093-001" xlink:to="label_A093-001" xlink:title="label: A093-001 to label_A093-001"/>
+        <link:label xlink:type="resource" xlink:label="description_A093-001" xlink:title="description_A093-001" id="description_A093-001" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A093-001" xlink:to="description_A093-001" xlink:title="label: A093-001 to label_A093-001"/>
+        <!-- A093-002 Unit Of Measurement ADCS Measurement Unit -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A093-002" xlink:label="A093-002" xlink:title="A093-002"/>
+        <link:label xlink:type="resource" xlink:label="label_A093-002" xlink:title="label_A093-002" id="label_A093-002" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Unit Of Measurement ADCS Measurement Unit</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A093-002" xlink:to="label_A093-002" xlink:title="label: A093-002 to label_A093-002"/>
+        <link:label xlink:type="resource" xlink:label="description_A093-002" xlink:title="description_A093-002" id="description_A093-002" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A093-002" xlink:to="description_A093-002" xlink:title="label: A093-002 to label_A093-002"/>
+        <!-- A006-030 User Activity -->
+            <!-- link:loc defined -->
+            <!-- link:label http://www.xbrl.org/2003/role/label defined -->
+            <!-- link:labelArc http://www.xbrl.org/2003/arcrole/concept-label defined -->
+            <!-- link:label http://www.xbrl.jp/audit-data-collection/role/description defined -->
+            <!-- link:labelArc http://www.xbrl.jp/audit-data-collection/arcrole/concept-description defined -->
+        <!-- A006-A076 User Activity -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A006-A076" xlink:label="A006-A076" xlink:title="A006-A076"/>
+        <link:label xlink:type="resource" xlink:label="label_A006-A076" xlink:title="label_A006-A076" id="label_A006-A076" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">User Activity</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A006-A076" xlink:to="label_A006-A076" xlink:title="label: A006-A076 to label_A006-A076"/>
+        <link:label xlink:type="resource" xlink:label="description_A006-A076" xlink:title="description_A006-A076" id="description_A006-A076" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">User Activitys</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A006-A076" xlink:to="description_A006-A076" xlink:title="label: A006-A076 to label_A006-A076"/>
+        <!-- A008-031 User Activity -->
+            <!-- link:loc defined -->
+            <!-- link:label http://www.xbrl.org/2003/role/label defined -->
+            <!-- link:labelArc http://www.xbrl.org/2003/arcrole/concept-label defined -->
+            <!-- link:label http://www.xbrl.jp/audit-data-collection/role/description defined -->
+            <!-- link:labelArc http://www.xbrl.jp/audit-data-collection/arcrole/concept-description defined -->
+        <!-- A008-A076 User Activity -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A008-A076" xlink:label="A008-A076" xlink:title="A008-A076"/>
+        <link:label xlink:type="resource" xlink:label="label_A008-A076" xlink:title="label_A008-A076" id="label_A008-A076" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">User Activity</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A008-A076" xlink:to="label_A008-A076" xlink:title="label: A008-A076 to label_A008-A076"/>
+        <link:label xlink:type="resource" xlink:label="description_A008-A076" xlink:title="description_A008-A076" id="description_A008-A076" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">User Activitys</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A008-A076" xlink:to="description_A008-A076" xlink:title="label: A008-A076 to label_A008-A076"/>
+        <!-- A017-007 Business Segment -->
+            <!-- link:loc defined -->
+            <!-- link:label http://www.xbrl.org/2003/role/label defined -->
+            <!-- link:labelArc http://www.xbrl.org/2003/arcrole/concept-label defined -->
+            <!-- link:label http://www.xbrl.jp/audit-data-collection/role/description defined -->
+            <!-- link:labelArc http://www.xbrl.jp/audit-data-collection/arcrole/concept-description defined -->
+        <!-- A017-A001 Business Segment -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A017-A001" xlink:label="A017-A001" xlink:title="A017-A001"/>
+        <link:label xlink:type="resource" xlink:label="label_A017-A001" xlink:title="label_A017-A001" id="label_A017-A001" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Business Segment</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A017-A001" xlink:to="label_A017-A001" xlink:title="label: A017-A001 to label_A017-A001"/>
+        <link:label xlink:type="resource" xlink:label="description_A017-A001" xlink:title="description_A017-A001" id="description_A017-A001" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The BAS_Business_Segment (Table 4) and the BAS_Business_Segment_Hierarchy (Table 6) have been designed to tabularize the portions of an organizational chart that is reflected in the business transactions as structural units, e.g. business unit, department, cost center and project. Instructions on how to implement the business segment structures (4.4.2 and 4.4.3) are detailed in Annex A.The fields within the BAS_Business_Segment (Table 4) are used to capture the individual organizational unit represented by each box on an organizational diagram.</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A017-A001" xlink:to="description_A017-A001" xlink:title="label: A017-A001 to label_A017-A001"/>
+        <!-- A018-010 Business Segment -->
+            <!-- link:loc defined -->
+            <!-- link:label http://www.xbrl.org/2003/role/label defined -->
+            <!-- link:labelArc http://www.xbrl.org/2003/arcrole/concept-label defined -->
+            <!-- link:label http://www.xbrl.jp/audit-data-collection/role/description defined -->
+            <!-- link:labelArc http://www.xbrl.jp/audit-data-collection/arcrole/concept-description defined -->
+        <!-- A018-A001 Business Segment -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A018-A001" xlink:label="A018-A001" xlink:title="A018-A001"/>
+        <link:label xlink:type="resource" xlink:label="label_A018-A001" xlink:title="label_A018-A001" id="label_A018-A001" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Business Segment</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A018-A001" xlink:to="label_A018-A001" xlink:title="label: A018-A001 to label_A018-A001"/>
+        <link:label xlink:type="resource" xlink:label="description_A018-A001" xlink:title="description_A018-A001" id="description_A018-A001" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The BAS_Business_Segment (Table 4) and the BAS_Business_Segment_Hierarchy (Table 6) have been designed to tabularize the portions of an organizational chart that is reflected in the business transactions as structural units, e.g. business unit, department, cost center and project. Instructions on how to implement the business segment structures (4.4.2 and 4.4.3) are detailed in Annex A.The fields within the BAS_Business_Segment (Table 4) are used to capture the individual organizational unit represented by each box on an organizational diagram.</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A018-A001" xlink:to="description_A018-A001" xlink:title="label: A018-A001 to label_A018-A001"/>
+        <!-- A019-012 Business Segment -->
+            <!-- link:loc defined -->
+            <!-- link:label http://www.xbrl.org/2003/role/label defined -->
+            <!-- link:labelArc http://www.xbrl.org/2003/arcrole/concept-label defined -->
+            <!-- link:label http://www.xbrl.jp/audit-data-collection/role/description defined -->
+            <!-- link:labelArc http://www.xbrl.jp/audit-data-collection/arcrole/concept-description defined -->
+        <!-- A019-A001 Business Segment -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A019-A001" xlink:label="A019-A001" xlink:title="A019-A001"/>
+        <link:label xlink:type="resource" xlink:label="label_A019-A001" xlink:title="label_A019-A001" id="label_A019-A001" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Business Segment</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A019-A001" xlink:to="label_A019-A001" xlink:title="label: A019-A001 to label_A019-A001"/>
+        <link:label xlink:type="resource" xlink:label="description_A019-A001" xlink:title="description_A019-A001" id="description_A019-A001" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The BAS_Business_Segment (Table 4) and the BAS_Business_Segment_Hierarchy (Table 6) have been designed to tabularize the portions of an organizational chart that is reflected in the business transactions as structural units, e.g. business unit, department, cost center and project. Instructions on how to implement the business segment structures (4.4.2 and 4.4.3) are detailed in Annex A.The fields within the BAS_Business_Segment (Table 4) are used to capture the individual organizational unit represented by each box on an organizational diagram.</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A019-A001" xlink:to="description_A019-A001" xlink:title="label: A019-A001 to label_A019-A001"/>
+        <!-- A020-007 Business Segment -->
+            <!-- link:loc defined -->
+            <!-- link:label http://www.xbrl.org/2003/role/label defined -->
+            <!-- link:labelArc http://www.xbrl.org/2003/arcrole/concept-label defined -->
+            <!-- link:label http://www.xbrl.jp/audit-data-collection/role/description defined -->
+            <!-- link:labelArc http://www.xbrl.jp/audit-data-collection/arcrole/concept-description defined -->
+        <!-- A020-A001 Business Segment -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A020-A001" xlink:label="A020-A001" xlink:title="A020-A001"/>
+        <link:label xlink:type="resource" xlink:label="label_A020-A001" xlink:title="label_A020-A001" id="label_A020-A001" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Business Segment</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A020-A001" xlink:to="label_A020-A001" xlink:title="label: A020-A001 to label_A020-A001"/>
+        <link:label xlink:type="resource" xlink:label="description_A020-A001" xlink:title="description_A020-A001" id="description_A020-A001" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The BAS_Business_Segment (Table 4) and the BAS_Business_Segment_Hierarchy (Table 6) have been designed to tabularize the portions of an organizational chart that is reflected in the business transactions as structural units, e.g. business unit, department, cost center and project. Instructions on how to implement the business segment structures (4.4.2 and 4.4.3) are detailed in Annex A.The fields within the BAS_Business_Segment (Table 4) are used to capture the individual organizational unit represented by each box on an organizational diagram.</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A020-A001" xlink:to="description_A020-A001" xlink:title="label: A020-A001 to label_A020-A001"/>
+        <!-- A023-013 Business Segment -->
+            <!-- link:loc defined -->
+            <!-- link:label http://www.xbrl.org/2003/role/label defined -->
+            <!-- link:labelArc http://www.xbrl.org/2003/arcrole/concept-label defined -->
+            <!-- link:label http://www.xbrl.jp/audit-data-collection/role/description defined -->
+            <!-- link:labelArc http://www.xbrl.jp/audit-data-collection/arcrole/concept-description defined -->
+        <!-- A023-A001 Business Segment -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A023-A001" xlink:label="A023-A001" xlink:title="A023-A001"/>
+        <link:label xlink:type="resource" xlink:label="label_A023-A001" xlink:title="label_A023-A001" id="label_A023-A001" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Business Segment</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A023-A001" xlink:to="label_A023-A001" xlink:title="label: A023-A001 to label_A023-A001"/>
+        <link:label xlink:type="resource" xlink:label="description_A023-A001" xlink:title="description_A023-A001" id="description_A023-A001" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The BAS_Business_Segment (Table 4) and the BAS_Business_Segment_Hierarchy (Table 6) have been designed to tabularize the portions of an organizational chart that is reflected in the business transactions as structural units, e.g. business unit, department, cost center and project. Instructions on how to implement the business segment structures (4.4.2 and 4.4.3) are detailed in Annex A.The fields within the BAS_Business_Segment (Table 4) are used to capture the individual organizational unit represented by each box on an organizational diagram.</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A023-A001" xlink:to="description_A023-A001" xlink:title="label: A023-A001 to label_A023-A001"/>
+        <!-- A024-017 Business Segment -->
+            <!-- link:loc defined -->
+            <!-- link:label http://www.xbrl.org/2003/role/label defined -->
+            <!-- link:labelArc http://www.xbrl.org/2003/arcrole/concept-label defined -->
+            <!-- link:label http://www.xbrl.jp/audit-data-collection/role/description defined -->
+            <!-- link:labelArc http://www.xbrl.jp/audit-data-collection/arcrole/concept-description defined -->
+        <!-- A024-A001 Business Segment -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A024-A001" xlink:label="A024-A001" xlink:title="A024-A001"/>
+        <link:label xlink:type="resource" xlink:label="label_A024-A001" xlink:title="label_A024-A001" id="label_A024-A001" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Business Segment</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A024-A001" xlink:to="label_A024-A001" xlink:title="label: A024-A001 to label_A024-A001"/>
+        <link:label xlink:type="resource" xlink:label="description_A024-A001" xlink:title="description_A024-A001" id="description_A024-A001" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The BAS_Business_Segment (Table 4) and the BAS_Business_Segment_Hierarchy (Table 6) have been designed to tabularize the portions of an organizational chart that is reflected in the business transactions as structural units, e.g. business unit, department, cost center and project. Instructions on how to implement the business segment structures (4.4.2 and 4.4.3) are detailed in Annex A.The fields within the BAS_Business_Segment (Table 4) are used to capture the individual organizational unit represented by each box on an organizational diagram.</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A024-A001" xlink:to="description_A024-A001" xlink:title="label: A024-A001 to label_A024-A001"/>
+        <!-- A025-010 General Ledger Line -->
+            <!-- link:loc defined -->
+            <!-- link:label http://www.xbrl.org/2003/role/label defined -->
+            <!-- link:labelArc http://www.xbrl.org/2003/arcrole/concept-label defined -->
+            <!-- link:label http://www.xbrl.jp/audit-data-collection/role/description defined -->
+            <!-- link:labelArc http://www.xbrl.jp/audit-data-collection/arcrole/concept-description defined -->
+        <!-- A025-A026 General Ledger Line -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A025-A026" xlink:label="A025-A026" xlink:title="A025-A026"/>
+        <link:label xlink:type="resource" xlink:label="label_A025-A026" xlink:title="label_A025-A026" id="label_A025-A026" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">General Ledger Line</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A025-A026" xlink:to="label_A025-A026" xlink:title="label: A025-A026 to label_A025-A026"/>
+        <link:label xlink:type="resource" xlink:label="description_A025-A026" xlink:title="description_A025-A026" id="description_A025-A026" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">All of the journal entry details for each transaction of ADCS are contained in Table 52. For example, the associated journal entry ID, the associated account number, and the debits or credits associated with the journal entry line are contained. This table should be at the journal entry line level.</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A025-A026" xlink:to="description_A025-A026" xlink:title="label: A025-A026 to label_A025-A026"/>
+        <!-- A026-003 Chart Of Accounts -->
+            <!-- link:loc defined -->
+            <!-- link:label http://www.xbrl.org/2003/role/label defined -->
+            <!-- link:labelArc http://www.xbrl.org/2003/arcrole/concept-label defined -->
+            <!-- link:label http://www.xbrl.jp/audit-data-collection/role/description defined -->
+            <!-- link:labelArc http://www.xbrl.jp/audit-data-collection/arcrole/concept-description defined -->
+        <!-- A026-A009 Chart Of Accounts -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A026-A009" xlink:label="A026-A009" xlink:title="A026-A009"/>
+        <link:label xlink:type="resource" xlink:label="label_A026-A009" xlink:title="label_A026-A009" id="label_A026-A009" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Chart Of Accounts</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A026-A009" xlink:to="label_A026-A009" xlink:title="label: A026-A009 to label_A026-A009"/>
+        <link:label xlink:type="resource" xlink:label="description_A026-A009" xlink:title="description_A026-A009" id="description_A026-A009" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The information about GL accounts, including name, description, type and hierarchy is contained in Table 20. When it is cross-referred by other table(s), consistency shall apply. For example, in this table, the value of GL_Account_Number is 101, the value of GL_Account_Name is cash, and the value of Balance_Debit_Or_Credit is D, if the value of GL_Account_Number in GL_Tial_Balance table is 101, then the Amount corresponding with cash account (101) must be debit.</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A026-A009" xlink:to="description_A026-A009" xlink:title="label: A026-A009 to label_A026-A009"/>
+        <!-- A026-015 Measurement Quantity -->
+            <!-- link:loc defined -->
+            <!-- link:label http://www.xbrl.org/2003/role/label defined -->
+            <!-- link:labelArc http://www.xbrl.org/2003/arcrole/concept-label defined -->
+            <!-- link:label http://www.xbrl.jp/audit-data-collection/role/description defined -->
+            <!-- link:labelArc http://www.xbrl.jp/audit-data-collection/arcrole/concept-description defined -->
+        <!-- A026-A093 Measurement Quantity -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A026-A093" xlink:label="A026-A093" xlink:title="A026-A093"/>
+        <link:label xlink:type="resource" xlink:label="label_A026-A093" xlink:title="label_A026-A093" id="label_A026-A093" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Measurement Quantity</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A026-A093" xlink:to="label_A026-A093" xlink:title="label: A026-A093 to label_A026-A093"/>
+        <link:label xlink:type="resource" xlink:label="description_A026-A093" xlink:title="description_A026-A093" id="description_A026-A093" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A026-A093" xlink:to="description_A026-A093" xlink:title="label: A026-A093 to label_A026-A093"/>
+        <!-- A026-031 User Activity -->
+            <!-- link:loc defined -->
+            <!-- link:label http://www.xbrl.org/2003/role/label defined -->
+            <!-- link:labelArc http://www.xbrl.org/2003/arcrole/concept-label defined -->
+            <!-- link:label http://www.xbrl.jp/audit-data-collection/role/description defined -->
+            <!-- link:labelArc http://www.xbrl.jp/audit-data-collection/arcrole/concept-description defined -->
+        <!-- A026-A076 User Activity -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A026-A076" xlink:label="A026-A076" xlink:title="A026-A076"/>
+        <link:label xlink:type="resource" xlink:label="label_A026-A076" xlink:title="label_A026-A076" id="label_A026-A076" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">User Activity</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A026-A076" xlink:to="label_A026-A076" xlink:title="label: A026-A076 to label_A026-A076"/>
+        <link:label xlink:type="resource" xlink:label="description_A026-A076" xlink:title="description_A026-A076" id="description_A026-A076" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">User Activitys</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A026-A076" xlink:to="description_A026-A076" xlink:title="label: A026-A076 to label_A026-A076"/>
+        <!-- A026-034 User Activity -->
+            <!-- link:loc defined -->
+            <!-- link:label http://www.xbrl.org/2003/role/label defined -->
+            <!-- link:labelArc http://www.xbrl.org/2003/arcrole/concept-label defined -->
+            <!-- link:label http://www.xbrl.jp/audit-data-collection/role/description defined -->
+            <!-- link:labelArc http://www.xbrl.jp/audit-data-collection/arcrole/concept-description defined -->
+        <!-- A026-A076 User Activity -->
+            <!-- link:loc defined -->
+            <!-- link:label http://www.xbrl.org/2003/role/label defined -->
+            <!-- link:labelArc http://www.xbrl.org/2003/arcrole/concept-label defined -->
+            <!-- link:label http://www.xbrl.jp/audit-data-collection/role/description defined -->
+            <!-- link:labelArc http://www.xbrl.jp/audit-data-collection/arcrole/concept-description defined -->
         <!-- A026-041 Business Segment -->
             <!-- link:loc defined -->
             <!-- link:label http://www.xbrl.org/2003/role/label defined -->
@@ -1802,5 +2258,41 @@
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A026-A001" xlink:to="label_A026-A001" xlink:title="label: A026-A001 to label_A026-A001"/>
         <link:label xlink:type="resource" xlink:label="description_A026-A001" xlink:title="description_A026-A001" id="description_A026-A001" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The BAS_Business_Segment (Table 4) and the BAS_Business_Segment_Hierarchy (Table 6) have been designed to tabularize the portions of an organizational chart that is reflected in the business transactions as structural units, e.g. business unit, department, cost center and project. Instructions on how to implement the business segment structures (4.4.2 and 4.4.3) are detailed in Annex A.The fields within the BAS_Business_Segment (Table 4) are used to capture the individual organizational unit represented by each box on an organizational diagram.</link:label>
         <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A026-A001" xlink:to="description_A026-A001" xlink:title="label: A026-A001 to label_A026-A001"/>
+        <!-- A029-035 Business Segment -->
+            <!-- link:loc defined -->
+            <!-- link:label http://www.xbrl.org/2003/role/label defined -->
+            <!-- link:labelArc http://www.xbrl.org/2003/arcrole/concept-label defined -->
+            <!-- link:label http://www.xbrl.jp/audit-data-collection/role/description defined -->
+            <!-- link:labelArc http://www.xbrl.jp/audit-data-collection/arcrole/concept-description defined -->
+        <!-- A029-A001 Business Segment -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A029-A001" xlink:label="A029-A001" xlink:title="A029-A001"/>
+        <link:label xlink:type="resource" xlink:label="label_A029-A001" xlink:title="label_A029-A001" id="label_A029-A001" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Business Segment</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A029-A001" xlink:to="label_A029-A001" xlink:title="label: A029-A001 to label_A029-A001"/>
+        <link:label xlink:type="resource" xlink:label="description_A029-A001" xlink:title="description_A029-A001" id="description_A029-A001" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The BAS_Business_Segment (Table 4) and the BAS_Business_Segment_Hierarchy (Table 6) have been designed to tabularize the portions of an organizational chart that is reflected in the business transactions as structural units, e.g. business unit, department, cost center and project. Instructions on how to implement the business segment structures (4.4.2 and 4.4.3) are detailed in Annex A.The fields within the BAS_Business_Segment (Table 4) are used to capture the individual organizational unit represented by each box on an organizational diagram.</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A029-A001" xlink:to="description_A029-A001" xlink:title="label: A029-A001 to label_A029-A001"/>
+        <!-- A080-008 Business Segment -->
+            <!-- link:loc defined -->
+            <!-- link:label http://www.xbrl.org/2003/role/label defined -->
+            <!-- link:labelArc http://www.xbrl.org/2003/arcrole/concept-label defined -->
+            <!-- link:label http://www.xbrl.jp/audit-data-collection/role/description defined -->
+            <!-- link:labelArc http://www.xbrl.jp/audit-data-collection/arcrole/concept-description defined -->
+        <!-- A080-A001 Business Segment -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A080-A001" xlink:label="A080-A001" xlink:title="A080-A001"/>
+        <link:label xlink:type="resource" xlink:label="label_A080-A001" xlink:title="label_A080-A001" id="label_A080-A001" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Business Segment</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A080-A001" xlink:to="label_A080-A001" xlink:title="label: A080-A001 to label_A080-A001"/>
+        <link:label xlink:type="resource" xlink:label="description_A080-A001" xlink:title="description_A080-A001" id="description_A080-A001" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The BAS_Business_Segment (Table 4) and the BAS_Business_Segment_Hierarchy (Table 6) have been designed to tabularize the portions of an organizational chart that is reflected in the business transactions as structural units, e.g. business unit, department, cost center and project. Instructions on how to implement the business segment structures (4.4.2 and 4.4.3) are detailed in Annex A.The fields within the BAS_Business_Segment (Table 4) are used to capture the individual organizational unit represented by each box on an organizational diagram.</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A080-A001" xlink:to="description_A080-A001" xlink:title="label: A080-A001 to label_A080-A001"/>
+        <!-- A082-008 Business Segment -->
+            <!-- link:loc defined -->
+            <!-- link:label http://www.xbrl.org/2003/role/label defined -->
+            <!-- link:labelArc http://www.xbrl.org/2003/arcrole/concept-label defined -->
+            <!-- link:label http://www.xbrl.jp/audit-data-collection/role/description defined -->
+            <!-- link:labelArc http://www.xbrl.jp/audit-data-collection/arcrole/concept-description defined -->
+        <!-- A082-A001 Business Segment -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#A082-A001" xlink:label="A082-A001" xlink:title="A082-A001"/>
+        <link:label xlink:type="resource" xlink:label="label_A082-A001" xlink:title="label_A082-A001" id="label_A082-A001" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Business Segment</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="A082-A001" xlink:to="label_A082-A001" xlink:title="label: A082-A001 to label_A082-A001"/>
+        <link:label xlink:type="resource" xlink:label="description_A082-A001" xlink:title="description_A082-A001" id="description_A082-A001" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description">The BAS_Business_Segment (Table 4) and the BAS_Business_Segment_Hierarchy (Table 6) have been designed to tabularize the portions of an organizational chart that is reflected in the business transactions as structural units, e.g. business unit, department, cost center and project. Instructions on how to implement the business segment structures (4.4.2 and 4.4.3) are detailed in Annex A.The fields within the BAS_Business_Segment (Table 4) are used to capture the individual organizational unit represented by each box on an organizational diagram.</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="A082-A001" xlink:to="description_A082-A001" xlink:title="label: A082-A001 to label_A082-A001"/>
     </link:labelLink>
 </link:linkbase>

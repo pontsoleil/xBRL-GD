@@ -520,9 +520,9 @@ if __name__ == '__main__':
     with open(adc_file, encoding='utf-8', newline='') as f:
         reader = csv.reader(f)#, delimiter='\t')
         header = next(reader)
-        header = ['module','table_id','kind','table','field_id','name','DEN','desc','XBRL-GL','classQualifier','class','propertyQualifier','property','datatypeQualifier','representation','associatedClassQualifier','associatedClass','datatype','presentation','level','key','refField','refTable','occMin','occMax']
+        # header = ['module','table_id','kind','table','field_id','name','DEN','desc','XBRL-GL','classQualifier','class','propertyQualifier','property','datatypeQualifier','representation','associatedClassQualifier','associatedClass','datatype','presentation','level','key','refField','refTable','occMin','occMax']
         # header = ['Module	#	Kind	Table	No.	Name	Dictionary Entry Name	Description	XBRL GL Taxonomy Element	Object Class Term Qualifier	Object Class Term	Property Term Qualifier	Property Term	Datatype Qualifier	Representation term	Associated Object Class Term Qualifier	Associated Object Class	Datatype	Representation	Level	Key	Ref Field	Ref Table	Occurrence Min	Occurrence Max']
-        # header = ['module','table_id','table','field_id','name','datatype','presentation','desc','level','key','refField','refTable','kind','DEN','classQualifier','class','propertyQualifier','property','datatypeQualifier','representation','associatedClassQualifier','associatedClass','occMin','occMax','XBRL-GL']
+        header = ['module','table_id','table','field_id','name','datatype','presentation','desc','level','key','refField','refTable','kind','DEN','classQualifier','class','propertyQualifier','property','datatypeQualifier','representation','associatedClassQualifier','associatedClass','occMin','occMax','XBRL-GL']
         for cols in reader:
             record = {}
             for i in range(len(cols)):
