@@ -12,7 +12,7 @@
             "console": "integratedTerminal",
             "justMyCode": true,
             // ADC2xBRL-taxonomy.py
-            "args": ["source/audit_data_services.csv","-e utf-8","-d","-v"]
+            "args": ["source/audit_data_servicesGL.csv","-e utf-8","-d","-v"]
         }
     ]
 }
