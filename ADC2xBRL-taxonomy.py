@@ -51,7 +51,7 @@ xbrl_source = xbrl_source.replace('/', SEP)
 core_head = 'core-head.txt'
 primarykey_file = 'primarykey.csv'
 
-xbrl_base = 'taxonomy/ADC/'
+xbrl_base = 'taxonomy/'
 xbrl_base = xbrl_base.replace('/', SEP)
 core_xsd = 'core.xsd'
 core_label = 'core-lbl'
@@ -494,9 +494,9 @@ if __name__ == '__main__':
         out_file = file_path(out_file)
         xbrl_base = os.path.dirname(out_file)
     else:
-        xbrl_base = 'taxonomy/ADC/'
+        xbrl_base = 'taxonomy'
         xbrl_base = xbrl_base.replace('/', SEP)
-    if not out_file or not os.path.isdir(xbrl_base):
+    if not os.path.isdir(xbrl_base):
         print('タクソノミのディレクトリがありません')
         sys.exit()
     xbrl_base = f'{xbrl_base}/'.replace('/', SEP)
@@ -585,8 +585,7 @@ if __name__ == '__main__':
                 record['adc_id'] = adc_id
                 adcDict[adc_id] = record
                 if not 'parent' in adcDict[adc_id]:
-                    adcDict[adc_id]['parent'] = [parent_id]
-            
+                    adcDict[adc_id]['parent'] = [parent_id]            
             records.append(record)
 
     targetRefDict = {}
@@ -745,11 +744,11 @@ if __name__ == '__main__':
         '            <link:linkbaseRef xlink:type="simple" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="core-for-Mandatory-O2C.xml"/> \n',
         '            <link:linkbaseRef xlink:type="simple" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="core-for-Mandatory-P2P.xml"/> \n',
         '            <link:linkbaseRef xlink:type="simple" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="core-for-Mandatory-Core.xml"/> \n',
-        # '            <link:linkbaseRef xlink:type="simple" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="core-for-Card-Base.xml"/> \n',
-        # '            <link:linkbaseRef xlink:type="simple" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="core-for-Card-GL.xml"/> \n',
-        # '            <link:linkbaseRef xlink:type="simple" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="core-for-Card-O2C.xml"/> \n',
-        # '            <link:linkbaseRef xlink:type="simple" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="core-for-Card-P2P.xml"/> \n',
-        # '            <link:linkbaseRef xlink:type="simple" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="core-for-Card-Core.xml"/> \n',
+        '            <link:linkbaseRef xlink:type="simple" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="core-for-Card-Base.xml"/> \n',
+        '            <link:linkbaseRef xlink:type="simple" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="core-for-Card-GL.xml"/> \n',
+        '            <link:linkbaseRef xlink:type="simple" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="core-for-Card-O2C.xml"/> \n',
+        '            <link:linkbaseRef xlink:type="simple" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="core-for-Card-P2P.xml"/> \n',
+        '            <link:linkbaseRef xlink:type="simple" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="core-for-Card-Core.xml"/> \n',
     ]
     lines += html_annotation_head
     html = [

@@ -3499,10 +3499,10 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_A017-A001" xlink:label="h_A017-A001" xlink:title="h_A017-A001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="A017-A001" xlink:to="h_A017-A001" xlink:title="all (has-hypercube): A017-A001 to h_A017-A001" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
         <!-- hypercube-dimension -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A017" xlink:label="d_A017" xlink:title="d_A017"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A017-A001" xlink:to="d_A017" xlink:title="hypercube-dimension: h_A017-A001 to d_A017" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A001" xlink:label="d_A001" xlink:title="d_A001"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A017-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A017-A001 to d_A001" order="2"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A017-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A017-A001 to d_A001" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A017" xlink:label="d_A017" xlink:title="d_A017"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A017-A001" xlink:to="d_A017" xlink:title="hypercube-dimension: h_A017-A001 to d_A017" order="2"/>
         <!-- domain-member -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A017-A001-001" xlink:label="A017-A001-001" xlink:title="A017-A001-001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="A017-A001" xlink:to="A017-A001-001" xlink:title="domain-member: A017-A001 to A017-A001-001" order="1"/>
@@ -3557,10 +3557,10 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_A019-A001" xlink:label="h_A019-A001" xlink:title="h_A019-A001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="A019-A001" xlink:to="h_A019-A001" xlink:title="all (has-hypercube): A019-A001 to h_A019-A001" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
         <!-- hypercube-dimension -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A019" xlink:label="d_A019" xlink:title="d_A019"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A019-A001" xlink:to="d_A019" xlink:title="hypercube-dimension: h_A019-A001 to d_A019" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A001" xlink:label="d_A001" xlink:title="d_A001"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A019-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A019-A001 to d_A001" order="2"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A019-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A019-A001 to d_A001" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A019" xlink:label="d_A019" xlink:title="d_A019"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A019-A001" xlink:to="d_A019" xlink:title="hypercube-dimension: h_A019-A001 to d_A019" order="2"/>
         <!-- domain-member -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A019-A001-001" xlink:label="A019-A001-001" xlink:title="A019-A001-001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="A019-A001" xlink:to="A019-A001-001" xlink:title="domain-member: A019-A001 to A019-A001-001" order="1"/>
@@ -3644,10 +3644,10 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_A024-A001" xlink:label="h_A024-A001" xlink:title="h_A024-A001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="A024-A001" xlink:to="h_A024-A001" xlink:title="all (has-hypercube): A024-A001 to h_A024-A001" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
         <!-- hypercube-dimension -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A024" xlink:label="d_A024" xlink:title="d_A024"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A024-A001" xlink:to="d_A024" xlink:title="hypercube-dimension: h_A024-A001 to d_A024" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A001" xlink:label="d_A001" xlink:title="d_A001"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A024-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A024-A001 to d_A001" order="2"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A024-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A024-A001 to d_A001" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A024" xlink:label="d_A024" xlink:title="d_A024"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A024-A001" xlink:to="d_A024" xlink:title="hypercube-dimension: h_A024-A001 to d_A024" order="2"/>
         <!-- domain-member -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A024-A001-001" xlink:label="A024-A001-001" xlink:title="A024-A001-001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="A024-A001" xlink:to="A024-A001-001" xlink:title="domain-member: A024-A001 to A024-A001-001" order="1"/>
@@ -3783,12 +3783,12 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_A026-A009" xlink:label="h_A026-A009" xlink:title="h_A026-A009"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="A026-A009" xlink:to="h_A026-A009" xlink:title="all (has-hypercube): A026-A009 to h_A026-A009" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
         <!-- hypercube-dimension -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A009" xlink:label="d_A009" xlink:title="d_A009"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A026-A009" xlink:to="d_A009" xlink:title="hypercube-dimension: h_A026-A009 to d_A009" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A025" xlink:label="d_A025" xlink:title="d_A025"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A026-A009" xlink:to="d_A025" xlink:title="hypercube-dimension: h_A026-A009 to d_A025" order="2"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A026-A009" xlink:to="d_A025" xlink:title="hypercube-dimension: h_A026-A009 to d_A025" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A026" xlink:label="d_A026" xlink:title="d_A026"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A026-A009" xlink:to="d_A026" xlink:title="hypercube-dimension: h_A026-A009 to d_A026" order="3"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A026-A009" xlink:to="d_A026" xlink:title="hypercube-dimension: h_A026-A009 to d_A026" order="2"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A009" xlink:label="d_A009" xlink:title="d_A009"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A026-A009" xlink:to="d_A009" xlink:title="hypercube-dimension: h_A026-A009 to d_A009" order="3"/>
         <!-- domain-member -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A026-A009-001" xlink:label="A026-A009-001" xlink:title="A026-A009-001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="A026-A009" xlink:to="A026-A009-001" xlink:title="domain-member: A026-A009 to A026-A009-001" order="1"/>
@@ -3858,10 +3858,10 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_A026-A093" xlink:label="h_A026-A093" xlink:title="h_A026-A093"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="A026-A093" xlink:to="h_A026-A093" xlink:title="all (has-hypercube): A026-A093 to h_A026-A093" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
         <!-- hypercube-dimension -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A026" xlink:label="d_A026" xlink:title="d_A026"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A026-A093" xlink:to="d_A026" xlink:title="hypercube-dimension: h_A026-A093 to d_A026" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A025" xlink:label="d_A025" xlink:title="d_A025"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A026-A093" xlink:to="d_A025" xlink:title="hypercube-dimension: h_A026-A093 to d_A025" order="2"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A026-A093" xlink:to="d_A025" xlink:title="hypercube-dimension: h_A026-A093 to d_A025" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A026" xlink:label="d_A026" xlink:title="d_A026"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A026-A093" xlink:to="d_A026" xlink:title="hypercube-dimension: h_A026-A093 to d_A026" order="2"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A093" xlink:label="d_A093" xlink:title="d_A093"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A026-A093" xlink:to="d_A093" xlink:title="hypercube-dimension: h_A026-A093 to d_A093" order="3"/>
         <!-- domain-member -->
@@ -4106,10 +4106,10 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_A032-A076" xlink:label="h_A032-A076" xlink:title="h_A032-A076"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="A032-A076" xlink:to="h_A032-A076" xlink:title="all (has-hypercube): A032-A076 to h_A032-A076" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
         <!-- hypercube-dimension -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A076" xlink:label="d_A076" xlink:title="d_A076"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A032-A076" xlink:to="d_A076" xlink:title="hypercube-dimension: h_A032-A076 to d_A076" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A032" xlink:label="d_A032" xlink:title="d_A032"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A032-A076" xlink:to="d_A032" xlink:title="hypercube-dimension: h_A032-A076 to d_A032" order="2"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A032-A076" xlink:to="d_A032" xlink:title="hypercube-dimension: h_A032-A076 to d_A032" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A076" xlink:label="d_A076" xlink:title="d_A076"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A032-A076" xlink:to="d_A076" xlink:title="hypercube-dimension: h_A032-A076 to d_A076" order="2"/>
         <!-- domain-member -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A032-A076-001" xlink:label="A032-A076-001" xlink:title="A032-A076-001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="A032-A076" xlink:to="A032-A076-001" xlink:title="domain-member: A032-A076 to A032-A076-001" order="1"/>
@@ -4135,10 +4135,10 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_A032-A001" xlink:label="h_A032-A001" xlink:title="h_A032-A001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="A032-A001" xlink:to="h_A032-A001" xlink:title="all (has-hypercube): A032-A001 to h_A032-A001" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
         <!-- hypercube-dimension -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A001" xlink:label="d_A001" xlink:title="d_A001"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A032-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A032-A001 to d_A001" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A032" xlink:label="d_A032" xlink:title="d_A032"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A032-A001" xlink:to="d_A032" xlink:title="hypercube-dimension: h_A032-A001 to d_A032" order="2"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A032-A001" xlink:to="d_A032" xlink:title="hypercube-dimension: h_A032-A001 to d_A032" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A001" xlink:label="d_A001" xlink:title="d_A001"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A032-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A032-A001 to d_A001" order="2"/>
         <!-- domain-member -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A032-A001-001" xlink:label="A032-A001-001" xlink:title="A032-A001-001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="A032-A001" xlink:to="A032-A001-001" xlink:title="domain-member: A032-A001 to A032-A001-001" order="1"/>
@@ -4164,10 +4164,10 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_A033-A076" xlink:label="h_A033-A076" xlink:title="h_A033-A076"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="A033-A076" xlink:to="h_A033-A076" xlink:title="all (has-hypercube): A033-A076 to h_A033-A076" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
         <!-- hypercube-dimension -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A076" xlink:label="d_A076" xlink:title="d_A076"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A033-A076" xlink:to="d_A076" xlink:title="hypercube-dimension: h_A033-A076 to d_A076" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A033" xlink:label="d_A033" xlink:title="d_A033"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A033-A076" xlink:to="d_A033" xlink:title="hypercube-dimension: h_A033-A076 to d_A033" order="2"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A033-A076" xlink:to="d_A033" xlink:title="hypercube-dimension: h_A033-A076 to d_A033" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A076" xlink:label="d_A076" xlink:title="d_A076"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A033-A076" xlink:to="d_A076" xlink:title="hypercube-dimension: h_A033-A076 to d_A076" order="2"/>
         <!-- domain-member -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A033-A076-001" xlink:label="A033-A076-001" xlink:title="A033-A076-001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="A033-A076" xlink:to="A033-A076-001" xlink:title="domain-member: A033-A076 to A033-A076-001" order="1"/>
@@ -4357,10 +4357,10 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_A034-A089" xlink:label="h_A034-A089" xlink:title="h_A034-A089"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="A034-A089" xlink:to="h_A034-A089" xlink:title="all (has-hypercube): A034-A089 to h_A034-A089" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
         <!-- hypercube-dimension -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A033" xlink:label="d_A033" xlink:title="d_A033"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A034-A089" xlink:to="d_A033" xlink:title="hypercube-dimension: h_A034-A089 to d_A033" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A089" xlink:label="d_A089" xlink:title="d_A089"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A034-A089" xlink:to="d_A089" xlink:title="hypercube-dimension: h_A034-A089 to d_A089" order="2"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A034-A089" xlink:to="d_A089" xlink:title="hypercube-dimension: h_A034-A089 to d_A089" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A033" xlink:label="d_A033" xlink:title="d_A033"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A034-A089" xlink:to="d_A033" xlink:title="hypercube-dimension: h_A034-A089 to d_A033" order="2"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A034" xlink:label="d_A034" xlink:title="d_A034"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A034-A089" xlink:to="d_A034" xlink:title="hypercube-dimension: h_A034-A089 to d_A034" order="3"/>
         <!-- domain-member -->
@@ -4460,10 +4460,10 @@
         <!-- hypercube-dimension -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A033" xlink:label="d_A033" xlink:title="d_A033"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A034-A001" xlink:to="d_A033" xlink:title="hypercube-dimension: h_A034-A001 to d_A033" order="1"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A034" xlink:label="d_A034" xlink:title="d_A034"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A034-A001" xlink:to="d_A034" xlink:title="hypercube-dimension: h_A034-A001 to d_A034" order="2"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A001" xlink:label="d_A001" xlink:title="d_A001"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A034-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A034-A001 to d_A001" order="3"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A034-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A034-A001 to d_A001" order="2"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A034" xlink:label="d_A034" xlink:title="d_A034"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A034-A001" xlink:to="d_A034" xlink:title="hypercube-dimension: h_A034-A001 to d_A034" order="3"/>
         <!-- domain-member -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A034-A001-001" xlink:label="A034-A001-001" xlink:title="A034-A001-001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="A034-A001" xlink:to="A034-A001-001" xlink:title="domain-member: A034-A001 to A034-A001-001" order="1"/>
@@ -4489,10 +4489,10 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_A035-A076" xlink:label="h_A035-A076" xlink:title="h_A035-A076"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="A035-A076" xlink:to="h_A035-A076" xlink:title="all (has-hypercube): A035-A076 to h_A035-A076" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
         <!-- hypercube-dimension -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A076" xlink:label="d_A076" xlink:title="d_A076"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A035-A076" xlink:to="d_A076" xlink:title="hypercube-dimension: h_A035-A076 to d_A076" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A035" xlink:label="d_A035" xlink:title="d_A035"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A035-A076" xlink:to="d_A035" xlink:title="hypercube-dimension: h_A035-A076 to d_A035" order="2"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A035-A076" xlink:to="d_A035" xlink:title="hypercube-dimension: h_A035-A076 to d_A035" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A076" xlink:label="d_A076" xlink:title="d_A076"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A035-A076" xlink:to="d_A076" xlink:title="hypercube-dimension: h_A035-A076 to d_A076" order="2"/>
         <!-- domain-member -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A035-A076-001" xlink:label="A035-A076-001" xlink:title="A035-A076-001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="A035-A076" xlink:to="A035-A076-001" xlink:title="domain-member: A035-A076 to A035-A076-001" order="1"/>
@@ -4518,10 +4518,10 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_A035-A001" xlink:label="h_A035-A001" xlink:title="h_A035-A001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="A035-A001" xlink:to="h_A035-A001" xlink:title="all (has-hypercube): A035-A001 to h_A035-A001" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
         <!-- hypercube-dimension -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A001" xlink:label="d_A001" xlink:title="d_A001"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A035-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A035-A001 to d_A001" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A035" xlink:label="d_A035" xlink:title="d_A035"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A035-A001" xlink:to="d_A035" xlink:title="hypercube-dimension: h_A035-A001 to d_A035" order="2"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A035-A001" xlink:to="d_A035" xlink:title="hypercube-dimension: h_A035-A001 to d_A035" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A001" xlink:label="d_A001" xlink:title="d_A001"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A035-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A035-A001 to d_A001" order="2"/>
         <!-- domain-member -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A035-A001-001" xlink:label="A035-A001-001" xlink:title="A035-A001-001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="A035-A001" xlink:to="A035-A001-001" xlink:title="domain-member: A035-A001 to A035-A001-001" order="1"/>
@@ -4616,12 +4616,12 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_A036-A060" xlink:label="h_A036-A060" xlink:title="h_A036-A060"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="A036-A060" xlink:to="h_A036-A060" xlink:title="all (has-hypercube): A036-A060 to h_A036-A060" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
         <!-- hypercube-dimension -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A036" xlink:label="d_A036" xlink:title="d_A036"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A036-A060" xlink:to="d_A036" xlink:title="hypercube-dimension: h_A036-A060 to d_A036" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A060" xlink:label="d_A060" xlink:title="d_A060"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A036-A060" xlink:to="d_A060" xlink:title="hypercube-dimension: h_A036-A060 to d_A060" order="2"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A036-A060" xlink:to="d_A060" xlink:title="hypercube-dimension: h_A036-A060 to d_A060" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A035" xlink:label="d_A035" xlink:title="d_A035"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A036-A060" xlink:to="d_A035" xlink:title="hypercube-dimension: h_A036-A060 to d_A035" order="3"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A036-A060" xlink:to="d_A035" xlink:title="hypercube-dimension: h_A036-A060 to d_A035" order="2"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A036" xlink:label="d_A036" xlink:title="d_A036"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A036-A060" xlink:to="d_A036" xlink:title="hypercube-dimension: h_A036-A060 to d_A036" order="3"/>
         <!-- domain-member -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A036-A060-001" xlink:label="A036-A060-001" xlink:title="A036-A060-001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="A036-A060" xlink:to="A036-A060-001" xlink:title="domain-member: A036-A060 to A036-A060-001" order="1"/>
@@ -4698,12 +4698,12 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_A060-A001" xlink:label="h_A060-A001" xlink:title="h_A060-A001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="A060-A001" xlink:to="h_A060-A001" xlink:title="all (has-hypercube): A060-A001 to h_A060-A001" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
         <!-- hypercube-dimension -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A036" xlink:label="d_A036" xlink:title="d_A036"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A060-A001" xlink:to="d_A036" xlink:title="hypercube-dimension: h_A060-A001 to d_A036" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A060" xlink:label="d_A060" xlink:title="d_A060"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A060-A001" xlink:to="d_A060" xlink:title="hypercube-dimension: h_A060-A001 to d_A060" order="2"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A060-A001" xlink:to="d_A060" xlink:title="hypercube-dimension: h_A060-A001 to d_A060" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A001" xlink:label="d_A001" xlink:title="d_A001"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A060-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A060-A001 to d_A001" order="3"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A060-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A060-A001 to d_A001" order="2"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A036" xlink:label="d_A036" xlink:title="d_A036"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A060-A001" xlink:to="d_A036" xlink:title="hypercube-dimension: h_A060-A001 to d_A036" order="3"/>
         <!-- domain-member -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A060-A001-001" xlink:label="A060-A001-001" xlink:title="A060-A001-001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="A060-A001" xlink:to="A060-A001-001" xlink:title="domain-member: A060-A001 to A060-A001-001" order="1"/>
@@ -4754,10 +4754,10 @@
         <!-- hypercube-dimension -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A036" xlink:label="d_A036" xlink:title="d_A036"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A036-A082" xlink:to="d_A036" xlink:title="hypercube-dimension: h_A036-A082 to d_A036" order="1"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A082" xlink:label="d_A082" xlink:title="d_A082"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A036-A082" xlink:to="d_A082" xlink:title="hypercube-dimension: h_A036-A082 to d_A082" order="2"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A035" xlink:label="d_A035" xlink:title="d_A035"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A036-A082" xlink:to="d_A035" xlink:title="hypercube-dimension: h_A036-A082 to d_A035" order="3"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A036-A082" xlink:to="d_A035" xlink:title="hypercube-dimension: h_A036-A082 to d_A035" order="2"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A082" xlink:label="d_A082" xlink:title="d_A082"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A036-A082" xlink:to="d_A082" xlink:title="hypercube-dimension: h_A036-A082 to d_A082" order="3"/>
         <!-- domain-member -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A036-A082-001" xlink:label="A036-A082-001" xlink:title="A036-A082-001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="A036-A082" xlink:to="A036-A082-001" xlink:title="domain-member: A036-A082 to A036-A082-001" order="1"/>
@@ -4808,10 +4808,10 @@
         <!-- hypercube-dimension -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A036" xlink:label="d_A036" xlink:title="d_A036"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A082-A001" xlink:to="d_A036" xlink:title="hypercube-dimension: h_A082-A001 to d_A036" order="1"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A082" xlink:label="d_A082" xlink:title="d_A082"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A082-A001" xlink:to="d_A082" xlink:title="hypercube-dimension: h_A082-A001 to d_A082" order="2"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A001" xlink:label="d_A001" xlink:title="d_A001"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A082-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A082-A001 to d_A001" order="3"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A082-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A082-A001 to d_A001" order="2"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A082" xlink:label="d_A082" xlink:title="d_A082"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A082-A001" xlink:to="d_A082" xlink:title="hypercube-dimension: h_A082-A001 to d_A082" order="3"/>
         <!-- domain-member -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A082-A001-001" xlink:label="A082-A001-001" xlink:title="A082-A001-001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="A082-A001" xlink:to="A082-A001-001" xlink:title="domain-member: A082-A001 to A082-A001-001" order="1"/>
@@ -4897,10 +4897,10 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_A037-A001" xlink:label="h_A037-A001" xlink:title="h_A037-A001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="A037-A001" xlink:to="h_A037-A001" xlink:title="all (has-hypercube): A037-A001 to h_A037-A001" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
         <!-- hypercube-dimension -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A037" xlink:label="d_A037" xlink:title="d_A037"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A037-A001" xlink:to="d_A037" xlink:title="hypercube-dimension: h_A037-A001 to d_A037" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A001" xlink:label="d_A001" xlink:title="d_A001"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A037-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A037-A001 to d_A001" order="2"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A037-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A037-A001 to d_A001" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A037" xlink:label="d_A037" xlink:title="d_A037"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A037-A001" xlink:to="d_A037" xlink:title="hypercube-dimension: h_A037-A001 to d_A037" order="2"/>
         <!-- domain-member -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A037-A001-001" xlink:label="A037-A001-001" xlink:title="A037-A001-001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="A037-A001" xlink:to="A037-A001-001" xlink:title="domain-member: A037-A001 to A037-A001-001" order="1"/>
@@ -5015,12 +5015,12 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_A038-A004" xlink:label="h_A038-A004" xlink:title="h_A038-A004"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="A038-A004" xlink:to="h_A038-A004" xlink:title="all (has-hypercube): A038-A004 to h_A038-A004" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
         <!-- hypercube-dimension -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A037" xlink:label="d_A037" xlink:title="d_A037"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A038-A004" xlink:to="d_A037" xlink:title="hypercube-dimension: h_A038-A004 to d_A037" order="1"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A038" xlink:label="d_A038" xlink:title="d_A038"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A038-A004" xlink:to="d_A038" xlink:title="hypercube-dimension: h_A038-A004 to d_A038" order="2"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A004" xlink:label="d_A004" xlink:title="d_A004"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A038-A004" xlink:to="d_A004" xlink:title="hypercube-dimension: h_A038-A004 to d_A004" order="3"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A038-A004" xlink:to="d_A004" xlink:title="hypercube-dimension: h_A038-A004 to d_A004" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A037" xlink:label="d_A037" xlink:title="d_A037"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A038-A004" xlink:to="d_A037" xlink:title="hypercube-dimension: h_A038-A004 to d_A037" order="2"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A038" xlink:label="d_A038" xlink:title="d_A038"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A038-A004" xlink:to="d_A038" xlink:title="hypercube-dimension: h_A038-A004 to d_A038" order="3"/>
         <!-- domain-member -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A038-A004-001" xlink:label="A038-A004-001" xlink:title="A038-A004-001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="A038-A004" xlink:to="A038-A004-001" xlink:title="domain-member: A038-A004 to A038-A004-001" order="1"/>
@@ -5058,12 +5058,12 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_A038-A082" xlink:label="h_A038-A082" xlink:title="h_A038-A082"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="A038-A082" xlink:to="h_A038-A082" xlink:title="all (has-hypercube): A038-A082 to h_A038-A082" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
         <!-- hypercube-dimension -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A037" xlink:label="d_A037" xlink:title="d_A037"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A038-A082" xlink:to="d_A037" xlink:title="hypercube-dimension: h_A038-A082 to d_A037" order="1"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A082" xlink:label="d_A082" xlink:title="d_A082"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A038-A082" xlink:to="d_A082" xlink:title="hypercube-dimension: h_A038-A082 to d_A082" order="2"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A038" xlink:label="d_A038" xlink:title="d_A038"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A038-A082" xlink:to="d_A038" xlink:title="hypercube-dimension: h_A038-A082 to d_A038" order="3"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A038-A082" xlink:to="d_A038" xlink:title="hypercube-dimension: h_A038-A082 to d_A038" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A037" xlink:label="d_A037" xlink:title="d_A037"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A038-A082" xlink:to="d_A037" xlink:title="hypercube-dimension: h_A038-A082 to d_A037" order="2"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A082" xlink:label="d_A082" xlink:title="d_A082"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A038-A082" xlink:to="d_A082" xlink:title="hypercube-dimension: h_A038-A082 to d_A082" order="3"/>
         <!-- domain-member -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A038-A082-001" xlink:label="A038-A082-001" xlink:title="A038-A082-001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="A038-A082" xlink:to="A038-A082-001" xlink:title="domain-member: A038-A082 to A038-A082-001" order="1"/>
@@ -5112,10 +5112,10 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_A038-A060" xlink:label="h_A038-A060" xlink:title="h_A038-A060"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="A038-A060" xlink:to="h_A038-A060" xlink:title="all (has-hypercube): A038-A060 to h_A038-A060" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
         <!-- hypercube-dimension -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A037" xlink:label="d_A037" xlink:title="d_A037"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A038-A060" xlink:to="d_A037" xlink:title="hypercube-dimension: h_A038-A060 to d_A037" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A060" xlink:label="d_A060" xlink:title="d_A060"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A038-A060" xlink:to="d_A060" xlink:title="hypercube-dimension: h_A038-A060 to d_A060" order="2"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A038-A060" xlink:to="d_A060" xlink:title="hypercube-dimension: h_A038-A060 to d_A060" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A037" xlink:label="d_A037" xlink:title="d_A037"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A038-A060" xlink:to="d_A037" xlink:title="hypercube-dimension: h_A038-A060 to d_A037" order="2"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A038" xlink:label="d_A038" xlink:title="d_A038"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A038-A060" xlink:to="d_A038" xlink:title="hypercube-dimension: h_A038-A060 to d_A038" order="3"/>
         <!-- domain-member -->
@@ -5194,10 +5194,10 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_A038-A001" xlink:label="h_A038-A001" xlink:title="h_A038-A001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="A038-A001" xlink:to="h_A038-A001" xlink:title="all (has-hypercube): A038-A001 to h_A038-A001" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
         <!-- hypercube-dimension -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A037" xlink:label="d_A037" xlink:title="d_A037"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A038-A001" xlink:to="d_A037" xlink:title="hypercube-dimension: h_A038-A001 to d_A037" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A001" xlink:label="d_A001" xlink:title="d_A001"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A038-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A038-A001 to d_A001" order="2"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A038-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A038-A001 to d_A001" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A037" xlink:label="d_A037" xlink:title="d_A037"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A038-A001" xlink:to="d_A037" xlink:title="hypercube-dimension: h_A038-A001 to d_A037" order="2"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A038" xlink:label="d_A038" xlink:title="d_A038"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A038-A001" xlink:to="d_A038" xlink:title="hypercube-dimension: h_A038-A001 to d_A038" order="3"/>
         <!-- domain-member -->
@@ -5306,10 +5306,10 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_A039-A001" xlink:label="h_A039-A001" xlink:title="h_A039-A001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="A039-A001" xlink:to="h_A039-A001" xlink:title="all (has-hypercube): A039-A001 to h_A039-A001" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
         <!-- hypercube-dimension -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A039" xlink:label="d_A039" xlink:title="d_A039"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A039-A001" xlink:to="d_A039" xlink:title="hypercube-dimension: h_A039-A001 to d_A039" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A001" xlink:label="d_A001" xlink:title="d_A001"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A039-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A039-A001 to d_A001" order="2"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A039-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A039-A001 to d_A001" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A039" xlink:label="d_A039" xlink:title="d_A039"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A039-A001" xlink:to="d_A039" xlink:title="hypercube-dimension: h_A039-A001 to d_A039" order="2"/>
         <!-- domain-member -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A039-A001-001" xlink:label="A039-A001-001" xlink:title="A039-A001-001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="A039-A001" xlink:to="A039-A001-001" xlink:title="domain-member: A039-A001 to A039-A001-001" order="1"/>
@@ -5335,10 +5335,10 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_A039-A040" xlink:label="h_A039-A040" xlink:title="h_A039-A040"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="A039-A040" xlink:to="h_A039-A040" xlink:title="all (has-hypercube): A039-A040 to h_A039-A040" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
         <!-- hypercube-dimension -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A039" xlink:label="d_A039" xlink:title="d_A039"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A039-A040" xlink:to="d_A039" xlink:title="hypercube-dimension: h_A039-A040 to d_A039" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A040" xlink:label="d_A040" xlink:title="d_A040"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A039-A040" xlink:to="d_A040" xlink:title="hypercube-dimension: h_A039-A040 to d_A040" order="2"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A039-A040" xlink:to="d_A040" xlink:title="hypercube-dimension: h_A039-A040 to d_A040" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A039" xlink:label="d_A039" xlink:title="d_A039"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A039-A040" xlink:to="d_A039" xlink:title="hypercube-dimension: h_A039-A040 to d_A039" order="2"/>
         <!-- domain-member -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A039-A040-002" xlink:label="A039-A040-002" xlink:title="A039-A040-002"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="A039-A040" xlink:to="A039-A040-002" xlink:title="domain-member: A039-A040 to A039-A040-002" order="1"/>
@@ -5415,12 +5415,12 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_A040-A060" xlink:label="h_A040-A060" xlink:title="h_A040-A060"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="A040-A060" xlink:to="h_A040-A060" xlink:title="all (has-hypercube): A040-A060 to h_A040-A060" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
         <!-- hypercube-dimension -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A039" xlink:label="d_A039" xlink:title="d_A039"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A040-A060" xlink:to="d_A039" xlink:title="hypercube-dimension: h_A040-A060 to d_A039" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A040" xlink:label="d_A040" xlink:title="d_A040"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A040-A060" xlink:to="d_A040" xlink:title="hypercube-dimension: h_A040-A060 to d_A040" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A060" xlink:label="d_A060" xlink:title="d_A060"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A040-A060" xlink:to="d_A060" xlink:title="hypercube-dimension: h_A040-A060 to d_A060" order="2"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A040" xlink:label="d_A040" xlink:title="d_A040"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A040-A060" xlink:to="d_A040" xlink:title="hypercube-dimension: h_A040-A060 to d_A040" order="3"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A039" xlink:label="d_A039" xlink:title="d_A039"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A040-A060" xlink:to="d_A039" xlink:title="hypercube-dimension: h_A040-A060 to d_A039" order="3"/>
         <!-- domain-member -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A040-A060-001" xlink:label="A040-A060-001" xlink:title="A040-A060-001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="A040-A060" xlink:to="A040-A060-001" xlink:title="domain-member: A040-A060 to A040-A060-001" order="1"/>
@@ -5497,12 +5497,12 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_A040-A082" xlink:label="h_A040-A082" xlink:title="h_A040-A082"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="A040-A082" xlink:to="h_A040-A082" xlink:title="all (has-hypercube): A040-A082 to h_A040-A082" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
         <!-- hypercube-dimension -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A039" xlink:label="d_A039" xlink:title="d_A039"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A040-A082" xlink:to="d_A039" xlink:title="hypercube-dimension: h_A040-A082 to d_A039" order="1"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A082" xlink:label="d_A082" xlink:title="d_A082"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A040-A082" xlink:to="d_A082" xlink:title="hypercube-dimension: h_A040-A082 to d_A082" order="2"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A040" xlink:label="d_A040" xlink:title="d_A040"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A040-A082" xlink:to="d_A040" xlink:title="hypercube-dimension: h_A040-A082 to d_A040" order="3"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A040-A082" xlink:to="d_A040" xlink:title="hypercube-dimension: h_A040-A082 to d_A040" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A039" xlink:label="d_A039" xlink:title="d_A039"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A040-A082" xlink:to="d_A039" xlink:title="hypercube-dimension: h_A040-A082 to d_A039" order="2"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A082" xlink:label="d_A082" xlink:title="d_A082"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A040-A082" xlink:to="d_A082" xlink:title="hypercube-dimension: h_A040-A082 to d_A082" order="3"/>
         <!-- domain-member -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A040-A082-001" xlink:label="A040-A082-001" xlink:title="A040-A082-001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="A040-A082" xlink:to="A040-A082-001" xlink:title="domain-member: A040-A082 to A040-A082-001" order="1"/>
@@ -5551,12 +5551,12 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_A040-A001" xlink:label="h_A040-A001" xlink:title="h_A040-A001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="A040-A001" xlink:to="h_A040-A001" xlink:title="all (has-hypercube): A040-A001 to h_A040-A001" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
         <!-- hypercube-dimension -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A039" xlink:label="d_A039" xlink:title="d_A039"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A040-A001" xlink:to="d_A039" xlink:title="hypercube-dimension: h_A040-A001 to d_A039" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A040" xlink:label="d_A040" xlink:title="d_A040"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A040-A001" xlink:to="d_A040" xlink:title="hypercube-dimension: h_A040-A001 to d_A040" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A001" xlink:label="d_A001" xlink:title="d_A001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A040-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A040-A001 to d_A001" order="2"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A040" xlink:label="d_A040" xlink:title="d_A040"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A040-A001" xlink:to="d_A040" xlink:title="hypercube-dimension: h_A040-A001 to d_A040" order="3"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A039" xlink:label="d_A039" xlink:title="d_A039"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A040-A001" xlink:to="d_A039" xlink:title="hypercube-dimension: h_A040-A001 to d_A039" order="3"/>
         <!-- domain-member -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A040-A001-001" xlink:label="A040-A001-001" xlink:title="A040-A001-001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="A040-A001" xlink:to="A040-A001-001" xlink:title="domain-member: A040-A001 to A040-A001-001" order="1"/>
@@ -5611,10 +5611,10 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_A041-A001" xlink:label="h_A041-A001" xlink:title="h_A041-A001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="A041-A001" xlink:to="h_A041-A001" xlink:title="all (has-hypercube): A041-A001 to h_A041-A001" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
         <!-- hypercube-dimension -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A041" xlink:label="d_A041" xlink:title="d_A041"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A041-A001" xlink:to="d_A041" xlink:title="hypercube-dimension: h_A041-A001 to d_A041" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A001" xlink:label="d_A001" xlink:title="d_A001"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A041-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A041-A001 to d_A001" order="2"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A041-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A041-A001 to d_A001" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A041" xlink:label="d_A041" xlink:title="d_A041"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A041-A001" xlink:to="d_A041" xlink:title="hypercube-dimension: h_A041-A001 to d_A041" order="2"/>
         <!-- domain-member -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A041-A001-001" xlink:label="A041-A001-001" xlink:title="A041-A001-001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="A041-A001" xlink:to="A041-A001-001" xlink:title="domain-member: A041-A001 to A041-A001-001" order="1"/>
@@ -5720,12 +5720,12 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_A042-A001" xlink:label="h_A042-A001" xlink:title="h_A042-A001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="A042-A001" xlink:to="h_A042-A001" xlink:title="all (has-hypercube): A042-A001 to h_A042-A001" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
         <!-- hypercube-dimension -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A042" xlink:label="d_A042" xlink:title="d_A042"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A042-A001" xlink:to="d_A042" xlink:title="hypercube-dimension: h_A042-A001 to d_A042" order="1"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A041" xlink:label="d_A041" xlink:title="d_A041"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A042-A001" xlink:to="d_A041" xlink:title="hypercube-dimension: h_A042-A001 to d_A041" order="2"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A001" xlink:label="d_A001" xlink:title="d_A001"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A042-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A042-A001 to d_A001" order="3"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A042-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A042-A001 to d_A001" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A042" xlink:label="d_A042" xlink:title="d_A042"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A042-A001" xlink:to="d_A042" xlink:title="hypercube-dimension: h_A042-A001 to d_A042" order="2"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A041" xlink:label="d_A041" xlink:title="d_A041"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A042-A001" xlink:to="d_A041" xlink:title="hypercube-dimension: h_A042-A001 to d_A041" order="3"/>
         <!-- domain-member -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A042-A001-001" xlink:label="A042-A001-001" xlink:title="A042-A001-001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="A042-A001" xlink:to="A042-A001-001" xlink:title="domain-member: A042-A001 to A042-A001-001" order="1"/>
@@ -5780,10 +5780,10 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_A044-A076" xlink:label="h_A044-A076" xlink:title="h_A044-A076"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="A044-A076" xlink:to="h_A044-A076" xlink:title="all (has-hypercube): A044-A076 to h_A044-A076" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
         <!-- hypercube-dimension -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A076" xlink:label="d_A076" xlink:title="d_A076"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A044-A076" xlink:to="d_A076" xlink:title="hypercube-dimension: h_A044-A076 to d_A076" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A044" xlink:label="d_A044" xlink:title="d_A044"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A044-A076" xlink:to="d_A044" xlink:title="hypercube-dimension: h_A044-A076 to d_A044" order="2"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A044-A076" xlink:to="d_A044" xlink:title="hypercube-dimension: h_A044-A076 to d_A044" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A076" xlink:label="d_A076" xlink:title="d_A076"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A044-A076" xlink:to="d_A076" xlink:title="hypercube-dimension: h_A044-A076 to d_A076" order="2"/>
         <!-- domain-member -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A044-A076-001" xlink:label="A044-A076-001" xlink:title="A044-A076-001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="A044-A076" xlink:to="A044-A076-001" xlink:title="domain-member: A044-A076 to A044-A076-001" order="1"/>
@@ -5809,10 +5809,10 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_A044-A001" xlink:label="h_A044-A001" xlink:title="h_A044-A001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="A044-A001" xlink:to="h_A044-A001" xlink:title="all (has-hypercube): A044-A001 to h_A044-A001" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
         <!-- hypercube-dimension -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A001" xlink:label="d_A001" xlink:title="d_A001"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A044-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A044-A001 to d_A001" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A044" xlink:label="d_A044" xlink:title="d_A044"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A044-A001" xlink:to="d_A044" xlink:title="hypercube-dimension: h_A044-A001 to d_A044" order="2"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A044-A001" xlink:to="d_A044" xlink:title="hypercube-dimension: h_A044-A001 to d_A044" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A001" xlink:label="d_A001" xlink:title="d_A001"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A044-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A044-A001 to d_A001" order="2"/>
         <!-- domain-member -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A044-A001-001" xlink:label="A044-A001-001" xlink:title="A044-A001-001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="A044-A001" xlink:to="A044-A001-001" xlink:title="domain-member: A044-A001 to A044-A001-001" order="1"/>
@@ -5867,10 +5867,10 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_A045-A001" xlink:label="h_A045-A001" xlink:title="h_A045-A001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="A045-A001" xlink:to="h_A045-A001" xlink:title="all (has-hypercube): A045-A001 to h_A045-A001" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
         <!-- hypercube-dimension -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A045" xlink:label="d_A045" xlink:title="d_A045"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A045-A001" xlink:to="d_A045" xlink:title="hypercube-dimension: h_A045-A001 to d_A045" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A001" xlink:label="d_A001" xlink:title="d_A001"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A045-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A045-A001 to d_A001" order="2"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A045-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A045-A001 to d_A001" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A045" xlink:label="d_A045" xlink:title="d_A045"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A045-A001" xlink:to="d_A045" xlink:title="hypercube-dimension: h_A045-A001 to d_A045" order="2"/>
         <!-- domain-member -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A045-A001-001" xlink:label="A045-A001-001" xlink:title="A045-A001-001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="A045-A001" xlink:to="A045-A001-001" xlink:title="domain-member: A045-A001 to A045-A001-001" order="1"/>
@@ -5925,10 +5925,10 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_A046-A080" xlink:label="h_A046-A080" xlink:title="h_A046-A080"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="A046-A080" xlink:to="h_A046-A080" xlink:title="all (has-hypercube): A046-A080 to h_A046-A080" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
         <!-- hypercube-dimension -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A080" xlink:label="d_A080" xlink:title="d_A080"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A046-A080" xlink:to="d_A080" xlink:title="hypercube-dimension: h_A046-A080 to d_A080" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A046" xlink:label="d_A046" xlink:title="d_A046"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A046-A080" xlink:to="d_A046" xlink:title="hypercube-dimension: h_A046-A080 to d_A046" order="2"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A046-A080" xlink:to="d_A046" xlink:title="hypercube-dimension: h_A046-A080 to d_A046" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A080" xlink:label="d_A080" xlink:title="d_A080"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A046-A080" xlink:to="d_A080" xlink:title="hypercube-dimension: h_A046-A080 to d_A080" order="2"/>
         <!-- domain-member -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A046-A080-001" xlink:label="A046-A080-001" xlink:title="A046-A080-001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="A046-A080" xlink:to="A046-A080-001" xlink:title="domain-member: A046-A080 to A046-A080-001" order="1"/>
@@ -6105,12 +6105,12 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_A047-A080" xlink:label="h_A047-A080" xlink:title="h_A047-A080"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="A047-A080" xlink:to="h_A047-A080" xlink:title="all (has-hypercube): A047-A080 to h_A047-A080" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
         <!-- hypercube-dimension -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A080" xlink:label="d_A080" xlink:title="d_A080"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A047-A080" xlink:to="d_A080" xlink:title="hypercube-dimension: h_A047-A080 to d_A080" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A047" xlink:label="d_A047" xlink:title="d_A047"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A047-A080" xlink:to="d_A047" xlink:title="hypercube-dimension: h_A047-A080 to d_A047" order="2"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A047-A080" xlink:to="d_A047" xlink:title="hypercube-dimension: h_A047-A080 to d_A047" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A046" xlink:label="d_A046" xlink:title="d_A046"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A047-A080" xlink:to="d_A046" xlink:title="hypercube-dimension: h_A047-A080 to d_A046" order="3"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A047-A080" xlink:to="d_A046" xlink:title="hypercube-dimension: h_A047-A080 to d_A046" order="2"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A080" xlink:label="d_A080" xlink:title="d_A080"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A047-A080" xlink:to="d_A080" xlink:title="hypercube-dimension: h_A047-A080 to d_A080" order="3"/>
         <!-- domain-member -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A047-A080-001" xlink:label="A047-A080-001" xlink:title="A047-A080-001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="A047-A080" xlink:to="A047-A080-001" xlink:title="domain-member: A047-A080 to A047-A080-001" order="1"/>
@@ -6159,10 +6159,10 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_A047-A001" xlink:label="h_A047-A001" xlink:title="h_A047-A001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="A047-A001" xlink:to="h_A047-A001" xlink:title="all (has-hypercube): A047-A001 to h_A047-A001" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
         <!-- hypercube-dimension -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A001" xlink:label="d_A001" xlink:title="d_A001"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A047-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A047-A001 to d_A001" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A047" xlink:label="d_A047" xlink:title="d_A047"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A047-A001" xlink:to="d_A047" xlink:title="hypercube-dimension: h_A047-A001 to d_A047" order="2"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A047-A001" xlink:to="d_A047" xlink:title="hypercube-dimension: h_A047-A001 to d_A047" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A001" xlink:label="d_A001" xlink:title="d_A001"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A047-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A047-A001 to d_A001" order="2"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A046" xlink:label="d_A046" xlink:title="d_A046"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A047-A001" xlink:to="d_A046" xlink:title="hypercube-dimension: h_A047-A001 to d_A046" order="3"/>
         <!-- domain-member -->
@@ -6248,10 +6248,10 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_A048-A049" xlink:label="h_A048-A049" xlink:title="h_A048-A049"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="A048-A049" xlink:to="h_A048-A049" xlink:title="all (has-hypercube): A048-A049 to h_A048-A049" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
         <!-- hypercube-dimension -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A048" xlink:label="d_A048" xlink:title="d_A048"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A048-A049" xlink:to="d_A048" xlink:title="hypercube-dimension: h_A048-A049 to d_A048" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A049" xlink:label="d_A049" xlink:title="d_A049"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A048-A049" xlink:to="d_A049" xlink:title="hypercube-dimension: h_A048-A049 to d_A049" order="2"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A048-A049" xlink:to="d_A049" xlink:title="hypercube-dimension: h_A048-A049 to d_A049" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A048" xlink:label="d_A048" xlink:title="d_A048"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A048-A049" xlink:to="d_A048" xlink:title="hypercube-dimension: h_A048-A049 to d_A048" order="2"/>
         <!-- domain-member -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A048-A049-002" xlink:label="A048-A049-002" xlink:title="A048-A049-002"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="A048-A049" xlink:to="A048-A049-002" xlink:title="domain-member: A048-A049 to A048-A049-002" order="1"/>
@@ -6333,10 +6333,10 @@
         <!-- hypercube-dimension -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A001" xlink:label="d_A001" xlink:title="d_A001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A049-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A049-A001 to d_A001" order="1"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A048" xlink:label="d_A048" xlink:title="d_A048"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A049-A001" xlink:to="d_A048" xlink:title="hypercube-dimension: h_A049-A001 to d_A048" order="2"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A049" xlink:label="d_A049" xlink:title="d_A049"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A049-A001" xlink:to="d_A049" xlink:title="hypercube-dimension: h_A049-A001 to d_A049" order="3"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A049-A001" xlink:to="d_A049" xlink:title="hypercube-dimension: h_A049-A001 to d_A049" order="2"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A048" xlink:label="d_A048" xlink:title="d_A048"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A049-A001" xlink:to="d_A048" xlink:title="hypercube-dimension: h_A049-A001 to d_A048" order="3"/>
         <!-- domain-member -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A049-A001-001" xlink:label="A049-A001-001" xlink:title="A049-A001-001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="A049-A001" xlink:to="A049-A001-001" xlink:title="domain-member: A049-A001 to A049-A001-001" order="1"/>
@@ -6487,12 +6487,12 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_A051-A082" xlink:label="h_A051-A082" xlink:title="h_A051-A082"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="A051-A082" xlink:to="h_A051-A082" xlink:title="all (has-hypercube): A051-A082 to h_A051-A082" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
         <!-- hypercube-dimension -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A082" xlink:label="d_A082" xlink:title="d_A082"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A051-A082" xlink:to="d_A082" xlink:title="hypercube-dimension: h_A051-A082 to d_A082" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A051" xlink:label="d_A051" xlink:title="d_A051"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A051-A082" xlink:to="d_A051" xlink:title="hypercube-dimension: h_A051-A082 to d_A051" order="2"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A051-A082" xlink:to="d_A051" xlink:title="hypercube-dimension: h_A051-A082 to d_A051" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A050" xlink:label="d_A050" xlink:title="d_A050"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A051-A082" xlink:to="d_A050" xlink:title="hypercube-dimension: h_A051-A082 to d_A050" order="3"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A051-A082" xlink:to="d_A050" xlink:title="hypercube-dimension: h_A051-A082 to d_A050" order="2"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A082" xlink:label="d_A082" xlink:title="d_A082"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A051-A082" xlink:to="d_A082" xlink:title="hypercube-dimension: h_A051-A082 to d_A082" order="3"/>
         <!-- domain-member -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A051-A082-001" xlink:label="A051-A082-001" xlink:title="A051-A082-001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="A051-A082" xlink:to="A051-A082-001" xlink:title="domain-member: A051-A082 to A051-A082-001" order="1"/>
@@ -6541,12 +6541,12 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_A051-A001" xlink:label="h_A051-A001" xlink:title="h_A051-A001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="A051-A001" xlink:to="h_A051-A001" xlink:title="all (has-hypercube): A051-A001 to h_A051-A001" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
         <!-- hypercube-dimension -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A001" xlink:label="d_A001" xlink:title="d_A001"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A051-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A051-A001 to d_A001" order="1"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A050" xlink:label="d_A050" xlink:title="d_A050"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A051-A001" xlink:to="d_A050" xlink:title="hypercube-dimension: h_A051-A001 to d_A050" order="2"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A051" xlink:label="d_A051" xlink:title="d_A051"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A051-A001" xlink:to="d_A051" xlink:title="hypercube-dimension: h_A051-A001 to d_A051" order="3"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A051-A001" xlink:to="d_A051" xlink:title="hypercube-dimension: h_A051-A001 to d_A051" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A001" xlink:label="d_A001" xlink:title="d_A001"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A051-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A051-A001 to d_A001" order="2"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A050" xlink:label="d_A050" xlink:title="d_A050"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A051-A001" xlink:to="d_A050" xlink:title="hypercube-dimension: h_A051-A001 to d_A050" order="3"/>
         <!-- domain-member -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A051-A001-001" xlink:label="A051-A001-001" xlink:title="A051-A001-001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="A051-A001" xlink:to="A051-A001-001" xlink:title="domain-member: A051-A001 to A051-A001-001" order="1"/>
@@ -6572,10 +6572,10 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_A052-A076" xlink:label="h_A052-A076" xlink:title="h_A052-A076"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="A052-A076" xlink:to="h_A052-A076" xlink:title="all (has-hypercube): A052-A076 to h_A052-A076" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
         <!-- hypercube-dimension -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A076" xlink:label="d_A076" xlink:title="d_A076"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A052-A076" xlink:to="d_A076" xlink:title="hypercube-dimension: h_A052-A076 to d_A076" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A052" xlink:label="d_A052" xlink:title="d_A052"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A052-A076" xlink:to="d_A052" xlink:title="hypercube-dimension: h_A052-A076 to d_A052" order="2"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A052-A076" xlink:to="d_A052" xlink:title="hypercube-dimension: h_A052-A076 to d_A052" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A076" xlink:label="d_A076" xlink:title="d_A076"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A052-A076" xlink:to="d_A076" xlink:title="hypercube-dimension: h_A052-A076 to d_A076" order="2"/>
         <!-- domain-member -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A052-A076-001" xlink:label="A052-A076-001" xlink:title="A052-A076-001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="A052-A076" xlink:to="A052-A076-001" xlink:title="domain-member: A052-A076 to A052-A076-001" order="1"/>
@@ -6727,10 +6727,10 @@
         <!-- hypercube-dimension -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A052" xlink:label="d_A052" xlink:title="d_A052"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A053-A082" xlink:to="d_A052" xlink:title="hypercube-dimension: h_A053-A082 to d_A052" order="1"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A082" xlink:label="d_A082" xlink:title="d_A082"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A053-A082" xlink:to="d_A082" xlink:title="hypercube-dimension: h_A053-A082 to d_A082" order="2"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A053" xlink:label="d_A053" xlink:title="d_A053"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A053-A082" xlink:to="d_A053" xlink:title="hypercube-dimension: h_A053-A082 to d_A053" order="3"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A053-A082" xlink:to="d_A053" xlink:title="hypercube-dimension: h_A053-A082 to d_A053" order="2"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A082" xlink:label="d_A082" xlink:title="d_A082"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A053-A082" xlink:to="d_A082" xlink:title="hypercube-dimension: h_A053-A082 to d_A082" order="3"/>
         <!-- domain-member -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A053-A082-001" xlink:label="A053-A082-001" xlink:title="A053-A082-001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="A053-A082" xlink:to="A053-A082-001" xlink:title="domain-member: A053-A082 to A053-A082-001" order="1"/>
@@ -6781,10 +6781,10 @@
         <!-- hypercube-dimension -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A052" xlink:label="d_A052" xlink:title="d_A052"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A053-A001" xlink:to="d_A052" xlink:title="hypercube-dimension: h_A053-A001 to d_A052" order="1"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A053" xlink:label="d_A053" xlink:title="d_A053"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A053-A001" xlink:to="d_A053" xlink:title="hypercube-dimension: h_A053-A001 to d_A053" order="2"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A001" xlink:label="d_A001" xlink:title="d_A001"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A053-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A053-A001 to d_A001" order="3"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A053-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A053-A001 to d_A001" order="2"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A053" xlink:label="d_A053" xlink:title="d_A053"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A053-A001" xlink:to="d_A053" xlink:title="hypercube-dimension: h_A053-A001 to d_A053" order="3"/>
         <!-- domain-member -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A053-A001-001" xlink:label="A053-A001-001" xlink:title="A053-A001-001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="A053-A001" xlink:to="A053-A001-001" xlink:title="domain-member: A053-A001 to A053-A001-001" order="1"/>
@@ -6891,10 +6891,10 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_A054-A001" xlink:label="h_A054-A001" xlink:title="h_A054-A001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="A054-A001" xlink:to="h_A054-A001" xlink:title="all (has-hypercube): A054-A001 to h_A054-A001" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
         <!-- hypercube-dimension -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A054" xlink:label="d_A054" xlink:title="d_A054"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A054-A001" xlink:to="d_A054" xlink:title="hypercube-dimension: h_A054-A001 to d_A054" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A001" xlink:label="d_A001" xlink:title="d_A001"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A054-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A054-A001 to d_A001" order="2"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A054-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A054-A001 to d_A001" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A054" xlink:label="d_A054" xlink:title="d_A054"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A054-A001" xlink:to="d_A054" xlink:title="hypercube-dimension: h_A054-A001 to d_A054" order="2"/>
         <!-- domain-member -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A054-A001-001" xlink:label="A054-A001-001" xlink:title="A054-A001-001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="A054-A001" xlink:to="A054-A001-001" xlink:title="domain-member: A054-A001 to A054-A001-001" order="1"/>
@@ -7001,10 +7001,10 @@
         <!-- hypercube-dimension -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A055" xlink:label="d_A055" xlink:title="d_A055"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A055-A082" xlink:to="d_A055" xlink:title="hypercube-dimension: h_A055-A082 to d_A055" order="1"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A082" xlink:label="d_A082" xlink:title="d_A082"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A055-A082" xlink:to="d_A082" xlink:title="hypercube-dimension: h_A055-A082 to d_A082" order="2"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A054" xlink:label="d_A054" xlink:title="d_A054"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A055-A082" xlink:to="d_A054" xlink:title="hypercube-dimension: h_A055-A082 to d_A054" order="3"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A055-A082" xlink:to="d_A054" xlink:title="hypercube-dimension: h_A055-A082 to d_A054" order="2"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A082" xlink:label="d_A082" xlink:title="d_A082"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A055-A082" xlink:to="d_A082" xlink:title="hypercube-dimension: h_A055-A082 to d_A082" order="3"/>
         <!-- domain-member -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A055-A082-001" xlink:label="A055-A082-001" xlink:title="A055-A082-001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="A055-A082" xlink:to="A055-A082-001" xlink:title="domain-member: A055-A082 to A055-A082-001" order="1"/>
@@ -7055,10 +7055,10 @@
         <!-- hypercube-dimension -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A055" xlink:label="d_A055" xlink:title="d_A055"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A055-A001" xlink:to="d_A055" xlink:title="hypercube-dimension: h_A055-A001 to d_A055" order="1"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A054" xlink:label="d_A054" xlink:title="d_A054"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A055-A001" xlink:to="d_A054" xlink:title="hypercube-dimension: h_A055-A001 to d_A054" order="2"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A001" xlink:label="d_A001" xlink:title="d_A001"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A055-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A055-A001 to d_A001" order="3"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A055-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A055-A001 to d_A001" order="2"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A054" xlink:label="d_A054" xlink:title="d_A054"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A055-A001" xlink:to="d_A054" xlink:title="hypercube-dimension: h_A055-A001 to d_A054" order="3"/>
         <!-- domain-member -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A055-A001-001" xlink:label="A055-A001-001" xlink:title="A055-A001-001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="A055-A001" xlink:to="A055-A001-001" xlink:title="domain-member: A055-A001 to A055-A001-001" order="1"/>
@@ -7142,10 +7142,10 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_A056-A057" xlink:label="h_A056-A057" xlink:title="h_A056-A057"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="A056-A057" xlink:to="h_A056-A057" xlink:title="all (has-hypercube): A056-A057 to h_A056-A057" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
         <!-- hypercube-dimension -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A056" xlink:label="d_A056" xlink:title="d_A056"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A056-A057" xlink:to="d_A056" xlink:title="hypercube-dimension: h_A056-A057 to d_A056" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A057" xlink:label="d_A057" xlink:title="d_A057"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A056-A057" xlink:to="d_A057" xlink:title="hypercube-dimension: h_A056-A057 to d_A057" order="2"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A056-A057" xlink:to="d_A057" xlink:title="hypercube-dimension: h_A056-A057 to d_A057" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A056" xlink:label="d_A056" xlink:title="d_A056"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A056-A057" xlink:to="d_A056" xlink:title="hypercube-dimension: h_A056-A057 to d_A056" order="2"/>
         <!-- domain-member -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A056-A057-001" xlink:label="A056-A057-001" xlink:title="A056-A057-001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="A056-A057" xlink:to="A056-A057-001" xlink:title="domain-member: A056-A057 to A056-A057-001" order="1"/>
@@ -7208,10 +7208,10 @@
         <!-- hypercube-dimension -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A001" xlink:label="d_A001" xlink:title="d_A001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A057-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A057-A001 to d_A001" order="1"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A056" xlink:label="d_A056" xlink:title="d_A056"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A057-A001" xlink:to="d_A056" xlink:title="hypercube-dimension: h_A057-A001 to d_A056" order="2"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A057" xlink:label="d_A057" xlink:title="d_A057"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A057-A001" xlink:to="d_A057" xlink:title="hypercube-dimension: h_A057-A001 to d_A057" order="3"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A057-A001" xlink:to="d_A057" xlink:title="hypercube-dimension: h_A057-A001 to d_A057" order="2"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A056" xlink:label="d_A056" xlink:title="d_A056"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A057-A001" xlink:to="d_A056" xlink:title="hypercube-dimension: h_A057-A001 to d_A056" order="3"/>
         <!-- domain-member -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A057-A001-001" xlink:label="A057-A001-001" xlink:title="A057-A001-001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="A057-A001" xlink:to="A057-A001-001" xlink:title="domain-member: A057-A001 to A057-A001-001" order="1"/>
@@ -7266,10 +7266,10 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_A059-A001" xlink:label="h_A059-A001" xlink:title="h_A059-A001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="A059-A001" xlink:to="h_A059-A001" xlink:title="all (has-hypercube): A059-A001 to h_A059-A001" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
         <!-- hypercube-dimension -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A059" xlink:label="d_A059" xlink:title="d_A059"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A059-A001" xlink:to="d_A059" xlink:title="hypercube-dimension: h_A059-A001 to d_A059" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A001" xlink:label="d_A001" xlink:title="d_A001"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A059-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A059-A001 to d_A001" order="2"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A059-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A059-A001 to d_A001" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A059" xlink:label="d_A059" xlink:title="d_A059"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A059-A001" xlink:to="d_A059" xlink:title="hypercube-dimension: h_A059-A001 to d_A059" order="2"/>
         <!-- domain-member -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A059-A001-001" xlink:label="A059-A001-001" xlink:title="A059-A001-001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="A059-A001" xlink:to="A059-A001-001" xlink:title="domain-member: A059-A001 to A059-A001-001" order="1"/>
@@ -7353,10 +7353,10 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_A062-A001" xlink:label="h_A062-A001" xlink:title="h_A062-A001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="A062-A001" xlink:to="h_A062-A001" xlink:title="all (has-hypercube): A062-A001 to h_A062-A001" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
         <!-- hypercube-dimension -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A062" xlink:label="d_A062" xlink:title="d_A062"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A062-A001" xlink:to="d_A062" xlink:title="hypercube-dimension: h_A062-A001 to d_A062" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A001" xlink:label="d_A001" xlink:title="d_A001"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A062-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A062-A001 to d_A001" order="2"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A062-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A062-A001 to d_A001" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A062" xlink:label="d_A062" xlink:title="d_A062"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A062-A001" xlink:to="d_A062" xlink:title="hypercube-dimension: h_A062-A001 to d_A062" order="2"/>
         <!-- domain-member -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A062-A001-001" xlink:label="A062-A001-001" xlink:title="A062-A001-001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="A062-A001" xlink:to="A062-A001-001" xlink:title="domain-member: A062-A001 to A062-A001-001" order="1"/>
@@ -7440,10 +7440,10 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_A064-A001" xlink:label="h_A064-A001" xlink:title="h_A064-A001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="A064-A001" xlink:to="h_A064-A001" xlink:title="all (has-hypercube): A064-A001 to h_A064-A001" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
         <!-- hypercube-dimension -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A064" xlink:label="d_A064" xlink:title="d_A064"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A064-A001" xlink:to="d_A064" xlink:title="hypercube-dimension: h_A064-A001 to d_A064" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A001" xlink:label="d_A001" xlink:title="d_A001"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A064-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A064-A001 to d_A001" order="2"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A064-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A064-A001 to d_A001" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A064" xlink:label="d_A064" xlink:title="d_A064"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A064-A001" xlink:to="d_A064" xlink:title="hypercube-dimension: h_A064-A001 to d_A064" order="2"/>
         <!-- domain-member -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A064-A001-001" xlink:label="A064-A001-001" xlink:title="A064-A001-001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="A064-A001" xlink:to="A064-A001-001" xlink:title="domain-member: A064-A001 to A064-A001-001" order="1"/>
@@ -7585,10 +7585,10 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_A068-A076" xlink:label="h_A068-A076" xlink:title="h_A068-A076"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="A068-A076" xlink:to="h_A068-A076" xlink:title="all (has-hypercube): A068-A076 to h_A068-A076" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
         <!-- hypercube-dimension -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A076" xlink:label="d_A076" xlink:title="d_A076"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A068-A076" xlink:to="d_A076" xlink:title="hypercube-dimension: h_A068-A076 to d_A076" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A068" xlink:label="d_A068" xlink:title="d_A068"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A068-A076" xlink:to="d_A068" xlink:title="hypercube-dimension: h_A068-A076 to d_A068" order="2"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A068-A076" xlink:to="d_A068" xlink:title="hypercube-dimension: h_A068-A076 to d_A068" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A076" xlink:label="d_A076" xlink:title="d_A076"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A068-A076" xlink:to="d_A076" xlink:title="hypercube-dimension: h_A068-A076 to d_A076" order="2"/>
         <!-- domain-member -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A068-A076-001" xlink:label="A068-A076-001" xlink:title="A068-A076-001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="A068-A076" xlink:to="A068-A076-001" xlink:title="domain-member: A068-A076 to A068-A076-001" order="1"/>
@@ -7614,10 +7614,10 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_A068-A001" xlink:label="h_A068-A001" xlink:title="h_A068-A001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="A068-A001" xlink:to="h_A068-A001" xlink:title="all (has-hypercube): A068-A001 to h_A068-A001" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
         <!-- hypercube-dimension -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A001" xlink:label="d_A001" xlink:title="d_A001"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A068-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A068-A001 to d_A001" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A068" xlink:label="d_A068" xlink:title="d_A068"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A068-A001" xlink:to="d_A068" xlink:title="hypercube-dimension: h_A068-A001 to d_A068" order="2"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A068-A001" xlink:to="d_A068" xlink:title="hypercube-dimension: h_A068-A001 to d_A068" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A001" xlink:label="d_A001" xlink:title="d_A001"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A068-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A068-A001 to d_A001" order="2"/>
         <!-- domain-member -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A068-A001-001" xlink:label="A068-A001-001" xlink:title="A068-A001-001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="A068-A001" xlink:to="A068-A001-001" xlink:title="domain-member: A068-A001 to A068-A001-001" order="1"/>
@@ -7730,10 +7730,10 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_A071-A001" xlink:label="h_A071-A001" xlink:title="h_A071-A001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="A071-A001" xlink:to="h_A071-A001" xlink:title="all (has-hypercube): A071-A001 to h_A071-A001" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
         <!-- hypercube-dimension -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A071" xlink:label="d_A071" xlink:title="d_A071"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A071-A001" xlink:to="d_A071" xlink:title="hypercube-dimension: h_A071-A001 to d_A071" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A001" xlink:label="d_A001" xlink:title="d_A001"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A071-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A071-A001 to d_A001" order="2"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A071-A001" xlink:to="d_A001" xlink:title="hypercube-dimension: h_A071-A001 to d_A001" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A071" xlink:label="d_A071" xlink:title="d_A071"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A071-A001" xlink:to="d_A071" xlink:title="hypercube-dimension: h_A071-A001 to d_A071" order="2"/>
         <!-- domain-member -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A071-A001-001" xlink:label="A071-A001-001" xlink:title="A071-A001-001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="A071-A001" xlink:to="A071-A001-001" xlink:title="domain-member: A071-A001 to A071-A001-001" order="1"/>
@@ -7759,10 +7759,10 @@
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_A072-A076" xlink:label="h_A072-A076" xlink:title="h_A072-A076"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="A072-A076" xlink:to="h_A072-A076" xlink:title="all (has-hypercube): A072-A076 to h_A072-A076" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
         <!-- hypercube-dimension -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A076" xlink:label="d_A076" xlink:title="d_A076"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A072-A076" xlink:to="d_A076" xlink:title="hypercube-dimension: h_A072-A076 to d_A076" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_A072" xlink:label="d_A072" xlink:title="d_A072"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A072-A076" xlink:to="d_A072" xlink:title="hypercube-dimension: h_A072-A076 to d_A072" order="2"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A072-A076" xlink:to="d_A072" xlink:title="hypercube-dimension: h_A072-A076 to d_A072" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_A076" xlink:label="d_A076" xlink:title="d_A076"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_A072-A076" xlink:to="d_A076" xlink:title="hypercube-dimension: h_A072-A076 to d_A076" order="2"/>
         <!-- domain-member -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#A072-A076-001" xlink:label="A072-A076-001" xlink:title="A072-A076-001"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="A072-A076" xlink:to="A072-A076-001" xlink:title="domain-member: A072-A076 to A072-A076-001" order="1"/>
