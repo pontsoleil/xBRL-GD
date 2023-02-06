@@ -20,365 +20,135 @@
     <link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2008/variable-set" xlink:type="simple" xlink:href="http://www.xbrl.org/2008/variable.xsd#variable-set"/>
     <link:roleRef roleURI="http://www.xbrl.org/2008/role/link" xlink:type="simple" xlink:href="http://www.xbrl.org/2008/generic-link.xsd#standard-link-role"/>
     <gen:link xlink:type="extended" xlink:role="http://www.xbrl.org/2008/role/link">
-        <!-- A001-001 mandatory assertion -->
-        <va:valueAssertion id="Mandatory_A001-001" test="count($context_A001-001)=count($element_A001-001)" aspectModel="dimensional" implicitFiltering="true" xlink:type="resource" xlink:label="Mandatory_A001-001"/>
+        <!-- BS01-001 mandatory assertion -->
+        <va:valueAssertion id="Mandatory_BS01-001" test="count($context_BS01-001)=count($element_BS01-001)" aspectModel="dimensional" implicitFiltering="true" xlink:type="resource" xlink:label="Mandatory_BS01-001"/>
         <!-- unsatisfied message -->
-        <gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="Mandatory_A001-001" xlink:to="error-Mandatory_A001-001"/>
-        <msg:message id="error-Mandatory_A001-001" xlink:type="resource" xlink:role="http://www.xbrl.org/2010/role/message" xlink:label="error-Mandatory_A001-001" xml:lang="en">Not satisfied error: [Mandatory A001-001] A001-001 is a mandatory items.</msg:message>
+        <gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="Mandatory_BS01-001" xlink:to="error-Mandatory_BS01-001"/>
+        <msg:message id="error-Mandatory_BS01-001" xlink:type="resource" xlink:role="http://www.xbrl.org/2010/role/message" xlink:label="error-Mandatory_BS01-001" xml:lang="en">Not satisfied error: [Mandatory BS01-001] BS01-001 is a mandatory items.</msg:message>
         <!-- variable -->
-        <variable:variableArc name="context_A001-001" order="1" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A001-001" xlink:to="gen_context_A001-001"/>
-        <variable:variableArc name="element_A001-001" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A001-001" xlink:to="gen_element_A001-001"/>
-        <variable:generalVariable id="gen_context_A001-001" bindAsSequence="true" select="distinct-values(//*[local-name(.)='context']/@id[substring(.,1,4)='A001' and not(contains(substring-after(.,'_'),'_'))])" xlink:type="resource" xlink:label="gen_context_A001-001"/>
-        <variable:generalVariable id="gen_element_A001-001" bindAsSequence="true" select="distinct-values(//adc:A001-001[substring(@contextRef,1,4)='A001' and not(contains(substring-after(@contextRef,'_'),'_'))]/@contextRef)" xlink:type="resource" xlink:label="gen_element_A001-001"/>
-        <!-- A026-A001-001 mandatory assertion -->
-        <va:valueAssertion id="Mandatory_A026-A001-001" test="count($context_A026-A001-001)=count($element_A026-A001-001)" aspectModel="dimensional" implicitFiltering="true" xlink:type="resource" xlink:label="Mandatory_A026-A001-001"/>
+        <variable:variableArc name="context_BS01-001" order="1" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_BS01-001" xlink:to="gen_context_BS01-001"/>
+        <variable:variableArc name="element_BS01-001" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_BS01-001" xlink:to="gen_element_BS01-001"/>
+        <variable:generalVariable id="gen_context_BS01-001" bindAsSequence="true" select="distinct-values(//*[local-name(.)='context']/@id[substring(.,1,4)='BS01' and not(contains(substring-after(.,'_'),'_'))])" xlink:type="resource" xlink:label="gen_context_BS01-001"/>
+        <variable:generalVariable id="gen_element_BS01-001" bindAsSequence="true" select="distinct-values(//adc:BS01-001[substring(@contextRef,1,4)='BS01' and not(contains(substring-after(@contextRef,'_'),'_'))]/@contextRef)" xlink:type="resource" xlink:label="gen_element_BS01-001"/>
+        <!-- BS09-BS01-001 mandatory assertion -->
+        <va:valueAssertion id="Mandatory_BS09-BS01-001" test="count($context_BS09-BS01-001)=count($element_BS09-BS01-001)" aspectModel="dimensional" implicitFiltering="true" xlink:type="resource" xlink:label="Mandatory_BS09-BS01-001"/>
         <!-- unsatisfied message -->
-        <gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="Mandatory_A026-A001-001" xlink:to="error-Mandatory_A026-A001-001"/>
-        <msg:message id="error-Mandatory_A026-A001-001" xlink:type="resource" xlink:role="http://www.xbrl.org/2010/role/message" xlink:label="error-Mandatory_A026-A001-001" xml:lang="en">Not satisfied error: [Mandatory A026-A001-001] A026-A001-001 is a mandatory items.</msg:message>
+        <gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="Mandatory_BS09-BS01-001" xlink:to="error-Mandatory_BS09-BS01-001"/>
+        <msg:message id="error-Mandatory_BS09-BS01-001" xlink:type="resource" xlink:role="http://www.xbrl.org/2010/role/message" xlink:label="error-Mandatory_BS09-BS01-001" xml:lang="en">Not satisfied error: [Mandatory BS09-BS01-001] BS09-BS01-001 is a mandatory items.</msg:message>
         <!-- variable -->
-        <variable:variableArc name="context_A026-A001-001" order="1" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A026-A001-001" xlink:to="gen_context_A026-A001-001"/>
-        <variable:variableArc name="element_A026-A001-001" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A026-A001-001" xlink:to="gen_element_A026-A001-001"/>
-        <variable:generalVariable id="gen_context_A026-A001-001" bindAsSequence="true" select="distinct-values(//*[local-name(.)='context']/@id[substring(.,1,4)='A026' and contains(substring-after(.,'_'),'A001') and not(contains(substring-after(.,'A001_'),'_'))])" xlink:type="resource" xlink:label="gen_context_A026-A001-001"/>
-        <variable:generalVariable id="gen_element_A026-A001-001" bindAsSequence="true" select="distinct-values(//adc:A026-A001-001[substring(@contextRef,1,4)='A026' and contains(substring-after(@contextRef,'_'),'A001') and not(contains(substring-after(.,'A001_'),'_'))]/@contextRef)" xlink:type="resource" xlink:label="gen_element_A026-A001-001"/>
-        <!-- A017-A001-001 mandatory assertion -->
-        <va:valueAssertion id="Mandatory_A017-A001-001" test="count($context_A017-A001-001)=count($element_A017-A001-001)" aspectModel="dimensional" implicitFiltering="true" xlink:type="resource" xlink:label="Mandatory_A017-A001-001"/>
+        <variable:variableArc name="context_BS09-BS01-001" order="1" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_BS09-BS01-001" xlink:to="gen_context_BS09-BS01-001"/>
+        <variable:variableArc name="element_BS09-BS01-001" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_BS09-BS01-001" xlink:to="gen_element_BS09-BS01-001"/>
+        <variable:generalVariable id="gen_context_BS09-BS01-001" bindAsSequence="true" select="distinct-values(//*[local-name(.)='context']/@id[substring(.,1,4)='BS09' and contains(substring-after(.,'_'),'BS01') and not(contains(substring-after(.,'BS01_'),'_'))])" xlink:type="resource" xlink:label="gen_context_BS09-BS01-001"/>
+        <variable:generalVariable id="gen_element_BS09-BS01-001" bindAsSequence="true" select="distinct-values(//adc:BS09-BS01-001[substring(@contextRef,1,4)='BS09' and contains(substring-after(@contextRef,'_'),'BS01') and not(contains(substring-after(.,'BS01_'),'_'))]/@contextRef)" xlink:type="resource" xlink:label="gen_element_BS09-BS01-001"/>
+        <!-- GL03-BS01-001 mandatory assertion -->
+        <va:valueAssertion id="Mandatory_GL03-BS01-001" test="count($context_GL03-BS01-001)=count($element_GL03-BS01-001)" aspectModel="dimensional" implicitFiltering="true" xlink:type="resource" xlink:label="Mandatory_GL03-BS01-001"/>
         <!-- unsatisfied message -->
-        <gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="Mandatory_A017-A001-001" xlink:to="error-Mandatory_A017-A001-001"/>
-        <msg:message id="error-Mandatory_A017-A001-001" xlink:type="resource" xlink:role="http://www.xbrl.org/2010/role/message" xlink:label="error-Mandatory_A017-A001-001" xml:lang="en">Not satisfied error: [Mandatory A017-A001-001] A017-A001-001 is a mandatory items.</msg:message>
+        <gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="Mandatory_GL03-BS01-001" xlink:to="error-Mandatory_GL03-BS01-001"/>
+        <msg:message id="error-Mandatory_GL03-BS01-001" xlink:type="resource" xlink:role="http://www.xbrl.org/2010/role/message" xlink:label="error-Mandatory_GL03-BS01-001" xml:lang="en">Not satisfied error: [Mandatory GL03-BS01-001] GL03-BS01-001 is a mandatory items.</msg:message>
         <!-- variable -->
-        <variable:variableArc name="context_A017-A001-001" order="1" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A017-A001-001" xlink:to="gen_context_A017-A001-001"/>
-        <variable:variableArc name="element_A017-A001-001" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A017-A001-001" xlink:to="gen_element_A017-A001-001"/>
-        <variable:generalVariable id="gen_context_A017-A001-001" bindAsSequence="true" select="distinct-values(//*[local-name(.)='context']/@id[substring(.,1,4)='A017' and contains(substring-after(.,'_'),'A001') and not(contains(substring-after(.,'A001_'),'_'))])" xlink:type="resource" xlink:label="gen_context_A017-A001-001"/>
-        <variable:generalVariable id="gen_element_A017-A001-001" bindAsSequence="true" select="distinct-values(//adc:A017-A001-001[substring(@contextRef,1,4)='A017' and contains(substring-after(@contextRef,'_'),'A001') and not(contains(substring-after(.,'A001_'),'_'))]/@contextRef)" xlink:type="resource" xlink:label="gen_element_A017-A001-001"/>
-        <!-- A019-A001-001 mandatory assertion -->
-        <va:valueAssertion id="Mandatory_A019-A001-001" test="count($context_A019-A001-001)=count($element_A019-A001-001)" aspectModel="dimensional" implicitFiltering="true" xlink:type="resource" xlink:label="Mandatory_A019-A001-001"/>
+        <variable:variableArc name="context_GL03-BS01-001" order="1" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_GL03-BS01-001" xlink:to="gen_context_GL03-BS01-001"/>
+        <variable:variableArc name="element_GL03-BS01-001" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_GL03-BS01-001" xlink:to="gen_element_GL03-BS01-001"/>
+        <variable:generalVariable id="gen_context_GL03-BS01-001" bindAsSequence="true" select="distinct-values(//*[local-name(.)='context']/@id[substring(.,1,4)='GL03' and contains(substring-after(.,'_'),'BS01') and not(contains(substring-after(.,'BS01_'),'_'))])" xlink:type="resource" xlink:label="gen_context_GL03-BS01-001"/>
+        <variable:generalVariable id="gen_element_GL03-BS01-001" bindAsSequence="true" select="distinct-values(//adc:GL03-BS01-001[substring(@contextRef,1,4)='GL03' and contains(substring-after(@contextRef,'_'),'BS01') and not(contains(substring-after(.,'BS01_'),'_'))]/@contextRef)" xlink:type="resource" xlink:label="gen_element_GL03-BS01-001"/>
+        <!-- BS03-001 mandatory assertion -->
+        <va:valueAssertion id="Mandatory_BS03-001" test="count($context_BS03-001)=count($element_BS03-001)" aspectModel="dimensional" implicitFiltering="true" xlink:type="resource" xlink:label="Mandatory_BS03-001"/>
         <!-- unsatisfied message -->
-        <gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="Mandatory_A019-A001-001" xlink:to="error-Mandatory_A019-A001-001"/>
-        <msg:message id="error-Mandatory_A019-A001-001" xlink:type="resource" xlink:role="http://www.xbrl.org/2010/role/message" xlink:label="error-Mandatory_A019-A001-001" xml:lang="en">Not satisfied error: [Mandatory A019-A001-001] A019-A001-001 is a mandatory items.</msg:message>
+        <gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="Mandatory_BS03-001" xlink:to="error-Mandatory_BS03-001"/>
+        <msg:message id="error-Mandatory_BS03-001" xlink:type="resource" xlink:role="http://www.xbrl.org/2010/role/message" xlink:label="error-Mandatory_BS03-001" xml:lang="en">Not satisfied error: [Mandatory BS03-001] BS03-001 is a mandatory items.</msg:message>
         <!-- variable -->
-        <variable:variableArc name="context_A019-A001-001" order="1" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A019-A001-001" xlink:to="gen_context_A019-A001-001"/>
-        <variable:variableArc name="element_A019-A001-001" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A019-A001-001" xlink:to="gen_element_A019-A001-001"/>
-        <variable:generalVariable id="gen_context_A019-A001-001" bindAsSequence="true" select="distinct-values(//*[local-name(.)='context']/@id[substring(.,1,4)='A019' and contains(substring-after(.,'_'),'A001') and not(contains(substring-after(.,'A001_'),'_'))])" xlink:type="resource" xlink:label="gen_context_A019-A001-001"/>
-        <variable:generalVariable id="gen_element_A019-A001-001" bindAsSequence="true" select="distinct-values(//adc:A019-A001-001[substring(@contextRef,1,4)='A019' and contains(substring-after(@contextRef,'_'),'A001') and not(contains(substring-after(.,'A001_'),'_'))]/@contextRef)" xlink:type="resource" xlink:label="gen_element_A019-A001-001"/>
-        <!-- A020-A001-001 mandatory assertion -->
-        <va:valueAssertion id="Mandatory_A020-A001-001" test="count($context_A020-A001-001)=count($element_A020-A001-001)" aspectModel="dimensional" implicitFiltering="true" xlink:type="resource" xlink:label="Mandatory_A020-A001-001"/>
+        <variable:variableArc name="context_BS03-001" order="1" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_BS03-001" xlink:to="gen_context_BS03-001"/>
+        <variable:variableArc name="element_BS03-001" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_BS03-001" xlink:to="gen_element_BS03-001"/>
+        <variable:generalVariable id="gen_context_BS03-001" bindAsSequence="true" select="distinct-values(//*[local-name(.)='context']/@id[substring(.,1,4)='BS03' and not(contains(substring-after(.,'_'),'_'))])" xlink:type="resource" xlink:label="gen_context_BS03-001"/>
+        <variable:generalVariable id="gen_element_BS03-001" bindAsSequence="true" select="distinct-values(//adc:BS03-001[substring(@contextRef,1,4)='BS03' and not(contains(substring-after(@contextRef,'_'),'_'))]/@contextRef)" xlink:type="resource" xlink:label="gen_element_BS03-001"/>
+        <!-- BS04-001 mandatory assertion -->
+        <va:valueAssertion id="Mandatory_BS04-001" test="count($context_BS04-001)=count($element_BS04-001)" aspectModel="dimensional" implicitFiltering="true" xlink:type="resource" xlink:label="Mandatory_BS04-001"/>
         <!-- unsatisfied message -->
-        <gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="Mandatory_A020-A001-001" xlink:to="error-Mandatory_A020-A001-001"/>
-        <msg:message id="error-Mandatory_A020-A001-001" xlink:type="resource" xlink:role="http://www.xbrl.org/2010/role/message" xlink:label="error-Mandatory_A020-A001-001" xml:lang="en">Not satisfied error: [Mandatory A020-A001-001] A020-A001-001 is a mandatory items.</msg:message>
+        <gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="Mandatory_BS04-001" xlink:to="error-Mandatory_BS04-001"/>
+        <msg:message id="error-Mandatory_BS04-001" xlink:type="resource" xlink:role="http://www.xbrl.org/2010/role/message" xlink:label="error-Mandatory_BS04-001" xml:lang="en">Not satisfied error: [Mandatory BS04-001] BS04-001 is a mandatory items.</msg:message>
         <!-- variable -->
-        <variable:variableArc name="context_A020-A001-001" order="1" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A020-A001-001" xlink:to="gen_context_A020-A001-001"/>
-        <variable:variableArc name="element_A020-A001-001" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A020-A001-001" xlink:to="gen_element_A020-A001-001"/>
-        <variable:generalVariable id="gen_context_A020-A001-001" bindAsSequence="true" select="distinct-values(//*[local-name(.)='context']/@id[substring(.,1,4)='A020' and contains(substring-after(.,'_'),'A001') and not(contains(substring-after(.,'A001_'),'_'))])" xlink:type="resource" xlink:label="gen_context_A020-A001-001"/>
-        <variable:generalVariable id="gen_element_A020-A001-001" bindAsSequence="true" select="distinct-values(//adc:A020-A001-001[substring(@contextRef,1,4)='A020' and contains(substring-after(@contextRef,'_'),'A001') and not(contains(substring-after(.,'A001_'),'_'))]/@contextRef)" xlink:type="resource" xlink:label="gen_element_A020-A001-001"/>
-        <!-- A023-A001-001 mandatory assertion -->
-        <va:valueAssertion id="Mandatory_A023-A001-001" test="count($context_A023-A001-001)=count($element_A023-A001-001)" aspectModel="dimensional" implicitFiltering="true" xlink:type="resource" xlink:label="Mandatory_A023-A001-001"/>
+        <variable:variableArc name="context_BS04-001" order="1" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_BS04-001" xlink:to="gen_context_BS04-001"/>
+        <variable:variableArc name="element_BS04-001" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_BS04-001" xlink:to="gen_element_BS04-001"/>
+        <variable:generalVariable id="gen_context_BS04-001" bindAsSequence="true" select="distinct-values(//*[local-name(.)='context']/@id[substring(.,1,4)='BS04' and not(contains(substring-after(.,'_'),'_'))])" xlink:type="resource" xlink:label="gen_context_BS04-001"/>
+        <variable:generalVariable id="gen_element_BS04-001" bindAsSequence="true" select="distinct-values(//adc:BS04-001[substring(@contextRef,1,4)='BS04' and not(contains(substring-after(@contextRef,'_'),'_'))]/@contextRef)" xlink:type="resource" xlink:label="gen_element_BS04-001"/>
+        <!-- BS05-001 mandatory assertion -->
+        <va:valueAssertion id="Mandatory_BS05-001" test="count($context_BS05-001)=count($element_BS05-001)" aspectModel="dimensional" implicitFiltering="true" xlink:type="resource" xlink:label="Mandatory_BS05-001"/>
         <!-- unsatisfied message -->
-        <gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="Mandatory_A023-A001-001" xlink:to="error-Mandatory_A023-A001-001"/>
-        <msg:message id="error-Mandatory_A023-A001-001" xlink:type="resource" xlink:role="http://www.xbrl.org/2010/role/message" xlink:label="error-Mandatory_A023-A001-001" xml:lang="en">Not satisfied error: [Mandatory A023-A001-001] A023-A001-001 is a mandatory items.</msg:message>
+        <gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="Mandatory_BS05-001" xlink:to="error-Mandatory_BS05-001"/>
+        <msg:message id="error-Mandatory_BS05-001" xlink:type="resource" xlink:role="http://www.xbrl.org/2010/role/message" xlink:label="error-Mandatory_BS05-001" xml:lang="en">Not satisfied error: [Mandatory BS05-001] BS05-001 is a mandatory items.</msg:message>
         <!-- variable -->
-        <variable:variableArc name="context_A023-A001-001" order="1" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A023-A001-001" xlink:to="gen_context_A023-A001-001"/>
-        <variable:variableArc name="element_A023-A001-001" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A023-A001-001" xlink:to="gen_element_A023-A001-001"/>
-        <variable:generalVariable id="gen_context_A023-A001-001" bindAsSequence="true" select="distinct-values(//*[local-name(.)='context']/@id[substring(.,1,4)='A023' and contains(substring-after(.,'_'),'A001') and not(contains(substring-after(.,'A001_'),'_'))])" xlink:type="resource" xlink:label="gen_context_A023-A001-001"/>
-        <variable:generalVariable id="gen_element_A023-A001-001" bindAsSequence="true" select="distinct-values(//adc:A023-A001-001[substring(@contextRef,1,4)='A023' and contains(substring-after(@contextRef,'_'),'A001') and not(contains(substring-after(.,'A001_'),'_'))]/@contextRef)" xlink:type="resource" xlink:label="gen_element_A023-A001-001"/>
-        <!-- A080-A001-001 mandatory assertion -->
-        <va:valueAssertion id="Mandatory_A080-A001-001" test="count($context_A080-A001-001)=count($element_A080-A001-001)" aspectModel="dimensional" implicitFiltering="true" xlink:type="resource" xlink:label="Mandatory_A080-A001-001"/>
+        <variable:variableArc name="context_BS05-001" order="1" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_BS05-001" xlink:to="gen_context_BS05-001"/>
+        <variable:variableArc name="element_BS05-001" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_BS05-001" xlink:to="gen_element_BS05-001"/>
+        <variable:generalVariable id="gen_context_BS05-001" bindAsSequence="true" select="distinct-values(//*[local-name(.)='context']/@id[substring(.,1,4)='BS05' and not(contains(substring-after(.,'_'),'_'))])" xlink:type="resource" xlink:label="gen_context_BS05-001"/>
+        <variable:generalVariable id="gen_element_BS05-001" bindAsSequence="true" select="distinct-values(//adc:BS05-001[substring(@contextRef,1,4)='BS05' and not(contains(substring-after(@contextRef,'_'),'_'))]/@contextRef)" xlink:type="resource" xlink:label="gen_element_BS05-001"/>
+        <!-- BS06-001 mandatory assertion -->
+        <va:valueAssertion id="Mandatory_BS06-001" test="count($context_BS06-001)=count($element_BS06-001)" aspectModel="dimensional" implicitFiltering="true" xlink:type="resource" xlink:label="Mandatory_BS06-001"/>
         <!-- unsatisfied message -->
-        <gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="Mandatory_A080-A001-001" xlink:to="error-Mandatory_A080-A001-001"/>
-        <msg:message id="error-Mandatory_A080-A001-001" xlink:type="resource" xlink:role="http://www.xbrl.org/2010/role/message" xlink:label="error-Mandatory_A080-A001-001" xml:lang="en">Not satisfied error: [Mandatory A080-A001-001] A080-A001-001 is a mandatory items.</msg:message>
+        <gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="Mandatory_BS06-001" xlink:to="error-Mandatory_BS06-001"/>
+        <msg:message id="error-Mandatory_BS06-001" xlink:type="resource" xlink:role="http://www.xbrl.org/2010/role/message" xlink:label="error-Mandatory_BS06-001" xml:lang="en">Not satisfied error: [Mandatory BS06-001] BS06-001 is a mandatory items.</msg:message>
         <!-- variable -->
-        <variable:variableArc name="context_A080-A001-001" order="1" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A080-A001-001" xlink:to="gen_context_A080-A001-001"/>
-        <variable:variableArc name="element_A080-A001-001" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A080-A001-001" xlink:to="gen_element_A080-A001-001"/>
-        <variable:generalVariable id="gen_context_A080-A001-001" bindAsSequence="true" select="distinct-values(//*[local-name(.)='context']/@id[substring(.,1,4)='A080' and contains(substring-after(.,'_'),'A001') and not(contains(substring-after(.,'A001_'),'_'))])" xlink:type="resource" xlink:label="gen_context_A080-A001-001"/>
-        <variable:generalVariable id="gen_element_A080-A001-001" bindAsSequence="true" select="distinct-values(//adc:A080-A001-001[substring(@contextRef,1,4)='A080' and contains(substring-after(@contextRef,'_'),'A001') and not(contains(substring-after(.,'A001_'),'_'))]/@contextRef)" xlink:type="resource" xlink:label="gen_element_A080-A001-001"/>
-        <!-- A029-A001-001 mandatory assertion -->
-        <va:valueAssertion id="Mandatory_A029-A001-001" test="count($context_A029-A001-001)=count($element_A029-A001-001)" aspectModel="dimensional" implicitFiltering="true" xlink:type="resource" xlink:label="Mandatory_A029-A001-001"/>
+        <variable:variableArc name="context_BS06-001" order="1" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_BS06-001" xlink:to="gen_context_BS06-001"/>
+        <variable:variableArc name="element_BS06-001" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_BS06-001" xlink:to="gen_element_BS06-001"/>
+        <variable:generalVariable id="gen_context_BS06-001" bindAsSequence="true" select="distinct-values(//*[local-name(.)='context']/@id[substring(.,1,4)='BS06' and not(contains(substring-after(.,'_'),'_'))])" xlink:type="resource" xlink:label="gen_context_BS06-001"/>
+        <variable:generalVariable id="gen_element_BS06-001" bindAsSequence="true" select="distinct-values(//adc:BS06-001[substring(@contextRef,1,4)='BS06' and not(contains(substring-after(@contextRef,'_'),'_'))]/@contextRef)" xlink:type="resource" xlink:label="gen_element_BS06-001"/>
+        <!-- BS08-001 mandatory assertion -->
+        <va:valueAssertion id="Mandatory_BS08-001" test="count($context_BS08-001)=count($element_BS08-001)" aspectModel="dimensional" implicitFiltering="true" xlink:type="resource" xlink:label="Mandatory_BS08-001"/>
         <!-- unsatisfied message -->
-        <gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="Mandatory_A029-A001-001" xlink:to="error-Mandatory_A029-A001-001"/>
-        <msg:message id="error-Mandatory_A029-A001-001" xlink:type="resource" xlink:role="http://www.xbrl.org/2010/role/message" xlink:label="error-Mandatory_A029-A001-001" xml:lang="en">Not satisfied error: [Mandatory A029-A001-001] A029-A001-001 is a mandatory items.</msg:message>
+        <gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="Mandatory_BS08-001" xlink:to="error-Mandatory_BS08-001"/>
+        <msg:message id="error-Mandatory_BS08-001" xlink:type="resource" xlink:role="http://www.xbrl.org/2010/role/message" xlink:label="error-Mandatory_BS08-001" xml:lang="en">Not satisfied error: [Mandatory BS08-001] BS08-001 is a mandatory items.</msg:message>
         <!-- variable -->
-        <variable:variableArc name="context_A029-A001-001" order="1" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A029-A001-001" xlink:to="gen_context_A029-A001-001"/>
-        <variable:variableArc name="element_A029-A001-001" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A029-A001-001" xlink:to="gen_element_A029-A001-001"/>
-        <variable:generalVariable id="gen_context_A029-A001-001" bindAsSequence="true" select="distinct-values(//*[local-name(.)='context']/@id[substring(.,1,4)='A029' and contains(substring-after(.,'_'),'A001') and not(contains(substring-after(.,'A001_'),'_'))])" xlink:type="resource" xlink:label="gen_context_A029-A001-001"/>
-        <variable:generalVariable id="gen_element_A029-A001-001" bindAsSequence="true" select="distinct-values(//adc:A029-A001-001[substring(@contextRef,1,4)='A029' and contains(substring-after(@contextRef,'_'),'A001') and not(contains(substring-after(.,'A001_'),'_'))]/@contextRef)" xlink:type="resource" xlink:label="gen_element_A029-A001-001"/>
-        <!-- A082-A001-001 mandatory assertion -->
-        <va:valueAssertion id="Mandatory_A082-A001-001" test="count($context_A082-A001-001)=count($element_A082-A001-001)" aspectModel="dimensional" implicitFiltering="true" xlink:type="resource" xlink:label="Mandatory_A082-A001-001"/>
+        <variable:variableArc name="context_BS08-001" order="1" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_BS08-001" xlink:to="gen_context_BS08-001"/>
+        <variable:variableArc name="element_BS08-001" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_BS08-001" xlink:to="gen_element_BS08-001"/>
+        <variable:generalVariable id="gen_context_BS08-001" bindAsSequence="true" select="distinct-values(//*[local-name(.)='context']/@id[substring(.,1,4)='BS08' and not(contains(substring-after(.,'_'),'_'))])" xlink:type="resource" xlink:label="gen_context_BS08-001"/>
+        <variable:generalVariable id="gen_element_BS08-001" bindAsSequence="true" select="distinct-values(//adc:BS08-001[substring(@contextRef,1,4)='BS08' and not(contains(substring-after(@contextRef,'_'),'_'))]/@contextRef)" xlink:type="resource" xlink:label="gen_element_BS08-001"/>
+        <!-- BS10-001 mandatory assertion -->
+        <va:valueAssertion id="Mandatory_BS10-001" test="count($context_BS10-001)=count($element_BS10-001)" aspectModel="dimensional" implicitFiltering="true" xlink:type="resource" xlink:label="Mandatory_BS10-001"/>
         <!-- unsatisfied message -->
-        <gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="Mandatory_A082-A001-001" xlink:to="error-Mandatory_A082-A001-001"/>
-        <msg:message id="error-Mandatory_A082-A001-001" xlink:type="resource" xlink:role="http://www.xbrl.org/2010/role/message" xlink:label="error-Mandatory_A082-A001-001" xml:lang="en">Not satisfied error: [Mandatory A082-A001-001] A082-A001-001 is a mandatory items.</msg:message>
+        <gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="Mandatory_BS10-001" xlink:to="error-Mandatory_BS10-001"/>
+        <msg:message id="error-Mandatory_BS10-001" xlink:type="resource" xlink:role="http://www.xbrl.org/2010/role/message" xlink:label="error-Mandatory_BS10-001" xml:lang="en">Not satisfied error: [Mandatory BS10-001] BS10-001 is a mandatory items.</msg:message>
         <!-- variable -->
-        <variable:variableArc name="context_A082-A001-001" order="1" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A082-A001-001" xlink:to="gen_context_A082-A001-001"/>
-        <variable:variableArc name="element_A082-A001-001" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A082-A001-001" xlink:to="gen_element_A082-A001-001"/>
-        <variable:generalVariable id="gen_context_A082-A001-001" bindAsSequence="true" select="distinct-values(//*[local-name(.)='context']/@id[substring(.,1,4)='A082' and contains(substring-after(.,'_'),'A001') and not(contains(substring-after(.,'A001_'),'_'))])" xlink:type="resource" xlink:label="gen_context_A082-A001-001"/>
-        <variable:generalVariable id="gen_element_A082-A001-001" bindAsSequence="true" select="distinct-values(//adc:A082-A001-001[substring(@contextRef,1,4)='A082' and contains(substring-after(@contextRef,'_'),'A001') and not(contains(substring-after(.,'A001_'),'_'))]/@contextRef)" xlink:type="resource" xlink:label="gen_element_A082-A001-001"/>
-        <!-- A018-A001-001 mandatory assertion -->
-        <va:valueAssertion id="Mandatory_A018-A001-001" test="count($context_A018-A001-001)=count($element_A018-A001-001)" aspectModel="dimensional" implicitFiltering="true" xlink:type="resource" xlink:label="Mandatory_A018-A001-001"/>
+        <variable:variableArc name="context_BS10-001" order="1" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_BS10-001" xlink:to="gen_context_BS10-001"/>
+        <variable:variableArc name="element_BS10-001" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_BS10-001" xlink:to="gen_element_BS10-001"/>
+        <variable:generalVariable id="gen_context_BS10-001" bindAsSequence="true" select="distinct-values(//*[local-name(.)='context']/@id[substring(.,1,4)='BS10' and not(contains(substring-after(.,'_'),'_'))])" xlink:type="resource" xlink:label="gen_context_BS10-001"/>
+        <variable:generalVariable id="gen_element_BS10-001" bindAsSequence="true" select="distinct-values(//adc:BS10-001[substring(@contextRef,1,4)='BS10' and not(contains(substring-after(@contextRef,'_'),'_'))]/@contextRef)" xlink:type="resource" xlink:label="gen_element_BS10-001"/>
+        <!-- BS11-001 mandatory assertion -->
+        <va:valueAssertion id="Mandatory_BS11-001" test="count($context_BS11-001)=count($element_BS11-001)" aspectModel="dimensional" implicitFiltering="true" xlink:type="resource" xlink:label="Mandatory_BS11-001"/>
         <!-- unsatisfied message -->
-        <gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="Mandatory_A018-A001-001" xlink:to="error-Mandatory_A018-A001-001"/>
-        <msg:message id="error-Mandatory_A018-A001-001" xlink:type="resource" xlink:role="http://www.xbrl.org/2010/role/message" xlink:label="error-Mandatory_A018-A001-001" xml:lang="en">Not satisfied error: [Mandatory A018-A001-001] A018-A001-001 is a mandatory items.</msg:message>
+        <gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="Mandatory_BS11-001" xlink:to="error-Mandatory_BS11-001"/>
+        <msg:message id="error-Mandatory_BS11-001" xlink:type="resource" xlink:role="http://www.xbrl.org/2010/role/message" xlink:label="error-Mandatory_BS11-001" xml:lang="en">Not satisfied error: [Mandatory BS11-001] BS11-001 is a mandatory items.</msg:message>
         <!-- variable -->
-        <variable:variableArc name="context_A018-A001-001" order="1" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A018-A001-001" xlink:to="gen_context_A018-A001-001"/>
-        <variable:variableArc name="element_A018-A001-001" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A018-A001-001" xlink:to="gen_element_A018-A001-001"/>
-        <variable:generalVariable id="gen_context_A018-A001-001" bindAsSequence="true" select="distinct-values(//*[local-name(.)='context']/@id[substring(.,1,4)='A018' and contains(substring-after(.,'_'),'A001') and not(contains(substring-after(.,'A001_'),'_'))])" xlink:type="resource" xlink:label="gen_context_A018-A001-001"/>
-        <variable:generalVariable id="gen_element_A018-A001-001" bindAsSequence="true" select="distinct-values(//adc:A018-A001-001[substring(@contextRef,1,4)='A018' and contains(substring-after(@contextRef,'_'),'A001') and not(contains(substring-after(.,'A001_'),'_'))]/@contextRef)" xlink:type="resource" xlink:label="gen_element_A018-A001-001"/>
-        <!-- A024-A001-001 mandatory assertion -->
-        <va:valueAssertion id="Mandatory_A024-A001-001" test="count($context_A024-A001-001)=count($element_A024-A001-001)" aspectModel="dimensional" implicitFiltering="true" xlink:type="resource" xlink:label="Mandatory_A024-A001-001"/>
+        <variable:variableArc name="context_BS11-001" order="1" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_BS11-001" xlink:to="gen_context_BS11-001"/>
+        <variable:variableArc name="element_BS11-001" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_BS11-001" xlink:to="gen_element_BS11-001"/>
+        <variable:generalVariable id="gen_context_BS11-001" bindAsSequence="true" select="distinct-values(//*[local-name(.)='context']/@id[substring(.,1,4)='BS11' and not(contains(substring-after(.,'_'),'_'))])" xlink:type="resource" xlink:label="gen_context_BS11-001"/>
+        <variable:generalVariable id="gen_element_BS11-001" bindAsSequence="true" select="distinct-values(//adc:BS11-001[substring(@contextRef,1,4)='BS11' and not(contains(substring-after(@contextRef,'_'),'_'))]/@contextRef)" xlink:type="resource" xlink:label="gen_element_BS11-001"/>
+        <!-- BS12-001 mandatory assertion -->
+        <va:valueAssertion id="Mandatory_BS12-001" test="count($context_BS12-001)=count($element_BS12-001)" aspectModel="dimensional" implicitFiltering="true" xlink:type="resource" xlink:label="Mandatory_BS12-001"/>
         <!-- unsatisfied message -->
-        <gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="Mandatory_A024-A001-001" xlink:to="error-Mandatory_A024-A001-001"/>
-        <msg:message id="error-Mandatory_A024-A001-001" xlink:type="resource" xlink:role="http://www.xbrl.org/2010/role/message" xlink:label="error-Mandatory_A024-A001-001" xml:lang="en">Not satisfied error: [Mandatory A024-A001-001] A024-A001-001 is a mandatory items.</msg:message>
+        <gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="Mandatory_BS12-001" xlink:to="error-Mandatory_BS12-001"/>
+        <msg:message id="error-Mandatory_BS12-001" xlink:type="resource" xlink:role="http://www.xbrl.org/2010/role/message" xlink:label="error-Mandatory_BS12-001" xml:lang="en">Not satisfied error: [Mandatory BS12-001] BS12-001 is a mandatory items.</msg:message>
         <!-- variable -->
-        <variable:variableArc name="context_A024-A001-001" order="1" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A024-A001-001" xlink:to="gen_context_A024-A001-001"/>
-        <variable:variableArc name="element_A024-A001-001" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A024-A001-001" xlink:to="gen_element_A024-A001-001"/>
-        <variable:generalVariable id="gen_context_A024-A001-001" bindAsSequence="true" select="distinct-values(//*[local-name(.)='context']/@id[substring(.,1,4)='A024' and contains(substring-after(.,'_'),'A001') and not(contains(substring-after(.,'A001_'),'_'))])" xlink:type="resource" xlink:label="gen_context_A024-A001-001"/>
-        <variable:generalVariable id="gen_element_A024-A001-001" bindAsSequence="true" select="distinct-values(//adc:A024-A001-001[substring(@contextRef,1,4)='A024' and contains(substring-after(@contextRef,'_'),'A001') and not(contains(substring-after(.,'A001_'),'_'))]/@contextRef)" xlink:type="resource" xlink:label="gen_element_A024-A001-001"/>
-        <!-- A003-001 mandatory assertion -->
-        <va:valueAssertion id="Mandatory_A003-001" test="count($context_A003-001)=count($element_A003-001)" aspectModel="dimensional" implicitFiltering="true" xlink:type="resource" xlink:label="Mandatory_A003-001"/>
+        <variable:variableArc name="context_BS12-001" order="1" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_BS12-001" xlink:to="gen_context_BS12-001"/>
+        <variable:variableArc name="element_BS12-001" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_BS12-001" xlink:to="gen_element_BS12-001"/>
+        <variable:generalVariable id="gen_context_BS12-001" bindAsSequence="true" select="distinct-values(//*[local-name(.)='context']/@id[substring(.,1,4)='BS12' and not(contains(substring-after(.,'_'),'_'))])" xlink:type="resource" xlink:label="gen_context_BS12-001"/>
+        <variable:generalVariable id="gen_element_BS12-001" bindAsSequence="true" select="distinct-values(//adc:BS12-001[substring(@contextRef,1,4)='BS12' and not(contains(substring-after(@contextRef,'_'),'_'))]/@contextRef)" xlink:type="resource" xlink:label="gen_element_BS12-001"/>
+        <!-- BS13-001 mandatory assertion -->
+        <va:valueAssertion id="Mandatory_BS13-001" test="count($context_BS13-001)=count($element_BS13-001)" aspectModel="dimensional" implicitFiltering="true" xlink:type="resource" xlink:label="Mandatory_BS13-001"/>
         <!-- unsatisfied message -->
-        <gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="Mandatory_A003-001" xlink:to="error-Mandatory_A003-001"/>
-        <msg:message id="error-Mandatory_A003-001" xlink:type="resource" xlink:role="http://www.xbrl.org/2010/role/message" xlink:label="error-Mandatory_A003-001" xml:lang="en">Not satisfied error: [Mandatory A003-001] A003-001 is a mandatory items.</msg:message>
+        <gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="Mandatory_BS13-001" xlink:to="error-Mandatory_BS13-001"/>
+        <msg:message id="error-Mandatory_BS13-001" xlink:type="resource" xlink:role="http://www.xbrl.org/2010/role/message" xlink:label="error-Mandatory_BS13-001" xml:lang="en">Not satisfied error: [Mandatory BS13-001] BS13-001 is a mandatory items.</msg:message>
         <!-- variable -->
-        <variable:variableArc name="context_A003-001" order="1" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A003-001" xlink:to="gen_context_A003-001"/>
-        <variable:variableArc name="element_A003-001" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A003-001" xlink:to="gen_element_A003-001"/>
-        <variable:generalVariable id="gen_context_A003-001" bindAsSequence="true" select="distinct-values(//*[local-name(.)='context']/@id[substring(.,1,4)='A003' and not(contains(substring-after(.,'_'),'_'))])" xlink:type="resource" xlink:label="gen_context_A003-001"/>
-        <variable:generalVariable id="gen_element_A003-001" bindAsSequence="true" select="distinct-values(//adc:A003-001[substring(@contextRef,1,4)='A003' and not(contains(substring-after(@contextRef,'_'),'_'))]/@contextRef)" xlink:type="resource" xlink:label="gen_element_A003-001"/>
-        <!-- A004-001 mandatory assertion -->
-        <va:valueAssertion id="Mandatory_A004-001" test="count($context_A004-001)=count($element_A004-001)" aspectModel="dimensional" implicitFiltering="true" xlink:type="resource" xlink:label="Mandatory_A004-001"/>
+        <variable:variableArc name="context_BS13-001" order="1" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_BS13-001" xlink:to="gen_context_BS13-001"/>
+        <variable:variableArc name="element_BS13-001" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_BS13-001" xlink:to="gen_element_BS13-001"/>
+        <variable:generalVariable id="gen_context_BS13-001" bindAsSequence="true" select="distinct-values(//*[local-name(.)='context']/@id[substring(.,1,4)='BS13' and not(contains(substring-after(.,'_'),'_'))])" xlink:type="resource" xlink:label="gen_context_BS13-001"/>
+        <variable:generalVariable id="gen_element_BS13-001" bindAsSequence="true" select="distinct-values(//adc:BS13-001[substring(@contextRef,1,4)='BS13' and not(contains(substring-after(@contextRef,'_'),'_'))]/@contextRef)" xlink:type="resource" xlink:label="gen_element_BS13-001"/>
+        <!-- BS21-001 mandatory assertion -->
+        <va:valueAssertion id="Mandatory_BS21-001" test="count($context_BS21-001)=count($element_BS21-001)" aspectModel="dimensional" implicitFiltering="true" xlink:type="resource" xlink:label="Mandatory_BS21-001"/>
         <!-- unsatisfied message -->
-        <gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="Mandatory_A004-001" xlink:to="error-Mandatory_A004-001"/>
-        <msg:message id="error-Mandatory_A004-001" xlink:type="resource" xlink:role="http://www.xbrl.org/2010/role/message" xlink:label="error-Mandatory_A004-001" xml:lang="en">Not satisfied error: [Mandatory A004-001] A004-001 is a mandatory items.</msg:message>
+        <gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="Mandatory_BS21-001" xlink:to="error-Mandatory_BS21-001"/>
+        <msg:message id="error-Mandatory_BS21-001" xlink:type="resource" xlink:role="http://www.xbrl.org/2010/role/message" xlink:label="error-Mandatory_BS21-001" xml:lang="en">Not satisfied error: [Mandatory BS21-001] BS21-001 is a mandatory items.</msg:message>
         <!-- variable -->
-        <variable:variableArc name="context_A004-001" order="1" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A004-001" xlink:to="gen_context_A004-001"/>
-        <variable:variableArc name="element_A004-001" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A004-001" xlink:to="gen_element_A004-001"/>
-        <variable:generalVariable id="gen_context_A004-001" bindAsSequence="true" select="distinct-values(//*[local-name(.)='context']/@id[substring(.,1,4)='A004' and not(contains(substring-after(.,'_'),'_'))])" xlink:type="resource" xlink:label="gen_context_A004-001"/>
-        <variable:generalVariable id="gen_element_A004-001" bindAsSequence="true" select="distinct-values(//adc:A004-001[substring(@contextRef,1,4)='A004' and not(contains(substring-after(@contextRef,'_'),'_'))]/@contextRef)" xlink:type="resource" xlink:label="gen_element_A004-001"/>
-        <!-- A005-001 mandatory assertion -->
-        <va:valueAssertion id="Mandatory_A005-001" test="count($context_A005-001)=count($element_A005-001)" aspectModel="dimensional" implicitFiltering="true" xlink:type="resource" xlink:label="Mandatory_A005-001"/>
-        <!-- unsatisfied message -->
-        <gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="Mandatory_A005-001" xlink:to="error-Mandatory_A005-001"/>
-        <msg:message id="error-Mandatory_A005-001" xlink:type="resource" xlink:role="http://www.xbrl.org/2010/role/message" xlink:label="error-Mandatory_A005-001" xml:lang="en">Not satisfied error: [Mandatory A005-001] A005-001 is a mandatory items.</msg:message>
-        <!-- variable -->
-        <variable:variableArc name="context_A005-001" order="1" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A005-001" xlink:to="gen_context_A005-001"/>
-        <variable:variableArc name="element_A005-001" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A005-001" xlink:to="gen_element_A005-001"/>
-        <variable:generalVariable id="gen_context_A005-001" bindAsSequence="true" select="distinct-values(//*[local-name(.)='context']/@id[substring(.,1,4)='A005' and not(contains(substring-after(.,'_'),'_'))])" xlink:type="resource" xlink:label="gen_context_A005-001"/>
-        <variable:generalVariable id="gen_element_A005-001" bindAsSequence="true" select="distinct-values(//adc:A005-001[substring(@contextRef,1,4)='A005' and not(contains(substring-after(@contextRef,'_'),'_'))]/@contextRef)" xlink:type="resource" xlink:label="gen_element_A005-001"/>
-        <!-- A006-001 mandatory assertion -->
-        <va:valueAssertion id="Mandatory_A006-001" test="count($context_A006-001)=count($element_A006-001)" aspectModel="dimensional" implicitFiltering="true" xlink:type="resource" xlink:label="Mandatory_A006-001"/>
-        <!-- unsatisfied message -->
-        <gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="Mandatory_A006-001" xlink:to="error-Mandatory_A006-001"/>
-        <msg:message id="error-Mandatory_A006-001" xlink:type="resource" xlink:role="http://www.xbrl.org/2010/role/message" xlink:label="error-Mandatory_A006-001" xml:lang="en">Not satisfied error: [Mandatory A006-001] A006-001 is a mandatory items.</msg:message>
-        <!-- variable -->
-        <variable:variableArc name="context_A006-001" order="1" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A006-001" xlink:to="gen_context_A006-001"/>
-        <variable:variableArc name="element_A006-001" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A006-001" xlink:to="gen_element_A006-001"/>
-        <variable:generalVariable id="gen_context_A006-001" bindAsSequence="true" select="distinct-values(//*[local-name(.)='context']/@id[substring(.,1,4)='A006' and not(contains(substring-after(.,'_'),'_'))])" xlink:type="resource" xlink:label="gen_context_A006-001"/>
-        <variable:generalVariable id="gen_element_A006-001" bindAsSequence="true" select="distinct-values(//adc:A006-001[substring(@contextRef,1,4)='A006' and not(contains(substring-after(@contextRef,'_'),'_'))]/@contextRef)" xlink:type="resource" xlink:label="gen_element_A006-001"/>
-        <!-- A007-001 mandatory assertion -->
-        <va:valueAssertion id="Mandatory_A007-001" test="count($context_A007-001)=count($element_A007-001)" aspectModel="dimensional" implicitFiltering="true" xlink:type="resource" xlink:label="Mandatory_A007-001"/>
-        <!-- unsatisfied message -->
-        <gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="Mandatory_A007-001" xlink:to="error-Mandatory_A007-001"/>
-        <msg:message id="error-Mandatory_A007-001" xlink:type="resource" xlink:role="http://www.xbrl.org/2010/role/message" xlink:label="error-Mandatory_A007-001" xml:lang="en">Not satisfied error: [Mandatory A007-001] A007-001 is a mandatory items.</msg:message>
-        <!-- variable -->
-        <variable:variableArc name="context_A007-001" order="1" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A007-001" xlink:to="gen_context_A007-001"/>
-        <variable:variableArc name="element_A007-001" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A007-001" xlink:to="gen_element_A007-001"/>
-        <variable:generalVariable id="gen_context_A007-001" bindAsSequence="true" select="distinct-values(//*[local-name(.)='context']/@id[substring(.,1,4)='A007' and not(contains(substring-after(.,'_'),'_'))])" xlink:type="resource" xlink:label="gen_context_A007-001"/>
-        <variable:generalVariable id="gen_element_A007-001" bindAsSequence="true" select="distinct-values(//adc:A007-001[substring(@contextRef,1,4)='A007' and not(contains(substring-after(@contextRef,'_'),'_'))]/@contextRef)" xlink:type="resource" xlink:label="gen_element_A007-001"/>
-        <!-- A008-001 mandatory assertion -->
-        <va:valueAssertion id="Mandatory_A008-001" test="count($context_A008-001)=count($element_A008-001)" aspectModel="dimensional" implicitFiltering="true" xlink:type="resource" xlink:label="Mandatory_A008-001"/>
-        <!-- unsatisfied message -->
-        <gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="Mandatory_A008-001" xlink:to="error-Mandatory_A008-001"/>
-        <msg:message id="error-Mandatory_A008-001" xlink:type="resource" xlink:role="http://www.xbrl.org/2010/role/message" xlink:label="error-Mandatory_A008-001" xml:lang="en">Not satisfied error: [Mandatory A008-001] A008-001 is a mandatory items.</msg:message>
-        <!-- variable -->
-        <variable:variableArc name="context_A008-001" order="1" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A008-001" xlink:to="gen_context_A008-001"/>
-        <variable:variableArc name="element_A008-001" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A008-001" xlink:to="gen_element_A008-001"/>
-        <variable:generalVariable id="gen_context_A008-001" bindAsSequence="true" select="distinct-values(//*[local-name(.)='context']/@id[substring(.,1,4)='A008' and not(contains(substring-after(.,'_'),'_'))])" xlink:type="resource" xlink:label="gen_context_A008-001"/>
-        <variable:generalVariable id="gen_element_A008-001" bindAsSequence="true" select="distinct-values(//adc:A008-001[substring(@contextRef,1,4)='A008' and not(contains(substring-after(@contextRef,'_'),'_'))]/@contextRef)" xlink:type="resource" xlink:label="gen_element_A008-001"/>
-        <!-- A009-001 mandatory assertion -->
-        <va:valueAssertion id="Mandatory_A009-001" test="count($context_A009-001)=count($element_A009-001)" aspectModel="dimensional" implicitFiltering="true" xlink:type="resource" xlink:label="Mandatory_A009-001"/>
-        <!-- unsatisfied message -->
-        <gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="Mandatory_A009-001" xlink:to="error-Mandatory_A009-001"/>
-        <msg:message id="error-Mandatory_A009-001" xlink:type="resource" xlink:role="http://www.xbrl.org/2010/role/message" xlink:label="error-Mandatory_A009-001" xml:lang="en">Not satisfied error: [Mandatory A009-001] A009-001 is a mandatory items.</msg:message>
-        <!-- variable -->
-        <variable:variableArc name="context_A009-001" order="1" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A009-001" xlink:to="gen_context_A009-001"/>
-        <variable:variableArc name="element_A009-001" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A009-001" xlink:to="gen_element_A009-001"/>
-        <variable:generalVariable id="gen_context_A009-001" bindAsSequence="true" select="distinct-values(//*[local-name(.)='context']/@id[substring(.,1,4)='A009' and not(contains(substring-after(.,'_'),'_'))])" xlink:type="resource" xlink:label="gen_context_A009-001"/>
-        <variable:generalVariable id="gen_element_A009-001" bindAsSequence="true" select="distinct-values(//adc:A009-001[substring(@contextRef,1,4)='A009' and not(contains(substring-after(@contextRef,'_'),'_'))]/@contextRef)" xlink:type="resource" xlink:label="gen_element_A009-001"/>
-        <!-- A026-A009-001 mandatory assertion -->
-        <va:valueAssertion id="Mandatory_A026-A009-001" test="count($context_A026-A009-001)=count($element_A026-A009-001)" aspectModel="dimensional" implicitFiltering="true" xlink:type="resource" xlink:label="Mandatory_A026-A009-001"/>
-        <!-- unsatisfied message -->
-        <gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="Mandatory_A026-A009-001" xlink:to="error-Mandatory_A026-A009-001"/>
-        <msg:message id="error-Mandatory_A026-A009-001" xlink:type="resource" xlink:role="http://www.xbrl.org/2010/role/message" xlink:label="error-Mandatory_A026-A009-001" xml:lang="en">Not satisfied error: [Mandatory A026-A009-001] A026-A009-001 is a mandatory items.</msg:message>
-        <!-- variable -->
-        <variable:variableArc name="context_A026-A009-001" order="1" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A026-A009-001" xlink:to="gen_context_A026-A009-001"/>
-        <variable:variableArc name="element_A026-A009-001" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A026-A009-001" xlink:to="gen_element_A026-A009-001"/>
-        <variable:generalVariable id="gen_context_A026-A009-001" bindAsSequence="true" select="distinct-values(//*[local-name(.)='context']/@id[substring(.,1,4)='A026' and contains(substring-after(.,'_'),'A009') and not(contains(substring-after(.,'A009_'),'_'))])" xlink:type="resource" xlink:label="gen_context_A026-A009-001"/>
-        <variable:generalVariable id="gen_element_A026-A009-001" bindAsSequence="true" select="distinct-values(//adc:A026-A009-001[substring(@contextRef,1,4)='A026' and contains(substring-after(@contextRef,'_'),'A009') and not(contains(substring-after(.,'A009_'),'_'))]/@contextRef)" xlink:type="resource" xlink:label="gen_element_A026-A009-001"/>
-        <!-- A010-002 mandatory assertion -->
-        <va:valueAssertion id="Mandatory_A010-002" test="count($context_A010-002)=count($element_A010-002)" aspectModel="dimensional" implicitFiltering="true" xlink:type="resource" xlink:label="Mandatory_A010-002"/>
-        <!-- unsatisfied message -->
-        <gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="Mandatory_A010-002" xlink:to="error-Mandatory_A010-002"/>
-        <msg:message id="error-Mandatory_A010-002" xlink:type="resource" xlink:role="http://www.xbrl.org/2010/role/message" xlink:label="error-Mandatory_A010-002" xml:lang="en">Not satisfied error: [Mandatory A010-002] A010-002 is a mandatory items.</msg:message>
-        <!-- variable -->
-        <variable:variableArc name="context_A010-002" order="1" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A010-002" xlink:to="gen_context_A010-002"/>
-        <variable:variableArc name="element_A010-002" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A010-002" xlink:to="gen_element_A010-002"/>
-        <variable:generalVariable id="gen_context_A010-002" bindAsSequence="true" select="distinct-values(//*[local-name(.)='context']/@id[substring(.,1,4)='A010' and not(contains(substring-after(.,'_'),'_'))])" xlink:type="resource" xlink:label="gen_context_A010-002"/>
-        <variable:generalVariable id="gen_element_A010-002" bindAsSequence="true" select="distinct-values(//adc:A010-002[substring(@contextRef,1,4)='A010' and not(contains(substring-after(@contextRef,'_'),'_'))]/@contextRef)" xlink:type="resource" xlink:label="gen_element_A010-002"/>
-        <!-- A011-001 mandatory assertion -->
-        <va:valueAssertion id="Mandatory_A011-001" test="count($context_A011-001)=count($element_A011-001)" aspectModel="dimensional" implicitFiltering="true" xlink:type="resource" xlink:label="Mandatory_A011-001"/>
-        <!-- unsatisfied message -->
-        <gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="Mandatory_A011-001" xlink:to="error-Mandatory_A011-001"/>
-        <msg:message id="error-Mandatory_A011-001" xlink:type="resource" xlink:role="http://www.xbrl.org/2010/role/message" xlink:label="error-Mandatory_A011-001" xml:lang="en">Not satisfied error: [Mandatory A011-001] A011-001 is a mandatory items.</msg:message>
-        <!-- variable -->
-        <variable:variableArc name="context_A011-001" order="1" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A011-001" xlink:to="gen_context_A011-001"/>
-        <variable:variableArc name="element_A011-001" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A011-001" xlink:to="gen_element_A011-001"/>
-        <variable:generalVariable id="gen_context_A011-001" bindAsSequence="true" select="distinct-values(//*[local-name(.)='context']/@id[substring(.,1,4)='A011' and not(contains(substring-after(.,'_'),'_'))])" xlink:type="resource" xlink:label="gen_context_A011-001"/>
-        <variable:generalVariable id="gen_element_A011-001" bindAsSequence="true" select="distinct-values(//adc:A011-001[substring(@contextRef,1,4)='A011' and not(contains(substring-after(@contextRef,'_'),'_'))]/@contextRef)" xlink:type="resource" xlink:label="gen_element_A011-001"/>
-        <!-- A012-001 mandatory assertion -->
-        <va:valueAssertion id="Mandatory_A012-001" test="count($context_A012-001)=count($element_A012-001)" aspectModel="dimensional" implicitFiltering="true" xlink:type="resource" xlink:label="Mandatory_A012-001"/>
-        <!-- unsatisfied message -->
-        <gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="Mandatory_A012-001" xlink:to="error-Mandatory_A012-001"/>
-        <msg:message id="error-Mandatory_A012-001" xlink:type="resource" xlink:role="http://www.xbrl.org/2010/role/message" xlink:label="error-Mandatory_A012-001" xml:lang="en">Not satisfied error: [Mandatory A012-001] A012-001 is a mandatory items.</msg:message>
-        <!-- variable -->
-        <variable:variableArc name="context_A012-001" order="1" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A012-001" xlink:to="gen_context_A012-001"/>
-        <variable:variableArc name="element_A012-001" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A012-001" xlink:to="gen_element_A012-001"/>
-        <variable:generalVariable id="gen_context_A012-001" bindAsSequence="true" select="distinct-values(//*[local-name(.)='context']/@id[substring(.,1,4)='A012' and not(contains(substring-after(.,'_'),'_'))])" xlink:type="resource" xlink:label="gen_context_A012-001"/>
-        <variable:generalVariable id="gen_element_A012-001" bindAsSequence="true" select="distinct-values(//adc:A012-001[substring(@contextRef,1,4)='A012' and not(contains(substring-after(@contextRef,'_'),'_'))]/@contextRef)" xlink:type="resource" xlink:label="gen_element_A012-001"/>
-        <!-- A013-001 mandatory assertion -->
-        <va:valueAssertion id="Mandatory_A013-001" test="count($context_A013-001)=count($element_A013-001)" aspectModel="dimensional" implicitFiltering="true" xlink:type="resource" xlink:label="Mandatory_A013-001"/>
-        <!-- unsatisfied message -->
-        <gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="Mandatory_A013-001" xlink:to="error-Mandatory_A013-001"/>
-        <msg:message id="error-Mandatory_A013-001" xlink:type="resource" xlink:role="http://www.xbrl.org/2010/role/message" xlink:label="error-Mandatory_A013-001" xml:lang="en">Not satisfied error: [Mandatory A013-001] A013-001 is a mandatory items.</msg:message>
-        <!-- variable -->
-        <variable:variableArc name="context_A013-001" order="1" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A013-001" xlink:to="gen_context_A013-001"/>
-        <variable:variableArc name="element_A013-001" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A013-001" xlink:to="gen_element_A013-001"/>
-        <variable:generalVariable id="gen_context_A013-001" bindAsSequence="true" select="distinct-values(//*[local-name(.)='context']/@id[substring(.,1,4)='A013' and not(contains(substring-after(.,'_'),'_'))])" xlink:type="resource" xlink:label="gen_context_A013-001"/>
-        <variable:generalVariable id="gen_element_A013-001" bindAsSequence="true" select="distinct-values(//adc:A013-001[substring(@contextRef,1,4)='A013' and not(contains(substring-after(@contextRef,'_'),'_'))]/@contextRef)" xlink:type="resource" xlink:label="gen_element_A013-001"/>
-        <!-- A014-001 mandatory assertion -->
-        <va:valueAssertion id="Mandatory_A014-001" test="count($context_A014-001)=count($element_A014-001)" aspectModel="dimensional" implicitFiltering="true" xlink:type="resource" xlink:label="Mandatory_A014-001"/>
-        <!-- unsatisfied message -->
-        <gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="Mandatory_A014-001" xlink:to="error-Mandatory_A014-001"/>
-        <msg:message id="error-Mandatory_A014-001" xlink:type="resource" xlink:role="http://www.xbrl.org/2010/role/message" xlink:label="error-Mandatory_A014-001" xml:lang="en">Not satisfied error: [Mandatory A014-001] A014-001 is a mandatory items.</msg:message>
-        <!-- variable -->
-        <variable:variableArc name="context_A014-001" order="1" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A014-001" xlink:to="gen_context_A014-001"/>
-        <variable:variableArc name="element_A014-001" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A014-001" xlink:to="gen_element_A014-001"/>
-        <variable:generalVariable id="gen_context_A014-001" bindAsSequence="true" select="distinct-values(//*[local-name(.)='context']/@id[substring(.,1,4)='A014' and not(contains(substring-after(.,'_'),'_'))])" xlink:type="resource" xlink:label="gen_context_A014-001"/>
-        <variable:generalVariable id="gen_element_A014-001" bindAsSequence="true" select="distinct-values(//adc:A014-001[substring(@contextRef,1,4)='A014' and not(contains(substring-after(@contextRef,'_'),'_'))]/@contextRef)" xlink:type="resource" xlink:label="gen_element_A014-001"/>
-        <!-- A015-001 mandatory assertion -->
-        <va:valueAssertion id="Mandatory_A015-001" test="count($context_A015-001)=count($element_A015-001)" aspectModel="dimensional" implicitFiltering="true" xlink:type="resource" xlink:label="Mandatory_A015-001"/>
-        <!-- unsatisfied message -->
-        <gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="Mandatory_A015-001" xlink:to="error-Mandatory_A015-001"/>
-        <msg:message id="error-Mandatory_A015-001" xlink:type="resource" xlink:role="http://www.xbrl.org/2010/role/message" xlink:label="error-Mandatory_A015-001" xml:lang="en">Not satisfied error: [Mandatory A015-001] A015-001 is a mandatory items.</msg:message>
-        <!-- variable -->
-        <variable:variableArc name="context_A015-001" order="1" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A015-001" xlink:to="gen_context_A015-001"/>
-        <variable:variableArc name="element_A015-001" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A015-001" xlink:to="gen_element_A015-001"/>
-        <variable:generalVariable id="gen_context_A015-001" bindAsSequence="true" select="distinct-values(//*[local-name(.)='context']/@id[substring(.,1,4)='A015' and not(contains(substring-after(.,'_'),'_'))])" xlink:type="resource" xlink:label="gen_context_A015-001"/>
-        <variable:generalVariable id="gen_element_A015-001" bindAsSequence="true" select="distinct-values(//adc:A015-001[substring(@contextRef,1,4)='A015' and not(contains(substring-after(@contextRef,'_'),'_'))]/@contextRef)" xlink:type="resource" xlink:label="gen_element_A015-001"/>
-        <!-- A016-001 mandatory assertion -->
-        <va:valueAssertion id="Mandatory_A016-001" test="count($context_A016-001)=count($element_A016-001)" aspectModel="dimensional" implicitFiltering="true" xlink:type="resource" xlink:label="Mandatory_A016-001"/>
-        <!-- unsatisfied message -->
-        <gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="Mandatory_A016-001" xlink:to="error-Mandatory_A016-001"/>
-        <msg:message id="error-Mandatory_A016-001" xlink:type="resource" xlink:role="http://www.xbrl.org/2010/role/message" xlink:label="error-Mandatory_A016-001" xml:lang="en">Not satisfied error: [Mandatory A016-001] A016-001 is a mandatory items.</msg:message>
-        <!-- variable -->
-        <variable:variableArc name="context_A016-001" order="1" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A016-001" xlink:to="gen_context_A016-001"/>
-        <variable:variableArc name="element_A016-001" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A016-001" xlink:to="gen_element_A016-001"/>
-        <variable:generalVariable id="gen_context_A016-001" bindAsSequence="true" select="distinct-values(//*[local-name(.)='context']/@id[substring(.,1,4)='A016' and not(contains(substring-after(.,'_'),'_'))])" xlink:type="resource" xlink:label="gen_context_A016-001"/>
-        <variable:generalVariable id="gen_element_A016-001" bindAsSequence="true" select="distinct-values(//adc:A016-001[substring(@contextRef,1,4)='A016' and not(contains(substring-after(@contextRef,'_'),'_'))]/@contextRef)" xlink:type="resource" xlink:label="gen_element_A016-001"/>
-        <!-- A017-001 mandatory assertion -->
-        <va:valueAssertion id="Mandatory_A017-001" test="count($context_A017-001)=count($element_A017-001)" aspectModel="dimensional" implicitFiltering="true" xlink:type="resource" xlink:label="Mandatory_A017-001"/>
-        <!-- unsatisfied message -->
-        <gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="Mandatory_A017-001" xlink:to="error-Mandatory_A017-001"/>
-        <msg:message id="error-Mandatory_A017-001" xlink:type="resource" xlink:role="http://www.xbrl.org/2010/role/message" xlink:label="error-Mandatory_A017-001" xml:lang="en">Not satisfied error: [Mandatory A017-001] A017-001 is a mandatory items.</msg:message>
-        <!-- variable -->
-        <variable:variableArc name="context_A017-001" order="1" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A017-001" xlink:to="gen_context_A017-001"/>
-        <variable:variableArc name="element_A017-001" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A017-001" xlink:to="gen_element_A017-001"/>
-        <variable:generalVariable id="gen_context_A017-001" bindAsSequence="true" select="distinct-values(//*[local-name(.)='context']/@id[substring(.,1,4)='A017' and not(contains(substring-after(.,'_'),'_'))])" xlink:type="resource" xlink:label="gen_context_A017-001"/>
-        <variable:generalVariable id="gen_element_A017-001" bindAsSequence="true" select="distinct-values(//adc:A017-001[substring(@contextRef,1,4)='A017' and not(contains(substring-after(@contextRef,'_'),'_'))]/@contextRef)" xlink:type="resource" xlink:label="gen_element_A017-001"/>
-        <!-- A018-001 mandatory assertion -->
-        <va:valueAssertion id="Mandatory_A018-001" test="count($context_A018-001)=count($element_A018-001)" aspectModel="dimensional" implicitFiltering="true" xlink:type="resource" xlink:label="Mandatory_A018-001"/>
-        <!-- unsatisfied message -->
-        <gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="Mandatory_A018-001" xlink:to="error-Mandatory_A018-001"/>
-        <msg:message id="error-Mandatory_A018-001" xlink:type="resource" xlink:role="http://www.xbrl.org/2010/role/message" xlink:label="error-Mandatory_A018-001" xml:lang="en">Not satisfied error: [Mandatory A018-001] A018-001 is a mandatory items.</msg:message>
-        <!-- variable -->
-        <variable:variableArc name="context_A018-001" order="1" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A018-001" xlink:to="gen_context_A018-001"/>
-        <variable:variableArc name="element_A018-001" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A018-001" xlink:to="gen_element_A018-001"/>
-        <variable:generalVariable id="gen_context_A018-001" bindAsSequence="true" select="distinct-values(//*[local-name(.)='context']/@id[substring(.,1,4)='A018' and not(contains(substring-after(.,'_'),'_'))])" xlink:type="resource" xlink:label="gen_context_A018-001"/>
-        <variable:generalVariable id="gen_element_A018-001" bindAsSequence="true" select="distinct-values(//adc:A018-001[substring(@contextRef,1,4)='A018' and not(contains(substring-after(@contextRef,'_'),'_'))]/@contextRef)" xlink:type="resource" xlink:label="gen_element_A018-001"/>
-        <!-- A019-001 mandatory assertion -->
-        <va:valueAssertion id="Mandatory_A019-001" test="count($context_A019-001)=count($element_A019-001)" aspectModel="dimensional" implicitFiltering="true" xlink:type="resource" xlink:label="Mandatory_A019-001"/>
-        <!-- unsatisfied message -->
-        <gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="Mandatory_A019-001" xlink:to="error-Mandatory_A019-001"/>
-        <msg:message id="error-Mandatory_A019-001" xlink:type="resource" xlink:role="http://www.xbrl.org/2010/role/message" xlink:label="error-Mandatory_A019-001" xml:lang="en">Not satisfied error: [Mandatory A019-001] A019-001 is a mandatory items.</msg:message>
-        <!-- variable -->
-        <variable:variableArc name="context_A019-001" order="1" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A019-001" xlink:to="gen_context_A019-001"/>
-        <variable:variableArc name="element_A019-001" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A019-001" xlink:to="gen_element_A019-001"/>
-        <variable:generalVariable id="gen_context_A019-001" bindAsSequence="true" select="distinct-values(//*[local-name(.)='context']/@id[substring(.,1,4)='A019' and not(contains(substring-after(.,'_'),'_'))])" xlink:type="resource" xlink:label="gen_context_A019-001"/>
-        <variable:generalVariable id="gen_element_A019-001" bindAsSequence="true" select="distinct-values(//adc:A019-001[substring(@contextRef,1,4)='A019' and not(contains(substring-after(@contextRef,'_'),'_'))]/@contextRef)" xlink:type="resource" xlink:label="gen_element_A019-001"/>
-        <!-- A020-001 mandatory assertion -->
-        <va:valueAssertion id="Mandatory_A020-001" test="count($context_A020-001)=count($element_A020-001)" aspectModel="dimensional" implicitFiltering="true" xlink:type="resource" xlink:label="Mandatory_A020-001"/>
-        <!-- unsatisfied message -->
-        <gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="Mandatory_A020-001" xlink:to="error-Mandatory_A020-001"/>
-        <msg:message id="error-Mandatory_A020-001" xlink:type="resource" xlink:role="http://www.xbrl.org/2010/role/message" xlink:label="error-Mandatory_A020-001" xml:lang="en">Not satisfied error: [Mandatory A020-001] A020-001 is a mandatory items.</msg:message>
-        <!-- variable -->
-        <variable:variableArc name="context_A020-001" order="1" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A020-001" xlink:to="gen_context_A020-001"/>
-        <variable:variableArc name="element_A020-001" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A020-001" xlink:to="gen_element_A020-001"/>
-        <variable:generalVariable id="gen_context_A020-001" bindAsSequence="true" select="distinct-values(//*[local-name(.)='context']/@id[substring(.,1,4)='A020' and not(contains(substring-after(.,'_'),'_'))])" xlink:type="resource" xlink:label="gen_context_A020-001"/>
-        <variable:generalVariable id="gen_element_A020-001" bindAsSequence="true" select="distinct-values(//adc:A020-001[substring(@contextRef,1,4)='A020' and not(contains(substring-after(@contextRef,'_'),'_'))]/@contextRef)" xlink:type="resource" xlink:label="gen_element_A020-001"/>
-        <!-- A021-001 mandatory assertion -->
-        <va:valueAssertion id="Mandatory_A021-001" test="count($context_A021-001)=count($element_A021-001)" aspectModel="dimensional" implicitFiltering="true" xlink:type="resource" xlink:label="Mandatory_A021-001"/>
-        <!-- unsatisfied message -->
-        <gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="Mandatory_A021-001" xlink:to="error-Mandatory_A021-001"/>
-        <msg:message id="error-Mandatory_A021-001" xlink:type="resource" xlink:role="http://www.xbrl.org/2010/role/message" xlink:label="error-Mandatory_A021-001" xml:lang="en">Not satisfied error: [Mandatory A021-001] A021-001 is a mandatory items.</msg:message>
-        <!-- variable -->
-        <variable:variableArc name="context_A021-001" order="1" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A021-001" xlink:to="gen_context_A021-001"/>
-        <variable:variableArc name="element_A021-001" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A021-001" xlink:to="gen_element_A021-001"/>
-        <variable:generalVariable id="gen_context_A021-001" bindAsSequence="true" select="distinct-values(//*[local-name(.)='context']/@id[substring(.,1,4)='A021' and not(contains(substring-after(.,'_'),'_'))])" xlink:type="resource" xlink:label="gen_context_A021-001"/>
-        <variable:generalVariable id="gen_element_A021-001" bindAsSequence="true" select="distinct-values(//adc:A021-001[substring(@contextRef,1,4)='A021' and not(contains(substring-after(@contextRef,'_'),'_'))]/@contextRef)" xlink:type="resource" xlink:label="gen_element_A021-001"/>
-        <!-- A022-001 mandatory assertion -->
-        <va:valueAssertion id="Mandatory_A022-001" test="count($context_A022-001)=count($element_A022-001)" aspectModel="dimensional" implicitFiltering="true" xlink:type="resource" xlink:label="Mandatory_A022-001"/>
-        <!-- unsatisfied message -->
-        <gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="Mandatory_A022-001" xlink:to="error-Mandatory_A022-001"/>
-        <msg:message id="error-Mandatory_A022-001" xlink:type="resource" xlink:role="http://www.xbrl.org/2010/role/message" xlink:label="error-Mandatory_A022-001" xml:lang="en">Not satisfied error: [Mandatory A022-001] A022-001 is a mandatory items.</msg:message>
-        <!-- variable -->
-        <variable:variableArc name="context_A022-001" order="1" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A022-001" xlink:to="gen_context_A022-001"/>
-        <variable:variableArc name="element_A022-001" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A022-001" xlink:to="gen_element_A022-001"/>
-        <variable:generalVariable id="gen_context_A022-001" bindAsSequence="true" select="distinct-values(//*[local-name(.)='context']/@id[substring(.,1,4)='A022' and not(contains(substring-after(.,'_'),'_'))])" xlink:type="resource" xlink:label="gen_context_A022-001"/>
-        <variable:generalVariable id="gen_element_A022-001" bindAsSequence="true" select="distinct-values(//adc:A022-001[substring(@contextRef,1,4)='A022' and not(contains(substring-after(@contextRef,'_'),'_'))]/@contextRef)" xlink:type="resource" xlink:label="gen_element_A022-001"/>
-        <!-- A023-001 mandatory assertion -->
-        <va:valueAssertion id="Mandatory_A023-001" test="count($context_A023-001)=count($element_A023-001)" aspectModel="dimensional" implicitFiltering="true" xlink:type="resource" xlink:label="Mandatory_A023-001"/>
-        <!-- unsatisfied message -->
-        <gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="Mandatory_A023-001" xlink:to="error-Mandatory_A023-001"/>
-        <msg:message id="error-Mandatory_A023-001" xlink:type="resource" xlink:role="http://www.xbrl.org/2010/role/message" xlink:label="error-Mandatory_A023-001" xml:lang="en">Not satisfied error: [Mandatory A023-001] A023-001 is a mandatory items.</msg:message>
-        <!-- variable -->
-        <variable:variableArc name="context_A023-001" order="1" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A023-001" xlink:to="gen_context_A023-001"/>
-        <variable:variableArc name="element_A023-001" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A023-001" xlink:to="gen_element_A023-001"/>
-        <variable:generalVariable id="gen_context_A023-001" bindAsSequence="true" select="distinct-values(//*[local-name(.)='context']/@id[substring(.,1,4)='A023' and not(contains(substring-after(.,'_'),'_'))])" xlink:type="resource" xlink:label="gen_context_A023-001"/>
-        <variable:generalVariable id="gen_element_A023-001" bindAsSequence="true" select="distinct-values(//adc:A023-001[substring(@contextRef,1,4)='A023' and not(contains(substring-after(@contextRef,'_'),'_'))]/@contextRef)" xlink:type="resource" xlink:label="gen_element_A023-001"/>
-        <!-- A006-A076-001 mandatory assertion -->
-        <va:valueAssertion id="Mandatory_A006-A076-001" test="count($context_A006-A076-001)=count($element_A006-A076-001)" aspectModel="dimensional" implicitFiltering="true" xlink:type="resource" xlink:label="Mandatory_A006-A076-001"/>
-        <!-- unsatisfied message -->
-        <gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="Mandatory_A006-A076-001" xlink:to="error-Mandatory_A006-A076-001"/>
-        <msg:message id="error-Mandatory_A006-A076-001" xlink:type="resource" xlink:role="http://www.xbrl.org/2010/role/message" xlink:label="error-Mandatory_A006-A076-001" xml:lang="en">Not satisfied error: [Mandatory A006-A076-001] A006-A076-001 is a mandatory items.</msg:message>
-        <!-- variable -->
-        <variable:variableArc name="context_A006-A076-001" order="1" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A006-A076-001" xlink:to="gen_context_A006-A076-001"/>
-        <variable:variableArc name="element_A006-A076-001" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A006-A076-001" xlink:to="gen_element_A006-A076-001"/>
-        <variable:generalVariable id="gen_context_A006-A076-001" bindAsSequence="true" select="distinct-values(//*[local-name(.)='context']/@id[substring(.,1,4)='A006' and contains(substring-after(.,'_'),'A076') and not(contains(substring-after(.,'A076_'),'_'))])" xlink:type="resource" xlink:label="gen_context_A006-A076-001"/>
-        <variable:generalVariable id="gen_element_A006-A076-001" bindAsSequence="true" select="distinct-values(//adc:A006-A076-001[substring(@contextRef,1,4)='A006' and contains(substring-after(@contextRef,'_'),'A076') and not(contains(substring-after(.,'A076_'),'_'))]/@contextRef)" xlink:type="resource" xlink:label="gen_element_A006-A076-001"/>
-        <!-- A008-A076-001 mandatory assertion -->
-        <va:valueAssertion id="Mandatory_A008-A076-001" test="count($context_A008-A076-001)=count($element_A008-A076-001)" aspectModel="dimensional" implicitFiltering="true" xlink:type="resource" xlink:label="Mandatory_A008-A076-001"/>
-        <!-- unsatisfied message -->
-        <gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="Mandatory_A008-A076-001" xlink:to="error-Mandatory_A008-A076-001"/>
-        <msg:message id="error-Mandatory_A008-A076-001" xlink:type="resource" xlink:role="http://www.xbrl.org/2010/role/message" xlink:label="error-Mandatory_A008-A076-001" xml:lang="en">Not satisfied error: [Mandatory A008-A076-001] A008-A076-001 is a mandatory items.</msg:message>
-        <!-- variable -->
-        <variable:variableArc name="context_A008-A076-001" order="1" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A008-A076-001" xlink:to="gen_context_A008-A076-001"/>
-        <variable:variableArc name="element_A008-A076-001" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A008-A076-001" xlink:to="gen_element_A008-A076-001"/>
-        <variable:generalVariable id="gen_context_A008-A076-001" bindAsSequence="true" select="distinct-values(//*[local-name(.)='context']/@id[substring(.,1,4)='A008' and contains(substring-after(.,'_'),'A076') and not(contains(substring-after(.,'A076_'),'_'))])" xlink:type="resource" xlink:label="gen_context_A008-A076-001"/>
-        <variable:generalVariable id="gen_element_A008-A076-001" bindAsSequence="true" select="distinct-values(//adc:A008-A076-001[substring(@contextRef,1,4)='A008' and contains(substring-after(@contextRef,'_'),'A076') and not(contains(substring-after(.,'A076_'),'_'))]/@contextRef)" xlink:type="resource" xlink:label="gen_element_A008-A076-001"/>
-        <!-- A009-A001-001 mandatory assertion -->
-        <va:valueAssertion id="Mandatory_A009-A001-001" test="count($context_A009-A001-001)=count($element_A009-A001-001)" aspectModel="dimensional" implicitFiltering="true" xlink:type="resource" xlink:label="Mandatory_A009-A001-001"/>
-        <!-- unsatisfied message -->
-        <gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:from="Mandatory_A009-A001-001" xlink:to="error-Mandatory_A009-A001-001"/>
-        <msg:message id="error-Mandatory_A009-A001-001" xlink:type="resource" xlink:role="http://www.xbrl.org/2010/role/message" xlink:label="error-Mandatory_A009-A001-001" xml:lang="en">Not satisfied error: [Mandatory A009-A001-001] A009-A001-001 is a mandatory items.</msg:message>
-        <!-- variable -->
-        <variable:variableArc name="context_A009-A001-001" order="1" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A009-A001-001" xlink:to="gen_context_A009-A001-001"/>
-        <variable:variableArc name="element_A009-A001-001" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_A009-A001-001" xlink:to="gen_element_A009-A001-001"/>
-        <variable:generalVariable id="gen_context_A009-A001-001" bindAsSequence="true" select="distinct-values(//*[local-name(.)='context']/@id[substring(.,1,4)='A009' and contains(substring-after(.,'_'),'A001') and not(contains(substring-after(.,'A001_'),'_'))])" xlink:type="resource" xlink:label="gen_context_A009-A001-001"/>
-        <variable:generalVariable id="gen_element_A009-A001-001" bindAsSequence="true" select="distinct-values(//adc:A009-A001-001[substring(@contextRef,1,4)='A009' and contains(substring-after(@contextRef,'_'),'A001') and not(contains(substring-after(.,'A001_'),'_'))]/@contextRef)" xlink:type="resource" xlink:label="gen_element_A009-A001-001"/>
+        <variable:variableArc name="context_BS21-001" order="1" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_BS21-001" xlink:to="gen_context_BS21-001"/>
+        <variable:variableArc name="element_BS21-001" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="Mandatory_BS21-001" xlink:to="gen_element_BS21-001"/>
+        <variable:generalVariable id="gen_context_BS21-001" bindAsSequence="true" select="distinct-values(//*[local-name(.)='context']/@id[substring(.,1,4)='BS21' and not(contains(substring-after(.,'_'),'_'))])" xlink:type="resource" xlink:label="gen_context_BS21-001"/>
+        <variable:generalVariable id="gen_element_BS21-001" bindAsSequence="true" select="distinct-values(//adc:BS21-001[substring(@contextRef,1,4)='BS21' and not(contains(substring-after(@contextRef,'_'),'_'))]/@contextRef)" xlink:type="resource" xlink:label="gen_element_BS21-001"/>
     </gen:link>
 </link:linkbase>

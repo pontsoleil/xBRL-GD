@@ -520,9 +520,7 @@ if __name__ == '__main__':
     with open(adc_file, encoding='utf-8', newline='') as f:
         reader = csv.reader(f)#, delimiter='\t')
         header = next(reader)
-        # header = ['module','table_id','kind','table','field_id','name','DEN','desc','XBRL-GL','classQualifier','class','propertyQualifier','property','datatypeQualifier','representation','associatedClassQualifier','associatedClass','datatype','presentation','level','key','refField','refTable','occMin','occMax']
-        # header = ['Module	#	Kind	Table	No.	Name	Dictionary Entry Name	Description	XBRL GL Taxonomy Element	Object Class Term Qualifier	Object Class Term	Property Term Qualifier	Property Term	Datatype Qualifier	Representation term	Associated Object Class Term Qualifier	Associated Object Class	Datatype	Representation	Level	Key	Ref Field	Ref Table	Occurrence Min	Occurrence Max']
-        header = ['module','table_id','table','field_id','name','datatype','presentation','desc','level','key','refField','refTable','kind','DEN','classQualifier','class','propertyQualifier','property','datatypeQualifier','representation','associatedClassQualifier','associatedClass','occMin','occMax','XBRL-GL']
+        header = ['no','module','kind','table_id','class','level','occurrence','field_id','propertyTerm','representationQualifier','representation','associatedClass','datatype','desc','type','entity','attribute','domain','refClass','refProperty','tag']
         for cols in reader:
             record = {}
             for i in range(len(cols)):
@@ -533,63 +531,147 @@ if __name__ == '__main__':
             adc_id = ''
             name = ''
             type = ''
-            if 'ABIE'==record['kind']:
-                adc_id = f"A{record['table_id'].zfill(3)}"
-                name = record['class']
+            kind = record['kind']
+            occurrence = record['occurrence']
+            record['occMin'] = occurrence[:1]
+            record['occMax'] = occurrence[-1:]
+            if len(kind) > 5 and 'IDBIE' == kind[:5]:
+                kind = 'IDBIE'
+            level = record['level']
+            if re.match('[0-9]+',level):
+                level = int(level)
+            else:
+                level = 0
+            record['level'] = level
+            cls = record['class']
+            if 'ABIE'==kind:
+                adc_id = record['table_id']
+            else:
+                adc_id = f"{record['table_id']}-{record['field_id'].zfill(3)}"
+            if kind == 'ABIE':
+                record['parent'] = []
+                parentIDs = [adc_id]
+            else:
+                record['parent'] = parentIDs
+            record['children'] = []
+            record['adc_id'] = adc_id
+            if 'ABIE'==kind:
+                DEN = f'{cls}. Details'
+                record['DEN'] = DEN
                 if adc_id in adcDict:
-                    if DEBUG: print(f'{adc_id} already in adcDict.')
+                    if DEBUG: print(f'** Duplicate {adc_id} is already in adcDict.')
                     continue
-                record['name'] = name
+                record['name'] = cls
                 record['type'] = ''
-                record['children'] = []
-                record['adc_id'] = adc_id
                 adcDict[adc_id] = record
             else:
-                adc_id = f"A{record['table_id'].zfill(3)}-{record['field_id'].zfill(3)}"
-                parent_id =adc_id[:4]
-                name = record['name']
-                if name:
-                    name = ' '.join([x in abbreviationMap and abbreviationMap[x] or x for x in name.split('_')])
+                propertyTerm = record['propertyTerm']
+                if kind in ['RFBIE','ASBIE']:
+                    associatedClass = record['associatedClass']
+                    DEN = f'{cls}. {propertyTerm}. {associatedClass}'
                 else:
-                    DEN = record['DEN']
-                    kind = record['kind']
-                    names = DEN.split('.')
-                    name0 = names[0].strip()
-                    name0 = name0.replace('ADC_ ','')
-                    name0 = name0.replace('_','')
-                    name1 = names[1].strip()
-                    name1 = name1.replace('_','')
-                    if len(names) > 2:
-                        name2 = names[2].strip()
-                        name2 = name2.replace('ADC_ ','')
-                        name2 = name2.replace('_','')
-                        if name2 in name1:
-                            name = name1
-                        else:
-                            name = f'{name1} {name2}'
+                    representationQualifier = record['representationQualifier']
+                    representation = record['representation']
+                    if representationQualifier:
+                        DEN = f'{cls}. {propertyTerm}. {representationQualifier}_ {representation}'
                     else:
-                        if 'ID'==name1:
-                            name = f'{name0} ID' 
-                        else:
-                            name = name1
-                record['name'] = name
-                type = record['representation']
-                if type in datatypeMap:
-                    type = datatypeMap[type]['adc']
+                        DEN = f'{cls}. {propertyTerm}. {representation}'                
+                record['DEN'] = DEN                
+                if level > 0:
+                    parent_id = parentIDs[level-2]
                 else:
-                    type = 'xbrli:stringItemType'
+                    parent_id = ''
+                record['name'] = propertyTerm
+                datatype = record['datatype']
+                if datatype in ['PK','REF']:
+                    type = datatypeMap['Identifier']['adc']
+                elif datatype in datatypeMap:
+                    type = datatypeMap[datatype]['adc']
+                else:
+                    type = 'stringItemType'
                 record['type'] = type
-                if not parent_id in adcDict:
-                    continue
-                if not 'children' in adcDict[parent_id]:
-                    adcDict[parent_id]['children'] = []
+
                 if not adc_id in adcDict[parent_id]['children']:
                     adcDict[parent_id]['children'].append(adc_id)
-                record['adc_id'] = adc_id
                 adcDict[adc_id] = record
-                if not 'parent' in adcDict[adc_id]:
-                    adcDict[adc_id]['parent'] = [parent_id]            
+                if kind == 'ASBIE':
+                    while len(parentIDs) > level-1:
+                        parentIDs.pop()
+                    while len(parentIDs) <= level-1:
+                        parentIDs.append('')
+                    parentIDs[level-1] = adc_id
             records.append(record)
+
+        # header = ['module','table_id','kind','table','field_id','name','DEN','desc','XBRL-GL','classQualifier','class','propertyQualifier','property','datatypeQualifier','representation','associatedClassQualifier','associatedClass','datatype','presentation','level','key','refField','refTable','occMin','occMax']
+        # header = ['Module	#	Kind	Table	No.	Name	Dictionary Entry Name	Description	XBRL GL Taxonomy Element	Object Class Term Qualifier	Object Class Term	Property Term Qualifier	Property Term	Datatype Qualifier	Representation term	Associated Object Class Term Qualifier	Associated Object Class	Datatype	Representation	Level	Key	Ref Field	Ref Table	Occurrence Min	Occurrence Max']
+        # header = ['module','table_id','table','field_id','name','datatype','presentation','desc','level','key','refField','refTable','kind','DEN','classQualifier','class','propertyQualifier','property','datatypeQualifier','representation','associatedClassQualifier','associatedClass','occMin','occMax','XBRL-GL']
+        # for cols in reader:
+        #     record = {}
+        #     for i in range(len(cols)):
+        #         col = cols[i]
+        #         record[header[i]] = col.strip()
+        #     if not record['module']:
+        #         continue
+        #     adc_id = ''
+        #     name = ''
+        #     type = ''
+        #     if 'ABIE'==record['kind']:
+        #         adc_id = f"A{record['table_id'].zfill(3)}"
+        #         name = record['class']
+        #         if adc_id in adcDict:
+        #             if DEBUG: print(f'{adc_id} already in adcDict.')
+        #             continue
+        #         record['name'] = name
+        #         record['type'] = ''
+        #         record['children'] = []
+        #         record['adc_id'] = adc_id
+        #         adcDict[adc_id] = record
+        #     else:
+        #         adc_id = f"A{record['table_id'].zfill(3)}-{record['field_id'].zfill(3)}"
+        #         parent_id =adc_id[:4]
+        #         name = record['name']
+        #         if name:
+        #             name = ' '.join([x in abbreviationMap and abbreviationMap[x] or x for x in name.split('_')])
+        #         else:
+        #             DEN = record['DEN']
+        #             kind = record['kind']
+        #             names = DEN.split('.')
+        #             name0 = names[0].strip()
+        #             name0 = name0.replace('ADC_ ','')
+        #             name0 = name0.replace('_','')
+        #             name1 = names[1].strip()
+        #             name1 = name1.replace('_','')
+        #             if len(names) > 2:
+        #                 name2 = names[2].strip()
+        #                 name2 = name2.replace('ADC_ ','')
+        #                 name2 = name2.replace('_','')
+        #                 if name2 in name1:
+        #                     name = name1
+        #                 else:
+        #                     name = f'{name1} {name2}'
+        #             else:
+        #                 if 'ID'==name1:
+        #                     name = f'{name0} ID' 
+        #                 else:
+        #                     name = name1
+        #         record['name'] = name
+        #         type = record['representation']
+        #         if type in datatypeMap:
+        #             type = datatypeMap[type]['adc']
+        #         else:
+        #             type = 'xbrli:stringItemType'
+        #         record['type'] = type
+        #         if not parent_id in adcDict:
+        #             continue
+        #         if not 'children' in adcDict[parent_id]:
+        #             adcDict[parent_id]['children'] = []
+        #         if not adc_id in adcDict[parent_id]['children']:
+        #             adcDict[parent_id]['children'].append(adc_id)
+        #         record['adc_id'] = adc_id
+        #         adcDict[adc_id] = record
+        #         if not 'parent' in adcDict[adc_id]:
+        #             adcDict[adc_id]['parent'] = [parent_id]            
+        #     records.append(record)
 
     targetRefDict = {}
     associationDict = {}

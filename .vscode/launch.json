@@ -11,8 +11,15 @@
             "program": "${file}",
             "console": "integratedTerminal",
             "justMyCode": true,
-            // ADC2xBRL-taxonomy.py
-            "args": ["source/audit_data_servicesGL.csv","-e utf-8","-d","-v"]
+            // ADCS_C2xBRL-taxonomy.py
+            // "args": ["source/Semantic.csv","-e utf-8","-d","-v"]
+            
+            // ADCS_H2xBRL-taxonomy.py
+            "args": ["source/ADCS_H.csv","-e utf-8","-d","-v"]
+
+            // "args": ["source/ADCS_SemanticLogical.csv","-e utf-8","-d","-v"]
+            // "args": ["source/ADCS_SemanticLogicalHierarchicy.csv","-e utf-8","-d","-v"]
+            // "args": ["source/audit_data_servicesGL.csv","-e utf-8","-d","-v"]
         }
     ]
 }

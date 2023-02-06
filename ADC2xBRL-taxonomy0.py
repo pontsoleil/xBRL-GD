@@ -342,50 +342,50 @@ def defineHypercube(adc_id, role):
                             arcsDefined[link_id].add(arc_id)
                             lines.append(f'        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="{alias_id}" xlink:to="{grand_alias_id}" xlink:title="domain-member: {alias_id} to {grand_alias_id}" order="{count}"/>\n')                    
 
-    # # essence-alias
-    # if len(link_id) > 4:
-    #     lines.append('        <!-- essence-alias -->\n')
-    #     count = 0
-    #     if 'children' in root and len(root['children']) > 0:
-    #         children =  root['children']
-    #         for child_id in children:
-    #             child = getRecord(child_id[-8:])
-    #             child_kind = child['kind']
-    #             essence_id = child_id
-    #             if essence_id in targetRefDict:
-    #                 continue
-    #             if not essence_id in locsDefined[link_id]:
-    #                 locsDefined[link_id].add(essence_id)
-    #                 lines.append(f'        <link:loc xlink:type="locator" xlink:href="{core_xsd}#{essence_id}" xlink:label="{essence_id}" xlink:title="{essence_id}"/>\n')
-    #             alias_id = f"{link_id[:4]}-{child_id}"
-    #             if not alias_id in locsDefined[link_id]:
-    #                 locsDefined[link_id].add(alias_id)
-    #                 lines.append(f'        <link:loc xlink:type="locator" xlink:href="{core_xsd}#{alias_id}" xlink:label="{alias_id}" xlink:title="{alias_id}"/>\n')
-    #             count += 1
-    #             arc_id = f'{essence_id} {alias_id}'
-    #             if not arc_id in arcsDefined[link_id]:
-    #                 arcsDefined[link_id].add(arc_id)
-    #                 lines.append(f'        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/essence-alias" xlink:from="{essence_id}" xlink:to="{alias_id}" xlink:title="essence-alias: {essence_id} to {alias_id}" order="{count}"/>\n')
-    #             if 'ASBIE'==child_kind and '1'==child['occMax']:
-    #                 association_id = associationDict[child_id]
-    #                 association = getRecord(association_id)
-    #                 grand_children = association['children']
-    #                 for grand_child_id in grand_children:
-    #                     grand_essence_id = grand_child_id
-    #                     if grand_essence_id in targetRefDict:
-    #                         continue
-    #                     if not grand_essence_id in locsDefined[link_id]:
-    #                         locsDefined[link_id].add(grand_essence_id)
-    #                         lines.append(f'        <link:loc xlink:type="locator" xlink:href="{core_xsd}#{grand_essence_id}" xlink:label="{grand_essence_id}" xlink:title="{grand_essence_id}"/>\n')
-    #                     grand_alias_id = f"{link_id[:4]}-{grand_child_id}"
-    #                     if not grand_alias_id in locsDefined[link_id]:
-    #                         locsDefined[link_id].add(grand_alias_id)
-    #                         lines.append(f'        <link:loc xlink:type="locator" xlink:href="{core_xsd}#{grand_alias_id}" xlink:label="{grand_alias_id}" xlink:title="{grand_alias_id}"/>\n')
-    #                     count += 1
-    #                     arc_id = f'{grand_essence_id} {grand_alias_id}'
-    #                     if not arc_id in arcsDefined[link_id]:
-    #                         arcsDefined[link_id].add(arc_id)
-    #                         lines.append(f'        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/essence-alias" xlink:from="{grand_essence_id}" xlink:to="{grand_alias_id}" xlink:title="essence-alias: {grand_essence_id} to {grand_alias_id}" order="{count}"/>\n')
+    # essence-alias
+    if len(link_id) > 4:
+        lines.append('        <!-- essence-alias -->\n')
+        count = 0
+        if 'children' in root and len(root['children']) > 0:
+            children =  root['children']
+            for child_id in children:
+                child = getRecord(child_id[-8:])
+                child_kind = child['kind']
+                essence_id = child_id
+                if essence_id in targetRefDict:
+                    continue
+                if not essence_id in locsDefined[link_id]:
+                    locsDefined[link_id].add(essence_id)
+                    lines.append(f'        <link:loc xlink:type="locator" xlink:href="{core_xsd}#{essence_id}" xlink:label="{essence_id}" xlink:title="{essence_id}"/>\n')
+                alias_id = f"{link_id[:4]}-{child_id}"
+                if not alias_id in locsDefined[link_id]:
+                    locsDefined[link_id].add(alias_id)
+                    lines.append(f'        <link:loc xlink:type="locator" xlink:href="{core_xsd}#{alias_id}" xlink:label="{alias_id}" xlink:title="{alias_id}"/>\n')
+                count += 1
+                arc_id = f'{essence_id} {alias_id}'
+                if not arc_id in arcsDefined[link_id]:
+                    arcsDefined[link_id].add(arc_id)
+                    lines.append(f'        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/essence-alias" xlink:from="{essence_id}" xlink:to="{alias_id}" xlink:title="essence-alias: {essence_id} to {alias_id}" order="{count}"/>\n')
+                if 'ASBIE'==child_kind and '1'==child['occMax']:
+                    association_id = associationDict[child_id]
+                    association = getRecord(association_id)
+                    grand_children = association['children']
+                    for grand_child_id in grand_children:
+                        grand_essence_id = grand_child_id
+                        if grand_essence_id in targetRefDict:
+                            continue
+                        if not grand_essence_id in locsDefined[link_id]:
+                            locsDefined[link_id].add(grand_essence_id)
+                            lines.append(f'        <link:loc xlink:type="locator" xlink:href="{core_xsd}#{grand_essence_id}" xlink:label="{grand_essence_id}" xlink:title="{grand_essence_id}"/>\n')
+                        grand_alias_id = f"{link_id[:4]}-{grand_child_id}"
+                        if not grand_alias_id in locsDefined[link_id]:
+                            locsDefined[link_id].add(grand_alias_id)
+                            lines.append(f'        <link:loc xlink:type="locator" xlink:href="{core_xsd}#{grand_alias_id}" xlink:label="{grand_alias_id}" xlink:title="{grand_alias_id}"/>\n')
+                        count += 1
+                        arc_id = f'{grand_essence_id} {grand_alias_id}'
+                        if not arc_id in arcsDefined[link_id]:
+                            arcsDefined[link_id].add(arc_id)
+                            lines.append(f'        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/essence-alias" xlink:from="{grand_essence_id}" xlink:to="{grand_alias_id}" xlink:title="essence-alias: {grand_essence_id} to {grand_alias_id}" order="{count}"/>\n')
 
     lines.append('    </link:definitionLink>\n')
 
@@ -634,6 +634,18 @@ if __name__ == '__main__':
                                             break
                 elif 'ASBIE'==kind:
                     associatedClass = child['associatedClass']
+                    idAs = [k for k,v in adcDict.items() if associatedClass==v['class'] and 'ABIE'==v['kind']]
+                    if len(idAs) > 0:
+                        abieID = idAs[0]
+                    if 'n' == child['occMax']:
+                        targetRefDict[child_id] = abieID
+                    else:
+                        associationDict[child_id] = abieID
+                    targetRefDict[child_id] = abieID
+
+
+
+
                     for adc2_id,record2 in adcDict.items():
                         if associatedClass==record2['class']:
                             if DEBUG: print(f'=2= {child_id} targetRef {adc2_id}')

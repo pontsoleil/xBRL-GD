@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- (c) 2022 XBRL Japan  inc. -->
+<schema 
+    targetNamespace="http://www.xbrl.jp/audit-data-collection" 
+    elementFormDefault="qualified" 
+    xmlns="http://www.w3.org/2001/XMLSchema" 
+    xmlns:adc="http://www.xbrl.jp/audit-data-collection" 
+    xmlns:xlink="http://www.w3.org/1999/xlink" 
+    xmlns:link="http://www.xbrl.org/2003/linkbase" 
+    xmlns:xbrli="http://www.xbrl.org/2003/instance" 
+    xmlns:xbrldt="http://xbrl.org/2005/xbrldt"> 
+    <import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+    <import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+    <import namespace="http://www.xbrl.org/dtr/type/numeric" schemaLocation="http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd"/>
+    <import namespace="http://www.xbrl.org/dtr/type/non-numeric" schemaLocation="http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd"/>
+    <annotation>
+        <appinfo>
+            <link:linkbaseRef xlink:type="simple" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="core-lbl-en.xml"/>
+            <link:linkbaseRef xlink:type="simple" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="core-pre.xml"/>
+            <link:linkbaseRef xlink:type="simple" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="core-def.xml"/>
+            <!-- 
+                role type
+            -->
+            <link:roleType id="audit-data-collection-role" roleURI="http://www.xbrl.jp/audit-data-collection/role">
+                <link:definition>link audit-data-collection</link:definition>
+                <link:usedOn>link:definitionLink</link:usedOn>
+                <link:usedOn>link:presentationLink</link:usedOn>
+            </link:roleType>
+            <link:roleType id="link_GL02" roleURI="http://www.xbrl.jp/audit-data-collection/role/link_GL02">
+                <link:definition>businessSegment</link:definition>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType id="link_GL03" roleURI="http://www.xbrl.jp/audit-data-collection/role/link_GL03">
+                <link:definition>gLDetails</link:definition>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType id="link_CM07" roleURI="http://www.xbrl.jp/audit-data-collection/role/link_CM07">
+                <link:definition>monetaryAmopunt</link:definition>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType id="link_CM08" roleURI="http://www.xbrl.jp/audit-data-collection/role/link_CM08">
+                <link:definition>currencyCode</link:definition>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType id="link_CM01" roleURI="http://www.xbrl.jp/audit-data-collection/role/link_CM01">
+                <link:definition>created</link:definition>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType id="link_CM02" roleURI="http://www.xbrl.jp/audit-data-collection/role/link_CM02">
+                <link:definition>approved</link:definition>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType id="link_CM04" roleURI="http://www.xbrl.jp/audit-data-collection/role/link_CM04">
+                <link:definition>posted</link:definition>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType id="link_GL05" roleURI="http://www.xbrl.jp/audit-data-collection/role/link_GL05">
+                <link:definition>accountSegment</link:definition>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType id="link_BS01" roleURI="http://www.xbrl.jp/audit-data-collection/role/link_BS01">
+                <link:definition>businessSegment</link:definition>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType id="link_GL02-GL03" roleURI="http://www.xbrl.jp/audit-data-collection/role/link_GL02-GL03">
+                <link:definition>businessSegment to gLDetails</link:definition>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType id="link_GL03-GL05" roleURI="http://www.xbrl.jp/audit-data-collection/role/link_GL03-GL05">
+                <link:definition>gLDetails to accountSegment</link:definition>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType id="link_GL03-BS01" roleURI="http://www.xbrl.jp/audit-data-collection/role/link_GL03-BS01">
+                <link:definition>gLDetails to businessSegment</link:definition>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <!--
+                description: roleType arcroleType
+            -->
+            <link:roleType id="description" roleURI="http://www.xbrl.jp/audit-data-collection/role/description">
+                <link:definition>description</link:definition>
+                <link:usedOn>link:label</link:usedOn>
+            </link:roleType>
+            <link:arcroleType id="concept-description" cyclesAllowed="undirected" arcroleURI="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description">
+                <link:definition>concept to description</link:definition>
+                <link:usedOn>link:labelArc</link:usedOn>
+            </link:arcroleType >
+            <!--
+                primary key: roleType arcroleType
+            -->
+            <link:roleType id="primary-key" roleURI="http://www.xbrl.jp/audit-data-collection/role/primary-key">
+                <link:definition>primary key</link:definition>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:arcroleType id="concept-primary-key" cyclesAllowed="undirected" arcroleURI="http://www.xbrl.jp/audit-data-collection/arcrole/concept-primary-key">
+                <link:definition>concept primary key</link:definition>
+                <link:usedOn>link:definitionArc</link:usedOn>
+            </link:arcroleType >
+            <!--
+                reference identifier: roleType arcroleType
+            -->
+            <link:roleType id="reference-identifier" roleURI="http://www.xbrl.jp/audit-data-collection/role/reference-identifier">
+                <link:definition>reference identifier</link:definition>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:arcroleType id="concept-reference-identifier" cyclesAllowed="undirected" arcroleURI="http://www.xbrl.jp/audit-data-collection/arcrole/concept-reference-identifier">
+                <link:definition>concept reference identifier</link:definition>
+                <link:usedOn>link:definitionArc</link:usedOn>
+            </link:arcroleType >
+            <!--
+                require: roleType
+            -->
+            <link:roleType id="require" roleURI="http://www.xbrl.jp/audit-data-collection/role/require">
+                <link:definition>require</link:definition>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+        </appinfo>
+    </annotation>
+    <!-- typed dimension referenced element -->
+    <element name="_v" id="_v">
+        <simpleType>
+            <restriction base="string"/>
+        </simpleType>
+    </element>
+    <element name="_activity" id="_activity">        <simpleType>            <restriction base="string">                <pattern value="\s*(Created|Approved|LastModified|Entered|Posted)\s*"/>            </restriction>        </simpleType>    </element>    <!-- Hypercube -->
+    <element name="h_GL02" id="h_GL02" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" nillable="true" abstract="true" xbrli:periodType="instant"/>
+    <element name="h_GL03" id="h_GL03" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" nillable="true" abstract="true" xbrli:periodType="instant"/>
+    <element name="h_CM07" id="h_CM07" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" nillable="true" abstract="true" xbrli:periodType="instant"/>
+    <element name="h_CM08" id="h_CM08" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" nillable="true" abstract="true" xbrli:periodType="instant"/>
+    <element name="h_CM01" id="h_CM01" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" nillable="true" abstract="true" xbrli:periodType="instant"/>
+    <element name="h_CM02" id="h_CM02" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" nillable="true" abstract="true" xbrli:periodType="instant"/>
+    <element name="h_CM04" id="h_CM04" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" nillable="true" abstract="true" xbrli:periodType="instant"/>
+    <element name="h_GL05" id="h_GL05" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" nillable="true" abstract="true" xbrli:periodType="instant"/>
+    <element name="h_BS01" id="h_BS01" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" nillable="true" abstract="true" xbrli:periodType="instant"/>
+    <element name="h_GL02-GL03" id="h_GL02-GL03" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" nillable="true" abstract="true" xbrli:periodType="instant"/>
+    <element name="h_GL03-GL05" id="h_GL03-GL05" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" nillable="true" abstract="true" xbrli:periodType="instant"/>
+    <element name="h_GL03-BS01" id="h_GL03-BS01" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" nillable="true" abstract="true" xbrli:periodType="instant"/>
+    <!-- Dimension -->
+    <element name="d_GL02" id="d_GL02" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" abstract="true" xbrli:periodType="instant" xbrldt:typedDomainRef="#_v"/>
+    <element name="d_GL03" id="d_GL03" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" abstract="true" xbrli:periodType="instant" xbrldt:typedDomainRef="#_v"/>
+    <element name="d_CM07" id="d_CM07" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" abstract="true" xbrli:periodType="instant" xbrldt:typedDomainRef="#_v"/>
+    <element name="d_CM08" id="d_CM08" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" abstract="true" xbrli:periodType="instant" xbrldt:typedDomainRef="#_v"/>
+    <element name="d_CM01" id="d_CM01" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" abstract="true" xbrli:periodType="instant" xbrldt:typedDomainRef="#_v"/>
+    <element name="d_CM02" id="d_CM02" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" abstract="true" xbrli:periodType="instant" xbrldt:typedDomainRef="#_v"/>
+    <element name="d_CM04" id="d_CM04" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" abstract="true" xbrli:periodType="instant" xbrldt:typedDomainRef="#_v"/>
+    <element name="d_GL05" id="d_GL05" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" abstract="true" xbrli:periodType="instant" xbrldt:typedDomainRef="#_v"/>
+    <element name="d_BS01" id="d_BS01" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" abstract="true" xbrli:periodType="instant" xbrldt:typedDomainRef="#_v"/>
+    <element name="d_GL02-GL03" id="d_GL02-GL03" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" abstract="true" xbrli:periodType="instant" xbrldt:typedDomainRef="#_v"/>
+    <element name="d_GL03-GL05" id="d_GL03-GL05" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" abstract="true" xbrli:periodType="instant" xbrldt:typedDomainRef="#_v"/>
+    <element name="d_GL03-BS01" id="d_GL03-BS01" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" abstract="true" xbrli:periodType="instant" xbrldt:typedDomainRef="#_v"/>
+    <!-- item type -->
+        <complexType name="stringItemType">
+            <simpleContent>
+                <restriction base="xbrli:stringItemType"/>
+            </simpleContent>
+        </complexType>
+        <complexType name="amountItemType">
+            <simpleContent>
+                <restriction base="xbrli:monetaryItemType"/>
+            </simpleContent>
+        </complexType>
+        <complexType name="binaryObjectItemType">
+            <simpleContent>
+                <restriction base="xbrli:stringItemType"/>
+            </simpleContent>
+        </complexType>
+        <complexType name="codeItemType">
+            <simpleContent>
+                <restriction base="xbrli:tokenItemType"/>
+            </simpleContent>
+        </complexType>
+        <complexType name="dateItemType">
+            <simpleContent>
+                <restriction base="xbrli:dateItemType"/>
+            </simpleContent>
+        </complexType>
+        <complexType name="documentReferenceItemType">
+            <simpleContent>
+                <restriction base="xbrli:tokenItemType"/>
+            </simpleContent>
+        </complexType>
+        <complexType name="identifierItemType">
+            <simpleContent>
+                <restriction base="xbrli:tokenItemType"/>
+            </simpleContent>
+        </complexType>
+        <complexType name="indicatorItemType">
+            <simpleContent>
+                <restriction base="xbrli:booleanItemType"/>
+            </simpleContent>
+        </complexType>
+        <complexType name="textItemType">
+            <simpleContent>
+                <restriction base="xbrli:stringItemType"/>
+            </simpleContent>
+        </complexType>
+        <complexType name="timeItemType">
+            <simpleContent>
+                <restriction base="xbrli:timeItemType"/>
+            </simpleContent>
+        </complexType>
+        <complexType name="percentageItemType">
+            <simpleContent>
+                <restriction base="xbrli:pureItemType"/>
+            </simpleContent>
+        </complexType>
+        <complexType name="quantityItemType">
+            <simpleContent>
+                <restriction base="xbrli:intItemType"/>
+            </simpleContent>
+        </complexType>
+        <complexType name="unitPriceAmountItemType">
+            <simpleContent>
+                <restriction base="xbrli:monetaryItemType"/>
+            </simpleContent>
+        </complexType>
+    <!-- element -->
+        <element name="GL02" id="GL02" abstract="true" type="xbrli:stringItemType" nillable="true" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL02-001" id="GL02-001" type="adc:codeItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL02-002" id="GL02-002" type="adc:codeItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL02-003" id="GL02-003" type="adc:codeItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL02-004" id="GL02-004" type="adc:codeItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-005" id="GL03-005" type="adc:textItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL02-006" id="GL02-006" type="adc:textItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL02-007" id="GL02-007" type="adc:dateItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL02-GL03" id="GL02-GL03" abstract="true" type="xbrli:stringItemType" nillable="true" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL02-GL03-001" id="GL02-GL03-001" type="adc:textItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL02-GL03-002" id="GL02-GL03-002" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL02-GL03-003" id="GL02-GL03-003" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL02-GL03-004" id="GL02-GL03-004" type="adc:codeItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL02-GL03-005" id="GL02-GL03-005" type="adc:textItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL02-GL03-006" id="GL02-GL03-006" type="adc:textItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL02-GL03-007" id="GL02-GL03-007" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL02-GL03-008" id="GL02-GL03-008" type="adc:dateItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL02-GL03-009" id="GL02-GL03-009" type="adc:quantityItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL02-GL03-010" id="GL02-GL03-010" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL02-GL03-011" id="GL02-GL03-011" type="adc:amountItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL02-GL03-012" id="GL02-GL03-012" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL02-GL03-013" id="GL02-GL03-013" type="adc:codeItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL02-GL03-014" id="GL02-GL03-014" type="adc:codeItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL02-GL03-015" id="GL02-GL03-015" type="adc:indicatorItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL02-GL03-016" id="GL02-GL03-016" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL02-GL03-017" id="GL02-GL03-017" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL02-GL03-018" id="GL02-GL03-018" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL02-GL03-CM07" id="GL02-GL03-CM07" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL02-GL03-CM08" id="GL02-GL03-CM08" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL02-GL03-CM01" id="GL02-GL03-CM01" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL02-GL03-CM02" id="GL02-GL03-CM02" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL02-GL03-CM04" id="GL02-GL03-CM04" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL02-GL03-GL05" id="GL02-GL03-GL05" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL02-GL03-BS01" id="GL02-GL03-BS01" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03" id="GL03" abstract="true" type="xbrli:stringItemType" nillable="true" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-001" id="GL03-001" type="adc:textItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-002" id="GL03-002" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-003" id="GL03-003" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-004" id="GL03-004" type="adc:codeItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-006" id="GL03-006" type="adc:textItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-007" id="GL03-007" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-008" id="GL03-008" type="adc:dateItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-009" id="GL03-009" type="adc:quantityItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-010" id="GL03-010" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-011" id="GL03-011" type="adc:amountItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-012" id="GL03-012" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-013" id="GL03-013" type="adc:codeItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-014" id="GL03-014" type="adc:codeItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-015" id="GL03-015" type="adc:indicatorItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-016" id="GL03-016" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-017" id="GL03-017" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-018" id="GL03-018" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-CM07" id="GL03-CM07" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-CM07-001" id="GL03-CM07-001" type="adc:amountItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-CM07-002" id="GL03-CM07-002" type="adc:amountItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-CM07-003" id="GL03-CM07-003" type="adc:amountItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-CM07-004" id="GL03-CM07-004" type="adc:amountItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="CM07" id="CM07" abstract="true" type="xbrli:stringItemType" nillable="true" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="CM07-001" id="CM07-001" type="adc:amountItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="CM07-002" id="CM07-002" type="adc:amountItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="CM07-003" id="CM07-003" type="adc:amountItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="CM07-004" id="CM07-004" type="adc:amountItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-CM08" id="GL03-CM08" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-CM08-001" id="GL03-CM08-001" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-CM08-002" id="GL03-CM08-002" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-CM08-003" id="GL03-CM08-003" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-CM08-004" id="GL03-CM08-004" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="CM08" id="CM08" abstract="true" type="xbrli:stringItemType" nillable="true" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="CM08-001" id="CM08-001" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="CM08-002" id="CM08-002" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="CM08-003" id="CM08-003" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="CM08-004" id="CM08-004" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-CM01" id="GL03-CM01" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-CM01-001" id="GL03-CM01-001" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-CM01-002" id="GL03-CM01-002" type="adc:dateItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-CM01-003" id="GL03-CM01-003" type="adc:timeItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="CM01" id="CM01" abstract="true" type="xbrli:stringItemType" nillable="true" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="CM01-001" id="CM01-001" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="CM01-002" id="CM01-002" type="adc:dateItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="CM01-003" id="CM01-003" type="adc:timeItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-CM02" id="GL03-CM02" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-CM02-001" id="GL03-CM02-001" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-CM02-002" id="GL03-CM02-002" type="adc:dateItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="CM02" id="CM02" abstract="true" type="xbrli:stringItemType" nillable="true" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="CM02-001" id="CM02-001" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="CM02-002" id="CM02-002" type="adc:dateItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-CM04" id="GL03-CM04" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-CM04-001" id="GL03-CM04-001" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="CM04" id="CM04" abstract="true" type="xbrli:stringItemType" nillable="true" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="CM04-001" id="CM04-001" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL05" id="GL03-GL05" abstract="true" type="xbrli:stringItemType" nillable="true" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL05-001" id="GL03-GL05-001" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL05-002" id="GL03-GL05-002" type="adc:textItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL05-003" id="GL03-GL05-003" type="adc:codeItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL05-004" id="GL03-GL05-004" type="adc:textItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL05-005" id="GL03-GL05-005" type="adc:textItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL05" id="GL05" abstract="true" type="xbrli:stringItemType" nillable="true" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL05-001" id="GL05-001" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL05-002" id="GL05-002" type="adc:textItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL05-003" id="GL05-003" type="adc:codeItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL05-004" id="GL05-004" type="adc:textItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL05-005" id="GL05-005" type="adc:textItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-BS01" id="GL03-BS01" abstract="true" type="xbrli:stringItemType" nillable="true" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-BS01-001" id="GL03-BS01-001" type="adc:codeItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-BS01-002" id="GL03-BS01-002" type="adc:textItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-BS01-003" id="GL03-BS01-003" type="adc:codeItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-BS01-004" id="GL03-BS01-004" type="adc:textItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="BS01" id="BS01" abstract="true" type="xbrli:stringItemType" nillable="true" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="BS01-001" id="BS01-001" type="adc:codeItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="BS01-002" id="BS01-002" type="adc:textItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="BS01-003" id="BS01-003" type="adc:codeItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="BS01-004" id="BS01-004" type="adc:textItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL03-005" id="GL03-GL03-005" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL03" id="GL03-GL03" abstract="true" type="xbrli:stringItemType" nillable="true" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL03-001" id="GL03-GL03-001" type="adc:textItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL03-002" id="GL03-GL03-002" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL03-003" id="GL03-GL03-003" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL03-004" id="GL03-GL03-004" type="adc:codeItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL03-006" id="GL03-GL03-006" type="adc:textItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL03-007" id="GL03-GL03-007" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL03-008" id="GL03-GL03-008" type="adc:dateItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL03-009" id="GL03-GL03-009" type="adc:quantityItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL03-010" id="GL03-GL03-010" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL03-011" id="GL03-GL03-011" type="adc:amountItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL03-012" id="GL03-GL03-012" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL03-013" id="GL03-GL03-013" type="adc:codeItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL03-014" id="GL03-GL03-014" type="adc:codeItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL03-015" id="GL03-GL03-015" type="adc:indicatorItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL03-016" id="GL03-GL03-016" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL03-017" id="GL03-GL03-017" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL03-018" id="GL03-GL03-018" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL03-CM07" id="GL03-GL03-CM07" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL03-CM08" id="GL03-GL03-CM08" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL03-CM01" id="GL03-GL03-CM01" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL03-CM02" id="GL03-GL03-CM02" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL03-CM04" id="GL03-GL03-CM04" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL03-GL05" id="GL03-GL03-GL05" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL03-BS01" id="GL03-GL03-BS01" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+</schema>

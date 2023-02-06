@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  (c) 2022 XBRL Japan inc. -->
+<link:linkbase
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"
+    xmlns:link="http://www.xbrl.org/2003/linkbase"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <link:roleRef roleURI="http://www.xbrl.jp/audit-data-collection/role" xlink:type="simple" xlink:href="core.xsd#audit-data-collection-role"/>
+    <link:presentationLink xlink:type="extended" xlink:role="http://www.xbrl.jp/audit-data-collection/role">
+        <!-- ABIE GL02 Business Segment -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL02" xlink:label="GL02" xlink:title="presentation: GL02 Business Segment"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL02-001" xlink:label="GL02-001" xlink:title="presentation parent: GL02-001 Journal ID"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL02" xlink:to="GL02-001" order="1" xlink:title="presentation: GL02 Business Segment to GL02-001 Journal ID"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL02-002" xlink:label="GL02-002" xlink:title="presentation parent: GL02-002 Journal Number"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL02" xlink:to="GL02-002" order="2" xlink:title="presentation: GL02 Business Segment to GL02-002 Journal Number"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL02-003" xlink:label="GL02-003" xlink:title="presentation parent: GL02-003 Fiscal Year"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL02" xlink:to="GL02-003" order="3" xlink:title="presentation: GL02 Business Segment to GL02-003 Fiscal Year"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL02-004" xlink:label="GL02-004" xlink:title="presentation parent: GL02-004 Accounting Period Code"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL02" xlink:to="GL02-004" order="4" xlink:title="presentation: GL02 Business Segment to GL02-004 Accounting Period Code"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL02-006" xlink:label="GL02-006" xlink:title="presentation parent: GL02-006 Journal Entry Header Description"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL02" xlink:to="GL02-006" order="5" xlink:title="presentation: GL02 Business Segment to GL02-006 Journal Entry Header Description"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL02-007" xlink:label="GL02-007" xlink:title="presentation parent: GL02-007 Effective Date"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL02" xlink:to="GL02-007" order="6" xlink:title="presentation: GL02 Business Segment to GL02-007 Effective Date"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL02-GL03" xlink:label="GL02-GL03" xlink:title="presentation parent: GL02-GL03 Included"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL02" xlink:to="GL02-GL03" order="7" xlink:title="presentation: GL02 Business Segment to GL02-GL03 Included"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-001" xlink:label="GL03-001" xlink:title="presentation parent: GL03-001 Journal Line Number"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL02-GL03" xlink:to="GL03-001" order="8" xlink:title="presentation: GL02-GL03 Included to GL03-001 Journal Line Number"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-002" xlink:label="GL03-002" xlink:title="presentation parent: GL03-002 Journal Entry Type Code"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL02-GL03" xlink:to="GL03-002" order="9" xlink:title="presentation: GL02-GL03 Included to GL03-002 Journal Entry Type Code"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-003" xlink:label="GL03-003" xlink:title="presentation parent: GL03-003 GL Account Number"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL02-GL03" xlink:to="GL03-003" order="10" xlink:title="presentation: GL02-GL03 Included to GL03-003 GL Account Number"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-004" xlink:label="GL03-004" xlink:title="presentation parent: GL03-004 Credit Debit Indicator"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL02-GL03" xlink:to="GL03-004" order="11" xlink:title="presentation: GL02-GL03 Included to GL03-004 Credit Debit Indicator"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-005" xlink:label="GL03-005" xlink:title="presentation parent: GL03-005 Journal Entry Line Description"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL02-GL03" xlink:to="GL03-005" order="12" xlink:title="presentation: GL02-GL03 Included to GL03-005 Journal Entry Line Description"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-006" xlink:label="GL03-006" xlink:title="presentation parent: GL03-006 Bill Number"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL02-GL03" xlink:to="GL03-006" order="13" xlink:title="presentation: GL02-GL03 Included to GL03-006 Bill Number"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-007" xlink:label="GL03-007" xlink:title="presentation parent: GL03-007 Bill Type Code"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL02-GL03" xlink:to="GL03-007" order="14" xlink:title="presentation: GL02-GL03 Included to GL03-007 Bill Type Code"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-008" xlink:label="GL03-008" xlink:title="presentation parent: GL03-008 Bill Date"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL02-GL03" xlink:to="GL03-008" order="15" xlink:title="presentation: GL02-GL03 Included to GL03-008 Bill Date"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-009" xlink:label="GL03-009" xlink:title="presentation parent: GL03-009 Quantity"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL02-GL03" xlink:to="GL03-009" order="16" xlink:title="presentation: GL02-GL03 Included to GL03-009 Quantity"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-010" xlink:label="GL03-010" xlink:title="presentation parent: GL03-010 UOM Code"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL02-GL03" xlink:to="GL03-010" order="17" xlink:title="presentation: GL02-GL03 Included to GL03-010 UOM Code"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-011" xlink:label="GL03-011" xlink:title="presentation parent: GL03-011 Unit Price"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL02-GL03" xlink:to="GL03-011" order="18" xlink:title="presentation: GL02-GL03 Included to GL03-011 Unit Price"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-012" xlink:label="GL03-012" xlink:title="presentation parent: GL03-012 Settlement Method Code"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL02-GL03" xlink:to="GL03-012" order="19" xlink:title="presentation: GL02-GL03 Included to GL03-012 Settlement Method Code"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-013" xlink:label="GL03-013" xlink:title="presentation parent: GL03-013 Reversal Indicator"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL02-GL03" xlink:to="GL03-013" order="20" xlink:title="presentation: GL02-GL03 Included to GL03-013 Reversal Indicator"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-014" xlink:label="GL03-014" xlink:title="presentation parent: GL03-014 Reversal Journal ID"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL02-GL03" xlink:to="GL03-014" order="21" xlink:title="presentation: GL02-GL03 Included to GL03-014 Reversal Journal ID"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-015" xlink:label="GL03-015" xlink:title="presentation parent: GL03-015 Cancellation"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL02-GL03" xlink:to="GL03-015" order="22" xlink:title="presentation: GL02-GL03 Included to GL03-015 Cancellation"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-016" xlink:label="GL03-016" xlink:title="presentation parent: GL03-016 Account Segment Employee"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL02-GL03" xlink:to="GL03-016" order="23" xlink:title="presentation: GL02-GL03 Included to GL03-016 Account Segment Employee"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-017" xlink:label="GL03-017" xlink:title="presentation parent: GL03-017 Account Segment Project"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL02-GL03" xlink:to="GL03-017" order="24" xlink:title="presentation: GL02-GL03 Included to GL03-017 Account Segment Project"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-018" xlink:label="GL03-018" xlink:title="presentation parent: GL03-018 Account Segment Bank Account"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL02-GL03" xlink:to="GL03-018" order="25" xlink:title="presentation: GL02-GL03 Included to GL03-018 Account Segment Bank Account"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-CM07" xlink:label="GL03-CM07" xlink:title="presentation parent: GL03-CM07 Specified"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL02-GL03" xlink:to="GL03-CM07" order="26" xlink:title="presentation: GL02-GL03 Included to GL03-CM07 Specified"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#CM07-001" xlink:label="CM07-001" xlink:title="presentation parent: CM07-001 Functional Amount"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL03-CM07" xlink:to="CM07-001" order="27" xlink:title="presentation: GL03-CM07 Specified to CM07-001 Functional Amount"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#CM07-002" xlink:label="CM07-002" xlink:title="presentation parent: CM07-002 Transaction Amount"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL03-CM07" xlink:to="CM07-002" order="28" xlink:title="presentation: GL03-CM07 Specified to CM07-002 Transaction Amount"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#CM07-003" xlink:label="CM07-003" xlink:title="presentation parent: CM07-003 Reporting Amount"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL03-CM07" xlink:to="CM07-003" order="29" xlink:title="presentation: GL03-CM07 Specified to CM07-003 Reporting Amount"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#CM07-004" xlink:label="CM07-004" xlink:title="presentation parent: CM07-004 Local Amount"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL03-CM07" xlink:to="CM07-004" order="30" xlink:title="presentation: GL03-CM07 Specified to CM07-004 Local Amount"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-CM08" xlink:label="GL03-CM08" xlink:title="presentation parent: GL03-CM08 Specified"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL02-GL03" xlink:to="GL03-CM08" order="31" xlink:title="presentation: GL02-GL03 Included to GL03-CM08 Specified"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#CM08-001" xlink:label="CM08-001" xlink:title="presentation parent: CM08-001 Functional Currency Code"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL03-CM08" xlink:to="CM08-001" order="32" xlink:title="presentation: GL03-CM08 Specified to CM08-001 Functional Currency Code"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#CM08-002" xlink:label="CM08-002" xlink:title="presentation parent: CM08-002 Transaction Currency Code"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL03-CM08" xlink:to="CM08-002" order="33" xlink:title="presentation: GL03-CM08 Specified to CM08-002 Transaction Currency Code"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#CM08-003" xlink:label="CM08-003" xlink:title="presentation parent: CM08-003 Reporting Currency Code"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL03-CM08" xlink:to="CM08-003" order="34" xlink:title="presentation: GL03-CM08 Specified to CM08-003 Reporting Currency Code"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#CM08-004" xlink:label="CM08-004" xlink:title="presentation parent: CM08-004 Local Currency Code"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL03-CM08" xlink:to="CM08-004" order="35" xlink:title="presentation: GL03-CM08 Specified to CM08-004 Local Currency Code"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-CM01" xlink:label="GL03-CM01" xlink:title="presentation parent: GL03-CM01 Responsible"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL02-GL03" xlink:to="GL03-CM01" order="36" xlink:title="presentation: GL02-GL03 Included to GL03-CM01 Responsible"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#CM01-001" xlink:label="CM01-001" xlink:title="presentation parent: CM01-001 Ctrated By"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL03-CM01" xlink:to="CM01-001" order="37" xlink:title="presentation: GL03-CM01 Responsible to CM01-001 Ctrated By"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#CM01-002" xlink:label="CM01-002" xlink:title="presentation parent: CM01-002 Created On"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL03-CM01" xlink:to="CM01-002" order="38" xlink:title="presentation: GL03-CM01 Responsible to CM01-002 Created On"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#CM01-003" xlink:label="CM01-003" xlink:title="presentation parent: CM01-003 Created At"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL03-CM01" xlink:to="CM01-003" order="39" xlink:title="presentation: GL03-CM01 Responsible to CM01-003 Created At"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-CM02" xlink:label="GL03-CM02" xlink:title="presentation parent: GL03-CM02 Responsible"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL02-GL03" xlink:to="GL03-CM02" order="40" xlink:title="presentation: GL02-GL03 Included to GL03-CM02 Responsible"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#CM02-001" xlink:label="CM02-001" xlink:title="presentation parent: CM02-001 Approved By"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL03-CM02" xlink:to="CM02-001" order="41" xlink:title="presentation: GL03-CM02 Responsible to CM02-001 Approved By"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#CM02-002" xlink:label="CM02-002" xlink:title="presentation parent: CM02-002 Approved On"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL03-CM02" xlink:to="CM02-002" order="42" xlink:title="presentation: GL03-CM02 Responsible to CM02-002 Approved On"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-CM04" xlink:label="GL03-CM04" xlink:title="presentation parent: GL03-CM04 Responsible"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL02-GL03" xlink:to="GL03-CM04" order="43" xlink:title="presentation: GL02-GL03 Included to GL03-CM04 Responsible"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#CM04-001" xlink:label="CM04-001" xlink:title="presentation parent: CM04-001 Recorded By"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL03-CM04" xlink:to="CM04-001" order="44" xlink:title="presentation: GL03-CM04 Responsible to CM04-001 Recorded By"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-GL05" xlink:label="GL03-GL05" xlink:title="presentation parent: GL03-GL05 Account Segment"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL02-GL03" xlink:to="GL03-GL05" order="45" xlink:title="presentation: GL02-GL03 Included to GL03-GL05 Account Segment"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL05-001" xlink:label="GL05-001" xlink:title="presentation parent: GL05-001 GL Account Number"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL03-GL05" xlink:to="GL05-001" order="46" xlink:title="presentation: GL03-GL05 Account Segment to GL05-001 GL Account Number"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL05-002" xlink:label="GL05-002" xlink:title="presentation parent: GL05-002 Account Segment Number"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL03-GL05" xlink:to="GL05-002" order="47" xlink:title="presentation: GL03-GL05 Account Segment to GL05-002 Account Segment Number"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL05-003" xlink:label="GL05-003" xlink:title="presentation parent: GL05-003 Account Segment Name"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL03-GL05" xlink:to="GL05-003" order="48" xlink:title="presentation: GL03-GL05 Account Segment to GL05-003 Account Segment Name"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL05-004" xlink:label="GL05-004" xlink:title="presentation parent: GL05-004 Corresponding File"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL03-GL05" xlink:to="GL05-004" order="49" xlink:title="presentation: GL03-GL05 Account Segment to GL05-004 Corresponding File"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL05-005" xlink:label="GL05-005" xlink:title="presentation parent: GL05-005 Account Segment Description"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL03-GL05" xlink:to="GL05-005" order="50" xlink:title="presentation: GL03-GL05 Account Segment to GL05-005 Account Segment Description"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-BS01" xlink:label="GL03-BS01" xlink:title="presentation parent: GL03-BS01 Business Segment"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL02-GL03" xlink:to="GL03-BS01" order="51" xlink:title="presentation: GL02-GL03 Included to GL03-BS01 Business Segment"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#BS01-001" xlink:label="BS01-001" xlink:title="presentation parent: BS01-001 Business Segment Code"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL03-BS01" xlink:to="BS01-001" order="52" xlink:title="presentation: GL03-BS01 Business Segment to BS01-001 Business Segment Code"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#BS01-002" xlink:label="BS01-002" xlink:title="presentation parent: BS01-002 Business Segment Name"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL03-BS01" xlink:to="BS01-002" order="53" xlink:title="presentation: GL03-BS01 Business Segment to BS01-002 Business Segment Name"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#BS01-003" xlink:label="BS01-003" xlink:title="presentation parent: BS01-003 Segment Reference Level"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL03-BS01" xlink:to="BS01-003" order="54" xlink:title="presentation: GL03-BS01 Business Segment to BS01-003 Segment Reference Level"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#BS01-004" xlink:label="BS01-004" xlink:title="presentation parent: BS01-004 Business Segment Type Name"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL03-BS01" xlink:to="BS01-004" order="55" xlink:title="presentation: GL03-BS01 Business Segment to BS01-004 Business Segment Type Name"/>
+        <!-- ABIE GL03 GL Details -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03" xlink:label="GL03" xlink:title="presentation: GL03 GL Details"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL03" xlink:to="GL03-CM07" order="1" xlink:title="presentation: GL03 GL Details to GL03-CM07 Specified"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL03" xlink:to="GL03-CM08" order="2" xlink:title="presentation: GL03 GL Details to GL03-CM08 Specified"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL03" xlink:to="GL03-CM01" order="3" xlink:title="presentation: GL03 GL Details to GL03-CM01 Responsible"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL03" xlink:to="GL03-CM02" order="4" xlink:title="presentation: GL03 GL Details to GL03-CM02 Responsible"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL03" xlink:to="GL03-CM04" order="5" xlink:title="presentation: GL03 GL Details to GL03-CM04 Responsible"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL03" xlink:to="GL03-GL05" order="6" xlink:title="presentation: GL03 GL Details to GL03-GL05 Account Segment"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL03" xlink:to="GL03-BS01" order="7" xlink:title="presentation: GL03 GL Details to GL03-BS01 Business Segment"/>
+        <!-- ABIE CM07 Monetary Amopunt -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#CM07" xlink:label="CM07" xlink:title="presentation: CM07 Monetary Amopunt"/>
+        <!-- ABIE CM08 Currency Code -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#CM08" xlink:label="CM08" xlink:title="presentation: CM08 Currency Code"/>
+        <!-- ABIE CM01 Created -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#CM01" xlink:label="CM01" xlink:title="presentation: CM01 Created"/>
+        <!-- ABIE CM02 Approved -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#CM02" xlink:label="CM02" xlink:title="presentation: CM02 Approved"/>
+        <!-- ABIE CM04 Posted -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#CM04" xlink:label="CM04" xlink:title="presentation: CM04 Posted"/>
+        <!-- ABIE GL05 Account Segment -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL05" xlink:label="GL05" xlink:title="presentation: GL05 Account Segment"/>
+        <!-- ABIE BS01 Business Segment -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#BS01" xlink:label="BS01" xlink:title="presentation: BS01 Business Segment"/>
+    </link:presentationLink>
+</link:linkbase>
