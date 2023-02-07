@@ -139,7 +139,7 @@ if __name__ == '__main__':
 
     adc_instance_file = f'{source}{adc_instanceFile}'.replace('/',SEP)
     adc_instance_file = file_path(adc_instance_file)
-    with open(adc_instance_file, 'w', encoding='utf_16le', newline='') as f:
+    with open(adc_instance_file, 'w', encoding='utf_8', newline='') as f:
         writer = csv.DictWriter(f, fieldnames=header2)
         writer.writeheader()
         writer.writerows(records2)

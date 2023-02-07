@@ -21,13 +21,15 @@
         </period>
     </context>
     <adc:GL02-001 contextRef="c-01" id="adc.r_1.GL02-001">0001-20090401-18-1-1-463</adc:GL02-001>
-    <adc:GL03-002 contextRef="c-01" id="adc.r_1.GL03-002">entries</adc:GL03-002>
+    <adc:GL02-002 contextRef="c-01" id="adc.r_1.GL02-002">246</adc:GL02-002>
+    <adc:GL02-005 contextRef="c-01" id="adc.r_1.GL02-005">gj</adc:GL02-005>
+    <adc:GL02-006 contextRef="c-01" id="adc.r_1.GL02-006">General</adc:GL02-006>
     <adc:GL03-001 contextRef="c-01" id="adc.r_1.GL03-001">1-463</adc:GL03-001>
+    <adc:GL03-002 contextRef="c-01" id="adc.r_1.GL03-002">entries</adc:GL03-002>
+    <adc:GL03-005 contextRef="c-01" id="adc.r_1.GL03-005">manual</adc:GL03-005>
+    <adc:GL03-007 contextRef="c-01" id="adc.r_1.GL03-007">2008-08-19</adc:GL03-007>
     <adc:CM01-001 contextRef="c-01" id="adc.r_1.CM01-001">pca</adc:CM01-001>
     <adc:CM01-002 contextRef="c-01" id="adc.r_1.CM01-002">2012-12-26</adc:CM01-002>
-    <adc:GL03-007 contextRef="c-01" id="adc.r_1.GL03-007">2008-08-19</adc:GL03-007>
-    <adc:GL02-005 contextRef="c-01" id="adc.r_1.GL02-005">gj</adc:GL02-005>
-    <adc:GL02-002 contextRef="c-01" id="adc.r_1.GL02-002">246</adc:GL02-002>
     <context id="c-02">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -44,12 +46,13 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-02" id="adc.r_2.GL02-007">2009-04-01</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-02" id="adc.r_2.GL03-003">debit</adc:GL03-003>
+    <adc:GL03-004 contextRef="c-02" id="adc.r_2.GL03-004">旅費</adc:GL03-004>
     <adc:GL03-006 contextRef="c-02" id="adc.r_2.GL03-006">proposed</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-02" id="adc.r_2.GL02-006">2009-04-01</adc:GL02-006>
     <adc:BS09-001 contextRef="c-02" id="adc.r_2.BS09-001">726</adc:BS09-001>
     <adc:BS09-002 contextRef="c-02" id="adc.r_2.BS09-002">Travel expenses</adc:BS09-002>
     <adc:BS09-005 contextRef="c-02" id="adc.r_2.BS09-005">account</adc:BS09-005>
-    <adc:GL03-004 contextRef="c-02" id="adc.r_2.GL03-004">旅費</adc:GL03-004>
     <unit id="u-01">
         <measure>pure</measure>
     </unit>
@@ -59,9 +62,6 @@
       id="adc.r_2.CM07-001"
       unitRef="u-01">18572</adc:CM07-001>
     <adc:CM08-001 contextRef="c-02" id="adc.r_2.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-02" id="adc.r_2.GL02-006">2009-04-01</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-02" id="adc.r_2.GL03-006">proposed</adc:GL03-006>
-    <adc:GL03-004 contextRef="c-02" id="adc.r_2.GL03-004">旅費</adc:GL03-004>
     <context id="c-03">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -100,8 +100,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-04" id="adc.r_4.GL02-007">2009-04-01</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-04" id="adc.r_4.GL03-003">debit</adc:GL03-003>
     <adc:GL03-006 contextRef="c-04" id="adc.r_4.GL03-006">tax</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-04" id="adc.r_4.GL02-006">2009-04-01</adc:GL02-006>
     <adc:BS09-001 contextRef="c-04" id="adc.r_4.BS09-001">191</adc:BS09-001>
     <adc:BS09-002 contextRef="c-04" id="adc.r_4.BS09-002">Temporary payment consumption tax</adc:BS09-002>
     <adc:BS09-005 contextRef="c-04" id="adc.r_4.BS09-005">account</adc:BS09-005>
@@ -111,8 +112,6 @@
       id="adc.r_4.CM07-001"
       unitRef="u-01">928</adc:CM07-001>
     <adc:CM08-001 contextRef="c-04" id="adc.r_4.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-04" id="adc.r_4.GL02-006">2009-04-01</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-04" id="adc.r_4.GL03-006">tax</adc:GL03-006>
     <context id="c-05">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -151,21 +150,19 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-06" id="adc.r_6.GL02-007">2009-04-01</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-06" id="adc.r_6.GL03-003">credit</adc:GL03-003>
+    <adc:GL03-004 contextRef="c-06" id="adc.r_6.GL03-004">旅費</adc:GL03-004>
     <adc:GL03-006 contextRef="c-06" id="adc.r_6.GL03-006">proposed</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-06" id="adc.r_6.GL02-006">2009-04-01</adc:GL02-006>
     <adc:BS09-001 contextRef="c-06" id="adc.r_6.BS09-001">111</adc:BS09-001>
     <adc:BS09-002 contextRef="c-06" id="adc.r_6.BS09-002">Cash</adc:BS09-002>
     <adc:BS09-005 contextRef="c-06" id="adc.r_6.BS09-005">account</adc:BS09-005>
-    <adc:GL03-004 contextRef="c-06" id="adc.r_6.GL03-004">旅費</adc:GL03-004>
     <adc:CM07-001
       contextRef="c-06"
       decimals="INF"
       id="adc.r_6.CM07-001"
       unitRef="u-01">19500</adc:CM07-001>
     <adc:CM08-001 contextRef="c-06" id="adc.r_6.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-06" id="adc.r_6.GL02-006">2009-04-01</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-06" id="adc.r_6.GL03-006">proposed</adc:GL03-006>
-    <adc:GL03-004 contextRef="c-06" id="adc.r_6.GL03-004">旅費</adc:GL03-004>
     <context id="c-07">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -202,13 +199,15 @@
         </period>
     </context>
     <adc:GL02-001 contextRef="c-08" id="adc.r_8.GL02-001">0001-20090401-246-2-1-465</adc:GL02-001>
-    <adc:GL03-002 contextRef="c-08" id="adc.r_8.GL03-002">entries</adc:GL03-002>
+    <adc:GL02-002 contextRef="c-08" id="adc.r_8.GL02-002">246</adc:GL02-002>
+    <adc:GL02-005 contextRef="c-08" id="adc.r_8.GL02-005">gj</adc:GL02-005>
+    <adc:GL02-006 contextRef="c-08" id="adc.r_8.GL02-006">General</adc:GL02-006>
     <adc:GL03-001 contextRef="c-08" id="adc.r_8.GL03-001">2-465</adc:GL03-001>
+    <adc:GL03-002 contextRef="c-08" id="adc.r_8.GL03-002">entries</adc:GL03-002>
+    <adc:GL03-005 contextRef="c-08" id="adc.r_8.GL03-005">manual</adc:GL03-005>
+    <adc:GL03-007 contextRef="c-08" id="adc.r_8.GL03-007">2008-08-19</adc:GL03-007>
     <adc:CM01-001 contextRef="c-08" id="adc.r_8.CM01-001">pca</adc:CM01-001>
     <adc:CM01-002 contextRef="c-08" id="adc.r_8.CM01-002">2012-12-26</adc:CM01-002>
-    <adc:GL03-007 contextRef="c-08" id="adc.r_8.GL03-007">2008-08-19</adc:GL03-007>
-    <adc:GL02-005 contextRef="c-08" id="adc.r_8.GL02-005">gj</adc:GL02-005>
-    <adc:GL02-002 contextRef="c-08" id="adc.r_8.GL02-002">246</adc:GL02-002>
     <context id="c-09">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -225,21 +224,19 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-09" id="adc.r_9.GL02-007">2009-04-01</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-09" id="adc.r_9.GL03-003">debit</adc:GL03-003>
+    <adc:GL03-004 contextRef="c-09" id="adc.r_9.GL03-004">旅費</adc:GL03-004>
     <adc:GL03-006 contextRef="c-09" id="adc.r_9.GL03-006">proposed</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-09" id="adc.r_9.GL02-006">2009-04-01</adc:GL02-006>
     <adc:BS09-001 contextRef="c-09" id="adc.r_9.BS09-001">726</adc:BS09-001>
     <adc:BS09-002 contextRef="c-09" id="adc.r_9.BS09-002">Travel expenses</adc:BS09-002>
     <adc:BS09-005 contextRef="c-09" id="adc.r_9.BS09-005">account</adc:BS09-005>
-    <adc:GL03-004 contextRef="c-09" id="adc.r_9.GL03-004">旅費</adc:GL03-004>
     <adc:CM07-001
       contextRef="c-09"
       decimals="INF"
       id="adc.r_9.CM07-001"
       unitRef="u-01">9524</adc:CM07-001>
     <adc:CM08-001 contextRef="c-09" id="adc.r_9.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-09" id="adc.r_9.GL02-006">2009-04-01</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-09" id="adc.r_9.GL03-006">proposed</adc:GL03-006>
-    <adc:GL03-004 contextRef="c-09" id="adc.r_9.GL03-004">旅費</adc:GL03-004>
     <context id="c-10">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -278,8 +275,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-11" id="adc.r_11.GL02-007">2009-04-01</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-11" id="adc.r_11.GL03-003">debit</adc:GL03-003>
     <adc:GL03-006 contextRef="c-11" id="adc.r_11.GL03-006">tax</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-11" id="adc.r_11.GL02-006">2009-04-01</adc:GL02-006>
     <adc:BS09-001 contextRef="c-11" id="adc.r_11.BS09-001">191</adc:BS09-001>
     <adc:BS09-002 contextRef="c-11" id="adc.r_11.BS09-002">Temporary payment consumption tax</adc:BS09-002>
     <adc:BS09-005 contextRef="c-11" id="adc.r_11.BS09-005">account</adc:BS09-005>
@@ -289,8 +287,6 @@
       id="adc.r_11.CM07-001"
       unitRef="u-01">476</adc:CM07-001>
     <adc:CM08-001 contextRef="c-11" id="adc.r_11.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-11" id="adc.r_11.GL02-006">2009-04-01</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-11" id="adc.r_11.GL03-006">tax</adc:GL03-006>
     <context id="c-12">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -329,21 +325,19 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-13" id="adc.r_13.GL02-007">2009-04-01</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-13" id="adc.r_13.GL03-003">credit</adc:GL03-003>
+    <adc:GL03-004 contextRef="c-13" id="adc.r_13.GL03-004">旅費</adc:GL03-004>
     <adc:GL03-006 contextRef="c-13" id="adc.r_13.GL03-006">proposed</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-13" id="adc.r_13.GL02-006">2009-04-01</adc:GL02-006>
     <adc:BS09-001 contextRef="c-13" id="adc.r_13.BS09-001">111</adc:BS09-001>
     <adc:BS09-002 contextRef="c-13" id="adc.r_13.BS09-002">Cash</adc:BS09-002>
     <adc:BS09-005 contextRef="c-13" id="adc.r_13.BS09-005">account</adc:BS09-005>
-    <adc:GL03-004 contextRef="c-13" id="adc.r_13.GL03-004">旅費</adc:GL03-004>
     <adc:CM07-001
       contextRef="c-13"
       decimals="INF"
       id="adc.r_13.CM07-001"
       unitRef="u-01">10000</adc:CM07-001>
     <adc:CM08-001 contextRef="c-13" id="adc.r_13.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-13" id="adc.r_13.GL02-006">2009-04-01</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-13" id="adc.r_13.GL03-006">proposed</adc:GL03-006>
-    <adc:GL03-004 contextRef="c-13" id="adc.r_13.GL03-004">旅費</adc:GL03-004>
     <context id="c-14">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -380,13 +374,15 @@
         </period>
     </context>
     <adc:GL02-001 contextRef="c-15" id="adc.r_15.GL02-001">0001-20090402-122-5-1-471</adc:GL02-001>
-    <adc:GL03-002 contextRef="c-15" id="adc.r_15.GL03-002">entries</adc:GL03-002>
+    <adc:GL02-002 contextRef="c-15" id="adc.r_15.GL02-002">122</adc:GL02-002>
+    <adc:GL02-005 contextRef="c-15" id="adc.r_15.GL02-005">gj</adc:GL02-005>
+    <adc:GL02-006 contextRef="c-15" id="adc.r_15.GL02-006">General</adc:GL02-006>
     <adc:GL03-001 contextRef="c-15" id="adc.r_15.GL03-001">5-471</adc:GL03-001>
+    <adc:GL03-002 contextRef="c-15" id="adc.r_15.GL03-002">entries</adc:GL03-002>
+    <adc:GL03-005 contextRef="c-15" id="adc.r_15.GL03-005">manual</adc:GL03-005>
+    <adc:GL03-007 contextRef="c-15" id="adc.r_15.GL03-007">2008-08-19</adc:GL03-007>
     <adc:CM01-001 contextRef="c-15" id="adc.r_15.CM01-001">pca</adc:CM01-001>
     <adc:CM01-002 contextRef="c-15" id="adc.r_15.CM01-002">2012-12-26</adc:CM01-002>
-    <adc:GL03-007 contextRef="c-15" id="adc.r_15.GL03-007">2008-08-19</adc:GL03-007>
-    <adc:GL02-005 contextRef="c-15" id="adc.r_15.GL02-005">gj</adc:GL02-005>
-    <adc:GL02-002 contextRef="c-15" id="adc.r_15.GL02-002">122</adc:GL02-002>
     <context id="c-16">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -403,21 +399,19 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-16" id="adc.r_16.GL02-007">2009-04-02</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-16" id="adc.r_16.GL03-003">debit</adc:GL03-003>
+    <adc:GL03-004 contextRef="c-16" id="adc.r_16.GL03-004">証明書発行手数料</adc:GL03-004>
     <adc:GL03-006 contextRef="c-16" id="adc.r_16.GL03-006">proposed</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-16" id="adc.r_16.GL02-006">2009-04-02</adc:GL02-006>
     <adc:BS09-001 contextRef="c-16" id="adc.r_16.BS09-001">727</adc:BS09-001>
     <adc:BS09-002 contextRef="c-16" id="adc.r_16.BS09-002">Communication cost</adc:BS09-002>
     <adc:BS09-005 contextRef="c-16" id="adc.r_16.BS09-005">account</adc:BS09-005>
-    <adc:GL03-004 contextRef="c-16" id="adc.r_16.GL03-004">証明書発行手数料</adc:GL03-004>
     <adc:CM07-001
       contextRef="c-16"
       decimals="INF"
       id="adc.r_16.CM07-001"
       unitRef="u-01">1000</adc:CM07-001>
     <adc:CM08-001 contextRef="c-16" id="adc.r_16.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-16" id="adc.r_16.GL02-006">2009-04-02</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-16" id="adc.r_16.GL03-006">proposed</adc:GL03-006>
-    <adc:GL03-004 contextRef="c-16" id="adc.r_16.GL03-004">証明書発行手数料</adc:GL03-004>
     <context id="c-17">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -456,8 +450,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-18" id="adc.r_18.GL02-007">2009-04-02</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-18" id="adc.r_18.GL03-003">debit</adc:GL03-003>
     <adc:GL03-006 contextRef="c-18" id="adc.r_18.GL03-006">tax</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-18" id="adc.r_18.GL02-006">2009-04-02</adc:GL02-006>
     <adc:BS09-001 contextRef="c-18" id="adc.r_18.BS09-001">191</adc:BS09-001>
     <adc:BS09-002 contextRef="c-18" id="adc.r_18.BS09-002">Temporary payment consumption tax</adc:BS09-002>
     <adc:BS09-005 contextRef="c-18" id="adc.r_18.BS09-005">account</adc:BS09-005>
@@ -467,8 +462,6 @@
       id="adc.r_18.CM07-001"
       unitRef="u-01">50</adc:CM07-001>
     <adc:CM08-001 contextRef="c-18" id="adc.r_18.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-18" id="adc.r_18.GL02-006">2009-04-02</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-18" id="adc.r_18.GL03-006">tax</adc:GL03-006>
     <context id="c-19">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -507,21 +500,19 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-20" id="adc.r_20.GL02-007">2009-04-02</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-20" id="adc.r_20.GL03-003">credit</adc:GL03-003>
+    <adc:GL03-004 contextRef="c-20" id="adc.r_20.GL03-004">証明書発行手数料</adc:GL03-004>
     <adc:GL03-006 contextRef="c-20" id="adc.r_20.GL03-006">proposed</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-20" id="adc.r_20.GL02-006">2009-04-02</adc:GL02-006>
     <adc:BS09-001 contextRef="c-20" id="adc.r_20.BS09-001">111</adc:BS09-001>
     <adc:BS09-002 contextRef="c-20" id="adc.r_20.BS09-002">Cash</adc:BS09-002>
     <adc:BS09-005 contextRef="c-20" id="adc.r_20.BS09-005">account</adc:BS09-005>
-    <adc:GL03-004 contextRef="c-20" id="adc.r_20.GL03-004">証明書発行手数料</adc:GL03-004>
     <adc:CM07-001
       contextRef="c-20"
       decimals="INF"
       id="adc.r_20.CM07-001"
       unitRef="u-01">1050</adc:CM07-001>
     <adc:CM08-001 contextRef="c-20" id="adc.r_20.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-20" id="adc.r_20.GL02-006">2009-04-02</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-20" id="adc.r_20.GL03-006">proposed</adc:GL03-006>
-    <adc:GL03-004 contextRef="c-20" id="adc.r_20.GL03-004">証明書発行手数料</adc:GL03-004>
     <context id="c-21">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -558,13 +549,15 @@
         </period>
     </context>
     <adc:GL02-001 contextRef="c-22" id="adc.r_22.GL02-001">0001-20090402-142-6-1-473</adc:GL02-001>
-    <adc:GL03-002 contextRef="c-22" id="adc.r_22.GL03-002">entries</adc:GL03-002>
+    <adc:GL02-002 contextRef="c-22" id="adc.r_22.GL02-002">142</adc:GL02-002>
+    <adc:GL02-005 contextRef="c-22" id="adc.r_22.GL02-005">gj</adc:GL02-005>
+    <adc:GL02-006 contextRef="c-22" id="adc.r_22.GL02-006">General</adc:GL02-006>
     <adc:GL03-001 contextRef="c-22" id="adc.r_22.GL03-001">6-473</adc:GL03-001>
+    <adc:GL03-002 contextRef="c-22" id="adc.r_22.GL03-002">entries</adc:GL03-002>
+    <adc:GL03-005 contextRef="c-22" id="adc.r_22.GL03-005">manual</adc:GL03-005>
+    <adc:GL03-007 contextRef="c-22" id="adc.r_22.GL03-007">2008-08-19</adc:GL03-007>
     <adc:CM01-001 contextRef="c-22" id="adc.r_22.CM01-001">pca</adc:CM01-001>
     <adc:CM01-002 contextRef="c-22" id="adc.r_22.CM01-002">2012-12-26</adc:CM01-002>
-    <adc:GL03-007 contextRef="c-22" id="adc.r_22.GL03-007">2008-08-19</adc:GL03-007>
-    <adc:GL02-005 contextRef="c-22" id="adc.r_22.GL02-005">gj</adc:GL02-005>
-    <adc:GL02-002 contextRef="c-22" id="adc.r_22.GL02-002">142</adc:GL02-002>
     <context id="c-23">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -581,21 +574,19 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-23" id="adc.r_23.GL02-007">2009-04-02</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-23" id="adc.r_23.GL03-003">debit</adc:GL03-003>
+    <adc:GL03-004 contextRef="c-23" id="adc.r_23.GL03-004">高速代</adc:GL03-004>
     <adc:GL03-006 contextRef="c-23" id="adc.r_23.GL03-006">proposed</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-23" id="adc.r_23.GL02-006">2009-04-02</adc:GL02-006>
     <adc:BS09-001 contextRef="c-23" id="adc.r_23.BS09-001">740</adc:BS09-001>
     <adc:BS09-002 contextRef="c-23" id="adc.r_23.BS09-002">Vehicle costs</adc:BS09-002>
     <adc:BS09-005 contextRef="c-23" id="adc.r_23.BS09-005">account</adc:BS09-005>
-    <adc:GL03-004 contextRef="c-23" id="adc.r_23.GL03-004">高速代</adc:GL03-004>
     <adc:CM07-001
       contextRef="c-23"
       decimals="INF"
       id="adc.r_23.CM07-001"
       unitRef="u-01">2458</adc:CM07-001>
     <adc:CM08-001 contextRef="c-23" id="adc.r_23.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-23" id="adc.r_23.GL02-006">2009-04-02</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-23" id="adc.r_23.GL03-006">proposed</adc:GL03-006>
-    <adc:GL03-004 contextRef="c-23" id="adc.r_23.GL03-004">高速代</adc:GL03-004>
     <context id="c-24">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -634,8 +625,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-25" id="adc.r_25.GL02-007">2009-04-02</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-25" id="adc.r_25.GL03-003">debit</adc:GL03-003>
     <adc:GL03-006 contextRef="c-25" id="adc.r_25.GL03-006">tax</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-25" id="adc.r_25.GL02-006">2009-04-02</adc:GL02-006>
     <adc:BS09-001 contextRef="c-25" id="adc.r_25.BS09-001">191</adc:BS09-001>
     <adc:BS09-002 contextRef="c-25" id="adc.r_25.BS09-002">Temporary payment consumption tax</adc:BS09-002>
     <adc:BS09-005 contextRef="c-25" id="adc.r_25.BS09-005">account</adc:BS09-005>
@@ -645,8 +637,6 @@
       id="adc.r_25.CM07-001"
       unitRef="u-01">122</adc:CM07-001>
     <adc:CM08-001 contextRef="c-25" id="adc.r_25.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-25" id="adc.r_25.GL02-006">2009-04-02</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-25" id="adc.r_25.GL03-006">tax</adc:GL03-006>
     <context id="c-26">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -685,21 +675,19 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-27" id="adc.r_27.GL02-007">2009-04-02</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-27" id="adc.r_27.GL03-003">credit</adc:GL03-003>
+    <adc:GL03-004 contextRef="c-27" id="adc.r_27.GL03-004">高速代</adc:GL03-004>
     <adc:GL03-006 contextRef="c-27" id="adc.r_27.GL03-006">proposed</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-27" id="adc.r_27.GL02-006">2009-04-02</adc:GL02-006>
     <adc:BS09-001 contextRef="c-27" id="adc.r_27.BS09-001">111</adc:BS09-001>
     <adc:BS09-002 contextRef="c-27" id="adc.r_27.BS09-002">Cash</adc:BS09-002>
     <adc:BS09-005 contextRef="c-27" id="adc.r_27.BS09-005">account</adc:BS09-005>
-    <adc:GL03-004 contextRef="c-27" id="adc.r_27.GL03-004">高速代</adc:GL03-004>
     <adc:CM07-001
       contextRef="c-27"
       decimals="INF"
       id="adc.r_27.CM07-001"
       unitRef="u-01">14050</adc:CM07-001>
     <adc:CM08-001 contextRef="c-27" id="adc.r_27.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-27" id="adc.r_27.GL02-006">2009-04-02</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-27" id="adc.r_27.GL03-006">proposed</adc:GL03-006>
-    <adc:GL03-004 contextRef="c-27" id="adc.r_27.GL03-004">高速代</adc:GL03-004>
     <context id="c-28">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -738,21 +726,19 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-29" id="adc.r_29.GL02-007">2009-04-02</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-29" id="adc.r_29.GL03-003">debit</adc:GL03-003>
+    <adc:GL03-004 contextRef="c-29" id="adc.r_29.GL03-004">駐車代</adc:GL03-004>
     <adc:GL03-006 contextRef="c-29" id="adc.r_29.GL03-006">proposed</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-29" id="adc.r_29.GL02-006">2009-04-02</adc:GL02-006>
     <adc:BS09-001 contextRef="c-29" id="adc.r_29.BS09-001">740</adc:BS09-001>
     <adc:BS09-002 contextRef="c-29" id="adc.r_29.BS09-002">Vehicle costs</adc:BS09-002>
     <adc:BS09-005 contextRef="c-29" id="adc.r_29.BS09-005">account</adc:BS09-005>
-    <adc:GL03-004 contextRef="c-29" id="adc.r_29.GL03-004">駐車代</adc:GL03-004>
     <adc:CM07-001
       contextRef="c-29"
       decimals="INF"
       id="adc.r_29.CM07-001"
       unitRef="u-01">591</adc:CM07-001>
     <adc:CM08-001 contextRef="c-29" id="adc.r_29.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-29" id="adc.r_29.GL02-006">2009-04-02</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-29" id="adc.r_29.GL03-006">proposed</adc:GL03-006>
-    <adc:GL03-004 contextRef="c-29" id="adc.r_29.GL03-004">駐車代</adc:GL03-004>
     <context id="c-30">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -791,8 +777,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-31" id="adc.r_31.GL02-007">2009-04-02</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-31" id="adc.r_31.GL03-003">debit</adc:GL03-003>
     <adc:GL03-006 contextRef="c-31" id="adc.r_31.GL03-006">tax</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-31" id="adc.r_31.GL02-006">2009-04-02</adc:GL02-006>
     <adc:BS09-001 contextRef="c-31" id="adc.r_31.BS09-001">191</adc:BS09-001>
     <adc:BS09-002 contextRef="c-31" id="adc.r_31.BS09-002">Temporary payment consumption tax</adc:BS09-002>
     <adc:BS09-005 contextRef="c-31" id="adc.r_31.BS09-005">account</adc:BS09-005>
@@ -802,8 +789,6 @@
       id="adc.r_31.CM07-001"
       unitRef="u-01">29</adc:CM07-001>
     <adc:CM08-001 contextRef="c-31" id="adc.r_31.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-31" id="adc.r_31.GL02-006">2009-04-02</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-31" id="adc.r_31.GL03-006">tax</adc:GL03-006>
     <context id="c-32">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -842,21 +827,19 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-33" id="adc.r_33.GL02-007">2009-04-02</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-33" id="adc.r_33.GL03-003">debit</adc:GL03-003>
+    <adc:GL03-004 contextRef="c-33" id="adc.r_33.GL03-004">ガソリン代</adc:GL03-004>
     <adc:GL03-006 contextRef="c-33" id="adc.r_33.GL03-006">proposed</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-33" id="adc.r_33.GL02-006">2009-04-02</adc:GL02-006>
     <adc:BS09-001 contextRef="c-33" id="adc.r_33.BS09-001">740</adc:BS09-001>
     <adc:BS09-002 contextRef="c-33" id="adc.r_33.BS09-002">Vehicle costs</adc:BS09-002>
     <adc:BS09-005 contextRef="c-33" id="adc.r_33.BS09-005">account</adc:BS09-005>
-    <adc:GL03-004 contextRef="c-33" id="adc.r_33.GL03-004">ガソリン代</adc:GL03-004>
     <adc:CM07-001
       contextRef="c-33"
       decimals="INF"
       id="adc.r_33.CM07-001"
       unitRef="u-01">4620</adc:CM07-001>
     <adc:CM08-001 contextRef="c-33" id="adc.r_33.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-33" id="adc.r_33.GL02-006">2009-04-02</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-33" id="adc.r_33.GL03-006">proposed</adc:GL03-006>
-    <adc:GL03-004 contextRef="c-33" id="adc.r_33.GL03-004">ガソリン代</adc:GL03-004>
     <context id="c-34">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -895,8 +878,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-35" id="adc.r_35.GL02-007">2009-04-02</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-35" id="adc.r_35.GL03-003">debit</adc:GL03-003>
     <adc:GL03-006 contextRef="c-35" id="adc.r_35.GL03-006">tax</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-35" id="adc.r_35.GL02-006">2009-04-02</adc:GL02-006>
     <adc:BS09-001 contextRef="c-35" id="adc.r_35.BS09-001">191</adc:BS09-001>
     <adc:BS09-002 contextRef="c-35" id="adc.r_35.BS09-002">Temporary payment consumption tax</adc:BS09-002>
     <adc:BS09-005 contextRef="c-35" id="adc.r_35.BS09-005">account</adc:BS09-005>
@@ -906,8 +890,6 @@
       id="adc.r_35.CM07-001"
       unitRef="u-01">230</adc:CM07-001>
     <adc:CM08-001 contextRef="c-35" id="adc.r_35.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-35" id="adc.r_35.GL02-006">2009-04-02</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-35" id="adc.r_35.GL03-006">tax</adc:GL03-006>
     <context id="c-36">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -946,21 +928,19 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-37" id="adc.r_37.GL02-007">2009-04-02</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-37" id="adc.r_37.GL03-003">debit</adc:GL03-003>
+    <adc:GL03-004 contextRef="c-37" id="adc.r_37.GL03-004">洗車券代</adc:GL03-004>
     <adc:GL03-006 contextRef="c-37" id="adc.r_37.GL03-006">proposed</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-37" id="adc.r_37.GL02-006">2009-04-02</adc:GL02-006>
     <adc:BS09-001 contextRef="c-37" id="adc.r_37.BS09-001">740</adc:BS09-001>
     <adc:BS09-002 contextRef="c-37" id="adc.r_37.BS09-002">Vehicle costs</adc:BS09-002>
     <adc:BS09-005 contextRef="c-37" id="adc.r_37.BS09-005">account</adc:BS09-005>
-    <adc:GL03-004 contextRef="c-37" id="adc.r_37.GL03-004">洗車券代</adc:GL03-004>
     <adc:CM07-001
       contextRef="c-37"
       decimals="INF"
       id="adc.r_37.CM07-001"
       unitRef="u-01">5715</adc:CM07-001>
     <adc:CM08-001 contextRef="c-37" id="adc.r_37.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-37" id="adc.r_37.GL02-006">2009-04-02</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-37" id="adc.r_37.GL03-006">proposed</adc:GL03-006>
-    <adc:GL03-004 contextRef="c-37" id="adc.r_37.GL03-004">洗車券代</adc:GL03-004>
     <context id="c-38">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -999,8 +979,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-39" id="adc.r_39.GL02-007">2009-04-02</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-39" id="adc.r_39.GL03-003">debit</adc:GL03-003>
     <adc:GL03-006 contextRef="c-39" id="adc.r_39.GL03-006">tax</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-39" id="adc.r_39.GL02-006">2009-04-02</adc:GL02-006>
     <adc:BS09-001 contextRef="c-39" id="adc.r_39.BS09-001">191</adc:BS09-001>
     <adc:BS09-002 contextRef="c-39" id="adc.r_39.BS09-002">Temporary payment consumption tax</adc:BS09-002>
     <adc:BS09-005 contextRef="c-39" id="adc.r_39.BS09-005">account</adc:BS09-005>
@@ -1010,8 +991,6 @@
       id="adc.r_39.CM07-001"
       unitRef="u-01">285</adc:CM07-001>
     <adc:CM08-001 contextRef="c-39" id="adc.r_39.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-39" id="adc.r_39.GL02-006">2009-04-02</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-39" id="adc.r_39.GL03-006">tax</adc:GL03-006>
     <context id="c-40">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -1048,13 +1027,15 @@
         </period>
     </context>
     <adc:GL02-001 contextRef="c-41" id="adc.r_41.GL02-001">0001-20090402-19-3-1-467</adc:GL02-001>
-    <adc:GL03-002 contextRef="c-41" id="adc.r_41.GL03-002">entries</adc:GL03-002>
+    <adc:GL02-002 contextRef="c-41" id="adc.r_41.GL02-002">19</adc:GL02-002>
+    <adc:GL02-005 contextRef="c-41" id="adc.r_41.GL02-005">gj</adc:GL02-005>
+    <adc:GL02-006 contextRef="c-41" id="adc.r_41.GL02-006">General</adc:GL02-006>
     <adc:GL03-001 contextRef="c-41" id="adc.r_41.GL03-001">3-467</adc:GL03-001>
+    <adc:GL03-002 contextRef="c-41" id="adc.r_41.GL03-002">entries</adc:GL03-002>
+    <adc:GL03-005 contextRef="c-41" id="adc.r_41.GL03-005">manual</adc:GL03-005>
+    <adc:GL03-007 contextRef="c-41" id="adc.r_41.GL03-007">2008-08-19</adc:GL03-007>
     <adc:CM01-001 contextRef="c-41" id="adc.r_41.CM01-001">pca</adc:CM01-001>
     <adc:CM01-002 contextRef="c-41" id="adc.r_41.CM01-002">2012-12-26</adc:CM01-002>
-    <adc:GL03-007 contextRef="c-41" id="adc.r_41.GL03-007">2008-08-19</adc:GL03-007>
-    <adc:GL02-005 contextRef="c-41" id="adc.r_41.GL02-005">gj</adc:GL02-005>
-    <adc:GL02-002 contextRef="c-41" id="adc.r_41.GL02-002">19</adc:GL02-002>
     <context id="c-42">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -1071,21 +1052,19 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-42" id="adc.r_42.GL02-007">2009-04-02</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-42" id="adc.r_42.GL03-003">debit</adc:GL03-003>
+    <adc:GL03-004 contextRef="c-42" id="adc.r_42.GL03-004">旅費</adc:GL03-004>
     <adc:GL03-006 contextRef="c-42" id="adc.r_42.GL03-006">proposed</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-42" id="adc.r_42.GL02-006">2009-04-02</adc:GL02-006>
     <adc:BS09-001 contextRef="c-42" id="adc.r_42.BS09-001">726</adc:BS09-001>
     <adc:BS09-002 contextRef="c-42" id="adc.r_42.BS09-002">Travel expenses</adc:BS09-002>
     <adc:BS09-005 contextRef="c-42" id="adc.r_42.BS09-005">account</adc:BS09-005>
-    <adc:GL03-004 contextRef="c-42" id="adc.r_42.GL03-004">旅費</adc:GL03-004>
     <adc:CM07-001
       contextRef="c-42"
       decimals="INF"
       id="adc.r_42.CM07-001"
       unitRef="u-01">10477</adc:CM07-001>
     <adc:CM08-001 contextRef="c-42" id="adc.r_42.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-42" id="adc.r_42.GL02-006">2009-04-02</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-42" id="adc.r_42.GL03-006">proposed</adc:GL03-006>
-    <adc:GL03-004 contextRef="c-42" id="adc.r_42.GL03-004">旅費</adc:GL03-004>
     <context id="c-43">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -1124,8 +1103,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-44" id="adc.r_44.GL02-007">2009-04-02</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-44" id="adc.r_44.GL03-003">debit</adc:GL03-003>
     <adc:GL03-006 contextRef="c-44" id="adc.r_44.GL03-006">tax</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-44" id="adc.r_44.GL02-006">2009-04-02</adc:GL02-006>
     <adc:BS09-001 contextRef="c-44" id="adc.r_44.BS09-001">191</adc:BS09-001>
     <adc:BS09-002 contextRef="c-44" id="adc.r_44.BS09-002">Temporary payment consumption tax</adc:BS09-002>
     <adc:BS09-005 contextRef="c-44" id="adc.r_44.BS09-005">account</adc:BS09-005>
@@ -1135,8 +1115,6 @@
       id="adc.r_44.CM07-001"
       unitRef="u-01">523</adc:CM07-001>
     <adc:CM08-001 contextRef="c-44" id="adc.r_44.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-44" id="adc.r_44.GL02-006">2009-04-02</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-44" id="adc.r_44.GL03-006">tax</adc:GL03-006>
     <context id="c-45">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -1175,21 +1153,19 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-46" id="adc.r_46.GL02-007">2009-04-02</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-46" id="adc.r_46.GL03-003">credit</adc:GL03-003>
+    <adc:GL03-004 contextRef="c-46" id="adc.r_46.GL03-004">旅費</adc:GL03-004>
     <adc:GL03-006 contextRef="c-46" id="adc.r_46.GL03-006">proposed</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-46" id="adc.r_46.GL02-006">2009-04-02</adc:GL02-006>
     <adc:BS09-001 contextRef="c-46" id="adc.r_46.BS09-001">111</adc:BS09-001>
     <adc:BS09-002 contextRef="c-46" id="adc.r_46.BS09-002">Cash</adc:BS09-002>
     <adc:BS09-005 contextRef="c-46" id="adc.r_46.BS09-005">account</adc:BS09-005>
-    <adc:GL03-004 contextRef="c-46" id="adc.r_46.GL03-004">旅費</adc:GL03-004>
     <adc:CM07-001
       contextRef="c-46"
       decimals="INF"
       id="adc.r_46.CM07-001"
       unitRef="u-01">11000</adc:CM07-001>
     <adc:CM08-001 contextRef="c-46" id="adc.r_46.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-46" id="adc.r_46.GL02-006">2009-04-02</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-46" id="adc.r_46.GL03-006">proposed</adc:GL03-006>
-    <adc:GL03-004 contextRef="c-46" id="adc.r_46.GL03-004">旅費</adc:GL03-004>
     <context id="c-47">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -1226,13 +1202,15 @@
         </period>
     </context>
     <adc:GL02-001 contextRef="c-48" id="adc.r_48.GL02-001">0001-20090402-68-4-1-469</adc:GL02-001>
-    <adc:GL03-002 contextRef="c-48" id="adc.r_48.GL03-002">entries</adc:GL03-002>
+    <adc:GL02-002 contextRef="c-48" id="adc.r_48.GL02-002">68</adc:GL02-002>
+    <adc:GL02-005 contextRef="c-48" id="adc.r_48.GL02-005">gj</adc:GL02-005>
+    <adc:GL02-006 contextRef="c-48" id="adc.r_48.GL02-006">General</adc:GL02-006>
     <adc:GL03-001 contextRef="c-48" id="adc.r_48.GL03-001">4-469</adc:GL03-001>
+    <adc:GL03-002 contextRef="c-48" id="adc.r_48.GL03-002">entries</adc:GL03-002>
+    <adc:GL03-005 contextRef="c-48" id="adc.r_48.GL03-005">manual</adc:GL03-005>
+    <adc:GL03-007 contextRef="c-48" id="adc.r_48.GL03-007">2008-08-19</adc:GL03-007>
     <adc:CM01-001 contextRef="c-48" id="adc.r_48.CM01-001">pca</adc:CM01-001>
     <adc:CM01-002 contextRef="c-48" id="adc.r_48.CM01-002">2012-12-26</adc:CM01-002>
-    <adc:GL03-007 contextRef="c-48" id="adc.r_48.GL03-007">2008-08-19</adc:GL03-007>
-    <adc:GL02-005 contextRef="c-48" id="adc.r_48.GL02-005">gj</adc:GL02-005>
-    <adc:GL02-002 contextRef="c-48" id="adc.r_48.GL02-002">68</adc:GL02-002>
     <context id="c-49">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -1249,21 +1227,19 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-49" id="adc.r_49.GL02-007">2009-04-02</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-49" id="adc.r_49.GL03-003">debit</adc:GL03-003>
+    <adc:GL03-004 contextRef="c-49" id="adc.r_49.GL03-004">トイレットペーパー他</adc:GL03-004>
     <adc:GL03-006 contextRef="c-49" id="adc.r_49.GL03-006">proposed</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-49" id="adc.r_49.GL02-006">2009-04-02</adc:GL02-006>
     <adc:BS09-001 contextRef="c-49" id="adc.r_49.BS09-001">791</adc:BS09-001>
     <adc:BS09-002 contextRef="c-49" id="adc.r_49.BS09-002">Miscellaneous expenses</adc:BS09-002>
     <adc:BS09-005 contextRef="c-49" id="adc.r_49.BS09-005">account</adc:BS09-005>
-    <adc:GL03-004 contextRef="c-49" id="adc.r_49.GL03-004">トイレットペーパー他</adc:GL03-004>
     <adc:CM07-001
       contextRef="c-49"
       decimals="INF"
       id="adc.r_49.CM07-001"
       unitRef="u-01">2829</adc:CM07-001>
     <adc:CM08-001 contextRef="c-49" id="adc.r_49.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-49" id="adc.r_49.GL02-006">2009-04-02</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-49" id="adc.r_49.GL03-006">proposed</adc:GL03-006>
-    <adc:GL03-004 contextRef="c-49" id="adc.r_49.GL03-004">トイレットペーパー他</adc:GL03-004>
     <context id="c-50">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -1302,8 +1278,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-51" id="adc.r_51.GL02-007">2009-04-02</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-51" id="adc.r_51.GL03-003">debit</adc:GL03-003>
     <adc:GL03-006 contextRef="c-51" id="adc.r_51.GL03-006">tax</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-51" id="adc.r_51.GL02-006">2009-04-02</adc:GL02-006>
     <adc:BS09-001 contextRef="c-51" id="adc.r_51.BS09-001">191</adc:BS09-001>
     <adc:BS09-002 contextRef="c-51" id="adc.r_51.BS09-002">Temporary payment consumption tax</adc:BS09-002>
     <adc:BS09-005 contextRef="c-51" id="adc.r_51.BS09-005">account</adc:BS09-005>
@@ -1313,8 +1290,6 @@
       id="adc.r_51.CM07-001"
       unitRef="u-01">141</adc:CM07-001>
     <adc:CM08-001 contextRef="c-51" id="adc.r_51.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-51" id="adc.r_51.GL02-006">2009-04-02</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-51" id="adc.r_51.GL03-006">tax</adc:GL03-006>
     <context id="c-52">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -1353,21 +1328,19 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-53" id="adc.r_53.GL02-007">2009-04-02</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-53" id="adc.r_53.GL03-003">credit</adc:GL03-003>
+    <adc:GL03-004 contextRef="c-53" id="adc.r_53.GL03-004">トイレットペーパー他</adc:GL03-004>
     <adc:GL03-006 contextRef="c-53" id="adc.r_53.GL03-006">proposed</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-53" id="adc.r_53.GL02-006">2009-04-02</adc:GL02-006>
     <adc:BS09-001 contextRef="c-53" id="adc.r_53.BS09-001">111</adc:BS09-001>
     <adc:BS09-002 contextRef="c-53" id="adc.r_53.BS09-002">Cash</adc:BS09-002>
     <adc:BS09-005 contextRef="c-53" id="adc.r_53.BS09-005">account</adc:BS09-005>
-    <adc:GL03-004 contextRef="c-53" id="adc.r_53.GL03-004">トイレットペーパー他</adc:GL03-004>
     <adc:CM07-001
       contextRef="c-53"
       decimals="INF"
       id="adc.r_53.CM07-001"
       unitRef="u-01">2970</adc:CM07-001>
     <adc:CM08-001 contextRef="c-53" id="adc.r_53.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-53" id="adc.r_53.GL02-006">2009-04-02</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-53" id="adc.r_53.GL03-006">proposed</adc:GL03-006>
-    <adc:GL03-004 contextRef="c-53" id="adc.r_53.GL03-004">トイレットペーパー他</adc:GL03-004>
     <context id="c-54">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -1404,13 +1377,15 @@
         </period>
     </context>
     <adc:GL02-001 contextRef="c-55" id="adc.r_55.GL02-001">0001-20090403-134-8-1-477</adc:GL02-001>
-    <adc:GL03-002 contextRef="c-55" id="adc.r_55.GL03-002">entries</adc:GL03-002>
+    <adc:GL02-002 contextRef="c-55" id="adc.r_55.GL02-002">134</adc:GL02-002>
+    <adc:GL02-005 contextRef="c-55" id="adc.r_55.GL02-005">gj</adc:GL02-005>
+    <adc:GL02-006 contextRef="c-55" id="adc.r_55.GL02-006">General</adc:GL02-006>
     <adc:GL03-001 contextRef="c-55" id="adc.r_55.GL03-001">8-477</adc:GL03-001>
+    <adc:GL03-002 contextRef="c-55" id="adc.r_55.GL03-002">entries</adc:GL03-002>
+    <adc:GL03-005 contextRef="c-55" id="adc.r_55.GL03-005">manual</adc:GL03-005>
+    <adc:GL03-007 contextRef="c-55" id="adc.r_55.GL03-007">2008-08-19</adc:GL03-007>
     <adc:CM01-001 contextRef="c-55" id="adc.r_55.CM01-001">pca</adc:CM01-001>
     <adc:CM01-002 contextRef="c-55" id="adc.r_55.CM01-002">2012-12-26</adc:CM01-002>
-    <adc:GL03-007 contextRef="c-55" id="adc.r_55.GL03-007">2008-08-19</adc:GL03-007>
-    <adc:GL02-005 contextRef="c-55" id="adc.r_55.GL02-005">gj</adc:GL02-005>
-    <adc:GL02-002 contextRef="c-55" id="adc.r_55.GL02-002">134</adc:GL02-002>
     <context id="c-56">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -1427,21 +1402,19 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-56" id="adc.r_56.GL02-007">2009-04-03</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-56" id="adc.r_56.GL03-003">debit</adc:GL03-003>
+    <adc:GL03-004 contextRef="c-56" id="adc.r_56.GL03-004">用紙</adc:GL03-004>
     <adc:GL03-006 contextRef="c-56" id="adc.r_56.GL03-006">proposed</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-56" id="adc.r_56.GL02-006">2009-04-03</adc:GL02-006>
     <adc:BS09-001 contextRef="c-56" id="adc.r_56.BS09-001">754</adc:BS09-001>
     <adc:BS09-002 contextRef="c-56" id="adc.r_56.BS09-002">Office consumables expenses</adc:BS09-002>
     <adc:BS09-005 contextRef="c-56" id="adc.r_56.BS09-005">account</adc:BS09-005>
-    <adc:GL03-004 contextRef="c-56" id="adc.r_56.GL03-004">用紙</adc:GL03-004>
     <adc:CM07-001
       contextRef="c-56"
       decimals="INF"
       id="adc.r_56.CM07-001"
       unitRef="u-01">14858</adc:CM07-001>
     <adc:CM08-001 contextRef="c-56" id="adc.r_56.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-56" id="adc.r_56.GL02-006">2009-04-03</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-56" id="adc.r_56.GL03-006">proposed</adc:GL03-006>
-    <adc:GL03-004 contextRef="c-56" id="adc.r_56.GL03-004">用紙</adc:GL03-004>
     <context id="c-57">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -1480,8 +1453,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-58" id="adc.r_58.GL02-007">2009-04-03</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-58" id="adc.r_58.GL03-003">debit</adc:GL03-003>
     <adc:GL03-006 contextRef="c-58" id="adc.r_58.GL03-006">tax</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-58" id="adc.r_58.GL02-006">2009-04-03</adc:GL02-006>
     <adc:BS09-001 contextRef="c-58" id="adc.r_58.BS09-001">191</adc:BS09-001>
     <adc:BS09-002 contextRef="c-58" id="adc.r_58.BS09-002">Temporary payment consumption tax</adc:BS09-002>
     <adc:BS09-005 contextRef="c-58" id="adc.r_58.BS09-005">account</adc:BS09-005>
@@ -1491,8 +1465,6 @@
       id="adc.r_58.CM07-001"
       unitRef="u-01">742</adc:CM07-001>
     <adc:CM08-001 contextRef="c-58" id="adc.r_58.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-58" id="adc.r_58.GL02-006">2009-04-03</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-58" id="adc.r_58.GL03-006">tax</adc:GL03-006>
     <context id="c-59">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -1531,21 +1503,19 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-60" id="adc.r_60.GL02-007">2009-04-03</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-60" id="adc.r_60.GL03-003">credit</adc:GL03-003>
+    <adc:GL03-004 contextRef="c-60" id="adc.r_60.GL03-004">用紙</adc:GL03-004>
     <adc:GL03-006 contextRef="c-60" id="adc.r_60.GL03-006">proposed</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-60" id="adc.r_60.GL02-006">2009-04-03</adc:GL02-006>
     <adc:BS09-001 contextRef="c-60" id="adc.r_60.BS09-001">111</adc:BS09-001>
     <adc:BS09-002 contextRef="c-60" id="adc.r_60.BS09-002">Cash</adc:BS09-002>
     <adc:BS09-005 contextRef="c-60" id="adc.r_60.BS09-005">account</adc:BS09-005>
-    <adc:GL03-004 contextRef="c-60" id="adc.r_60.GL03-004">用紙</adc:GL03-004>
     <adc:CM07-001
       contextRef="c-60"
       decimals="INF"
       id="adc.r_60.CM07-001"
       unitRef="u-01">15600</adc:CM07-001>
     <adc:CM08-001 contextRef="c-60" id="adc.r_60.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-60" id="adc.r_60.GL02-006">2009-04-03</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-60" id="adc.r_60.GL03-006">proposed</adc:GL03-006>
-    <adc:GL03-004 contextRef="c-60" id="adc.r_60.GL03-004">用紙</adc:GL03-004>
     <context id="c-61">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -1582,13 +1552,15 @@
         </period>
     </context>
     <adc:GL02-001 contextRef="c-62" id="adc.r_62.GL02-001">0001-20090403-41-7-1-475</adc:GL02-001>
-    <adc:GL03-002 contextRef="c-62" id="adc.r_62.GL03-002">entries</adc:GL03-002>
+    <adc:GL02-002 contextRef="c-62" id="adc.r_62.GL02-002">41</adc:GL02-002>
+    <adc:GL02-005 contextRef="c-62" id="adc.r_62.GL02-005">gj</adc:GL02-005>
+    <adc:GL02-006 contextRef="c-62" id="adc.r_62.GL02-006">General</adc:GL02-006>
     <adc:GL03-001 contextRef="c-62" id="adc.r_62.GL03-001">7-475</adc:GL03-001>
+    <adc:GL03-002 contextRef="c-62" id="adc.r_62.GL03-002">entries</adc:GL03-002>
+    <adc:GL03-005 contextRef="c-62" id="adc.r_62.GL03-005">manual</adc:GL03-005>
+    <adc:GL03-007 contextRef="c-62" id="adc.r_62.GL03-007">2008-08-19</adc:GL03-007>
     <adc:CM01-001 contextRef="c-62" id="adc.r_62.CM01-001">pca</adc:CM01-001>
     <adc:CM01-002 contextRef="c-62" id="adc.r_62.CM01-002">2012-12-26</adc:CM01-002>
-    <adc:GL03-007 contextRef="c-62" id="adc.r_62.GL03-007">2008-08-19</adc:GL03-007>
-    <adc:GL02-005 contextRef="c-62" id="adc.r_62.GL02-005">gj</adc:GL02-005>
-    <adc:GL02-002 contextRef="c-62" id="adc.r_62.GL02-002">41</adc:GL02-002>
     <context id="c-63">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -1605,21 +1577,19 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-63" id="adc.r_63.GL02-007">2009-04-03</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-63" id="adc.r_63.GL03-003">debit</adc:GL03-003>
+    <adc:GL03-004 contextRef="c-63" id="adc.r_63.GL03-004">結婚式会費</adc:GL03-004>
     <adc:GL03-006 contextRef="c-63" id="adc.r_63.GL03-006">proposed</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-63" id="adc.r_63.GL02-006">2009-04-03</adc:GL02-006>
     <adc:BS09-001 contextRef="c-63" id="adc.r_63.BS09-001">733</adc:BS09-001>
     <adc:BS09-002 contextRef="c-63" id="adc.r_63.BS09-002">Entertainment expenses</adc:BS09-002>
     <adc:BS09-005 contextRef="c-63" id="adc.r_63.BS09-005">account</adc:BS09-005>
-    <adc:GL03-004 contextRef="c-63" id="adc.r_63.GL03-004">結婚式会費</adc:GL03-004>
     <adc:CM07-001
       contextRef="c-63"
       decimals="INF"
       id="adc.r_63.CM07-001"
       unitRef="u-01">12000</adc:CM07-001>
     <adc:CM08-001 contextRef="c-63" id="adc.r_63.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-63" id="adc.r_63.GL02-006">2009-04-03</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-63" id="adc.r_63.GL03-006">proposed</adc:GL03-006>
-    <adc:GL03-004 contextRef="c-63" id="adc.r_63.GL03-004">結婚式会費</adc:GL03-004>
     <context id="c-64">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -1658,21 +1628,19 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-65" id="adc.r_65.GL02-007">2009-04-03</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-65" id="adc.r_65.GL03-003">credit</adc:GL03-003>
+    <adc:GL03-004 contextRef="c-65" id="adc.r_65.GL03-004">結婚式会費</adc:GL03-004>
     <adc:GL03-006 contextRef="c-65" id="adc.r_65.GL03-006">proposed</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-65" id="adc.r_65.GL02-006">2009-04-03</adc:GL02-006>
     <adc:BS09-001 contextRef="c-65" id="adc.r_65.BS09-001">111</adc:BS09-001>
     <adc:BS09-002 contextRef="c-65" id="adc.r_65.BS09-002">Cash</adc:BS09-002>
     <adc:BS09-005 contextRef="c-65" id="adc.r_65.BS09-005">account</adc:BS09-005>
-    <adc:GL03-004 contextRef="c-65" id="adc.r_65.GL03-004">結婚式会費</adc:GL03-004>
     <adc:CM07-001
       contextRef="c-65"
       decimals="INF"
       id="adc.r_65.CM07-001"
       unitRef="u-01">12000</adc:CM07-001>
     <adc:CM08-001 contextRef="c-65" id="adc.r_65.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-65" id="adc.r_65.GL02-006">2009-04-03</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-65" id="adc.r_65.GL03-006">proposed</adc:GL03-006>
-    <adc:GL03-004 contextRef="c-65" id="adc.r_65.GL03-004">結婚式会費</adc:GL03-004>
     <context id="c-66">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -1709,13 +1677,15 @@
         </period>
     </context>
     <adc:GL02-001 contextRef="c-67" id="adc.r_67.GL02-001">0001-20090404-310-9-1-479</adc:GL02-001>
-    <adc:GL03-002 contextRef="c-67" id="adc.r_67.GL03-002">entries</adc:GL03-002>
+    <adc:GL02-002 contextRef="c-67" id="adc.r_67.GL02-002">310</adc:GL02-002>
+    <adc:GL02-005 contextRef="c-67" id="adc.r_67.GL02-005">gj</adc:GL02-005>
+    <adc:GL02-006 contextRef="c-67" id="adc.r_67.GL02-006">General</adc:GL02-006>
     <adc:GL03-001 contextRef="c-67" id="adc.r_67.GL03-001">9-479</adc:GL03-001>
+    <adc:GL03-002 contextRef="c-67" id="adc.r_67.GL03-002">entries</adc:GL03-002>
+    <adc:GL03-005 contextRef="c-67" id="adc.r_67.GL03-005">manual</adc:GL03-005>
+    <adc:GL03-007 contextRef="c-67" id="adc.r_67.GL03-007">2008-08-19</adc:GL03-007>
     <adc:CM01-001 contextRef="c-67" id="adc.r_67.CM01-001">pca</adc:CM01-001>
     <adc:CM01-002 contextRef="c-67" id="adc.r_67.CM01-002">2012-12-26</adc:CM01-002>
-    <adc:GL03-007 contextRef="c-67" id="adc.r_67.GL03-007">2008-08-19</adc:GL03-007>
-    <adc:GL02-005 contextRef="c-67" id="adc.r_67.GL02-005">gj</adc:GL02-005>
-    <adc:GL02-002 contextRef="c-67" id="adc.r_67.GL02-002">310</adc:GL02-002>
     <context id="c-68">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -1732,21 +1702,19 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-68" id="adc.r_68.GL02-007">2009-04-04</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-68" id="adc.r_68.GL03-003">debit</adc:GL03-003>
+    <adc:GL03-004 contextRef="c-68" id="adc.r_68.GL03-004">ガソリン代</adc:GL03-004>
     <adc:GL03-006 contextRef="c-68" id="adc.r_68.GL03-006">proposed</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-68" id="adc.r_68.GL02-006">2009-04-04</adc:GL02-006>
     <adc:BS09-001 contextRef="c-68" id="adc.r_68.BS09-001">740</adc:BS09-001>
     <adc:BS09-002 contextRef="c-68" id="adc.r_68.BS09-002">Vehicle costs</adc:BS09-002>
     <adc:BS09-005 contextRef="c-68" id="adc.r_68.BS09-005">account</adc:BS09-005>
-    <adc:GL03-004 contextRef="c-68" id="adc.r_68.GL03-004">ガソリン代</adc:GL03-004>
     <adc:CM07-001
       contextRef="c-68"
       decimals="INF"
       id="adc.r_68.CM07-001"
       unitRef="u-01">6486</adc:CM07-001>
     <adc:CM08-001 contextRef="c-68" id="adc.r_68.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-68" id="adc.r_68.GL02-006">2009-04-04</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-68" id="adc.r_68.GL03-006">proposed</adc:GL03-006>
-    <adc:GL03-004 contextRef="c-68" id="adc.r_68.GL03-004">ガソリン代</adc:GL03-004>
     <context id="c-69">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -1785,8 +1753,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-70" id="adc.r_70.GL02-007">2009-04-04</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-70" id="adc.r_70.GL03-003">debit</adc:GL03-003>
     <adc:GL03-006 contextRef="c-70" id="adc.r_70.GL03-006">tax</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-70" id="adc.r_70.GL02-006">2009-04-04</adc:GL02-006>
     <adc:BS09-001 contextRef="c-70" id="adc.r_70.BS09-001">191</adc:BS09-001>
     <adc:BS09-002 contextRef="c-70" id="adc.r_70.BS09-002">Temporary payment consumption tax</adc:BS09-002>
     <adc:BS09-005 contextRef="c-70" id="adc.r_70.BS09-005">account</adc:BS09-005>
@@ -1796,8 +1765,6 @@
       id="adc.r_70.CM07-001"
       unitRef="u-01">324</adc:CM07-001>
     <adc:CM08-001 contextRef="c-70" id="adc.r_70.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-70" id="adc.r_70.GL02-006">2009-04-04</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-70" id="adc.r_70.GL03-006">tax</adc:GL03-006>
     <context id="c-71">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -1836,21 +1803,19 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-72" id="adc.r_72.GL02-007">2009-04-04</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-72" id="adc.r_72.GL03-003">credit</adc:GL03-003>
+    <adc:GL03-004 contextRef="c-72" id="adc.r_72.GL03-004">ガソリン代</adc:GL03-004>
     <adc:GL03-006 contextRef="c-72" id="adc.r_72.GL03-006">proposed</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-72" id="adc.r_72.GL02-006">2009-04-04</adc:GL02-006>
     <adc:BS09-001 contextRef="c-72" id="adc.r_72.BS09-001">111</adc:BS09-001>
     <adc:BS09-002 contextRef="c-72" id="adc.r_72.BS09-002">Cash</adc:BS09-002>
     <adc:BS09-005 contextRef="c-72" id="adc.r_72.BS09-005">account</adc:BS09-005>
-    <adc:GL03-004 contextRef="c-72" id="adc.r_72.GL03-004">ガソリン代</adc:GL03-004>
     <adc:CM07-001
       contextRef="c-72"
       decimals="INF"
       id="adc.r_72.CM07-001"
       unitRef="u-01">18270</adc:CM07-001>
     <adc:CM08-001 contextRef="c-72" id="adc.r_72.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-72" id="adc.r_72.GL02-006">2009-04-04</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-72" id="adc.r_72.GL03-006">proposed</adc:GL03-006>
-    <adc:GL03-004 contextRef="c-72" id="adc.r_72.GL03-004">ガソリン代</adc:GL03-004>
     <context id="c-73">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -1889,21 +1854,19 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-74" id="adc.r_74.GL02-007">2009-04-04</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-74" id="adc.r_74.GL03-003">debit</adc:GL03-003>
+    <adc:GL03-004 contextRef="c-74" id="adc.r_74.GL03-004">高速代</adc:GL03-004>
     <adc:GL03-006 contextRef="c-74" id="adc.r_74.GL03-006">proposed</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-74" id="adc.r_74.GL02-006">2009-04-04</adc:GL02-006>
     <adc:BS09-001 contextRef="c-74" id="adc.r_74.BS09-001">740</adc:BS09-001>
     <adc:BS09-002 contextRef="c-74" id="adc.r_74.BS09-002">Vehicle costs</adc:BS09-002>
     <adc:BS09-005 contextRef="c-74" id="adc.r_74.BS09-005">account</adc:BS09-005>
-    <adc:GL03-004 contextRef="c-74" id="adc.r_74.GL03-004">高速代</adc:GL03-004>
     <adc:CM07-001
       contextRef="c-74"
       decimals="INF"
       id="adc.r_74.CM07-001"
       unitRef="u-01">9715</adc:CM07-001>
     <adc:CM08-001 contextRef="c-74" id="adc.r_74.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-74" id="adc.r_74.GL02-006">2009-04-04</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-74" id="adc.r_74.GL03-006">proposed</adc:GL03-006>
-    <adc:GL03-004 contextRef="c-74" id="adc.r_74.GL03-004">高速代</adc:GL03-004>
     <context id="c-75">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -1942,8 +1905,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-76" id="adc.r_76.GL02-007">2009-04-04</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-76" id="adc.r_76.GL03-003">debit</adc:GL03-003>
     <adc:GL03-006 contextRef="c-76" id="adc.r_76.GL03-006">tax</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-76" id="adc.r_76.GL02-006">2009-04-04</adc:GL02-006>
     <adc:BS09-001 contextRef="c-76" id="adc.r_76.BS09-001">191</adc:BS09-001>
     <adc:BS09-002 contextRef="c-76" id="adc.r_76.BS09-002">Temporary payment consumption tax</adc:BS09-002>
     <adc:BS09-005 contextRef="c-76" id="adc.r_76.BS09-005">account</adc:BS09-005>
@@ -1953,8 +1917,6 @@
       id="adc.r_76.CM07-001"
       unitRef="u-01">485</adc:CM07-001>
     <adc:CM08-001 contextRef="c-76" id="adc.r_76.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-76" id="adc.r_76.GL02-006">2009-04-04</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-76" id="adc.r_76.GL03-006">tax</adc:GL03-006>
     <context id="c-77">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -1993,21 +1955,19 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-78" id="adc.r_78.GL02-007">2009-04-04</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-78" id="adc.r_78.GL03-003">debit</adc:GL03-003>
+    <adc:GL03-004 contextRef="c-78" id="adc.r_78.GL03-004">駐車代</adc:GL03-004>
     <adc:GL03-006 contextRef="c-78" id="adc.r_78.GL03-006">proposed</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-78" id="adc.r_78.GL02-006">2009-04-04</adc:GL02-006>
     <adc:BS09-001 contextRef="c-78" id="adc.r_78.BS09-001">740</adc:BS09-001>
     <adc:BS09-002 contextRef="c-78" id="adc.r_78.BS09-002">Vehicle costs</adc:BS09-002>
     <adc:BS09-005 contextRef="c-78" id="adc.r_78.BS09-005">account</adc:BS09-005>
-    <adc:GL03-004 contextRef="c-78" id="adc.r_78.GL03-004">駐車代</adc:GL03-004>
     <adc:CM07-001
       contextRef="c-78"
       decimals="INF"
       id="adc.r_78.CM07-001"
       unitRef="u-01">1200</adc:CM07-001>
     <adc:CM08-001 contextRef="c-78" id="adc.r_78.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-78" id="adc.r_78.GL02-006">2009-04-04</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-78" id="adc.r_78.GL03-006">proposed</adc:GL03-006>
-    <adc:GL03-004 contextRef="c-78" id="adc.r_78.GL03-004">駐車代</adc:GL03-004>
     <context id="c-79">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -2046,8 +2006,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-80" id="adc.r_80.GL02-007">2009-04-04</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-80" id="adc.r_80.GL03-003">debit</adc:GL03-003>
     <adc:GL03-006 contextRef="c-80" id="adc.r_80.GL03-006">tax</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-80" id="adc.r_80.GL02-006">2009-04-04</adc:GL02-006>
     <adc:BS09-001 contextRef="c-80" id="adc.r_80.BS09-001">191</adc:BS09-001>
     <adc:BS09-002 contextRef="c-80" id="adc.r_80.BS09-002">Temporary payment consumption tax</adc:BS09-002>
     <adc:BS09-005 contextRef="c-80" id="adc.r_80.BS09-005">account</adc:BS09-005>
@@ -2057,8 +2018,6 @@
       id="adc.r_80.CM07-001"
       unitRef="u-01">60</adc:CM07-001>
     <adc:CM08-001 contextRef="c-80" id="adc.r_80.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-80" id="adc.r_80.GL02-006">2009-04-04</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-80" id="adc.r_80.GL03-006">tax</adc:GL03-006>
     <context id="c-81">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -2095,13 +2054,15 @@
         </period>
     </context>
     <adc:GL02-001 contextRef="c-82" id="adc.r_82.GL02-001">0001-20090405-133-11-1-483</adc:GL02-001>
-    <adc:GL03-002 contextRef="c-82" id="adc.r_82.GL03-002">entries</adc:GL03-002>
+    <adc:GL02-002 contextRef="c-82" id="adc.r_82.GL02-002">133</adc:GL02-002>
+    <adc:GL02-005 contextRef="c-82" id="adc.r_82.GL02-005">gj</adc:GL02-005>
+    <adc:GL02-006 contextRef="c-82" id="adc.r_82.GL02-006">General</adc:GL02-006>
     <adc:GL03-001 contextRef="c-82" id="adc.r_82.GL03-001">11-483</adc:GL03-001>
+    <adc:GL03-002 contextRef="c-82" id="adc.r_82.GL03-002">entries</adc:GL03-002>
+    <adc:GL03-005 contextRef="c-82" id="adc.r_82.GL03-005">manual</adc:GL03-005>
+    <adc:GL03-007 contextRef="c-82" id="adc.r_82.GL03-007">2008-08-19</adc:GL03-007>
     <adc:CM01-001 contextRef="c-82" id="adc.r_82.CM01-001">pca</adc:CM01-001>
     <adc:CM01-002 contextRef="c-82" id="adc.r_82.CM01-002">2012-12-26</adc:CM01-002>
-    <adc:GL03-007 contextRef="c-82" id="adc.r_82.GL03-007">2008-08-19</adc:GL03-007>
-    <adc:GL02-005 contextRef="c-82" id="adc.r_82.GL02-005">gj</adc:GL02-005>
-    <adc:GL02-002 contextRef="c-82" id="adc.r_82.GL02-002">133</adc:GL02-002>
     <context id="c-83">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -2118,21 +2079,19 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-83" id="adc.r_83.GL02-007">2009-04-05</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-83" id="adc.r_83.GL03-003">debit</adc:GL03-003>
+    <adc:GL03-004 contextRef="c-83" id="adc.r_83.GL03-004">税理士報酬</adc:GL03-004>
     <adc:GL03-006 contextRef="c-83" id="adc.r_83.GL03-006">proposed</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-83" id="adc.r_83.GL02-006">2009-04-05</adc:GL02-006>
     <adc:BS09-001 contextRef="c-83" id="adc.r_83.BS09-001">746</adc:BS09-001>
     <adc:BS09-002 contextRef="c-83" id="adc.r_83.BS09-002">Payment reward</adc:BS09-002>
     <adc:BS09-005 contextRef="c-83" id="adc.r_83.BS09-005">account</adc:BS09-005>
-    <adc:GL03-004 contextRef="c-83" id="adc.r_83.GL03-004">税理士報酬</adc:GL03-004>
     <adc:CM07-001
       contextRef="c-83"
       decimals="INF"
       id="adc.r_83.CM07-001"
       unitRef="u-01">133058</adc:CM07-001>
     <adc:CM08-001 contextRef="c-83" id="adc.r_83.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-83" id="adc.r_83.GL02-006">2009-04-05</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-83" id="adc.r_83.GL03-006">proposed</adc:GL03-006>
-    <adc:GL03-004 contextRef="c-83" id="adc.r_83.GL03-004">税理士報酬</adc:GL03-004>
     <context id="c-84">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -2171,8 +2130,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-85" id="adc.r_85.GL02-007">2009-04-05</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-85" id="adc.r_85.GL03-003">debit</adc:GL03-003>
     <adc:GL03-006 contextRef="c-85" id="adc.r_85.GL03-006">tax</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-85" id="adc.r_85.GL02-006">2009-04-05</adc:GL02-006>
     <adc:BS09-001 contextRef="c-85" id="adc.r_85.BS09-001">191</adc:BS09-001>
     <adc:BS09-002 contextRef="c-85" id="adc.r_85.BS09-002">Temporary payment consumption tax</adc:BS09-002>
     <adc:BS09-005 contextRef="c-85" id="adc.r_85.BS09-005">account</adc:BS09-005>
@@ -2182,8 +2142,6 @@
       id="adc.r_85.CM07-001"
       unitRef="u-01">6652</adc:CM07-001>
     <adc:CM08-001 contextRef="c-85" id="adc.r_85.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-85" id="adc.r_85.GL02-006">2009-04-05</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-85" id="adc.r_85.GL03-006">tax</adc:GL03-006>
     <context id="c-86">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -2222,21 +2180,19 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-87" id="adc.r_87.GL02-007">2009-04-05</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-87" id="adc.r_87.GL03-003">credit</adc:GL03-003>
+    <adc:GL03-004 contextRef="c-87" id="adc.r_87.GL03-004">税理士報酬</adc:GL03-004>
     <adc:GL03-006 contextRef="c-87" id="adc.r_87.GL03-006">proposed</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-87" id="adc.r_87.GL02-006">2009-04-05</adc:GL02-006>
     <adc:BS09-001 contextRef="c-87" id="adc.r_87.BS09-001">131</adc:BS09-001>
     <adc:BS09-002 contextRef="c-87" id="adc.r_87.BS09-002">Ordinary deposit</adc:BS09-002>
     <adc:BS09-005 contextRef="c-87" id="adc.r_87.BS09-005">account</adc:BS09-005>
-    <adc:GL03-004 contextRef="c-87" id="adc.r_87.GL03-004">税理士報酬</adc:GL03-004>
     <adc:CM07-001
       contextRef="c-87"
       decimals="INF"
       id="adc.r_87.CM07-001"
       unitRef="u-01">139710</adc:CM07-001>
     <adc:CM08-001 contextRef="c-87" id="adc.r_87.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-87" id="adc.r_87.GL02-006">2009-04-05</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-87" id="adc.r_87.GL03-006">proposed</adc:GL03-006>
-    <adc:GL03-004 contextRef="c-87" id="adc.r_87.GL03-004">税理士報酬</adc:GL03-004>
     <context id="c-88">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -2295,13 +2251,15 @@
         </period>
     </context>
     <adc:GL02-001 contextRef="c-90" id="adc.r_90.GL02-001">0001-20090405-139-12-1-485</adc:GL02-001>
-    <adc:GL03-002 contextRef="c-90" id="adc.r_90.GL03-002">entries</adc:GL03-002>
+    <adc:GL02-002 contextRef="c-90" id="adc.r_90.GL02-002">139</adc:GL02-002>
+    <adc:GL02-005 contextRef="c-90" id="adc.r_90.GL02-005">gj</adc:GL02-005>
+    <adc:GL02-006 contextRef="c-90" id="adc.r_90.GL02-006">General</adc:GL02-006>
     <adc:GL03-001 contextRef="c-90" id="adc.r_90.GL03-001">12-485</adc:GL03-001>
+    <adc:GL03-002 contextRef="c-90" id="adc.r_90.GL03-002">entries</adc:GL03-002>
+    <adc:GL03-005 contextRef="c-90" id="adc.r_90.GL03-005">manual</adc:GL03-005>
+    <adc:GL03-007 contextRef="c-90" id="adc.r_90.GL03-007">2008-08-19</adc:GL03-007>
     <adc:CM01-001 contextRef="c-90" id="adc.r_90.CM01-001">pca</adc:CM01-001>
     <adc:CM01-002 contextRef="c-90" id="adc.r_90.CM01-002">2012-12-26</adc:CM01-002>
-    <adc:GL03-007 contextRef="c-90" id="adc.r_90.GL03-007">2008-08-19</adc:GL03-007>
-    <adc:GL02-005 contextRef="c-90" id="adc.r_90.GL02-005">gj</adc:GL02-005>
-    <adc:GL02-002 contextRef="c-90" id="adc.r_90.GL02-002">139</adc:GL02-002>
     <context id="c-91">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -2318,21 +2276,19 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-91" id="adc.r_91.GL02-007">2009-04-05</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-91" id="adc.r_91.GL03-003">debit</adc:GL03-003>
+    <adc:GL03-004 contextRef="c-91" id="adc.r_91.GL03-004">制服代</adc:GL03-004>
     <adc:GL03-006 contextRef="c-91" id="adc.r_91.GL03-006">proposed</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-91" id="adc.r_91.GL02-006">2009-04-05</adc:GL02-006>
     <adc:BS09-001 contextRef="c-91" id="adc.r_91.BS09-001">724</adc:BS09-001>
     <adc:BS09-002 contextRef="c-91" id="adc.r_91.BS09-002">Welfare expense</adc:BS09-002>
     <adc:BS09-005 contextRef="c-91" id="adc.r_91.BS09-005">account</adc:BS09-005>
-    <adc:GL03-004 contextRef="c-91" id="adc.r_91.GL03-004">制服代</adc:GL03-004>
     <adc:CM07-001
       contextRef="c-91"
       decimals="INF"
       id="adc.r_91.CM07-001"
       unitRef="u-01">52981</adc:CM07-001>
     <adc:CM08-001 contextRef="c-91" id="adc.r_91.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-91" id="adc.r_91.GL02-006">2009-04-05</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-91" id="adc.r_91.GL03-006">proposed</adc:GL03-006>
-    <adc:GL03-004 contextRef="c-91" id="adc.r_91.GL03-004">制服代</adc:GL03-004>
     <context id="c-92">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -2371,8 +2327,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-93" id="adc.r_93.GL02-007">2009-04-05</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-93" id="adc.r_93.GL03-003">debit</adc:GL03-003>
     <adc:GL03-006 contextRef="c-93" id="adc.r_93.GL03-006">tax</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-93" id="adc.r_93.GL02-006">2009-04-05</adc:GL02-006>
     <adc:BS09-001 contextRef="c-93" id="adc.r_93.BS09-001">191</adc:BS09-001>
     <adc:BS09-002 contextRef="c-93" id="adc.r_93.BS09-002">Temporary payment consumption tax</adc:BS09-002>
     <adc:BS09-005 contextRef="c-93" id="adc.r_93.BS09-005">account</adc:BS09-005>
@@ -2382,8 +2339,6 @@
       id="adc.r_93.CM07-001"
       unitRef="u-01">2649</adc:CM07-001>
     <adc:CM08-001 contextRef="c-93" id="adc.r_93.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-93" id="adc.r_93.GL02-006">2009-04-05</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-93" id="adc.r_93.GL03-006">tax</adc:GL03-006>
     <context id="c-94">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -2422,21 +2377,19 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-95" id="adc.r_95.GL02-007">2009-04-05</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-95" id="adc.r_95.GL03-003">credit</adc:GL03-003>
+    <adc:GL03-004 contextRef="c-95" id="adc.r_95.GL03-004">制服代</adc:GL03-004>
     <adc:GL03-006 contextRef="c-95" id="adc.r_95.GL03-006">proposed</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-95" id="adc.r_95.GL02-006">2009-04-05</adc:GL02-006>
     <adc:BS09-001 contextRef="c-95" id="adc.r_95.BS09-001">322</adc:BS09-001>
     <adc:BS09-002 contextRef="c-95" id="adc.r_95.BS09-002">Credit card accounts payable</adc:BS09-002>
     <adc:BS09-005 contextRef="c-95" id="adc.r_95.BS09-005">account</adc:BS09-005>
-    <adc:GL03-004 contextRef="c-95" id="adc.r_95.GL03-004">制服代</adc:GL03-004>
     <adc:CM07-001
       contextRef="c-95"
       decimals="INF"
       id="adc.r_95.CM07-001"
       unitRef="u-01">55630</adc:CM07-001>
     <adc:CM08-001 contextRef="c-95" id="adc.r_95.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-95" id="adc.r_95.GL02-006">2009-04-05</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-95" id="adc.r_95.GL03-006">proposed</adc:GL03-006>
-    <adc:GL03-004 contextRef="c-95" id="adc.r_95.GL03-004">制服代</adc:GL03-004>
     <context id="c-96">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -2473,13 +2426,15 @@
         </period>
     </context>
     <adc:GL02-001 contextRef="c-97" id="adc.r_97.GL02-001">0001-20090405-254-13-1-487</adc:GL02-001>
-    <adc:GL03-002 contextRef="c-97" id="adc.r_97.GL03-002">entries</adc:GL03-002>
+    <adc:GL02-002 contextRef="c-97" id="adc.r_97.GL02-002">254</adc:GL02-002>
+    <adc:GL02-005 contextRef="c-97" id="adc.r_97.GL02-005">gj</adc:GL02-005>
+    <adc:GL02-006 contextRef="c-97" id="adc.r_97.GL02-006">General</adc:GL02-006>
     <adc:GL03-001 contextRef="c-97" id="adc.r_97.GL03-001">13-487</adc:GL03-001>
+    <adc:GL03-002 contextRef="c-97" id="adc.r_97.GL03-002">entries</adc:GL03-002>
+    <adc:GL03-005 contextRef="c-97" id="adc.r_97.GL03-005">manual</adc:GL03-005>
+    <adc:GL03-007 contextRef="c-97" id="adc.r_97.GL03-007">2008-08-19</adc:GL03-007>
     <adc:CM01-001 contextRef="c-97" id="adc.r_97.CM01-001">pca</adc:CM01-001>
     <adc:CM01-002 contextRef="c-97" id="adc.r_97.CM01-002">2012-12-26</adc:CM01-002>
-    <adc:GL03-007 contextRef="c-97" id="adc.r_97.GL03-007">2008-08-19</adc:GL03-007>
-    <adc:GL02-005 contextRef="c-97" id="adc.r_97.GL02-005">gj</adc:GL02-005>
-    <adc:GL02-002 contextRef="c-97" id="adc.r_97.GL02-002">254</adc:GL02-002>
     <context id="c-98">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -2496,21 +2451,19 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-98" id="adc.r_98.GL02-007">2009-04-05</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-98" id="adc.r_98.GL03-003">debit</adc:GL03-003>
+    <adc:GL03-004 contextRef="c-98" id="adc.r_98.GL03-004">09年4月5日伝票No190株式会社　渡辺産業</adc:GL03-004>
     <adc:GL03-006 contextRef="c-98" id="adc.r_98.GL03-006">proposed</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-98" id="adc.r_98.GL02-006">2009-04-05</adc:GL02-006>
     <adc:BS09-001 contextRef="c-98" id="adc.r_98.BS09-001">131</adc:BS09-001>
     <adc:BS09-002 contextRef="c-98" id="adc.r_98.BS09-002">Ordinary deposit</adc:BS09-002>
     <adc:BS09-005 contextRef="c-98" id="adc.r_98.BS09-005">account</adc:BS09-005>
-    <adc:GL03-004 contextRef="c-98" id="adc.r_98.GL03-004">09年4月5日伝票No190株式会社　渡辺産業</adc:GL03-004>
     <adc:CM07-001
       contextRef="c-98"
       decimals="INF"
       id="adc.r_98.CM07-001"
       unitRef="u-01">2959035</adc:CM07-001>
     <adc:CM08-001 contextRef="c-98" id="adc.r_98.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-98" id="adc.r_98.GL02-006">2009-04-05</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-98" id="adc.r_98.GL03-006">proposed</adc:GL03-006>
-    <adc:GL03-004 contextRef="c-98" id="adc.r_98.GL03-004">09年4月5日伝票No190株式会社　渡辺産業</adc:GL03-004>
     <context id="c-99">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -2571,21 +2524,19 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-101" id="adc.r_101.GL02-007">2009-04-05</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-101" id="adc.r_101.GL03-003">credit</adc:GL03-003>
+    <adc:GL03-004 contextRef="c-101" id="adc.r_101.GL03-004">09年4月5日伝票No190株式会社　渡辺産業</adc:GL03-004>
     <adc:GL03-006 contextRef="c-101" id="adc.r_101.GL03-006">proposed</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-101" id="adc.r_101.GL02-006">2009-04-05</adc:GL02-006>
     <adc:BS09-001 contextRef="c-101" id="adc.r_101.BS09-001">152</adc:BS09-001>
     <adc:BS09-002 contextRef="c-101" id="adc.r_101.BS09-002">Accounts receivable</adc:BS09-002>
     <adc:BS09-005 contextRef="c-101" id="adc.r_101.BS09-005">account</adc:BS09-005>
-    <adc:GL03-004 contextRef="c-101" id="adc.r_101.GL03-004">09年4月5日伝票No190株式会社　渡辺産業</adc:GL03-004>
     <adc:CM07-001
       contextRef="c-101"
       decimals="INF"
       id="adc.r_101.CM07-001"
       unitRef="u-01">2959035</adc:CM07-001>
     <adc:CM08-001 contextRef="c-101" id="adc.r_101.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-101" id="adc.r_101.GL02-006">2009-04-05</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-101" id="adc.r_101.GL03-006">proposed</adc:GL03-006>
-    <adc:GL03-004 contextRef="c-101" id="adc.r_101.GL03-004">09年4月5日伝票No190株式会社　渡辺産業</adc:GL03-004>
     <adc:BS01-001 contextRef="c-101" id="adc.r_101.BS01-001">22</adc:BS01-001>
     <adc:BS01-002 contextRef="c-101" id="adc.r_101.BS01-002">㈱渡辺産業</adc:BS01-002>
     <adc:BS01-004 contextRef="c-101" id="adc.r_101.BS01-004">customer</adc:BS01-004>
@@ -2627,21 +2578,19 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-103" id="adc.r_103.GL02-007">2009-04-05</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-103" id="adc.r_103.GL03-003">debit</adc:GL03-003>
+    <adc:GL03-004 contextRef="c-103" id="adc.r_103.GL03-004">09年4月5日伝票No190株式会社　渡辺産業</adc:GL03-004>
     <adc:GL03-006 contextRef="c-103" id="adc.r_103.GL03-006">proposed</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-103" id="adc.r_103.GL02-006">2009-04-05</adc:GL02-006>
     <adc:BS09-001 contextRef="c-103" id="adc.r_103.BS09-001">741</adc:BS09-001>
     <adc:BS09-002 contextRef="c-103" id="adc.r_103.BS09-002">Bank transaction fee</adc:BS09-002>
     <adc:BS09-005 contextRef="c-103" id="adc.r_103.BS09-005">account</adc:BS09-005>
-    <adc:GL03-004 contextRef="c-103" id="adc.r_103.GL03-004">09年4月5日伝票No190株式会社　渡辺産業</adc:GL03-004>
     <adc:CM07-001
       contextRef="c-103"
       decimals="INF"
       id="adc.r_103.CM07-001"
       unitRef="u-01">600</adc:CM07-001>
     <adc:CM08-001 contextRef="c-103" id="adc.r_103.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-103" id="adc.r_103.GL02-006">2009-04-05</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-103" id="adc.r_103.GL03-006">proposed</adc:GL03-006>
-    <adc:GL03-004 contextRef="c-103" id="adc.r_103.GL03-004">09年4月5日伝票No190株式会社　渡辺産業</adc:GL03-004>
     <context id="c-104">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -2680,8 +2629,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-105" id="adc.r_105.GL02-007">2009-04-05</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-105" id="adc.r_105.GL03-003">debit</adc:GL03-003>
     <adc:GL03-006 contextRef="c-105" id="adc.r_105.GL03-006">tax</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-105" id="adc.r_105.GL02-006">2009-04-05</adc:GL02-006>
     <adc:BS09-001 contextRef="c-105" id="adc.r_105.BS09-001">191</adc:BS09-001>
     <adc:BS09-002 contextRef="c-105" id="adc.r_105.BS09-002">Temporary payment consumption tax</adc:BS09-002>
     <adc:BS09-005 contextRef="c-105" id="adc.r_105.BS09-005">account</adc:BS09-005>
@@ -2691,8 +2641,6 @@
       id="adc.r_105.CM07-001"
       unitRef="u-01">30</adc:CM07-001>
     <adc:CM08-001 contextRef="c-105" id="adc.r_105.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-105" id="adc.r_105.GL02-006">2009-04-05</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-105" id="adc.r_105.GL03-006">tax</adc:GL03-006>
     <context id="c-106">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -2731,21 +2679,19 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-107" id="adc.r_107.GL02-007">2009-04-05</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-107" id="adc.r_107.GL03-003">credit</adc:GL03-003>
+    <adc:GL03-004 contextRef="c-107" id="adc.r_107.GL03-004">09年4月5日伝票No190株式会社　渡辺産業</adc:GL03-004>
     <adc:GL03-006 contextRef="c-107" id="adc.r_107.GL03-006">proposed</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-107" id="adc.r_107.GL02-006">2009-04-05</adc:GL02-006>
     <adc:BS09-001 contextRef="c-107" id="adc.r_107.BS09-001">152</adc:BS09-001>
     <adc:BS09-002 contextRef="c-107" id="adc.r_107.BS09-002">Accounts receivable</adc:BS09-002>
     <adc:BS09-005 contextRef="c-107" id="adc.r_107.BS09-005">account</adc:BS09-005>
-    <adc:GL03-004 contextRef="c-107" id="adc.r_107.GL03-004">09年4月5日伝票No190株式会社　渡辺産業</adc:GL03-004>
     <adc:CM07-001
       contextRef="c-107"
       decimals="INF"
       id="adc.r_107.CM07-001"
       unitRef="u-01">630</adc:CM07-001>
     <adc:CM08-001 contextRef="c-107" id="adc.r_107.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-107" id="adc.r_107.GL02-006">2009-04-05</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-107" id="adc.r_107.GL03-006">proposed</adc:GL03-006>
-    <adc:GL03-004 contextRef="c-107" id="adc.r_107.GL03-004">09年4月5日伝票No190株式会社　渡辺産業</adc:GL03-004>
     <adc:BS01-001 contextRef="c-107" id="adc.r_107.BS01-001">22</adc:BS01-001>
     <adc:BS01-002 contextRef="c-107" id="adc.r_107.BS01-002">㈱渡辺産業</adc:BS01-002>
     <adc:BS01-004 contextRef="c-107" id="adc.r_107.BS01-004">customer</adc:BS01-004>
@@ -2785,13 +2731,15 @@
         </period>
     </context>
     <adc:GL02-001 contextRef="c-109" id="adc.r_109.GL02-001">0001-20090405-255-14-1-489</adc:GL02-001>
-    <adc:GL03-002 contextRef="c-109" id="adc.r_109.GL03-002">entries</adc:GL03-002>
+    <adc:GL02-002 contextRef="c-109" id="adc.r_109.GL02-002">255</adc:GL02-002>
+    <adc:GL02-005 contextRef="c-109" id="adc.r_109.GL02-005">gj</adc:GL02-005>
+    <adc:GL02-006 contextRef="c-109" id="adc.r_109.GL02-006">General</adc:GL02-006>
     <adc:GL03-001 contextRef="c-109" id="adc.r_109.GL03-001">14-489</adc:GL03-001>
+    <adc:GL03-002 contextRef="c-109" id="adc.r_109.GL03-002">entries</adc:GL03-002>
+    <adc:GL03-005 contextRef="c-109" id="adc.r_109.GL03-005">manual</adc:GL03-005>
+    <adc:GL03-007 contextRef="c-109" id="adc.r_109.GL03-007">2008-08-19</adc:GL03-007>
     <adc:CM01-001 contextRef="c-109" id="adc.r_109.CM01-001">pca</adc:CM01-001>
     <adc:CM01-002 contextRef="c-109" id="adc.r_109.CM01-002">2012-12-26</adc:CM01-002>
-    <adc:GL03-007 contextRef="c-109" id="adc.r_109.GL03-007">2008-08-19</adc:GL03-007>
-    <adc:GL02-005 contextRef="c-109" id="adc.r_109.GL02-005">gj</adc:GL02-005>
-    <adc:GL02-002 contextRef="c-109" id="adc.r_109.GL02-002">255</adc:GL02-002>
     <context id="c-110">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -2808,21 +2756,19 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-110" id="adc.r_110.GL02-007">2009-04-05</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-110" id="adc.r_110.GL03-003">debit</adc:GL03-003>
+    <adc:GL03-004 contextRef="c-110" id="adc.r_110.GL03-004">09年4月5日伝票No191佐々木販売株式会社</adc:GL03-004>
     <adc:GL03-006 contextRef="c-110" id="adc.r_110.GL03-006">proposed</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-110" id="adc.r_110.GL02-006">2009-04-05</adc:GL02-006>
     <adc:BS09-001 contextRef="c-110" id="adc.r_110.BS09-001">131</adc:BS09-001>
     <adc:BS09-002 contextRef="c-110" id="adc.r_110.BS09-002">Ordinary deposit</adc:BS09-002>
     <adc:BS09-005 contextRef="c-110" id="adc.r_110.BS09-005">account</adc:BS09-005>
-    <adc:GL03-004 contextRef="c-110" id="adc.r_110.GL03-004">09年4月5日伝票No191佐々木販売株式会社</adc:GL03-004>
     <adc:CM07-001
       contextRef="c-110"
       decimals="INF"
       id="adc.r_110.CM07-001"
       unitRef="u-01">1508295</adc:CM07-001>
     <adc:CM08-001 contextRef="c-110" id="adc.r_110.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-110" id="adc.r_110.GL02-006">2009-04-05</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-110" id="adc.r_110.GL03-006">proposed</adc:GL03-006>
-    <adc:GL03-004 contextRef="c-110" id="adc.r_110.GL03-004">09年4月5日伝票No191佐々木販売株式会社</adc:GL03-004>
     <context id="c-111">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -2883,21 +2829,19 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-113" id="adc.r_113.GL02-007">2009-04-05</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-113" id="adc.r_113.GL03-003">credit</adc:GL03-003>
+    <adc:GL03-004 contextRef="c-113" id="adc.r_113.GL03-004">09年4月5日伝票No191佐々木販売株式会社</adc:GL03-004>
     <adc:GL03-006 contextRef="c-113" id="adc.r_113.GL03-006">proposed</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-113" id="adc.r_113.GL02-006">2009-04-05</adc:GL02-006>
     <adc:BS09-001 contextRef="c-113" id="adc.r_113.BS09-001">152</adc:BS09-001>
     <adc:BS09-002 contextRef="c-113" id="adc.r_113.BS09-002">Accounts receivable</adc:BS09-002>
     <adc:BS09-005 contextRef="c-113" id="adc.r_113.BS09-005">account</adc:BS09-005>
-    <adc:GL03-004 contextRef="c-113" id="adc.r_113.GL03-004">09年4月5日伝票No191佐々木販売株式会社</adc:GL03-004>
     <adc:CM07-001
       contextRef="c-113"
       decimals="INF"
       id="adc.r_113.CM07-001"
       unitRef="u-01">1508295</adc:CM07-001>
     <adc:CM08-001 contextRef="c-113" id="adc.r_113.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-113" id="adc.r_113.GL02-006">2009-04-05</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-113" id="adc.r_113.GL03-006">proposed</adc:GL03-006>
-    <adc:GL03-004 contextRef="c-113" id="adc.r_113.GL03-004">09年4月5日伝票No191佐々木販売株式会社</adc:GL03-004>
     <adc:BS01-001 contextRef="c-113" id="adc.r_113.BS01-001">26</adc:BS01-001>
     <adc:BS01-002 contextRef="c-113" id="adc.r_113.BS01-002">佐々木販売㈱</adc:BS01-002>
     <adc:BS01-004 contextRef="c-113" id="adc.r_113.BS01-004">customer</adc:BS01-004>
@@ -2939,21 +2883,19 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-115" id="adc.r_115.GL02-007">2009-04-05</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-115" id="adc.r_115.GL03-003">debit</adc:GL03-003>
+    <adc:GL03-004 contextRef="c-115" id="adc.r_115.GL03-004">09年4月5日伝票No191佐々木販売株式会社</adc:GL03-004>
     <adc:GL03-006 contextRef="c-115" id="adc.r_115.GL03-006">proposed</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-115" id="adc.r_115.GL02-006">2009-04-05</adc:GL02-006>
     <adc:BS09-001 contextRef="c-115" id="adc.r_115.BS09-001">741</adc:BS09-001>
     <adc:BS09-002 contextRef="c-115" id="adc.r_115.BS09-002">Bank transaction fee</adc:BS09-002>
     <adc:BS09-005 contextRef="c-115" id="adc.r_115.BS09-005">account</adc:BS09-005>
-    <adc:GL03-004 contextRef="c-115" id="adc.r_115.GL03-004">09年4月5日伝票No191佐々木販売株式会社</adc:GL03-004>
     <adc:CM07-001
       contextRef="c-115"
       decimals="INF"
       id="adc.r_115.CM07-001"
       unitRef="u-01">450</adc:CM07-001>
     <adc:CM08-001 contextRef="c-115" id="adc.r_115.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-115" id="adc.r_115.GL02-006">2009-04-05</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-115" id="adc.r_115.GL03-006">proposed</adc:GL03-006>
-    <adc:GL03-004 contextRef="c-115" id="adc.r_115.GL03-004">09年4月5日伝票No191佐々木販売株式会社</adc:GL03-004>
     <context id="c-116">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -2992,8 +2934,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-117" id="adc.r_117.GL02-007">2009-04-05</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-117" id="adc.r_117.GL03-003">debit</adc:GL03-003>
     <adc:GL03-006 contextRef="c-117" id="adc.r_117.GL03-006">tax</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-117" id="adc.r_117.GL02-006">2009-04-05</adc:GL02-006>
     <adc:BS09-001 contextRef="c-117" id="adc.r_117.BS09-001">191</adc:BS09-001>
     <adc:BS09-002 contextRef="c-117" id="adc.r_117.BS09-002">Temporary payment consumption tax</adc:BS09-002>
     <adc:BS09-005 contextRef="c-117" id="adc.r_117.BS09-005">account</adc:BS09-005>
@@ -3003,8 +2946,6 @@
       id="adc.r_117.CM07-001"
       unitRef="u-01">22</adc:CM07-001>
     <adc:CM08-001 contextRef="c-117" id="adc.r_117.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-117" id="adc.r_117.GL02-006">2009-04-05</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-117" id="adc.r_117.GL03-006">tax</adc:GL03-006>
     <context id="c-118">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -3043,21 +2984,19 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-119" id="adc.r_119.GL02-007">2009-04-05</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-119" id="adc.r_119.GL03-003">credit</adc:GL03-003>
+    <adc:GL03-004 contextRef="c-119" id="adc.r_119.GL03-004">09年4月5日伝票No191佐々木販売株式会社</adc:GL03-004>
     <adc:GL03-006 contextRef="c-119" id="adc.r_119.GL03-006">proposed</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-119" id="adc.r_119.GL02-006">2009-04-05</adc:GL02-006>
     <adc:BS09-001 contextRef="c-119" id="adc.r_119.BS09-001">152</adc:BS09-001>
     <adc:BS09-002 contextRef="c-119" id="adc.r_119.BS09-002">Accounts receivable</adc:BS09-002>
     <adc:BS09-005 contextRef="c-119" id="adc.r_119.BS09-005">account</adc:BS09-005>
-    <adc:GL03-004 contextRef="c-119" id="adc.r_119.GL03-004">09年4月5日伝票No191佐々木販売株式会社</adc:GL03-004>
     <adc:CM07-001
       contextRef="c-119"
       decimals="INF"
       id="adc.r_119.CM07-001"
       unitRef="u-01">472</adc:CM07-001>
     <adc:CM08-001 contextRef="c-119" id="adc.r_119.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-119" id="adc.r_119.GL02-006">2009-04-05</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-119" id="adc.r_119.GL03-006">proposed</adc:GL03-006>
-    <adc:GL03-004 contextRef="c-119" id="adc.r_119.GL03-004">09年4月5日伝票No191佐々木販売株式会社</adc:GL03-004>
     <adc:BS01-001 contextRef="c-119" id="adc.r_119.BS01-001">26</adc:BS01-001>
     <adc:BS01-002 contextRef="c-119" id="adc.r_119.BS01-002">佐々木販売㈱</adc:BS01-002>
     <adc:BS01-004 contextRef="c-119" id="adc.r_119.BS01-004">customer</adc:BS01-004>
@@ -3096,13 +3035,15 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:GL03-002 contextRef="c-121" id="adc.r_121.GL03-002">entries</adc:GL03-002>
+    <adc:GL02-002 contextRef="c-121" id="adc.r_121.GL02-002">256</adc:GL02-002>
+    <adc:GL02-005 contextRef="c-121" id="adc.r_121.GL02-005">gj</adc:GL02-005>
+    <adc:GL02-006 contextRef="c-121" id="adc.r_121.GL02-006">General</adc:GL02-006>
     <adc:GL03-001 contextRef="c-121" id="adc.r_121.GL03-001">15-491</adc:GL03-001>
+    <adc:GL03-002 contextRef="c-121" id="adc.r_121.GL03-002">entries</adc:GL03-002>
+    <adc:GL03-005 contextRef="c-121" id="adc.r_121.GL03-005">manual</adc:GL03-005>
+    <adc:GL03-007 contextRef="c-121" id="adc.r_121.GL03-007">2008-08-19</adc:GL03-007>
     <adc:CM01-001 contextRef="c-121" id="adc.r_121.CM01-001">pca</adc:CM01-001>
     <adc:CM01-002 contextRef="c-121" id="adc.r_121.CM01-002">2012-12-26</adc:CM01-002>
-    <adc:GL03-007 contextRef="c-121" id="adc.r_121.GL03-007">2008-08-19</adc:GL03-007>
-    <adc:GL02-005 contextRef="c-121" id="adc.r_121.GL02-005">gj</adc:GL02-005>
-    <adc:GL02-002 contextRef="c-121" id="adc.r_121.GL02-002">256</adc:GL02-002>
     <context id="c-122">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -3119,21 +3060,19 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-122" id="adc.r_122.GL02-007">2009-04-05</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-122" id="adc.r_122.GL03-003">debit</adc:GL03-003>
+    <adc:GL03-004 contextRef="c-122" id="adc.r_122.GL03-004">09年4月5日伝票No192岩下物産株式会社</adc:GL03-004>
     <adc:GL03-006 contextRef="c-122" id="adc.r_122.GL03-006">proposed</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-122" id="adc.r_122.GL02-006">2009-04-05</adc:GL02-006>
     <adc:BS09-001 contextRef="c-122" id="adc.r_122.BS09-001">131</adc:BS09-001>
     <adc:BS09-002 contextRef="c-122" id="adc.r_122.BS09-002">Ordinary deposit</adc:BS09-002>
     <adc:BS09-005 contextRef="c-122" id="adc.r_122.BS09-005">account</adc:BS09-005>
-    <adc:GL03-004 contextRef="c-122" id="adc.r_122.GL03-004">09年4月5日伝票No192岩下物産株式会社</adc:GL03-004>
     <adc:CM07-001
       contextRef="c-122"
       decimals="INF"
       id="adc.r_122.CM07-001"
       unitRef="u-01">2171384</adc:CM07-001>
     <adc:CM08-001 contextRef="c-122" id="adc.r_122.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-122" id="adc.r_122.GL02-006">2009-04-05</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-122" id="adc.r_122.GL03-006">proposed</adc:GL03-006>
-    <adc:GL03-004 contextRef="c-122" id="adc.r_122.GL03-004">09年4月5日伝票No192岩下物産株式会社</adc:GL03-004>
     <context id="c-123">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -3194,21 +3133,19 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-125" id="adc.r_125.GL02-007">2009-04-05</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-125" id="adc.r_125.GL03-003">credit</adc:GL03-003>
+    <adc:GL03-004 contextRef="c-125" id="adc.r_125.GL03-004">09年4月5日伝票No192岩下物産株式会社</adc:GL03-004>
     <adc:GL03-006 contextRef="c-125" id="adc.r_125.GL03-006">proposed</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-125" id="adc.r_125.GL02-006">2009-04-05</adc:GL02-006>
     <adc:BS09-001 contextRef="c-125" id="adc.r_125.BS09-001">152</adc:BS09-001>
     <adc:BS09-002 contextRef="c-125" id="adc.r_125.BS09-002">Accounts receivable</adc:BS09-002>
     <adc:BS09-005 contextRef="c-125" id="adc.r_125.BS09-005">account</adc:BS09-005>
-    <adc:GL03-004 contextRef="c-125" id="adc.r_125.GL03-004">09年4月5日伝票No192岩下物産株式会社</adc:GL03-004>
     <adc:CM07-001
       contextRef="c-125"
       decimals="INF"
       id="adc.r_125.CM07-001"
       unitRef="u-01">2171384</adc:CM07-001>
     <adc:CM08-001 contextRef="c-125" id="adc.r_125.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-125" id="adc.r_125.GL02-006">2009-04-05</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-125" id="adc.r_125.GL03-006">proposed</adc:GL03-006>
-    <adc:GL03-004 contextRef="c-125" id="adc.r_125.GL03-004">09年4月5日伝票No192岩下物産株式会社</adc:GL03-004>
     <adc:BS01-001 contextRef="c-125" id="adc.r_125.BS01-001">27</adc:BS01-001>
     <adc:BS01-002 contextRef="c-125" id="adc.r_125.BS01-002">岩下物産㈱</adc:BS01-002>
     <adc:BS01-004 contextRef="c-125" id="adc.r_125.BS01-004">customer</adc:BS01-004>
@@ -3250,21 +3187,19 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-127" id="adc.r_127.GL02-007">2009-04-05</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-127" id="adc.r_127.GL03-003">debit</adc:GL03-003>
+    <adc:GL03-004 contextRef="c-127" id="adc.r_127.GL03-004">09年4月5日伝票No192岩下物産株式会社</adc:GL03-004>
     <adc:GL03-006 contextRef="c-127" id="adc.r_127.GL03-006">proposed</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-127" id="adc.r_127.GL02-006">2009-04-05</adc:GL02-006>
     <adc:BS09-001 contextRef="c-127" id="adc.r_127.BS09-001">741</adc:BS09-001>
     <adc:BS09-002 contextRef="c-127" id="adc.r_127.BS09-002">Bank transaction fee</adc:BS09-002>
     <adc:BS09-005 contextRef="c-127" id="adc.r_127.BS09-005">account</adc:BS09-005>
-    <adc:GL03-004 contextRef="c-127" id="adc.r_127.GL03-004">09年4月5日伝票No192岩下物産株式会社</adc:GL03-004>
     <adc:CM07-001
       contextRef="c-127"
       decimals="INF"
       id="adc.r_127.CM07-001"
       unitRef="u-01">700</adc:CM07-001>
     <adc:CM08-001 contextRef="c-127" id="adc.r_127.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-127" id="adc.r_127.GL02-006">2009-04-05</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-127" id="adc.r_127.GL03-006">proposed</adc:GL03-006>
-    <adc:GL03-004 contextRef="c-127" id="adc.r_127.GL03-004">09年4月5日伝票No192岩下物産株式会社</adc:GL03-004>
     <context id="c-128">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -3303,8 +3238,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-129" id="adc.r_129.GL02-007">2009-04-05</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-129" id="adc.r_129.GL03-003">debit</adc:GL03-003>
     <adc:GL03-006 contextRef="c-129" id="adc.r_129.GL03-006">tax</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-129" id="adc.r_129.GL02-006">2009-04-05</adc:GL02-006>
     <adc:BS09-001 contextRef="c-129" id="adc.r_129.BS09-001">191</adc:BS09-001>
     <adc:BS09-002 contextRef="c-129" id="adc.r_129.BS09-002">Temporary payment consumption tax</adc:BS09-002>
     <adc:BS09-005 contextRef="c-129" id="adc.r_129.BS09-005">account</adc:BS09-005>
@@ -3314,8 +3250,6 @@
       id="adc.r_129.CM07-001"
       unitRef="u-01">35</adc:CM07-001>
     <adc:CM08-001 contextRef="c-129" id="adc.r_129.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-129" id="adc.r_129.GL02-006">2009-04-05</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-129" id="adc.r_129.GL03-006">tax</adc:GL03-006>
     <context id="c-130">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -3354,21 +3288,19 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-131" id="adc.r_131.GL02-007">2009-04-05</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-131" id="adc.r_131.GL03-003">credit</adc:GL03-003>
+    <adc:GL03-004 contextRef="c-131" id="adc.r_131.GL03-004">09年4月5日伝票No192岩下物産株式会社</adc:GL03-004>
     <adc:GL03-006 contextRef="c-131" id="adc.r_131.GL03-006">proposed</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-131" id="adc.r_131.GL02-006">2009-04-05</adc:GL02-006>
     <adc:BS09-001 contextRef="c-131" id="adc.r_131.BS09-001">152</adc:BS09-001>
     <adc:BS09-002 contextRef="c-131" id="adc.r_131.BS09-002">Accounts receivable</adc:BS09-002>
     <adc:BS09-005 contextRef="c-131" id="adc.r_131.BS09-005">account</adc:BS09-005>
-    <adc:GL03-004 contextRef="c-131" id="adc.r_131.GL03-004">09年4月5日伝票No192岩下物産株式会社</adc:GL03-004>
     <adc:CM07-001
       contextRef="c-131"
       decimals="INF"
       id="adc.r_131.CM07-001"
       unitRef="u-01">735</adc:CM07-001>
     <adc:CM08-001 contextRef="c-131" id="adc.r_131.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-131" id="adc.r_131.GL02-006">2009-04-05</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-131" id="adc.r_131.GL03-006">proposed</adc:GL03-006>
-    <adc:GL03-004 contextRef="c-131" id="adc.r_131.GL03-004">09年4月5日伝票No192岩下物産株式会社</adc:GL03-004>
     <adc:BS01-001 contextRef="c-131" id="adc.r_131.BS01-001">27</adc:BS01-001>
     <adc:BS01-002 contextRef="c-131" id="adc.r_131.BS01-002">岩下物産㈱</adc:BS01-002>
     <adc:BS01-004 contextRef="c-131" id="adc.r_131.BS01-004">customer</adc:BS01-004>
@@ -3407,13 +3339,15 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:GL03-002 contextRef="c-133" id="adc.r_133.GL03-002">entries</adc:GL03-002>
+    <adc:GL02-002 contextRef="c-133" id="adc.r_133.GL02-002">76</adc:GL02-002>
+    <adc:GL02-005 contextRef="c-133" id="adc.r_133.GL02-005">gj</adc:GL02-005>
+    <adc:GL02-006 contextRef="c-133" id="adc.r_133.GL02-006">General</adc:GL02-006>
     <adc:GL03-001 contextRef="c-133" id="adc.r_133.GL03-001">10-481</adc:GL03-001>
+    <adc:GL03-002 contextRef="c-133" id="adc.r_133.GL03-002">entries</adc:GL03-002>
+    <adc:GL03-005 contextRef="c-133" id="adc.r_133.GL03-005">manual</adc:GL03-005>
+    <adc:GL03-007 contextRef="c-133" id="adc.r_133.GL03-007">2008-08-19</adc:GL03-007>
     <adc:CM01-001 contextRef="c-133" id="adc.r_133.CM01-001">pca</adc:CM01-001>
     <adc:CM01-002 contextRef="c-133" id="adc.r_133.CM01-002">2012-12-26</adc:CM01-002>
-    <adc:GL03-007 contextRef="c-133" id="adc.r_133.GL03-007">2008-08-19</adc:GL03-007>
-    <adc:GL02-005 contextRef="c-133" id="adc.r_133.GL02-005">gj</adc:GL02-005>
-    <adc:GL02-002 contextRef="c-133" id="adc.r_133.GL02-002">76</adc:GL02-002>
     <context id="c-134">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -3430,21 +3364,19 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-134" id="adc.r_134.GL02-007">2009-04-05</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-134" id="adc.r_134.GL03-003">debit</adc:GL03-003>
+    <adc:GL03-004 contextRef="c-134" id="adc.r_134.GL03-004">制服代</adc:GL03-004>
     <adc:GL03-006 contextRef="c-134" id="adc.r_134.GL03-006">proposed</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-134" id="adc.r_134.GL02-006">2009-04-05</adc:GL02-006>
     <adc:BS09-001 contextRef="c-134" id="adc.r_134.BS09-001">724</adc:BS09-001>
     <adc:BS09-002 contextRef="c-134" id="adc.r_134.BS09-002">Welfare expense</adc:BS09-002>
     <adc:BS09-005 contextRef="c-134" id="adc.r_134.BS09-005">account</adc:BS09-005>
-    <adc:GL03-004 contextRef="c-134" id="adc.r_134.GL03-004">制服代</adc:GL03-004>
     <adc:CM07-001
       contextRef="c-134"
       decimals="INF"
       id="adc.r_134.CM07-001"
       unitRef="u-01">53334</adc:CM07-001>
     <adc:CM08-001 contextRef="c-134" id="adc.r_134.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-134" id="adc.r_134.GL02-006">2009-04-05</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-134" id="adc.r_134.GL03-006">proposed</adc:GL03-006>
-    <adc:GL03-004 contextRef="c-134" id="adc.r_134.GL03-004">制服代</adc:GL03-004>
     <context id="c-135">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -3483,8 +3415,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-136" id="adc.r_136.GL02-007">2009-04-05</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-136" id="adc.r_136.GL03-003">debit</adc:GL03-003>
     <adc:GL03-006 contextRef="c-136" id="adc.r_136.GL03-006">tax</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-136" id="adc.r_136.GL02-006">2009-04-05</adc:GL02-006>
     <adc:BS09-001 contextRef="c-136" id="adc.r_136.BS09-001">191</adc:BS09-001>
     <adc:BS09-002 contextRef="c-136" id="adc.r_136.BS09-002">Temporary payment consumption tax</adc:BS09-002>
     <adc:BS09-005 contextRef="c-136" id="adc.r_136.BS09-005">account</adc:BS09-005>
@@ -3494,8 +3427,6 @@
       id="adc.r_136.CM07-001"
       unitRef="u-01">2666</adc:CM07-001>
     <adc:CM08-001 contextRef="c-136" id="adc.r_136.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-136" id="adc.r_136.GL02-006">2009-04-05</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-136" id="adc.r_136.GL03-006">tax</adc:GL03-006>
     <context id="c-137">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -3534,21 +3465,19 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
+    <adc:GL02-007 contextRef="c-138" id="adc.r_138.GL02-007">2009-04-05</adc:GL02-007>
+    <adc:GL03-003 contextRef="c-138" id="adc.r_138.GL03-003">credit</adc:GL03-003>
+    <adc:GL03-004 contextRef="c-138" id="adc.r_138.GL03-004">制服代</adc:GL03-004>
     <adc:GL03-006 contextRef="c-138" id="adc.r_138.GL03-006">proposed</adc:GL03-006>
-    <adc:GL02-006 contextRef="c-138" id="adc.r_138.GL02-006">2009-04-05</adc:GL02-006>
     <adc:BS09-001 contextRef="c-138" id="adc.r_138.BS09-001">322</adc:BS09-001>
     <adc:BS09-002 contextRef="c-138" id="adc.r_138.BS09-002">Credit card accounts payable</adc:BS09-002>
     <adc:BS09-005 contextRef="c-138" id="adc.r_138.BS09-005">account</adc:BS09-005>
-    <adc:GL03-004 contextRef="c-138" id="adc.r_138.GL03-004">制服代</adc:GL03-004>
     <adc:CM07-001
       contextRef="c-138"
       decimals="INF"
       id="adc.r_138.CM07-001"
       unitRef="u-01">56000</adc:CM07-001>
     <adc:CM08-001 contextRef="c-138" id="adc.r_138.CM08-001">JPY</adc:CM08-001>
-    <adc:GL02-006 contextRef="c-138" id="adc.r_138.GL02-006">2009-04-05</adc:GL02-006>
-    <adc:GL03-006 contextRef="c-138" id="adc.r_138.GL03-006">proposed</adc:GL03-006>
-    <adc:GL03-004 contextRef="c-138" id="adc.r_138.GL03-004">制服代</adc:GL03-004>
     <context id="c-139">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
