@@ -51,9 +51,9 @@
                         "concept": "adc:GL03-007"
                     }
                 },
-                "GL03-006": {
+                "GL03-005": {
                     "dimensions": {
-                        "concept": "adc:GL03-006"
+                        "concept": "adc:GL03-005"
                     }
                 },
                 "GL02-005": {
@@ -101,9 +101,9 @@
                         "concept": "adc:BS09-007"
                     }
                 },
-                "GL03-004": {
+                "GL03-003": {
                     "dimensions": {
-                        "concept": "adc:GL03-004"
+                        "concept": "adc:GL03-003"
                     }
                 },
                 "CM07-001": {
@@ -114,6 +114,21 @@
                 "CM08-001": {
                     "dimensions": {
                         "concept": "adc:CM08-001"
+                    }
+                },
+                "GL02-007": {
+                    "dimensions": {
+                        "concept": "adc:GL02-007"
+                    }
+                },
+                "GL03-006": {
+                    "dimensions": {
+                        "concept": "adc:GL03-006"
+                    }
+                },
+                "GL03-004": {
+                    "dimensions": {
+                        "concept": "adc:GL03-004"
                     }
                 },
                 "BS01-001": {

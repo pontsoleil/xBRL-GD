@@ -95,7 +95,8 @@ if __name__ == '__main__':
         records.append(data)
 
     records2 = []
-    header2 = header[:6]+header[8:10]+header[16:21]+header[22:33]+header[34:]
+    # header2 = header[:6]+header[8:10]+header[16:21]+header[22:33]+header[34:]
+    header2 = ['d_GL02','d_GL03','d_BS01','GL02-001','GL02-002','GL02-005','GL02-006','GL02-007','GL03-001','GL03-002','GL03-003','GL03-004','GL03-005','GL03-006','GL03-007','BS09-001','BS09-002','BS09-003','BS09-005','BS09-006','BS09-007','CM07-001','CM08-001','CM01-001','CM01-002','BS01-001','BS01-002','BS01-004']
     if DEBUG:
         print(header2)
     for data in records:
