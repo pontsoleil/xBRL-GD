@@ -1,0 +1,8 @@
+= xBRL Granular Data (xBRL-GD)
+
+== Semantic model definition
+
+=== Object class
+
+=== Logical Hierarchy
+
