@@ -2,7 +2,63 @@
 
 == Semantic model definition
 
-=== Object class
+source/20230207_ADCS_SemanticLogicalHierarchic_Nobu.xlsx
 
-=== Logical Hierarchy
+[headers,cols="1,1"]
+|===
+^|sheet ^|content 
 
+|ADCS_SemanticLogicalHierarchicy
+|Original sheet provided by Mr J Vrijenhoek.
+
+|ADCS_SemanticLogical +
+Object class sheet
+|Object class definition based on the extended Core component technical specification (Revised CCTS).
+
+|ADCS_H +
+Logical Hierarchy sheet
+|Revised definition based on the Revised CCTS for ADCS_SemanticLogicalHierarchicy
+
+|===
+
+== xBRL-CSV taxonomy creation
+
+=== Object class sheet
+
+ADCS_C2xBRL-taxonomy.py
+
+"args": ["source/ADCS_C.csv","-e utf-8","-d","-v"]
+
+Created xBRL taxonomy stored under taxonomy/C
+
+=== Logical Hierarchy sheet
+
+ADCS_H2xBRL-taxonomy.py
+
+"args": ["source/ADCS_H.csv","-e utf-8","-d","-v"]
+
+Created xBRL taxonomy stored under taxonomy/H
+
+== xBRL-CSV instance creation
+
+=== source XBRL-GL based spread sheet
+
+instance/xbrl-instances.csv
+
+instance/xbrl-instances0_H.csv (Partial)
+
+=== From Object class definition
+
+TBD
+
+=== From Logical Hierarchy definition
+
+instance/CSV_H2OIM.py
+
+Converted CSV +
+instance/adc-instances0_H.csv
+
+Meta file for xBRL-CSV +
+instance/adc-instances0_H.json
+
+== 
