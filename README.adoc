@@ -41,7 +41,11 @@ Created xBRL taxonomy stored under taxonomy/H
 
 == xBRL-CSV instance creation
 
-=== source XBRL-GL based spread sheet
+== Source XBRL-GL inxstances
+
+XMLinstances/
+
+=== Source XBRL-GL based spread sheet
 
 instance/xbrl-instances.csv
 
