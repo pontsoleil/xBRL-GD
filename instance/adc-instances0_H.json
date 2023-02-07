@@ -1,0 +1,149 @@
+{
+    "documentInfo": {
+        "documentType": "https://xbrl.org/2021/xbrl-csv",
+        "namespaces": {
+            "adc": "http://www.xbrl.jp/audit-data-collection",
+            "ns0": "http://www.example.com",
+            "link": "http://www.xbrl.org/2003/linkbase",
+            "iso4217": "http://www.xbrl.org/2003/iso4217",
+            "xsi": "http://www.w3.org/2001/XMLSchema-instance",
+            "xbrli": "http://www.xbrl.org/2003/instance",
+            "xbrldi": "http://xbrl.org/2006/xbrldi",
+            "xlink": "http://www.w3.org/1999/xlink"
+        },
+        "taxonomy": [
+            "../taxonomy/H/core.xsd"
+        ]
+    },
+    "tableTemplates": {
+        "adc": {
+            "columns": {
+                "d_GL02": {},
+                "d_GL03": {},
+                "d_BS01": {},
+                "GL02-001": {
+                    "dimensions": {
+                        "concept": "adc:GL02-001"
+                    }
+                },
+                "GL03-002": {
+                    "dimensions": {
+                        "concept": "adc:GL03-002"
+                    }
+                },
+                "GL03-001": {
+                    "dimensions": {
+                        "concept": "adc:GL03-001"
+                    }
+                },
+                "CM01-001": {
+                    "dimensions": {
+                        "concept": "adc:CM01-001"
+                    }
+                },
+                "CM01-002": {
+                    "dimensions": {
+                        "concept": "adc:CM01-002"
+                    }
+                },
+                "GL03-007": {
+                    "dimensions": {
+                        "concept": "adc:GL03-007"
+                    }
+                },
+                "GL03-006": {
+                    "dimensions": {
+                        "concept": "adc:GL03-006"
+                    }
+                },
+                "GL02-005": {
+                    "dimensions": {
+                        "concept": "adc:GL02-005"
+                    }
+                },
+                "GL02-006": {
+                    "dimensions": {
+                        "concept": "adc:GL02-006"
+                    }
+                },
+                "GL02-002": {
+                    "dimensions": {
+                        "concept": "adc:GL02-002"
+                    }
+                },
+                "BS09-001": {
+                    "dimensions": {
+                        "concept": "adc:BS09-001"
+                    }
+                },
+                "BS09-002": {
+                    "dimensions": {
+                        "concept": "adc:BS09-002"
+                    }
+                },
+                "BS09-005": {
+                    "dimensions": {
+                        "concept": "adc:BS09-005"
+                    }
+                },
+                "BS09-003": {
+                    "dimensions": {
+                        "concept": "adc:BS09-003"
+                    }
+                },
+                "BS09-006": {
+                    "dimensions": {
+                        "concept": "adc:BS09-006"
+                    }
+                },
+                "BS09-007": {
+                    "dimensions": {
+                        "concept": "adc:BS09-007"
+                    }
+                },
+                "GL03-004": {
+                    "dimensions": {
+                        "concept": "adc:GL03-004"
+                    }
+                },
+                "CM07-001": {
+                    "dimensions": {
+                        "concept": "adc:CM07-001"
+                    }
+                },
+                "CM08-001": {
+                    "dimensions": {
+                        "concept": "adc:CM08-001"
+                    }
+                },
+                "BS01-001": {
+                    "dimensions": {
+                        "concept": "adc:BS01-001"
+                    }
+                },
+                "BS01-002": {
+                    "dimensions": {
+                        "concept": "adc:BS01-002"
+                    }
+                },
+                "BS01-004": {
+                    "dimensions": {
+                        "concept": "adc:BS01-004"
+                    }
+                }
+            },
+            "dimensions": {
+                "adc:d_GL02": "$d_GL02",
+                "adc:d_GL03": "$d_GL03",
+                "adc:d_BS01": "$d_BS01",
+                "period": "2023-11-01T00:00:00",
+                "entity": "ns0:Example Co."
+            }
+        }
+    },
+    "tables": {
+        "adc": {
+            "url": "adc-instances0_H.csv"
+        }
+    }
+}

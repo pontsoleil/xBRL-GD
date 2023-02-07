@@ -9,6 +9,7 @@
     <!-- roleRef -->
     <link:roleRef roleURI="http://www.xbrl.jp/audit-data-collection/role/link_GL02" xlink:type="simple" xlink:href="core.xsd#link_GL02"/>
     <link:roleRef roleURI="http://www.xbrl.jp/audit-data-collection/role/link_GL03" xlink:type="simple" xlink:href="core.xsd#link_GL03"/>
+    <link:roleRef roleURI="http://www.xbrl.jp/audit-data-collection/role/link_BS09" xlink:type="simple" xlink:href="core.xsd#link_BS09"/>
     <link:roleRef roleURI="http://www.xbrl.jp/audit-data-collection/role/link_CM07" xlink:type="simple" xlink:href="core.xsd#link_CM07"/>
     <link:roleRef roleURI="http://www.xbrl.jp/audit-data-collection/role/link_CM08" xlink:type="simple" xlink:href="core.xsd#link_CM08"/>
     <link:roleRef roleURI="http://www.xbrl.jp/audit-data-collection/role/link_CM01" xlink:type="simple" xlink:href="core.xsd#link_CM01"/>
@@ -19,6 +20,12 @@
     <link:roleRef roleURI="http://www.xbrl.jp/audit-data-collection/role/link_GL02-GL03" xlink:type="simple" xlink:href="core.xsd#link_GL02-GL03"/>
     <link:roleRef roleURI="http://www.xbrl.jp/audit-data-collection/role/link_GL03-GL05" xlink:type="simple" xlink:href="core.xsd#link_GL03-GL05"/>
     <link:roleRef roleURI="http://www.xbrl.jp/audit-data-collection/role/link_GL03-BS01" xlink:type="simple" xlink:href="core.xsd#link_GL03-BS01"/>
+    <link:roleRef roleURI="http://www.xbrl.jp/audit-data-collection/role/link_GL03-BS09" xlink:type="simple" xlink:href="core.xsd#link_GL03-BS09"/>
+    <link:roleRef roleURI="http://www.xbrl.jp/audit-data-collection/role/link_GL03-CM07" xlink:type="simple" xlink:href="core.xsd#link_GL03-CM07"/>
+    <link:roleRef roleURI="http://www.xbrl.jp/audit-data-collection/role/link_GL03-CM08" xlink:type="simple" xlink:href="core.xsd#link_GL03-CM08"/>
+    <link:roleRef roleURI="http://www.xbrl.jp/audit-data-collection/role/link_GL03-CM01" xlink:type="simple" xlink:href="core.xsd#link_GL03-CM01"/>
+    <link:roleRef roleURI="http://www.xbrl.jp/audit-data-collection/role/link_GL03-CM02" xlink:type="simple" xlink:href="core.xsd#link_GL03-CM02"/>
+    <link:roleRef roleURI="http://www.xbrl.jp/audit-data-collection/role/link_GL03-CM04" xlink:type="simple" xlink:href="core.xsd#link_GL03-CM04"/>
     <link:roleRef roleURI="http://www.xbrl.jp/audit-data-collection/role/primary-key" xlink:type="simple" xlink:href="core.xsd#primary-key"/>
     <link:roleRef roleURI="http://www.xbrl.jp/audit-data-collection/role/reference-identifier" xlink:type="simple" xlink:href="core.xsd#reference-identifier"/>
     <link:roleRef roleURI="http://www.xbrl.jp/audit-data-collection/role/require" xlink:type="simple" xlink:href="core.xsd#require"/>
@@ -33,7 +40,7 @@
         <!-- GL02 all (has-hypercube) h_GL02 link_GL02 -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#GL02" xlink:label="GL02" xlink:title="GL02"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_GL02" xlink:label="h_GL02" xlink:title="h_GL02"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="GL02" xlink:to="h_GL02" xlink:title="all (has-hypercube): GL02 to h_GL02" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="GL02" xlink:to="h_GL02" xlink:title="all (has-hypercube): GL02 to h_GL02" order="1" xbrldt:closed="true" xbrldt:contextElement="segment"/>
         <!-- hypercube-dimension -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_GL02" xlink:label="d_GL02" xlink:title="d_GL02"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_GL02" xlink:to="d_GL02" xlink:title="hypercube-dimension: h_GL02 to d_GL02" order="1"/>
@@ -46,20 +53,21 @@
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL02" xlink:to="GL02-003" xlink:title="domain-member: GL02 to GL02-003" order="3"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#GL02-004" xlink:label="GL02-004" xlink:title="GL02-004"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL02" xlink:to="GL02-004" xlink:title="domain-member: GL02 to GL02-004" order="4"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL02-GL03-005" xlink:label="GL02-GL03-005" xlink:title="GL02-GL03-005"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL02" xlink:to="GL02-GL03-005" xlink:title="domain-member: GL02 to GL02-GL03-005" order="5"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL02-005" xlink:label="GL02-005" xlink:title="GL02-005"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL02" xlink:to="GL02-005" xlink:title="domain-member: GL02 to GL02-005" order="5"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#GL02-006" xlink:label="GL02-006" xlink:title="GL02-006"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL02" xlink:to="GL02-006" xlink:title="domain-member: GL02 to GL02-006" order="6"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#GL02-007" xlink:label="GL02-007" xlink:title="GL02-007"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL02" xlink:to="GL02-007" xlink:title="domain-member: GL02 to GL02-007" order="7"/>
+        <!-- GL02-GL03 targetRole link_GL02-GL03 -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#GL02-GL03" xlink:label="GL02-GL03" xlink:title="GL02-GL03"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL02" xlink:to="GL02-GL03" xlink:title="domain-member: GL02 to GL02-GL03" order="8"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xbrldt:targetRole="http://www.xbrl.jp/audit-data-collection/role/link_GL02-GL03" xlink:from="GL02" xlink:to="GL02-GL03" xlink:title="domain-member: GL02 to GL02-GL03 in link_GL02-GL03" order="8"/>
     </link:definitionLink>
     <link:definitionLink xlink:type="extended" xlink:role="http://www.xbrl.jp/audit-data-collection/role/link_GL03">
         <!-- GL03 all (has-hypercube) h_GL03 link_GL03 -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#GL03" xlink:label="GL03" xlink:title="GL03"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_GL03" xlink:label="h_GL03" xlink:title="h_GL03"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="GL03" xlink:to="h_GL03" xlink:title="all (has-hypercube): GL03 to h_GL03" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="GL03" xlink:to="h_GL03" xlink:title="all (has-hypercube): GL03 to h_GL03" order="1" xbrldt:closed="true" xbrldt:contextElement="segment"/>
         <!-- hypercube-dimension -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_GL03" xlink:label="d_GL03" xlink:title="d_GL03"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_GL03" xlink:to="d_GL03" xlink:title="hypercube-dimension: h_GL03 to d_GL03" order="1"/>
@@ -98,28 +106,60 @@
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL03" xlink:to="GL03-016" xlink:title="domain-member: GL03 to GL03-016" order="16"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-017" xlink:label="GL03-017" xlink:title="GL03-017"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL03" xlink:to="GL03-017" xlink:title="domain-member: GL03 to GL03-017" order="17"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-018" xlink:label="GL03-018" xlink:title="GL03-018"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL03" xlink:to="GL03-018" xlink:title="domain-member: GL03 to GL03-018" order="18"/>
+        <!-- GL03-BS09 targetRole link_GL03-BS09 -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-BS09" xlink:label="GL03-BS09" xlink:title="GL03-BS09"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xbrldt:targetRole="http://www.xbrl.jp/audit-data-collection/role/link_GL03-BS09" xlink:from="GL03" xlink:to="GL03-BS09" xlink:title="domain-member: GL03 to GL03-BS09 in link_GL03-BS09" order="18"/>
+        <!-- GL03-CM07 targetRole link_GL03-CM07 -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-CM07" xlink:label="GL03-CM07" xlink:title="GL03-CM07"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL03" xlink:to="GL03-CM07" xlink:title="domain-member: GL03 to GL03-CM07" order="19"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xbrldt:targetRole="http://www.xbrl.jp/audit-data-collection/role/link_GL03-CM07" xlink:from="GL03" xlink:to="GL03-CM07" xlink:title="domain-member: GL03 to GL03-CM07 in link_GL03-CM07" order="19"/>
+        <!-- GL03-CM08 targetRole link_GL03-CM08 -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-CM08" xlink:label="GL03-CM08" xlink:title="GL03-CM08"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL03" xlink:to="GL03-CM08" xlink:title="domain-member: GL03 to GL03-CM08" order="20"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xbrldt:targetRole="http://www.xbrl.jp/audit-data-collection/role/link_GL03-CM08" xlink:from="GL03" xlink:to="GL03-CM08" xlink:title="domain-member: GL03 to GL03-CM08 in link_GL03-CM08" order="20"/>
+        <!-- GL03-CM01 targetRole link_GL03-CM01 -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-CM01" xlink:label="GL03-CM01" xlink:title="GL03-CM01"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL03" xlink:to="GL03-CM01" xlink:title="domain-member: GL03 to GL03-CM01" order="21"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xbrldt:targetRole="http://www.xbrl.jp/audit-data-collection/role/link_GL03-CM01" xlink:from="GL03" xlink:to="GL03-CM01" xlink:title="domain-member: GL03 to GL03-CM01 in link_GL03-CM01" order="21"/>
+        <!-- GL03-CM02 targetRole link_GL03-CM02 -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-CM02" xlink:label="GL03-CM02" xlink:title="GL03-CM02"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL03" xlink:to="GL03-CM02" xlink:title="domain-member: GL03 to GL03-CM02" order="22"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xbrldt:targetRole="http://www.xbrl.jp/audit-data-collection/role/link_GL03-CM02" xlink:from="GL03" xlink:to="GL03-CM02" xlink:title="domain-member: GL03 to GL03-CM02 in link_GL03-CM02" order="22"/>
+        <!-- GL03-CM04 targetRole link_GL03-CM04 -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-CM04" xlink:label="GL03-CM04" xlink:title="GL03-CM04"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL03" xlink:to="GL03-CM04" xlink:title="domain-member: GL03 to GL03-CM04" order="23"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xbrldt:targetRole="http://www.xbrl.jp/audit-data-collection/role/link_GL03-CM04" xlink:from="GL03" xlink:to="GL03-CM04" xlink:title="domain-member: GL03 to GL03-CM04 in link_GL03-CM04" order="23"/>
+        <!-- GL03-GL05 targetRole link_GL03-GL05 -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-GL05" xlink:label="GL03-GL05" xlink:title="GL03-GL05"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL03" xlink:to="GL03-GL05" xlink:title="domain-member: GL03 to GL03-GL05" order="24"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xbrldt:targetRole="http://www.xbrl.jp/audit-data-collection/role/link_GL03-GL05" xlink:from="GL03" xlink:to="GL03-GL05" xlink:title="domain-member: GL03 to GL03-GL05 in link_GL03-GL05" order="24"/>
+        <!-- GL03-BS01 targetRole link_GL03-BS01 -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-BS01" xlink:label="GL03-BS01" xlink:title="GL03-BS01"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL03" xlink:to="GL03-BS01" xlink:title="domain-member: GL03 to GL03-BS01" order="25"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xbrldt:targetRole="http://www.xbrl.jp/audit-data-collection/role/link_GL03-BS01" xlink:from="GL03" xlink:to="GL03-BS01" xlink:title="domain-member: GL03 to GL03-BS01 in link_GL03-BS01" order="25"/>
+    </link:definitionLink>
+    <link:definitionLink xlink:type="extended" xlink:role="http://www.xbrl.jp/audit-data-collection/role/link_BS09">
+        <!-- BS09 all (has-hypercube) h_BS09 link_BS09 -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#BS09" xlink:label="BS09" xlink:title="BS09"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#h_BS09" xlink:label="h_BS09" xlink:title="h_BS09"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="BS09" xlink:to="h_BS09" xlink:title="all (has-hypercube): BS09 to h_BS09" order="1" xbrldt:closed="true" xbrldt:contextElement="segment"/>
+        <!-- hypercube-dimension -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_BS09" xlink:label="d_BS09" xlink:title="d_BS09"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_BS09" xlink:to="d_BS09" xlink:title="hypercube-dimension: h_BS09 to d_BS09" order="1"/>
+        <!-- domain-member -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#BS09-001" xlink:label="BS09-001" xlink:title="BS09-001"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="BS09" xlink:to="BS09-001" xlink:title="domain-member: BS09 to BS09-001" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#BS09-002" xlink:label="BS09-002" xlink:title="BS09-002"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="BS09" xlink:to="BS09-002" xlink:title="domain-member: BS09 to BS09-002" order="2"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#BS09-003" xlink:label="BS09-003" xlink:title="BS09-003"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="BS09" xlink:to="BS09-003" xlink:title="domain-member: BS09 to BS09-003" order="3"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#BS09-004" xlink:label="BS09-004" xlink:title="BS09-004"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="BS09" xlink:to="BS09-004" xlink:title="domain-member: BS09 to BS09-004" order="4"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#BS09-005" xlink:label="BS09-005" xlink:title="BS09-005"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="BS09" xlink:to="BS09-005" xlink:title="domain-member: BS09 to BS09-005" order="5"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#BS09-006" xlink:label="BS09-006" xlink:title="BS09-006"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="BS09" xlink:to="BS09-006" xlink:title="domain-member: BS09 to BS09-006" order="6"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#BS09-007" xlink:label="BS09-007" xlink:title="BS09-007"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="BS09" xlink:to="BS09-007" xlink:title="domain-member: BS09 to BS09-007" order="7"/>
     </link:definitionLink>
     <link:definitionLink xlink:type="extended" xlink:role="http://www.xbrl.jp/audit-data-collection/role/link_CM07">
         <!-- CM07 all (has-hypercube) h_CM07 link_CM07 -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#CM07" xlink:label="CM07" xlink:title="CM07"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_CM07" xlink:label="h_CM07" xlink:title="h_CM07"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="CM07" xlink:to="h_CM07" xlink:title="all (has-hypercube): CM07 to h_CM07" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="CM07" xlink:to="h_CM07" xlink:title="all (has-hypercube): CM07 to h_CM07" order="1" xbrldt:closed="true" xbrldt:contextElement="segment"/>
         <!-- hypercube-dimension -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_CM07" xlink:label="d_CM07" xlink:title="d_CM07"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_CM07" xlink:to="d_CM07" xlink:title="hypercube-dimension: h_CM07 to d_CM07" order="1"/>
@@ -137,7 +177,7 @@
         <!-- CM08 all (has-hypercube) h_CM08 link_CM08 -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#CM08" xlink:label="CM08" xlink:title="CM08"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_CM08" xlink:label="h_CM08" xlink:title="h_CM08"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="CM08" xlink:to="h_CM08" xlink:title="all (has-hypercube): CM08 to h_CM08" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="CM08" xlink:to="h_CM08" xlink:title="all (has-hypercube): CM08 to h_CM08" order="1" xbrldt:closed="true" xbrldt:contextElement="segment"/>
         <!-- hypercube-dimension -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_CM08" xlink:label="d_CM08" xlink:title="d_CM08"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_CM08" xlink:to="d_CM08" xlink:title="hypercube-dimension: h_CM08 to d_CM08" order="1"/>
@@ -155,7 +195,7 @@
         <!-- CM01 all (has-hypercube) h_CM01 link_CM01 -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#CM01" xlink:label="CM01" xlink:title="CM01"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_CM01" xlink:label="h_CM01" xlink:title="h_CM01"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="CM01" xlink:to="h_CM01" xlink:title="all (has-hypercube): CM01 to h_CM01" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="CM01" xlink:to="h_CM01" xlink:title="all (has-hypercube): CM01 to h_CM01" order="1" xbrldt:closed="true" xbrldt:contextElement="segment"/>
         <!-- hypercube-dimension -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_CM01" xlink:label="d_CM01" xlink:title="d_CM01"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_CM01" xlink:to="d_CM01" xlink:title="hypercube-dimension: h_CM01 to d_CM01" order="1"/>
@@ -171,7 +211,7 @@
         <!-- CM02 all (has-hypercube) h_CM02 link_CM02 -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#CM02" xlink:label="CM02" xlink:title="CM02"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_CM02" xlink:label="h_CM02" xlink:title="h_CM02"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="CM02" xlink:to="h_CM02" xlink:title="all (has-hypercube): CM02 to h_CM02" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="CM02" xlink:to="h_CM02" xlink:title="all (has-hypercube): CM02 to h_CM02" order="1" xbrldt:closed="true" xbrldt:contextElement="segment"/>
         <!-- hypercube-dimension -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_CM02" xlink:label="d_CM02" xlink:title="d_CM02"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_CM02" xlink:to="d_CM02" xlink:title="hypercube-dimension: h_CM02 to d_CM02" order="1"/>
@@ -185,7 +225,7 @@
         <!-- CM04 all (has-hypercube) h_CM04 link_CM04 -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#CM04" xlink:label="CM04" xlink:title="CM04"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_CM04" xlink:label="h_CM04" xlink:title="h_CM04"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="CM04" xlink:to="h_CM04" xlink:title="all (has-hypercube): CM04 to h_CM04" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="CM04" xlink:to="h_CM04" xlink:title="all (has-hypercube): CM04 to h_CM04" order="1" xbrldt:closed="true" xbrldt:contextElement="segment"/>
         <!-- hypercube-dimension -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_CM04" xlink:label="d_CM04" xlink:title="d_CM04"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_CM04" xlink:to="d_CM04" xlink:title="hypercube-dimension: h_CM04 to d_CM04" order="1"/>
@@ -197,7 +237,7 @@
         <!-- GL05 all (has-hypercube) h_GL05 link_GL05 -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#GL05" xlink:label="GL05" xlink:title="GL05"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_GL05" xlink:label="h_GL05" xlink:title="h_GL05"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="GL05" xlink:to="h_GL05" xlink:title="all (has-hypercube): GL05 to h_GL05" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="GL05" xlink:to="h_GL05" xlink:title="all (has-hypercube): GL05 to h_GL05" order="1" xbrldt:closed="true" xbrldt:contextElement="segment"/>
         <!-- hypercube-dimension -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_GL05" xlink:label="d_GL05" xlink:title="d_GL05"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_GL05" xlink:to="d_GL05" xlink:title="hypercube-dimension: h_GL05 to d_GL05" order="1"/>
@@ -217,7 +257,7 @@
         <!-- BS01 all (has-hypercube) h_BS01 link_BS01 -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#BS01" xlink:label="BS01" xlink:title="BS01"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_BS01" xlink:label="h_BS01" xlink:title="h_BS01"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="BS01" xlink:to="h_BS01" xlink:title="all (has-hypercube): BS01 to h_BS01" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="BS01" xlink:to="h_BS01" xlink:title="all (has-hypercube): BS01 to h_BS01" order="1" xbrldt:closed="true" xbrldt:contextElement="segment"/>
         <!-- hypercube-dimension -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_BS01" xlink:label="d_BS01" xlink:title="d_BS01"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_BS01" xlink:to="d_BS01" xlink:title="hypercube-dimension: h_BS01 to d_BS01" order="1"/>
@@ -235,253 +275,242 @@
         <!-- GL02-GL03 all (has-hypercube) h_GL02-GL03 link_GL02-GL03 -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#GL02-GL03" xlink:label="GL02-GL03" xlink:title="GL02-GL03"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_GL02-GL03" xlink:label="h_GL02-GL03" xlink:title="h_GL02-GL03"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="GL02-GL03" xlink:to="h_GL02-GL03" xlink:title="all (has-hypercube): GL02-GL03 to h_GL02-GL03" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="GL02-GL03" xlink:to="h_GL02-GL03" xlink:title="all (has-hypercube): GL02-GL03 to h_GL02-GL03" order="1" xbrldt:closed="true" xbrldt:contextElement="segment"/>
         <!-- hypercube-dimension -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_GL02" xlink:label="d_GL02" xlink:title="d_GL02"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_GL02-GL03" xlink:to="d_GL02" xlink:title="hypercube-dimension: h_GL02-GL03 to d_GL02" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_GL03" xlink:label="d_GL03" xlink:title="d_GL03"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_GL02-GL03" xlink:to="d_GL03" xlink:title="hypercube-dimension: h_GL02-GL03 to d_GL03" order="2"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_GL02-GL03" xlink:to="d_GL03" xlink:title="hypercube-dimension: h_GL02-GL03 to d_GL03" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_GL02" xlink:label="d_GL02" xlink:title="d_GL02"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_GL02-GL03" xlink:to="d_GL02" xlink:title="hypercube-dimension: h_GL02-GL03 to d_GL02" order="2"/>
         <!-- domain-member -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL02-GL03-001" xlink:label="GL02-GL03-001" xlink:title="GL02-GL03-001"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL02-GL03" xlink:to="GL02-GL03-001" xlink:title="domain-member: GL02-GL03 to GL02-GL03-001" order="1"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL02-GL03-002" xlink:label="GL02-GL03-002" xlink:title="GL02-GL03-002"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL02-GL03" xlink:to="GL02-GL03-002" xlink:title="domain-member: GL02-GL03 to GL02-GL03-002" order="2"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL02-GL03-003" xlink:label="GL02-GL03-003" xlink:title="GL02-GL03-003"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL02-GL03" xlink:to="GL02-GL03-003" xlink:title="domain-member: GL02-GL03 to GL02-GL03-003" order="3"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL02-GL03-004" xlink:label="GL02-GL03-004" xlink:title="GL02-GL03-004"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL02-GL03" xlink:to="GL02-GL03-004" xlink:title="domain-member: GL02-GL03 to GL02-GL03-004" order="4"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL02-GL03-005" xlink:label="GL02-GL03-005" xlink:title="GL02-GL03-005"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL02-GL03" xlink:to="GL02-GL03-005" xlink:title="domain-member: GL02-GL03 to GL02-GL03-005" order="5"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL02-GL03-006" xlink:label="GL02-GL03-006" xlink:title="GL02-GL03-006"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL02-GL03" xlink:to="GL02-GL03-006" xlink:title="domain-member: GL02-GL03 to GL02-GL03-006" order="6"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL02-GL03-007" xlink:label="GL02-GL03-007" xlink:title="GL02-GL03-007"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL02-GL03" xlink:to="GL02-GL03-007" xlink:title="domain-member: GL02-GL03 to GL02-GL03-007" order="7"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL02-GL03-008" xlink:label="GL02-GL03-008" xlink:title="GL02-GL03-008"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL02-GL03" xlink:to="GL02-GL03-008" xlink:title="domain-member: GL02-GL03 to GL02-GL03-008" order="8"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL02-GL03-009" xlink:label="GL02-GL03-009" xlink:title="GL02-GL03-009"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL02-GL03" xlink:to="GL02-GL03-009" xlink:title="domain-member: GL02-GL03 to GL02-GL03-009" order="9"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL02-GL03-010" xlink:label="GL02-GL03-010" xlink:title="GL02-GL03-010"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL02-GL03" xlink:to="GL02-GL03-010" xlink:title="domain-member: GL02-GL03 to GL02-GL03-010" order="10"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL02-GL03-011" xlink:label="GL02-GL03-011" xlink:title="GL02-GL03-011"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL02-GL03" xlink:to="GL02-GL03-011" xlink:title="domain-member: GL02-GL03 to GL02-GL03-011" order="11"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL02-GL03-012" xlink:label="GL02-GL03-012" xlink:title="GL02-GL03-012"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL02-GL03" xlink:to="GL02-GL03-012" xlink:title="domain-member: GL02-GL03 to GL02-GL03-012" order="12"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL02-GL03-013" xlink:label="GL02-GL03-013" xlink:title="GL02-GL03-013"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL02-GL03" xlink:to="GL02-GL03-013" xlink:title="domain-member: GL02-GL03 to GL02-GL03-013" order="13"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL02-GL03-014" xlink:label="GL02-GL03-014" xlink:title="GL02-GL03-014"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL02-GL03" xlink:to="GL02-GL03-014" xlink:title="domain-member: GL02-GL03 to GL02-GL03-014" order="14"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL02-GL03-015" xlink:label="GL02-GL03-015" xlink:title="GL02-GL03-015"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL02-GL03" xlink:to="GL02-GL03-015" xlink:title="domain-member: GL02-GL03 to GL02-GL03-015" order="15"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL02-GL03-016" xlink:label="GL02-GL03-016" xlink:title="GL02-GL03-016"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL02-GL03" xlink:to="GL02-GL03-016" xlink:title="domain-member: GL02-GL03 to GL02-GL03-016" order="16"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL02-GL03-017" xlink:label="GL02-GL03-017" xlink:title="GL02-GL03-017"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL02-GL03" xlink:to="GL02-GL03-017" xlink:title="domain-member: GL02-GL03 to GL02-GL03-017" order="17"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL02-GL03-018" xlink:label="GL02-GL03-018" xlink:title="GL02-GL03-018"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL02-GL03" xlink:to="GL02-GL03-018" xlink:title="domain-member: GL02-GL03 to GL02-GL03-018" order="18"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL02-GL03-CM07" xlink:label="GL02-GL03-CM07" xlink:title="GL02-GL03-CM07"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL02-GL03" xlink:to="GL02-GL03-CM07" xlink:title="domain-member: GL02-GL03 to GL02-GL03-CM07" order="19"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL02-GL03-CM08" xlink:label="GL02-GL03-CM08" xlink:title="GL02-GL03-CM08"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL02-GL03" xlink:to="GL02-GL03-CM08" xlink:title="domain-member: GL02-GL03 to GL02-GL03-CM08" order="20"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL02-GL03-CM01" xlink:label="GL02-GL03-CM01" xlink:title="GL02-GL03-CM01"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL02-GL03" xlink:to="GL02-GL03-CM01" xlink:title="domain-member: GL02-GL03 to GL02-GL03-CM01" order="21"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL02-GL03-CM02" xlink:label="GL02-GL03-CM02" xlink:title="GL02-GL03-CM02"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL02-GL03" xlink:to="GL02-GL03-CM02" xlink:title="domain-member: GL02-GL03 to GL02-GL03-CM02" order="22"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL02-GL03-CM04" xlink:label="GL02-GL03-CM04" xlink:title="GL02-GL03-CM04"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL02-GL03" xlink:to="GL02-GL03-CM04" xlink:title="domain-member: GL02-GL03 to GL02-GL03-CM04" order="23"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL02-GL03-GL05" xlink:label="GL02-GL03-GL05" xlink:title="GL02-GL03-GL05"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL02-GL03" xlink:to="GL02-GL03-GL05" xlink:title="domain-member: GL02-GL03 to GL02-GL03-GL05" order="24"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL02-GL03-BS01" xlink:label="GL02-GL03-BS01" xlink:title="GL02-GL03-BS01"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL02-GL03" xlink:to="GL02-GL03-BS01" xlink:title="domain-member: GL02-GL03 to GL02-GL03-BS01" order="25"/>
-        <!-- essence-alias -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-001" xlink:label="GL03-001" xlink:title="GL03-001"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/essence-alias" xlink:from="GL03-001" xlink:to="GL02-GL03-001" xlink:title="essence-alias: GL03-001 to GL02-GL03-001" order="1"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL02-GL03" xlink:to="GL03-001" xlink:title="domain-member: GL02-GL03 to GL03-001" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-002" xlink:label="GL03-002" xlink:title="GL03-002"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/essence-alias" xlink:from="GL03-002" xlink:to="GL02-GL03-002" xlink:title="essence-alias: GL03-002 to GL02-GL03-002" order="2"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL02-GL03" xlink:to="GL03-002" xlink:title="domain-member: GL02-GL03 to GL03-002" order="2"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-003" xlink:label="GL03-003" xlink:title="GL03-003"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/essence-alias" xlink:from="GL03-003" xlink:to="GL02-GL03-003" xlink:title="essence-alias: GL03-003 to GL02-GL03-003" order="3"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL02-GL03" xlink:to="GL03-003" xlink:title="domain-member: GL02-GL03 to GL03-003" order="3"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-004" xlink:label="GL03-004" xlink:title="GL03-004"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/essence-alias" xlink:from="GL03-004" xlink:to="GL02-GL03-004" xlink:title="essence-alias: GL03-004 to GL02-GL03-004" order="4"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL02-GL03" xlink:to="GL03-004" xlink:title="domain-member: GL02-GL03 to GL03-004" order="4"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-005" xlink:label="GL03-005" xlink:title="GL03-005"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/essence-alias" xlink:from="GL03-005" xlink:to="GL02-GL03-005" xlink:title="essence-alias: GL03-005 to GL02-GL03-005" order="5"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL02-GL03" xlink:to="GL03-005" xlink:title="domain-member: GL02-GL03 to GL03-005" order="5"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-006" xlink:label="GL03-006" xlink:title="GL03-006"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/essence-alias" xlink:from="GL03-006" xlink:to="GL02-GL03-006" xlink:title="essence-alias: GL03-006 to GL02-GL03-006" order="6"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL02-GL03" xlink:to="GL03-006" xlink:title="domain-member: GL02-GL03 to GL03-006" order="6"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-007" xlink:label="GL03-007" xlink:title="GL03-007"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/essence-alias" xlink:from="GL03-007" xlink:to="GL02-GL03-007" xlink:title="essence-alias: GL03-007 to GL02-GL03-007" order="7"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL02-GL03" xlink:to="GL03-007" xlink:title="domain-member: GL02-GL03 to GL03-007" order="7"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-008" xlink:label="GL03-008" xlink:title="GL03-008"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/essence-alias" xlink:from="GL03-008" xlink:to="GL02-GL03-008" xlink:title="essence-alias: GL03-008 to GL02-GL03-008" order="8"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL02-GL03" xlink:to="GL03-008" xlink:title="domain-member: GL02-GL03 to GL03-008" order="8"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-009" xlink:label="GL03-009" xlink:title="GL03-009"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/essence-alias" xlink:from="GL03-009" xlink:to="GL02-GL03-009" xlink:title="essence-alias: GL03-009 to GL02-GL03-009" order="9"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL02-GL03" xlink:to="GL03-009" xlink:title="domain-member: GL02-GL03 to GL03-009" order="9"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-010" xlink:label="GL03-010" xlink:title="GL03-010"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/essence-alias" xlink:from="GL03-010" xlink:to="GL02-GL03-010" xlink:title="essence-alias: GL03-010 to GL02-GL03-010" order="10"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL02-GL03" xlink:to="GL03-010" xlink:title="domain-member: GL02-GL03 to GL03-010" order="10"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-011" xlink:label="GL03-011" xlink:title="GL03-011"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/essence-alias" xlink:from="GL03-011" xlink:to="GL02-GL03-011" xlink:title="essence-alias: GL03-011 to GL02-GL03-011" order="11"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL02-GL03" xlink:to="GL03-011" xlink:title="domain-member: GL02-GL03 to GL03-011" order="11"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-012" xlink:label="GL03-012" xlink:title="GL03-012"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/essence-alias" xlink:from="GL03-012" xlink:to="GL02-GL03-012" xlink:title="essence-alias: GL03-012 to GL02-GL03-012" order="12"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL02-GL03" xlink:to="GL03-012" xlink:title="domain-member: GL02-GL03 to GL03-012" order="12"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-013" xlink:label="GL03-013" xlink:title="GL03-013"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/essence-alias" xlink:from="GL03-013" xlink:to="GL02-GL03-013" xlink:title="essence-alias: GL03-013 to GL02-GL03-013" order="13"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL02-GL03" xlink:to="GL03-013" xlink:title="domain-member: GL02-GL03 to GL03-013" order="13"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-014" xlink:label="GL03-014" xlink:title="GL03-014"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/essence-alias" xlink:from="GL03-014" xlink:to="GL02-GL03-014" xlink:title="essence-alias: GL03-014 to GL02-GL03-014" order="14"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL02-GL03" xlink:to="GL03-014" xlink:title="domain-member: GL02-GL03 to GL03-014" order="14"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-015" xlink:label="GL03-015" xlink:title="GL03-015"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/essence-alias" xlink:from="GL03-015" xlink:to="GL02-GL03-015" xlink:title="essence-alias: GL03-015 to GL02-GL03-015" order="15"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL02-GL03" xlink:to="GL03-015" xlink:title="domain-member: GL02-GL03 to GL03-015" order="15"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-016" xlink:label="GL03-016" xlink:title="GL03-016"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/essence-alias" xlink:from="GL03-016" xlink:to="GL02-GL03-016" xlink:title="essence-alias: GL03-016 to GL02-GL03-016" order="16"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL02-GL03" xlink:to="GL03-016" xlink:title="domain-member: GL02-GL03 to GL03-016" order="16"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-017" xlink:label="GL03-017" xlink:title="GL03-017"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/essence-alias" xlink:from="GL03-017" xlink:to="GL02-GL03-017" xlink:title="essence-alias: GL03-017 to GL02-GL03-017" order="17"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-018" xlink:label="GL03-018" xlink:title="GL03-018"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/essence-alias" xlink:from="GL03-018" xlink:to="GL02-GL03-018" xlink:title="essence-alias: GL03-018 to GL02-GL03-018" order="18"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL02-GL03" xlink:to="GL03-017" xlink:title="domain-member: GL02-GL03 to GL03-017" order="17"/>
+        <!-- GL03-BS09 targetRole link_GL03-BS09 -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-BS09" xlink:label="GL03-BS09" xlink:title="GL03-BS09"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xbrldt:targetRole="http://www.xbrl.jp/audit-data-collection/role/link_GL03-BS09" xlink:from="GL02-GL03" xlink:to="GL03-BS09" xlink:title="domain-member: GL02-GL03 to GL03-BS09 in link_GL03-BS09" order="18"/>
+        <!-- GL03-CM07 targetRole link_GL03-CM07 -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-CM07" xlink:label="GL03-CM07" xlink:title="GL03-CM07"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/essence-alias" xlink:from="GL03-CM07" xlink:to="GL02-GL03-CM07" xlink:title="essence-alias: GL03-CM07 to GL02-GL03-CM07" order="19"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xbrldt:targetRole="http://www.xbrl.jp/audit-data-collection/role/link_GL03-CM07" xlink:from="GL02-GL03" xlink:to="GL03-CM07" xlink:title="domain-member: GL02-GL03 to GL03-CM07 in link_GL03-CM07" order="19"/>
+        <!-- GL03-CM08 targetRole link_GL03-CM08 -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-CM08" xlink:label="GL03-CM08" xlink:title="GL03-CM08"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/essence-alias" xlink:from="GL03-CM08" xlink:to="GL02-GL03-CM08" xlink:title="essence-alias: GL03-CM08 to GL02-GL03-CM08" order="20"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xbrldt:targetRole="http://www.xbrl.jp/audit-data-collection/role/link_GL03-CM08" xlink:from="GL02-GL03" xlink:to="GL03-CM08" xlink:title="domain-member: GL02-GL03 to GL03-CM08 in link_GL03-CM08" order="20"/>
+        <!-- GL03-CM01 targetRole link_GL03-CM01 -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-CM01" xlink:label="GL03-CM01" xlink:title="GL03-CM01"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/essence-alias" xlink:from="GL03-CM01" xlink:to="GL02-GL03-CM01" xlink:title="essence-alias: GL03-CM01 to GL02-GL03-CM01" order="21"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xbrldt:targetRole="http://www.xbrl.jp/audit-data-collection/role/link_GL03-CM01" xlink:from="GL02-GL03" xlink:to="GL03-CM01" xlink:title="domain-member: GL02-GL03 to GL03-CM01 in link_GL03-CM01" order="21"/>
+        <!-- GL03-CM02 targetRole link_GL03-CM02 -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-CM02" xlink:label="GL03-CM02" xlink:title="GL03-CM02"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/essence-alias" xlink:from="GL03-CM02" xlink:to="GL02-GL03-CM02" xlink:title="essence-alias: GL03-CM02 to GL02-GL03-CM02" order="22"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xbrldt:targetRole="http://www.xbrl.jp/audit-data-collection/role/link_GL03-CM02" xlink:from="GL02-GL03" xlink:to="GL03-CM02" xlink:title="domain-member: GL02-GL03 to GL03-CM02 in link_GL03-CM02" order="22"/>
+        <!-- GL03-CM04 targetRole link_GL03-CM04 -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-CM04" xlink:label="GL03-CM04" xlink:title="GL03-CM04"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/essence-alias" xlink:from="GL03-CM04" xlink:to="GL02-GL03-CM04" xlink:title="essence-alias: GL03-CM04 to GL02-GL03-CM04" order="23"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xbrldt:targetRole="http://www.xbrl.jp/audit-data-collection/role/link_GL03-CM04" xlink:from="GL02-GL03" xlink:to="GL03-CM04" xlink:title="domain-member: GL02-GL03 to GL03-CM04 in link_GL03-CM04" order="23"/>
+        <!-- GL03-GL05 targetRole link_GL03-GL05 -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-GL05" xlink:label="GL03-GL05" xlink:title="GL03-GL05"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xbrldt:targetRole="http://www.xbrl.jp/audit-data-collection/role/link_GL03-GL05" xlink:from="GL02-GL03" xlink:to="GL03-GL05" xlink:title="domain-member: GL02-GL03 to GL03-GL05 in link_GL03-GL05" order="24"/>
+        <!-- GL03-BS01 targetRole link_GL03-BS01 -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-BS01" xlink:label="GL03-BS01" xlink:title="GL03-BS01"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xbrldt:targetRole="http://www.xbrl.jp/audit-data-collection/role/link_GL03-BS01" xlink:from="GL02-GL03" xlink:to="GL03-BS01" xlink:title="domain-member: GL02-GL03 to GL03-BS01 in link_GL03-BS01" order="25"/>
     </link:definitionLink>
     <link:definitionLink xlink:type="extended" xlink:role="http://www.xbrl.jp/audit-data-collection/role/link_GL03-GL05">
         <!-- GL03-GL05 all (has-hypercube) h_GL03-GL05 link_GL03-GL05 -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-GL05" xlink:label="GL03-GL05" xlink:title="GL03-GL05"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_GL03-GL05" xlink:label="h_GL03-GL05" xlink:title="h_GL03-GL05"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="GL03-GL05" xlink:to="h_GL03-GL05" xlink:title="all (has-hypercube): GL03-GL05 to h_GL03-GL05" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="GL03-GL05" xlink:to="h_GL03-GL05" xlink:title="all (has-hypercube): GL03-GL05 to h_GL03-GL05" order="1" xbrldt:closed="true" xbrldt:contextElement="segment"/>
         <!-- hypercube-dimension -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_GL05" xlink:label="d_GL05" xlink:title="d_GL05"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_GL03-GL05" xlink:to="d_GL05" xlink:title="hypercube-dimension: h_GL03-GL05 to d_GL05" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_GL03" xlink:label="d_GL03" xlink:title="d_GL03"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_GL03-GL05" xlink:to="d_GL03" xlink:title="hypercube-dimension: h_GL03-GL05 to d_GL03" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_GL02" xlink:label="d_GL02" xlink:title="d_GL02"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_GL03-GL05" xlink:to="d_GL02" xlink:title="hypercube-dimension: h_GL03-GL05 to d_GL02" order="2"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_GL03" xlink:label="d_GL03" xlink:title="d_GL03"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_GL03-GL05" xlink:to="d_GL03" xlink:title="hypercube-dimension: h_GL03-GL05 to d_GL03" order="3"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_GL05" xlink:label="d_GL05" xlink:title="d_GL05"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_GL03-GL05" xlink:to="d_GL05" xlink:title="hypercube-dimension: h_GL03-GL05 to d_GL05" order="3"/>
         <!-- domain-member -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-GL05-001" xlink:label="GL03-GL05-001" xlink:title="GL03-GL05-001"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL03-GL05" xlink:to="GL03-GL05-001" xlink:title="domain-member: GL03-GL05 to GL03-GL05-001" order="1"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-GL05-002" xlink:label="GL03-GL05-002" xlink:title="GL03-GL05-002"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL03-GL05" xlink:to="GL03-GL05-002" xlink:title="domain-member: GL03-GL05 to GL03-GL05-002" order="2"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-GL05-003" xlink:label="GL03-GL05-003" xlink:title="GL03-GL05-003"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL03-GL05" xlink:to="GL03-GL05-003" xlink:title="domain-member: GL03-GL05 to GL03-GL05-003" order="3"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-GL05-004" xlink:label="GL03-GL05-004" xlink:title="GL03-GL05-004"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL03-GL05" xlink:to="GL03-GL05-004" xlink:title="domain-member: GL03-GL05 to GL03-GL05-004" order="4"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-GL05-005" xlink:label="GL03-GL05-005" xlink:title="GL03-GL05-005"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL03-GL05" xlink:to="GL03-GL05-005" xlink:title="domain-member: GL03-GL05 to GL03-GL05-005" order="5"/>
-        <!-- essence-alias -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#GL05-001" xlink:label="GL05-001" xlink:title="GL05-001"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/essence-alias" xlink:from="GL05-001" xlink:to="GL03-GL05-001" xlink:title="essence-alias: GL05-001 to GL03-GL05-001" order="1"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL03-GL05" xlink:to="GL05-001" xlink:title="domain-member: GL03-GL05 to GL05-001" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#GL05-002" xlink:label="GL05-002" xlink:title="GL05-002"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/essence-alias" xlink:from="GL05-002" xlink:to="GL03-GL05-002" xlink:title="essence-alias: GL05-002 to GL03-GL05-002" order="2"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL03-GL05" xlink:to="GL05-002" xlink:title="domain-member: GL03-GL05 to GL05-002" order="2"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#GL05-003" xlink:label="GL05-003" xlink:title="GL05-003"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/essence-alias" xlink:from="GL05-003" xlink:to="GL03-GL05-003" xlink:title="essence-alias: GL05-003 to GL03-GL05-003" order="3"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL03-GL05" xlink:to="GL05-003" xlink:title="domain-member: GL03-GL05 to GL05-003" order="3"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#GL05-004" xlink:label="GL05-004" xlink:title="GL05-004"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/essence-alias" xlink:from="GL05-004" xlink:to="GL03-GL05-004" xlink:title="essence-alias: GL05-004 to GL03-GL05-004" order="4"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL03-GL05" xlink:to="GL05-004" xlink:title="domain-member: GL03-GL05 to GL05-004" order="4"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#GL05-005" xlink:label="GL05-005" xlink:title="GL05-005"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/essence-alias" xlink:from="GL05-005" xlink:to="GL03-GL05-005" xlink:title="essence-alias: GL05-005 to GL03-GL05-005" order="5"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL03-GL05" xlink:to="GL05-005" xlink:title="domain-member: GL03-GL05 to GL05-005" order="5"/>
     </link:definitionLink>
     <link:definitionLink xlink:type="extended" xlink:role="http://www.xbrl.jp/audit-data-collection/role/link_GL03-BS01">
         <!-- GL03-BS01 all (has-hypercube) h_GL03-BS01 link_GL03-BS01 -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-BS01" xlink:label="GL03-BS01" xlink:title="GL03-BS01"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#h_GL03-BS01" xlink:label="h_GL03-BS01" xlink:title="h_GL03-BS01"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="GL03-BS01" xlink:to="h_GL03-BS01" xlink:title="all (has-hypercube): GL03-BS01 to h_GL03-BS01" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="GL03-BS01" xlink:to="h_GL03-BS01" xlink:title="all (has-hypercube): GL03-BS01 to h_GL03-BS01" order="1" xbrldt:closed="true" xbrldt:contextElement="segment"/>
         <!-- hypercube-dimension -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_BS01" xlink:label="d_BS01" xlink:title="d_BS01"/>
         <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_GL03-BS01" xlink:to="d_BS01" xlink:title="hypercube-dimension: h_GL03-BS01 to d_BS01" order="1"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#d_GL02" xlink:label="d_GL02" xlink:title="d_GL02"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_GL03-BS01" xlink:to="d_GL02" xlink:title="hypercube-dimension: h_GL03-BS01 to d_GL02" order="2"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#d_GL03" xlink:label="d_GL03" xlink:title="d_GL03"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_GL03-BS01" xlink:to="d_GL03" xlink:title="hypercube-dimension: h_GL03-BS01 to d_GL03" order="3"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_GL03-BS01" xlink:to="d_GL03" xlink:title="hypercube-dimension: h_GL03-BS01 to d_GL03" order="2"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_GL02" xlink:label="d_GL02" xlink:title="d_GL02"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_GL03-BS01" xlink:to="d_GL02" xlink:title="hypercube-dimension: h_GL03-BS01 to d_GL02" order="3"/>
         <!-- domain-member -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-BS01-001" xlink:label="GL03-BS01-001" xlink:title="GL03-BS01-001"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL03-BS01" xlink:to="GL03-BS01-001" xlink:title="domain-member: GL03-BS01 to GL03-BS01-001" order="1"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-BS01-002" xlink:label="GL03-BS01-002" xlink:title="GL03-BS01-002"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL03-BS01" xlink:to="GL03-BS01-002" xlink:title="domain-member: GL03-BS01 to GL03-BS01-002" order="2"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-BS01-003" xlink:label="GL03-BS01-003" xlink:title="GL03-BS01-003"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL03-BS01" xlink:to="GL03-BS01-003" xlink:title="domain-member: GL03-BS01 to GL03-BS01-003" order="3"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-BS01-004" xlink:label="GL03-BS01-004" xlink:title="GL03-BS01-004"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL03-BS01" xlink:to="GL03-BS01-004" xlink:title="domain-member: GL03-BS01 to GL03-BS01-004" order="4"/>
-        <!-- essence-alias -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#BS01-001" xlink:label="BS01-001" xlink:title="BS01-001"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/essence-alias" xlink:from="BS01-001" xlink:to="GL03-BS01-001" xlink:title="essence-alias: BS01-001 to GL03-BS01-001" order="1"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL03-BS01" xlink:to="BS01-001" xlink:title="domain-member: GL03-BS01 to BS01-001" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#BS01-002" xlink:label="BS01-002" xlink:title="BS01-002"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/essence-alias" xlink:from="BS01-002" xlink:to="GL03-BS01-002" xlink:title="essence-alias: BS01-002 to GL03-BS01-002" order="2"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL03-BS01" xlink:to="BS01-002" xlink:title="domain-member: GL03-BS01 to BS01-002" order="2"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#BS01-003" xlink:label="BS01-003" xlink:title="BS01-003"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/essence-alias" xlink:from="BS01-003" xlink:to="GL03-BS01-003" xlink:title="essence-alias: BS01-003 to GL03-BS01-003" order="3"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL03-BS01" xlink:to="BS01-003" xlink:title="domain-member: GL03-BS01 to BS01-003" order="3"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#BS01-004" xlink:label="BS01-004" xlink:title="BS01-004"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/essence-alias" xlink:from="BS01-004" xlink:to="GL03-BS01-004" xlink:title="essence-alias: BS01-004 to GL03-BS01-004" order="4"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL03-BS01" xlink:to="BS01-004" xlink:title="domain-member: GL03-BS01 to BS01-004" order="4"/>
     </link:definitionLink>
-    <link:definitionLink xlink:type="extended" xlink:role="http://www.xbrl.jp/audit-data-collection/role/primary-key">
-        <!-- primary-key GL05-001 -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL05" xlink:label="GL05" xlink:title="GL05"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL05-001" xlink:label="GL05-001" xlink:title="GL05-001"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-primary-key" xlink:from="GL05" xlink:to="GL05-001" xlink:title="concept-primary-key: GL05 to GL05-001" order="1"/>
-        <!-- primary-key GL03-GL05-001 -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-GL05" xlink:label="GL03-GL05" xlink:title="GL03-GL05"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-GL05-001" xlink:label="GL03-GL05-001" xlink:title="GL03-GL05-001"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-primary-key" xlink:from="GL03-GL05" xlink:to="GL03-GL05-001" xlink:title="concept-primary-key: GL03-GL05 to GL03-GL05-001" order="1"/>
+    <link:definitionLink xlink:type="extended" xlink:role="http://www.xbrl.jp/audit-data-collection/role/link_GL03-BS09">
+        <!-- GL03-BS09 all (has-hypercube) h_GL03-BS09 link_GL03-BS09 -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-BS09" xlink:label="GL03-BS09" xlink:title="GL03-BS09"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#h_GL03-BS09" xlink:label="h_GL03-BS09" xlink:title="h_GL03-BS09"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="GL03-BS09" xlink:to="h_GL03-BS09" xlink:title="all (has-hypercube): GL03-BS09 to h_GL03-BS09" order="1" xbrldt:closed="true" xbrldt:contextElement="segment"/>
+        <!-- hypercube-dimension -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_BS09" xlink:label="d_BS09" xlink:title="d_BS09"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_GL03-BS09" xlink:to="d_BS09" xlink:title="hypercube-dimension: h_GL03-BS09 to d_BS09" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_GL03" xlink:label="d_GL03" xlink:title="d_GL03"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_GL03-BS09" xlink:to="d_GL03" xlink:title="hypercube-dimension: h_GL03-BS09 to d_GL03" order="2"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_GL02" xlink:label="d_GL02" xlink:title="d_GL02"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_GL03-BS09" xlink:to="d_GL02" xlink:title="hypercube-dimension: h_GL03-BS09 to d_GL02" order="3"/>
+        <!-- domain-member -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#BS09-001" xlink:label="BS09-001" xlink:title="BS09-001"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL03-BS09" xlink:to="BS09-001" xlink:title="domain-member: GL03-BS09 to BS09-001" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#BS09-002" xlink:label="BS09-002" xlink:title="BS09-002"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL03-BS09" xlink:to="BS09-002" xlink:title="domain-member: GL03-BS09 to BS09-002" order="2"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#BS09-003" xlink:label="BS09-003" xlink:title="BS09-003"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL03-BS09" xlink:to="BS09-003" xlink:title="domain-member: GL03-BS09 to BS09-003" order="3"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#BS09-004" xlink:label="BS09-004" xlink:title="BS09-004"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL03-BS09" xlink:to="BS09-004" xlink:title="domain-member: GL03-BS09 to BS09-004" order="4"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#BS09-005" xlink:label="BS09-005" xlink:title="BS09-005"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL03-BS09" xlink:to="BS09-005" xlink:title="domain-member: GL03-BS09 to BS09-005" order="5"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#BS09-006" xlink:label="BS09-006" xlink:title="BS09-006"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL03-BS09" xlink:to="BS09-006" xlink:title="domain-member: GL03-BS09 to BS09-006" order="6"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#BS09-007" xlink:label="BS09-007" xlink:title="BS09-007"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL03-BS09" xlink:to="BS09-007" xlink:title="domain-member: GL03-BS09 to BS09-007" order="7"/>
     </link:definitionLink>
-    <link:definitionLink xlink:type="extended" xlink:role="http://www.xbrl.jp/audit-data-collection/role/reference-identifier">
-        <!-- reference-identifier GL03-002 to BS01 -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#BS01" xlink:label="BS01" xlink:title="BS01"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-002" xlink:label="GL03-002" xlink:title="GL03-002"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-reference-identifier" xlink:from="GL03-002" xlink:to="BS01" xlink:title="concept-reference-identifier: GL03-002 to BS01" order="1"/>
-        <!-- reference-identifier GL03-003 to BS01 -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-003" xlink:label="GL03-003" xlink:title="GL03-003"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-reference-identifier" xlink:from="GL03-003" xlink:to="BS01" xlink:title="concept-reference-identifier: GL03-003 to BS01" order="2"/>
-        <!-- reference-identifier GL03-007 to BS01 -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-007" xlink:label="GL03-007" xlink:title="GL03-007"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-reference-identifier" xlink:from="GL03-007" xlink:to="BS01" xlink:title="concept-reference-identifier: GL03-007 to BS01" order="3"/>
-        <!-- reference-identifier GL03-010 to BS01 -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-010" xlink:label="GL03-010" xlink:title="GL03-010"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-reference-identifier" xlink:from="GL03-010" xlink:to="BS01" xlink:title="concept-reference-identifier: GL03-010 to BS01" order="4"/>
-        <!-- reference-identifier GL03-012 to BS01 -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-012" xlink:label="GL03-012" xlink:title="GL03-012"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-reference-identifier" xlink:from="GL03-012" xlink:to="BS01" xlink:title="concept-reference-identifier: GL03-012 to BS01" order="5"/>
-        <!-- reference-identifier GL03-016 to BS01 -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-016" xlink:label="GL03-016" xlink:title="GL03-016"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-reference-identifier" xlink:from="GL03-016" xlink:to="BS01" xlink:title="concept-reference-identifier: GL03-016 to BS01" order="6"/>
-        <!-- reference-identifier GL03-017 to BS01 -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-017" xlink:label="GL03-017" xlink:title="GL03-017"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-reference-identifier" xlink:from="GL03-017" xlink:to="BS01" xlink:title="concept-reference-identifier: GL03-017 to BS01" order="7"/>
-        <!-- reference-identifier GL03-018 to BS01 -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-018" xlink:label="GL03-018" xlink:title="GL03-018"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-reference-identifier" xlink:from="GL03-018" xlink:to="BS01" xlink:title="concept-reference-identifier: GL03-018 to BS01" order="8"/>
-        <!-- reference-identifier CM08-001 to BS01 -->
+    <link:definitionLink xlink:type="extended" xlink:role="http://www.xbrl.jp/audit-data-collection/role/link_GL03-CM07">
+        <!-- GL03-CM07 all (has-hypercube) h_GL03-CM07 link_GL03-CM07 -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-CM07" xlink:label="GL03-CM07" xlink:title="GL03-CM07"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#h_GL03-CM07" xlink:label="h_GL03-CM07" xlink:title="h_GL03-CM07"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="GL03-CM07" xlink:to="h_GL03-CM07" xlink:title="all (has-hypercube): GL03-CM07 to h_GL03-CM07" order="1" xbrldt:closed="true" xbrldt:contextElement="segment"/>
+        <!-- hypercube-dimension -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_GL03" xlink:label="d_GL03" xlink:title="d_GL03"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_GL03-CM07" xlink:to="d_GL03" xlink:title="hypercube-dimension: h_GL03-CM07 to d_GL03" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_CM07" xlink:label="d_CM07" xlink:title="d_CM07"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_GL03-CM07" xlink:to="d_CM07" xlink:title="hypercube-dimension: h_GL03-CM07 to d_CM07" order="2"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_GL02" xlink:label="d_GL02" xlink:title="d_GL02"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_GL03-CM07" xlink:to="d_GL02" xlink:title="hypercube-dimension: h_GL03-CM07 to d_GL02" order="3"/>
+        <!-- domain-member -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#CM07-001" xlink:label="CM07-001" xlink:title="CM07-001"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL03-CM07" xlink:to="CM07-001" xlink:title="domain-member: GL03-CM07 to CM07-001" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#CM07-002" xlink:label="CM07-002" xlink:title="CM07-002"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL03-CM07" xlink:to="CM07-002" xlink:title="domain-member: GL03-CM07 to CM07-002" order="2"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#CM07-003" xlink:label="CM07-003" xlink:title="CM07-003"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL03-CM07" xlink:to="CM07-003" xlink:title="domain-member: GL03-CM07 to CM07-003" order="3"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#CM07-004" xlink:label="CM07-004" xlink:title="CM07-004"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL03-CM07" xlink:to="CM07-004" xlink:title="domain-member: GL03-CM07 to CM07-004" order="4"/>
+    </link:definitionLink>
+    <link:definitionLink xlink:type="extended" xlink:role="http://www.xbrl.jp/audit-data-collection/role/link_GL03-CM08">
+        <!-- GL03-CM08 all (has-hypercube) h_GL03-CM08 link_GL03-CM08 -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-CM08" xlink:label="GL03-CM08" xlink:title="GL03-CM08"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#h_GL03-CM08" xlink:label="h_GL03-CM08" xlink:title="h_GL03-CM08"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="GL03-CM08" xlink:to="h_GL03-CM08" xlink:title="all (has-hypercube): GL03-CM08 to h_GL03-CM08" order="1" xbrldt:closed="true" xbrldt:contextElement="segment"/>
+        <!-- hypercube-dimension -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_CM08" xlink:label="d_CM08" xlink:title="d_CM08"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_GL03-CM08" xlink:to="d_CM08" xlink:title="hypercube-dimension: h_GL03-CM08 to d_CM08" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_GL03" xlink:label="d_GL03" xlink:title="d_GL03"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_GL03-CM08" xlink:to="d_GL03" xlink:title="hypercube-dimension: h_GL03-CM08 to d_GL03" order="2"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_GL02" xlink:label="d_GL02" xlink:title="d_GL02"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_GL03-CM08" xlink:to="d_GL02" xlink:title="hypercube-dimension: h_GL03-CM08 to d_GL02" order="3"/>
+        <!-- domain-member -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#CM08-001" xlink:label="CM08-001" xlink:title="CM08-001"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-reference-identifier" xlink:from="CM08-001" xlink:to="BS01" xlink:title="concept-reference-identifier: CM08-001 to BS01" order="9"/>
-        <!-- reference-identifier CM08-002 to BS01 -->
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL03-CM08" xlink:to="CM08-001" xlink:title="domain-member: GL03-CM08 to CM08-001" order="1"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#CM08-002" xlink:label="CM08-002" xlink:title="CM08-002"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-reference-identifier" xlink:from="CM08-002" xlink:to="BS01" xlink:title="concept-reference-identifier: CM08-002 to BS01" order="10"/>
-        <!-- reference-identifier CM08-003 to BS01 -->
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL03-CM08" xlink:to="CM08-002" xlink:title="domain-member: GL03-CM08 to CM08-002" order="2"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#CM08-003" xlink:label="CM08-003" xlink:title="CM08-003"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-reference-identifier" xlink:from="CM08-003" xlink:to="BS01" xlink:title="concept-reference-identifier: CM08-003 to BS01" order="11"/>
-        <!-- reference-identifier CM08-004 to BS01 -->
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL03-CM08" xlink:to="CM08-003" xlink:title="domain-member: GL03-CM08 to CM08-003" order="3"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#CM08-004" xlink:label="CM08-004" xlink:title="CM08-004"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-reference-identifier" xlink:from="CM08-004" xlink:to="BS01" xlink:title="concept-reference-identifier: CM08-004 to BS01" order="12"/>
-        <!-- reference-identifier CM01-001 to BS01 -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#CM01-001" xlink:label="CM01-001" xlink:title="CM01-001"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-reference-identifier" xlink:from="CM01-001" xlink:to="BS01" xlink:title="concept-reference-identifier: CM01-001 to BS01" order="13"/>
-        <!-- reference-identifier CM02-001 to BS01 -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#CM02-001" xlink:label="CM02-001" xlink:title="CM02-001"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-reference-identifier" xlink:from="CM02-001" xlink:to="BS01" xlink:title="concept-reference-identifier: CM02-001 to BS01" order="14"/>
-        <!-- reference-identifier CM04-001 to BS01 -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#CM04-001" xlink:label="CM04-001" xlink:title="CM04-001"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-reference-identifier" xlink:from="CM04-001" xlink:to="BS01" xlink:title="concept-reference-identifier: CM04-001 to BS01" order="15"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL03-CM08" xlink:to="CM08-004" xlink:title="domain-member: GL03-CM08 to CM08-004" order="4"/>
     </link:definitionLink>
-    <link:definitionLink xlink:type="extended" xlink:role="http://www.xbrl.jp/audit-data-collection/role/require">
-        <!-- requires-element GL05-001 to GL05-001 -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL05-001" xlink:label="GL05-001" xlink:title="GL05-001"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/requires-element" xlink:from="GL05-001" xlink:to="GL05-001" xlink:title="concept-reference-identifier: GL05-001 to GL05-001" order="1"/>
-        <!-- requires-element GL05-001 to GL05-002 -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL05-002" xlink:label="GL05-002" xlink:title="GL05-002"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/requires-element" xlink:from="GL05-001" xlink:to="GL05-002" xlink:title="concept-reference-identifier: GL05-001 to GL05-002" order="2"/>
-        <!-- requires-element GL05-001 to GL05-003 -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL05-003" xlink:label="GL05-003" xlink:title="GL05-003"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/requires-element" xlink:from="GL05-001" xlink:to="GL05-003" xlink:title="concept-reference-identifier: GL05-001 to GL05-003" order="3"/>
-        <!-- requires-element GL03-GL05-001 to GL03-GL05-001 -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-GL05-001" xlink:label="GL03-GL05-001" xlink:title="GL03-GL05-001"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/requires-element" xlink:from="GL03-GL05-001" xlink:to="GL03-GL05-001" xlink:title="concept-reference-identifier: GL03-GL05-001 to GL03-GL05-001" order="4"/>
-        <!-- requires-element GL03-GL05-001 to GL03-GL05-002 -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-GL05-002" xlink:label="GL03-GL05-002" xlink:title="GL03-GL05-002"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/requires-element" xlink:from="GL03-GL05-001" xlink:to="GL03-GL05-002" xlink:title="concept-reference-identifier: GL03-GL05-001 to GL03-GL05-002" order="5"/>
-        <!-- requires-element GL03-GL05-001 to GL03-GL05-003 -->
-        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-GL05-003" xlink:label="GL03-GL05-003" xlink:title="GL03-GL05-003"/>
-        <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/requires-element" xlink:from="GL03-GL05-001" xlink:to="GL03-GL05-003" xlink:title="concept-reference-identifier: GL03-GL05-001 to GL03-GL05-003" order="6"/>
+    <link:definitionLink xlink:type="extended" xlink:role="http://www.xbrl.jp/audit-data-collection/role/link_GL03-CM01">
+        <!-- GL03-CM01 all (has-hypercube) h_GL03-CM01 link_GL03-CM01 -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-CM01" xlink:label="GL03-CM01" xlink:title="GL03-CM01"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#h_GL03-CM01" xlink:label="h_GL03-CM01" xlink:title="h_GL03-CM01"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="GL03-CM01" xlink:to="h_GL03-CM01" xlink:title="all (has-hypercube): GL03-CM01 to h_GL03-CM01" order="1" xbrldt:closed="true" xbrldt:contextElement="segment"/>
+        <!-- hypercube-dimension -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_GL03" xlink:label="d_GL03" xlink:title="d_GL03"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_GL03-CM01" xlink:to="d_GL03" xlink:title="hypercube-dimension: h_GL03-CM01 to d_GL03" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_GL02" xlink:label="d_GL02" xlink:title="d_GL02"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_GL03-CM01" xlink:to="d_GL02" xlink:title="hypercube-dimension: h_GL03-CM01 to d_GL02" order="2"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_CM01" xlink:label="d_CM01" xlink:title="d_CM01"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_GL03-CM01" xlink:to="d_CM01" xlink:title="hypercube-dimension: h_GL03-CM01 to d_CM01" order="3"/>
+        <!-- domain-member -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#CM01-001" xlink:label="CM01-001" xlink:title="CM01-001"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL03-CM01" xlink:to="CM01-001" xlink:title="domain-member: GL03-CM01 to CM01-001" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#CM01-002" xlink:label="CM01-002" xlink:title="CM01-002"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL03-CM01" xlink:to="CM01-002" xlink:title="domain-member: GL03-CM01 to CM01-002" order="2"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#CM01-003" xlink:label="CM01-003" xlink:title="CM01-003"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL03-CM01" xlink:to="CM01-003" xlink:title="domain-member: GL03-CM01 to CM01-003" order="3"/>
+    </link:definitionLink>
+    <link:definitionLink xlink:type="extended" xlink:role="http://www.xbrl.jp/audit-data-collection/role/link_GL03-CM02">
+        <!-- GL03-CM02 all (has-hypercube) h_GL03-CM02 link_GL03-CM02 -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-CM02" xlink:label="GL03-CM02" xlink:title="GL03-CM02"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#h_GL03-CM02" xlink:label="h_GL03-CM02" xlink:title="h_GL03-CM02"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="GL03-CM02" xlink:to="h_GL03-CM02" xlink:title="all (has-hypercube): GL03-CM02 to h_GL03-CM02" order="1" xbrldt:closed="true" xbrldt:contextElement="segment"/>
+        <!-- hypercube-dimension -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_CM02" xlink:label="d_CM02" xlink:title="d_CM02"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_GL03-CM02" xlink:to="d_CM02" xlink:title="hypercube-dimension: h_GL03-CM02 to d_CM02" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_GL03" xlink:label="d_GL03" xlink:title="d_GL03"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_GL03-CM02" xlink:to="d_GL03" xlink:title="hypercube-dimension: h_GL03-CM02 to d_GL03" order="2"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_GL02" xlink:label="d_GL02" xlink:title="d_GL02"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_GL03-CM02" xlink:to="d_GL02" xlink:title="hypercube-dimension: h_GL03-CM02 to d_GL02" order="3"/>
+        <!-- domain-member -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#CM02-001" xlink:label="CM02-001" xlink:title="CM02-001"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL03-CM02" xlink:to="CM02-001" xlink:title="domain-member: GL03-CM02 to CM02-001" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#CM02-002" xlink:label="CM02-002" xlink:title="CM02-002"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL03-CM02" xlink:to="CM02-002" xlink:title="domain-member: GL03-CM02 to CM02-002" order="2"/>
+    </link:definitionLink>
+    <link:definitionLink xlink:type="extended" xlink:role="http://www.xbrl.jp/audit-data-collection/role/link_GL03-CM04">
+        <!-- GL03-CM04 all (has-hypercube) h_GL03-CM04 link_GL03-CM04 -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-CM04" xlink:label="GL03-CM04" xlink:title="GL03-CM04"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#h_GL03-CM04" xlink:label="h_GL03-CM04" xlink:title="h_GL03-CM04"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="GL03-CM04" xlink:to="h_GL03-CM04" xlink:title="all (has-hypercube): GL03-CM04 to h_GL03-CM04" order="1" xbrldt:closed="true" xbrldt:contextElement="segment"/>
+        <!-- hypercube-dimension -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_GL03" xlink:label="d_GL03" xlink:title="d_GL03"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_GL03-CM04" xlink:to="d_GL03" xlink:title="hypercube-dimension: h_GL03-CM04 to d_GL03" order="1"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_CM04" xlink:label="d_CM04" xlink:title="d_CM04"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_GL03-CM04" xlink:to="d_CM04" xlink:title="hypercube-dimension: h_GL03-CM04 to d_CM04" order="2"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#d_GL02" xlink:label="d_GL02" xlink:title="d_GL02"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="h_GL03-CM04" xlink:to="d_GL02" xlink:title="hypercube-dimension: h_GL03-CM04 to d_GL02" order="3"/>
+        <!-- domain-member -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#CM04-001" xlink:label="CM04-001" xlink:title="CM04-001"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GL03-CM04" xlink:to="CM04-001" xlink:title="domain-member: GL03-CM04 to CM04-001" order="1"/>
     </link:definitionLink>
 </link:linkbase>
