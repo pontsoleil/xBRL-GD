@@ -82,9 +82,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-03" id="adc.r_3.BS09-003">Sapporo</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-03" id="adc.r_3.BS09-006">10</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-03" id="adc.r_3.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-03" id="adc.r_3.GL05-003">Sapporo</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-03" id="adc.r_3.GL05-004">10</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-03" id="adc.r_3.GL05-005">Department</adc:GL05-005>
     <context id="c-04">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -132,9 +132,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-05" id="adc.r_5.BS09-003">Sapporo</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-05" id="adc.r_5.BS09-006">10</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-05" id="adc.r_5.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-05" id="adc.r_5.GL05-003">Sapporo</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-05" id="adc.r_5.GL05-004">10</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-05" id="adc.r_5.GL05-005">Department</adc:GL05-005>
     <context id="c-06">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -183,9 +183,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-07" id="adc.r_7.BS09-003">Common to all department</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-07" id="adc.r_7.BS09-006">0</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-07" id="adc.r_7.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-07" id="adc.r_7.GL05-003">Common to all department</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-07" id="adc.r_7.GL05-004">0</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-07" id="adc.r_7.GL05-005">Department</adc:GL05-005>
     <context id="c-08">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -257,9 +257,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-10" id="adc.r_10.BS09-003">Nagoya</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-10" id="adc.r_10.BS09-006">30</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-10" id="adc.r_10.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-10" id="adc.r_10.GL05-003">Nagoya</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-10" id="adc.r_10.GL05-004">30</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-10" id="adc.r_10.GL05-005">Department</adc:GL05-005>
     <context id="c-11">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -307,9 +307,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-12" id="adc.r_12.BS09-003">Nagoya</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-12" id="adc.r_12.BS09-006">30</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-12" id="adc.r_12.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-12" id="adc.r_12.GL05-003">Nagoya</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-12" id="adc.r_12.GL05-004">30</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-12" id="adc.r_12.GL05-005">Department</adc:GL05-005>
     <context id="c-13">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -358,9 +358,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-14" id="adc.r_14.BS09-003">Common to all department</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-14" id="adc.r_14.BS09-006">0</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-14" id="adc.r_14.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-14" id="adc.r_14.GL05-003">Common to all department</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-14" id="adc.r_14.GL05-004">0</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-14" id="adc.r_14.GL05-005">Department</adc:GL05-005>
     <context id="c-15">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -432,9 +432,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-17" id="adc.r_17.BS09-003">Osaka</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-17" id="adc.r_17.BS09-006">40</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-17" id="adc.r_17.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-17" id="adc.r_17.GL05-003">Osaka</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-17" id="adc.r_17.GL05-004">40</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-17" id="adc.r_17.GL05-005">Department</adc:GL05-005>
     <context id="c-18">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -482,9 +482,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-19" id="adc.r_19.BS09-003">Osaka</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-19" id="adc.r_19.BS09-006">40</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-19" id="adc.r_19.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-19" id="adc.r_19.GL05-003">Osaka</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-19" id="adc.r_19.GL05-004">40</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-19" id="adc.r_19.GL05-005">Department</adc:GL05-005>
     <context id="c-20">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -533,9 +533,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-21" id="adc.r_21.BS09-003">Common to all department</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-21" id="adc.r_21.BS09-006">0</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-21" id="adc.r_21.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-21" id="adc.r_21.GL05-003">Common to all department</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-21" id="adc.r_21.GL05-004">0</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-21" id="adc.r_21.GL05-005">Department</adc:GL05-005>
     <context id="c-22">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -607,9 +607,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-24" id="adc.r_24.BS09-003">Osaka</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-24" id="adc.r_24.BS09-006">40</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-24" id="adc.r_24.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-24" id="adc.r_24.GL05-003">Osaka</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-24" id="adc.r_24.GL05-004">40</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-24" id="adc.r_24.GL05-005">Department</adc:GL05-005>
     <context id="c-25">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -657,9 +657,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-26" id="adc.r_26.BS09-003">Osaka</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-26" id="adc.r_26.BS09-006">40</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-26" id="adc.r_26.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-26" id="adc.r_26.GL05-003">Osaka</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-26" id="adc.r_26.GL05-004">40</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-26" id="adc.r_26.GL05-005">Department</adc:GL05-005>
     <context id="c-27">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -708,9 +708,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-28" id="adc.r_28.BS09-003">Common to all department</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-28" id="adc.r_28.BS09-006">0</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-28" id="adc.r_28.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-28" id="adc.r_28.GL05-003">Common to all department</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-28" id="adc.r_28.GL05-004">0</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-28" id="adc.r_28.GL05-005">Department</adc:GL05-005>
     <context id="c-29">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -759,9 +759,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-30" id="adc.r_30.BS09-003">Osaka</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-30" id="adc.r_30.BS09-006">40</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-30" id="adc.r_30.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-30" id="adc.r_30.GL05-003">Osaka</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-30" id="adc.r_30.GL05-004">40</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-30" id="adc.r_30.GL05-005">Department</adc:GL05-005>
     <context id="c-31">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -809,9 +809,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-32" id="adc.r_32.BS09-003">Osaka</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-32" id="adc.r_32.BS09-006">40</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-32" id="adc.r_32.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-32" id="adc.r_32.GL05-003">Osaka</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-32" id="adc.r_32.GL05-004">40</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-32" id="adc.r_32.GL05-005">Department</adc:GL05-005>
     <context id="c-33">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -860,9 +860,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-34" id="adc.r_34.BS09-003">Osaka</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-34" id="adc.r_34.BS09-006">40</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-34" id="adc.r_34.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-34" id="adc.r_34.GL05-003">Osaka</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-34" id="adc.r_34.GL05-004">40</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-34" id="adc.r_34.GL05-005">Department</adc:GL05-005>
     <context id="c-35">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -910,9 +910,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-36" id="adc.r_36.BS09-003">Osaka</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-36" id="adc.r_36.BS09-006">40</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-36" id="adc.r_36.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-36" id="adc.r_36.GL05-003">Osaka</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-36" id="adc.r_36.GL05-004">40</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-36" id="adc.r_36.GL05-005">Department</adc:GL05-005>
     <context id="c-37">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -961,9 +961,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-38" id="adc.r_38.BS09-003">Osaka</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-38" id="adc.r_38.BS09-006">40</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-38" id="adc.r_38.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-38" id="adc.r_38.GL05-003">Osaka</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-38" id="adc.r_38.GL05-004">40</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-38" id="adc.r_38.GL05-005">Department</adc:GL05-005>
     <context id="c-39">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -1011,9 +1011,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-40" id="adc.r_40.BS09-003">Osaka</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-40" id="adc.r_40.BS09-006">40</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-40" id="adc.r_40.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-40" id="adc.r_40.GL05-003">Osaka</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-40" id="adc.r_40.GL05-004">40</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-40" id="adc.r_40.GL05-005">Department</adc:GL05-005>
     <context id="c-41">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -1085,9 +1085,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-43" id="adc.r_43.BS09-003">Sapporo</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-43" id="adc.r_43.BS09-006">10</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-43" id="adc.r_43.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-43" id="adc.r_43.GL05-003">Sapporo</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-43" id="adc.r_43.GL05-004">10</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-43" id="adc.r_43.GL05-005">Department</adc:GL05-005>
     <context id="c-44">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -1135,9 +1135,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-45" id="adc.r_45.BS09-003">Sapporo</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-45" id="adc.r_45.BS09-006">10</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-45" id="adc.r_45.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-45" id="adc.r_45.GL05-003">Sapporo</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-45" id="adc.r_45.GL05-004">10</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-45" id="adc.r_45.GL05-005">Department</adc:GL05-005>
     <context id="c-46">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -1186,9 +1186,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-47" id="adc.r_47.BS09-003">Common to all department</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-47" id="adc.r_47.BS09-006">0</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-47" id="adc.r_47.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-47" id="adc.r_47.GL05-003">Common to all department</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-47" id="adc.r_47.GL05-004">0</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-47" id="adc.r_47.GL05-005">Department</adc:GL05-005>
     <context id="c-48">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -1260,9 +1260,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-50" id="adc.r_50.BS09-003">Sapporo</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-50" id="adc.r_50.BS09-006">10</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-50" id="adc.r_50.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-50" id="adc.r_50.GL05-003">Sapporo</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-50" id="adc.r_50.GL05-004">10</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-50" id="adc.r_50.GL05-005">Department</adc:GL05-005>
     <context id="c-51">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -1310,9 +1310,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-52" id="adc.r_52.BS09-003">Sapporo</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-52" id="adc.r_52.BS09-006">10</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-52" id="adc.r_52.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-52" id="adc.r_52.GL05-003">Sapporo</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-52" id="adc.r_52.GL05-004">10</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-52" id="adc.r_52.GL05-005">Department</adc:GL05-005>
     <context id="c-53">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -1361,9 +1361,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-54" id="adc.r_54.BS09-003">Common to all department</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-54" id="adc.r_54.BS09-006">0</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-54" id="adc.r_54.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-54" id="adc.r_54.GL05-003">Common to all department</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-54" id="adc.r_54.GL05-004">0</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-54" id="adc.r_54.GL05-005">Department</adc:GL05-005>
     <context id="c-55">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -1435,9 +1435,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-57" id="adc.r_57.BS09-003">Sapporo</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-57" id="adc.r_57.BS09-006">10</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-57" id="adc.r_57.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-57" id="adc.r_57.GL05-003">Sapporo</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-57" id="adc.r_57.GL05-004">10</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-57" id="adc.r_57.GL05-005">Department</adc:GL05-005>
     <context id="c-58">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -1485,9 +1485,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-59" id="adc.r_59.BS09-003">Sapporo</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-59" id="adc.r_59.BS09-006">10</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-59" id="adc.r_59.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-59" id="adc.r_59.GL05-003">Sapporo</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-59" id="adc.r_59.GL05-004">10</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-59" id="adc.r_59.GL05-005">Department</adc:GL05-005>
     <context id="c-60">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -1536,9 +1536,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-61" id="adc.r_61.BS09-003">Common to all department</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-61" id="adc.r_61.BS09-006">0</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-61" id="adc.r_61.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-61" id="adc.r_61.GL05-003">Common to all department</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-61" id="adc.r_61.GL05-004">0</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-61" id="adc.r_61.GL05-005">Department</adc:GL05-005>
     <context id="c-62">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -1610,9 +1610,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-64" id="adc.r_64.BS09-003">Tokyo</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-64" id="adc.r_64.BS09-006">20</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-64" id="adc.r_64.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-64" id="adc.r_64.GL05-003">Tokyo</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-64" id="adc.r_64.GL05-004">20</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-64" id="adc.r_64.GL05-005">Department</adc:GL05-005>
     <context id="c-65">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -1661,9 +1661,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-66" id="adc.r_66.BS09-003">Common to all department</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-66" id="adc.r_66.BS09-006">0</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-66" id="adc.r_66.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-66" id="adc.r_66.GL05-003">Common to all department</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-66" id="adc.r_66.GL05-004">0</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-66" id="adc.r_66.GL05-005">Department</adc:GL05-005>
     <context id="c-67">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -1735,9 +1735,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-69" id="adc.r_69.BS09-003">Kyushu</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-69" id="adc.r_69.BS09-006">50</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-69" id="adc.r_69.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-69" id="adc.r_69.GL05-003">Kyushu</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-69" id="adc.r_69.GL05-004">50</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-69" id="adc.r_69.GL05-005">Department</adc:GL05-005>
     <context id="c-70">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -1785,9 +1785,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-71" id="adc.r_71.BS09-003">Kyushu</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-71" id="adc.r_71.BS09-006">50</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-71" id="adc.r_71.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-71" id="adc.r_71.GL05-003">Kyushu</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-71" id="adc.r_71.GL05-004">50</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-71" id="adc.r_71.GL05-005">Department</adc:GL05-005>
     <context id="c-72">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -1836,9 +1836,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-73" id="adc.r_73.BS09-003">Common to all department</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-73" id="adc.r_73.BS09-006">0</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-73" id="adc.r_73.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-73" id="adc.r_73.GL05-003">Common to all department</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-73" id="adc.r_73.GL05-004">0</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-73" id="adc.r_73.GL05-005">Department</adc:GL05-005>
     <context id="c-74">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -1887,9 +1887,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-75" id="adc.r_75.BS09-003">Kyushu</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-75" id="adc.r_75.BS09-006">50</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-75" id="adc.r_75.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-75" id="adc.r_75.GL05-003">Kyushu</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-75" id="adc.r_75.GL05-004">50</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-75" id="adc.r_75.GL05-005">Department</adc:GL05-005>
     <context id="c-76">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -1937,9 +1937,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-77" id="adc.r_77.BS09-003">Kyushu</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-77" id="adc.r_77.BS09-006">50</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-77" id="adc.r_77.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-77" id="adc.r_77.GL05-003">Kyushu</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-77" id="adc.r_77.GL05-004">50</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-77" id="adc.r_77.GL05-005">Department</adc:GL05-005>
     <context id="c-78">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -1988,9 +1988,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-79" id="adc.r_79.BS09-003">Kyushu</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-79" id="adc.r_79.BS09-006">50</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-79" id="adc.r_79.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-79" id="adc.r_79.GL05-003">Kyushu</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-79" id="adc.r_79.GL05-004">50</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-79" id="adc.r_79.GL05-005">Department</adc:GL05-005>
     <context id="c-80">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -2038,9 +2038,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-81" id="adc.r_81.BS09-003">Kyushu</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-81" id="adc.r_81.BS09-006">50</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-81" id="adc.r_81.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-81" id="adc.r_81.GL05-003">Kyushu</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-81" id="adc.r_81.GL05-004">50</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-81" id="adc.r_81.GL05-005">Department</adc:GL05-005>
     <context id="c-82">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -2112,9 +2112,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-84" id="adc.r_84.BS09-003">Tokyo</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-84" id="adc.r_84.BS09-006">20</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-84" id="adc.r_84.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-84" id="adc.r_84.GL05-003">Tokyo</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-84" id="adc.r_84.GL05-004">20</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-84" id="adc.r_84.GL05-005">Department</adc:GL05-005>
     <context id="c-85">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -2162,9 +2162,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-86" id="adc.r_86.BS09-003">Tokyo</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-86" id="adc.r_86.BS09-006">20</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-86" id="adc.r_86.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-86" id="adc.r_86.GL05-003">Tokyo</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-86" id="adc.r_86.GL05-004">20</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-86" id="adc.r_86.GL05-005">Department</adc:GL05-005>
     <context id="c-87">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -2213,9 +2213,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-88" id="adc.r_88.BS09-003">Common to all department</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-88" id="adc.r_88.BS09-006">0</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-88" id="adc.r_88.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-88" id="adc.r_88.GL05-003">Common to all department</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-88" id="adc.r_88.GL05-004">0</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-88" id="adc.r_88.GL05-005">Department</adc:GL05-005>
     <context id="c-89">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -2235,9 +2235,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-89" id="adc.r_89.BS09-003">Mizuho Bank Head Office</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-89" id="adc.r_89.BS09-006">20</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-89" id="adc.r_89.BS09-007">Sub account</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-89" id="adc.r_89.GL05-003">Mizuho Bank Head Office</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-89" id="adc.r_89.GL05-004">20</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-89" id="adc.r_89.GL05-005">Sub account</adc:GL05-005>
     <context id="c-90">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -2309,9 +2309,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-92" id="adc.r_92.BS09-003">Osaka</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-92" id="adc.r_92.BS09-006">40</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-92" id="adc.r_92.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-92" id="adc.r_92.GL05-003">Osaka</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-92" id="adc.r_92.GL05-004">40</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-92" id="adc.r_92.GL05-005">Department</adc:GL05-005>
     <context id="c-93">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -2359,9 +2359,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-94" id="adc.r_94.BS09-003">Osaka</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-94" id="adc.r_94.BS09-006">40</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-94" id="adc.r_94.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-94" id="adc.r_94.GL05-003">Osaka</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-94" id="adc.r_94.GL05-004">40</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-94" id="adc.r_94.GL05-005">Department</adc:GL05-005>
     <context id="c-95">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -2410,9 +2410,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-96" id="adc.r_96.BS09-003">Common to all department</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-96" id="adc.r_96.BS09-006">0</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-96" id="adc.r_96.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-96" id="adc.r_96.GL05-003">Common to all department</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-96" id="adc.r_96.GL05-004">0</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-96" id="adc.r_96.GL05-005">Department</adc:GL05-005>
     <context id="c-97">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -2484,9 +2484,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-99" id="adc.r_99.BS09-003">Common to all department</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-99" id="adc.r_99.BS09-006">0</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-99" id="adc.r_99.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-99" id="adc.r_99.GL05-003">Common to all department</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-99" id="adc.r_99.GL05-004">0</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-99" id="adc.r_99.GL05-005">Department</adc:GL05-005>
     <context id="c-100">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -2506,9 +2506,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-100" id="adc.r_100.BS09-003">Fukuoka Kitakyushu</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-100" id="adc.r_100.BS09-006">50</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-100" id="adc.r_100.BS09-007">Sub account</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-100" id="adc.r_100.GL05-003">Fukuoka Kitakyushu</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-100" id="adc.r_100.GL05-004">50</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-100" id="adc.r_100.GL05-005">Sub account</adc:GL05-005>
     <context id="c-101">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -2560,9 +2560,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-102" id="adc.r_102.BS09-003">Common to all department</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-102" id="adc.r_102.BS09-006">0</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-102" id="adc.r_102.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-102" id="adc.r_102.GL05-003">Common to all department</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-102" id="adc.r_102.GL05-004">0</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-102" id="adc.r_102.GL05-005">Department</adc:GL05-005>
     <context id="c-103">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -2611,9 +2611,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-104" id="adc.r_104.BS09-003">Kyushu</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-104" id="adc.r_104.BS09-006">50</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-104" id="adc.r_104.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-104" id="adc.r_104.GL05-003">Kyushu</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-104" id="adc.r_104.GL05-004">50</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-104" id="adc.r_104.GL05-005">Department</adc:GL05-005>
     <context id="c-105">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -2661,9 +2661,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-106" id="adc.r_106.BS09-003">Kyushu</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-106" id="adc.r_106.BS09-006">50</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-106" id="adc.r_106.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-106" id="adc.r_106.GL05-003">Kyushu</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-106" id="adc.r_106.GL05-004">50</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-106" id="adc.r_106.GL05-005">Department</adc:GL05-005>
     <context id="c-107">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -2715,9 +2715,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-108" id="adc.r_108.BS09-003">Common to all department</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-108" id="adc.r_108.BS09-006">0</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-108" id="adc.r_108.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-108" id="adc.r_108.GL05-003">Common to all department</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-108" id="adc.r_108.GL05-004">0</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-108" id="adc.r_108.GL05-005">Department</adc:GL05-005>
     <context id="c-109">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -2789,9 +2789,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-111" id="adc.r_111.BS09-003">Common to all department</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-111" id="adc.r_111.BS09-006">0</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-111" id="adc.r_111.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-111" id="adc.r_111.GL05-003">Common to all department</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-111" id="adc.r_111.GL05-004">0</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-111" id="adc.r_111.GL05-005">Department</adc:GL05-005>
     <context id="c-112">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -2811,9 +2811,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-112" id="adc.r_112.BS09-003">Mizuho Bank Head Office</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-112" id="adc.r_112.BS09-006">20</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-112" id="adc.r_112.BS09-007">Sub account</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-112" id="adc.r_112.GL05-003">Mizuho Bank Head Office</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-112" id="adc.r_112.GL05-004">20</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-112" id="adc.r_112.GL05-005">Sub account</adc:GL05-005>
     <context id="c-113">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -2865,9 +2865,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-114" id="adc.r_114.BS09-003">Common to all department</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-114" id="adc.r_114.BS09-006">0</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-114" id="adc.r_114.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-114" id="adc.r_114.GL05-003">Common to all department</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-114" id="adc.r_114.GL05-004">0</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-114" id="adc.r_114.GL05-005">Department</adc:GL05-005>
     <context id="c-115">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -2916,9 +2916,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-116" id="adc.r_116.BS09-003">Tokyo</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-116" id="adc.r_116.BS09-006">20</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-116" id="adc.r_116.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-116" id="adc.r_116.GL05-003">Tokyo</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-116" id="adc.r_116.GL05-004">20</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-116" id="adc.r_116.GL05-005">Department</adc:GL05-005>
     <context id="c-117">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -2966,9 +2966,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-118" id="adc.r_118.BS09-003">Tokyo</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-118" id="adc.r_118.BS09-006">20</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-118" id="adc.r_118.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-118" id="adc.r_118.GL05-003">Tokyo</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-118" id="adc.r_118.GL05-004">20</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-118" id="adc.r_118.GL05-005">Department</adc:GL05-005>
     <context id="c-119">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -3020,9 +3020,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-120" id="adc.r_120.BS09-003">Common to all department</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-120" id="adc.r_120.BS09-006">0</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-120" id="adc.r_120.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-120" id="adc.r_120.GL05-003">Common to all department</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-120" id="adc.r_120.GL05-004">0</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-120" id="adc.r_120.GL05-005">Department</adc:GL05-005>
     <context id="c-121">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -3093,9 +3093,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-123" id="adc.r_123.BS09-003">Common to all department</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-123" id="adc.r_123.BS09-006">0</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-123" id="adc.r_123.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-123" id="adc.r_123.GL05-003">Common to all department</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-123" id="adc.r_123.GL05-004">0</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-123" id="adc.r_123.GL05-005">Department</adc:GL05-005>
     <context id="c-124">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -3115,9 +3115,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-124" id="adc.r_124.BS09-003">Mitsui Bank Nagoya</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-124" id="adc.r_124.BS09-006">30</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-124" id="adc.r_124.BS09-007">Sub account</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-124" id="adc.r_124.GL05-003">Mitsui Bank Nagoya</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-124" id="adc.r_124.GL05-004">30</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-124" id="adc.r_124.GL05-005">Sub account</adc:GL05-005>
     <context id="c-125">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -3169,9 +3169,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-126" id="adc.r_126.BS09-003">Common to all department</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-126" id="adc.r_126.BS09-006">0</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-126" id="adc.r_126.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-126" id="adc.r_126.GL05-003">Common to all department</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-126" id="adc.r_126.GL05-004">0</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-126" id="adc.r_126.GL05-005">Department</adc:GL05-005>
     <context id="c-127">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -3220,9 +3220,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-128" id="adc.r_128.BS09-003">Nagoya</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-128" id="adc.r_128.BS09-006">30</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-128" id="adc.r_128.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-128" id="adc.r_128.GL05-003">Nagoya</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-128" id="adc.r_128.GL05-004">30</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-128" id="adc.r_128.GL05-005">Department</adc:GL05-005>
     <context id="c-129">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -3270,9 +3270,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-130" id="adc.r_130.BS09-003">Nagoya</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-130" id="adc.r_130.BS09-006">30</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-130" id="adc.r_130.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-130" id="adc.r_130.GL05-003">Nagoya</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-130" id="adc.r_130.GL05-004">30</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-130" id="adc.r_130.GL05-005">Department</adc:GL05-005>
     <context id="c-131">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -3324,9 +3324,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-132" id="adc.r_132.BS09-003">Common to all department</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-132" id="adc.r_132.BS09-006">0</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-132" id="adc.r_132.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-132" id="adc.r_132.GL05-003">Common to all department</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-132" id="adc.r_132.GL05-004">0</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-132" id="adc.r_132.GL05-005">Department</adc:GL05-005>
     <context id="c-133">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -3397,9 +3397,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-135" id="adc.r_135.BS09-003">Tokyo</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-135" id="adc.r_135.BS09-006">20</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-135" id="adc.r_135.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-135" id="adc.r_135.GL05-003">Tokyo</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-135" id="adc.r_135.GL05-004">20</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-135" id="adc.r_135.GL05-005">Department</adc:GL05-005>
     <context id="c-136">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -3447,9 +3447,9 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-137" id="adc.r_137.BS09-003">Tokyo</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-137" id="adc.r_137.BS09-006">20</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-137" id="adc.r_137.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-137" id="adc.r_137.GL05-003">Tokyo</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-137" id="adc.r_137.GL05-004">20</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-137" id="adc.r_137.GL05-005">Department</adc:GL05-005>
     <context id="c-138">
         <entity>
             <identifier scheme="http://www.example.com">Example Co.</identifier>
@@ -3498,7 +3498,7 @@
             <instant>2023-10-31</instant>
         </period>
     </context>
-    <adc:BS09-003 contextRef="c-139" id="adc.r_139.BS09-003">Common to all department</adc:BS09-003>
-    <adc:BS09-006 contextRef="c-139" id="adc.r_139.BS09-006">0</adc:BS09-006>
-    <adc:BS09-007 contextRef="c-139" id="adc.r_139.BS09-007">Department</adc:BS09-007>
+    <adc:GL05-003 contextRef="c-139" id="adc.r_139.GL05-003">Common to all department</adc:GL05-003>
+    <adc:GL05-004 contextRef="c-139" id="adc.r_139.GL05-004">0</adc:GL05-004>
+    <adc:GL05-005 contextRef="c-139" id="adc.r_139.GL05-005">Department</adc:GL05-005>
 </xbrl>

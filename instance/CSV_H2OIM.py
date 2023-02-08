@@ -189,7 +189,7 @@ if __name__ == '__main__':
     for id in records2[0].keys():
         if not id in ['d_GL02','d_GL03','d_BS01']:
             metadata['tableTemplates']['adc']['columns'][id] = {"dimensions": {"concept": f"adc:{id}"}}
-            if id =='A026-A089-001':
+            if id =='CM07-001':
                 metadata['tableTemplates']['adc']['columns'][id]['dimensions']['unit'] = 'iso4217:JPY'
                 
     print(json.dumps(metadata))

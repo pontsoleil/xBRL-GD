@@ -80,3 +80,14 @@ Open xBRL-XML instance instance/adc-instances0_H.xbrl
 Open xBRL-XML taxonomy taxonomy/H/core.xsd
 
 Open xBRL-XML instance instance/adc-instances0_H.xbrl
+
+=if(c17="ACC",
+  I17&". Details",
+  if(or(mid(c17,1,5)="IDCC",c17="BCCE"),
+    if (and(k17="Identification",m17="Identifier"),
+      "ID",
+      I17&". "&K17&". "&M17
+    ),
+    if(or(c17="RFCC",c17="ASCC"),I173&". "&K17&". "&P17,"")
+  )
+)

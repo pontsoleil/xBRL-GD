@@ -46,9 +46,9 @@
                         "concept": "adc:CM01-002"
                     }
                 },
-                "GL03-007": {
+                "GL02-007": {
                     "dimensions": {
-                        "concept": "adc:GL03-007"
+                        "concept": "adc:GL02-007"
                     }
                 },
                 "GL03-005": {
@@ -108,7 +108,8 @@
                 },
                 "CM07-001": {
                     "dimensions": {
-                        "concept": "adc:CM07-001"
+                        "concept": "adc:CM07-001",
+                        "unit": "iso4217:JPY"
                     }
                 },
                 "CM08-001": {
@@ -116,9 +117,9 @@
                         "concept": "adc:CM08-001"
                     }
                 },
-                "GL02-007": {
+                "GL03-007": {
                     "dimensions": {
-                        "concept": "adc:GL02-007"
+                        "concept": "adc:GL03-007"
                     }
                 },
                 "GL03-006": {
