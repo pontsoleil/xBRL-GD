@@ -1,0 +1,2359 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="GLFramework-REC-2007-04-17_files/filelist.xml">
+<title>XBRL Global Ledger Framework (RECOMMENDATION)</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="PlaceName"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="PlaceType"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="country-region"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="place"/>
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;
+	mso-font-alt:"?l?r ??fc";
+	mso-font-charset:128;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-1610612033 1757936891 16 0 131231 0;}
+@font-face
+	{font-family:"Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;
+	mso-font-charset:128;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-1 -369098753 63 0 4129279 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:1627421319 -2147483648 8 0 66047 0;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:536871559 0 0 0 415 0;}
+@font-face
+	{font-family:"\@Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;
+	mso-font-charset:128;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-1 -369098753 63 0 4129279 0;}
+@font-face
+	{font-family:"\@MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;
+	mso-font-charset:128;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-1610612033 1757936891 16 0 131231 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+h1
+	{margin-top:18.0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	font-family:Arial;
+	font-weight:bold;}
+h2
+	{margin-top:12.0pt;
+	margin-right:0pt;
+	margin-bottom:3.0pt;
+	margin-left:39.6pt;
+	text-indent:-21.6pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:14.0pt;
+	font-family:Arial;
+	font-weight:bold;
+	font-style:italic;}
+h3
+	{margin-top:12.0pt;
+	margin-right:0pt;
+	margin-bottom:3.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:13.0pt;
+	font-family:Arial;
+	font-weight:bold;}
+h4
+	{margin-top:12.0pt;
+	margin-right:0pt;
+	margin-bottom:3.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	font-size:12.0pt;
+	font-family:Verdana;
+	font-weight:bold;}
+h5
+	{margin-top:12.0pt;
+	margin-right:0pt;
+	margin-bottom:3.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	mso-outline-level:5;
+	font-size:13.0pt;
+	font-family:Verdana;
+	font-weight:bold;
+	font-style:italic;}
+h6
+	{margin-top:12.0pt;
+	margin-right:0pt;
+	margin-bottom:3.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:6;
+	font-size:10.0pt;
+	font-family:Verdana;
+	font-weight:bold;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{margin-top:12.0pt;
+	margin-right:0pt;
+	margin-bottom:3.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	mso-outline-level:7;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{margin-top:12.0pt;
+	margin-right:0pt;
+	margin-bottom:3.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	mso-outline-level:8;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";
+	font-style:italic;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{margin-top:12.0pt;
+	margin-right:0pt;
+	margin-bottom:3.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	mso-outline-level:9;
+	font-size:11.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"MS Mincho";}
+p.MsoIndex1, li.MsoIndex1, div.MsoIndex1
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:10.0pt;
+	text-indent:-10.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoIndex2, li.MsoIndex2, div.MsoIndex2
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:20.0pt;
+	text-indent:-10.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoIndex3, li.MsoIndex3, div.MsoIndex3
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:30.0pt;
+	text-indent:-10.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoIndex4, li.MsoIndex4, div.MsoIndex4
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:40.0pt;
+	text-indent:-10.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoIndex5, li.MsoIndex5, div.MsoIndex5
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:50.0pt;
+	text-indent:-10.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoIndex6, li.MsoIndex6, div.MsoIndex6
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:60.0pt;
+	text-indent:-10.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoIndex7, li.MsoIndex7, div.MsoIndex7
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:70.0pt;
+	text-indent:-10.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoIndex8, li.MsoIndex8, div.MsoIndex8
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:80.0pt;
+	text-indent:-10.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoIndex9, li.MsoIndex9, div.MsoIndex9
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:90.0pt;
+	text-indent:-10.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin-top:6.0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"MS Mincho";
+	text-transform:uppercase;
+	font-weight:bold;}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:10.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"MS Mincho";
+	font-variant:small-caps;}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:20.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"MS Mincho";}
+p.MsoToc4, li.MsoToc4, div.MsoToc4
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:30.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"MS Mincho";}
+p.MsoToc5, li.MsoToc5, div.MsoToc5
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:40.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";}
+p.MsoToc6, li.MsoToc6, div.MsoToc6
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:50.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";}
+p.MsoToc7, li.MsoToc7, div.MsoToc7
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:60.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";}
+p.MsoToc8, li.MsoToc8, div.MsoToc8
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:70.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";}
+p.MsoToc9, li.MsoToc9, div.MsoToc9
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:80.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";}
+p.MsoNormalIndent, li.MsoNormalIndent, div.MsoNormalIndent
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:36.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoIndexHeading, li.MsoIndexHeading, div.MsoIndexHeading
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"MS Mincho";
+	font-weight:bold;}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{margin-top:6.0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";
+	font-weight:bold;}
+p.MsoTof, li.MsoTof, div.MsoTof
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:20.0pt;
+	text-indent:-20.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoEnvelopeAddress, li.MsoEnvelopeAddress, div.MsoEnvelopeAddress
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:144.0pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"MS Mincho";}
+p.MsoEnvelopeReturn, li.MsoEnvelopeReturn, div.MsoEnvelopeReturn
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"MS Mincho";}
+span.MsoFootnoteReference
+	{vertical-align:super;}
+span.MsoEndnoteReference
+	{vertical-align:super;}
+p.MsoEndnoteText, li.MsoEndnoteText, div.MsoEndnoteText
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoToa, li.MsoToa, div.MsoToa
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:10.0pt;
+	text-indent:-10.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoToaHeading, li.MsoToaHeading, div.MsoToaHeading
+	{margin-top:6.0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"MS Mincho";
+	font-weight:bold;}
+p.MsoList, li.MsoList, div.MsoList
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoListBullet, li.MsoListBullet, div.MsoListBullet
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoListNumber, li.MsoListNumber, div.MsoListNumber
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoList2, li.MsoList2, div.MsoList2
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:36.0pt;
+	text-indent:-18.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoList3, li.MsoList3, div.MsoList3
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:54.0pt;
+	text-indent:-18.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoList4, li.MsoList4, div.MsoList4
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:72.0pt;
+	text-indent:-18.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoList5, li.MsoList5, div.MsoList5
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:90.0pt;
+	text-indent:-18.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoListBullet2, li.MsoListBullet2, div.MsoListBullet2
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:36.0pt;
+	text-indent:-18.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoListBullet3, li.MsoListBullet3, div.MsoListBullet3
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:54.0pt;
+	text-indent:-18.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoListBullet4, li.MsoListBullet4, div.MsoListBullet4
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:72.0pt;
+	text-indent:-18.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoListBullet5, li.MsoListBullet5, div.MsoListBullet5
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:90.0pt;
+	text-indent:-18.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoListNumber2, li.MsoListNumber2, div.MsoListNumber2
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:36.0pt;
+	text-indent:-18.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoListNumber3, li.MsoListNumber3, div.MsoListNumber3
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:54.0pt;
+	text-indent:-18.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoListNumber4, li.MsoListNumber4, div.MsoListNumber4
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:72.0pt;
+	text-indent:-18.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoListNumber5, li.MsoListNumber5, div.MsoListNumber5
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:90.0pt;
+	text-indent:-18.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{margin-top:12.0pt;
+	margin-right:0pt;
+	margin-bottom:3.0pt;
+	margin-left:0pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:16.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"MS Mincho";
+	font-weight:bold;}
+p.MsoClosing, li.MsoClosing, div.MsoClosing
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:216.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoSignature, li.MsoSignature, div.MsoSignature
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:216.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:18.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoListContinue, li.MsoListContinue, div.MsoListContinue
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:18.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoListContinue2, li.MsoListContinue2, div.MsoListContinue2
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:36.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoListContinue3, li.MsoListContinue3, div.MsoListContinue3
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:54.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoListContinue4, li.MsoListContinue4, div.MsoListContinue4
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:72.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoListContinue5, li.MsoListContinue5, div.MsoListContinue5
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:90.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoMessageHeader, li.MsoMessageHeader, div.MsoMessageHeader
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:54.0pt;
+	text-indent:-54.0pt;
+	mso-pagination:widow-orphan;
+	background:#CCCCCC;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"MS Mincho";}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:3.0pt;
+	margin-left:0pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"MS Mincho";}
+p.MsoSalutation, li.MsoSalutation, div.MsoSalutation
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoDate, li.MsoDate, div.MsoDate
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoBodyTextFirstIndent, li.MsoBodyTextFirstIndent, div.MsoBodyTextFirstIndent
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	text-indent:10.5pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoBodyTextFirstIndent2, li.MsoBodyTextFirstIndent2, div.MsoBodyTextFirstIndent2
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:18.0pt;
+	text-indent:10.5pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoNoteHeading, li.MsoNoteHeading, div.MsoNoteHeading
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoBodyText2, li.MsoBodyText2, div.MsoBodyText2
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	line-height:200%;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoBodyText3, li.MsoBodyText3, div.MsoBodyText3
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:18.0pt;
+	line-height:200%;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:18.0pt;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoBlockText, li.MsoBlockText, div.MsoBlockText
+	{margin-top:0pt;
+	margin-right:72.0pt;
+	margin-bottom:6.0pt;
+	margin-left:72.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	background:navy;
+	font-size:10.0pt;
+	font-family:Tahoma;
+	mso-fareast-font-family:"MS Mincho";}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"MS Mincho";}
+p.MsoAutoSig, li.MsoAutoSig, div.MsoAutoSig
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";}
+address
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	font-style:italic;}
+pre
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"MS Mincho";}
+tt
+	{font-family:"Arial Unicode MS";
+	mso-ascii-font-family:"Arial Unicode MS";
+	mso-fareast-font-family:"Arial Unicode MS";
+	mso-hansi-font-family:"Arial Unicode MS";
+	mso-bidi-font-family:"Arial Unicode MS";}
+p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";
+	font-weight:bold;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	font-family:Tahoma;
+	mso-fareast-font-family:"MS Mincho";}
+p.msomaprotext, li.msomaprotext, div.msomaprotext
+	{mso-style-name:msomaprotext;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"MS Mincho";}
+p.heading1-notoc, li.heading1-notoc, div.heading1-notoc
+	{mso-style-name:heading1-notoc;
+	margin-top:18.0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"MS Mincho";
+	font-weight:bold;}
+p.code, li.code, div.code
+	{mso-style-name:code;
+	margin:0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"MS Mincho";}
+p.p-normal, li.p-normal, div.p-normal
+	{mso-style-name:p-normal;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Arial Unicode MS";}
+p.table-l1, li.table-l1, div.table-l1
+	{mso-style-name:table-l1;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Arial Unicode MS";}
+p.table-verdana, li.table-verdana, div.table-verdana
+	{mso-style-name:table-verdana;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Arial Unicode MS";}
+p.table-l2, li.table-l2, div.table-l2
+	{mso-style-name:table-l2;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Arial Unicode MS";}
+p.table-l3, li.table-l3, div.table-l3
+	{mso-style-name:table-l3;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Arial Unicode MS";}
+p.table-bold, li.table-bold, div.table-bold
+	{mso-style-name:table-bold;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Arial Unicode MS";}
+p.table-normal, li.table-normal, div.table-normal
+	{mso-style-name:table-normal;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Arial Unicode MS";}
+p.h2-iastitle, li.h2-iastitle, div.h2-iastitle
+	{mso-style-name:h2-iastitle;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Arial Unicode MS";}
+p.preformatted, li.preformatted, div.preformatted
+	{mso-style-name:preformatted;
+	margin:0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	layout-grid-mode:char;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"MS Mincho";}
+p.h2, li.h2, div.h2
+	{mso-style-name:h2;
+	margin-top:5.0pt;
+	margin-right:0pt;
+	margin-bottom:5.0pt;
+	margin-left:0pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	layout-grid-mode:char;
+	font-size:18.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";
+	font-weight:bold;}
+p.blockquote, li.blockquote, div.blockquote
+	{mso-style-name:blockquote;
+	margin-top:5.0pt;
+	margin-right:18.0pt;
+	margin-bottom:5.0pt;
+	margin-left:18.0pt;
+	mso-pagination:widow-orphan;
+	layout-grid-mode:char;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";}
+p.numbered, li.numbered, div.numbered
+	{mso-style-name:numbered;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:18.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";}
+p.bullets, li.bullets, div.bullets
+	{mso-style-name:bullets;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:90.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";}
+p.tabletitle, li.tabletitle, div.tabletitle
+	{mso-style-name:tabletitle;
+	margin-top:3.0pt;
+	margin-right:0pt;
+	margin-bottom:3.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";
+	font-weight:bold;}
+p.table, li.table, div.table
+	{mso-style-name:table;
+	margin-top:1.0pt;
+	margin-right:0pt;
+	margin-bottom:1.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";}
+p.table-normal1, li.table-normal1, div.table-normal1
+	{mso-style-name:table-normal1;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Arial Unicode MS";}
+p.normalbullet, li.normalbullet, div.normalbullet
+	{mso-style-name:normalbullet;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:9.0pt;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";}
+p.head1, li.head1, div.head1
+	{mso-style-name:head1;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"MS Mincho";
+	font-weight:bold;}
+span.codechar
+	{mso-style-name:codechar;
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+span.m1
+	{mso-style-name:m1;
+	color:blue;}
+span.ver8pt1line1
+	{mso-style-name:ver8pt1line1;
+	font-family:Verdana;
+	mso-ascii-font-family:Verdana;
+	mso-hansi-font-family:Verdana;
+	color:black;
+	mso-text-animation:none;
+	text-decoration:none;
+	text-underline:none;
+	text-decoration:none;
+	text-line-through:none;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+@page Section1
+	{size:612.0pt 792.0pt;
+	margin:62.65pt 79.2pt 72.0pt 79.2pt;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:-132;
+	mso-list-type:simple;
+	mso-list-template-ids:518050652;}
+@list l0:level1
+	{mso-level-style-link:"List Number 5";
+	mso-level-tab-stop:74.6pt;
+	mso-level-number-position:left;
+	margin-left:74.6pt;
+	text-indent:-18.0pt;}
+@list l1
+	{mso-list-id:-131;
+	mso-list-type:simple;
+	mso-list-template-ids:-15437672;}
+@list l1:level1
+	{mso-level-style-link:"List Number 4";
+	mso-level-tab-stop:60.45pt;
+	mso-level-number-position:left;
+	margin-left:60.45pt;
+	text-indent:-18.0pt;}
+@list l2
+	{mso-list-id:-130;
+	mso-list-type:simple;
+	mso-list-template-ids:243691030;}
+@list l2:level1
+	{mso-level-style-link:"List Number 3";
+	mso-level-tab-stop:46.3pt;
+	mso-level-number-position:left;
+	margin-left:46.3pt;
+	text-indent:-18.0pt;}
+@list l3
+	{mso-list-id:-129;
+	mso-list-type:simple;
+	mso-list-template-ids:-305772108;}
+@list l3:level1
+	{mso-level-style-link:"List Number 2";
+	mso-level-tab-stop:32.15pt;
+	mso-level-number-position:left;
+	margin-left:32.15pt;
+	text-indent:-18.0pt;}
+@list l4
+	{mso-list-id:-128;
+	mso-list-type:simple;
+	mso-list-template-ids:253803260;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-style-link:"List Bullet 5";
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:74.6pt;
+	mso-level-number-position:left;
+	margin-left:74.6pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l5
+	{mso-list-id:-127;
+	mso-list-type:simple;
+	mso-list-template-ids:-799896154;}
+@list l5:level1
+	{mso-level-number-format:bullet;
+	mso-level-style-link:"List Bullet 4";
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:60.45pt;
+	mso-level-number-position:left;
+	margin-left:60.45pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l6
+	{mso-list-id:-126;
+	mso-list-type:simple;
+	mso-list-template-ids:-1179491876;}
+@list l6:level1
+	{mso-level-number-format:bullet;
+	mso-level-style-link:"List Bullet 3";
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:46.3pt;
+	mso-level-number-position:left;
+	margin-left:46.3pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l7
+	{mso-list-id:-125;
+	mso-list-type:simple;
+	mso-list-template-ids:-887322512;}
+@list l7:level1
+	{mso-level-number-format:bullet;
+	mso-level-style-link:"List Bullet 2";
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:32.15pt;
+	mso-level-number-position:left;
+	margin-left:32.15pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l8
+	{mso-list-id:-120;
+	mso-list-type:simple;
+	mso-list-template-ids:265598550;}
+@list l8:level1
+	{mso-level-style-link:"List Number";
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;}
+@list l9
+	{mso-list-id:-119;
+	mso-list-type:simple;
+	mso-list-template-ids:-1827788956;}
+@list l9:level1
+	{mso-level-number-format:bullet;
+	mso-level-style-link:"List Bullet";
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0pt;}
+ul
+	{margin-bottom:0pt;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0pt 5.4pt 0pt 5.4pt;
+	mso-para-margin:0pt;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="3074"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:36.0pt'>
+
+<div class=Section1>
+
+<p class=MsoNormal align=center style='margin-bottom:0pt;margin-bottom:.0001pt;
+text-align:center'><b><span lang=EN-GB style='font-size:22.0pt;font-family:
+Arial;mso-ansi-language:EN-GB'>XBRL Global Ledger Framework (RECOMMENDATION)</span></b><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-top:0pt;margin-right:28.45pt;
+margin-bottom:6.0pt;margin-left:36.0pt;text-align:center'><span lang=EN-GB
+style='mso-ansi-language:EN-GB'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-top:0pt;margin-right:28.45pt;
+margin-bottom:0pt;margin-left:36.0pt;margin-bottom:.0001pt;text-align:center'><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>Copyright © XBRL International
+2006/7. All Rights Reserved. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0pt;margin-bottom:.0001pt'><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>&nbsp;<o:p></o:p></span></p>
+
+<div style='border:none;border-bottom:solid windowtext 1.0pt;padding:0pt 0pt 1.0pt 0pt;
+border-color:-moz-use-text-color -moz-use-text-color windowtext'>
+
+<p class=MsoNormal><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>&nbsp;</span></b><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+</div>
+
+<h6><span lang=EN-GB style='mso-ansi-language:EN-GB'>Summary Taxonomy
+Information:<o:p></o:p></span></h6>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=676
+ style='width:506.85pt;margin-left:-3.6pt;border-collapse:collapse;mso-padding-alt:
+ 0pt 0pt 0pt 0pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=144 valign=top style='width:108.0pt;border-top:1.5pt;border-left:
+  1.5pt;border-bottom:1.0pt;border-right:1.0pt;border-color:black;border-style:
+  solid;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoToc1 style='margin-top:0pt'><span lang=EN-GB style='font-family:
+  Verdana;text-transform:none;mso-ansi-language:EN-GB'>Purpose and Scope:</span><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  </td>
+  <td width=532 valign=top style='width:398.85pt;border-top:solid windowtext 1.5pt;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0pt 5.4pt 0pt 5.4pt;border-color:-moz-use-text-color'>
+  <p class=MsoHeader><span lang=EN-GB style='mso-ansi-language:EN-GB'>This
+  taxonomy (a modular set) is intended to provide a standardized format for
+  representing the data fields found in accounting and operation systems and transactional
+  reports that will allow organizations to tag journal entries, accounting
+  master files, and historical status reports in XBRL. The modular set consists
+  of the COR (Core), the BUS (Advanced Business Concepts), MUC (<span
+  class=SpellE>MultiCurrency</span>), USK (concepts for the <st1:country-region
+  w:st="on">US</st1:country-region>, <st1:country-region w:st="on"><st1:place
+   w:st="on">UK</st1:place></st1:country-region>, etc) and TAF (tax audit file)
+  modules.<o:p></o:p></span></p>
+  <p class=MsoHeader><span lang=EN-GB style='mso-ansi-language:EN-GB'>COR
+  updates the Core 1.1 to comply with XBRL Specification Version 2.1, dated
+  2003-12-31 plus errata corrections dated 2006-12-18. <o:p></o:p></span></p>
+  <p class=MsoHeader><span lang=EN-GB style='mso-ansi-language:EN-GB'>BUS, an
+  update to Advanced Business Concepts 1.1, augments COR with data fields found
+  in accounting and operation systems that will allow organizations to track
+  much more detail as part of every entry. This taxonomy represents inventory
+  and business metrics, organizational detail and the Entity Information
+  section, and other common items to supplement the resources, agents and
+  events that represent the customer, vendor and employee related transactional
+  detail.<o:p></o:p></span></p>
+  <p class=MsoHeader><span lang=EN-GB style='mso-ansi-language:EN-GB'>MUC, the
+  update to Multicurrency 1.1, adds data fields found in accounting and
+  operation systems that will allow organizations to track much more detail as
+  part of every entry. This includes detail for the Entity Information section,
+  additional sections necessary for other add-on modules, and information for
+  business metrics/inventory tracking.<o:p></o:p></span></p>
+  <p class=MsoHeader><span lang=EN-GB style='mso-ansi-language:EN-GB'>USK, an
+  update to Advanced US/UK Accounting 1.1, provides data fields found in
+  accounting and operation systems that will allow organizations to tag journal
+  entries, accounting master files, and historical status reports with
+  additional information necessary for more sophisticated accounting needs
+  common to <span class=SpellE>Saxonic</span> (US, UK, Australia, Canada, and
+  other jurisdictions) in XBRL.<o:p></o:p></span></p>
+  <p class=MsoHeader><span lang=EN-GB style='mso-ansi-language:EN-GB'>TAF is a
+  new module, not an update of a previous version. It adds data fields, needed
+  for tax, tax audit.&nbsp; The addition of these fields enables XBRL GL to be
+  used by the international tax agencies and was developed with the input of
+  groups such As the OECD SAF-T group and the OASIS tax XML group. <o:p></o:p></span></p>
+  <p class=MsoHeader><span lang=EN-GB style='mso-ansi-language:EN-GB'>Each
+  module can be seen as taxonomy with the others as extensions to the Core, but
+  it is more worthwhile to look at the modules as parts of a whole, even though
+  it is not essential to use all of them.<o:p></o:p></span></p>
+  <p class=MsoHeader><span lang=EN-GB style='mso-ansi-language:EN-GB'>The
+  structure of the taxonomies is such that a complete taxonomy is “compiled” by
+  assembling a set of schemas via a “palette” schema (which is always in the
+  file named gl-plt-2006-10-25.xsd). Since the content models of many elements
+  vary depending on the combination of modules that are being used in any one
+  application, the taxonomy schemas are separated into multiple physical files
+  that are connected by means of &lt;include&gt; and &lt;import&gt; statements.
+  There is one “general” schema (gl&#8209;gen-2006-10-25.xsd) that is
+  &lt;import&gt;<span class=SpellE>ed</span> by the others. Each module’s own
+  schema is divided into two main parts – the element declarations (in <span
+  class=SpellE>gl</span>-<i> xxx</i>-2006-10-25.xsd) and the content model
+  declarations (in gl-<i>xxx</i>-content-2006-10-25.xsd – which
+  &lt;include&gt;s <span class=SpellE>gl</span>-<i> xxx</i>-2006-10-25.xsd to
+  form a complete schema) where “<i>xxx</i>” is the lowercase 3 character code
+  for the relevant module. <o:p></o:p></span></p>
+  <p class=MsoHeader><span lang=EN-GB style='mso-ansi-language:EN-GB'>The
+  various combinations of modules that are delivered for this taxonomy are
+  listed below. They are each located in a sub-folder of the “<span
+  class=SpellE>plt</span>” folder that is a sibling folder of the various
+  module folders (named “<span class=SpellE><i>cor</i></span>”, “<i>bus</i>”
+  etc.). The names of the pertinent subfolders are shown below.<o:p></o:p></span></p>
+  <p class=MsoHeader><span lang=EN-GB style='mso-ansi-language:EN-GB'>COR
+  (subfolder <i>case-c</i>)<o:p></o:p></span></p>
+  <p class=MsoHeader><span lang=EN-GB style='mso-ansi-language:EN-GB'>COR and
+  BUS (subfolder <i>case-c-b</i>)<o:p></o:p></span></p>
+  <p class=MsoHeader><span lang=EN-GB style='mso-ansi-language:EN-GB'>COR and
+  BUS and MUC (subfolder <i>case-c-b-m</i>)<o:p></o:p></span></p>
+  <p class=MsoHeader><span lang=EN-GB style='mso-ansi-language:EN-GB'>COR and
+  BUS and MUC and USK (subfolder <i>case-c-b-m-u</i>)<o:p></o:p></span></p>
+  <p class=MsoHeader><span lang=EN-GB style='mso-ansi-language:EN-GB'>COR and
+  BUS and MUC and USK and TAF (subfolder <i>case-c-b-m-u-t</i>)<o:p></o:p></span></p>
+  <p class=MsoHeader><span lang=EN-GB style='mso-ansi-language:EN-GB'>COR and
+  BUS and TAF (subfolder <i>case-c-b-t</i>)<o:p></o:p></span></p>
+  <p class=MsoHeader><span lang=EN-GB style='mso-ansi-language:EN-GB'>COR and
+  TAF (subfolder <i>case-c-t</i>)<o:p></o:p></span></p>
+  <p class=MsoHeader><span lang=EN-GB style='mso-ansi-language:EN-GB'>For more detailed
+  information see the accompanying document GLTFTA-REC-2007-04-17.rtf<o:p></o:p></span></p>
+  <p class=MsoHeader><span lang=EN-GB style='mso-ansi-language:EN-GB'>Also
+  included is the IDS subfolder which contains sample instance documents to
+  illustrate the use of XBRL GL to represent common business documents.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=144 valign=top style='width:108.0pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;border-right:
+  solid windowtext 1.0pt;padding:0pt 5.4pt 0pt 5.4pt;border-color:-moz-use-text-color black black'>
+  <p class=MsoToc1 style='margin-top:0pt'><span lang=EN-GB style='font-family:
+  Verdana;text-transform:none;mso-ansi-language:EN-GB'>Relationship to Prior releases</span><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  </td>
+  <td width=532 valign=top style='width:398.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0pt 5.4pt 0pt 5.4pt;border-color:-moz-use-text-color black black -moz-use-text-color'>
+  <p class=MsoHeader><span lang=EN-GB style='mso-ansi-language:EN-GB'>This
+  release is compliant with XBRL 2.1, Specification dated 2003-12-31 plus
+  errata corrections dated 2006-12-18. <o:p></o:p></span></p>
+  <p class=MsoHeader><span lang=EN-GB style='mso-ansi-language:EN-GB'>XBRL GL
+  Version 1.1 is compliant with XBRL Specification 2.0a; XBRL GL Version 1.0 is
+  compliant with XBRL Specification 2.0; there is no intention for further
+  development work on either of these prior taxonomy releases.</span><span
+  lang=EN-GB style='font-size:8.0pt;color:black;mso-ansi-language:EN-GB'> </span><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2;page-break-inside:avoid'>
+  <td width=144 style='width:108.0pt;border-top:none;border-left:solid windowtext 1.5pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt;border-color:-moz-use-text-color black black'>
+  <p class=MsoNormal><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>Owner(s)</span></b><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  </td>
+  <td width=532 style='width:398.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0pt 5.4pt 0pt 5.4pt;border-color:-moz-use-text-color black black -moz-use-text-color'>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'>XBRL
+  International Inc<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3;page-break-inside:avoid'>
+  <td width=144 style='width:108.0pt;border-top:none;border-left:solid windowtext 1.5pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt;border-color:-moz-use-text-color black black'>
+  <p class=MsoNormal><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>Date</span></b><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  </td>
+  <td width=532 style='width:398.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0pt 5.4pt 0pt 5.4pt;border-color:-moz-use-text-color black black -moz-use-text-color'>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'>2007-04-17<o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'>All XML
+  files are dated 2006-10-25 as this is the date on which they became stable<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4;page-break-inside:avoid'>
+  <td width=144 style='width:108.0pt;border-top:none;border-left:solid windowtext 1.5pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt;border-color:-moz-use-text-color black black'>
+  <p class=MsoNormal><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>Status</span></b><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  </td>
+  <td width=532 style='width:398.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0pt 5.4pt 0pt 5.4pt;border-color:-moz-use-text-color black black -moz-use-text-color'>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'>XBRL International
+  Recommendation<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5;page-break-inside:avoid'>
+  <td width=144 style='width:108.0pt;border-top:none;border-left:solid windowtext 1.5pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt;border-color:-moz-use-text-color black black'>
+  <p class=MsoNormal><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>Approval
+  Level</span></b><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  </td>
+  <td width=532 style='width:398.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0pt 5.4pt 0pt 5.4pt;border-color:-moz-use-text-color black black -moz-use-text-color'>
+  <p class=MsoCommentText><span lang=EN-GB style='mso-ansi-language:EN-GB'>XBRL
+  International Recommendation<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6;page-break-inside:avoid;height:37.5pt'>
+  <td width=144 style='width:108.0pt;border-top:none;border-left:solid windowtext 1.5pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt;height:37.5pt;border-color:-moz-use-text-color black black'>
+  <p class=MsoNormal><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>Specification
+  version</span></b><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  </td>
+  <td width=532 style='width:398.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0pt 5.4pt 0pt 5.4pt;height:37.5pt;border-color:-moz-use-text-color black black -moz-use-text-color'>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'>XBRL
+  Specification Version 2.1, dated 2003-12-31 plus errata corrections dated
+  2006-12-18 <o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7;page-break-inside:avoid'>
+  <td width=144 style='width:108.0pt;border-top:none;border-left:solid windowtext 1.5pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt;border-color:-moz-use-text-color black black'>
+  <p class=MsoNormal><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>Contacts</span></b><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  </td>
+  <td width=532 style='width:398.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0pt 5.4pt 0pt 5.4pt;border-color:-moz-use-text-color black black -moz-use-text-color'>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'>Gianluca
+  Garbellotto, XBRL GL WG Chair (<a href="mailto:gl@xbrl.org">gl@xbrl.org</a>)<o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'>Hugh
+  Wallis, Director of Standards Development, XBRL International (<u><span
+  style='color:blue'><a href="mailto:hughwallis@xbrl.org">hughwallis@xbrl.org</a></span></u></span><span
+  lang=EN-GB style='font-family:Arial;mso-ansi-language:EN-GB'>)</span><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8;page-break-inside:avoid'>
+  <td width=144 style='width:108.0pt;border-top:none;border-left:solid windowtext 1.5pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt;border-color:-moz-use-text-color black black'>
+  <p class=MsoNormal><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>Comments</span></b><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  </td>
+  <td width=532 style='width:398.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0pt 5.4pt 0pt 5.4pt;border-color:-moz-use-text-color black black -moz-use-text-color'>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'>This taxonomy
+  was approved by the XBRL GL Working Group of XBRL International to become a
+  Recommendation on 2006-10-25. Comments are to be sent to the XBRL GL working
+  group (<a href="mailto:gl@xbrl.org">gl@xbrl.org</a>).<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9;page-break-inside:avoid;height:21.05pt'>
+  <td width=144 style='width:108.0pt;border-top:none;border-left:solid windowtext 1.5pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt;height:21.05pt;border-color:-moz-use-text-color black black'>
+  <p class=MsoNormal><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>Namespaces</span></b><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  </td>
+  <td width=532 valign=top style='width:398.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0pt 5.4pt 0pt 5.4pt;height:21.05pt;border-color:-moz-use-text-color black black -moz-use-text-color'>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'>http://www.xbrl.org/int/gl/gen/2006-10-25<o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'>http://www.xbrl.org/int/gl/cor/2006-10-25<o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'>http://www.xbrl.org/int/gl/bus/2006-10-25<o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'>http://www.xbrl.org/int/gl/muc/2006-10-25<o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'>http://www.xbrl.org/int/gl/usk/2006-10-25<o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'>http://www.xbrl.org/int/gl/taf/2006-10-25<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:10;page-break-inside:avoid'>
+  <td width=144 style='width:108.0pt;border-top:none;border-left:solid windowtext 1.5pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt;border-color:-moz-use-text-color black black'>
+  <p class=MsoNormal><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>Namespace
+  prefixes</span></b><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  </td>
+  <td width=532 valign=top style='width:398.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0pt 5.4pt 0pt 5.4pt;border-color:-moz-use-text-color black black -moz-use-text-color'>
+  <p class=MsoNormal><span class=SpellE><span lang=EN-GB style='mso-ansi-language:
+  EN-GB'>gl-gen</span></span><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span lang=EN-GB style='mso-ansi-language:
+  EN-GB'>gl-cor</span></span><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span lang=EN-GB style='mso-ansi-language:
+  EN-GB'>gl</span></span><span lang=EN-GB style='mso-ansi-language:EN-GB'>-bus<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span lang=EN-GB style='mso-ansi-language:
+  EN-GB'>gl-muc</span></span><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span lang=EN-GB style='mso-ansi-language:
+  EN-GB'>gl-usk</span></span><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span lang=EN-GB style='mso-ansi-language:
+  EN-GB'>gl-taf</span></span><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:11;page-break-inside:avoid'>
+  <td width=144 style='width:108.0pt;border-top:none;border-left:solid windowtext 1.5pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt;border-color:-moz-use-text-color black black'>
+  <p class=MsoNormal><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>Linkbases</span></b><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  </td>
+  <td width=532 valign=top style='width:398.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0pt 5.4pt 0pt 5.4pt;border-color:-moz-use-text-color black black -moz-use-text-color'>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'>The
+  modules of XBRL-GL, the Journal taxonomy include schema (<span class=SpellE>xsd</span>)
+  files, label linkbases and presentation linkbases. They do not include
+  reference, definition or calculation linkbases. This is a result of XBRL GL
+  being a completely international taxonomy not tied to any jurisdiction or any
+  standards committee. <o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:12'>
+  <td width=144 style='width:108.0pt;border-top:none;border-left:solid windowtext 1.5pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt;border-color:-moz-use-text-color black black'>
+  <p class=MsoNormal><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>Physical
+  location of taxonomy files</span></b><span lang=EN-GB style='mso-ansi-language:
+  EN-GB'><o:p></o:p></span></p>
+  <p class=MsoNormal><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>(Palette
+  and content model declarations)</span></b><span lang=EN-GB style='mso-ansi-language:
+  EN-GB'><o:p></o:p></span></p>
+  <p class=MsoNormal><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>Note: When
+  referencing the taxonomy from an instance, the gl-plt-2006-10-25.xsd is the
+  schema to be referenced</span></b><span lang=EN-GB style='mso-ansi-language:
+  EN-GB'><o:p></o:p></span></p>
+  </td>
+  <td width=532 valign=top style='width:398.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0pt 5.4pt 0pt 5.4pt;border-color:-moz-use-text-color black black -moz-use-text-color'>
+  <p class=MsoNormal><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>COR
+  module:</span></b><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c/gl-plt-2006-10-25.xsd">http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c/gl-plt-2006-10-25.xsd</a><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c/gl-cor-content-2006-10-25.xsd">http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c/gl-cor-content-2006-10-25.xsd</a><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/gen/gl-gen-2006-10-25.xsd">http://www.xbrl.org/taxonomy/int/gl/2006-10-25/gen/gl-gen-2006-10-25.xsd</a><o:p></o:p></span></p>
+  <p class=MsoNormal><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>COR
+  and BUS module:</span></b><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-b/gl-plt-2006-10-25.xsd">http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-b/gl-plt-2006-10-25.xsd</a><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-b/gl-cor-content-2006-10-25.xsd">http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-b/gl-cor-content-2006-10-25.xsd</a><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-b/gl-bus-content-2006-10-25.xsd">http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-b/gl-bus-content-2006-10-25.xsd</a><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/gen/gl-gen-2006-10-25.xsd">http://www.xbrl.org/taxonomy/int/gl/2006-10-25/gen/gl-gen-2006-10-25.xsd</a><o:p></o:p></span></p>
+  <p class=MsoNormal><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>COR
+  and BUS and MUC module:</span></b><span lang=EN-GB style='mso-ansi-language:
+  EN-GB'><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-b-m/gl-plt-2006-10-25.xsd">http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-b-m/gl-plt-2006-10-25.xsd</a><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-b-m/gl-cor-content-2006-10-25.xsd">http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-b-m/gl-cor-content-2006-10-25.xsd</a><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-b-m/gl-bus-content-2006-10-25.xsd">http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-b-m/gl-bus-content-2006-10-25.xsd</a><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-b-m/gl-muc-content-2006-10-25.xsd">http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-b-m/gl-muc-content-2006-10-25.xsd</a><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/gen/gl-gen-2006-10-25.xsd">http://www.xbrl.org/taxonomy/int/gl/2006-10-25/gen/gl-gen-2006-10-25.xsd</a><o:p></o:p></span></p>
+  <p class=MsoNormal><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>COR
+  and BUS and MUC and USK module:</span></b><span lang=EN-GB style='mso-ansi-language:
+  EN-GB'><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-b-m-u/gl-plt-2006-10-25.xsd">http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-b-m-u/gl-plt-2006-10-25.xsd</a><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-b-m-u/gl-cor-content-2006-10-25.xsd">http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-b-m-u/gl-cor-content-2006-10-25.xsd</a><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-b-m-u/gl-bus-content-2006-10-25.xsd">http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-b-m-u/gl-bus-content-2006-10-25.xsd</a><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-b-m-u/gl-muc-content-2006-10-25.xsd">http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-b-m-u/gl-muc-content-2006-10-25.xsd</a><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-b-m-u/gl-usk-content-2006-10-25.xsd">http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-b-m-u/gl-usk-content-2006-10-25.xsd</a><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/gen/gl-gen-2006-10-25.xsd">http://www.xbrl.org/taxonomy/int/gl/2006-10-25/gen/gl-gen-2006-10-25.xsd</a><o:p></o:p></span></p>
+  <p class=MsoNormal><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>COR and
+  BUS and MUC and USK and TAF module:</span></b><span lang=EN-GB
+  style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-b-m-u-t/gl-plt-2006-10-25.xsd">http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-b-m-u-t/gl-plt-2006-10-25.xsd</a><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-b-m-u-t/gl-cor-content-2006-10-25.xsd">http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-b-m-u-t/gl-cor-content-2006-10-25.xsd</a><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-b-m-u-t/gl-bus-content-2006-10-25.xsd">http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-b-m-u-t/gl-bus-content-2006-10-25.xsd</a><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-b-m-u-t/gl-muc-content-2006-10-25.xsd">http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-b-m-u-t/gl-muc-content-2006-10-25.xsd</a><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-b-m-u-t/gl-usk-content-2006-10-25.xsd">http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-b-m-u-t/gl-usk-content-2006-10-25.xsd</a><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-b-m-u-t/gl-taf-content-2006-10-25.xsd">http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-b-m-u-t/gl-taf-content-2006-10-25.xsd</a><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/gen/gl-gen-2006-10-25.xsd">http://www.xbrl.org/taxonomy/int/gl/2006-10-25/gen/gl-gen-2006-10-25.xsd</a><o:p></o:p></span></p>
+  <p class=MsoNormal><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>COR
+  and BUS and TAF module:</span></b><span lang=EN-GB style='mso-ansi-language:
+  EN-GB'><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-b-t/gl-plt-2006-10-25.xsd">http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-b-t/gl-plt-2006-10-25.xsd</a><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-b-t/gl-cor-content-2006-10-25.xsd">http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-b-t/gl-cor-content-2006-10-25.xsd</a><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-b-t/gl-bus-content-2006-10-25.xsd">http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-b-t/gl-bus-content-2006-10-25.xsd</a><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-b-t/gl-taf-content-2006-10-25.xsd">http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-b-t/gl-taf-content-2006-10-25.xsd</a><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/gen/gl-gen-2006-10-25.xsd">http://www.xbrl.org/taxonomy/int/gl/2006-10-25/gen/gl-gen-2006-10-25.xsd</a><o:p></o:p></span></p>
+  <p class=MsoNormal><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>COR
+  and TAF module:</span></b><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-t/gl-plt-2006-10-25.xsd">http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-t/gl-plt-2006-10-25.xsd</a><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-t/gl-cor-content-2006-10-25.xsd">http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-t/gl-cor-content-2006-10-25.xsd</a><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-t/gl-taf-content-2006-10-25.xsd">http://www.xbrl.org/taxonomy/int/gl/2006-10-25/plt/case-c-t/gl-taf-content-2006-10-25.xsd</a><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/gen/gl-gen-2006-10-25.xsd">http://www.xbrl.org/taxonomy/int/gl/2006-10-25/gen/gl-gen-2006-10-25.xsd</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:13;page-break-inside:avoid'>
+  <td width=144 style='width:108.0pt;border-top:none;border-left:solid windowtext 1.5pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt;border-color:-moz-use-text-color black black'>
+  <p class=MsoNormal><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>Physical
+  location of taxonomy files (element declarations and linkbases)</span></b><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  <p class=MsoNormal><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>(COR)</span></b><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  </td>
+  <td width=532 valign=top style='width:398.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0pt 5.4pt 0pt 5.4pt;border-color:-moz-use-text-color black black -moz-use-text-color'>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/cor/gl-cor-2006-10-25.xsd">http://www.xbrl.org/taxonomy/int/gl/2006-10-25/cor/gl-cor-2006-10-25.xsd</a>
+  </span><span lang=EN-GB style='font-size:8.0pt;mso-ansi-language:EN-GB'>(Schemas)</span><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/cor/gl-cor-2006-10-25-label.xml">http://www.xbrl.org/taxonomy/int/gl/2006-10-25/cor/gl-cor-2006-10-25-label.xml</a>
+  </span><span lang=EN-GB style='font-size:8.0pt;mso-ansi-language:EN-GB'>(Labels
+  linkbase)</span><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/cor/gl-cor-2006-10-25-presentation.xml">http://www.xbrl.org/taxonomy/int/gl/2006-10-25/cor/gl-cor-2006-10-25-presentation.xml</a>
+  </span><span lang=EN-GB style='font-size:8.0pt;mso-ansi-language:EN-GB'>(Presentation
+  linkbase)</span><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:14;page-break-inside:avoid'>
+  <td width=144 style='width:108.0pt;border-top:none;border-left:solid windowtext 1.5pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt;border-color:-moz-use-text-color black black'>
+  <p class=MsoNormal><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>Physical
+  location of taxonomy files (element declarations and linkbases) </span></b><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  <p class=MsoNormal><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>(BUS)</span></b><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  </td>
+  <td width=532 valign=top style='width:398.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0pt 5.4pt 0pt 5.4pt;border-color:-moz-use-text-color black black -moz-use-text-color'>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/bus/gl-bus-2006-10-25.xsd">http://www.xbrl.org/taxonomy/int/gl/2006-10-25/bus/gl-bus-2006-10-25.xsd</a>&nbsp;
+  </span><span lang=EN-GB style='font-size:8.0pt;mso-ansi-language:EN-GB'>(Schemas)</span><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/bus/gl-bus-2006-10-25-label.xml">http://www.xbrl.org/taxonomy/int/gl/2006-10-25/bus/gl-bus-2006-10-25-label.xml</a>
+  </span><span lang=EN-GB style='font-size:8.0pt;mso-ansi-language:EN-GB'>(Labels
+  linkbase)</span><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/bus/gl-bus-2006-10-25-presentation.xml">http://www.xbrl.org/taxonomy/int/gl/2006-10-25/bus/gl-bus-2006-10-25-presentation.xml</a>
+  </span><span lang=EN-GB style='font-size:8.0pt;mso-ansi-language:EN-GB'>(Presentation
+  linkbase)</span><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:15;page-break-inside:avoid'>
+  <td width=144 style='width:108.0pt;border-top:none;border-left:solid windowtext 1.5pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt;border-color:-moz-use-text-color black black'>
+  <p class=MsoNormal><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>Physical
+  location of taxonomy files (element declarations and linkbases) </span></b><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  <p class=MsoNormal><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>(MUC)</span></b><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  </td>
+  <td width=532 valign=top style='width:398.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0pt 5.4pt 0pt 5.4pt;border-color:-moz-use-text-color black black -moz-use-text-color'>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/muc/gl-muc-2006-10-25.xsd">http://www.xbrl.org/taxonomy/int/gl/2006-10-25/muc/gl-muc-2006-10-25.xsd</a>&nbsp;
+  </span><span lang=EN-GB style='font-size:8.0pt;mso-ansi-language:EN-GB'>(Schemas)</span><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/muc/gl-muc-2006-10-25-label.xml">http://www.xbrl.org/taxonomy/int/gl/2006-10-25/muc/gl-muc-2006-10-25-label.xml</a>
+  </span><span lang=EN-GB style='font-size:8.0pt;mso-ansi-language:EN-GB'>(Labels
+  linkbase)</span><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/muc/gl-muc-2006-10-25-presentation.xml">http://www.xbrl.org/taxonomy/int/gl/2006-10-25/muc/gl-muc-2006-10-25-presentation.xml</a>
+  </span><span lang=EN-GB style='font-size:8.0pt;mso-ansi-language:EN-GB'>(Presentation
+  linkbase)</span><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:16;page-break-inside:avoid'>
+  <td width=144 style='width:108.0pt;border-top:none;border-left:solid windowtext 1.5pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt;border-color:-moz-use-text-color black black'>
+  <p class=MsoNormal><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>Physical
+  location of taxonomy files (element declarations and linkbases) </span></b><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  <p class=MsoNormal><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>(USK)</span></b><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  </td>
+  <td width=532 valign=top style='width:398.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0pt 5.4pt 0pt 5.4pt;border-color:-moz-use-text-color black black -moz-use-text-color'>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/usk/gl-usk-2006-10-25.xsd">http://www.xbrl.org/taxonomy/int/gl/2006-10-25/usk/gl-usk-2006-10-25.xsd</a>&nbsp;
+  </span><span lang=EN-GB style='font-size:8.0pt;mso-ansi-language:EN-GB'>(Schemas)</span><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/usk/gl-usk-2006-10-25-label.xml">http://www.xbrl.org/taxonomy/int/gl/2006-10-25/usk/gl-usk-2006-10-25-label.xml</a>
+  </span><span lang=EN-GB style='font-size:8.0pt;mso-ansi-language:EN-GB'>(Labels
+  linkbase)</span><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/usk/gl-usk-2006-10-25-presentation.xml">http://www.xbrl.org/taxonomy/int/gl/2006-10-25/usk/gl-usk-2006-10-25-presentation.xml</a>
+  </span><span lang=EN-GB style='font-size:8.0pt;mso-ansi-language:EN-GB'>(Presentation
+  linkbase)</span><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:17;page-break-inside:avoid'>
+  <td width=144 style='width:108.0pt;border-top:none;border-left:solid windowtext 1.5pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt;border-color:-moz-use-text-color black black'>
+  <p class=MsoNormal><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>Physical
+  location of taxonomy files (element declarations and linkbases) </span></b><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  <p class=MsoNormal><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>(TAF)</span></b><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  </td>
+  <td width=532 valign=top style='width:398.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0pt 5.4pt 0pt 5.4pt;border-color:-moz-use-text-color black black -moz-use-text-color'>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/taf/gl-taf-2006-10-25.xsd">http://www.xbrl.org/taxonomy/int/gl/2006-10-25/taf/gl-taf-2006-10-25.xsd</a>&nbsp;
+  </span><span lang=EN-GB style='font-size:8.0pt;mso-ansi-language:EN-GB'>(Schemas)</span><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/taf/gl-taf-2006-10-25-label.xml">http://www.xbrl.org/taxonomy/int/gl/2006-10-25/taf/gl-taf-2006-10-25-label.xml</a>
+  </span><span lang=EN-GB style='font-size:8.0pt;mso-ansi-language:EN-GB'>(Labels
+  linkbase)</span><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/taf/gl-taf-2006-10-25-presentation.xml">http://www.xbrl.org/taxonomy/int/gl/2006-10-25/taf/gl-taf-2006-10-25-presentation.xml</a>
+  </span><span lang=EN-GB style='font-size:8.0pt;mso-ansi-language:EN-GB'>(Presentation
+  linkbase)</span><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:18;page-break-inside:avoid'>
+  <td width=144 style='width:108.0pt;border-top:none;border-left:solid windowtext 1.5pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt;border-color:-moz-use-text-color black black'>
+  <p class=MsoNormal><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>Physical
+  location of sample instance documents </span></b><span lang=EN-GB
+  style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  </td>
+  <td width=532 valign=top style='width:398.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0pt 5.4pt 0pt 5.4pt;border-color:-moz-use-text-color black black -moz-use-text-color'>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/ids/BP_FixedAssetList.xml">Fixed
+  Asset List</a><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/ids/BP_TrialBalance.xml">Trial
+  Balance</a><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/ids/Customer_Invoices.xml">Customer
+  Invoices</a><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/ids/Employee_Timesheets.xml">Employee
+  Timesheets</a><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/ids/Job-budget-v-actual.xml">Job
+  Costing Actual vs. Budget</a><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/ids/JournalEntry_Annotated_Book-Tax.xml">Book
+  to Tax Reconciliation</a><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/taxonomy/int/gl/2006-10-25/ids/JournalEntry_Annotated_Instance.xml">Journal
+  Entries</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:19;page-break-inside:avoid'>
+  <td width=144 style='width:108.0pt;border-top:none;border-left:solid windowtext 1.5pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt;border-color:-moz-use-text-color black black'>
+  <p class=MsoNormal><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>Summary
+  documents</span></b><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  </td>
+  <td width=532 valign=top style='width:398.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0pt 5.4pt 0pt 5.4pt;border-color:-moz-use-text-color black black -moz-use-text-color'>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/int/gl/2007-04-17/GLFramework-REC-2007-04-17.htm">http://www.xbrl.org/int/gl/2007-04-17/GLFramework-REC-2007-04-17.htm</a>
+  (this document)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:20;page-break-inside:avoid'>
+  <td width=144 style='width:108.0pt;border-top:none;border-left:solid windowtext 1.5pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt;border-color:-moz-use-text-color black black'>
+  <p class=MsoNormal><span class=ver8pt1line1><b><span lang=EN-GB
+  style='color:windowtext;mso-ansi-language:EN-GB'>Taxonomy Technical
+  Architecture document</span></b></span><span lang=EN-GB style='mso-ansi-language:
+  EN-GB'><o:p></o:p></span></p>
+  </td>
+  <td width=532 valign=top style='width:398.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0pt 5.4pt 0pt 5.4pt;border-color:-moz-use-text-color black black -moz-use-text-color'>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/int/gl/2007-04-17/GLTFTA-REC-2007-04-17.rtf">http://www.xbrl.org/int/gl/2007-04-17/GLTFTA-REC-2007-04-17.rtf</a>
+  (normative)<o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/int/gl/2007-04-17/GLTFTA-REC-2007-04-17.htm">http://www.xbrl.org/int/gl/2007-04-17/GLTFTA-REC-2007-04-17.htm</a>
+  <span style='mso-spacerun:yes'> </span>(non-normative)<o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='font-family:"Times New Roman";
+  mso-ansi-language:EN-GB'>&nbsp;</span><span lang=EN-GB style='mso-ansi-language:
+  EN-GB'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:21;page-break-inside:avoid'>
+  <td width=144 style='width:108.0pt;border-top:none;border-left:solid windowtext 1.5pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt;border-color:-moz-use-text-color black black'>
+  <p class=MsoNormal><a name="_Toc89366248"><span class=ver8pt1line1><b><span
+  lang=EN-GB style='color:windowtext;mso-ansi-language:EN-GB'>GL Instance
+  Standards document</span></b></span></a><span lang=EN-GB style='mso-ansi-language:
+  EN-GB'><o:p></o:p></span></p>
+  </td>
+  <td width=532 valign=top style='width:398.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0pt 5.4pt 0pt 5.4pt;border-color:-moz-use-text-color black black -moz-use-text-color'>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/int/gl/2007-04-17/GLIS-REC-2007-04-17.rtf">http://www.xbrl.org/int/gl/2007-04-17/GLIS-REC-2007-04-17.rtf</a>
+  (normative)<o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/int/gl/2007-04-17/GLIS-REC-2007-04-17.htm">http://www.xbrl.org/int/gl/2007-04-17/GLIS-REC-2007-04-17.htm</a>
+  (non-normative)<o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='font-family:"Times New Roman";
+  mso-ansi-language:EN-GB'>&nbsp;</span><span lang=EN-GB style='mso-ansi-language:
+  EN-GB'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:22;page-break-inside:avoid'>
+  <td width=144 style='width:108.0pt;border-top:none;border-left:solid windowtext 1.5pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt;border-color:-moz-use-text-color black black'>
+  <p class=MsoNormal><a name="_Toc89366249"><span class=ver8pt1line1><b><span
+  lang=EN-GB style='color:windowtext;mso-ansi-language:EN-GB'>Zip files</span></b></span></a><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  </td>
+  <td width=532 valign=top style='width:398.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0pt 5.4pt 0pt 5.4pt;border-color:-moz-use-text-color black black -moz-use-text-color'>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'><a
+  href="http://www.xbrl.org/int/gl/2007-04-17/GLFramework-REC-2007-04-17.zip">http://www.xbrl.org/int/gl/2007-04-17/GLFramework-REC-2007-04-17.zip</a>&nbsp;&nbsp;&nbsp;
+  <o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'>&nbsp;(zip
+  file containing taxonomy and documentation)<o:p></o:p></span></p>
+  <p class=preformatted style='margin-bottom:6.0pt'><span lang=EN-GB
+  style='font-family:Verdana;mso-ansi-language:EN-GB'>&nbsp;</span><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:23;page-break-inside:avoid'>
+  <td width=144 valign=top style='width:108.0pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;border-right:
+  solid windowtext 1.0pt;padding:0pt 5.4pt 0pt 5.4pt;border-color:-moz-use-text-color black black'>
+  <p class=MsoNormal><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>Relation
+  to Other XBRL Taxonomies:</span></b><span lang=EN-GB style='mso-ansi-language:
+  EN-GB'><o:p></o:p></span></p>
+  </td>
+  <td width=532 valign=top style='width:398.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0pt 5.4pt 0pt 5.4pt;border-color:-moz-use-text-color black black -moz-use-text-color'>
+  <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'>This
+  modular taxonomy consists of a series of modules that extend the basic identifiers
+  for entries, agents, and resources to meet the needs of specific
+  jurisdictions, industries and need. It enables data from the general ledger
+  and transaction journals of an organisation to be transported to XBRL
+  financial reports.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:24;mso-yfti-lastrow:yes'>
+  <td width=144 style='width:108.0pt;border-top:none;border-left:solid windowtext 1.5pt;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt;border-color:-moz-use-text-color black black'>
+  <p class=head1><a name="_Toc89366257"><span lang=EN-GB style='mso-ansi-language:
+  EN-GB'>Copyright and Licence</span></a><span lang=EN-GB style='mso-ansi-language:
+  EN-GB'><o:p></o:p></span></p>
+  </td>
+  <td width=532 style='width:398.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.5pt;
+  padding:0pt 5.4pt 0pt 5.4pt;border-color:-moz-use-text-color black black -moz-use-text-color'>
+  <p class=MsoBodyText><i><span lang=EN-GB style='mso-ansi-language:EN-GB'>Copyright
+  © 2006, XBRL International</span></i><span lang=EN-GB style='mso-ansi-language:
+  EN-GB'><o:p></o:p></span></p>
+  <p class=MsoBodyText><i><span lang=EN-GB style='mso-ansi-language:EN-GB'>This
+  taxonomy and translations of it may be copied and furnished to others, and
+  derivative works that comment on or otherwise explain it or assist in its
+  implementation may be prepared, copied, published and distributed, in whole
+  or in part, without restriction of any kind, provided that:</span></i><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  <p class=MsoBodyText style='margin-left:21.0pt;text-align:justify;text-justify:
+  inter-ideograph;text-indent:-18.0pt'><i><span lang=EN-GB style='mso-ansi-language:
+  EN-GB'>1.</span></i><i><span lang=EN-GB style='font-size:7.0pt;font-family:
+  "Times New Roman";mso-ansi-language:EN-GB'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></i><i><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'>The above copyright notice and
+  this paragraph are included on all such copies and derivative works. </span></i><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  <p class=MsoBodyText style='margin-left:21.0pt;text-align:justify;text-justify:
+  inter-ideograph;text-indent:-18.0pt'><i><span lang=EN-GB style='mso-ansi-language:
+  EN-GB'>2.</span></i><i><span lang=EN-GB style='font-size:7.0pt;font-family:
+  "Times New Roman";mso-ansi-language:EN-GB'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></i><i><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'>A link or URL to the original
+  taxonomy is included in all such copies and derivative works.</span></i><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  <p class=MsoBodyText><i><span lang=EN-GB style='mso-ansi-language:EN-GB'>However,
+  this taxonomy itself may not be modified in any way, such as by removing the
+  copyright notice or references to XBRL International or other organizations,
+  except as required to translate it into languages other than English. Members
+  of XBRL International and the taxonomy owners agree to grant certain licenses
+  under the XBRL International Intellectual Property Policy (<a
+  href="http://www.xbrl.org/legal"><span style='font-style:normal'>www.xbrl.org/legal</span></a>).
+  </span></i><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  <p class=MsoBodyText><i><span lang=EN-GB style='mso-ansi-language:EN-GB'>The
+  name and trademarks of XBRL International may NOT be used in advertising or
+  publicity pertaining to this document or its contents without specific,
+  written prior permission. Title to copyright in this document will at all
+  times remain with copyright holders.</span></i><span lang=EN-GB
+  style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  <p class=MsoBodyText><i><span lang=EN-GB style='mso-ansi-language:EN-GB'>By
+  using and/or copying this taxonomy, you (the licensee) agree that you have
+  read, understood, and will comply with the terms and conditions set out in
+  this document and in the Copyright, Intellectual Property and Trademarks
+  documents on <a href="http://www.xbrl.org/legal"><span style='font-style:
+  normal'>www.xbrl.org/legal</span></a></span></i><span lang=EN-GB
+  style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  <p class=MsoBodyText><i><span lang=EN-GB style='mso-ansi-language:EN-GB'>This
+  taxonomy and its associated files are provided on an &quot;AS IS&quot; basis
+  and XBRL INTERNATIONAL AND THE OWNERS OF THE TAXONOMY DISCLAIM ALL
+  WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY
+  THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY
+  IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.</span></i><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  <p class=MsoBodyText><i><span lang=EN-GB style='mso-ansi-language:EN-GB'>Recipients
+  of this taxonomy are invited to submit, with their comments, notification of
+  any relevant patent rights and copyrights of which they are aware and to
+  provide supporting documentation.</span></i><span lang=EN-GB
+  style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  <p class=MsoBodyText><i><span lang=EN-GB style='mso-ansi-language:EN-GB'>The
+  attention of users of this taxonomy is directed to the possibility that its
+  use may require use of an invention covered by patent rights. XBRL
+  International and the owners of the taxonomy shall not be responsible for
+  identifying patents for which a license may be required by this taxonomy, or
+  for conducting legal inquiries into the legal validity or scope of those
+  patents that are brought to its attention. This taxonomy is prospective and
+  advisory only. Prospective users are responsible for protecting themselves
+  against liability for infringement of patents. XBRL International and the
+  owners of this taxonomy takes no position regarding the validity or scope of
+  any intellectual property or other rights that might be claimed to pertain to
+  the implementation or use of the technology defined by implied by the
+  taxonomy or the extent to which any license under such rights might or might
+  not be available; neither do they represent that they has made any effort to
+  identify any such rights. Members of XBRL International agree to grant
+  certain licenses under the XBRL International Intellectual Property Policy (<a
+  href="http://www.xbrl.org/legal"><span style='font-style:normal'>www.xbrl.org/legal</span></a>).</span></i><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  <h2><a name="_Toc89366258"><span lang=EN-GB style='mso-fareast-font-family:
+  "Times New Roman";mso-ansi-language:EN-GB'>1.1.</span></a><span lang=EN-GB
+  style='font-size:7.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+  "Times New Roman";mso-ansi-language:EN-GB'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span lang=EN-GB style='mso-fareast-font-family:"Times New Roman";
+  mso-ansi-language:EN-GB'>Warranty<o:p></o:p></span></h2>
+  <p class=MsoBodyText><i><span lang=EN-GB style='mso-ansi-language:EN-GB'>ALL
+  PARTIES ACKNOWLEDGE THAT ALL INFORMATION PROVIDED AS PART OF THIS TAXONOMY OR
+  ITS ASSOCIATED FILES IS PROVIDED “AS IS” WITH NO WARRANTIES WHATSOEVER,
+  WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE, AND THE PARTIES EXPRESSLY
+  DISCLAIM ANY WARRANTY OF MERCHANTABILITY, FITNESS FOR ANY PARTICULAR PURPOSE,
+  NONINFRINGEMENT, OR TITLE, OR ANY WARRANTY OTHERWISE ARISING OUT OF ANY
+  PROPOSAL, RECOMMENDATION, OR SAMPLE; OR ANY WARRANTY THAT THE USE OF THE
+  CONTENTS OF THE TAXONOMY OR ITS ASSOCIATED FILES WILL NOT INFRINGE ANY THIRD
+  PARTY PATENTS, COPYRIGHTS, TRADEMARKS OR OTHER RIGHTS. </span></i><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  <h2><a name="_Toc89366259"><span lang=EN-GB style='mso-fareast-font-family:
+  "Times New Roman";mso-ansi-language:EN-GB'>1.2.</span></a><span lang=EN-GB
+  style='font-size:7.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+  "Times New Roman";mso-ansi-language:EN-GB'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span lang=EN-GB style='mso-fareast-font-family:"Times New Roman";
+  mso-ansi-language:EN-GB'>Limitation of Liability<o:p></o:p></span></h2>
+  <p class=MsoNormal><i><span lang=EN-GB style='mso-ansi-language:EN-GB'>IN NO
+  EVENT WILL XBRL INTERNATIONAL OR THE OWNERS OR AUTHORS OF THE TAXONOMY BE
+  LIABLE TO ANY USER OR ANY THIRD PARTY FOR THE COST OF PROCURING SUBSTITUTE
+  GOODS OR SERVICES, LOST PROFITS, LOSS OF USE, LOSS OF DATA OR ANY DIRECT,
+  INDIRECT, CONSEQUENTIAL, INCIDENTAL, PUNITIVE OR SPECIAL DAMAGES, WHETHER
+  UNDER CONTRACT, TORT, WARRANTY OR OTHERWISE, ARISING IN ANY WAY OUT OF THE
+  USE OF THIS TAXONOMY OR ITS ASSOCIATED FILES, OR THE PERFORMANCE OR
+  IMPLEMENTATION OF THE CONTENTS THEREOF OF ANY TYPE WHATSOEVER, WHETHER OR NOT
+  SUCH PARTY HAD ADVANCE NOTICE OF THE POSSIBILITY OF SUCH DAMAGES.</span></i><span
+  lang=EN-GB style='mso-ansi-language:EN-GB'><br clear=all style='mso-special-character:
+  line-break;page-break-before:always'>
+  <o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<div style='border:none;border-bottom:solid windowtext 1.0pt;padding:0pt 0pt 1.0pt 0pt;
+border-color:-moz-use-text-color -moz-use-text-color windowtext'>
+
+<p class=MsoNormal><b><span lang=EN-GB style='mso-ansi-language:EN-GB'>&nbsp;</span></b><span
+lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+</div>
+
+<h6><span lang=EN-GB style='mso-ansi-language:EN-GB'>Editors of this Document:<o:p></o:p></span></h6>
+
+<p class=MsoNormal style='margin-bottom:0pt;margin-bottom:.0001pt'><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>Jeff <span class=SpellE>Fedor</span>,
+<span class=SpellE>InDimensions</span> Systems, Inc<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0pt;margin-bottom:.0001pt'><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>Hugh Wallis, XBRL International Inc.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0pt;margin-bottom:.0001pt'><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0pt;margin-bottom:.0001pt'><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>Based on previous documentation by <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0pt;margin-bottom:.0001pt'><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>Eric E. Cohen CPA,
+PricewaterhouseCoopers<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0pt;margin-bottom:.0001pt'><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>Nobuyuki <span class=SpellE>Sambuichi</span>,
+Hitachi Systems &amp; Services, Ltd.<o:p></o:p></span></p>
+
+<h6><span lang=EN-GB style='mso-ansi-language:EN-GB'>Technical Editors of the
+Taxonomy:<o:p></o:p></span></h6>
+
+<p class=MsoNormal style='margin-bottom:0pt;margin-bottom:.0001pt'><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>Eric E. Cohen CPA,
+PricewaterhouseCoopers<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0pt;margin-bottom:.0001pt'><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>Jeff <span class=SpellE>Fedor</span>,
+<span class=SpellE>InDimensions</span> Systems Inc.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0pt;margin-bottom:.0001pt'><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>Gianluca Garbellotto, <span
+class=SpellE>Iphix</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0pt;margin-bottom:.0001pt'><span
+class=SpellE><span lang=EN-GB style='mso-ansi-language:EN-GB'>Masatomo</span></span><span
+lang=EN-GB style='mso-ansi-language:EN-GB'> <span class=SpellE>Goto</span>,
+Fujitsu Laboratories of America, Inc.&nbsp;&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0pt;margin-bottom:.0001pt'><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>Nobuyuki <span class=SpellE>Sambuichi</span>,
+Hitachi Systems &amp; Services, Ltd.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0pt;margin-bottom:.0001pt'><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>Hugh Wallis, XBRL International Inc.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0pt;margin-bottom:.0001pt'><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>&nbsp;<o:p></o:p></span></p>
+
+<h6><span lang=EN-GB style='mso-ansi-language:EN-GB'>XBRL GL Working Group <o:p></o:p></span></h6>
+
+<p class=MsoNormal style='margin-bottom:0pt;margin-bottom:.0001pt'><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0pt;margin-bottom:.0001pt'><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>Sonia <span class=SpellE>Antypas</span>,
+<span class=SpellE>DynAccSys</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0pt;margin-bottom:.0001pt'><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>Eric E. Cohen CPA,
+PricewaterhouseCoopers<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0pt;margin-bottom:.0001pt'><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>George Farkas, XBI Software Inc.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0pt;margin-bottom:.0001pt'><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>Jeff <span class=SpellE>Fedor</span>,
+Chair, <span class=SpellE>Indimensions</span> Systems Inc.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0pt;margin-bottom:.0001pt'><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>Gianluca Garbellotto, <span
+class=SpellE>Iphix</span><o:p></o:p></span></p>
+
+<p class=MsoHeader style='margin-bottom:0pt;margin-bottom:.0001pt'><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>Mark O’Connor, Multi Access Systems<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0pt;margin-bottom:.0001pt'><span
+class=SpellE><span lang=EN-GB style='mso-ansi-language:EN-GB'>Masatomo</span></span><span
+lang=EN-GB style='mso-ansi-language:EN-GB'> <span class=SpellE>Goto</span>,
+Fujitsu Laboratories of America, Inc.&nbsp;&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0pt;margin-bottom:.0001pt'><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>Walter Hamscher, Standard Advantage<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0pt;margin-bottom:.0001pt'><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>Rob <span class=SpellE>Nehmer</span>,
+<st1:place w:st="on"><st1:PlaceName w:st="on">Oakland</st1:PlaceName> <st1:PlaceType
+ w:st="on">University</st1:PlaceType></st1:place>&nbsp;&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0pt;margin-bottom:.0001pt'><span
+class=SpellE><span lang=EN-GB style='mso-ansi-language:EN-GB'>Yossef</span></span><span
+lang=EN-GB style='mso-ansi-language:EN-GB'> Newman, Deloitte and <span
+class=SpellE>Touche</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0pt;margin-bottom:.0001pt'><span
+class=SpellE><span lang=EN-GB style='mso-ansi-language:EN-GB'>Prasanna</span></span><span
+lang=EN-GB style='mso-ansi-language:EN-GB'> <span class=SpellE>Perera</span>, <span
+class=SpellE>DynAccSys</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0pt;margin-bottom:.0001pt'><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>Daniel Roberts, Grant Thornton<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0pt;margin-bottom:.0001pt'><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>Nobuyuki <span class=SpellE>Sambuichi</span>,
+Hitachi Systems &amp; Services, Ltd.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0pt;margin-bottom:.0001pt'><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0pt;margin-bottom:.0001pt'><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>Hugh Wallis, XBRL International Inc.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0pt;margin-bottom:.0001pt'><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>&nbsp;<o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

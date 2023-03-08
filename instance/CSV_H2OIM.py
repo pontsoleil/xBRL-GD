@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 # coding: utf-8
 #
-# generate Audit Data Collection OIM-CSV fron CSV file generated from XBRL-GL instance
+# generate Audit Data Collection OIM-CSV from CSV file generated from XBRL-GL instance
 #
 # designed by SAMBUICHI, Nobuyuki (Sambuichi Professional Engineers Office)
 # written by SAMBUICHI, Nobuyuki (Sambuichi Professional Engineers Office)
 #
 # MIT License
 #
-# (c) 2022 SAMBUICHI Nobuyuki (Sambuichi Professional Engineers Office)
+# (c) 2023 SAMBUICHI Nobuyuki (Sambuichi Professional Engineers Office)
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal

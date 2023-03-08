@@ -1,0 +1,3635 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 11 (filtered)">
+<title>GL Taxonomy Framework Technical Architecture 1.0</title>
+
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;}
+@font-face
+	{font-family:Batang;
+	panose-1:2 3 6 0 0 1 1 1 1 1;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"MS PGothic";
+	panose-1:2 11 6 0 7 2 5 8 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"Arial Narrow";
+	panose-1:2 11 5 6 2 2 2 3 2 4;}
+@font-face
+	{font-family:"\@MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;}
+@font-face
+	{font-family:"\@MS PGothic";
+	panose-1:2 11 6 0 7 2 5 8 2 4;}
+@font-face
+	{font-family:"\@Batang";
+	panose-1:2 3 6 0 0 1 1 1 1 1;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:Verdana;}
+h1
+	{margin-top:12.0pt;
+	margin-right:0pt;
+	margin-bottom:3.0pt;
+	margin-left:14.2pt;
+	text-indent:0pt;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:Arial;}
+h2
+	{margin-top:12.0pt;
+	margin-right:0pt;
+	margin-bottom:3.0pt;
+	margin-left:14.2pt;
+	text-indent:0pt;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:Arial;}
+h3
+	{margin-top:12.0pt;
+	margin-right:0pt;
+	margin-bottom:3.0pt;
+	margin-left:14.2pt;
+	text-indent:0pt;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:Arial;}
+h4
+	{margin-top:12.0pt;
+	margin-right:0pt;
+	margin-bottom:3.0pt;
+	margin-left:14.2pt;
+	text-indent:0pt;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:Arial;}
+h5
+	{margin-top:12.0pt;
+	margin-right:0pt;
+	margin-bottom:3.0pt;
+	margin-left:14.2pt;
+	text-indent:0pt;
+	font-size:13.0pt;
+	font-family:Verdana;
+	font-style:italic;}
+h6
+	{margin-top:12.0pt;
+	margin-right:0pt;
+	margin-bottom:3.0pt;
+	margin-left:14.2pt;
+	text-indent:0pt;
+	font-size:11.0pt;
+	font-family:Verdana;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{margin-top:12.0pt;
+	margin-right:0pt;
+	margin-bottom:3.0pt;
+	margin-left:14.2pt;
+	text-indent:0pt;
+	font-size:12.0pt;
+	font-family:Verdana;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{margin-top:12.0pt;
+	margin-right:0pt;
+	margin-bottom:3.0pt;
+	margin-left:14.2pt;
+	text-indent:0pt;
+	font-size:12.0pt;
+	font-family:Verdana;
+	font-style:italic;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{margin-top:12.0pt;
+	margin-right:0pt;
+	margin-bottom:3.0pt;
+	margin-left:14.2pt;
+	text-indent:0pt;
+	font-size:11.0pt;
+	font-family:Arial;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:Verdana;}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:10.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:Verdana;}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{margin-top:0pt;
+	margin-right:19.45pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:Verdana;}
+p.MsoToc4, li.MsoToc4, div.MsoToc4
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:30.0pt;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:Verdana;}
+p.MsoToc5, li.MsoToc5, div.MsoToc5
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:48.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:Verdana;}
+p.MsoToc6, li.MsoToc6, div.MsoToc6
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:60.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:Verdana;}
+p.MsoToc7, li.MsoToc7, div.MsoToc7
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:72.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:Verdana;}
+p.MsoToc8, li.MsoToc8, div.MsoToc8
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:84.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:Verdana;}
+p.MsoToc9, li.MsoToc9, div.MsoToc9
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:96.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:Verdana;}
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:9.0pt;
+	font-family:Verdana;}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:Verdana;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:Verdana;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:Verdana;}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Verdana;
+	font-weight:bold;}
+p.MsoTof, li.MsoTof, div.MsoTof
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:20.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-20.0pt;
+	font-size:10.0pt;
+	font-family:Verdana;}
+span.MsoFootnoteReference
+	{font-family:"Times New Roman";
+	vertical-align:super;}
+span.MsoCommentReference
+	{font-family:"Times New Roman";}
+span.MsoPageNumber
+	{font-family:"Times New Roman";}
+span.MsoEndnoteReference
+	{font-family:"Times New Roman";
+	vertical-align:super;}
+p.MsoEndnoteText, li.MsoEndnoteText, div.MsoEndnoteText
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:Verdana;}
+p.MsoList, li.MsoList, div.MsoList
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:18.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	font-size:10.0pt;
+	font-family:Verdana;}
+p.MsoListBullet, li.MsoListBullet, div.MsoListBullet
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:18.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	font-size:10.0pt;
+	font-family:Verdana;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{margin-top:12.0pt;
+	margin-right:0pt;
+	margin-bottom:3.0pt;
+	margin-left:0pt;
+	text-align:center;
+	font-size:16.0pt;
+	font-family:Verdana;
+	font-weight:bold;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:6.0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:Verdana;}
+p.MsoListContinue, li.MsoListContinue, div.MsoListContinue
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:18.0pt;
+	font-size:10.0pt;
+	font-family:Verdana;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:3.0pt;
+	margin-left:0pt;
+	text-align:center;
+	font-size:12.0pt;
+	font-family:Verdana;}
+p.MsoBodyText2, li.MsoBodyText2, div.MsoBodyText2
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	line-height:200%;
+	font-size:10.0pt;
+	font-family:Verdana;}
+p.MsoBlockText, li.MsoBlockText, div.MsoBlockText
+	{margin-top:0pt;
+	margin-right:72.0pt;
+	margin-bottom:6.0pt;
+	margin-left:72.0pt;
+	text-align:justify;
+	background:#FFFF99;
+	font-size:10.0pt;
+	font-family:Verdana;}
+a:link, span.MsoHyperlink
+	{font-family:"Times New Roman";
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{font-family:"Times New Roman";
+	color:purple;
+	text-decoration:underline;}
+strong
+	{font-family:"Times New Roman";}
+em
+	{font-family:"Times New Roman";}
+p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	background:navy;
+	font-size:10.0pt;
+	font-family:Tahoma;}
+pre
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:Verdana;
+	font-weight:bold;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:Tahoma;}
+span.BodyTextChar2
+	{font-family:Verdana;}
+span.BodyTextChar1
+	{font-family:Verdana;}
+span.BodyTextChar
+	{font-family:Verdana;}
+span.Code
+	{font-family:"Courier New";}
+span.BlockTextChar
+	{font-family:Verdana;}
+span.CaptionChar
+	{font-family:Verdana;
+	font-weight:bold;}
+p.Clearformatting, li.Clearformatting, div.Clearformatting
+	{margin-top:6.0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:Verdana;}
+span.ClearformattingChar2
+	{font-family:Verdana;}
+span.ClearformattingChar
+	{font-family:Verdana;}
+span.CommentTextChar
+	{font-family:Verdana;}
+p.DefinitionList, li.DefinitionList, div.DefinitionList
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:18.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+span.CODE0
+	{font-family:"Courier New";
+	letter-spacing:-.5pt;}
+p.Preformatted, li.Preformatted, div.Preformatted
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+p.DomainTopic, li.DomainTopic, div.DomainTopic
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	background:#FFFFCC;
+	font-size:9.0pt;
+	font-family:Arial;}
+span.ClearformattingChar1
+	{font-family:"MS Mincho";}
+span.MODAL
+	{font-family:"Times New Roman";
+	text-transform:uppercase;}
+p.Counterexample, li.Counterexample, div.Counterexample
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	background:#FFCCCC;
+	border:none;
+	padding:0pt;
+	font-size:9.0pt;
+	font-family:"Courier New";}
+p.Nonnormativeexample, li.Nonnormativeexample, div.Nonnormativeexample
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	background:#CCFFFF;
+	border:none;
+	padding:0pt;
+	font-size:9.0pt;
+	font-family:"Courier New";
+	letter-spacing:-1.0pt;}
+p.StyleCommentText12ptBold, li.StyleCommentText12ptBold, div.StyleCommentText12ptBold
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:Verdana;
+	font-weight:bold;}
+p.MODl, li.MODl, div.MODl
+	{margin-top:6.0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:Verdana;}
+span.MODlChar
+	{font-family:Verdana;}
+p.Level3Text, li.Level3Text, div.Level3Text
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	text-align:justify;
+	text-autospace:none;
+	font-size:9.0pt;
+	font-family:Verdana;}
+span.Modal0
+	{font-family:"Times New Roman";
+	text-transform:uppercase;}
+p.Clearo, li.Clearo, div.Clearo
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Verdana;
+	font-weight:bold;}
+span.ClearoChar
+	{font-family:Verdana;
+	font-weight:bold;}
+p.xl23, li.xl23, div.xl23
+	{margin-right:0pt;
+	margin-left:0pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:blue;
+	text-decoration:underline;}
+span.code1
+	{font-family:"Times New Roman";}
+p.Heading0, li.Heading0, div.Heading0
+	{margin-top:12.0pt;
+	margin-right:0pt;
+	margin-bottom:3.0pt;
+	margin-left:17.85pt;
+	text-indent:-17.85pt;
+	page-break-after:avoid;
+	text-autospace:none;
+	font-size:16.0pt;
+	font-family:Arial;
+	font-weight:bold;}
+ /* Page Definitions */
+ @page Section1
+	{size:595.45pt 841.7pt;
+	margin:72.0pt 72.0pt 85.7pt 72.0pt;}
+div.Section1
+	{page:Section1;}
+@page Section2
+	{size:595.45pt 841.7pt;
+	margin:72.0pt 72.0pt 85.7pt 72.0pt;}
+div.Section2
+	{page:Section2;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0pt;}
+ul
+	{margin-bottom:0pt;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link=blue vlink=purple>
+
+<div class=Section1>
+
+<p class=MsoTitle><span lang=EN-GB>GL Taxonomy Framework Technical Architecture
+1.0</span></p>
+
+<p class=MsoSubtitle><span lang=EN-GB>Recommendation dated 2007-04-17</span></p>
+
+<p class=MsoNormal align=center style='margin-top:0pt;margin-right:28.45pt;
+margin-bottom:0pt;margin-left:36.0pt;margin-bottom:.0001pt;text-align:center'><span
+lang=EN-GB>Corresponding to XBRL 2.1 Recommendation 2003&#8209;12&#8209;31 with
+Corrected Errata 2006-12-18 and the XBRL Global Ledger Framework Recommendation
+dated 2007-04-17</span></p>
+
+<p class=MsoNormal align=center style='margin-top:0pt;margin-right:28.45pt;
+margin-bottom:0pt;margin-left:36.0pt;margin-bottom:.0001pt;text-align:center'><span
+lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='margin-top:0pt;margin-right:28.45pt;
+margin-bottom:0pt;margin-left:36.0pt;margin-bottom:.0001pt;text-align:center'><span
+lang=EN-GB>Copyright © XBRL International 2006/7. All Rights Reserved. </span></p>
+
+<p class=MsoNormal align=center style='margin-top:0pt;margin-right:28.45pt;
+margin-bottom:0pt;margin-left:36.0pt;margin-bottom:.0001pt;text-align:center'><span
+lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoBodyText><a name="_Ref42620194"></a><a name="_Toc53790033"><span
+lang=EN-GB>This version:</span></a></p>
+
+<p class=MsoNormal><span lang=EN-GB>          GLTFTA-REC-2007-04-17.htm</span></p>
+
+<p class=Heading0><span lang=EN-GB style='font-size:9.0pt;font-family:Verdana;
+font-weight:normal'>is NON-NORMATIVE. The normative version is contained in the
+file GLTFTA-REC-2007-04-17.rtf</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<h1 style='margin-left:0pt'><a name="_Toc164749787"><span lang=EN-GB>Editor</span></a><span
+lang=EN-GB>s</span></h1>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=619
+ style='width:464.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=151 valign=top style='width:113.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-GB>Name</span></p>
+  </td>
+  <td width=252 valign=top style='width:189.0pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-GB>Contact</span></p>
+  </td>
+  <td width=216 valign=top style='width:162.0pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-GB>Affiliation</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=151 valign=top style='width:113.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB>Jeff Fedor</span></p>
+  </td>
+  <td width=252 valign=top style='width:189.0pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB>Jeff.fedor@gmail.com</span></p>
+  </td>
+  <td width=216 valign=top style='width:162.0pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB>InDimensions Systems Inc.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=151 valign=top style='width:113.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB>Hugh Wallis</span></p>
+  </td>
+  <td width=252 valign=top style='width:189.0pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB>hughwallis@xbrl.org</span></p>
+  </td>
+  <td width=216 valign=top style='width:162.0pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB>XBRL International</span></p>
+  </td>
+ </tr>
+</table>
+
+<h1 style='margin-left:0pt'><a name="_Toc164749788"><span lang=EN-GB>Contributors</span></a></h1>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=619
+ style='width:464.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=151 valign=top style='width:113.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-GB>Name</span></p>
+  </td>
+  <td width=252 valign=top style='width:189.0pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-GB>Contact</span></p>
+  </td>
+  <td width=216 valign=top style='width:162.0pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-GB>Affiliation</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=151 valign=top style='width:113.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB>Eric E. Cohen</span></p>
+  </td>
+  <td width=252 valign=top style='width:189.0pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB>eric.e.cohen@us.pwc.com</span></p>
+  </td>
+  <td width=216 valign=top style='width:162.0pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB>PricewaterhouseCoopers</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=151 valign=top style='width:113.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB>George Farkas</span></p>
+  </td>
+  <td width=252 valign=top style='width:189.0pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB>gfarkas@xbisoftware.com</span></p>
+  </td>
+  <td width=216 valign=top style='width:162.0pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB>XBI Software</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=151 valign=top style='width:113.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB>Gianluca Garbellotto</span></p>
+  </td>
+  <td width=252 valign=top style='width:189.0pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB>gg@iphix.net</span></p>
+  </td>
+  <td width=216 valign=top style='width:162.0pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB>Iphix</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=151 valign=top style='width:113.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB>Masatomo Goto</span></p>
+  </td>
+  <td width=252 valign=top style='width:189.0pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB>mg@us.fujitsu.com</span></p>
+  </td>
+  <td width=216 valign=top style='width:162.0pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB>Fujitsu Laboratories Of America, Inc.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=151 valign=top style='width:113.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB>Diane Mueller</span></p>
+  </td>
+  <td width=252 valign=top style='width:189.0pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB>diane</span><span lang=EN-CA>@justsystems.com</span></p>
+  </td>
+  <td width=216 valign=top style='width:162.0pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal>Justsystems Canada</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=151 valign=top style='width:113.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB>Nobuyuki Sambuichi</span></p>
+  </td>
+  <td width=252 valign=top style='width:189.0pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB>n-sanbuichi@hitachi-system.co.jp</span></p>
+  </td>
+  <td width=216 valign=top style='width:162.0pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB>Hitachi</span><span lang=EN-GB> Systems
+  and Services, Ltd.</span></p>
+  </td>
+ </tr>
+</table>
+
+<h1 style='margin-left:0pt'><a name="_Toc164749789"></a><a name="_Toc53790035"><span
+lang=EN-GB>Abstract</span></a></h1>
+
+<p class=MsoBodyText><span lang=EN-GB>This document describes the technical architecture<span
+class=MsoFootnoteReference><span style='font-family:Verdana'> </span></span>of journal
+focussed taxonomies using the eXtensible Business Reporting Language <span
+style='font-size:9.0pt'>[XBRL]</span> – commonly known as XBRL-GL.  The
+recommended architecture establishes rules and conventions that assist in
+comprehension, usage and performance among different journal focussed taxonomies. 
+</span></p>
+
+<p class=MsoBodyText><span lang=EN-GB>This document assumes use of the XBRL 2.1
+Specification.</span></p>
+
+<h1 style='margin-left:0pt'><a name="_Toc164749790"></a><a name="_Toc53790036"><span
+lang=EN-GB>Status</span></a></h1>
+
+<p class=MsoBodyText><span lang=EN-GB>This is a Recommendation whose
+circulation is unrestricted. Recipients of this document are invited to submit
+to the editor their questions and comments, and to submit notification of any
+relevant patent rights of which they are aware and to provide supporting
+documentation.</span></p>
+
+<h1 style='margin-left:0pt;page-break-before:always'><a name="_Toc164749791"></a><a
+name="_Toc53790037"><span lang=EN-GB>Table of Contents</span></a></h1>
+
+<p class=MsoToc1><span
+class=MsoHyperlink><span lang=EN-GB style='font-family:Verdana'><a
+href="#_Toc164749787">Editors<span style='color:windowtext;display:none;
+text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>i</span></a></span></span></p>
+
+<p class=MsoToc1><span class=MsoHyperlink><span lang=EN-GB style='font-family:
+Verdana'><a href="#_Toc164749788">Contributors<span style='color:windowtext;
+display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>i</span></a></span></span></p>
+
+<p class=MsoToc1><span class=MsoHyperlink><span lang=EN-GB style='font-family:
+Verdana'><a href="#_Toc164749789">Abstract<span style='color:windowtext;
+display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>i</span></a></span></span></p>
+
+<p class=MsoToc1><span class=MsoHyperlink><span lang=EN-GB style='font-family:
+Verdana'><a href="#_Toc164749790">Status<span style='color:windowtext;
+display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>i</span></a></span></span></p>
+
+<p class=MsoToc1><span class=MsoHyperlink><span lang=EN-GB style='font-family:
+Verdana'><a href="#_Toc164749791">Table of Contents<span style='color:windowtext;
+display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>ii</span></a></span></span></p>
+
+<p class=MsoToc1><span class=MsoHyperlink><span lang=EN-GB style='font-family:
+Verdana'><a href="#_Toc164749792">Table of Tables<span style='color:windowtext;
+display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>ii</span></a></span></span></p>
+
+<p class=MsoToc1><span class=MsoHyperlink><span lang=EN-GB style='font-family:
+Verdana'><a href="#_Toc164749793">Table of Figures<span style='color:windowtext;
+display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>ii</span></a></span></span></p>
+
+<p class=MsoToc1><span class=MsoHyperlink><span lang=EN-GB style='font-family:
+Verdana'><a href="#_Toc164749794">Table of Examples<span style='color:windowtext;
+display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>ii</span></a></span></span></p>
+
+<p class=MsoToc1><span class=MsoHyperlink><span lang=EN-GB style='font-family:
+Verdana'><a href="#_Toc164749795">1.<span lang=EN-US style='font-size:12.0pt;
+font-family:"Times New Roman";color:windowtext;text-decoration:none'>       </span>Introduction<span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>3</span></a></span></span></p>
+
+<p class=MsoToc2><span class=MsoHyperlink><span lang=EN-GB style='font-family:
+Verdana'><a href="#_Toc164749796">1.1<span lang=EN-US style='font-size:12.0pt;
+font-family:"Times New Roman";color:windowtext;text-decoration:none'>        </span>Scope
+of the architecture<span style='color:windowtext;display:none;text-decoration:
+none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>3</span></a></span></span></p>
+
+<p class=MsoToc2><span class=MsoHyperlink><span lang=EN-GB style='font-family:
+Verdana'><a href="#_Toc164749797">1.2<span lang=EN-US style='font-size:12.0pt;
+font-family:"Times New Roman";color:windowtext;text-decoration:none'>        </span>Terminology
+and document conventions<span style='color:windowtext;display:none;text-decoration:
+none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>3</span></a></span></span></p>
+
+<p class=MsoToc1><span class=MsoHyperlink><span lang=EN-GB style='font-family:
+Verdana'><a href="#_Toc164749798">2.<span lang=EN-US style='font-size:12.0pt;
+font-family:"Times New Roman";color:windowtext;text-decoration:none'>       </span>The
+structure of the GL Taxonomy Framework<span style='color:windowtext;display:
+none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>5</span></a></span></span></p>
+
+<p class=MsoToc2><span class=MsoHyperlink><span lang=EN-GB style='font-family:
+Verdana'><a href="#_Toc164749799">2.1<span lang=EN-US style='font-size:12.0pt;
+font-family:"Times New Roman";color:windowtext;text-decoration:none'>        </span>Requirements/Motivation<span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>5</span></a></span></span></p>
+
+<p class=MsoToc2><span class=MsoHyperlink><span lang=EN-GB style='font-family:
+Verdana'><a href="#_Toc164749800">2.2<span lang=EN-US style='font-size:12.0pt;
+font-family:"Times New Roman";color:windowtext;text-decoration:none'>        </span>Structure<span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>6</span></a></span></span></p>
+
+<p class=MsoToc2><span class=MsoHyperlink><span lang=EN-GB style='font-family:
+Verdana'><a href="#_Toc164749801">2.3<span lang=EN-US style='font-size:12.0pt;
+font-family:"Times New Roman";color:windowtext;text-decoration:none'>        </span>Namespaces<span
+style='color:windowtext;display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>10</span></a></span></span></p>
+
+<p class=MsoToc2><span class=MsoHyperlink><span lang=EN-GB style='font-family:
+Verdana'><a href="#_Toc164749802">2.4<span lang=EN-US style='font-size:12.0pt;
+font-family:"Times New Roman";color:windowtext;text-decoration:none'>        </span>Content
+models<span style='color:windowtext;display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>12</span></a></span></span></p>
+
+<p class=MsoToc2><span class=MsoHyperlink><span lang=EN-GB style='font-family:
+Verdana'><a href="#_Toc164749803">2.5<span lang=EN-US style='font-size:12.0pt;
+font-family:"Times New Roman";color:windowtext;text-decoration:none'>        </span>Control
+over the modification of content models<span style='color:windowtext;
+display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>15</span></a></span></span></p>
+
+<p class=MsoToc2><span class=MsoHyperlink><span lang=EN-GB style='font-family:
+Verdana'><a href="#_Toc164749804">2.6<span lang=EN-US style='font-size:12.0pt;
+font-family:"Times New Roman";color:windowtext;text-decoration:none'>        </span>Directory
+structure<span style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>16</span></a></span></span></p>
+
+<p class=MsoToc1><span class=MsoHyperlink><span lang=EN-GB style='font-family:
+Verdana'><a href="#_Toc164749805">3.<span lang=EN-US style='font-size:12.0pt;
+font-family:"Times New Roman";color:windowtext;text-decoration:none'>       </span>How
+to create extensions within the GL Taxonomy Framework<span style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>18</span></a></span></span></p>
+
+<p class=MsoToc2><span class=MsoHyperlink><span lang=EN-GB style='font-family:
+Verdana'><a href="#_Toc164749806">3.1<span lang=EN-US style='font-size:12.0pt;
+font-family:"Times New Roman";color:windowtext;text-decoration:none'>        </span>Public
+extensions<span style='color:windowtext;display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>18</span></a></span></span></p>
+
+<p class=MsoToc2><span class=MsoHyperlink><span lang=EN-GB style='font-family:
+Verdana'><a href="#_Toc164749807">3.2<span lang=EN-US style='font-size:12.0pt;
+font-family:"Times New Roman";color:windowtext;text-decoration:none'>        </span>Private
+extensions<span style='color:windowtext;display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>19</span></a></span></span></p>
+
+<p class=MsoToc1><span class=MsoHyperlink><span lang=EN-GB style='font-family:
+Verdana'><a href="#_Toc164749808">Appendix A.<span lang=EN-US style='font-size:
+12.0pt;font-family:"Times New Roman";color:windowtext;text-decoration:none'>        </span>References
+(non&#8209;normative)<span style='color:windowtext;display:none;text-decoration:
+none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>19</span></a></span></span></p>
+
+<p class=MsoToc1><span class=MsoHyperlink><span lang=EN-GB style='font-family:
+Verdana'><a href="#_Toc164749809">Appendix B.<span lang=EN-US style='font-size:
+12.0pt;font-family:"Times New Roman";color:windowtext;text-decoration:none'>        </span>Intellectual
+Property Status (non&#8209;normative)<span style='color:windowtext;display:
+none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>21</span></a></span></span></p>
+
+<p class=MsoToc1><span class=MsoHyperlink><span lang=EN-GB style='font-family:
+Verdana'><a href="#_Toc164749810">Appendix C.<span lang=EN-US style='font-size:
+12.0pt;font-family:"Times New Roman";color:windowtext;text-decoration:none'>        </span>Document
+history and acknowledgments (non&#8209;normative)<span style='color:windowtext;
+display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>21</span></a></span></span></p>
+
+<p class=MsoToc1><span class=MsoHyperlink><span lang=EN-GB style='font-family:
+Verdana'><a href="#_Toc164749811">Appendix D.<span lang=EN-US style='font-size:
+12.0pt;font-family:"Times New Roman";color:windowtext;text-decoration:none'>        </span>Errata
+corrections incorporated in this document<span style='color:windowtext;
+display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>21</span></a></span></span></p>
+
+<h1 style='margin-left:0pt'><span lang=EN-GB><a name="_Toc164749792"></a><a
+name="_Toc53790038">Table of Tables</a></span></h1>
+
+<p class=MsoTof><span class=MsoHyperlink><span lang=EN-GB style='font-family:
+Verdana'><a href="#_Toc164749812">Table 1.  Terminology used in this document.<span
+style='color:windowtext;display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>3</span></a></span></span></p>
+
+<p class=MsoTof><span class=MsoHyperlink><span lang=EN-GB style='font-family:
+Verdana'><a href="#_Toc164749813">Table 2. Namespaces defined by the XBRL-GL
+Taxonomy Framework<span style='color:windowtext;display:none;text-decoration:
+none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>10</span></a></span></span></p>
+
+<h1 style='margin-left:0pt'><span lang=EN-GB><a name="_Toc164749793">Table of
+Figures</a></span></h1>
+
+<p class=MsoTof><span class=MsoHyperlink><span lang=EN-GB style='font-family:
+Verdana'><a href="#_Toc164749814">Figure 1. High level conceptual view of the
+taxonomy framework<span style='color:windowtext;display:none;text-decoration:
+none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>6</span></a></span></span></p>
+
+<p class=MsoTof><span class=MsoHyperlink><span lang=EN-GB style='font-family:
+Verdana'><a href="#_Toc164749815">Figure 2. Comparison of two different
+&quot;compiled&quot; versions<span style='color:windowtext;display:none;
+text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>7</span></a></span></span></p>
+
+<p class=MsoTof><span class=MsoHyperlink><span lang=EN-GB style='font-family:
+Verdana'><a href="#_Toc164749816">Figure 3. Folder structure for the GL
+Taxonomy Framework<span style='color:windowtext;display:none;text-decoration:
+none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>16</span></a></span></span></p>
+
+<h1 style='margin-left:0pt'><span lang=EN-GB><a name="_Toc164749794"></a><a
+name="_Toc53790039">Table of Examples</a></span></h1>
+
+<p class=MsoTof><span class=MsoHyperlink><span lang=EN-GB style='font-family:
+Verdana'><a href="#_Toc164749817">Example 1. &quot;Palette&quot; schema
+(gl-plt-2006-10-25.xsd) that imports the COR schema<span style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>7</span></a></span></span></p>
+
+<p class=MsoTof><span class=MsoHyperlink><span lang=EN-GB style='font-family:
+Verdana'><a href="#_Toc164749818">Example 2.  Fragment of the COR schema
+(gl-cor-content-2006-10-25.xsd) that contains content model declarations and
+imports the BUS, MUC and USK module schemas<span style='color:windowtext;
+display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>8</span></a></span></span></p>
+
+<p class=MsoTof><span class=MsoHyperlink><span lang=EN-GB style='font-family:
+Verdana'><a href="#_Toc164749819">Example 3.  Fragment of the COR schema
+(gl-cor-2006-10-25.xsd) that contains the element declarations<span
+style='color:windowtext;display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>9</span></a></span></span></p>
+
+<p class=MsoTof><span class=MsoHyperlink><span lang=EN-GB style='font-family:
+Verdana'><a href="#_Toc164749820">Example 4.  Fragment of the COR schema
+(gl-cor-content-2006-10-25.xsd) that contains content model declarations and
+imports only the BUS module schema<span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>10</span></a></span></span></p>
+
+<p class=MsoTof><span class=MsoHyperlink><span lang=EN-GB style='font-family:
+Verdana'><a href="#_Toc164749821">Example 5.  entryDetail content model
+declaration in the COR schema (gl-cor-content-2006-10-25.xsd) that does not
+reference any other modules<span style='color:windowtext;display:none;
+text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>13</span></a></span></span></p>
+
+<p class=MsoTof><span class=MsoHyperlink><span lang=EN-GB style='font-family:
+Verdana'><a href="#_Toc164749822">Example 6.  entryDetail content model
+declaration in the COR schema (gl-cor-content-2006-10-25.xsd) that references
+the BUS module<span style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>14</span></a></span></span></p>
+
+<p class=MsoTof><span class=MsoHyperlink><span lang=EN-GB style='font-family:
+Verdana'><a href="#_Toc164749823">Example 7.  entryDetail content model
+declaration in the COR schema (gl-cor-content-2006-10-25.xsd) that references
+the BUS and MUC modules<span style='color:windowtext;display:none;text-decoration:
+none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>14</span></a></span></span></p>
+
+<p class=MsoBodyText></p>
+
+</div>
+
+<span lang=EN-GB style='font-size:10.0pt;font-family:Verdana'><br clear=all
+style='page-break-before:always'>
+</span>
+
+<div class=Section2>
+
+<h1 style='text-indent:0pt'><a name="_Toc80425111"></a><span lang=EN-GB>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-GB> <a name="_Toc164749795"></a><a name="_Toc53790041">Introduction</a></span></h1>
+
+<h2 style='text-indent:0pt'><a name="_Toc164749796"></a><a name="_Toc53790042"><span
+lang=EN-GB>1.1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-GB>Scope of the architecture</span></a></h2>
+
+<p class=MsoBodyText><span lang=EN-GB>This document defines the technical
+architecture of the XBRL GL taxonomy. It is strictly limited to aspect related
+to the organisation of the technical artefacts (schemas, linkbases etc.) and
+does not address any issues related to how the concepts defined in the taxonomy
+should be used or applied.</span></p>
+
+<h2 style='text-indent:0pt'><a name="_Toc164749797"></a><a name="_Toc53790057"></a><a
+name="_Toc36269159"></a><a name="_Ref36209247"></a><a name="_Ref36209228"></a><a
+name="_Toc53172586"></a><a name="_Toc53510330"></a><a name="_Toc53784116"></a><a
+name="_Toc53790046"></a><a name="_Toc53910529"></a><a name="_Toc53919746"></a><a
+name="_Toc53172592"></a><a name="_Toc53510336"></a><a name="_Toc53784122"></a><a
+name="_Toc53790052"></a><a name="_Toc53910535"></a><a name="_Toc53919752"></a><a
+name="_Toc53172593"></a><a name="_Toc53510337"></a><a name="_Toc53784123"></a><a
+name="_Toc53790053"></a><a name="_Toc53910536"></a><a name="_Toc53919753"></a><a
+name="_Toc53172594"></a><a name="_Toc53510338"></a><a name="_Toc53784124"></a><a
+name="_Toc53790054"></a><a name="_Toc53910537"></a><a name="_Toc53919754"></a><a
+name="_Toc53172595"></a><a name="_Toc53510339"></a><a name="_Toc53784125"></a><a
+name="_Toc53790055"></a><a name="_Toc53910538"></a><a name="_Toc53919755"></a><a
+name="_Toc39458499"></a><a name="_Toc39566336"></a><a name="_Toc39666459"></a><a
+name="_Toc39681504"></a><a name="_Toc39784697"></a><span lang=EN-GB>1.2<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-GB>Terminology</span><span lang=EN-GB> and document
+conventions</span></h2>
+
+<p class=MsoBodyText><span lang=EN-GB>Terminology used in XBRL frequently
+overlaps with terminology from other fields.</span></p>
+
+<p class=MsoCaption><a name="_Toc164749812"><span lang=EN-GB>Table </span></a><span lang=EN-GB>1</span><span lang=EN-GB>.  Terminology used in this document.</span></p>
+
+<table class=MsoBodyText2 border=1 cellspacing=0 cellpadding=0 width=607
+ style='width:455.4pt;border-collapse:collapse;border:none'>
+ <tr style='page-break-inside:avoid'>
+  <td width=259 valign=top style='width:194.4pt;border:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:6.0pt;line-height:normal'><span
+  lang=EN-GB>Architecture</span></p>
+  </td>
+  <td width=348 valign=top style='width:261.0pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:6.0pt;line-height:normal'><span
+  lang=EN-GB>“The fundamental organization of a system embodied by its
+  components, their relationships to each other and to the environment and the
+  principles guiding its design and evolution.  This definition may just as
+  usefully be applied to technical architecture” [IEEE].  </span></p>
+  <p class=MsoNormal style='margin-bottom:6.0pt;line-height:normal'><span
+  lang=EN-GB>This document describes in the form of design rules the
+  organization of journal-focussed reporting taxonomies embodied by schemas,
+  linkbases, concepts, links, and other components, their relationships to each
+  other and to financial reporting standards, and principles that justify the
+  design rules both for base taxonomies and for the extensions that will
+  inevitably follow.  </span></p>
+  <p class=MsoNormal style='margin-bottom:6.0pt;line-height:normal'><span
+  lang=EN-GB>Contrast this with the IEEE definition of Software Engineering: “A
+  systematic approach to developing, using, maintaining and liquidating
+  systems;” this document does not cover approaches to development, use,
+  maintenance or liquidation of taxonomies.</span></p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=259 valign=top style='width:194.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:6.0pt;line-height:normal'><span
+  lang=EN-GB>abstract element, ancestor, base set, bind, child, concept,
+  concrete element, context, duplicate items, duplicate tuples, element,
+  entity, essence concept, fact, fully conforming, instance, item, least common
+  ancestor, linkbase, minimally conforming, parent, period, sibling, taxonomy,
+  taxonomy schema, tuple, unit</span></p>
+  </td>
+  <td width=348 valign=top style='width:261.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:6.0pt;line-height:normal'><span
+  lang=EN-GB>As defined in XBRL 2.1 specification. </span></p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=259 valign=top style='width:194.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:6.0pt;line-height:normal'><span
+  class=MODAL><span lang=EN-GB style='font-family:Verdana'>must, must not,
+  required, shall, shall not, should, should not, may, optional</span></span></p>
+  </td>
+  <td width=348 valign=top style='width:261.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:6.0pt;line-height:normal'><span
+  lang=EN-GB>See [RFC2119] for definitions of these and other terms.  These
+  include, in particular:</span></p>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=318
+   style='width:238.5pt;border-collapse:collapse'>
+   <tr style='height:41.85pt'>
+    <td width=80 valign=top style='width:60.0pt;padding:0pt 5.4pt 0pt 5.4pt;
+    height:41.85pt'>
+    <p class=MsoNormal><span class=MODAL><span lang=EN-GB style='font-family:
+    Verdana'>should</span></span></p>
+    </td>
+    <td width=238 valign=top style='width:178.5pt;padding:0pt 5.4pt 0pt 5.4pt;
+    height:41.85pt'>
+    <p class=MsoNormal><span lang=EN-GB>Conforming documents and applications
+    are encouraged to behave as described.</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=80 valign=top style='width:60.0pt;padding:0pt 5.4pt 0pt 5.4pt'>
+    <p class=MsoNormal><span lang=EN-GB> <span class=MODAL><span
+    style='font-family:Verdana'>must</span></span></span></p>
+    </td>
+    <td width=238 valign=top style='width:178.5pt;padding:0pt 5.4pt 0pt 5.4pt'>
+    <p class=MsoNormal><span lang=EN-GB>Conforming documents and consuming
+    applications are required to behave as described; otherwise they are in
+    error.</span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal style='margin-bottom:6.0pt;line-height:normal'></p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=259 valign=top style='width:194.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:6.0pt;line-height:normal'><span
+  lang=EN-GB>DTS</span></p>
+  </td>
+  <td width=348 valign=top style='width:261.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:6.0pt;line-height:normal'><span
+  lang=EN-GB>Discoverable Taxonomy Set  As defined in XBRL 2.1 specification.</span></p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=259 valign=top style='width:194.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:6.0pt;line-height:normal'><span
+  lang=EN-GB>base DTS</span></p>
+  <p class=MsoNormal style='margin-bottom:6.0pt;line-height:normal'><span
+  lang=EN-GB>extension DTS</span></p>
+  </td>
+  <td width=348 valign=top style='width:261.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:6.0pt;line-height:normal'><span
+  lang=EN-GB>An extension DTS is a DTS that is a proper superset of a base
+  DTS.  Because an extension must be a proper superset, a DTS is not an
+  extension of itself.</span></p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=259 valign=top style='width:194.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:6.0pt;line-height:normal'><span
+  lang=EN-GB>extended-type link</span></p>
+  </td>
+  <td width=348 valign=top style='width:261.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:6.0pt;line-height:normal'><span
+  lang=EN-GB>As defined by the XML Linking Language [XLINK].  XBRL linkbases
+  are made up of extended-type links.</span></p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=259 valign=top style='width:194.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:6.0pt;line-height:normal'><span
+  lang=EN-GB>GLTFTA</span></p>
+  </td>
+  <td width=348 valign=top style='width:261.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:6.0pt;line-height:normal'><span
+  lang=EN-GB>GL Taxonomy Framework Technical Architecture: the set of rules
+  described in this document.</span></p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=259 valign=top style='width:194.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:6.0pt;line-height:normal'><span
+  lang=EN-GB>LRR</span></p>
+  </td>
+  <td width=348 valign=top style='width:261.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:6.0pt;line-height:normal'><span
+  lang=EN-GB>Link Role Registry.  An online listing of XLink role and arc role
+  attribute values that MAY appear in XBRL International acknowledged and
+  approved taxonomies, along with structured information about their purpose,
+  usage, and any intended impact on XBRL instance validation [LRR].</span></p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=259 valign=top style='width:194.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:6.0pt;line-height:normal'><span
+  lang=EN-GB>Module</span></p>
+  </td>
+  <td width=348 valign=top style='width:261.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:6.0pt;line-height:normal'><span
+  lang=EN-GB>An XBRL International recommendation that depends on XBRL and
+  defines the syntax and semantics of additional elements, attributes, roles or
+  arc roles that cannot be defined entirely within an XBRL valid taxonomy.</span></p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=259 valign=top style='width:194.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:6.0pt;line-height:normal'><span
+  lang=EN-GB>Persisting DTS (persisting extension)</span></p>
+  </td>
+  <td width=348 valign=top style='width:261.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:6.0pt;line-height:normal'><span
+  lang=EN-GB>A DTS whose purpose is to be stored as files to be referenced by
+  instances of multiple entities and published in some fashion for users to
+  examine.  This contrasts with a DTS that is ephemeral—for example,
+  dynamically created while processing instances, only to be discarded.  </span></p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=259 valign=top style='width:194.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:6.0pt;line-height:normal'><span
+  lang=EN-GB>source</span></p>
+  </td>
+  <td width=348 valign=top style='width:261.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:6.0pt;line-height:normal'><span
+  lang=EN-GB>The source of an arc is the element indicated by the “from”
+  attribute.</span></p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=259 valign=top style='width:194.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:6.0pt;line-height:normal'><span
+  lang=EN-GB>target</span></p>
+  </td>
+  <td width=348 valign=top style='width:261.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:6.0pt;line-height:normal'><span
+  lang=EN-GB>The target of an arc is the element indicated by the “to”
+  attribute.</span></p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=259 valign=top style='width:194.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:6.0pt;line-height:normal'><span
+  lang=EN-GB>Taxonomy status:</span></p>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+   style='border-collapse:collapse'>
+   <tr>
+    <td valign=top style='padding:0pt 5.4pt 0pt 5.4pt'>
+    <p class=MsoNormal><span lang=EN-GB>Acknowledged</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td valign=top style='padding:0pt 5.4pt 0pt 5.4pt'>
+    <p class=MsoNormal><span lang=EN-GB>Approved</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td valign=top style='padding:0pt 5.4pt 0pt 5.4pt'>
+    <p class=MsoNormal><span lang=EN-GB>Recommended</span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal style='margin-bottom:6.0pt;line-height:normal'></p>
+  </td>
+  <td width=348 valign=top style='width:261.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:6.0pt;line-height:normal'><span
+  lang=EN-GB>This is non&#8209;normative; see the Taxonomy Recognition Process [TRP]:</span></p>
+  <p class=MsoNormal style='margin-bottom:6.0pt;line-height:normal'><span
+  lang=EN-GB>Acknowledged: XBRL International recognizes that the taxonomy is
+  technically in compliance with all appropriate specifications.</span></p>
+  <p class=MsoNormal style='margin-bottom:6.0pt;line-height:normal'><span
+  lang=EN-GB>Approved: In addition to being Acknowledged, XBRL International
+  warrants that the taxonomy was developed in an open fashion and it complies
+  with all best practices for compatibility.</span></p>
+  <p class=MsoNormal style='margin-bottom:6.0pt;line-height:normal'><span
+  lang=EN-GB>Recommended:  In addition to being approved, XBRL International
+  singles out a Recommended taxonomy as being the one preferred for a given
+  type of reporting.  Financial reporting taxonomies are not expected to
+  achieve this status from XBRL International since it is not the custodian of
+  the financial reporting standards themselves.  </span></p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=259 valign=top style='width:194.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:6.0pt;line-height:normal'><span
+  lang=EN-GB>version control</span></p>
+  </td>
+  <td width=348 valign=top style='width:261.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:6.0pt;line-height:normal'><span
+  lang=EN-GB>A version control system maintains an organized set of all the
+  versions of files that are made over time. Version control systems allow
+  people to go back to previous revisions of individual files, and to compare
+  any two revisions to view the changes between them.</span></p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=259 valign=top style='width:194.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:6.0pt;line-height:normal'><span
+  lang=EN-GB>XBRL</span></p>
+  </td>
+  <td width=348 valign=top style='width:261.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:6.0pt;line-height:normal'><span
+  lang=EN-GB>XBRL 2.1 Recommendation, with corrected errata to 2006-12-18 [XBRL].</span></p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=259 valign=top style='width:194.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:6.0pt;line-height:normal'><span
+  lang=EN-GB>XBRL valid</span></p>
+  </td>
+  <td width=348 valign=top style='width:261.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:6.0pt;line-height:normal'><span
+  lang=EN-GB>XML instances and schemas that satisfy the syntax requirements of
+  XBRL.</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoBodyText style='page-break-after:avoid'><span lang=EN-GB>The
+following highlighting is used for non-normative examples in this document:</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:1.15pt;border-collapse:collapse;border:none'>
+ <tr style='height:11.65pt'>
+  <td width=551 style='width:413.1pt;border:solid windowtext 1.0pt;background:
+  #CCFFFF;padding:0pt 0pt 0pt 0pt;height:11.65pt'>
+  <p class=MsoNormal></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoBodyText style='page-break-after:avoid'><span lang=EN-GB>The
+following highlighting is used for non-normative <i>counterexamples </i>in this
+document:</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:1.15pt;border-collapse:collapse;border:none'>
+ <tr style='height:11.65pt'>
+  <td width=551 style='width:413.1pt;border:solid windowtext 1.0pt;background:
+  #FFCCCC;padding:0pt 0pt 0pt 0pt;height:11.65pt'>
+  <p class=MsoNormal></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoBodyText><span lang=EN-GB>Non-normative editorial comments are
+denoted as follows and removed from final recommendations:</span></p>
+
+<p class=MsoBlockText><span lang=EN-GB>HW<b>: </b>This highlighting indicates
+editorial comments about the current draft, prefixed by the editor’s initials.</span></p>
+
+<p class=MsoBodyText><i><span lang=EN-GB>Italics</span></i><span lang=EN-GB>
+are used for rhetorical emphasis only and do <i>not</i> convey any special
+normative meaning.</span></p>
+
+<h1 style='text-indent:0pt'><a name="_Toc164749798"><span lang=EN-GB>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-GB>The structure of the GL Taxonomy Framework</span></a></h1>
+
+<h2 style='text-indent:0pt'><a name="_Toc164749799"><span lang=EN-GB>2.1<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-GB>Requirements/Motivation</span></a></h2>
+
+<p class=MsoBodyText><span lang=EN-GB>The XBRL GL taxonomy framework has been
+designed to support all the constructs that were provided by the XBRL 2.0 and
+2.0a compliant versions of the taxonomy but using the 2.1 version of the XBRL
+Specification <span style='font-size:9.0pt'>[XBRL]</span>. XBRL GL requires a
+highly tuple based taxonomy architecture. The way in which XBRL 2.1 supports
+this is significantly different from that in which XBRL 2.0 and 2.0a supports
+it. In the previous versions of the specification the content model of tuples
+was defined by means of constructs in the definition linkbase. In version 2.1
+the XML Schema <span style='font-size:9.0pt'>[SCHEMA-1]</span> content
+modelling mechanism is employed for this purpose. This creates a new challenge
+when it comes to extensibility of a tuple’s content model since such
+extensibility is not well supported in XML Schema and thus an architecture that
+permits this is necessary.</span></p>
+
+<h2 style='text-indent:0pt'><a name="_Toc164749800"></a><a name="_Ref105403753"></a><a
+name="_Ref105403742"><span lang=EN-GB>2.2<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-GB>Structure</span></a></h2>
+
+<p class=MsoNormal><span lang=EN-GB>The architecture employed to support the
+requirements stated in the previous section requires a set of interrelated
+schema documents that when assembled or compiled together form, with the
+associated linkbases, of course, an XBRL taxonomy. Diagrammatically this can be
+represented thus:</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal style='page-break-after:avoid'><span style='position:relative;
+z-index:3'><span style='position:absolute;left:-105px;top:-227px;width:781px;
+height:2px'><img width=781 height=2
+src="GLTFTA-REC-2007-04-17_files/image001.gif"></span></span><span lang=EN-GB><img
+width=607 height=307 src="GLTFTA-REC-2007-04-17_files/image002.gif"></span></p>
+
+<p class=MsoCaption><a name="_Toc164749814"></a><a name="_Ref103505637"><span
+lang=EN-GB>Figure </span></a><span lang=EN-GB>1</span><span lang=EN-GB>. High
+level conceptual view of the taxonomy framework</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>Each box in the above diagram represents
+one schema file. This framework allows for the element declarations of the
+elements in each module of the framework to remain fixed but the content models
+to be extensible. The element declaration schema files are not valid schemas in
+their own right but are included (by means of an </span><span class=CODE0><span
+lang=EN-GB style='font-size:9.0pt'>&lt;include&gt;</span></span><span
+lang=EN-GB>) in the content model declaration files which, together, form a
+valid schema. The various content model files also import (by means of an </span><span
+class=CODE0><span lang=EN-GB style='font-size:9.0pt'>&lt;import&gt;</span></span><span
+lang=EN-GB>) other namespaces as appropriate where they need to in order to
+reference elements from those namespaces.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>Tying it all together is a “palette” schema
+(marked XBRL GL in Figure 1) that does nothing more than &lt;import&gt; the
+appropriate version of the GL-COR schema for the application for which this is
+being used.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>To better understand this consider two
+examples presented here side by side:</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB><img width=604 height=298
+src="GLTFTA-REC-2007-04-17_files/image003.gif"></span></p>
+
+<p class=MsoCaption><a name="_Toc164749815"><span lang=EN-GB>Figure </span></a><span lang=EN-GB>2</span><span lang=EN-GB>. Comparison of two different
+&quot;compiled&quot; versions</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>The first (leftmost) of these shows how a
+taxonomy that uses elements from four modules (COR, MUC, BUS and USK) is
+compiled: the second (rightmost) shows how a taxonomy that uses elements from
+just two of the modules (COR and BUS) is compiled.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>The naming convention is that the schema
+files that contain the content model declarations are named </span><span
+class=CODE0><span lang=EN-GB style='font-size:9.0pt'>gl-cor-content-2006-10-25.xsd</span></span><span
+lang=EN-GB>, </span><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'>gl-muc-content-2006-10-25.xsd</span></span><span
+lang=EN-GB> etc., those that contain the element declarations are named </span><span
+class=CODE0><span lang=EN-GB style='font-size:9.0pt'>gl-cor-2006-10-25.xsd</span></span><span
+lang=EN-GB>, </span><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'>gl-muc-xsd</span></span><span
+lang=EN-GB> etc. The file containing the “palette” schema is </span><span
+class=CODE0><span lang=EN-GB style='font-size:9.0pt'>gl-plt-2006-10-25.xsd</span></span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>Some XML code fragments might make this
+clearer.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoCaption><a name="_Toc164749817"><span lang=EN-GB>Example </span></a><span lang=EN-GB>1</span><span lang=EN-GB>. &quot;Palette&quot; schema (gl-plt-2006-10-25.xsd)
+that imports the COR schema</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:1.15pt;border-collapse:collapse;border:none'>
+ <tr style='height:23.55pt'>
+  <td width=551 style='width:413.1pt;border:solid windowtext 1.0pt;background:
+  #CCFFFF;padding:0pt 0pt 0pt 0pt;height:23.55pt'>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'>&lt;schema</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'> 
+  targetNamespace=&quot;http://www.xbrl.org/int/gl/plt/2006-10-25&quot;</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'> 
+  elementFormDefault=&quot;qualified&quot;</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'> 
+  attributeFormDefault=&quot;unqualified&quot;</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'> 
+  xmlns=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'> 
+  &lt;import namespace=&quot;http://www.xbrl.org/int/gl/cor/2006-10-25&quot;
+  schemaLocation=&quot;gl-cor-content-2006-10-25.xsd&quot;/&gt;</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'>&lt;/schema&gt;</span></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoCaption><a name="_Toc164749818"></a><a name="_Ref103507404"><span
+lang=EN-GB>Example </span></a><span lang=EN-GB>2</span><span lang=EN-GB>. 
+Fragment of the COR schema (gl-cor-content-2006-10-25.xsd) that contains
+content model declarations and imports the BUS, MUC and USK module schemas</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:1.15pt;border-collapse:collapse;border:none'>
+ <tr style='page-break-inside:avoid;height:23.55pt'>
+  <td width=551 style='width:413.1pt;border:solid windowtext 1.0pt;background:
+  #CCFFFF;padding:0pt 0pt 0pt 0pt;height:23.55pt'>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'>&lt;schema</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'> 
+  targetNamespace=&quot;http://www.xbrl.org/int/gl/cor/2006-10-25&quot;</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'> 
+  elementFormDefault=&quot;qualified&quot;</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'> 
+  attributeFormDefault=&quot;unqualified&quot;</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'> 
+  xmlns=&quot;http://www.w3.org/2001/XMLSchema&quot;</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'> 
+  xmlns:xbrll=&quot;http://www.xbrl.org/2003/linkbase&quot;</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'> 
+  xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'> 
+  xmlns:xbrli=&quot;http://www.xbrl.org/2003/instance&quot;</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'> 
+  xmlns:gl-cor=&quot;http://www.xbrl.org/int/gl/cor/2006-10-25&quot;</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'> 
+  xmlns:gl-bus=&quot;http://www.xbrl.org/int/gl/bus/2006-10-25&quot;</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'> 
+  xmlns:gl-muc=&quot;http://www.xbrl.org/int/gl/muc/2006-10-25&quot;</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'> 
+  xmlns:gl-usk=&quot;http://www.xbrl.org/int/gl/usk/2006-10-25&quot;&gt;</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'> 
+  &lt;import namespace=&quot;http://www.xbrl.org/2003/instance&quot;
+  schemaLocation=&quot;http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd&quot;/&gt;</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'> 
+  &lt;import namespace=&quot;http://www.xbrl.org/int/gl/bus/2006-10-25&quot;
+  schemaLocation=&quot;gl-bus-content-2006-10-25.xsd&quot;/&gt;</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'> 
+  &lt;import namespace=&quot;http://www.xbrl.org/int/gl/muc/2006-10-25&quot;
+  schemaLocation=&quot;gl-muc-content-2006-10-25.xsd&quot;/&gt;</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'> 
+  &lt;import namespace=&quot;http://www.xbrl.org/int/gl/usk/2006-10-25&quot;
+  schemaLocation=&quot;gl-usk-content-2006-10-25.xsd&quot;/&gt;</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'> 
+  &lt;include schemaLocation=&quot;../../cor/gl-cor-2006-10-25.xsd&quot;/&gt;</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'>...</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'>Complex
+  type definitions for elements in the version of the COR module that requires
+  elements from the BUS, MUC and USK schemas</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'>...</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'>&lt;/schema&gt;</span></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>Note that in Example 2 there is an </span><span
+class=CODE0><span lang=EN-GB style='font-size:9.0pt'>&lt;include&gt;</span></span><span
+lang=EN-GB> that brings in the element definitions for the elements whose
+content models are defined in this schema.</span></p>
+
+<p class=MsoCaption><a name="_Toc164749819"></a><a name="_Ref103508419"><span
+lang=EN-GB>Example </span></a><span lang=EN-GB>3</span><span lang=EN-GB>. 
+Fragment of the COR schema (gl-cor-2006-10-25.xsd) that contains the element
+declarations</span><span lang=EN-GB> </span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:1.15pt;border-collapse:collapse;border:none'>
+ <tr style='page-break-inside:avoid;height:23.55pt'>
+  <td width=551 style='width:413.1pt;border:solid windowtext 1.0pt;background:
+  #CCFFFF;padding:0pt 0pt 0pt 0pt;height:23.55pt'>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'>&lt;schema
+  elementFormDefault=&quot;qualified&quot;
+  xmlns:xbrll=&quot;http://www.xbrl.org/2003/linkbase&quot;
+  xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;
+  xmlns=&quot;http://www.w3.org/2001/XMLSchema&quot; targetNamespace=&quot;http://www.xbrl.org/int/gl/cor/2006-10-25&quot;
+  attributeFormDefault=&quot;unqualified&quot;
+  xmlns:xbrli=&quot;http://www.xbrl.org/2003/instance&quot; xmlns:gl-cor=&quot;http://www.xbrl.org/int/gl/cor/2006-10-25&quot;
+  xmlns:gl-gen=&quot;http://www.xbrl.org/int/gl/gen/2006-10-25&quot;&gt;</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'> 
+  &lt;annotation&gt;</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'>   
+  &lt;appinfo&gt;</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'>     
+  &lt;xbrll:linkbaseRef xlink:type=&quot;simple&quot;
+  xlink:arcrole=&quot;http://www.w3.org/1999/xlink/properties/linkbase&quot;
+  xlink:href=&quot;gl-cor-presentation.xml&quot; xlink:title=&quot;Presentation
+  Links, all&quot; xlink:role=&quot;http://www.xbrl.org/2003/role/presentationLinkbaseRef&quot;/&gt;</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'>     
+  &lt;xbrll:linkbaseRef xlink:type=&quot;simple&quot;
+  xlink:arcrole=&quot;http://www.w3.org/1999/xlink/properties/linkbase&quot;
+  xlink:href=&quot;gl-cor-label.xml&quot; xlink:title=&quot;Label Links,
+  all&quot; xlink:role=&quot;http://www.xbrl.org/2003/role/labelLinkbaseRef&quot;/&gt;</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'>   
+  &lt;/appinfo&gt;</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'> 
+  &lt;/annotation&gt;</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'> 
+  &lt;import namespace=&quot;http://www.xbrl.org/2003/instance&quot;
+  schemaLocation=&quot;http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd&quot;/&gt;</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'> 
+  &lt;import namespace=&quot;http://www.xbrl.org/int/gl/gen/2006-10-25&quot;
+  schemaLocation=&quot;../gen/gl-gen-2006-10-25.xsd&quot; /&gt;</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'>...</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'>Element
+  declarations for elements in the COR module</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'>...</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'>&lt;/schema&gt;</span></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>Note that in Example 3 the references to
+the relevant linkbases (presentation and label) are present since they are
+independent of the content model for the elements. Only the element
+declarations are present - there is no content model defined for the elements.
+As a consequence, this schema file is not a valid schema in its own right – it
+is simply a necessary part of the whole schema for the COR namespace that gets
+incorporated into the complete namespace definition as a result of being </span><span
+class=CODE0><span lang=EN-GB style='font-size:9.0pt'>&lt;include&gt;</span></span><span
+lang=EN-GB>d as in Example 2 and Example 4.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>The </span><span class=CODE0><span
+lang=EN-GB style='font-size:9.0pt'>&lt;import&gt;</span></span><span
+lang=EN-GB> of the namespace <span class=CODE0><span style='font-size:9.0pt;
+background:white'>http://www.xbrl.org/int/gl/gen/2006-10-25</span></span> defined
+in </span><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'>gl-gen-2006-10-25.xsd</span></span><span
+lang=EN-GB> should be noted here. This contains type definitions that are used
+in various modules and which MUST NOT be altered by anyone extending the
+taxonomy (see section 2.5 for further explanation).</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoCaption><a name="_Toc164749820"></a><a name="_Ref103511717"><span
+lang=EN-GB>Example </span></a><span lang=EN-GB>4</span><span lang=EN-GB>. 
+Fragment of the COR schema (gl-cor-content-2006-10-25.xsd) that contains
+content model declarations and imports only the BUS module schema</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:1.15pt;border-collapse:collapse;border:none'>
+ <tr style='page-break-inside:avoid;height:23.55pt'>
+  <td width=551 style='width:413.1pt;border:solid windowtext 1.0pt;background:
+  #CCFFFF;padding:0pt 0pt 0pt 0pt;height:23.55pt'>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'>&lt;schema
+  elementFormDefault=&quot;qualified&quot; xmlns:xbrll=&quot;http://www.xbrl.org/2003/linkbase&quot;
+  xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;
+  xmlns=&quot;http://www.w3.org/2001/XMLSchema&quot; targetNamespace=&quot;http://www.xbrl.org/int/gl/cor/2006-10-25&quot;
+  attributeFormDefault=&quot;unqualified&quot;
+  xmlns:xbrli=&quot;http://www.xbrl.org/2003/instance&quot; xmlns:gl-cor=&quot;http://www.xbrl.org/int/gl/cor/2006-10-25&quot;
+  xmlns:gl-bus=&quot;http://www.xbrl.org/int/gl/bus/2006-10-25&quot;&gt;</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'> 
+  &lt;import namespace=&quot;http://www.xbrl.org/2003/instance&quot;
+  schemaLocation=&quot;http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd&quot;/&gt;</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'> 
+  &lt;import namespace=&quot;http://www.xbrl.org/int/gl/bus/2006-10-25&quot;
+  schemaLocation=&quot;gl-bus-content-2006-10-25.xsd&quot;/&gt;</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'> 
+  &lt;include schemaLocation=&quot;../../cor/gl-cor-2006-10-25.xsd&quot;/&gt;</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'>...</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'>Complex
+  type definitions for elements in the version of the COR module that requires
+  elements from the BUS schema</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'>...</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></span></p>
+  <p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'>&lt;/schema&gt;</span></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoBodyText><span lang=EN-GB>Note in Example 4 how the </span><span
+class=CODE0><span lang=EN-GB style='font-size:9.0pt'>&lt;import&gt;</span></span><span
+lang=EN-GB> of the MUC and USK modules is not present (compare with Example 2).</span></p>
+
+<h2 style='text-indent:0pt'><a name="_Toc164749801"><span lang=EN-GB>2.3<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-GB>Namespaces</span></a></h2>
+
+<p class=MsoBodyText><span lang=EN-GB>This section enumerates and describes the
+namespaces used in the GL Taxonomy Framework. Except where indicated these
+namespaces will be modified by those extending the taxonomy if they need to
+extend the content models of elements declared in those namespaces. The rules
+governing what types of modifications are permitted are given in section 3
+below.</span></p>
+
+<p class=MsoCaption><a name="_Toc164749813"><span lang=EN-GB>Table </span></a><span lang=EN-GB>2</span><span lang=EN-GB>. Namespaces defined by the XBRL-GL Taxonomy
+Framework</span></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <thead>
+  <tr style='page-break-inside:avoid'>
+   <td width=319 valign=top style='width:239.4pt;border:solid windowtext 1.0pt;
+   padding:0pt 5.4pt 0pt 5.4pt'>
+   <p class=MsoBodyText><b><span lang=EN-GB>Namespace</span></b></p>
+   </td>
+   <td width=89 valign=top style='width:66.6pt;border:solid windowtext 1.0pt;
+   border-left:none;padding:0pt 5.4pt 0pt 5.4pt'>
+   <p class=MsoBodyText><b><span lang=EN-GB>Recom­mended prefix</span></b></p>
+   </td>
+   <td width=208 valign=top style='width:156.25pt;border:solid windowtext 1.0pt;
+   border-left:none;padding:0pt 5.4pt 0pt 5.4pt'>
+   <p class=MsoBodyText><b><span lang=EN-GB>Description</span></b></p>
+   </td>
+  </tr>
+ </thead>
+ <tr style='page-break-inside:avoid'>
+  <td width=319 valign=top style='width:239.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoBodyText><a name="namespace_gen"><span class=CODE0><span
+  lang=EN-GB style='font-size:9.0pt;background:white'>http://www.xbrl.org/int/gl/gen/2006-10-25</span></span></a></p>
+  </td>
+  <td width=89 valign=top style='width:66.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoBodyText><span class=CODE0><span lang=EN-GB style='font-size:
+  9.0pt'>gl-gen</span></span></p>
+  </td>
+  <td width=208 valign=top style='width:156.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoBodyText><span lang=EN-GB>Defined in </span><span class=CODE0><span
+  lang=EN-GB style='font-size:9.0pt'>gl-gen-2006-10-25.xsd</span></span><span
+  lang=EN-GB>. This namespace contains type definitions that MUST NOT be
+  changed by anyone extending the taxonomy. No elements are defined in this
+  namespace.</span></p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=319 valign=top style='width:239.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoBodyText><a name="namespace_bus"><span class=CODE0><span
+  lang=EN-GB style='font-size:9.0pt;background:white'>http://www.xbrl.org/int/gl/bus/2006-10-25</span></span></a></p>
+  </td>
+  <td width=89 valign=top style='width:66.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoBodyText><span class=CODE0><span lang=EN-GB style='font-size:
+  9.0pt'>gl-bus</span></span></p>
+  </td>
+  <td width=208 valign=top style='width:156.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoBodyText><span lang=EN-GB>Defined in </span><span class=CODE0><span
+  lang=EN-GB style='font-size:9.0pt'>gl-bus-2006-10-25.xsd</span></span><span
+  lang=EN-GB> and </span><span class=CODE0><span lang=EN-GB style='font-size:
+  9.0pt'>gl</span></span><span class=CODE0><span lang=EN-CA style='font-size:
+  9.0pt'>&#8209;</span></span><span class=CODE0><span lang=EN-GB
+  style='font-size:9.0pt'>bus-content-2006-10-25.xsd</span></span><span
+  lang=EN-GB>. This namespace contains element declarations and content model
+  definitions that are relevant to the BUS module of the XBRL-GL taxonomy.</span></p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=319 valign=top style='width:239.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoBodyText><a name="namespace_cor"><span class=CODE0><span
+  lang=EN-GB style='font-size:9.0pt'>http://www.xbrl.org/int/gl/cor/2006-10-25</span></span></a></p>
+  </td>
+  <td width=89 valign=top style='width:66.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoBodyText><span class=CODE0><span lang=EN-GB style='font-size:
+  9.0pt'>gl-cor</span></span></p>
+  </td>
+  <td width=208 valign=top style='width:156.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoBodyText><span lang=EN-GB>Defined in </span><span class=CODE0><span
+  lang=EN-GB style='font-size:9.0pt'>gl-cor-2006-10-25.xsd</span></span><span
+  lang=EN-GB> and </span><span class=CODE0><span lang=EN-GB style='font-size:
+  9.0pt'>gl</span></span><span class=CODE0><span lang=EN-CA style='font-size:
+  9.0pt'>&#8209;</span></span><span class=CODE0><span lang=EN-GB
+  style='font-size:9.0pt'>cor-content-2006-10-25.xsd</span></span><span
+  lang=EN-GB>. This namespace contains element declarations and content model
+  definitions that are relevant to the COR module of the XBRL-GL taxonomy.</span></p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=319 valign=top style='width:239.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoBodyText><a name="namespace_muc"><span class=CODE0><span
+  lang=EN-GB style='font-size:9.0pt'>http://www.xbrl.org/int/gl/muc/2006-10-25</span></span></a></p>
+  </td>
+  <td width=89 valign=top style='width:66.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoBodyText><span class=CODE0><span lang=EN-GB style='font-size:
+  9.0pt'>gl-muc</span></span></p>
+  </td>
+  <td width=208 valign=top style='width:156.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoBodyText><span lang=EN-GB>Defined in </span><span class=CODE0><span
+  lang=EN-GB style='font-size:9.0pt'>gl-muc-2006-10-25.xsd</span></span><span
+  lang=EN-GB> and </span><span class=CODE0><span lang=EN-GB style='font-size:
+  9.0pt'>gl</span></span><span class=CODE0><span lang=EN-CA style='font-size:
+  9.0pt'>&#8209;</span></span><span class=CODE0><span lang=EN-GB
+  style='font-size:9.0pt'>muc-content-2006-10-25.xsd</span></span><span
+  lang=EN-GB>. This namespace contains element declarations and content model
+  definitions that are relevant to the MUC module of the XBRL-GL taxonomy.</span></p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=319 valign=top style='width:239.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoBodyText><a name="namespace_plt"><span class=CODE0><span
+  lang=EN-GB style='font-size:9.0pt'>http://www.xbrl.org/int/gl/plt/2006-10-25</span></span></a></p>
+  </td>
+  <td width=89 valign=top style='width:66.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoBodyText><span class=CODE0><span lang=EN-GB style='font-size:
+  9.0pt'>gl-plt</span></span></p>
+  </td>
+  <td width=208 valign=top style='width:156.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoBodyText><span lang=EN-GB>Defined in </span><span class=CODE0><span
+  lang=EN-GB style='font-size:9.0pt'>gl-plt-2006-10-25.xsd</span></span><span
+  lang=EN-GB>. This is the </span><span class=CODE0><span lang=EN-GB
+  style='font-size:9.0pt'>targetNamespace</span></span><span lang=EN-GB> of the
+  palette taxonomy defined in </span><span class=CODE0><span lang=EN-GB
+  style='font-size:9.0pt'>gl-plt-2006-10-25.xsd</span></span><span lang=EN-GB>.
+  There are no elements of types defined in this namespace and, as such, it
+  does not serve any particular purpose except to provide a </span><span
+  class=CODE0><span lang=EN-GB style='font-size:9.0pt'>targetNamespace</span></span><span
+  lang=EN-GB> for the palette schema document.</span></p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=319 valign=top style='width:239.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoBodyText><a name="namespace_saf"><span class=CODE0><span
+  lang=EN-GB style='font-size:9.0pt'>http://www.xbrl.org/gl/int/taf/2006-10-25</span></span></a></p>
+  </td>
+  <td width=89 valign=top style='width:66.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoBodyText><span class=CODE0><span lang=EN-GB style='font-size:
+  9.0pt'>gl-taf</span></span></p>
+  </td>
+  <td width=208 valign=top style='width:156.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoBodyText><span lang=EN-GB>Defined in </span><span class=CODE0><span
+  lang=EN-GB style='font-size:9.0pt'>gl-taf-2006-10-25.xsd</span></span><span
+  lang=EN-GB> and </span><span class=CODE0><span lang=EN-GB style='font-size:
+  9.0pt'>gl</span></span><span class=CODE0><span lang=EN-CA style='font-size:
+  9.0pt'>&#8209;</span></span><span class=CODE0><span lang=EN-GB
+  style='font-size:9.0pt'>taf-content-2006-10-25.xsd</span></span><span
+  lang=EN-GB>. This namespace contains element declarations and content model
+  definitions that are relevant to the TAF module of the XBRL-GL taxonomy.</span></p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=319 valign=top style='width:239.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoBodyText><a name="namespace_usk"><span class=CODE0><span
+  lang=EN-GB style='font-size:9.0pt'>http://www.xbrl.org/int/gl/usk/2006-10-25</span></span></a></p>
+  </td>
+  <td width=89 valign=top style='width:66.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoBodyText><span class=CODE0><span lang=EN-GB style='font-size:
+  9.0pt'>gl-usk</span></span></p>
+  </td>
+  <td width=208 valign=top style='width:156.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoBodyText><span lang=EN-GB>Defined in </span><span class=CODE0><span
+  lang=EN-GB style='font-size:9.0pt'>gl-usk-2006-10-25.xsd</span></span><span
+  lang=EN-GB> and </span><span class=CODE0><span lang=EN-GB style='font-size:
+  9.0pt'>gl</span></span><span class=CODE0><span lang=EN-CA style='font-size:
+  9.0pt'>&#8209;</span></span><span class=CODE0><span lang=EN-GB
+  style='font-size:9.0pt'>usk-content-2006-10-25.xsd</span></span><span
+  lang=EN-GB>. This namespace contains element declarations and content model
+  definitions that are relevant to the USK module of the XBRL-GL taxonomy.</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<h2 style='text-indent:0pt'><a name="_Toc164749802"><span lang=EN-GB>2.4<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-GB>Content models</span></a></h2>
+
+<p class=MsoBodyText><span lang=EN-GB>The schema files that contain the content
+models (</span><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'>gl-cor-content-2006-10-25.xsd</span></span><span
+lang=EN-GB> etc.) will differ depending on which modules are in use for the
+specific application. The differences are in which other namespaces are </span><span
+class=CODE0><span lang=EN-GB style='font-size:9.0pt'>&lt;import&gt;</span></span><span
+lang=EN-GB>ed and in the content models themselves. The content models are
+defined in type declarations and the set of type declarations will not change
+(as they are simply the types for the elements that are declared in the element
+declaration schema files and those do not change), only the actual content
+models themselves will change.</span></p>
+
+<p class=MsoBodyText><span lang=EN-GB>The following 3 examples show how one
+complex type declaration (</span><span class=CODE0><span lang=EN-GB
+style='font-size:9.0pt'>entryDetailComplexType</span></span><span lang=EN-GB>,
+which defines the content model for the </span><span class=CODE0><span
+lang=EN-GB style='font-size:9.0pt'>gl-cor:entryDetail</span></span><span
+lang=EN-GB> element) varies depending on which modules are in use.</span></p>
+
+<p class=MsoCaption><a name="_Toc164749821"><span lang=EN-GB>Example </span></a><span lang=EN-GB>5</span><span lang=EN-GB>.  entryDetail content model declaration in
+the COR schema (gl-cor-content-2006-10-25.xsd) that does not reference any
+other modules</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:1.15pt;border-collapse:collapse;border:none'>
+ <tr style='page-break-inside:avoid;height:23.55pt'>
+  <td width=551 style='width:413.1pt;border:solid windowtext 1.0pt;background:
+  #CCFFFF;padding:0pt 0pt 0pt 0pt;height:23.55pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>  &lt;complexType
+  name=&quot;entryDetailComplexType&quot;
+  id=&quot;gl-cor_entryDetailComplexType&quot;&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>    &lt;complexContent&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>      &lt;restriction base=&quot;anyType&quot;&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>        &lt;sequence&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:lineNumber&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:lineNumberCounter&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element maxOccurs=&quot;unbounded&quot;
+  minOccurs=&quot;0&quot; ref=&quot;gl-cor:account&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:amount&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:signOfAmount&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:debitCreditCode&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:postingDate&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element maxOccurs=&quot;unbounded&quot;
+  minOccurs=&quot;0&quot; <br>
+                            ref=&quot;gl-cor:identifierReference&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:documentType&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot; ref=&quot;gl-cor:invoiceType&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:documentNumber&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:documentApplyToNumber&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:documentReference&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:documentDate&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:postingStatus&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element maxOccurs=&quot;unbounded&quot;
+  minOccurs=&quot;0&quot; ref=&quot;gl-cor:xbrlInfo&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:detailComment&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:dateAcknowledged&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:confirmedDate&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element maxOccurs=&quot;1&quot;
+  minOccurs=&quot;0&quot; ref=&quot;gl-cor:shipFrom&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:shipReceivedDate&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:maturityDate&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:terms&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element maxOccurs=&quot;unbounded&quot;
+  minOccurs=&quot;0&quot; ref=&quot;gl-cor:taxes&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>        &lt;/sequence&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>        &lt;attribute name=&quot;id&quot;
+  type=&quot;ID&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>      &lt;/restriction&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>    &lt;/complexContent&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>  &lt;/complexType&gt;</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoCaption><a name="_Toc164749822"></a><a name="_Ref103571398"><span
+lang=EN-GB>Example </span></a><span lang=EN-GB>6</span><span lang=EN-GB>. 
+entryDetail content model declaration in the COR schema (gl-cor-content-2006-10-25.xsd)
+that references the BUS module</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:1.15pt;border-collapse:collapse;border:none'>
+ <tr style='page-break-inside:avoid;height:23.55pt'>
+  <td width=551 style='width:413.1pt;border:solid windowtext 1.0pt;background:
+  #CCFFFF;padding:0pt 0pt 0pt 0pt;height:23.55pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>  &lt;complexType
+  name=&quot;entryDetailComplexType&quot;
+  id=&quot;gl-cor_entryDetailComplexType&quot;&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>    &lt;complexContent&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>      &lt;restriction base=&quot;anyType&quot;&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>        &lt;sequence&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:lineNumber&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:lineNumberCounter&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element maxOccurs=&quot;unbounded&quot;
+  minOccurs=&quot;0&quot; ref=&quot;gl-cor:account&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:amount&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:signOfAmount&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:debitCreditCode&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:postingDate&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          <b>&lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-bus:amountMemo&quot;/&gt;</b></span></p>
+  <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-bus:allocationCode&quot;/&gt;</span></b></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element maxOccurs=&quot;unbounded&quot;
+  minOccurs=&quot;0&quot; <br>
+                            ref=&quot;gl-cor:identifierReference&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:documentType&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:invoiceType&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:documentNumber&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:documentApplyToNumber&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:documentReference&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:documentDate&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          <b>&lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-bus:documentReceivedDate&quot;/&gt;</b></span></p>
+  <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-bus:documentChargeReimb&quot;/&gt;</span></b></p>
+  <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-bus:documentLocation&quot;/&gt;</span></b></p>
+  <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-bus:paymentMethod&quot;/&gt;</span></b></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:postingStatus&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element maxOccurs=&quot;unbounded&quot;
+  minOccurs=&quot;0&quot; ref=&quot;gl-cor:xbrlInfo&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:detailComment&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:dateAcknowledged&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:confirmedDate&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element maxOccurs=&quot;1&quot;
+  minOccurs=&quot;0&quot; ref=&quot;gl-cor:shipFrom&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:shipReceivedDate&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:maturityDate&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:terms&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          <b>&lt;element
+  maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot;
+  ref=&quot;gl-bus:measurable&quot;/&gt;</b></span></p>
+  <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element maxOccurs=&quot;unbounded&quot;
+  minOccurs=&quot;0&quot; ref=&quot;gl-bus:jobInfo&quot;/&gt;</span></b></p>
+  <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element maxOccurs=&quot;unbounded&quot;
+  minOccurs=&quot;0&quot; <br>
+                            ref=&quot;gl-bus:depreciationMortgage&quot;/&gt;</span></b></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element maxOccurs=&quot;unbounded&quot;
+  minOccurs=&quot;0&quot; ref=&quot;gl-cor:taxes&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>        &lt;/sequence&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>        &lt;attribute name=&quot;id&quot;
+  type=&quot;ID&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>      &lt;/restriction&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>    &lt;/complexContent&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>  &lt;/complexType&gt;</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>Note the inclusion of references to element
+declarations in the </span><span class=CODE0><span lang=EN-GB style='font-size:
+9.0pt'>gl-bus</span></span><span lang=EN-GB> namespace (in </span><span
+class=CODE0><b><span lang=EN-GB style='font-size:9.0pt'>bold</span></b></span><span
+lang=EN-GB>) in Example 6.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoCaption><a name="_Toc164749823"></a><a name="_Ref103571435"><span
+lang=EN-GB>Example </span></a><span lang=EN-GB>7</span><span lang=EN-GB>. 
+entryDetail content model declaration in the COR schema (gl-cor-content-2006-10-25.xsd)
+that references the BUS and MUC modules</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:1.15pt;border-collapse:collapse;border:none'>
+ <tr style='height:23.55pt'>
+  <td width=599 style='width:449.1pt;border:solid windowtext 1.0pt;background:
+  #CCFFFF;padding:0pt 0pt 0pt 0pt;height:23.55pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>  &lt;complexType
+  name=&quot;entryDetailComplexType&quot;
+  id=&quot;gl-cor_entryDetailComplexType&quot;&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>    &lt;complexContent&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>      &lt;restriction base=&quot;anyType&quot;&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>        &lt;sequence&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:lineNumber&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:lineNumberCounter&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element maxOccurs=&quot;unbounded&quot;
+  minOccurs=&quot;0&quot; ref=&quot;gl-cor:account&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:amount&quot;/&gt;</span></p>
+  <p class=MsoNormal><b><i><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-muc:amountCurrency&quot;/&gt;</span></i></b></p>
+  <p class=MsoNormal><b><i><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-muc:amountOriginalExchangeRateDate&quot;/&gt;</span></i></b></p>
+  <p class=MsoNormal><b><i><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-muc:amountOriginalAmount&quot;/&gt;</span></i></b></p>
+  <p class=MsoNormal><b><i><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-muc:amountOriginalCurrency&quot;/&gt;</span></i></b></p>
+  <p class=MsoNormal><b><i><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-muc:amountOriginalExchangeRate&quot;/&gt;</span></i></b></p>
+  <p class=MsoNormal><b><i><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-muc:amountOriginalExchangeRateSource&quot;/&gt;</span></i></b></p>
+  <p class=MsoNormal><b><i><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element maxOccurs=&quot;unbounded&quot;
+  minOccurs=&quot;0&quot; </span></i></b></p>
+  <p class=MsoNormal><b><i><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>                         
+  ref=&quot;gl-muc:amountOriginalExchangeRateComment&quot;/&gt;</span></i></b></p>
+  <p class=MsoNormal><b><i><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-muc:amountOriginalTriangulationAmount&quot;/&gt;</span></i></b></p>
+  <p class=MsoNormal><b><i><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-muc:amountOriginalTriangulationCurrency&quot;/&gt;</span></i></b></p>
+  <p class=MsoNormal><b><i><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot; </span></i></b></p>
+  <p class=MsoNormal><b><i><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>                         
+  ref=&quot;gl-muc:amountOriginalTriangulationExchangeRate&quot;/&gt;</span></i></b></p>
+  <p class=MsoNormal><b><i><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot; </span></i></b></p>
+  <p class=MsoNormal><b><i><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>                         
+  ref=&quot;gl-muc:amountOriginalTriangulationExchangeRateSource&quot;/&gt;</span></i></b></p>
+  <p class=MsoNormal><b><i><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot; </span></i></b></p>
+  <p class=MsoNormal><b><i><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>                         
+  ref=&quot;gl-muc:amountOriginalTriangulationExchangeRateType&quot;/&gt;</span></i></b></p>
+  <p class=MsoNormal><b><i><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-muc:originalTriangulationExchangeRate&quot;/&gt;</span></i></b></p>
+  <p class=MsoNormal><b><i><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-muc:originalExchangeRateTriangulationSource&quot;/&gt;</span></i></b></p>
+  <p class=MsoNormal><b><i><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-muc:originalExchangeRateTriangulationType&quot;/&gt;</span></i></b></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:signOfAmount&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:debitCreditCode&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:postingDate&quot;/&gt;</span></p>
+  <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-bus:amountMemo&quot;/&gt;</span></b></p>
+  <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-bus:allocationCode&quot;/&gt;</span></b></p>
+  <p class=MsoNormal><b><i><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element maxOccurs=&quot;unbounded&quot;
+  minOccurs=&quot;0&quot; ref=&quot;gl-muc:multicurrencyDetail&quot;/&gt;</span></i></b></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element maxOccurs=&quot;unbounded&quot;
+  minOccurs=&quot;0&quot; ref=&quot;gl-cor:identifierReference&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:documentType&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:invoiceType&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:documentNumber&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:documentApplyToNumber&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:documentReference&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:documentDate&quot;/&gt;</span></p>
+  <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-bus:documentReceivedDate&quot;/&gt;</span></b></p>
+  <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-bus:documentChargeReimb&quot;/&gt;</span></b></p>
+  <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-bus:documentLocation&quot;/&gt;</span></b></p>
+  <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-bus:paymentMethod&quot;/&gt;</span></b></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:postingStatus&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element maxOccurs=&quot;unbounded&quot;
+  minOccurs=&quot;0&quot; ref=&quot;gl-cor:xbrlInfo&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:detailComment&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:dateAcknowledged&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:confirmedDate&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element maxOccurs=&quot;1&quot;
+  minOccurs=&quot;0&quot; ref=&quot;gl-cor:shipFrom&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:shipReceivedDate&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:maturityDate&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element minOccurs=&quot;0&quot;
+  ref=&quot;gl-cor:terms&quot;/&gt;</span></p>
+  <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element maxOccurs=&quot;unbounded&quot;
+  minOccurs=&quot;0&quot; ref=&quot;gl-bus:measurable&quot;/&gt;</span></b></p>
+  <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element maxOccurs=&quot;unbounded&quot;
+  minOccurs=&quot;0&quot; ref=&quot;gl-bus:jobInfo&quot;/&gt;</span></b></p>
+  <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element maxOccurs=&quot;unbounded&quot;
+  minOccurs=&quot;0&quot; </span></b></p>
+  <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>                         
+  ref=&quot;gl-bus:depreciationMortgage&quot;/&gt;</span></b></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>          &lt;element maxOccurs=&quot;unbounded&quot;
+  minOccurs=&quot;0&quot; ref=&quot;gl-cor:taxes&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>        &lt;/sequence&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>        &lt;attribute name=&quot;id&quot;
+  type=&quot;ID&quot;/&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>      &lt;/restriction&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>    &lt;/complexContent&gt;</span></p>
+  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Courier New";
+  letter-spacing:-.5pt'>  &lt;/complexType&gt;</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>Note the inclusion of references to element
+declarations in both the </span><span class=CODE0><span lang=EN-GB
+style='font-size:9.0pt'>gl-bus</span></span><span lang=EN-GB> (in </span><span
+class=CODE0><b><span lang=EN-GB style='font-size:9.0pt'>bold</span></b></span><span
+lang=EN-GB>) and the </span><span class=CODE0><span lang=EN-GB
+style='font-size:9.0pt'>gl-muc</span></span><span lang=EN-GB> (in </span><span
+class=CODE0><b><i><span lang=EN-GB style='font-size:9.0pt'>bold-italic</span></i></b></span><span
+lang=EN-GB>) namespaces in Example 7.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<h2 style='text-indent:0pt'><a name="_Toc164749803"></a><a name="_Ref105393210"><span
+lang=EN-GB>2.5<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-GB>Control over the modification of content models</span></a></h2>
+
+<p class=MsoBodyText><span lang=EN-GB>The architecture described here provides
+different levels of control over the ability of those who may wish to extend
+the base taxonomy in how they may or may not modify content models. There are
+three levels of control that naturally result from this architecture as
+follows:</span></p>
+
+<h3 style='text-indent:0pt'><span lang=EN-GB>2.5.1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-GB>Modification prohibited at any level</span></h3>
+
+<p class=MsoBodyText><span lang=EN-GB>There are a few content models (which are
+defined as XML Schema types. e.g. </span><span class=CODE0><span lang=EN-GB
+style='font-size:9.0pt'>documentTypeItemType</span></span><span lang=EN-GB>) of
+general utility which are unchangeable by anyone who wishes to extend the
+taxonomy. These are defined in the schema file </span><span class=CODE0><span
+lang=EN-GB style='font-size:9.0pt'>gl-gen-2006-10-25.xsd</span></span><span
+lang=EN-GB> in the namespace <span class=CODE0><span style='font-size:9.0pt;
+background:white'>http://www.xbrl.org/int/gl/gen/2006-10-25</span></span>. Since
+they are defined here they MUST NOT be modified by anyone extending the
+taxonomy. By being included in this namespace these types become available for
+use unmodified throughout the entire taxonomy. </span></p>
+
+<h3 style='text-indent:0pt'><span lang=EN-GB>2.5.2<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-GB>Modification permitted only by authors of new
+modules</span></h3>
+
+<p class=MsoBodyText><span lang=EN-GB>Some content models are not of general
+utility but are specific to particular modules. However, the author of the
+module may wish to prevent their being altered by anyone further extending the
+taxonomy or adding a new module. In this case they can be defined in the
+element definition schema relevant to that module (e.g. </span><span
+class=CODE0><span lang=EN-GB style='font-size:9.0pt'>gl-xxx-2006-10-25.xsd</span></span><span
+lang=EN-GB> for the XXX module) rather than in the content module schema (e.g. </span><span
+class=CODE0><span lang=EN-GB style='font-size:9.0pt'>gl-xxx-content-2006-10-25.xsd</span></span><span
+lang=EN-GB> for the XXX module). Since they are defined here they MUST NOT be
+modified by anyone extending the taxonomy. By being included in this namespace
+these types become available for use unmodified in any extension that
+references the module in question.</span></p>
+
+<h3 style='text-indent:0pt'><span lang=EN-GB>2.5.3<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-GB>Modification permitted by taxonomy extenders</span></h3>
+
+<p class=MsoBodyText><span lang=EN-GB>In many cases the content models of both
+items and tuples may be such that the taxonomy author anticipates they will
+need to be modified as part of some taxonomy extension performed by someone
+else. Typical situations of this kind would be the addition of new possibilities
+to an enumerated list or modifications of the content model of a tuple such as
+those exemplified in section 2.2 above. In this case the type declaration that
+defines the content model will be placed in the relevant </span><span
+class=CODE0><span lang=EN-GB style='font-size:9.0pt'>gl&#8209;xxx&#8209;content-2006-10-25.xsd</span></span><span
+lang=EN-GB> file which MAY be modified by anyone extending the taxonomy
+provided they follow the rules for extending taxonomies defined in section 3
+below.</span></p>
+
+<h2 style='text-indent:0pt'><a name="_Toc164749804"><span lang=EN-GB>2.6<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-GB>Directory structure</span></a></h2>
+
+<p class=MsoBodyText><span lang=EN-GB><img width=162 height=238
+src="GLTFTA-REC-2007-04-17_files/image004.jpg"></span></p>
+
+<p class=MsoCaption><a name="_Toc164749816"></a><a name="_Ref105406859"><span
+lang=EN-GB>Figure </span></a><span lang=EN-GB>3</span><span lang=EN-GB>. Folder
+structure for the GL Taxonomy Framework</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>Figure 3 shows the folder structure for the
+GL Taxonomy Framework. It is important to maintain this structure and to follow
+its pattern when extending the taxonomy so as to be able to resolve relative
+references to the various components of the taxonomy. The 6 folders (</span><span
+class=CODE0><span lang=EN-GB style='font-size:9.0pt'>bus, cor, gen, muc, taf</span></span><span
+lang=EN-GB> and </span><span class=CODE0><span lang=EN-GB style='font-size:
+9.0pt'>usk</span></span><span lang=EN-GB>) each contain 3 files (except for </span><span
+class=CODE0><span lang=EN-GB style='font-size:9.0pt'>gen</span></span><span
+lang=EN-GB> where there is only the schema file) named </span><span
+class=CODE0><span lang=EN-GB style='font-size:9.0pt'>gl-xxx-2006-10-25.xsd</span></span><span
+lang=EN-GB>, </span><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'>gl-xxx-2006-10-25-label.</span></span><span
+lang=EN-GB>xml and </span><span class=CODE0><span lang=EN-GB style='font-size:
+9.0pt'>gl&#8209;xxx-2006-10-25&#8209;presentation.xml </span></span><span
+lang=EN-GB>where </span><span class=CODE0><span lang=EN-GB style='font-size:
+9.0pt'>xxx</span></span><span lang=EN-GB> is the same 3 characters as the name
+of the folder itself. These files are the element declarations (and
+unchangeable content model declarations if any) and the label and presentation
+linkbase for the module XXX.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>Under the </span><span class=CODE0><span
+lang=EN-GB style='font-size:9.0pt'>plt</span></span><span lang=EN-GB> folder
+are a series of sub-folders each named </span><span class=CODE0><span
+lang=EN-GB style='font-size:9.0pt'>case</span></span><span lang=EN-GB> followed
+by a series of single characters separated by a “</span><span class=CODE0><span
+lang=EN-GB style='font-size:9.0pt'>-</span></span><span lang=EN-GB>”. The
+single characters are used to identify which modules are brought together to
+form a complete taxonomy. Which one of these to use (i.e. which combination of
+modules) will be determined by the functionality that is required by the user
+of the taxonomy. In each of these sub folders are the file </span><span
+class=CODE0><span lang=EN-GB style='font-size:9.0pt'>gl-plt-2006-10-25.xsd</span></span><span
+lang=EN-GB> and a set of content model schema files named </span><span
+class=CODE0><span lang=EN-GB style='font-size:9.0pt'>gl-xxx-content-2006-10-25.xsd</span></span><span
+lang=EN-GB> (where </span><span class=CODE0><span lang=EN-GB style='font-size:
+9.0pt'>xxx</span></span><span lang=EN-GB> is the 3 character code for the
+module in question). Thus, for example, the files in the </span><span
+class=CODE0><span lang=EN-GB style='font-size:9.0pt'>case-c-b-m</span></span><span
+lang=EN-GB> folder are </span><span class=CODE0><span lang=EN-GB
+style='font-size:9.0pt'>gl-plt-2006-10-25.xsd</span></span><span lang=EN-GB>, </span><span
+class=CODE0><span lang=EN-GB style='font-size:9.0pt'>gl-cor-content-2006-10-25.xsd</span></span><span
+lang=EN-GB>, </span><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'>gl-bus-content-2006-10-25.xsd</span></span><span
+lang=EN-GB>, and </span><span class=CODE0><span lang=EN-GB style='font-size:
+9.0pt'>gl-muc-content-2006-10-25.xsd.</span></span></p>
+
+<p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></span></p>
+
+<p class=MsoNormal><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<b><span lang=EN-GB style='font-size:16.0pt;font-family:Arial'><br clear=all>
+</span></b>
+
+<h1 style='text-indent:0pt'><a name="_Toc164749805"></a><a name="_Ref105404041"></a><a
+name="_Ref105404037"></a><a name="_Ref105392947"><span lang=EN-GB>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-GB>How to create extensions within the GL Taxonomy Framework</span></a></h1>
+
+<p class=MsoNormal><span lang=EN-GB>The mechanism for creating extensions
+within this framework, while utilising the extensibility features built into
+the XBRL Specification, requires additional steps from those normally followed
+when creating extensions to monolithic taxonomies because of the modular nature
+and compilation based architecture employed. As such, taxonomy building
+software tools MAY implement assistance for this workflow to assist those
+seeking to create extensions. If support is not built into such tools then a
+manual process using XML (or simply text) editing software will be necessary.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>As experience is gained with building such
+extensions and with the use of this taxonomy in general, a set of rules and
+restrictions related to the building of extensions will become apparent and
+will be codified either in this document or elsewhere (still to be determined).</span></p>
+
+<h2 style='text-indent:0pt'><a name="_Toc164749806"><span lang=EN-GB>3.1<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-GB>Public extensions</span></a></h2>
+
+<p class=MsoNormal><span lang=EN-GB>A public extension is a new module that is
+intended to be incorporated into the published framework and become part of
+that framework. It will typically be created by XBRL International although,
+since it is anticipated that other organisations might seek to create such
+extensions and submit them to XBRL International for inclusion in the framework,
+the process is documented here. </span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>The steps involved in creating a public
+extension are as follows (note that in the following </span><span class=CODE0><span
+lang=EN-GB style='font-size:9.0pt'>xxx</span></span><span lang=EN-GB> is the 3
+character code for the module being created, </span><span class=CODE0><span
+lang=EN-GB style='font-size:9.0pt'>yyyy-mm-dd</span></span><span lang=EN-GB> is
+the desired publication date for the module):</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<ol style='margin-top:0pt' start=1 type=1>
+ <li class=MsoNormal style='text-autospace:none'><span lang=EN-GB>Select a
+     palette taxonomy (</span><span class=CODE0><span lang=EN-GB
+     style='font-size:9.0pt'>gl-plt-2006-10-25.xsd</span></span><span
+     lang=EN-GB>) and the all the </span><span class=CODE0><span lang=EN-GB
+     style='font-size:9.0pt'>gl-xxx-content-2006-10-25.xsd</span></span><span
+     lang=EN-GB> content model declaration schemas from one of the provided
+     combinations, choosing the combination that most closely resembles the
+     desired end product of the exercise.</span></li>
+ <li class=MsoNormal style='text-autospace:none'><span lang=EN-GB>Create a new
+     subdirectory of “</span><span class=CODE0><span lang=EN-GB
+     style='font-size:9.0pt'>plt</span></span><span lang=EN-GB>” (called </span><span
+     class=CODE0><span lang=EN-GB style='font-size:9.0pt'>case-x-y-z</span></span><span
+     lang=EN-GB> where </span><span class=CODE0><span lang=EN-GB
+     style='font-size:9.0pt'>x</span></span><span lang=EN-GB>, </span><span
+     class=CODE0><span lang=EN-GB style='font-size:9.0pt'>y</span></span><span
+     lang=EN-GB> and </span><span class=CODE0><span lang=EN-GB
+     style='font-size:9.0pt'>z</span></span><span lang=EN-GB>, and additional
+     letters if necessary, represent the modules involved) and copy these files
+     into this directory.</span></li>
+ <li class=MsoNormal style='text-autospace:none'><span lang=EN-GB>Create a new
+     taxonomy representing the module you wish to create, add concept
+     definitions and create linkbases. Note that </span><span class=CODE0><span
+     lang=EN-GB style='font-size:9.0pt'>complexType</span></span><span
+     lang=EN-GB> definitions must be defined as global </span><span
+     class=CODE0><span lang=EN-GB style='font-size:9.0pt'>complexTypes</span></span><span
+     lang=EN-GB>. If the tool has the capability, save the element declarations    
+     and the </span><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'>complexType</span></span><span
+     lang=EN-GB> definitions into separate files in separate directories (i.e.,
+     as</span><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'>..\..\xxx\gl-xxx-yyyy-mm-dd.xsd</span></span><span
+     lang=EN-GB> and </span><span class=CODE0><span lang=EN-GB
+     style='font-size:9.0pt'>.\gl-xxx-content=yyyy-mm-dd.xsd</span></span><span
+     lang=EN-GB>), save the linkbase files into the directory </span><span
+     class=CODE0><span lang=EN-GB style='font-size:9.0pt'>..\..\xxxx</span></span><span
+     lang=EN-GB> and go to step 8, otherwise save them in the same file </span><span
+     class=CODE0><span lang=EN-GB style='font-size:9.0pt'>.\gl-xxx-yyy-mm-dd.xsd</span></span><span
+     lang=EN-GB> and proceed to perform steps 4-7 manually.</span></li>
+ <li class=MsoNormal style='text-autospace:none'><span lang=EN-GB>Separate the
+     taxonomy into</span><span class=CODE0><span lang=EN-GB style='font-size:
+     9.0pt'> gl-xxx-yyyy-mm-dd.xsd</span></span><span lang=EN-GB> and </span><span
+     class=CODE0><span lang=EN-GB style='font-size:9.0pt'>gl-xxx-content-yyyy-mm-dd.xsd</span></span><span
+     lang=EN-GB> with the former containing the element declarations and the
+     latter the content model declarations that are relevant to the new module.</span></li>
+ <li class=MsoNormal style='text-autospace:none'><span lang=EN-GB>Create the
+     directory </span><span class=CODE0><span lang=EN-GB style='font-size:9.0pt'>..\..\xxx</span></span><span
+     lang=EN-GB> and move </span><span class=CODE0><span lang=EN-GB
+     style='font-size:9.0pt'>gl-xxx-yyyy-mm-dd.xsd</span></span><span
+     lang=EN-GB> and the linkbase files into that directory</span></li>
+ <li class=MsoNormal style='text-autospace:none'><span lang=EN-GB>Add an </span><span
+     class=CODE0><span lang=EN-GB style='font-size:9.0pt'>&lt;include&gt;</span></span><span
+     lang=EN-GB> statement in </span><span class=CODE0><span lang=EN-GB
+     style='font-size:9.0pt'>gl-xxx-content-yyyy.mm-dd.xsd</span></span><span
+     lang=EN-GB> to include </span><span class=CODE0><span lang=EN-GB
+     style='font-size:9.0pt'>gl-xxx-yyyy-mm-dd.xsd</span></span></li>
+ <li class=MsoNormal style='text-autospace:none'><span lang=EN-GB>Change all
+     necessary relative paths in the linkbase files and the </span><span
+     class=CODE0><span lang=EN-GB style='font-size:9.0pt'>gl-xxx-yyyy-mm-dd.xsd</span></span><span
+     lang=EN-GB> schema file.</span></li>
+ <li class=MsoNormal style='text-autospace:none'><span lang=EN-GB>Edit each </span><span
+     class=CODE0><span lang=EN-GB style='font-size:9.0pt'>gl-xxx-content-yyyy-mm-dd.xsd</span></span><span
+     lang=EN-GB> in the palette directory as necessary to incorporate any
+     concepts from the new module into the appropriate content models (this
+     will usually be content models for elements declared in </span><span
+     class=CODE0><span lang=EN-GB style='font-size:9.0pt'>gl-cor-content-yyyy-mm-dd.xsd</span></span><span
+     lang=EN-GB>).</span></li>
+ <li class=MsoNormal style='text-autospace:none'><span lang=EN-GB>Ensure that
+     presentation links in the newly created presentation linkbase reflect the
+     content model modifications made in step 8.</span></li>
+</ol>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<h2 style='text-indent:0pt'><a name="_Toc164749807"><span lang=EN-GB>3.2<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-GB>Private extensions</span></a></h2>
+
+<p class=MsoBodyText><span lang=EN-GB>A private extension is one that is for
+use in a closed system and not published generally. Different mechanisms, rules
+and restrictions apply than for public extensions. Those seeking to create
+private extensions should follow the usual XBRL extension process with the
+following points to note:</span></p>
+
+<ol style='margin-top:0pt' start=1 type=1>
+ <li class=MsoNormal style='text-autospace:none'><span lang=EN-GB>Changes to
+     XBRL International owned namespaces <span class=MODAL><span
+     style='font-family:Verdana'>MUST</span></span> ADD elements from the
+     private extension taxonomy into the content models defined in the palette
+     taxonomy that is being extended.</span></li>
+ <li class=MsoNormal style='text-autospace:none'><span lang=EN-GB>Changes to
+     XBRL International owned namespaces <span class=MODAL><span
+     style='font-family:Verdana'>MUST NOT</span></span> remove any elements
+     from the content models defined in the palette taxonomy that is being
+     extended.</span></li>
+ <li class=MsoNormal style='text-autospace:none'><span lang=EN-GB>Private
+     extensions MUST NOT alter any of the officially supplied palette
+     directories. i.e., any changes to XBRL International namespaces MUST be
+     effected in a palette directory that is newly created for the purpose of
+     the extension. Files from officially supplied palette directories MAY be
+     copied into this new palette directory as necessary.</span></li>
+</ol>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                                     </span></p>
+
+<h1 style='margin-left:21.6pt;text-indent:-21.6pt'><a name="_Toc164749808"></a><a
+name="_Toc79824309"></a><a name="_Toc79825630"></a><a name="_Toc79825901"></a><a
+name="_Toc79824310"></a><a name="_Toc79825631"></a><a name="_Toc79825902"></a><span
+lang=EN-GB>Appendix A.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-GB>References (non&#8209;normative)</span></h1>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=618
+ style='width:463.5pt;border-collapse:collapse'>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><a name=IANA><span lang=EN-GB style='font-size:9.0pt'>[IANA]</span></a></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'>IANA
+  country codes.</span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'><a
+  href="http://www.iana.org/cctld/cctld-whois.htm">http://www.iana.org/cctld/cctld-whois.htm</a>
+  </span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><a name=IEEE><span lang=EN-GB style='font-size:9.0pt'>[IEEE]</span></a></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'>IEEE
+  Standard 610.12-1990</span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'>IEEE
+  Standard Glossary of Software Engineering Terminology, IEEE, 1990. </span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'><a
+  href="http://www.ieee.org/">http://www.ieee.org</a> </span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><a name=IFRS><span lang=EN-GB style='font-size:9.0pt'>[IFRS]</span></a></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'>International
+  Financial Reporting Standards (IFRS), </span></p>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'>General
+  Purpose Financial Reporting for Profit-Oriented Entities (GP), 2004&#8209;11&#8209;15,
+  Exposure Draft</span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'><a
+  href="http://xbrl.iasb.org/int/fr/ifrs/gp/2004-11-15/">http://xbrl.iasb.org/int/fr/ifrs/gp/2004-11-15/</a></span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><a name=ISO><span lang=EN-GB style='font-size:9.0pt'>[ISO]</span></a></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'>International
+  Standards Organisation.</span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'>ISO 4217
+  Currency codes, ISO 639 Language codes, ISO 3166 Country codes, ISO 8601
+  international standard numeric date and time representations.</span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'><a
+  href="http://www.iso.ch/">http://www.iso.ch/</a></span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><a name=LLLL><span lang=EN-GB style='font-size:9.0pt'>[LLLL]</span></a></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'>The
+  'Lectric Law Library.</span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'><a
+  href="http://www.lectlaw.com/">http://www.lectlaw.com/</a> </span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><a name=LRR><span lang=EN-GB style='font-size:9.0pt'>[LRR]</span></a></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'>Walter
+  Hamscher (editor), Hugh Wallis</span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'>XBRL Link
+  Role Registry, Public Working Draft of 2004-11-14</span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'><a
+  href="http://www.xbrl.org/lrr/">http://www.xbrl.org/lrr/ </a></span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><a name=USFR><span lang=EN-GB style='font-size:9.0pt'>[USFR]</span></a></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'>US
+  Financial Reporting Taxonomy Framework</span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'><a
+  href="http://www.xbrl.org/taxonomy/us/TaxonomyFrameworkOverview.htm">http://www.xbrl.org/taxonomy/us/TaxonomyFrameworkOverview.htm</a></span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><a name=RFC2119><span lang=EN-GB style='font-size:9.0pt'>[RFC2119]</span></a></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'>Scott
+  Bradner</span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'>Key words
+  for use in RFCs to Indicate Requirement Levels, March 1997</span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'><a
+  href="http://www.ietf.org/rfc/rfc2119.txt">http://www.ietf.org/rfc/rfc2119.txt</a></span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><a name=URN><span lang=EN-GB>[RFC2141]</span></a></p>
+  </td>
+  <td width=511 colspan=2 valign=top style='width:383.1pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'>Ryan Moats</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+  </td>
+  <td width=511 colspan=2 valign=top style='width:383.1pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'>RFC 2141:
+  URN Syntax</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+  </td>
+  <td width=511 colspan=2 valign=top style='width:383.1pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'><a
+  href="http://www.ietf.org/rfc/rfc2141.txt">http://www.ietf.org/rfc/rfc2141.txt
+  </a> </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+  </td>
+  <td width=511 colspan=2 valign=top style='width:383.1pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><a name=RFC2326><span lang=EN-GB style='font-size:9.0pt'>[RFC2396]</span></a></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'>T.
+  Berners-Lee, R. Fielding, L. Masinter</span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'>Uniform
+  Resource Identifiers (URI): Generic Syntax</span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'><a
+  href="http://www.ietf.org/rfc/rfc2396.txt">http://www.ietf.org/rfc/rfc2396.txt</a>
+  </span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><a name=Schema0><span lang=EN-GB style='font-size:9.0pt'>[SCHEMA-0]</span></a></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'>World Wide
+  Web Consortium. </span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'>XML Schema
+  Part 0: Primer.</span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'><a
+  href="http://www.w3.org/TR/xmlschema-0/">http://www.w3.org/TR/xmlschema-0/</a></span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><a name=Schema1><span lang=EN-GB style='font-size:9.0pt'>[SCHEMA-1]</span></a></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'>World Wide
+  Web Consortium. </span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'>XML Schema
+  Part 1: Structures.</span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'><a
+  href="http://www.w3.org/TR/xmlschema-1/">http://www.w3.org/TR/xmlschema-1/</a></span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><a name=Schema2><span lang=EN-GB style='font-size:9.0pt'>[SCHEMA&#8209;2]</span></a></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'>World Wide
+  Web Consortium.  </span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'>XML Schema
+  Part 2: Datatypes.</span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'><a
+  href="http://www.w3.org/TR/xmlschema-2/">http://www.w3.org/TR/xmlschema-2/</a></span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><a name=TRP><span lang=EN-GB style='font-size:9.0pt'>[TRP]</span></a></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'>Calvert, P.
+  and J. MacDonald</span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'>XBRL
+  Taxonomy Recognition Process, 28 October 2004</span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'><a
+  href="http://www.xbrl.org/TaxonomyRecognition/">http://www.xbrl.org/TaxonomyRecognition/</a></span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><a name=XBRL><span lang=EN-GB style='font-size:9.0pt'>[XBRL]</span></a></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=DE style='font-size:9.0pt'>Phillip Engel,
+  Walter Hamscher, Geoff Shuetrim, David vun Kannon, Hugh Wallis.</span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=DE style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'>Extensible
+  Business Reporting Language (XBRL) 2.1 Specification with corrected errata
+  dated 2006-12-18.</span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'><a
+  href="http://www.xbrl.org/SpecRecommendations/">http://www.xbrl.org/SpecRecommendations/</a>
+  </span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><a name=XLINK><span lang=EN-GB style='font-size:9.0pt'>[XLINK]</span></a></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'>Steve
+  DeRose, Eve Maler, David Orchard</span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'>XML Linking
+  Language (XLink) Version 1.0.</span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'><a
+  href="http://www.w3.org/TR/xlink/">http://www.w3.org/TR/xlink/</a></span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><a name=XML><span lang=EN-GB style='font-size:9.0pt'>[XML]</span></a></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'>T. Bray, J.
+  Paoli, C. M. Sperberg-McQueen, E. Maler, F. Yergeau.</span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'>Extensible
+  Markup Language (XML) 1.0 (Third Edition)</span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:80.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=509 valign=top style='width:381.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:1.0pt;margin-right:7.2pt;margin-bottom:
+  1.0pt;margin-left:7.2pt'><span lang=EN-GB style='font-size:9.0pt'><a
+  href="http://www.w3.org/TR/REC-xml/">http://www.w3.org/TR/REC-xml/</a> </span></p>
+  </td>
+  <td style='border:none;padding:0pt 0pt 0pt 0pt' width=2><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<h1 style='margin-left:21.6pt;text-indent:-21.6pt;page-break-before:always'><a
+name="_Toc164749809"></a><a name="_Toc53791324"></a><a name="_Toc50143777"></a><a
+name="_Toc52854567"></a><a name="_Toc53173760"></a><a name="_Toc53511513"></a><a
+name="_Toc53785359"></a><a name="_Toc53791273"></a><a name="_Toc53911853"></a><a
+name="_Toc50143779"></a><a name="_Toc52854569"></a><a name="_Toc53173762"></a><a
+name="_Toc53511515"></a><a name="_Toc53785361"></a><a name="_Toc53791275"></a><a
+name="_Toc53911855"></a><a name="_Toc50143780"></a><a name="_Toc52854570"></a><a
+name="_Toc53173763"></a><a name="_Toc53511516"></a><a name="_Toc53785362"></a><a
+name="_Toc53791276"></a><a name="_Toc53911856"></a><a name="_Toc50143781"></a><a
+name="_Toc52854571"></a><a name="_Toc53173764"></a><a name="_Toc53511517"></a><a
+name="_Toc53785363"></a><a name="_Toc53791277"></a><a name="_Toc53911857"></a><a
+name="_Toc50143786"></a><a name="_Toc52854576"></a><a name="_Toc53173769"></a><a
+name="_Toc53511522"></a><a name="_Toc53785368"></a><a name="_Toc53791282"></a><a
+name="_Toc53911862"></a><a name="_Toc50143792"></a><a name="_Toc50143907"></a><a
+name="_Toc52809406"></a><a name="_Toc52854582"></a><a name="_Toc52854698"></a><a
+name="_Toc53173775"></a><a name="_Toc53511528"></a><a name="_Toc53511648"></a><a
+name="_Toc53785374"></a><a name="_Toc53788909"></a><a name="_Toc53791288"></a><a
+name="_Toc53791400"></a><a name="_Toc53911868"></a><a name="_Toc53911978"></a><a
+name="_Toc50143793"></a><a name="_Toc52854583"></a><a name="_Toc53173776"></a><a
+name="_Toc53511529"></a><a name="_Toc53785375"></a><a name="_Toc53791289"></a><a
+name="_Toc53911869"></a><a name="_Toc50143797"></a><a name="_Toc52854587"></a><a
+name="_Toc53173780"></a><a name="_Toc53511533"></a><a name="_Toc53785379"></a><a
+name="_Toc53791293"></a><a name="_Toc53911873"></a><a name="_Toc50143798"></a><a
+name="_Toc52854588"></a><a name="_Toc53173781"></a><a name="_Toc53511534"></a><a
+name="_Toc53785380"></a><a name="_Toc53791294"></a><a name="_Toc53911874"></a><a
+name="_Toc50143802"></a><a name="_Toc52854592"></a><a name="_Toc53173785"></a><a
+name="_Toc53511538"></a><a name="_Toc53785384"></a><a name="_Toc53791298"></a><a
+name="_Toc53911878"></a><a name="_Toc50143807"></a><a name="_Toc52854597"></a><a
+name="_Toc53173790"></a><a name="_Toc53511543"></a><a name="_Toc53785389"></a><a
+name="_Toc53791303"></a><a name="_Toc53911883"></a><a name="_Toc50143810"></a><a
+name="_Toc52854600"></a><a name="_Toc53173793"></a><a name="_Toc53511546"></a><a
+name="_Toc53785392"></a><a name="_Toc53791306"></a><a name="_Toc53911886"></a><a
+name="_Toc50143814"></a><a name="_Toc52854604"></a><a name="_Toc53173797"></a><a
+name="_Toc53511550"></a><a name="_Toc53785396"></a><a name="_Toc53791310"></a><a
+name="_Toc53911890"></a><a name="_Toc50143815"></a><a name="_Toc52854605"></a><a
+name="_Toc53173798"></a><a name="_Toc53511551"></a><a name="_Toc53785397"></a><a
+name="_Toc53791311"></a><a name="_Toc53911891"></a><a name="_Toc50143818"></a><a
+name="_Toc52854608"></a><a name="_Toc53173801"></a><a name="_Toc53511554"></a><a
+name="_Toc53785400"></a><a name="_Toc53791314"></a><a name="_Toc53911894"></a><a
+name="_Toc50143819"></a><a name="_Toc52854609"></a><a name="_Toc53173802"></a><a
+name="_Toc53511555"></a><a name="_Toc53785401"></a><a name="_Toc53791315"></a><a
+name="_Toc53911895"></a><a name="_Toc50143821"></a><a name="_Toc52854611"></a><a
+name="_Toc53173804"></a><a name="_Toc53511557"></a><a name="_Toc53785403"></a><a
+name="_Toc53791317"></a><a name="_Toc53911897"></a><a name="_Toc50143822"></a><a
+name="_Toc50143909"></a><a name="_Toc52809408"></a><a name="_Toc52854612"></a><a
+name="_Toc52854700"></a><a name="_Toc53173805"></a><a name="_Toc53511558"></a><a
+name="_Toc53511650"></a><a name="_Toc53785404"></a><a name="_Toc53788911"></a><a
+name="_Toc53791318"></a><a name="_Toc53791402"></a><a name="_Toc53911898"></a><a
+name="_Toc53911980"></a><a name="_Toc50143823"></a><a name="_Toc52854613"></a><a
+name="_Toc53173806"></a><a name="_Toc53511559"></a><a name="_Toc53785405"></a><a
+name="_Toc53791319"></a><a name="_Toc53911899"></a><a name="_Toc50143825"></a><a
+name="_Toc52854615"></a><a name="_Toc53173808"></a><a name="_Toc53511561"></a><a
+name="_Toc53785407"></a><a name="_Toc53791321"></a><a name="_Toc53911901"></a><a
+name="_Toc50143826"></a><a name="_Toc52854616"></a><a name="_Toc53173809"></a><a
+name="_Toc53511562"></a><a name="_Toc53785408"></a><a name="_Toc53791322"></a><a
+name="_Toc53911902"></a><span lang=EN-GB>Appendix B.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-GB>Intellectual Property Status (non&#8209;normative)</span></h1>
+
+<p class=MsoBodyText><span lang=EN-GB style='font-size:9.0pt'>This document and
+translations of it may be copied and furnished to others, and derivative works
+that comment on or otherwise explain it or assist in its implementation may be
+prepared, copied, published and distributed, in whole or in part, without
+restriction of any kind, provided that the above copyright notice and this
+paragraph are included on all such copies and derivative works.  However, this
+document itself may not be modified in any way, such as by removing the
+copyright notice or references to XBRL International or XBRL organizations,
+except as required to translate it into languages other than English.  Members
+of XBRL International agree to grant certain licenses under the XBRL
+International Intellectual Property Policy (<a href="http://www.xbrl.org/legal/">http://www.xbrl.org/legal</a>).</span></p>
+
+<p class=MsoBodyText><span lang=EN-GB style='font-size:9.0pt'>This document and
+the information contained herein is provided on an &quot;AS IS&quot; basis and
+XBRL INTERNATIONAL DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT
+INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR
+A PARTICULAR PURPOSE.</span></p>
+
+<p class=MsoBodyText><span lang=EN-GB style='font-size:9.0pt'>The attention of
+users of this document is directed to the possibility that compliance with or
+adoption of XBRL International specifications may require use of an invention
+covered by patent rights. XBRL International shall not be responsible for
+identifying patents for which a license may be required by any XBRL
+International specification, or for conducting legal inquiries into the legal
+validity or scope of those patents that are brought to its attention. XBRL
+International specifications are prospective and advisory only. Prospective
+users are responsible for protecting themselves against liability for
+infringement of patents.  XBRL International takes no position regarding the
+validity or scope of any intellectual property or other rights that might be
+claimed to pertain to the implementation or use of the technology described in
+this document or the extent to which any license under such rights might or
+might not be available; neither does it represent that it has made any effort
+to identify any such rights.  Members of XBRL International agree to grant
+certain licenses under the XBRL International Intellectual Property Policy (<a
+href="http://www.xbrl.org/legal/">http://www.xbrl.org/legal</a>).</span></p>
+
+<h1 style='margin-left:21.6pt;text-indent:-21.6pt'><a name="_Toc164749810"></a><a
+name="_Toc53791326"></a><a name=vcA000></a><a name=vcC000></a><a
+name="_Toc79816314"></a><a name="_Toc79824335"></a><a name="_Toc79825656"></a><a
+name="_Toc79825927"></a><a name="_Toc79816317"></a><a name="_Toc79824338"></a><a
+name="_Toc79825659"></a><a name="_Toc79825930"></a><a name="_Toc79816323"></a><a
+name="_Toc79824344"></a><a name="_Toc79825665"></a><a name="_Toc79825936"></a><a
+name="_Toc79816326"></a><a name="_Toc79824347"></a><a name="_Toc79825668"></a><a
+name="_Toc79825939"></a><a name="_Toc79816329"></a><a name="_Toc79824350"></a><a
+name="_Toc79825671"></a><a name="_Toc79825942"></a><a name="_Toc79816335"></a><a
+name="_Toc79824356"></a><a name="_Toc79825677"></a><a name="_Toc79825948"></a><a
+name="_Toc79816338"></a><a name="_Toc79824359"></a><a name="_Toc79825680"></a><a
+name="_Toc79825951"></a><a name="_Toc79816345"></a><a name="_Toc79824366"></a><a
+name="_Toc79825687"></a><a name="_Toc79825958"></a><a name="_Toc79816348"></a><a
+name="_Toc79824369"></a><a name="_Toc79825690"></a><a name="_Toc79825961"></a><a
+name="_Toc79816354"></a><a name="_Toc79824375"></a><a name="_Toc79825696"></a><a
+name="_Toc79825967"></a><a name="_Toc79816357"></a><a name="_Toc79824378"></a><a
+name="_Toc79825699"></a><a name="_Toc79825970"></a><a name="_Toc79816360"></a><a
+name="_Toc79824381"></a><a name="_Toc79825702"></a><a name="_Toc79825973"></a><a
+name="_Toc79816366"></a><a name="_Toc79824387"></a><a name="_Toc79825708"></a><a
+name="_Toc79825979"></a><a name="_Toc79816369"></a><a name="_Toc79824390"></a><a
+name="_Toc79825711"></a><a name="_Toc79825982"></a><a name="_Toc79816375"></a><a
+name="_Toc79824396"></a><a name="_Toc79825717"></a><a name="_Toc79825988"></a><a
+name="_Toc79816378"></a><a name="_Toc79824399"></a><a name="_Toc79825720"></a><a
+name="_Toc79825991"></a><a name="_Toc79816384"></a><a name="_Toc79824405"></a><a
+name="_Toc79825726"></a><a name="_Toc79825997"></a><a name="_Toc79816387"></a><a
+name="_Toc79824408"></a><a name="_Toc79825729"></a><a name="_Toc79826000"></a><a
+name="_Toc79816393"></a><a name="_Toc79824414"></a><a name="_Toc79825735"></a><a
+name="_Toc79826006"></a><a name="_Toc79816396"></a><a name="_Toc79824417"></a><a
+name="_Toc79825738"></a><a name="_Toc79826009"></a><a name="_Toc79816402"></a><a
+name="_Toc79824423"></a><a name="_Toc79825744"></a><a name="_Toc79826015"></a><a
+name="_Toc79816405"></a><a name="_Toc79824426"></a><a name="_Toc79825747"></a><a
+name="_Toc79826018"></a><a name="_Toc79816408"></a><a name="_Toc79824429"></a><a
+name="_Toc79825750"></a><a name="_Toc79826021"></a><a name="_Toc79816414"></a><a
+name="_Toc79824435"></a><a name="_Toc79825756"></a><a name="_Toc79826027"></a><a
+name="_Toc79816417"></a><a name="_Toc79824438"></a><a name="_Toc79825759"></a><a
+name="_Toc79826030"></a><a name="_Toc79816420"></a><a name="_Toc79824441"></a><a
+name="_Toc79825762"></a><a name="_Toc79826033"></a><a name="_Toc79816426"></a><a
+name="_Toc79824447"></a><a name="_Toc79825768"></a><a name="_Toc79826039"></a><a
+name="_Toc79816429"></a><a name="_Toc79824450"></a><a name="_Toc79825771"></a><a
+name="_Toc79826042"></a><a name="_Toc79816432"></a><a name="_Toc79824453"></a><a
+name="_Toc79825774"></a><a name="_Toc79826045"></a><a name="_Toc79816438"></a><a
+name="_Toc79824459"></a><a name="_Toc79825780"></a><a name="_Toc79826051"></a><a
+name="_Toc79816441"></a><a name="_Toc79824462"></a><a name="_Toc79825783"></a><a
+name="_Toc79826054"></a><a name="_Toc79816444"></a><a name="_Toc79824465"></a><a
+name="_Toc79825786"></a><a name="_Toc79826057"></a><a name="_Toc79816450"></a><a
+name="_Toc79824471"></a><a name="_Toc79825792"></a><a name="_Toc79826063"></a><a
+name="_Toc79816453"></a><a name="_Toc79824474"></a><a name="_Toc79825795"></a><a
+name="_Toc79826066"></a><a name="_Toc79816456"></a><a name="_Toc79824477"></a><a
+name="_Toc79825798"></a><a name="_Toc79826069"></a><a name="_Toc79816462"></a><a
+name="_Toc79824483"></a><a name="_Toc79825804"></a><a name="_Toc79826075"></a><a
+name="_Toc79816465"></a><a name="_Toc79824486"></a><a name="_Toc79825807"></a><a
+name="_Toc79826078"></a><a name="_Toc79816468"></a><a name="_Toc79824489"></a><a
+name="_Toc79825810"></a><a name="_Toc79826081"></a><a name="_Toc79816474"></a><a
+name="_Toc79824495"></a><a name="_Toc79825816"></a><a name="_Toc79826087"></a><a
+name="_Toc79816477"></a><a name="_Toc79824498"></a><a name="_Toc79825819"></a><a
+name="_Toc79826090"></a><a name="_Toc79816480"></a><a name="_Toc79824501"></a><a
+name="_Toc79825822"></a><a name="_Toc79826093"></a><a name="_Hlt44133423"></a><a
+name="_Toc79816486"></a><a name="_Toc79824507"></a><a name="_Toc79825828"></a><a
+name="_Toc79826099"></a><a name="_Toc79816489"></a><a name="_Toc79824510"></a><a
+name="_Toc79825831"></a><a name="_Toc79826102"></a><a name="_Toc79816492"></a><a
+name="_Toc79824513"></a><a name="_Toc79825834"></a><a name="_Toc79826105"></a><a
+name="_Toc79816498"></a><a name="_Toc79824519"></a><a name="_Toc79825840"></a><a
+name="_Toc79826111"></a><a name="_Toc79816501"></a><a name="_Toc79824522"></a><a
+name="_Toc79825843"></a><a name="_Toc79826114"></a><a name="_Toc79816504"></a><a
+name="_Toc79824525"></a><a name="_Toc79825846"></a><a name="_Toc79826117"></a><a
+name="_Toc79816510"></a><a name="_Toc79824531"></a><a name="_Toc79825852"></a><a
+name="_Toc79826123"></a><a name="_Toc79816513"></a><a name="_Toc79824534"></a><a
+name="_Toc79825855"></a><a name="_Toc79826126"></a><span lang=EN-GB>Appendix C.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-GB>Document history and acknowledgments (non&#8209;normative)</span></h1>
+
+<p class=MsoBodyText><span lang=EN-GB>This document could not have been written
+without the contribution of many people. </span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width=99 valign=top style='width:73.9pt;border:solid black 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB>2005-05-10</span></p>
+  </td>
+  <td width=113 valign=top style='width:84.5pt;border:solid black 1.0pt;
+  border-left:none;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB>Wallis</span></p>
+  </td>
+  <td width=405 valign=top style='width:303.85pt;border:solid black 1.0pt;
+  border-left:none;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB>First draft of document prepared.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=99 valign=top style='width:73.9pt;border:solid black 1.0pt;
+  border-top:none;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB>2005-06-01</span></p>
+  </td>
+  <td width=113 valign=top style='width:84.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB>Wallis</span></p>
+  </td>
+  <td width=405 valign=top style='width:303.85pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB>Added sections, incorporated comments
+  from Cohen</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=99 valign=top style='width:73.9pt;border:solid black 1.0pt;
+  border-top:none;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB>2005-06-16</span></p>
+  </td>
+  <td width=113 valign=top style='width:84.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB>Wallis</span></p>
+  </td>
+  <td width=405 valign=top style='width:303.85pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB>Updates to deliver Internal Working Draft
+  </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=99 valign=top style='width:73.9pt;border:solid black 1.0pt;
+  border-top:none;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB>2005-07-06</span></p>
+  </td>
+  <td width=113 valign=top style='width:84.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB>Wallis</span></p>
+  </td>
+  <td width=405 valign=top style='width:303.85pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB>Added section on creating extensions.
+  Incorporated other updates to prepare for inclusion as part of the XBRL-GL
+  taxonomy submission for “Acknowledged” status</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=99 valign=top style='width:73.9pt;border:solid black 1.0pt;
+  border-top:none;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB>2006-10-11</span></p>
+  </td>
+  <td width=113 valign=top style='width:84.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB>Fedor</span></p>
+  </td>
+  <td width=405 valign=top style='width:303.85pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB>Updates for Proposed Recommendation
+  version – new dates, namespace updates</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=99 valign=top style='width:73.9pt;border:solid black 1.0pt;
+  border-top:none;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB>2006-10-25</span></p>
+  </td>
+  <td width=113 valign=top style='width:84.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB>Wallis/Fedor</span></p>
+  </td>
+  <td width=405 valign=top style='width:303.85pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB>Updates for Proposed Recommendation
+  version, updated dates, namespaces, contact information and affiliation for
+  Garbellotto and Mueller and incorporated feedback from Kuo-hua Chou </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=99 valign=top style='width:73.9pt;border:solid black 1.0pt;
+  border-top:none;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB>2007-04-17</span></p>
+  </td>
+  <td width=113 valign=top style='width:84.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB>Wallis</span></p>
+  </td>
+  <td width=405 valign=top style='width:303.85pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB>Editorial to reflect RECOMMENDATION
+  status</span></p>
+  </td>
+ </tr>
+</table>
+
+<h1 style='margin-left:21.6pt;text-indent:-21.6pt'><a name="_Toc53791328"></a><a
+name="_Toc164749811"><span lang=EN-GB>Appendix D.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-GB>Errata corrections incorporated in this document</span></a></h1>
+
+<p class=MsoBodyText style='page-break-after:avoid'><span lang=EN-GB>This
+appendix contains a list of the errata that have been incorporated into this
+document. This represents all those errata corrections that have been approved
+by the XBRL International GL Working Group (GLWG) up to and including.
+Hyperlinks to relevant e-mail threads may only be followed by those who have
+access to the relevant mailing lists. Access to internal XBRL mailing lists is restricted
+to members of XBRL International Inc.</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <thead>
+  <tr style='page-break-inside:avoid'>
+   <td valign=top style='border:solid windowtext 1.0pt;padding:0pt 5.4pt 0pt 5.4pt'>
+   <p class=MsoBodyText align=center style='text-align:center;page-break-after:
+   avoid'><b><span lang=EN-GB>Erratum number</span></b></p>
+   </td>
+   <td valign=top style='border:solid windowtext 1.0pt;border-left:none;
+   padding:0pt 5.4pt 0pt 5.4pt'>
+   <p class=MsoBodyText align=center style='text-align:center;page-break-after:
+   avoid'><b><span lang=EN-GB>Brief description and link(s) to relevant
+   discussion thread(s)</span></b></p>
+   </td>
+   <td valign=top style='border:solid windowtext 1.0pt;border-left:none;
+   padding:0pt 5.4pt 0pt 5.4pt'>
+   <p class=MsoBodyText align=center style='text-align:center;page-break-after:
+   avoid'><b><span lang=EN-GB>Affected section(s)</span></b></p>
+   </td>
+   <td valign=top style='border:solid windowtext 1.0pt;border-left:none;
+   padding:0pt 5.4pt 0pt 5.4pt'>
+   <p class=MsoBodyText align=center style='text-align:center;page-break-after:
+   avoid'><b><span lang=EN-GB>Date Correction Approved by the DWG</span></b></p>
+   </td>
+  </tr>
+ </thead>
+</table>
+
+<p class=MsoBodyText><span lang=EN-GB>Because this is a Recommendation, there
+are no errata at this time.</span></p>
+
+</div>
+
+</body>
+
+</html>

@@ -292,23 +292,7 @@
         <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="BS09" xlink:to="BS09-009" order="9" xlink:title="presentation: BS09 Chart Of Accounts to BS09-009 Balance Debit Or Credit Code"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#BS09-010" xlink:label="BS09-010" xlink:title="presentation parent: BS09-010 Active Flag"/>
         <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="BS09" xlink:to="BS09-010" order="10" xlink:title="presentation: BS09 Chart Of Accounts to BS09-010 Active Flag"/>
-        <link:loc xlink:type="locator" xlink:href="core.xsd#BS09-011" xlink:label="BS09-011" xlink:title="presentation parent: BS09-011 Specified"/>
-        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="BS09" xlink:to="BS09-011" order="11" xlink:title="presentation: BS09 Chart Of Accounts to BS09-011 Specified"/>
-        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="BS09-011" xlink:to="BS01-001" order="12" xlink:title="presentation: BS09-011 Specified to BS01-001 Business Segment Code"/>
-        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="BS09-011" xlink:to="BS01-002" order="13" xlink:title="presentation: BS09-011 Specified to BS01-002 Business Segment Name"/>
-        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="BS09-011" xlink:to="BS01-003" order="14" xlink:title="presentation: BS09-011 Specified to BS01-003 Segment Reference Level"/>
-        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="BS09-011" xlink:to="BS01-004" order="15" xlink:title="presentation: BS09-011 Specified to BS01-004 Organization Type Name"/>
-        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="BS09-011" xlink:to="BS09-001" order="16" xlink:title="presentation: BS09-011 Specified to BS09-001 GL Account Number"/>
-        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="BS09-011" xlink:to="BS09-002" order="17" xlink:title="presentation: BS09-011 Specified to BS09-002 GL Account Name"/>
-        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="BS09-011" xlink:to="BS09-003" order="18" xlink:title="presentation: BS09-011 Specified to BS09-003 GL Account Description"/>
-        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="BS09-011" xlink:to="BS09-004" order="19" xlink:title="presentation: BS09-011 Specified to BS09-004 FS Caption"/>
-        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="BS09-011" xlink:to="BS09-005" order="20" xlink:title="presentation: BS09-011 Specified to BS09-005 Account Type"/>
-        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="BS09-011" xlink:to="BS09-006" order="21" xlink:title="presentation: BS09-011 Specified to BS09-006 Account Subtype"/>
-        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="BS09-011" xlink:to="BS09-007" order="22" xlink:title="presentation: BS09-011 Specified to BS09-007 Account Hierarchy"/>
-        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="BS09-011" xlink:to="BS09-008" order="23" xlink:title="presentation: BS09-011 Specified to BS09-008 Parent GL Account Number"/>
-        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="BS09-011" xlink:to="BS09-009" order="24" xlink:title="presentation: BS09-011 Specified to BS09-009 Balance Debit Or Credit Code"/>
-        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="BS09-011" xlink:to="BS09-010" order="25" xlink:title="presentation: BS09-011 Specified to BS09-010 Active Flag"/>
-        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="BS09-011" xlink:to="BS09-011" order="26" xlink:title="presentation: BS09-011 Specified to BS09-011 Specified"/>
+
         <!-- ABIE BS10 Accounting Period -->
         <link:loc xlink:type="locator" xlink:href="core.xsd#BS10" xlink:label="BS10" xlink:title="presentation: BS10 Accounting Period"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#BS10-001" xlink:label="BS10-001" xlink:title="presentation parent: BS10-001 Journal Entry Type Code"/>
@@ -439,7 +423,7 @@
         <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL02-007" xlink:to="GL02-003" order="28" xlink:title="presentation: GL02-007 Included to GL02-003 Specified"/>
         <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL02-007" xlink:to="GL02-005" order="29" xlink:title="presentation: GL02-007 Included to GL02-005 Journal Entry Header Description"/>
         <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL02-007" xlink:to="GL02-006" order="30" xlink:title="presentation: GL02-007 Included to GL02-006 Effective Date"/>
-        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL02-007" xlink:to="GL02-007" order="31" xlink:title="presentation: GL02-007 Included to GL02-007 Included"/>
+        
         <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-020" xlink:label="GL03-020" xlink:title="presentation parent: GL03-020 Specified"/>
         <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL02" xlink:to="GL03-020" order="32" xlink:title="presentation: GL02 GL Header to GL03-020 Specified"/>
         <link:loc xlink:type="locator" xlink:href="core.xsd#CM08-001" xlink:label="CM08-001" xlink:title="presentation parent: CM08-001 Functional Currency Code"/>

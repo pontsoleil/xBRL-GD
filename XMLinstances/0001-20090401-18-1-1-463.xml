@@ -21,7 +21,8 @@
   xmlns:jp-ta-sr="http://www.xbrl-jp.org/taxonomy/jp/fr/ta/sr/2003-08-31"
   xmlns:pca-bs="http://www.pca.co.jp/taxonomy/jp/fr/bs/2003-08-31"
   xmlns:pca-pl="http://www.pca.co.jp/taxonomy/jp/fr/pl/2003-08-31"
-  xmlns:pca-sr="http://www.pca.co.jp/taxonomy/jp/fr/sr/2003-08-31" xsi:schemaLocation="http://www.xbrlgl.com/gl-plt/ XBRLGL.xsd">
+  xmlns:pca-sr="http://www.pca.co.jp/taxonomy/jp/fr/sr/2003-08-31" 
+  xsi:schemaLocation="http://www.xbrlgl.com/gl-plt/XBRLGL.xsd">
   <gl-cor:accountingEntries>
     <gl-cor:documentInfo>
       <gl-cor:entriesType nonNumericContext="s1">entries</gl-cor:entriesType>
