@@ -1,7 +1,8 @@
 # directories
 TradingPartner/
 dic2etree/
+work/
 
 instance/adc-instances-e-invoice.xbrl
 instance/adc-instances.*
-instance\adc-instances0.*
+instance/adc-instances0.*
