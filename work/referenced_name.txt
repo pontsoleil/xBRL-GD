@@ -1,0 +1,1697 @@
+﻿Oject Class term (entity)
+Na
+Na
+Na
+Na
+Na
+Na
+Base Business Segment
+Base Business Segment
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Base Business Segment
+Na
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Na
+Na
+Na
+Base Business Segment
+Na
+Na
+Na
+Na
+Na
+Base Customer Type
+Na
+Na
+Na
+Na
+Na
+Base Customer
+Base Supplier
+Base Customer Type
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Na
+Na
+Na
+Base Supplier Type
+Na
+Na
+Na
+Na
+Na
+Base Supplier
+Base Customer
+Base Supplier Type
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Base Chart Of Accounts
+Na
+Na
+Na
+Na
+Base Business Segment
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Base Business Segment
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Base Business Segment
+Na
+Na
+Na
+Na
+Na
+Na
+Base Chart Of Accounts
+Base Chart Of Accounts
+Base Chart Of Accounts
+Na
+Base Business Segment
+Na
+Na
+Na
+Base Business Segment
+Na
+Na
+Na
+Base Tax Regulatory
+Na
+Na
+Na
+Na
+Na
+Base Business Segment
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Base Customized Account Segment
+Na
+Na
+Base Customized Account Value
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Base Business Segment
+Na
+Base Chart Of Accounts
+Base Accounting Period
+Base Accounting Period
+Na
+Na
+Base Currency
+Base Currency
+Base Currency
+Base Currency
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Base Business Segment
+Na
+Na
+Na
+Base Chart Of Accounts
+Base Accounting Period
+Base Accounting Period
+Na
+Na
+Base Journal Entry Type
+Na
+Na
+Gl Source
+Na
+Base Bill Type
+Na
+Na
+Base Measurement Unit
+Na
+Base Settlement Method
+Na
+Na
+Na
+Na
+Base Employee
+Base Project
+Base Bank Account
+Na
+Na
+Base Currency
+Na
+Base Currency
+Na
+Base Currency
+Na
+Base Currency
+Na
+Base User
+Na
+Na
+Na
+Base User
+Na
+Na
+Base User
+Na
+Na
+Na
+Na
+Na
+Base Business Segment
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Base Chart Of Accounts
+Na
+Na
+Na
+Na
+Base Customized Account Segment
+Na
+Base Chart Of Accounts
+Base Accounting Period
+Base Accounting Period
+Na
+Na
+Na
+Na
+Base Measurement Unit
+Na
+Na
+Base Employee
+Base Project
+Base Bank Account
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Base Currency
+Base Currency
+Base Currency
+Base Currency
+Na
+Na
+Na
+Na
+Na
+Base Business Segment
+Na
+Na
+Sales Invoice Generated
+Base Customer
+Sales Contract
+Na
+Base Accounting Period
+Base Accounting Period
+Na
+Gl Details
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Base Currency
+Na
+Base Currency
+Na
+Base Currency
+Na
+Base Currency
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Base Business Segment
+Na
+Na
+Na
+Base Customer
+Sales Contract
+Base Project
+Gl Details
+Base Accounting Period
+Base Accounting Period
+Na
+Base Settlement Method
+Na
+Na
+Na
+Na
+Base Chart Of Accounts
+Base Chart Of Accounts
+Na
+Na
+Base Currency
+Na
+Base Currency
+Na
+Base Currency
+Na
+Base Currency
+Na
+Base User
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Na
+Base Business Segment
+Na
+Na
+Base Accounting Period
+Base Accounting Period
+Na
+Base Customer
+Ar Cash Received
+Sales Invoice Generated
+Base Settlement Method
+Na
+Base Chart Of Accounts
+Base Chart Of Accounts
+Na
+Na
+Base Currency
+Na
+Base Currency
+Na
+Base Currency
+Na
+Base Currency
+Na
+Base User
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Na
+Base Business Segment
+Na
+Na
+Na
+Na
+Na
+Sales Invoice Generated
+Gl Details
+Base Accounting Period
+Base Accounting Period
+Na
+Base Customer
+Base Chart Of Accounts
+Base Chart Of Accounts
+Na
+Na
+Base Currency
+Na
+Base Currency
+Na
+Base Currency
+Na
+Base Currency
+Na
+Base Tax Type
+Na
+Base Chart Of Accounts
+Base Chart Of Accounts
+Na
+Base User
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Na
+Base Business Segment
+Na
+Ar Adjustment
+Na
+Na
+Sales Invoice Generated
+Sales Invoice Generated Details
+Gl Details
+Base Chart Of Accounts
+Base Chart Of Accounts
+Na
+Na
+Base Currency
+Na
+Base Currency
+Na
+Base Currency
+Na
+Base Currency
+Na
+Base Tax Type
+Na
+Base Chart Of Accounts
+Base Chart Of Accounts
+Na
+Na
+Base Business Segment
+Na
+Na
+Na
+Na
+Na
+Na
+Base Customer
+Base Business Segment
+Base Employee
+Base Settlement Method
+Base Payment Term
+Base Currency
+Na
+Na
+Na
+Base User
+Na
+Na
+Base User
+Na
+Na
+Base Business Segment
+Na
+Sales Contract
+Na
+Na
+Base Business Segment
+Base Business Segment
+Inventory Product
+Na
+Base Measurement Unit
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Base Tax Type
+Na
+Na
+Na
+Base Business Segment
+Na
+Na
+Na
+Base Accounting Period
+Base Accounting Period
+Na
+Na
+Base Business Segment
+Base Employee
+Base Customer
+Base Settlement Method
+Base Payment Term
+Na
+Na
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Na
+Base Business Segment
+Na
+Sales Order
+Na
+Na
+Sales Contract
+Sales Contract Details
+Na
+Base Business Segment
+Base Business Segment
+Na
+Na
+Base Measurement Unit
+Na
+Base Measurement Unit
+Na
+Na
+Na
+Na
+Inventory Product
+Na
+Na
+Na
+Base Tax Type
+Na
+Na
+Na
+Base Business Segment
+Na
+Na
+Na
+Base Accounting Period
+Base Accounting Period
+Na
+Na
+Na
+Na
+Base Customer
+Na
+Na
+Base Currency
+Base Payment Term
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Base Tax Type
+Na
+Na
+Base User
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Na
+Base Business Segment
+Na
+Sales Invoice Generated
+Na
+Na
+Sales Order
+Sales Order Details
+Inventory Product
+Na
+Base Measurement Unit
+Na
+Base Measurement Unit
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Base Tax Type
+Na
+Base Chart Of Accounts
+Base Chart Of Accounts
+Na
+Na
+Base Business Segment
+Na
+Na
+Na
+Base Accounting Period
+Base Accounting Period
+Base Business Segment
+Na
+Na
+Na
+Base Currency
+Na
+Na
+Na
+Na
+Base Customer
+Sales Order
+Na
+Base User
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Na
+Base Business Segment
+Na
+Sales Shipment Made
+Na
+Na
+Inventory Product
+Na
+Base Measurement Unit
+Na
+Na
+Sales Order Details
+Na
+Base Measurement Unit
+Na
+Na
+Na
+Na
+Base Business Segment
+Na
+Na
+Purchase Invoice Received
+Base Supplier
+Purchase Contract
+Base Project
+Base Accounting Period
+Base Accounting Period
+Na
+Gl Details
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Base Currency
+Na
+Base Currency
+Na
+Base Currency
+Na
+Base Currency
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Base Business Segment
+Na
+Na
+Na
+Base Supplier
+Purchase Contract
+Base Project
+Gl Details
+Base Accounting Period
+Base Accounting Period
+Na
+Base Settlement Method
+Na
+Na
+Na
+Na
+Base Chart Of Accounts
+Base Chart Of Accounts
+Na
+Na
+Base Currency
+Na
+Base Currency
+Na
+Base Currency
+Na
+Base Currency
+Na
+Base User
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Na
+Base Business Segment
+Na
+Na
+Base Accounting Period
+Base Accounting Period
+Na
+Base Supplier
+Ap Payment Made
+Purchase Invoice Received
+Base Settlement Method
+Na
+Base Chart Of Accounts
+Base Chart Of Accounts
+Na
+Na
+Base Currency
+Na
+Base Currency
+Na
+Base Currency
+Na
+Base Currency
+Na
+Base User
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Na
+Base Business Segment
+Na
+Na
+Na
+Na
+Na
+Purchase Invoice Received
+Gl Details
+Base Accounting Period
+Base Accounting Period
+Na
+Base Supplier
+Base Chart Of Accounts
+Base Chart Of Accounts
+Na
+Na
+Base Currency
+Na
+Base Currency
+Na
+Base Currency
+Na
+Base Currency
+Na
+Base Tax Type
+Na
+Base Chart Of Accounts
+Base Chart Of Accounts
+Na
+Base User
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Na
+Base Business Segment
+Na
+Ap Adjustment
+Na
+Na
+Purchase Invoice Received
+Purchase Invoice Received Details
+Gl Details
+Base Chart Of Accounts
+Base Chart Of Accounts
+Na
+Na
+Base Currency
+Na
+Base Currency
+Na
+Base Currency
+Na
+Base Currency
+Na
+Base Tax Type
+Na
+Base Chart Of Accounts
+Base Chart Of Accounts
+Na
+Na
+Base Business Segment
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Base Business Segment
+Na
+Purchase Requisition
+Na
+Na
+Inventory Product
+Na
+Na
+Na
+Base Measurement Unit
+Base Project
+Base Supplier
+Base Business Segment
+Base Business Segment
+Na
+Na
+Na
+Base Business Segment
+Na
+Na
+Na
+Na
+Na
+Na
+Base Supplier
+Base Business Segment
+Base Employee
+Base Settlement Method
+Base Payment Term
+Base Currency
+Na
+Na
+Na
+Base User
+Na
+Na
+Base User
+Na
+Na
+Base Business Segment
+Na
+Purchase Contract
+Na
+Na
+Base Business Segment
+Base Business Segment
+Inventory Product
+Na
+Base Measurement Unit
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Base Tax Type
+Na
+Na
+Na
+Base Business Segment
+Na
+Na
+Na
+Base Accounting Period
+Base Accounting Period
+Na
+Na
+Base Business Segment
+Base Employee
+Base Supplier
+Base Settlement Method
+Base Payment Term
+Na
+Na
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Na
+Base Business Segment
+Na
+Purchase Order
+Na
+Na
+Purchase Contract
+Purchase Contract Details
+Purchase Requisition
+Purchase Requisition Details
+Base Business Segment
+Base Business Segment
+Base Project
+Na
+Na
+Base Measurement Unit
+Na
+Base Measurement Unit
+Na
+Na
+Na
+Na
+Inventory Product
+Na
+Na
+Na
+Base Tax Type
+Na
+Na
+Na
+Base Business Segment
+Na
+Na
+Na
+Base Accounting Period
+Base Accounting Period
+Na
+Na
+Na
+Na
+Base Supplier
+Base Business Segment
+Na
+Na
+Base Currency
+Base Payment Term
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Base Tax Type
+Na
+Na
+Base User
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Na
+Base Business Segment
+Na
+Purchase Invoice Received
+Na
+Na
+Purchase Order
+Purchase Order Details
+Inventory Product
+Na
+Base Measurement Unit
+Na
+Base Measurement Unit
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Base Tax Type
+Na
+Base Chart Of Accounts
+Base Chart Of Accounts
+Na
+Na
+Base Business Segment
+Na
+Na
+Na
+Base Accounting Period
+Base Accounting Period
+Base Business Segment
+Na
+Na
+Na
+Base Currency
+Na
+Na
+Na
+Na
+Base Supplier
+Purchase Order
+Na
+Base User
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Na
+Base Business Segment
+Na
+Purchase Materials Received
+Na
+Na
+Inventory Product
+Na
+Base Measurement Unit
+Na
+Na
+Purchase Order Details
+Na
+Base Measurement Unit
+Na
+Na
+Na
+Na
+Base Business Segment
+Na
+Na
+Na
+Na
+Na
+Na
+Base Business Segment
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Base Business Segment
+Na
+Na
+Na
+Na
+Na
+Inventory Product Type
+Na
+Na
+Base Business Segment
+Na
+Na
+Na
+Inventory Product Type
+Na
+Na
+Na
+Base Supplier
+Base Measurement Unit
+Na
+Base Measurement Unit
+Base Chart Of Accounts
+Base Chart Of Accounts
+Na
+Na
+Na
+Na
+Na
+Na
+Base Business Segment
+Na
+Na
+Inventory Product
+Na
+Na
+Na
+Inventory Location
+Na
+Na
+Na
+Base Business Segment
+Base Business Segment
+Base Measurement Unit
+Base Measurement Unit
+Base Measurement Unit
+Base Measurement Unit
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Base Currency
+Na
+Na
+Na
+Na
+Base Business Segment
+Na
+Na
+Na
+Base Project
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Base Supplier
+Base Customer
+Na
+Na
+Na
+Na
+Na
+Base Business Segment
+Base Measurement Unit
+Base Measurement Unit
+Inventory Product
+Na
+Na
+Na
+Inventory Location
+Inventory Location
+Base Business Segment
+Na
+Na
+Base Currency
+Na
+Na
+Base Chart Of Accounts
+Base Chart Of Accounts
+Na
+Base User
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Na
+Base Business Segment
+Na
+Na
+Na
+Na
+Na
+Inventory Product
+Inventory Location
+Base Business Segment
+Na
+Na
+Na
+Na
+Base Measurement Unit
+Na
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Na
+Base Business Segment
+Na
+Na
+Na
+Base Accounting Period
+Base Accounting Period
+Base Business Segment
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Base Business Segment
+Base Measurement Unit
+Base Measurement Unit
+Na
+Na
+Base Business Segment
+Na
+Na
+Na
+Property Plant and Equipment Type
+Na
+Na
+Na
+Na
+Property Plant and Equipment Type
+Na
+Na
+Na
+Purchase Order
+Inventory Product
+Na
+Na
+Na
+Base Supplier
+Na
+Na
+Na
+Na
+Na
+Na
+Base Measurement Unit
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Na
+Base Business Segment
+Na
+Na
+Property Plant and Equipment Master
+Base Accounting Period
+Base Accounting Period
+Na
+Na
+Na
+Na
+Na
+Na
+Base Currency
+Na
+Base User
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Na
+Base Business Segment
+Na
+Na
+Property Plant and Equipment Master
+Base Accounting Period
+Base Accounting Period
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Base Currency
+Base Chart Of Accounts
+Base Chart Of Accounts
+Na
+Base User
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Na
+Base Business Segment
+Na
+Na
+Property Plant and Equipment Master
+Base Accounting Period
+Base Accounting Period
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Na
+Base Business Segment
+Na
+Property Plant and Equipment Master
+Na
+Base Business Segment
+Na
+Na
+Base Business Segment
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Base Business Segment
+Na
+Property Plant and Equipment Master
+Base Accounting Period
+Base Accounting Period
+Property Plant and Equipment Depreciation Method
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Base Chart Of Accounts
+Base Chart Of Accounts
+Na
+Base User
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Base User
+Na
+Na
+Na
+Na
+Base Business Segment
+Na
+Na
+Na
+Na
+Na
+Gl Details
+Na
+Na
+Base Measurement Unit
+Na
+Na
+Na
+Sales Invoice Generated
+Sales Invoice Generated Details
+Na
+Na
+Base Measurement Unit
+Na
+Na
+Na
+Purchase Invoice Received
+Purchase Invoice Received Details
+Na
+Na
+Base Measurement Unit
+Na
+Na
+Na
+Inventory Product
+Na
+Na
+Base Measurement Unit
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Inventory Transaction
+Inventory Transaction
+Na
+Na
+Base Measurement Unit
+Na
+Na
+Na
+Inventory Transaction
+Inventory Transaction
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Base Business Segment
+Na
+Base Accounting Period
+Na
+Na
+Na
+Base Currency
+Na
+Na
+Na
+Na
+Na
+Na
+Grfr Report Header
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Base Employee
+Na
+Na
+Na
+Base Business Segment
+Pay Payroll Period
+Pay Payroll Period
+Base Accounting Period
+Base Accounting Period
+Base Currency
+Na
+Na
+Na
+Na
+Na
+Na
+Pay Payslip
+Na
+Na
+Pay Payroll Item
+Na
+Na
+Na
+Na
+Base Chart Of Accounts

@@ -1,0 +1,1699 @@
+Property term (attribute)
+
+Business Segment Code
+Business Segment Name
+Segment Reference Level
+Organization Type Name
+
+Parent Code
+Child Code
+
+Employee ID
+Employee Code
+Employee Name
+Inactive Flag
+Employee Type Code
+Employee Type Name
+Department Code
+Employee Job Title
+Employee Academic Degree
+Employment Date
+Termination Date
+User ID
+
+User ID
+User Active Status
+User Status Modified Date
+User Name
+User Job Title
+Department Code
+User Role Responsibility
+
+Customer Type ID
+Customer Type Code
+Customer Type Name
+Parent Customer Type ID
+
+Customer Account ID
+Customer Account Number
+Customer Account Name
+Customer Abbreviation
+Parent Customer ID
+Corresponding Supplier ID
+Customer Type ID
+Customer TIN
+Inactive Date
+Transaction Credit Limit
+Total Credit Limit
+Terms Discount Percentage
+Terms Discount Days
+Terms Due Days
+specified
+Street Address1
+Street Address2
+City Name
+State Province Code
+Postal Code
+Country Code
+specified
+Street Address1
+Street Address2
+City Name
+State Province Code
+Postal Code
+Country Code
+specified
+Name
+Phone
+Email
+specified
+User ID
+Date
+Time
+specified
+User ID
+Date
+Time
+specified
+User ID
+Date
+Time
+
+Supplier Type ID
+Supplier Type Code
+Supplier Type Name
+Parent Supplier Type ID
+
+Supplier Account ID
+Supplier Account Number
+Supplier Account Name
+Supplier Abbreviation
+Parent Supplier ID
+Corresponding Customer ID
+Supplier Type ID
+Supplier TIN
+Supplier Group
+Inactive Date
+Transaction Credit Limit
+Total Credit Limit
+Terms Discount Percentage
+Terms Discount Days
+Terms Due Days
+specified
+Street Address1
+Street Address2
+City Name
+State Province Code
+Postal Code
+Country Code
+specified
+Street Address1
+Street Address2
+City Name
+State Province Code
+Postal Code
+Country Code
+specified
+Name
+Phone
+Email
+specified
+User ID
+Date
+Time
+specified
+User ID
+Date
+Time
+specified
+User ID
+Date
+Time
+
+GL Account Number
+GL Account Name
+GL Account Description
+Financial Statement Caption
+Account Type
+Account Subtype
+Account Hierarchy
+Parent GL Account Number
+Balance Debit Or Credit Code
+Active Flag
+specified
+Sequence Number
+Business Segment Code
+
+Fiscal Year
+Accounting Period
+Accounting Period BEG Date
+Accounting Period Ending Date
+
+Journal Entry Type Code
+Journal Entry Type Name
+Journal Entry Type Abbreviation
+Active Flag
+
+Bill Type Code
+Bill Type Name
+Active Flag
+
+Settlement Method Code
+Settlement Method Name
+Active Flag
+
+Currency Code
+Currency Name
+Minor Unit
+Active Flag
+
+UOM Code
+UOM Name
+UOM Abbreviation
+Active Flag
+
+Payment Term Code
+Payment Term Name
+Payment Term Line Number
+Payment Term Line Description
+Active Flag
+
+Project ID
+Project Code
+Project Name
+Project Beginning Date
+Project Ending Date
+Active Flag
+specified
+Sequence Number
+Business Segment Code
+
+Bank Account Number
+Bank Account Name
+Bank Code
+Bank Name
+Branch Code
+Branch Name
+Branch Country Code
+Branch Region
+Active Flag
+specified
+Sequence Number
+Business Segment Code
+
+Regulator Code
+Regulator Country Code
+Regulator Region
+Regulator Name
+Regulator Role
+Regulator Payable Account NUM
+Regulator Accrual Account NUM
+Regulator Expense Account NUM
+Regulator ID
+Regulator Reporting ORG
+Regulator Active Flag
+specified
+Sequence Number
+Business Segment Code
+
+Tax Type Code
+Tax Name
+Regulator Code
+Tax Type Description
+Tax Code Description
+Tax Percentage
+specified
+Sequence Number
+Business Segment Code
+
+Customized Account Segment Code
+Customized Account Segment Name
+Customized Account Description
+Customized Account Encoding Rule
+Hierarchy Flag
+Active Flag
+
+Customized Account Value Code
+Customized Account Segment Code
+Customized Account Value Name
+Account Value Description
+Parent Account Value Code
+Customized Account Value Hierarchy
+
+Profile Number
+Profile Name
+Fiscal Year
+Accounting Entity
+Industry
+Developer Name
+Software Name
+Software Version
+Functional Currency Code
+Standard Version
+Extracted Date
+Time Zone
+specified
+Sequence Number
+Business Segment Code
+
+GL Account Number
+Fiscal Year
+Accounting Period
+Balance As Of Date
+specified
+Functional Currency Code
+Transaction Currency Code
+Reporting Currency Code
+Local Currency Code
+specified
+Functional Balance
+Transaction Balance
+Reporting Balance
+Local Balance
+specified
+Functional Balance
+Transaction Balance
+Reporting Balance
+Local Balance
+specified
+Sequence Number
+Business Segment Code
+
+Journal ID
+Journal Number
+Fiscal Year
+Accounting Period
+Effective Date
+Journal Entry Header Description
+Source Code
+specified
+Journal Line Number
+Journal Entry Type Code
+Journal Entry Line Description
+Credit Debit Indicator
+GL Account Number
+Bill Number
+Bill Type Code
+Bill Date
+Quantity
+UOM Code
+Unit Price
+Settlement Method Code
+Reversal Indicator
+Reversal Journal ID
+Cancellation Sign
+Account Segment Employee
+Account Segment Project
+Account Segment Bank Account
+specified
+Functional Amount
+Functional Currency Code
+Transaction Amount
+Transaction Currency Code
+Reporting Amount
+Reporting Currency Code
+Local Amount
+Local Currency Code
+specified
+User ID
+Date
+Time
+specified
+User ID
+Date
+specified
+User ID
+specified
+Account Segment Number
+Account Segment Code
+specified
+Sequence Number
+Business Segment Code
+
+Source Code
+Source Description
+ERP Subledger Module
+System Manual Identifier
+Business Process Major
+Business Process Minor
+
+GL Account Number
+Account Segment Number
+Account Segment Name
+Corresponding File
+Account Segment Description
+Customized Account Segment Code
+
+GL Account Number
+Fiscal Year
+Accounting Period
+Debit Quantity
+Credit Quantity
+Beginning Quantity
+Ending Quantity
+UOM Code
+Beginning Balance Indicator
+Ending Balance Indicator
+Account Segment Employee
+Account Segment Project
+Account Segment Bank Account
+specified
+Functional Amount
+Transaction Amount
+Reporting Amount
+Local Amount
+specified
+Functional Amount
+Transaction Amount
+Reporting Amount
+Local Amount
+specified
+Functional Balance
+Transaction Balance
+Reporting Balance
+Local Balance
+specified
+Functional Balance
+Transaction Balance
+Reporting Balance
+Local Balance
+specified
+Functional Currency Code
+Transaction Currency Code
+Reporting Currency Code
+Local Currency Code
+specified
+Account Segment Number
+Account Segment Code
+specified
+Sequence Number
+Business Segment Code
+
+Transaction ID
+Invoice ID
+Customer Account ID
+Sales Contract ID
+Project ID
+Fiscal Year
+Accounting Period
+Transaction Date
+Journal ID
+Transaction Due Date
+Reference Number
+Reference Date
+Remark
+Grouping Code
+specified
+Functional Amount
+Functional Currency Code
+Transaction Amount
+Transaction Currency Code
+Reporting Amount
+Reporting Currency Code
+Local Amount
+Local Currency Code
+specified
+Functional Balance
+Transaction Balance
+Reporting Balance
+Local Balance
+specified
+Sequence Number
+Business Segment Code
+
+Receipt ID
+Receipt Number
+Customer Account ID
+Sales Contract ID
+Project ID
+Journal ID
+Fiscal Year
+Accounting Period
+Receipt Date
+Settlement Method Code
+Reference Number
+Reference Date
+Amount Credit Debit Indicator
+Remark
+GL Debit Account Number
+GL Credit Account Number
+specified
+Functional Amount
+Functional Currency Code
+Transaction Amount
+Transaction Currency Code
+Reporting Amount
+Reporting Currency Code
+Local Amount
+Local Currency Code
+specified
+User ID
+Date
+Time
+specified
+User ID
+Date
+Time
+specified
+User ID
+Date
+Time
+specified
+Sequence Number
+Business Segment Code
+
+AR Application ID
+Fiscal Year
+Accounting Period
+AR Application Date
+Customer Account ID
+Receipt ID
+Invoice ID
+Settlement Method Code
+Remark
+GL Debit Account Number
+GL Credit Account Number
+specified
+Functional Amount
+Functional Currency Code
+Transaction Amount
+Transaction Currency Code
+Reporting Amount
+Reporting Currency Code
+Local Amount
+Local Currency Code
+specified
+User ID
+Date
+Time
+specified
+User ID
+Date
+Time
+specified
+User ID
+Date
+Time
+specified
+Sequence Number
+Business Segment Code
+
+Adjustment ID
+Adjustment Number
+Adjustment Type Name
+Adjustment Document Number
+Invoice ID
+Journal ID
+Fiscal Year
+Accounting Period
+Adjustment Date
+Customer Account ID
+GL Debit Account Number
+GL Credit Account Number
+specified
+Functional Amount
+Functional Currency Code
+Transaction Amount
+Transaction Currency Code
+Reporting Amount
+Reporting Currency Code
+Local Amount
+Local Currency Code
+specified
+Tax Type Code
+Tax Local Amount
+GL Tax Debit Account Number
+GL Tax Credit Account Number
+specified
+User ID
+Date
+Time
+specified
+User ID
+Date
+Time
+specified
+User ID
+Date
+Time
+specified
+Sequence Number
+Business Segment Code
+specified
+Adjustment ID
+Adjustment Line ID
+Adjustment Line Number
+Invoice ID
+Invoice Line ID
+Journal ID
+GL Debit Account Number
+GL Credit Account Number
+Specified
+Functional Amount
+Functional Currency Code
+Transaction Amount
+Transaction Currency Code
+Reporting Amount
+Reporting Currency Code
+Local Amount
+Local Currency Code
+Specified
+Tax Type Code
+Tax Local Amount
+GL Tax Debit Account Number
+GL Tax Credit Account Number
+Specified
+Sequence Number
+Business Segment Code
+
+Contract ID
+Contract Number
+Contract Type Name
+Contract Beginning Date
+Contract Ending Date
+Customer Account ID
+Sales Organization Code
+Salesperson ID
+Settlement Method Code
+Payment Term Code
+Contract Transaction Currency Code
+Status
+Remark
+Specified
+User ID
+Date
+Specified
+User ID
+Specified
+Sequence Number
+Business Segment Code
+Specified
+Contract ID
+Contract Line ID
+Contract Line Number
+Settlement Organization Code
+Dispatch Organization Code
+Product ID
+Contract Quantity
+UOM Code
+Tax Exclude Unit Price
+Tax Include Unit Price
+Tax Exclude Amount
+Tax Include Amount
+Due Date
+Status
+Specified
+Tax Type Code
+Tax Transaction Amount
+Specified
+Sequence Number
+Business Segment Code
+
+Order ID
+Order Number
+Fiscal Year
+Accounting Period
+Order Type Name
+Order Date
+Organization Code
+Salesperson ID
+Customer Account ID
+Settlement Method Code
+Payment Term Code
+Order Transaction Amount
+Order Transaction Currency Code
+Status
+Remark
+Specified
+User ID
+Date
+Time
+Specified
+User ID
+Date
+Time
+Specified
+User ID
+Date
+Time
+Specified
+Sequence Number
+Business Segment Code
+Specified
+Order ID
+Order Line ID
+Order Line Number
+Contract ID
+Contract Line ID
+Payer ID
+Settlement Organization Code
+Dispatch Organization Code
+Due Date
+Basic UOM Quantity
+Basic UOM Code
+Order Line Quantity
+Order Line UOM Code
+Tax Exclude Unit Price
+Tax Include Unit Price
+Tax Exclude Amount
+Tax Include Amount
+Product ID
+Order Line Transaction Amount
+Status
+Specified
+Tax Type Code
+Tax Transaction Amount
+Specified
+Sequence Number
+Business Segment Code
+
+Invoice ID
+Invoice Number
+Fiscal Year
+Accounting Period
+Official Invoice Code
+Invoice Type Name
+Invoice Date
+Invoice Due Date
+Customer Account ID
+Settlement Method Code
+Invoice Transaction Amount
+Invoice Transaction Currency Code
+Payment Term Code
+Terms Discount Percentage
+Terms Discount Days
+Terms Due Days
+Grouping Code
+Status
+Remark
+Specified
+Tax Type Code
+Tax Transaction Amount
+Specified
+User ID
+Date
+Time
+Specified
+User ID
+Date
+Time
+Specified
+User ID
+Date
+Time
+Specified
+Sequence Number
+Business Segment Code
+Specified
+Invoice ID
+Invoice Line ID
+Invoice Line Number
+Order ID
+Order Line ID
+Product ID
+Basic UOM Quantity
+Basic UOM Code
+Invoice Quantity
+UOM Code
+Tax Exclude Unit Price
+Tax Include Unit Price
+Tax Exclude Amount
+Tax Include Amount
+Invoice Line Transaction Amount
+Grouping Code
+GL Line Debit Account Number
+GL Line Credit Account Number
+Specified
+Tax Type Code
+Tax Transaction Amount
+GL Tax Debit Account Number
+GL Tax Credit Account Number
+Specified
+Sequence Number
+Business Segment Code
+
+Shipment ID
+Shipment Number
+Fiscal Year
+Accounting Period
+Dispatch Organization Code
+Shipment Date
+Shipment Reference Number
+Shipping Transaction Amount
+Shipping Transaction Currency Code
+Shipment Method
+Shipper
+Adjustment Indicator
+Adjustment Description
+Customer Account ID
+Sales Order ID
+Specified
+User ID
+Date
+Time
+Specified
+User ID
+Date
+Time
+Specified
+User ID
+Date
+Time
+Specified
+Sequence Number
+Business Segment Code
+Specified
+Shipment ID
+Shipment Document Line ID
+Shipment Document Line Number
+Product ID
+Shipping Quantity
+Shipping UOM Code
+Shipping Unit Price
+Shipping Line Transaction Amount
+Sales Order Line ID
+Sales Order Line Quantity
+Order Line UOM Code
+Order Line Unit Price
+Order Line Transaction Amount
+Specified
+Sequence Number
+Business Segment Code
+
+Transaction ID
+Invoice ID
+Supplier Account ID
+Purchase Contract ID
+Project ID
+Fiscal Year
+Accounting Period
+Transaction Date
+Journal ID
+Transaction Due Date
+Reference Number
+Reference Date
+Remark
+Grouping Code
+Specified
+Functional Amount
+Functional Currency Code
+Transaction Amount
+Transaction Currency Code
+Reporting Amount
+Reporting Currency Code
+Local Amount
+Local Currency Code
+Specified
+Functional Balance
+Transaction Balance
+Reporting Balance
+Local Balance
+Specified
+Sequence Number
+Business Segment Code
+
+Payment ID
+Payment Number
+Supplier Account ID
+Purchase Contract ID
+Project ID
+Journal ID
+Fiscal Year
+Accounting Period
+Payment Date
+Settlement Method Code
+Reference Number
+Reference Date
+Amount Credit Debit Indicator
+Remark
+GL Debit Account Number
+GL Credit Account Number
+Specified
+Functional Amount
+Functional Currency Code
+Transaction Amount
+Transaction Currency Code
+Reporting Amount
+Reporting Currency Code
+Local Amount
+Local Currency Code
+Specified
+User ID
+Date
+Time
+Specified
+User ID
+Date
+Time
+Specified
+User ID
+Date
+Time
+Specified
+Sequence Number
+Business Segment Code
+
+AP Application ID
+Fiscal Year
+Accounting Period
+AP Application Date
+Supplier Account ID
+Payment ID
+Invoice ID
+Settlement Method Code
+Remark
+GL Debit Account Number
+GL Credit Account Number
+Specified
+Functional Amount
+Functional Currency Code
+Transaction Amount
+Transaction Currency Code
+Reporting Amount
+Reporting Currency Code
+Local Amount
+Local Currency Code
+Specified
+User ID
+Date
+Time
+Specified
+User ID
+Date
+Time
+Specified
+User ID
+Date
+Time
+Specified
+Sequence Number
+Business Segment Code
+
+Adjustment ID
+Adjustment Number
+Adjustment Type Name
+Adjustment Document Number
+Invoice ID
+Journal ID
+Fiscal Year
+Accounting Period
+Adjustment Date
+Supplier Account ID
+GL Debit Account Number
+GL Credit Account Number
+Specified
+Functional Amount
+Functional Currency Code
+Transaction Amount
+Transaction Currency Code
+Reporting Amount
+Reporting Currency Code
+Local Amount
+Local Currency Code
+Specified
+Tax Type Code
+Tax Local Amount
+GL Tax Debit Account Number
+GL Tax Credit Account Number
+Specified
+User ID
+Date
+Time
+Specified
+User ID
+Date
+Time
+Specified
+User ID
+Date
+Time
+Specified
+Sequence Number
+Business Segment Code
+Specified
+Adjustment ID
+Adjustment Line ID
+Adjustment Line Number
+Invoice ID
+Invoice Line ID
+Journal ID
+GL Debit Account Number
+GL Credit Account Number
+Specified
+Functional Amount
+Functional Currency Code
+Transaction Amount
+Transaction Currency Code
+Reporting Amount
+Reporting Currency Code
+Local Amount
+Local Currency Code
+Specified
+Tax Type Code
+Tax Local Amount
+GL Tax Debit Account Number
+GL Tax Credit Account Number
+Specified
+Sequence Number
+Business Segment Code
+
+Requisition ID
+Requisition Number
+Requisition Date
+Status
+Remark
+Specified
+User ID
+Date
+Specified
+Sequence Number
+Business Segment Code
+Specified
+Requisition ID
+Requisition Line ID
+Requisition Line Number
+Product ID
+Requisition Due Date
+Requisition Quantity
+Approved Quantity
+Purchase UOM Code
+Project ID
+Supplier Account ID
+Purchase Organization Code
+Requisition Organization Code
+Status
+Specified
+Sequence Number
+Business Segment Code
+
+Contract ID
+Contract Number
+Contract Type Name
+Contract Beginning Date
+Contract Ending Date
+Supplier Account ID
+Purchase Organization Code
+Purchaser ID
+Settlement Method Code
+Payment Term Code
+Contract Transaction Currency Code
+Status
+Remark
+Specified
+User ID
+Date
+Specified
+User ID
+Specified
+Sequence Number
+Business Segment Code
+Specified
+Contract ID
+Contract Line ID
+Contract Line Number
+Settlement Organization Code
+Receipt Organization Code
+Product ID
+Contract Quantity
+UOM Code
+Tax Exclude Unit Price
+Tax Include Unit Price
+Tax Exclude Amount
+Tax Include Amount
+Due Date
+Status
+Specified
+Tax Type Code
+Tax Transaction Amount
+Specified
+Sequence Number
+Business Segment Code
+
+Order ID
+Order Number
+Fiscal Year
+Accounting Period
+Order Type Name
+Order Date
+Organization Code
+Purchaser ID
+Supplier Account ID
+Settlement Method Code
+Payment Term Code
+Order Transaction Amount
+Order Transaction Currency Code
+Status
+Remark
+Specified
+User ID
+Date
+Time
+Specified
+User ID
+Date
+Time
+Specified
+User ID
+Date
+Time
+Specified
+Sequence Number
+Business Segment Code
+Specified
+Order ID
+Order Line ID
+Order Line Number
+Contract ID
+Contract Line ID
+Requisition ID
+Requisition Line ID
+Settlement Organization Code
+Receipt Organization Code
+Project ID
+Due Date
+Basic UOM Quantity
+Basic UOM Code
+Order Line Quantity
+Order Line UOM Code
+Tax Exclude Unit Price
+Tax Include Unit Price
+Tax Exclude Amount
+Tax Include Amount
+Product ID
+Order Line Transaction Amount
+Status
+Specified
+Tax Type Code
+Tax Transaction Amount
+Specified
+Sequence Number
+Business Segment Code
+
+Invoice ID
+Invoice Number
+Fiscal Year
+Accounting Period
+Official Invoice Code
+Invoice Type Name
+Invoice Date
+Invoice Due Date
+Supplier Account ID
+Settlement Organization Code
+Settlement Method Code
+Invoice Transaction Amount
+Invoice Transaction Currency Code
+Payment Term Code
+Terms Discount Percentage
+Terms Discount Days
+Terms Due Days
+Grouping Code
+Status
+Remark
+Specified
+Tax Type Code
+Tax Transaction Amount
+Specified
+User ID
+Date
+Time
+Specified
+User ID
+Date
+Time
+Specified
+User ID
+Date
+Time
+Specified
+Sequence Number
+Business Segment Code
+Specified
+Invoice ID
+Invoice Line ID
+Invoice Line Number
+Order ID
+Order Line ID
+Product ID
+Basic UOM Quantity
+Basic UOM Code
+Invoice Quantity
+UOM Code
+Tax Exclude Unit Price
+Tax Include Unit Price
+Tax Exclude Amount
+Tax Include Amount
+Invoice Line Transaction Amount
+Grouping Code
+GL Line Debit Account Number
+GL Line Credit Account Number
+Specified
+Tax Type Code
+Tax Transaction Amount
+GL Tax Debit Account Number
+GL Tax Credit Account Number
+Specified
+Sequence Number
+Business Segment Code
+
+Receipt ID
+Receipt Number
+Fiscal Year
+Accounting Period
+Receipt Organization Code
+Receipt Date
+Receipt Reference Number
+Receipt Transaction Amount
+Receipt Transaction Currency Code
+Shipping Method
+Shipper
+Adjustment Indicator
+Adjustment Description
+Supplier Account ID
+Purchase Order ID
+Specified
+User ID
+Date
+Time
+Specified
+User ID
+Date
+Time
+Specified
+User ID
+Date
+Time
+Specified
+Sequence Number
+Business Segment Code
+Specified
+Receipt ID
+Receipt Line ID
+Receipt Line Number
+Product ID
+Receipt Quantity
+Receipt UOM Code
+Receipt Unit Price
+Receipt Line TRX Amount
+Purchase Order Line ID
+Purchase Order Line Quantity
+Order Line UOM Code
+Order Line Unit Price
+Order Line Transaction Amount
+Specified
+Sequence Number
+Business Segment Code
+
+Location ID
+Location Code
+Parent Location ID
+Location Description
+Location Type
+Inventory Organization Code
+Location Active Flag
+Specified
+Street Address1
+Street Address2
+City Name
+State Province Code
+Postal Code
+Country Code
+Specified
+Sequence Number
+Business Segment Code
+
+Inventory Product Type ID
+Inventory Product Type Code
+Inventory Product Type Name
+INV Product Type Description
+Parent INV Product Type ID
+Specified
+Sequence Number
+Business Segment Code
+
+Inventory Product ID
+Inventory Product Code
+Inventory Product Type ID
+Product Group1
+Product Group2
+Inventory Bar Code
+Preferred Supplier ID
+Basic UOM Code
+Default Costing Method
+Default Stocking UOM Code
+GL Asset Account Number
+GL Cost Account Number
+Out Of Service Date
+Out Of Service Flag
+Lot Number
+Serial Number
+Specified
+Sequence Number
+Business Segment Code
+
+Inventory ID
+Inventory Product ID
+Lot Number
+Serial Number
+Inventory ABC Code
+Location ID
+Inventory As Of Date
+INV PUR YearToDate Quantity
+INV Sold YearToDate Quantity
+Inventory Organization Code
+Cost Organization Code
+Inventory Costing UOM Code
+Inventory Purchasing UOM Code
+Inventory Selling UOM Code
+Inventory Stocking UOM Code
+Quantity
+System Quantity
+Physical Count Quantity
+Last Count Date
+Inventory List Price
+Inventory Cost
+Inventory Cost Method
+Average Cost
+Standard Cost
+Specific Cost
+Functional Currency Code
+Bin ID
+Bin Location
+Specified
+Sequence Number
+Business Segment Code
+
+Transaction Document ID
+Transaction Document Line ID
+Project ID
+Transaction Order ID
+Transaction Order Line ID
+Transaction Date
+Transaction Time
+Transaction Type
+Transaction Type System
+Transaction Description
+Transaction Quantity
+Supplier Account ID
+Customer Account ID
+Inventory Document ID
+Inventory Document Number
+Inventory Document Line ID
+Inventory Document Line Number
+Status
+Inventory Organization Code
+Inventory Stocking UOM Code
+Inventory Costing UOM Code
+Inventory Product ID
+Lot Number
+Serial Number
+Inventory Required By
+Inventory From Location ID
+Inventory To Location ID
+Cost Organization Code
+Inventory Cost
+Transaction Adjustment Cost
+Functional Currency Code
+INV System Or External Source
+INV Received And Dispatched Flag
+GL Line Debit Account Number
+GL Line Credit Account Number
+Specified
+User ID
+Date
+Time
+Specified
+User ID
+Date
+Time
+Specified
+User ID
+Date
+Time
+Specified
+User ID
+Date
+Time
+Specified
+Sequence Number
+Business Segment Code
+
+Inventory Count Sheet ID
+Inventory Count Sheet Number
+Inventory Count Sheet Line ID
+INV Count Sheet Line Number
+Inventory Product ID
+Location ID
+Inventory Organization Code
+Lot Number
+Serial Number
+Bin ID
+Count Date
+Inventory Stocking UOM Code
+System Quantity
+Phisical Count Quantity
+Comment
+Specified
+User ID
+Date
+Time
+Specified
+User ID
+Date
+Time
+Specified
+User ID
+Date
+Time
+Specified
+User ID
+Date
+Time
+Specified
+Sequence Number
+Business Segment Code
+
+Inventory Product ID
+Location ID
+Fiscal Year
+Accounting Period
+Inventory Organization Code
+Lot Number
+Inventory Beginning Quantity
+Inventory Ending Quantity
+INV Received Quantity
+INV Dispatched Quantity
+INV Debit Amount
+INV Credit Amount
+Inventory Beginning Balance
+Inventory Ending Balance
+Cost Organization Code
+Inventory Stocking UOM Code
+Inventory Costing UOM Code
+Specified
+Sequence Number
+Business Segment Code
+
+Type Code
+Type Name
+Parent Type ID
+
+PPE ID
+PPE Code
+Tag Number
+Type Code
+PPE Name
+PPE Feature
+Bar Code
+Purchase Order ID
+Inventory Product ID
+Serial Number
+Lot Number
+Manufacturer
+Supplier Account ID
+Location Description
+Condition Name
+Acquisition Date
+Posted Date
+Placed Into Service Date
+Quantity On Hand
+UOM Code
+Useful Life
+Useful Life Remaining
+Original Cost
+Residual Value
+Accumulated Depreciation
+Impairment Provision
+Net Book Value
+Replacement Cost
+Fair Value
+Functional Currency Code
+PPE Account Number
+Impairment Provision Account NUM
+Accumulated Depreciation Account NUM
+Specified
+User ID
+Date
+Time
+Specified
+User ID
+Date
+Time
+Specified
+User ID
+Date
+Time
+Specified
+Sequence Number
+Business Segment Code
+
+Addition ID
+PPE ID
+Fiscal Year
+Accounting Period
+Tag Number
+Addition Type Name
+Addition Date
+Addition Reason
+Addition Quantity
+Original Cost
+Functional Currency Code
+Specified
+User ID
+Date
+Time
+Specified
+User ID
+Date
+Time
+Specified
+User ID
+Date
+Time
+Specified
+Sequence Number
+Business Segment Code
+
+Removal ID
+PPE ID
+Fiscal Year
+Accounting Period
+Tag Number
+Removal Type Name
+Removal Date
+Removal Reason
+Removal Quantity
+Removal Original Cost
+Removal Accumulated Depreciation
+Removal Impairment Provision
+Removal Residual Value
+Removal Cash Proceeds Amount
+Removal Non Cash Proceeds Amount
+Removal Expense
+Unrealized Gain Loss Amount
+Realized Gain Loss Amount
+Functional Currency Code
+Unrealized Gain Loss Account NUM
+Realized Gain Loss Account NUM
+Specified
+User ID
+Date
+Time
+Specified
+User ID
+Date
+Time
+Specified
+User ID
+Date
+Time
+Specified
+Sequence Number
+Business Segment Code
+
+Change ID
+PPE ID
+Fiscal Year
+Accounting Period
+Tag Number
+Change Type Name
+Change Date
+Change Reason
+Content Before Change
+Content After Change
+Specified
+User ID
+Date
+Time
+Specified
+User ID
+Date
+Time
+Specified
+User ID
+Date
+Time
+Specified
+Sequence Number
+Business Segment Code
+
+PPE ID
+Depreciation Allocation Proportion
+Department Code
+Specified
+Sequence Number
+Business Segment Code
+
+Depreciation Method ID
+Depreciation Method Name
+Depreciation Method Description
+Depreciation Formula
+Specified
+Sequence Number
+Business Segment Code
+
+PPE ID
+Fiscal Year
+Accounting Period
+Depreciation Method ID
+Useful Life
+Useful Life Remaining
+Original Cost
+Residual Value
+Depreciable Basis
+Depreciation Amount
+Accumulated Depreciation
+Carrying Amount
+Depreciation Account Number
+Accumulated Depreciation Account NUM
+Specified
+User ID
+Date
+Time
+Specified
+User ID
+Date
+Time
+Specified
+User ID
+Date
+Time
+Specified
+Sequence Number
+Business Segment Code
+
+Selection ID
+Selection Start Date
+Selection End Date
+
+Journal ID
+Characteristic Type
+Characteristic Sequence Number
+Characteristic UOM Code
+Characteristic Value
+System Characteristic Value
+
+Invoice ID
+Invoice Line ID
+Characteristic Type
+Characteristic Sequence Number
+Characteristic UOM Code
+Characteristic Value
+System Characteristic Value
+
+Invoice ID
+Invoice Line ID
+Characteristic Type
+Characteristic Sequence Number
+Characteristic UOM Code
+Characteristic Value
+System Characteristic Value
+
+Inventory Product ID
+Characteristic Type
+Characteristic Sequence Number
+Characteristic UOM Code
+Start Date
+Start Time
+End Date
+End Time
+Characteristic Value
+System Characteristic Value
+
+Transaction Document ID
+Transaction Document Line ID
+Characteristic Type
+Characteristic Sequence Number
+Characteristic UOM Code
+Characteristic Value
+System Characteristic Value
+
+Transaction Document ID
+Transaction Document Line ID
+Transaction Submitted System
+Document Code
+Document ID
+Document Line ID
+
+Report ID
+Report Name
+Report Description
+Reporting Entity Code
+Reporting Entity Name
+Fiscal Year
+Reporting Period Type
+Reporting Period BEG Date
+Reporting Period END Date
+Reporting Currency Code
+Reporting Language Code
+Regulations
+Person In Charge Of Enterprise
+Accounting Supervisor
+Created By
+
+Report ID
+Report Item ID
+Report Item Name
+Report Item Description
+Report Item Line Number
+Report Item Qualification
+Report Item Value
+Report Item Value Type
+
+Payroll Year
+Payroll Period
+Payroll Period Type
+Payroll Period BEG Date
+Payroll Period END Date
+
+Payroll Item ID
+Payroll Item Code
+Payroll Item Name
+Payroll Category
+
+Payslip ID
+Employee ID
+Employee Code
+Employee Name
+Employee Type Name
+Department Code
+Payroll Year
+Payroll Period
+Fiscal Year
+Accounting Period
+Currency Code
+Payroll Payment Amount
+Payroll Payment State
+Payroll Payment Date
+Employee Bank Account
+Bank Name
+Specified
+Payslip ID
+Payslip Line ID
+Payslip Line Number
+Payroll Item ID
+Payroll Item Code
+Payroll Item Name
+Payroll Category
+Payroll Item Value
+GL Account Number
+
