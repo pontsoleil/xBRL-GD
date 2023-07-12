@@ -11,11 +11,15 @@
             "program": "${file}",
             "console": "integratedTerminal",
             "justMyCode": true,
+            "args": ["-d XBRL-GL2.0a_instances/","-x XBRL-GL2.1_instances/"] // XBRL-GL-Versionup.py
+            // "args": ["-i XBRL-GL2.0a_instances/0001-20090401-18-1-1-463.xml","-o XBRL-GL2.1_instances/0001-20090401-18-1-1-463.xml"]// XBRL-GL-Versionup.py
+
             // ADCS_C2xBRL-taxonomy.py
             // "args": ["source/Semantic.csv","-e utf-8","-d","-v"]
             
             // ADCS_H2xBRL-taxonomy.py
-            "args": ["source/ADCS_H.csv","-e utf-8","-d","-v"]
+            // "args": ["source/adc.csv","-e utf-8","-d","-v"]
+            // "args": ["source/ADCS_H.csv","-e utf-8","-d","-v"]
 
             // "args": ["source/ADCS_SemanticLogical.csv","-e utf-8","-d","-v"]
             // "args": ["source/ADCS_SemanticLogicalHierarchicy.csv","-e utf-8","-d","-v"]
