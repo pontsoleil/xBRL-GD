@@ -1,0 +1,142 @@
+XPath	Value
+/gl-cor:accountingEntries	
+/gl-cor:accountingEntries/gl-cor:documentInfo	
+/gl-cor:accountingEntries/gl-cor:documentInfo/gl-cor:entriesType	entries
+/gl-cor:accountingEntries/gl-cor:documentInfo/gl-cor:uniqueID	14-489
+/gl-cor:accountingEntries/gl-cor:documentInfo/gl-bus:sourceApplication	PCA会計９V.2-仕訳ﾃﾞｰﾀの受入
+/gl-cor:accountingEntries/gl-cor:documentInfo/gl-cor:language	ISO693:ja
+/gl-cor:accountingEntries/gl-cor:documentInfo/gl-cor:creationDate	2012-12-26T17:37:58
+/gl-cor:accountingEntries/gl-cor:documentInfo/gl-bus:creator	pca
+/gl-cor:accountingEntries/gl-cor:entityInformation	
+/gl-cor:accountingEntries/gl-cor:entityInformation/gl-bus:organizationIdentifiers	
+/gl-cor:accountingEntries/gl-cor:entityInformation/gl-bus:organizationIdentifiers/gl-bus:organizationIdentifier	0001
+/gl-cor:accountingEntries/gl-cor:entityInformation/gl-bus:organizationIdentifiers/gl-bus:organizationDescription	株式会社PCA商事
+/gl-cor:accountingEntries/gl-cor:entityInformation/gl-bus:entityPhoneNumber	
+/gl-cor:accountingEntries/gl-cor:entityInformation/gl-bus:entityPhoneNumber/gl-bus:phoneNumberDescription	main
+/gl-cor:accountingEntries/gl-cor:entityInformation/gl-bus:entityPhoneNumber/gl-bus:phoneNumber	03-1111-1111
+/gl-cor:accountingEntries/gl-cor:entityInformation/gl-bus:entityPhoneNumber	
+/gl-cor:accountingEntries/gl-cor:entityInformation/gl-bus:entityPhoneNumber/gl-bus:phoneNumberDescription	fax
+/gl-cor:accountingEntries/gl-cor:entityInformation/gl-bus:entityPhoneNumber/gl-bus:phoneNumber	03-2222-2222
+/gl-cor:accountingEntries/gl-cor:entityInformation/gl-bus:organizationAddress	
+/gl-cor:accountingEntries/gl-cor:entityInformation/gl-bus:organizationAddress/gl-bus:organizationAddressName	株式会社PCA商事
+/gl-cor:accountingEntries/gl-cor:entityInformation/gl-bus:organizationAddress/gl-bus:organizationAddressStreet	東京都千代田区富士見1-2-21
+/gl-cor:accountingEntries/gl-cor:entityInformation/gl-bus:organizationAddress/gl-bus:organizationAddressZipOrPostalCode	102-8171
+/gl-cor:accountingEntries/gl-cor:entityInformation/gl-bus:organizationAddress/gl-bus:organizationAddressCountry	Japan
+/gl-cor:accountingEntries/gl-cor:entryHeader	
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:enteredDate	2008-08-19
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-bus:entryOrigin	manual entry
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:sourceJournalID	gj
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-bus:sourceJournalDescription	General Journal
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryNumber	255
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryType	standard
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail	
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:account	
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:account/gl-cor:accountMainID	131
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:account/gl-cor:accountMainDescription	普通預金
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:account/gl-cor:accountType	account
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:account/gl-cor:accountSub	
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:account/gl-cor:accountSub/gl-cor:accountSubDescription	共通部門
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:account/gl-cor:accountSub/gl-cor:accountSubID	000
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:account/gl-cor:accountSub/gl-cor:accountSubType	部門
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:account/gl-cor:accountSub	
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:account/gl-cor:accountSub/gl-cor:accountSubDescription	みずほ　本店
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:account/gl-cor:accountSub/gl-cor:accountSubID	20
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:account/gl-cor:accountSub/gl-cor:accountSubType	補助科目
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:debitCreditCode	debit
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:amount	1508295
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-muc:amountCurrency	ISO4217:JPY
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:postingDate	2009-04-05
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:postingStatus	proposed
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:xbrlInfo	
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:xbrlInfo/gl-cor:xbrlTaxonomy	http://www.xbrl-jp.org/taxonomy/jp/fr/ta/bs/2003-08-31
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:xbrlInfo/gl-cor:xbrlElement	OrdinaryDeposit
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:detailComment	09年4月5日伝票No191佐々木販売株式会社
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail	
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:account	
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:account/gl-cor:accountMainID	152
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:account/gl-cor:accountMainDescription	売掛金
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:account/gl-cor:accountType	account
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:account/gl-cor:accountSub	
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:account/gl-cor:accountSub/gl-cor:accountSubDescription	共通部門
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:account/gl-cor:accountSub/gl-cor:accountSubID	000
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:account/gl-cor:accountSub/gl-cor:accountSubType	部門
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:debitCreditCode	credit
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:amount	1508295
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-muc:amountCurrency	ISO4217:JPY
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:postingDate	2009-04-05
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:identifierReference	
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:identifierReference/gl-cor:identifierCode	026
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:identifierReference/gl-cor:identifierDescription	佐々木販売㈱
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:identifierReference/gl-cor:identifierType	customer
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:postingStatus	proposed
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:xbrlInfo	
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:xbrlInfo/gl-cor:xbrlTaxonomy	http://www.xbrl-jp.org/taxonomy/jp/fr/common/bs/2003-08-31
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:xbrlInfo/gl-cor:xbrlElement	AccountsReceivableTradeGross
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:detailComment	09年4月5日伝票No191佐々木販売株式会社
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail	
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:account	
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:account/gl-cor:accountMainID	741
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:account/gl-cor:accountMainDescription	支払手数料
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:account/gl-cor:accountType	account
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:account/gl-cor:accountSub	
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:account/gl-cor:accountSub/gl-cor:accountSubDescription	東京
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:account/gl-cor:accountSub/gl-cor:accountSubID	020
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:account/gl-cor:accountSub/gl-cor:accountSubType	部門
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:debitCreditCode	debit
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:amount	450
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-muc:amountCurrency	ISO4217:JPY
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:postingDate	2009-04-05
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:postingStatus	proposed
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:xbrlInfo	
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:xbrlInfo/gl-cor:xbrlTaxonomy	http://www.xbrl-jp.org/taxonomy/jp/fr/common/pl/2003-08-31
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:xbrlInfo/gl-cor:xbrlElement	CommissionExpense
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:detailComment	09年4月5日伝票No191佐々木販売株式会社
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail	
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:account	
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:account/gl-cor:accountMainID	191
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:account/gl-cor:accountMainDescription	仮払消費税等
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:account/gl-cor:accountType	account
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:account/gl-cor:accountSub	
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:account/gl-cor:accountSub/gl-cor:accountSubDescription	東京
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:account/gl-cor:accountSub/gl-cor:accountSubID	020
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:account/gl-cor:accountSub/gl-cor:accountSubType	部門
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:debitCreditCode	debit
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:amount	22
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-muc:amountCurrency	ISO4217:JPY
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:postingDate	2009-04-05
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:postingStatus	tax
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:xbrlInfo	
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:xbrlInfo/gl-cor:xbrlTaxonomy	http://www.xbrl-jp.org/taxonomy/jp/fr/ta/bs/2003-08-31
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:xbrlInfo/gl-cor:xbrlElement	SuspenseAccountPaymentConsumptionTaxes
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail	
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:account	
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:account/gl-cor:accountMainID	152
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:account/gl-cor:accountMainDescription	売掛金
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:account/gl-cor:accountType	account
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:account/gl-cor:accountSub	
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:account/gl-cor:accountSub/gl-cor:accountSubDescription	共通部門
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:account/gl-cor:accountSub/gl-cor:accountSubID	000
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:account/gl-cor:accountSub/gl-cor:accountSubType	部門
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:debitCreditCode	credit
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:amount	472
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-muc:amountCurrency	ISO4217:JPY
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:postingDate	2009-04-05
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:identifierReference	
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:identifierReference/gl-cor:identifierCode	026
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:identifierReference/gl-cor:identifierDescription	佐々木販売㈱
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:identifierReference/gl-cor:identifierType	customer
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:postingStatus	proposed
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:xbrlInfo	
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:xbrlInfo/gl-cor:xbrlTaxonomy	http://www.xbrl-jp.org/taxonomy/jp/fr/common/bs/2003-08-31
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:xbrlInfo/gl-cor:xbrlElement	AccountsReceivableTradeGross
+/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:detailComment	09年4月5日伝票No191佐々木販売株式会社
+/xbrli:numericContext	
+/xbrli:numericContext/xbrli:entity	
+/xbrli:numericContext/xbrli:entity/xbrli:identifier	0001
+/xbrli:numericContext/xbrli:period	
+/xbrli:numericContext/xbrli:unit	
+/xbrli:numericContext/xbrli:unit/xbrli:measure	ISO4217:JPY
+/xbrli:nonNumericContext	
+/xbrli:nonNumericContext/xbrli:entity	
+/xbrli:nonNumericContext/xbrli:entity/xbrli:identifier	0001
+/xbrli:nonNumericContext/xbrli:period	

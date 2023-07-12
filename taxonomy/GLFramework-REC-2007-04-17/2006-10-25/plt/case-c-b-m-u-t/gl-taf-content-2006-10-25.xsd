@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- (c) XBRL International.  See http://www.xbrl.org/legal -->
-<schema elementFormDefault="qualified" xmlns:xbrll="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.xbrl.org/int/gl/taf/2006-10-25" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:gl-taf="http://www.xbrl.org/int/gl/taf/2006-10-25">
+<schema elementFormDefault="qualified"
+  xmlns:xbrll="http://www.xbrl.org/2003/linkbase"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.xbrl.org/int/gl/taf/2006-10-25"
+  xmlns:xbrli="http://www.xbrl.org/2003/instance"
+  xmlns:gl-taf="http://www.xbrl.org/int/gl/taf/2006-10-25">
   <import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
   <include schemaLocation="../../taf/gl-taf-2006-10-25.xsd"/>
   <complexType name="originatingDocumentStructureComplexType">
