@@ -1,4 +1,5 @@
 # directories
+.vscode/
 TradingPartner/
 dic2etree/
 old-version/
@@ -9,4 +10,3 @@ instance/adc-instances-e-invoice.xbrl
 instance/adc-instances.*
 instance/adc-instances0.*
 
-launch.json
