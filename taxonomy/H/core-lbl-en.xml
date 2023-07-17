@@ -1,0 +1,480 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--  (c) 2022 XBRL Japan inc. -->
+<link:linkbase
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:link="http://www.xbrl.org/2003/linkbase"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
+    <link:roleRef roleURI="http://www.xbrl.jp/audit-data-collection/role/description" xlink:type="simple" xlink:href="core.xsd#description"/>
+    <link:arcroleRef arcroleURI="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:type="simple" xlink:href="core.xsd#concept-description"/>
+    <link:labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+        <!-- GL03 GL Header -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03" xlink:label="GL03" xlink:title="GL03"/>
+        <link:label xlink:type="resource" xlink:label="label_GL03" xlink:title="label_GL03" id="label_GL03" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">GL Header</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL03" xlink:to="label_GL03" xlink:title="label: GL03 to label_GL03"/>
+        <link:label xlink:type="resource" xlink:label="description_GL03" xlink:title="description_GL03" id="description_GL03" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL03" xlink:to="description_GL03" xlink:title="label: GL03 to label_GL03"/>
+        <!-- GL03-01 Journal Header ID -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-01" xlink:label="GL03-01" xlink:title="GL03-01"/>
+        <link:label xlink:type="resource" xlink:label="label_GL03-01" xlink:title="label_GL03-01" id="label_GL03-01" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Journal Header ID</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL03-01" xlink:to="label_GL03-01" xlink:title="label: GL03-01 to label_GL03-01"/>
+        <link:label xlink:type="resource" xlink:label="description_GL03-01" xlink:title="description_GL03-01" id="description_GL03-01" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL03-01" xlink:to="description_GL03-01" xlink:title="label: GL03-01 to label_GL03-01"/>
+        <!-- GL03-06 Effective Date -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-06" xlink:label="GL03-06" xlink:title="GL03-06"/>
+        <link:label xlink:type="resource" xlink:label="label_GL03-06" xlink:title="label_GL03-06" id="label_GL03-06" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Effective Date</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL03-06" xlink:to="label_GL03-06" xlink:title="label: GL03-06 to label_GL03-06"/>
+        <link:label xlink:type="resource" xlink:label="description_GL03-06" xlink:title="description_GL03-06" id="description_GL03-06" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL03-06" xlink:to="description_GL03-06" xlink:title="label: GL03-06 to label_GL03-06"/>
+        <!-- GL03-09 Journal Entry Header Description -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-09" xlink:label="GL03-09" xlink:title="GL03-09"/>
+        <link:label xlink:type="resource" xlink:label="label_GL03-09" xlink:title="label_GL03-09" id="label_GL03-09" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Journal Entry Header Description</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL03-09" xlink:to="label_GL03-09" xlink:title="label: GL03-09 to label_GL03-09"/>
+        <link:label xlink:type="resource" xlink:label="description_GL03-09" xlink:title="description_GL03-09" id="description_GL03-09" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL03-09" xlink:to="description_GL03-09" xlink:title="label: GL03-09 to label_GL03-09"/>
+        <!-- GL03-11 Source Code Source -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-11" xlink:label="GL03-11" xlink:title="GL03-11"/>
+        <link:label xlink:type="resource" xlink:label="label_GL03-11" xlink:title="label_GL03-11" id="label_GL03-11" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Source Code Source</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL03-11" xlink:to="label_GL03-11" xlink:title="label: GL03-11 to label_GL03-11"/>
+        <link:label xlink:type="resource" xlink:label="description_GL03-11" xlink:title="description_GL03-11" id="description_GL03-11" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL03-11" xlink:to="description_GL03-11" xlink:title="label: GL03-11 to label_GL03-11"/>
+        <!-- GL03-22 Cancellation Sign -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-22" xlink:label="GL03-22" xlink:title="GL03-22"/>
+        <link:label xlink:type="resource" xlink:label="label_GL03-22" xlink:title="label_GL03-22" id="label_GL03-22" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Cancellation Sign</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL03-22" xlink:to="label_GL03-22" xlink:title="label: GL03-22 to label_GL03-22"/>
+        <link:label xlink:type="resource" xlink:label="description_GL03-22" xlink:title="description_GL03-22" id="description_GL03-22" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL03-22" xlink:to="description_GL03-22" xlink:title="label: GL03-22 to label_GL03-22"/>
+        <!-- GL03-GL50 contains GL Details -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-GL50" xlink:label="GL03-GL50" xlink:title="GL03-GL50"/>
+        <link:label xlink:type="resource" xlink:label="label_GL03-GL50" xlink:title="label_GL03-GL50" id="label_GL03-GL50" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">contains GL Details</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL03-GL50" xlink:to="label_GL03-GL50" xlink:title="label: GL03-GL50 to label_GL03-GL50"/>
+        <link:label xlink:type="resource" xlink:label="description_GL03-GL50" xlink:title="description_GL03-GL50" id="description_GL03-GL50" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL03-GL50" xlink:to="description_GL03-GL50" xlink:title="label: GL03-GL50 to label_GL03-GL50"/>
+        <!-- GL50 GL Details -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL50" xlink:label="GL50" xlink:title="GL50"/>
+        <link:label xlink:type="resource" xlink:label="label_GL50" xlink:title="label_GL50" id="label_GL50" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">GL Details</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL50" xlink:to="label_GL50" xlink:title="label: GL50 to label_GL50"/>
+        <link:label xlink:type="resource" xlink:label="description_GL50" xlink:title="description_GL50" id="description_GL50" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL50" xlink:to="description_GL50" xlink:title="label: GL50 to label_GL50"/>
+        <!-- GL50-01 Journal ID -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL50-01" xlink:label="GL50-01" xlink:title="GL50-01"/>
+        <link:label xlink:type="resource" xlink:label="label_GL50-01" xlink:title="label_GL50-01" id="label_GL50-01" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Journal ID</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL50-01" xlink:to="label_GL50-01" xlink:title="label: GL50-01 to label_GL50-01"/>
+        <link:label xlink:type="resource" xlink:label="description_GL50-01" xlink:title="description_GL50-01" id="description_GL50-01" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL50-01" xlink:to="description_GL50-01" xlink:title="label: GL50-01 to label_GL50-01"/>
+        <!-- GL50-02 Journal Number -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL50-02" xlink:label="GL50-02" xlink:title="GL50-02"/>
+        <link:label xlink:type="resource" xlink:label="label_GL50-02" xlink:title="label_GL50-02" id="label_GL50-02" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Journal Number</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL50-02" xlink:to="label_GL50-02" xlink:title="label: GL50-02 to label_GL50-02"/>
+        <link:label xlink:type="resource" xlink:label="description_GL50-02" xlink:title="description_GL50-02" id="description_GL50-02" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL50-02" xlink:to="description_GL50-02" xlink:title="label: GL50-02 to label_GL50-02"/>
+        <!-- GL50-03 GL Account Number Chart Of Accounts -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL50-03" xlink:label="GL50-03" xlink:title="GL50-03"/>
+        <link:label xlink:type="resource" xlink:label="label_GL50-03" xlink:title="label_GL50-03" id="label_GL50-03" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">GL Account Number Chart Of Accounts</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL50-03" xlink:to="label_GL50-03" xlink:title="label: GL50-03 to label_GL50-03"/>
+        <link:label xlink:type="resource" xlink:label="description_GL50-03" xlink:title="description_GL50-03" id="description_GL50-03" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL50-03" xlink:to="description_GL50-03" xlink:title="label: GL50-03 to label_GL50-03"/>
+        <!-- GL50-04 Fiscal Year Accounting Period -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL50-04" xlink:label="GL50-04" xlink:title="GL50-04"/>
+        <link:label xlink:type="resource" xlink:label="label_GL50-04" xlink:title="label_GL50-04" id="label_GL50-04" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Fiscal Year Accounting Period</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL50-04" xlink:to="label_GL50-04" xlink:title="label: GL50-04 to label_GL50-04"/>
+        <link:label xlink:type="resource" xlink:label="description_GL50-04" xlink:title="description_GL50-04" id="description_GL50-04" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL50-04" xlink:to="description_GL50-04" xlink:title="label: GL50-04 to label_GL50-04"/>
+        <!-- GL50-05 Accounting Period Accounting Period -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL50-05" xlink:label="GL50-05" xlink:title="GL50-05"/>
+        <link:label xlink:type="resource" xlink:label="label_GL50-05" xlink:title="label_GL50-05" id="label_GL50-05" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Accounting Period Accounting Period</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL50-05" xlink:to="label_GL50-05" xlink:title="label: GL50-05 to label_GL50-05"/>
+        <link:label xlink:type="resource" xlink:label="description_GL50-05" xlink:title="description_GL50-05" id="description_GL50-05" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL50-05" xlink:to="description_GL50-05" xlink:title="label: GL50-05 to label_GL50-05"/>
+        <!-- GL50-07 Journal Line Number -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL50-07" xlink:label="GL50-07" xlink:title="GL50-07"/>
+        <link:label xlink:type="resource" xlink:label="label_GL50-07" xlink:title="label_GL50-07" id="label_GL50-07" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Journal Line Number</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL50-07" xlink:to="label_GL50-07" xlink:title="label: GL50-07 to label_GL50-07"/>
+        <link:label xlink:type="resource" xlink:label="description_GL50-07" xlink:title="description_GL50-07" id="description_GL50-07" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL50-07" xlink:to="description_GL50-07" xlink:title="label: GL50-07 to label_GL50-07"/>
+        <!-- GL50-08 Journal Entry Type Code Journal Entry Type -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL50-08" xlink:label="GL50-08" xlink:title="GL50-08"/>
+        <link:label xlink:type="resource" xlink:label="label_GL50-08" xlink:title="label_GL50-08" id="label_GL50-08" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Journal Entry Type Code Journal Entry Type</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL50-08" xlink:to="label_GL50-08" xlink:title="label: GL50-08 to label_GL50-08"/>
+        <link:label xlink:type="resource" xlink:label="description_GL50-08" xlink:title="description_GL50-08" id="description_GL50-08" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL50-08" xlink:to="description_GL50-08" xlink:title="label: GL50-08 to label_GL50-08"/>
+        <!-- GL50-10 Journal Entry Line Description -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL50-10" xlink:label="GL50-10" xlink:title="GL50-10"/>
+        <link:label xlink:type="resource" xlink:label="label_GL50-10" xlink:title="label_GL50-10" id="label_GL50-10" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Journal Entry Line Description</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL50-10" xlink:to="label_GL50-10" xlink:title="label: GL50-10 to label_GL50-10"/>
+        <link:label xlink:type="resource" xlink:label="description_GL50-10" xlink:title="description_GL50-10" id="description_GL50-10" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL50-10" xlink:to="description_GL50-10" xlink:title="label: GL50-10 to label_GL50-10"/>
+        <!-- GL50-12 Bill Number -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL50-12" xlink:label="GL50-12" xlink:title="GL50-12"/>
+        <link:label xlink:type="resource" xlink:label="label_GL50-12" xlink:title="label_GL50-12" id="label_GL50-12" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Bill Number</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL50-12" xlink:to="label_GL50-12" xlink:title="label: GL50-12 to label_GL50-12"/>
+        <link:label xlink:type="resource" xlink:label="description_GL50-12" xlink:title="description_GL50-12" id="description_GL50-12" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL50-12" xlink:to="description_GL50-12" xlink:title="label: GL50-12 to label_GL50-12"/>
+        <!-- GL50-13 Bill Type Code Bill Type -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL50-13" xlink:label="GL50-13" xlink:title="GL50-13"/>
+        <link:label xlink:type="resource" xlink:label="label_GL50-13" xlink:title="label_GL50-13" id="label_GL50-13" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Bill Type Code Bill Type</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL50-13" xlink:to="label_GL50-13" xlink:title="label: GL50-13 to label_GL50-13"/>
+        <link:label xlink:type="resource" xlink:label="description_GL50-13" xlink:title="description_GL50-13" id="description_GL50-13" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL50-13" xlink:to="description_GL50-13" xlink:title="label: GL50-13 to label_GL50-13"/>
+        <!-- GL50-14 Bill Date -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL50-14" xlink:label="GL50-14" xlink:title="GL50-14"/>
+        <link:label xlink:type="resource" xlink:label="label_GL50-14" xlink:title="label_GL50-14" id="label_GL50-14" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Bill Date</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL50-14" xlink:to="label_GL50-14" xlink:title="label: GL50-14 to label_GL50-14"/>
+        <link:label xlink:type="resource" xlink:label="description_GL50-14" xlink:title="description_GL50-14" id="description_GL50-14" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL50-14" xlink:to="description_GL50-14" xlink:title="label: GL50-14 to label_GL50-14"/>
+        <!-- GL50-15 Quantity -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL50-15" xlink:label="GL50-15" xlink:title="GL50-15"/>
+        <link:label xlink:type="resource" xlink:label="label_GL50-15" xlink:title="label_GL50-15" id="label_GL50-15" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Quantity</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL50-15" xlink:to="label_GL50-15" xlink:title="label: GL50-15 to label_GL50-15"/>
+        <link:label xlink:type="resource" xlink:label="description_GL50-15" xlink:title="description_GL50-15" id="description_GL50-15" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL50-15" xlink:to="description_GL50-15" xlink:title="label: GL50-15 to label_GL50-15"/>
+        <!-- GL50-16 Unit of Measurement Code Measurement Unit -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL50-16" xlink:label="GL50-16" xlink:title="GL50-16"/>
+        <link:label xlink:type="resource" xlink:label="label_GL50-16" xlink:title="label_GL50-16" id="label_GL50-16" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Unit of Measurement Code Measurement Unit</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL50-16" xlink:to="label_GL50-16" xlink:title="label: GL50-16 to label_GL50-16"/>
+        <link:label xlink:type="resource" xlink:label="description_GL50-16" xlink:title="description_GL50-16" id="description_GL50-16" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL50-16" xlink:to="description_GL50-16" xlink:title="label: GL50-16 to label_GL50-16"/>
+        <!-- GL50-17 Unit Price -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL50-17" xlink:label="GL50-17" xlink:title="GL50-17"/>
+        <link:label xlink:type="resource" xlink:label="label_GL50-17" xlink:title="label_GL50-17" id="label_GL50-17" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Unit Price</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL50-17" xlink:to="label_GL50-17" xlink:title="label: GL50-17 to label_GL50-17"/>
+        <link:label xlink:type="resource" xlink:label="description_GL50-17" xlink:title="description_GL50-17" id="description_GL50-17" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL50-17" xlink:to="description_GL50-17" xlink:title="label: GL50-17 to label_GL50-17"/>
+        <!-- GL50-18 Settlement Method Code Settlement Method -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL50-18" xlink:label="GL50-18" xlink:title="GL50-18"/>
+        <link:label xlink:type="resource" xlink:label="label_GL50-18" xlink:title="label_GL50-18" id="label_GL50-18" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Settlement Method Code Settlement Method</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL50-18" xlink:to="label_GL50-18" xlink:title="label: GL50-18 to label_GL50-18"/>
+        <link:label xlink:type="resource" xlink:label="description_GL50-18" xlink:title="description_GL50-18" id="description_GL50-18" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL50-18" xlink:to="description_GL50-18" xlink:title="label: GL50-18 to label_GL50-18"/>
+        <!-- GL50-19 Credit Debit Indicator -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL50-19" xlink:label="GL50-19" xlink:title="GL50-19"/>
+        <link:label xlink:type="resource" xlink:label="label_GL50-19" xlink:title="label_GL50-19" id="label_GL50-19" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Credit Debit Indicator</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL50-19" xlink:to="label_GL50-19" xlink:title="label: GL50-19 to label_GL50-19"/>
+        <link:label xlink:type="resource" xlink:label="description_GL50-19" xlink:title="description_GL50-19" id="description_GL50-19" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL50-19" xlink:to="description_GL50-19" xlink:title="label: GL50-19 to label_GL50-19"/>
+        <!-- GL50-20 Reversal Indicator -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL50-20" xlink:label="GL50-20" xlink:title="GL50-20"/>
+        <link:label xlink:type="resource" xlink:label="label_GL50-20" xlink:title="label_GL50-20" id="label_GL50-20" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Reversal Indicator</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL50-20" xlink:to="label_GL50-20" xlink:title="label: GL50-20 to label_GL50-20"/>
+        <link:label xlink:type="resource" xlink:label="description_GL50-20" xlink:title="description_GL50-20" id="description_GL50-20" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL50-20" xlink:to="description_GL50-20" xlink:title="label: GL50-20 to label_GL50-20"/>
+        <!-- GL50-21 Reversal Journal ID -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL50-21" xlink:label="GL50-21" xlink:title="GL50-21"/>
+        <link:label xlink:type="resource" xlink:label="label_GL50-21" xlink:title="label_GL50-21" id="label_GL50-21" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Reversal Journal ID</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL50-21" xlink:to="label_GL50-21" xlink:title="label: GL50-21 to label_GL50-21"/>
+        <link:label xlink:type="resource" xlink:label="description_GL50-21" xlink:title="description_GL50-21" id="description_GL50-21" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL50-21" xlink:to="description_GL50-21" xlink:title="label: GL50-21 to label_GL50-21"/>
+        <!-- GL50-23 Account Segment Employee Employee -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL50-23" xlink:label="GL50-23" xlink:title="GL50-23"/>
+        <link:label xlink:type="resource" xlink:label="label_GL50-23" xlink:title="label_GL50-23" id="label_GL50-23" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Account Segment Employee Employee</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL50-23" xlink:to="label_GL50-23" xlink:title="label: GL50-23 to label_GL50-23"/>
+        <link:label xlink:type="resource" xlink:label="description_GL50-23" xlink:title="description_GL50-23" id="description_GL50-23" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL50-23" xlink:to="description_GL50-23" xlink:title="label: GL50-23 to label_GL50-23"/>
+        <!-- GL50-24 Account Segment Project Project -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL50-24" xlink:label="GL50-24" xlink:title="GL50-24"/>
+        <link:label xlink:type="resource" xlink:label="label_GL50-24" xlink:title="label_GL50-24" id="label_GL50-24" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Account Segment Project Project</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL50-24" xlink:to="label_GL50-24" xlink:title="label: GL50-24 to label_GL50-24"/>
+        <link:label xlink:type="resource" xlink:label="description_GL50-24" xlink:title="description_GL50-24" id="description_GL50-24" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL50-24" xlink:to="description_GL50-24" xlink:title="label: GL50-24 to label_GL50-24"/>
+        <!-- GL50-25 Account Segment Bank Account Bank Account -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL50-25" xlink:label="GL50-25" xlink:title="GL50-25"/>
+        <link:label xlink:type="resource" xlink:label="label_GL50-25" xlink:title="label_GL50-25" id="label_GL50-25" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Account Segment Bank Account Bank Account</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL50-25" xlink:to="label_GL50-25" xlink:title="label: GL50-25 to label_GL50-25"/>
+        <link:label xlink:type="resource" xlink:label="description_GL50-25" xlink:title="description_GL50-25" id="description_GL50-25" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL50-25" xlink:to="description_GL50-25" xlink:title="label: GL50-25 to label_GL50-25"/>
+        <!-- GL50-GL51 contains Amount -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL50-GL51" xlink:label="GL50-GL51" xlink:title="GL50-GL51"/>
+        <link:label xlink:type="resource" xlink:label="label_GL50-GL51" xlink:title="label_GL50-GL51" id="label_GL50-GL51" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">contains Amount</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL50-GL51" xlink:to="label_GL50-GL51" xlink:title="label: GL50-GL51 to label_GL50-GL51"/>
+        <link:label xlink:type="resource" xlink:label="description_GL50-GL51" xlink:title="description_GL50-GL51" id="description_GL50-GL51" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL50-GL51" xlink:to="description_GL50-GL51" xlink:title="label: GL50-GL51 to label_GL50-GL51"/>
+        <!-- GL51  -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL51" xlink:label="GL51" xlink:title="GL51"/>
+        <link:label xlink:type="resource" xlink:label="label_GL51" xlink:title="label_GL51" id="label_GL51" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL51" xlink:to="label_GL51" xlink:title="label: GL51 to label_GL51"/>
+        <!-- GL51-01 Functional Amount -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL51-01" xlink:label="GL51-01" xlink:title="GL51-01"/>
+        <link:label xlink:type="resource" xlink:label="label_GL51-01" xlink:title="label_GL51-01" id="label_GL51-01" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Functional Amount</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL51-01" xlink:to="label_GL51-01" xlink:title="label: GL51-01 to label_GL51-01"/>
+        <link:label xlink:type="resource" xlink:label="description_GL51-01" xlink:title="description_GL51-01" id="description_GL51-01" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL51-01" xlink:to="description_GL51-01" xlink:title="label: GL51-01 to label_GL51-01"/>
+        <!-- GL51-02 Functional Currency Code -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL51-02" xlink:label="GL51-02" xlink:title="GL51-02"/>
+        <link:label xlink:type="resource" xlink:label="label_GL51-02" xlink:title="label_GL51-02" id="label_GL51-02" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Functional Currency Code</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL51-02" xlink:to="label_GL51-02" xlink:title="label: GL51-02 to label_GL51-02"/>
+        <link:label xlink:type="resource" xlink:label="description_GL51-02" xlink:title="description_GL51-02" id="description_GL51-02" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL51-02" xlink:to="description_GL51-02" xlink:title="label: GL51-02 to label_GL51-02"/>
+        <!-- GL51-03 Transaction Amount -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL51-03" xlink:label="GL51-03" xlink:title="GL51-03"/>
+        <link:label xlink:type="resource" xlink:label="label_GL51-03" xlink:title="label_GL51-03" id="label_GL51-03" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Transaction Amount</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL51-03" xlink:to="label_GL51-03" xlink:title="label: GL51-03 to label_GL51-03"/>
+        <link:label xlink:type="resource" xlink:label="description_GL51-03" xlink:title="description_GL51-03" id="description_GL51-03" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL51-03" xlink:to="description_GL51-03" xlink:title="label: GL51-03 to label_GL51-03"/>
+        <!-- GL51-04 Transaction Currency Code -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL51-04" xlink:label="GL51-04" xlink:title="GL51-04"/>
+        <link:label xlink:type="resource" xlink:label="label_GL51-04" xlink:title="label_GL51-04" id="label_GL51-04" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Transaction Currency Code</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL51-04" xlink:to="label_GL51-04" xlink:title="label: GL51-04 to label_GL51-04"/>
+        <link:label xlink:type="resource" xlink:label="description_GL51-04" xlink:title="description_GL51-04" id="description_GL51-04" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL51-04" xlink:to="description_GL51-04" xlink:title="label: GL51-04 to label_GL51-04"/>
+        <!-- GL51-05 Reporting Amount -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL51-05" xlink:label="GL51-05" xlink:title="GL51-05"/>
+        <link:label xlink:type="resource" xlink:label="label_GL51-05" xlink:title="label_GL51-05" id="label_GL51-05" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Reporting Amount</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL51-05" xlink:to="label_GL51-05" xlink:title="label: GL51-05 to label_GL51-05"/>
+        <link:label xlink:type="resource" xlink:label="description_GL51-05" xlink:title="description_GL51-05" id="description_GL51-05" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL51-05" xlink:to="description_GL51-05" xlink:title="label: GL51-05 to label_GL51-05"/>
+        <!-- GL51-06 Reporting Currency Code -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL51-06" xlink:label="GL51-06" xlink:title="GL51-06"/>
+        <link:label xlink:type="resource" xlink:label="label_GL51-06" xlink:title="label_GL51-06" id="label_GL51-06" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Reporting Currency Code</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL51-06" xlink:to="label_GL51-06" xlink:title="label: GL51-06 to label_GL51-06"/>
+        <link:label xlink:type="resource" xlink:label="description_GL51-06" xlink:title="description_GL51-06" id="description_GL51-06" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL51-06" xlink:to="description_GL51-06" xlink:title="label: GL51-06 to label_GL51-06"/>
+        <!-- GL51-07 Local Amount -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL51-07" xlink:label="GL51-07" xlink:title="GL51-07"/>
+        <link:label xlink:type="resource" xlink:label="label_GL51-07" xlink:title="label_GL51-07" id="label_GL51-07" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Local Amount</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL51-07" xlink:to="label_GL51-07" xlink:title="label: GL51-07 to label_GL51-07"/>
+        <link:label xlink:type="resource" xlink:label="description_GL51-07" xlink:title="description_GL51-07" id="description_GL51-07" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL51-07" xlink:to="description_GL51-07" xlink:title="label: GL51-07 to label_GL51-07"/>
+        <!-- GL51-08 Local Currency Code -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL51-08" xlink:label="GL51-08" xlink:title="GL51-08"/>
+        <link:label xlink:type="resource" xlink:label="label_GL51-08" xlink:title="label_GL51-08" id="label_GL51-08" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Local Currency Code</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL51-08" xlink:to="label_GL51-08" xlink:title="label: GL51-08 to label_GL51-08"/>
+        <link:label xlink:type="resource" xlink:label="description_GL51-08" xlink:title="description_GL51-08" id="description_GL51-08" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL51-08" xlink:to="description_GL51-08" xlink:title="label: GL51-08 to label_GL51-08"/>
+        <!-- GL50-GL52 A derived attribute Approved -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL50-GL52" xlink:label="GL50-GL52" xlink:title="GL50-GL52"/>
+        <link:label xlink:type="resource" xlink:label="label_GL50-GL52" xlink:title="label_GL50-GL52" id="label_GL50-GL52" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">A derived attribute Approved</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL50-GL52" xlink:to="label_GL50-GL52" xlink:title="label: GL50-GL52 to label_GL50-GL52"/>
+        <link:label xlink:type="resource" xlink:label="description_GL50-GL52" xlink:title="description_GL50-GL52" id="description_GL50-GL52" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL50-GL52" xlink:to="description_GL50-GL52" xlink:title="label: GL50-GL52 to label_GL50-GL52"/>
+        <!-- GL52  -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL52" xlink:label="GL52" xlink:title="GL52"/>
+        <link:label xlink:type="resource" xlink:label="label_GL52" xlink:title="label_GL52" id="label_GL52" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL52" xlink:to="label_GL52" xlink:title="label: GL52 to label_GL52"/>
+        <!-- GL52-01 User ID -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL52-01" xlink:label="GL52-01" xlink:title="GL52-01"/>
+        <link:label xlink:type="resource" xlink:label="label_GL52-01" xlink:title="label_GL52-01" id="label_GL52-01" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">User ID</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL52-01" xlink:to="label_GL52-01" xlink:title="label: GL52-01 to label_GL52-01"/>
+        <link:label xlink:type="resource" xlink:label="description_GL52-01" xlink:title="description_GL52-01" id="description_GL52-01" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL52-01" xlink:to="description_GL52-01" xlink:title="label: GL52-01 to label_GL52-01"/>
+        <!-- GL52-02 Date -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL52-02" xlink:label="GL52-02" xlink:title="GL52-02"/>
+        <link:label xlink:type="resource" xlink:label="label_GL52-02" xlink:title="label_GL52-02" id="label_GL52-02" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Date</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL52-02" xlink:to="label_GL52-02" xlink:title="label: GL52-02 to label_GL52-02"/>
+        <link:label xlink:type="resource" xlink:label="description_GL52-02" xlink:title="description_GL52-02" id="description_GL52-02" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL52-02" xlink:to="description_GL52-02" xlink:title="label: GL52-02 to label_GL52-02"/>
+        <!-- GL52-03 Time -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL52-03" xlink:label="GL52-03" xlink:title="GL52-03"/>
+        <link:label xlink:type="resource" xlink:label="label_GL52-03" xlink:title="label_GL52-03" id="label_GL52-03" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Time</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL52-03" xlink:to="label_GL52-03" xlink:title="label: GL52-03 to label_GL52-03"/>
+        <link:label xlink:type="resource" xlink:label="description_GL52-03" xlink:title="description_GL52-03" id="description_GL52-03" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL52-03" xlink:to="description_GL52-03" xlink:title="label: GL52-03 to label_GL52-03"/>
+        <!-- GL50-GL53 A derived attribute Created -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL50-GL53" xlink:label="GL50-GL53" xlink:title="GL50-GL53"/>
+        <link:label xlink:type="resource" xlink:label="label_GL50-GL53" xlink:title="label_GL50-GL53" id="label_GL50-GL53" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">A derived attribute Created</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL50-GL53" xlink:to="label_GL50-GL53" xlink:title="label: GL50-GL53 to label_GL50-GL53"/>
+        <link:label xlink:type="resource" xlink:label="description_GL50-GL53" xlink:title="description_GL50-GL53" id="description_GL50-GL53" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL50-GL53" xlink:to="description_GL50-GL53" xlink:title="label: GL50-GL53 to label_GL50-GL53"/>
+        <!-- GL53  -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL53" xlink:label="GL53" xlink:title="GL53"/>
+        <link:label xlink:type="resource" xlink:label="label_GL53" xlink:title="label_GL53" id="label_GL53" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL53" xlink:to="label_GL53" xlink:title="label: GL53 to label_GL53"/>
+        <!-- GL53-01 User ID -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL53-01" xlink:label="GL53-01" xlink:title="GL53-01"/>
+        <link:label xlink:type="resource" xlink:label="label_GL53-01" xlink:title="label_GL53-01" id="label_GL53-01" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">User ID</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL53-01" xlink:to="label_GL53-01" xlink:title="label: GL53-01 to label_GL53-01"/>
+        <link:label xlink:type="resource" xlink:label="description_GL53-01" xlink:title="description_GL53-01" id="description_GL53-01" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL53-01" xlink:to="description_GL53-01" xlink:title="label: GL53-01 to label_GL53-01"/>
+        <!-- GL53-02 Date -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL53-02" xlink:label="GL53-02" xlink:title="GL53-02"/>
+        <link:label xlink:type="resource" xlink:label="label_GL53-02" xlink:title="label_GL53-02" id="label_GL53-02" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Date</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL53-02" xlink:to="label_GL53-02" xlink:title="label: GL53-02 to label_GL53-02"/>
+        <link:label xlink:type="resource" xlink:label="description_GL53-02" xlink:title="description_GL53-02" id="description_GL53-02" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL53-02" xlink:to="description_GL53-02" xlink:title="label: GL53-02 to label_GL53-02"/>
+        <!-- GL53-03 Time -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL53-03" xlink:label="GL53-03" xlink:title="GL53-03"/>
+        <link:label xlink:type="resource" xlink:label="label_GL53-03" xlink:title="label_GL53-03" id="label_GL53-03" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Time</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL53-03" xlink:to="label_GL53-03" xlink:title="label: GL53-03 to label_GL53-03"/>
+        <link:label xlink:type="resource" xlink:label="description_GL53-03" xlink:title="description_GL53-03" id="description_GL53-03" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL53-03" xlink:to="description_GL53-03" xlink:title="label: GL53-03 to label_GL53-03"/>
+        <!-- GL50-GL54 A derived attribute Posted -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL50-GL54" xlink:label="GL50-GL54" xlink:title="GL50-GL54"/>
+        <link:label xlink:type="resource" xlink:label="label_GL50-GL54" xlink:title="label_GL50-GL54" id="label_GL50-GL54" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">A derived attribute Posted</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL50-GL54" xlink:to="label_GL50-GL54" xlink:title="label: GL50-GL54 to label_GL50-GL54"/>
+        <link:label xlink:type="resource" xlink:label="description_GL50-GL54" xlink:title="description_GL50-GL54" id="description_GL50-GL54" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL50-GL54" xlink:to="description_GL50-GL54" xlink:title="label: GL50-GL54 to label_GL50-GL54"/>
+        <!-- GL54  -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL54" xlink:label="GL54" xlink:title="GL54"/>
+        <link:label xlink:type="resource" xlink:label="label_GL54" xlink:title="label_GL54" id="label_GL54" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL54" xlink:to="label_GL54" xlink:title="label: GL54 to label_GL54"/>
+        <!-- GL54-01 User ID -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL54-01" xlink:label="GL54-01" xlink:title="GL54-01"/>
+        <link:label xlink:type="resource" xlink:label="label_GL54-01" xlink:title="label_GL54-01" id="label_GL54-01" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">User ID</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL54-01" xlink:to="label_GL54-01" xlink:title="label: GL54-01 to label_GL54-01"/>
+        <link:label xlink:type="resource" xlink:label="description_GL54-01" xlink:title="description_GL54-01" id="description_GL54-01" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL54-01" xlink:to="description_GL54-01" xlink:title="label: GL54-01 to label_GL54-01"/>
+        <!-- GL54-02 Date -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL54-02" xlink:label="GL54-02" xlink:title="GL54-02"/>
+        <link:label xlink:type="resource" xlink:label="label_GL54-02" xlink:title="label_GL54-02" id="label_GL54-02" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Date</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL54-02" xlink:to="label_GL54-02" xlink:title="label: GL54-02 to label_GL54-02"/>
+        <link:label xlink:type="resource" xlink:label="description_GL54-02" xlink:title="description_GL54-02" id="description_GL54-02" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL54-02" xlink:to="description_GL54-02" xlink:title="label: GL54-02 to label_GL54-02"/>
+        <!-- GL54-03 Time -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL54-03" xlink:label="GL54-03" xlink:title="GL54-03"/>
+        <link:label xlink:type="resource" xlink:label="label_GL54-03" xlink:title="label_GL54-03" id="label_GL54-03" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Time</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL54-03" xlink:to="label_GL54-03" xlink:title="label: GL54-03 to label_GL54-03"/>
+        <link:label xlink:type="resource" xlink:label="description_GL54-03" xlink:title="description_GL54-03" id="description_GL54-03" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL54-03" xlink:to="description_GL54-03" xlink:title="label: GL54-03 to label_GL54-03"/>
+        <!-- GL50-GL55 contains Account Segment -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL50-GL55" xlink:label="GL50-GL55" xlink:title="GL50-GL55"/>
+        <link:label xlink:type="resource" xlink:label="label_GL50-GL55" xlink:title="label_GL50-GL55" id="label_GL50-GL55" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">contains Account Segment</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL50-GL55" xlink:to="label_GL50-GL55" xlink:title="label: GL50-GL55 to label_GL50-GL55"/>
+        <link:label xlink:type="resource" xlink:label="description_GL50-GL55" xlink:title="description_GL50-GL55" id="description_GL50-GL55" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL50-GL55" xlink:to="description_GL50-GL55" xlink:title="label: GL50-GL55 to label_GL50-GL55"/>
+        <!-- GL55 Account Segment -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL55" xlink:label="GL55" xlink:title="GL55"/>
+        <link:label xlink:type="resource" xlink:label="label_GL55" xlink:title="label_GL55" id="label_GL55" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Account Segment</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL55" xlink:to="label_GL55" xlink:title="label: GL55 to label_GL55"/>
+        <link:label xlink:type="resource" xlink:label="description_GL55" xlink:title="description_GL55" id="description_GL55" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL55" xlink:to="description_GL55" xlink:title="label: GL55 to label_GL55"/>
+        <!-- GL55-01 GL Account Number -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL55-01" xlink:label="GL55-01" xlink:title="GL55-01"/>
+        <link:label xlink:type="resource" xlink:label="label_GL55-01" xlink:title="label_GL55-01" id="label_GL55-01" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">GL Account Number</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL55-01" xlink:to="label_GL55-01" xlink:title="label: GL55-01 to label_GL55-01"/>
+        <link:label xlink:type="resource" xlink:label="description_GL55-01" xlink:title="description_GL55-01" id="description_GL55-01" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL55-01" xlink:to="description_GL55-01" xlink:title="label: GL55-01 to label_GL55-01"/>
+        <!-- GL55-02 Account Segment Number -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL55-02" xlink:label="GL55-02" xlink:title="GL55-02"/>
+        <link:label xlink:type="resource" xlink:label="label_GL55-02" xlink:title="label_GL55-02" id="label_GL55-02" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Account Segment Number</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL55-02" xlink:to="label_GL55-02" xlink:title="label: GL55-02 to label_GL55-02"/>
+        <link:label xlink:type="resource" xlink:label="description_GL55-02" xlink:title="description_GL55-02" id="description_GL55-02" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL55-02" xlink:to="description_GL55-02" xlink:title="label: GL55-02 to label_GL55-02"/>
+        <!-- GL55-03 Account Segment Name -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL55-03" xlink:label="GL55-03" xlink:title="GL55-03"/>
+        <link:label xlink:type="resource" xlink:label="label_GL55-03" xlink:title="label_GL55-03" id="label_GL55-03" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Account Segment Name</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL55-03" xlink:to="label_GL55-03" xlink:title="label: GL55-03 to label_GL55-03"/>
+        <link:label xlink:type="resource" xlink:label="description_GL55-03" xlink:title="description_GL55-03" id="description_GL55-03" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL55-03" xlink:to="description_GL55-03" xlink:title="label: GL55-03 to label_GL55-03"/>
+        <!-- GL55-04 Corresponding File -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL55-04" xlink:label="GL55-04" xlink:title="GL55-04"/>
+        <link:label xlink:type="resource" xlink:label="label_GL55-04" xlink:title="label_GL55-04" id="label_GL55-04" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Corresponding File</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL55-04" xlink:to="label_GL55-04" xlink:title="label: GL55-04 to label_GL55-04"/>
+        <link:label xlink:type="resource" xlink:label="description_GL55-04" xlink:title="description_GL55-04" id="description_GL55-04" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL55-04" xlink:to="description_GL55-04" xlink:title="label: GL55-04 to label_GL55-04"/>
+        <!-- GL55-05 Account Segment Description -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL55-05" xlink:label="GL55-05" xlink:title="GL55-05"/>
+        <link:label xlink:type="resource" xlink:label="label_GL55-05" xlink:title="label_GL55-05" id="label_GL55-05" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Account Segment Description</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL55-05" xlink:to="label_GL55-05" xlink:title="label: GL55-05 to label_GL55-05"/>
+        <link:label xlink:type="resource" xlink:label="description_GL55-05" xlink:title="description_GL55-05" id="description_GL55-05" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL55-05" xlink:to="description_GL55-05" xlink:title="label: GL55-05 to label_GL55-05"/>
+        <!-- GL55-06 Customized Account Segment Code Customized Account Segment -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL55-06" xlink:label="GL55-06" xlink:title="GL55-06"/>
+        <link:label xlink:type="resource" xlink:label="label_GL55-06" xlink:title="label_GL55-06" id="label_GL55-06" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Customized Account Segment Code Customized Account Segment</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL55-06" xlink:to="label_GL55-06" xlink:title="label: GL55-06 to label_GL55-06"/>
+        <link:label xlink:type="resource" xlink:label="description_GL55-06" xlink:title="description_GL55-06" id="description_GL55-06" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL55-06" xlink:to="description_GL55-06" xlink:title="label: GL55-06 to label_GL55-06"/>
+        <!-- GL50-GL56 contains Business Segment -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL50-GL56" xlink:label="GL50-GL56" xlink:title="GL50-GL56"/>
+        <link:label xlink:type="resource" xlink:label="label_GL50-GL56" xlink:title="label_GL50-GL56" id="label_GL50-GL56" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">contains Business Segment</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL50-GL56" xlink:to="label_GL50-GL56" xlink:title="label: GL50-GL56 to label_GL50-GL56"/>
+        <link:label xlink:type="resource" xlink:label="description_GL50-GL56" xlink:title="description_GL50-GL56" id="description_GL50-GL56" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL50-GL56" xlink:to="description_GL50-GL56" xlink:title="label: GL50-GL56 to label_GL50-GL56"/>
+        <!-- GL56 Business Segment -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL56" xlink:label="GL56" xlink:title="GL56"/>
+        <link:label xlink:type="resource" xlink:label="label_GL56" xlink:title="label_GL56" id="label_GL56" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Business Segment</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL56" xlink:to="label_GL56" xlink:title="label: GL56 to label_GL56"/>
+        <link:label xlink:type="resource" xlink:label="description_GL56" xlink:title="description_GL56" id="description_GL56" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL56" xlink:to="description_GL56" xlink:title="label: GL56 to label_GL56"/>
+        <!-- GL56-01 Business Segment Code -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL56-01" xlink:label="GL56-01" xlink:title="GL56-01"/>
+        <link:label xlink:type="resource" xlink:label="label_GL56-01" xlink:title="label_GL56-01" id="label_GL56-01" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Business Segment Code</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL56-01" xlink:to="label_GL56-01" xlink:title="label: GL56-01 to label_GL56-01"/>
+        <link:label xlink:type="resource" xlink:label="description_GL56-01" xlink:title="description_GL56-01" id="description_GL56-01" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL56-01" xlink:to="description_GL56-01" xlink:title="label: GL56-01 to label_GL56-01"/>
+        <!-- GL56-02 Business Segment Name -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL56-02" xlink:label="GL56-02" xlink:title="GL56-02"/>
+        <link:label xlink:type="resource" xlink:label="label_GL56-02" xlink:title="label_GL56-02" id="label_GL56-02" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Business Segment Name</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL56-02" xlink:to="label_GL56-02" xlink:title="label: GL56-02 to label_GL56-02"/>
+        <link:label xlink:type="resource" xlink:label="description_GL56-02" xlink:title="description_GL56-02" id="description_GL56-02" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL56-02" xlink:to="description_GL56-02" xlink:title="label: GL56-02 to label_GL56-02"/>
+        <!-- GL56-03 Segment Reference Level -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL56-03" xlink:label="GL56-03" xlink:title="GL56-03"/>
+        <link:label xlink:type="resource" xlink:label="label_GL56-03" xlink:title="label_GL56-03" id="label_GL56-03" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Segment Reference Level</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL56-03" xlink:to="label_GL56-03" xlink:title="label: GL56-03 to label_GL56-03"/>
+        <link:label xlink:type="resource" xlink:label="description_GL56-03" xlink:title="description_GL56-03" id="description_GL56-03" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL56-03" xlink:to="description_GL56-03" xlink:title="label: GL56-03 to label_GL56-03"/>
+        <!-- GL56-04 Organization Type Name -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL56-04" xlink:label="GL56-04" xlink:title="GL56-04"/>
+        <link:label xlink:type="resource" xlink:label="label_GL56-04" xlink:title="label_GL56-04" id="label_GL56-04" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Organization Type Name</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GL56-04" xlink:to="label_GL56-04" xlink:title="label: GL56-04 to label_GL56-04"/>
+        <link:label xlink:type="resource" xlink:label="description_GL56-04" xlink:title="description_GL56-04" id="description_GL56-04" xml:lang="en" xlink:role="http://www.xbrl.jp/audit-data-collection/role/description"></link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description" xlink:from="GL56-04" xlink:to="description_GL56-04" xlink:title="label: GL56-04 to label_GL56-04"/>
+        <!-- GL03-GL50 GL Details -->
+            <!-- link:loc defined -->
+            <!-- link:label http://www.xbrl.org/2003/role/label defined -->
+            <!-- link:labelArc http://www.xbrl.org/2003/arcrole/concept-label defined -->
+            <!-- link:label http://www.xbrl.jp/audit-data-collection/role/description defined -->
+            <!-- link:labelArc http://www.xbrl.jp/audit-data-collection/arcrole/concept-description defined -->
+        <!-- GL03-GL50 GL Details -->
+            <!-- link:loc defined -->
+            <!-- link:label http://www.xbrl.org/2003/role/label defined -->
+            <!-- link:labelArc http://www.xbrl.org/2003/arcrole/concept-label defined -->
+            <!-- link:label http://www.xbrl.jp/audit-data-collection/role/description defined -->
+            <!-- link:labelArc http://www.xbrl.jp/audit-data-collection/arcrole/concept-description defined -->
+        <!-- GL50-GL51  -->
+            <!-- link:loc defined -->
+            <!-- link:label http://www.xbrl.org/2003/role/label defined -->
+            <!-- link:labelArc http://www.xbrl.org/2003/arcrole/concept-label defined -->
+        <!-- GL50-GL51  -->
+            <!-- link:loc defined -->
+            <!-- link:label http://www.xbrl.org/2003/role/label defined -->
+            <!-- link:labelArc http://www.xbrl.org/2003/arcrole/concept-label defined -->
+        <!-- GL50-GL52  -->
+            <!-- link:loc defined -->
+            <!-- link:label http://www.xbrl.org/2003/role/label defined -->
+            <!-- link:labelArc http://www.xbrl.org/2003/arcrole/concept-label defined -->
+        <!-- GL50-GL52  -->
+            <!-- link:loc defined -->
+            <!-- link:label http://www.xbrl.org/2003/role/label defined -->
+            <!-- link:labelArc http://www.xbrl.org/2003/arcrole/concept-label defined -->
+        <!-- GL50-GL53  -->
+            <!-- link:loc defined -->
+            <!-- link:label http://www.xbrl.org/2003/role/label defined -->
+            <!-- link:labelArc http://www.xbrl.org/2003/arcrole/concept-label defined -->
+        <!-- GL50-GL53  -->
+            <!-- link:loc defined -->
+            <!-- link:label http://www.xbrl.org/2003/role/label defined -->
+            <!-- link:labelArc http://www.xbrl.org/2003/arcrole/concept-label defined -->
+        <!-- GL50-GL54  -->
+            <!-- link:loc defined -->
+            <!-- link:label http://www.xbrl.org/2003/role/label defined -->
+            <!-- link:labelArc http://www.xbrl.org/2003/arcrole/concept-label defined -->
+        <!-- GL50-GL54  -->
+            <!-- link:loc defined -->
+            <!-- link:label http://www.xbrl.org/2003/role/label defined -->
+            <!-- link:labelArc http://www.xbrl.org/2003/arcrole/concept-label defined -->
+        <!-- GL50-GL55 Account Segment -->
+            <!-- link:loc defined -->
+            <!-- link:label http://www.xbrl.org/2003/role/label defined -->
+            <!-- link:labelArc http://www.xbrl.org/2003/arcrole/concept-label defined -->
+            <!-- link:label http://www.xbrl.jp/audit-data-collection/role/description defined -->
+            <!-- link:labelArc http://www.xbrl.jp/audit-data-collection/arcrole/concept-description defined -->
+        <!-- GL50-GL55 Account Segment -->
+            <!-- link:loc defined -->
+            <!-- link:label http://www.xbrl.org/2003/role/label defined -->
+            <!-- link:labelArc http://www.xbrl.org/2003/arcrole/concept-label defined -->
+            <!-- link:label http://www.xbrl.jp/audit-data-collection/role/description defined -->
+            <!-- link:labelArc http://www.xbrl.jp/audit-data-collection/arcrole/concept-description defined -->
+        <!-- GL50-GL56 Business Segment -->
+            <!-- link:loc defined -->
+            <!-- link:label http://www.xbrl.org/2003/role/label defined -->
+            <!-- link:labelArc http://www.xbrl.org/2003/arcrole/concept-label defined -->
+            <!-- link:label http://www.xbrl.jp/audit-data-collection/role/description defined -->
+            <!-- link:labelArc http://www.xbrl.jp/audit-data-collection/arcrole/concept-description defined -->
+        <!-- GL50-GL56 Business Segment -->
+            <!-- link:loc defined -->
+            <!-- link:label http://www.xbrl.org/2003/role/label defined -->
+            <!-- link:labelArc http://www.xbrl.org/2003/arcrole/concept-label defined -->
+            <!-- link:label http://www.xbrl.jp/audit-data-collection/role/description defined -->
+            <!-- link:labelArc http://www.xbrl.jp/audit-data-collection/arcrole/concept-description defined -->
+    </link:labelLink>
+</link:linkbase>
