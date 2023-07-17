@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--  (c) 2022 XBRL Japan inc. -->
+<link:linkbase
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"
+    xmlns:link="http://www.xbrl.org/2003/linkbase"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <link:roleRef roleURI="http://www.xbrl.jp/audit-data-collection/role" xlink:type="simple" xlink:href="core.xsd#audit-data-collection-role"/>
+    <link:presentationLink xlink:type="extended" xlink:role="http://www.xbrl.jp/audit-data-collection/role">
+        <!-- ABIE GL03 GL Header -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03" xlink:label="GL03" xlink:title="presentation: GL03 GL Header"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-01" xlink:label="GL03-01" xlink:title="presentation parent: GL03-01 Journal Header ID"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL03" xlink:to="GL03-01" order="1" xlink:title="presentation: GL03 GL Header to GL03-01 Journal Header ID"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-06" xlink:label="GL03-06" xlink:title="presentation parent: GL03-06 Effective Date"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL03" xlink:to="GL03-06" order="2" xlink:title="presentation: GL03 GL Header to GL03-06 Effective Date"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-09" xlink:label="GL03-09" xlink:title="presentation parent: GL03-09 Journal Entry Header Description"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL03" xlink:to="GL03-09" order="3" xlink:title="presentation: GL03 GL Header to GL03-09 Journal Entry Header Description"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-11" xlink:label="GL03-11" xlink:title="presentation parent: GL03-11 Source Code Source"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL03" xlink:to="GL03-11" order="4" xlink:title="presentation: GL03 GL Header to GL03-11 Source Code Source"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-22" xlink:label="GL03-22" xlink:title="presentation parent: GL03-22 Cancellation Sign"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL03" xlink:to="GL03-22" order="5" xlink:title="presentation: GL03 GL Header to GL03-22 Cancellation Sign"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#GL03-GL50" xlink:label="GL03-GL50" xlink:title="presentation parent: GL03-GL50 contains GL Details"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GL03" xlink:to="GL03-GL50" order="6" xlink:title="presentation: GL03 GL Header to GL03-GL50 contains GL Details"/>
+    </link:presentationLink>
+</link:linkbase>
