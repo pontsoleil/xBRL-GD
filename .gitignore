@@ -3,6 +3,7 @@ TradingPartner/
 dic2etree/
 old-version/
 work/
+[0-9]{4}-[0-9]{2}-[0-9]{2}/
 
 instance/adc-instances-e-invoice.xbrl
 instance/adc-instances.*
