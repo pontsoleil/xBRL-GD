@@ -52,7 +52,7 @@ core_head = 'coreead.txt'
 primarykey_file = 'primarykey.csv'
 
 xbrl_base = 'taxonomy/H/'
-# xbrl_base = xbrl_base.replace('/', SEP)
+xbrl_base = xbrl_base.replace('/', SEP)
 core_xsd = 'core.xsd'
 core_label = 'core-lbl'
 core_presentation = 'core-pre'
