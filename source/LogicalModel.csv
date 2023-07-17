@@ -1,5 +1,5 @@
 ﻿id,bie,level,card,classTerm,propertyTerm,representation,associatedClass
-AP01-00,ABIE,1,__,Account Payable Adjustment,,,
+AP01,ABIE,1,__,Account Payable Adjustment,,,
 AP01-01,PKBIE,2,1..1,Account Payable Adjustment,Adjustment ID,Identifier,
 AP01-02,BBIE,2,0..1,Account Payable Adjustment,Adjustment Number,Text,
 AP01-03,BBIE,2,0..1,Account Payable Adjustment,Adjustment Type Name,Text,
@@ -12,9 +12,9 @@ AP01-09,BBIE,2,0..1,Account Payable Adjustment,Adjustment Date,Date,
 AP01-10,RFBIE,2,0..1,Account Payable Adjustment,Supplier Account ID,,Supplier
 AP01-11,RFBIE,2,0..1,Account Payable Adjustment,GL Debit Account Number,,Chart Of Accounts
 AP01-12,RFBIE,2,0..1,Account Payable Adjustment,GL Credit Account Number,,Chart Of Accounts
-AP01-13,ASBIE,2,0..1,Account Payable Adjustment,has a,,Adjustment Amount
-AP01_CC04-00,SPCC,2,__,Adjustment Amount,is a,,Monetary Amounts
-AP01_CC04_CC24-00,ACC,3,__,Monetary Amounts,,,
+AP01-13,ASBIE,2,0..1,Account Payable Adjustment,contains,,Adjustment Amount
+AP01_CC04,SPCC,2,__,Adjustment Amount,Is specialized from,,Monetary Amounts
+AP01_CC04_CC24,ACC,3,__,Monetary Amounts,,,
 AP01_CC04_CC24-01,BCC,4,0..1,Monetary Amounts,Functional Amount,Amount,
 AP01_CC04_CC24-02,RFCC,4,0..1,Monetary Amounts,Functional Currency Code,,Currency
 AP01_CC04_CC24-03,BCC,4,0..1,Monetary Amounts,Transaction Amount,Amount,
@@ -23,39 +23,39 @@ AP01_CC04_CC24-05,BCC,4,0..1,Monetary Amounts,Reporting Amount,Amount,
 AP01_CC04_CC24-06,RFCC,4,0..1,Monetary Amounts,Reporting Currency Code,,Currency
 AP01_CC04_CC24-07,BCC,4,0..1,Monetary Amounts,Local Amount,Amount,
 AP01_CC04_CC24-08,RFCC,4,0..1,Monetary Amounts,Local Currency Code,,Currency
-AP01-14,ASBIE,2,0..1,Account Payable Adjustment,was,,Approved
-AP01_CC06-00,SPCC,2,__,Approved,is a,,Activity
-AP01_CC06_CC02-00,ACC,3,__,Activity,,,
+AP01-14,ASBIE,2,0..1,Account Payable Adjustment,A derived attribute,,Approved
+AP01_CC06,SPCC,2,__,Approved,Is specialized from,,Activity
+AP01_CC06_CC02,ACC,3,__,Activity,,,
 AP01_CC06_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 AP01_CC06_CC02-02,BCC,4,0..1,Activity,Date,Date,
 AP01_CC06_CC02-03,BCC,4,0..1,Activity,Time,Time,
-AP01-16,ASBIE,2,0..1,Account Payable Adjustment,was,,Created
-AP01_CC15-00,SPCC,2,__,Created,is a,,Activity
-AP01_CC15_CC02-00,ACC,3,__,Activity,,,
+AP01-16,ASBIE,2,0..1,Account Payable Adjustment,A derived attribute,,Created
+AP01_CC15,SPCC,2,__,Created,Is specialized from,,Activity
+AP01_CC15_CC02,ACC,3,__,Activity,,,
 AP01_CC15_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 AP01_CC15_CC02-02,BCC,4,0..1,Activity,Date,Date,
 AP01_CC15_CC02-03,BCC,4,0..1,Activity,Time,Time,
-AP01-17,ASBIE,2,0..1,Account Payable Adjustment,was,,Last Modified
-AP01_CC22-00,SPCC,2,__,Last Modified,is a,,Activity
-AP01_CC22_CC02-00,ACC,3,__,Activity,,,
+AP01-17,ASBIE,2,0..1,Account Payable Adjustment,A derived attribute,,Last Modified
+AP01_CC22,SPCC,2,__,Last Modified,Is specialized from,,Activity
+AP01_CC22_CC02,ACC,3,__,Activity,,,
 AP01_CC22_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 AP01_CC22_CC02-02,BCC,4,0..1,Activity,Date,Date,
 AP01_CC22_CC02-03,BCC,4,0..1,Activity,Time,Time,
-AP01-15,ASBIE,2,0..*,Account Payable Adjustment,has a,,Business Segment
-AP01_BS04-00,ABIE,2,__,Business Segment,,,
+AP01-15,ASBIE,2,0..*,Account Payable Adjustment,contains,,Business Segment
+AP01_BS04,ABIE,2,__,Business Segment,,,
 AP01_BS04-01,PKBIE,3,1..1,Business Segment,Business Segment Code,Identifier,
 AP01_BS04-02,BBIE,3,0..1,Business Segment,Business Segment Name,Name,
 AP01_BS04-03,BBIE,3,0..1,Business Segment,Segment Reference Level,Reference Level,
 AP01_BS04-04,BBIE,3,0..1,Business Segment,Organization Type Name,Name,
-AP01-18,ASBIE,2,0..*,Account Payable Adjustment,has a,,Tax
-AP01_CC30-00,ACC,2,__,Tax,,,
+AP01-18,ASBIE,2,0..*,Account Payable Adjustment,contains,,Tax
+AP01_CC30,ACC,2,__,Tax,,,
 AP01_CC30-01,RFCC,3,0..1,Tax,Tax Type Code,,Tax Type
 AP01_CC30-02,BCC,3,0..1,Tax,Tax Local Amount,Amount,
 AP01_CC30-03,BCC,3,0..1,Tax,Tax Transaction Amount,Amount,
 AP01_CC30-04,RFCC,3,0..1,Tax,GL Tax Debit Account Number,,Chart Of Accounts
 AP01_CC30-05,RFCC,3,0..1,Tax,GL Tax Credit Account Number,,Chart Of Accounts
-AP01-19,ASBIE,2,1..*,Account Payable Adjustment,has a,,Account Payable Adjustment Details
-AP01_AP02-00,ABIE,2,__,Account Payable Adjustment Details,,,
+AP01-19,ASBIE,2,1..*,Account Payable Adjustment,contains,,Account Payable Adjustment Details
+AP01_AP02,ABIE,2,__,Account Payable Adjustment Details,,,
 AP01_AP02-01,RFBIE,3,0..1,Account Payable Adjustment Details,Adjustment ID,,Account Payable Adjustment
 AP01_AP02-02,PKBIE,3,1..1,Account Payable Adjustment Details,Adjustment Line ID,Identifier,
 AP01_AP02-03,BBIE,3,0..1,Account Payable Adjustment Details,Adjustment Line Number,Text,
@@ -64,9 +64,9 @@ AP01_AP02-05,RFBIE,3,0..1,Account Payable Adjustment Details,Invoice Line ID,,In
 AP01_AP02-06,RFBIE,3,0..1,Account Payable Adjustment Details,Journal ID,,GL Details
 AP01_AP02-07,RFBIE,3,0..1,Account Payable Adjustment Details,GL Debit Account Number,,Chart Of Accounts
 AP01_AP02-08,RFBIE,3,0..1,Account Payable Adjustment Details,GL Credit Account Number,,Chart Of Accounts
-AP01_AP02-09,ASBIE,3,0..1,Account Payable Adjustment Details,has a,,Adjustment Amount
-AP01_AP02_CC04-00,SPCC,3,__,Adjustment Amount,is a,,Monetary Amounts
-AP01_AP02_CC04_CC24-00,ACC,4,__,Monetary Amounts,,,
+AP01_AP02-09,ASBIE,3,0..1,Account Payable Adjustment Details,contains,,Adjustment Amount
+AP01_AP02_CC04,SPCC,3,__,Adjustment Amount,Is specialized from,,Monetary Amounts
+AP01_AP02_CC04_CC24,ACC,4,__,Monetary Amounts,,,
 AP01_AP02_CC04_CC24-01,BCC,5,0..1,Monetary Amounts,Functional Amount,Amount,
 AP01_AP02_CC04_CC24-02,RFCC,5,0..1,Monetary Amounts,Functional Currency Code,,Currency
 AP01_AP02_CC04_CC24-03,BCC,5,0..1,Monetary Amounts,Transaction Amount,Amount,
@@ -75,20 +75,20 @@ AP01_AP02_CC04_CC24-05,BCC,5,0..1,Monetary Amounts,Reporting Amount,Amount,
 AP01_AP02_CC04_CC24-06,RFCC,5,0..1,Monetary Amounts,Reporting Currency Code,,Currency
 AP01_AP02_CC04_CC24-07,BCC,5,0..1,Monetary Amounts,Local Amount,Amount,
 AP01_AP02_CC04_CC24-08,RFCC,5,0..1,Monetary Amounts,Local Currency Code,,Currency
-AP01_AP02-10,ASBIE,3,0..*,Account Payable Adjustment Details,has a,,Business Segment
-AP01_AP02_BS04-00,ABIE,3,__,Business Segment,,,
+AP01_AP02-10,ASBIE,3,0..*,Account Payable Adjustment Details,contains,,Business Segment
+AP01_AP02_BS04,ABIE,3,__,Business Segment,,,
 AP01_AP02_BS04-01,PKBIE,4,1..1,Business Segment,Business Segment Code,Identifier,
 AP01_AP02_BS04-02,BBIE,4,0..1,Business Segment,Business Segment Name,Name,
 AP01_AP02_BS04-03,BBIE,4,0..1,Business Segment,Segment Reference Level,Reference Level,
 AP01_AP02_BS04-04,BBIE,4,0..1,Business Segment,Organization Type Name,Name,
-AP01_AP02-11,ASBIE,3,0..*,Account Payable Adjustment Details,has a,,Tax
-AP01_AP02_CC30-00,ACC,3,__,Tax,,,
+AP01_AP02-11,ASBIE,3,0..*,Account Payable Adjustment Details,contains,,Tax
+AP01_AP02_CC30,ACC,3,__,Tax,,,
 AP01_AP02_CC30-01,RFCC,4,0..1,Tax,Tax Type Code,,Tax Type
 AP01_AP02_CC30-02,BCC,4,0..1,Tax,Tax Local Amount,Amount,
 AP01_AP02_CC30-03,BCC,4,0..1,Tax,Tax Transaction Amount,Amount,
 AP01_AP02_CC30-04,RFCC,4,0..1,Tax,GL Tax Debit Account Number,,Chart Of Accounts
 AP01_AP02_CC30-05,RFCC,4,0..1,Tax,GL Tax Credit Account Number,,Chart Of Accounts
-AP03-00,ABIE,1,__,Account Payable Cash Application,,,
+AP03,ABIE,1,__,Account Payable Cash Application,,,
 AP03-01,PKBIE,2,1..1,Account Payable Cash Application,AP Application ID,Identifier,
 AP03-02,RFBIE,2,0..1,Account Payable Cash Application,Fiscal Year,,Accounting Period
 AP03-03,RFBIE,2,0..1,Account Payable Cash Application,Accounting Period,,Accounting Period
@@ -100,9 +100,9 @@ AP03-08,RFBIE,2,0..1,Account Payable Cash Application,Settlement Method Code,,Se
 AP03-09,BBIE,2,0..1,Account Payable Cash Application,Remark,Text,
 AP03-10,RFBIE,2,0..1,Account Payable Cash Application,GL Debit Account Number,,Chart Of Accounts
 AP03-11,RFBIE,2,0..1,Account Payable Cash Application,GL Credit Account Number,,Chart Of Accounts
-AP03-12,ASBIE,2,0..1,Account Payable Cash Application,has a,,Amount
-AP03_CC05-00,SPCC,2,__,Amount,is a,,Monetary Amounts
-AP03_CC05_CC24-00,ACC,3,__,Monetary Amounts,,,
+AP03-12,ASBIE,2,0..1,Account Payable Cash Application,contains,,Amount
+AP03_CC05,SPCC,2,__,Amount,Is specialized from,,Monetary Amounts
+AP03_CC05_CC24,ACC,3,__,Monetary Amounts,,,
 AP03_CC05_CC24-01,BCC,4,0..1,Monetary Amounts,Functional Amount,Amount,
 AP03_CC05_CC24-02,RFCC,4,0..1,Monetary Amounts,Functional Currency Code,,Currency
 AP03_CC05_CC24-03,BCC,4,0..1,Monetary Amounts,Transaction Amount,Amount,
@@ -111,31 +111,31 @@ AP03_CC05_CC24-05,BCC,4,0..1,Monetary Amounts,Reporting Amount,Amount,
 AP03_CC05_CC24-06,RFCC,4,0..1,Monetary Amounts,Reporting Currency Code,,Currency
 AP03_CC05_CC24-07,BCC,4,0..1,Monetary Amounts,Local Amount,Amount,
 AP03_CC05_CC24-08,RFCC,4,0..1,Monetary Amounts,Local Currency Code,,Currency
-AP03-13,ASBIE,2,0..1,Account Payable Cash Application,was,,Approved
-AP03_CC06-00,SPCC,2,__,Approved,is a,,Activity
-AP03_CC06_CC02-00,ACC,3,__,Activity,,,
+AP03-13,ASBIE,2,0..1,Account Payable Cash Application,A derived attribute,,Approved
+AP03_CC06,SPCC,2,__,Approved,Is specialized from,,Activity
+AP03_CC06_CC02,ACC,3,__,Activity,,,
 AP03_CC06_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 AP03_CC06_CC02-02,BCC,4,0..1,Activity,Date,Date,
 AP03_CC06_CC02-03,BCC,4,0..1,Activity,Time,Time,
-AP03-15,ASBIE,2,0..1,Account Payable Cash Application,was,,Created
-AP03_CC15-00,SPCC,2,__,Created,is a,,Activity
-AP03_CC15_CC02-00,ACC,3,__,Activity,,,
+AP03-15,ASBIE,2,0..1,Account Payable Cash Application,A derived attribute,,Created
+AP03_CC15,SPCC,2,__,Created,Is specialized from,,Activity
+AP03_CC15_CC02,ACC,3,__,Activity,,,
 AP03_CC15_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 AP03_CC15_CC02-02,BCC,4,0..1,Activity,Date,Date,
 AP03_CC15_CC02-03,BCC,4,0..1,Activity,Time,Time,
-AP03-16,ASBIE,2,0..1,Account Payable Cash Application,was,,Last Modified
-AP03_CC22-00,SPCC,2,__,Last Modified,is a,,Activity
-AP03_CC22_CC02-00,ACC,3,__,Activity,,,
+AP03-16,ASBIE,2,0..1,Account Payable Cash Application,A derived attribute,,Last Modified
+AP03_CC22,SPCC,2,__,Last Modified,Is specialized from,,Activity
+AP03_CC22_CC02,ACC,3,__,Activity,,,
 AP03_CC22_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 AP03_CC22_CC02-02,BCC,4,0..1,Activity,Date,Date,
 AP03_CC22_CC02-03,BCC,4,0..1,Activity,Time,Time,
-AP03-14,ASBIE,2,0..*,Account Payable Cash Application,has a,,Business Segment
-AP03_BS04-00,ABIE,2,__,Business Segment,,,
+AP03-14,ASBIE,2,0..*,Account Payable Cash Application,contains,,Business Segment
+AP03_BS04,ABIE,2,__,Business Segment,,,
 AP03_BS04-01,PKBIE,3,1..1,Business Segment,Business Segment Code,Identifier,
 AP03_BS04-02,BBIE,3,0..1,Business Segment,Business Segment Name,Name,
 AP03_BS04-03,BBIE,3,0..1,Business Segment,Segment Reference Level,Reference Level,
 AP03_BS04-04,BBIE,3,0..1,Business Segment,Organization Type Name,Name,
-AP04-00,ABIE,1,__,Open Account Payable,,,
+AP04,ABIE,1,__,Open Account Payable,,,
 AP04-01,PKBIE,2,1..1,Open Account Payable,Transaction ID,Identifier,
 AP04-02,RFBIE,2,0..1,Open Account Payable,Invoice ID,,Invoice Received
 AP04-03,RFBIE,2,0..1,Open Account Payable,Supplier Account ID,,Supplier
@@ -150,9 +150,9 @@ AP04-11,BBIE,2,0..1,Open Account Payable,Reference Number,Text,
 AP04-12,BBIE,2,0..1,Open Account Payable,Reference Date,Date,
 AP04-13,BBIE,2,0..1,Open Account Payable,Remark,Text,
 AP04-14,BBIE,2,0..1,Open Account Payable,Grouping Code,Text,
-AP04-15,ASBIE,2,0..1,Open Account Payable,has a,,Amount
-AP04_CC05-00,SPCC,2,__,Amount,is a,,Monetary Amounts
-AP04_CC05_CC24-00,ACC,3,__,Monetary Amounts,,,
+AP04-15,ASBIE,2,0..1,Open Account Payable,contains,,Amount
+AP04_CC05,SPCC,2,__,Amount,Is specialized from,,Monetary Amounts
+AP04_CC05_CC24,ACC,3,__,Monetary Amounts,,,
 AP04_CC05_CC24-01,BCC,4,0..1,Monetary Amounts,Functional Amount,Amount,
 AP04_CC05_CC24-02,RFCC,4,0..1,Monetary Amounts,Functional Currency Code,,Currency
 AP04_CC05_CC24-03,BCC,4,0..1,Monetary Amounts,Transaction Amount,Amount,
@@ -161,20 +161,20 @@ AP04_CC05_CC24-05,BCC,4,0..1,Monetary Amounts,Reporting Amount,Amount,
 AP04_CC05_CC24-06,RFCC,4,0..1,Monetary Amounts,Reporting Currency Code,,Currency
 AP04_CC05_CC24-07,BCC,4,0..1,Monetary Amounts,Local Amount,Amount,
 AP04_CC05_CC24-08,RFCC,4,0..1,Monetary Amounts,Local Currency Code,,Currency
-AP04-16,ASBIE,2,0..1,Open Account Payable,has a,,Balance
-AP04_CC07-00,SPCC,2,__,Balance,is a,,Balance Monetary Amounts
-AP04_CC07_CC08-00,ACC,3,__,Balance Monetary Amounts,,,
+AP04-16,ASBIE,2,0..1,Open Account Payable,contains,,Balance
+AP04_CC07,SPCC,2,__,Balance,Is specialized from,,Balance Monetary Amounts
+AP04_CC07_CC08,ACC,3,__,Balance Monetary Amounts,,,
 AP04_CC07_CC08-01,BCC,4,0..1,Balance Monetary Amounts,Functional Balance,Amount,
 AP04_CC07_CC08-02,BCC,4,0..1,Balance Monetary Amounts,Transaction Balance,Amount,
 AP04_CC07_CC08-03,BCC,4,0..1,Balance Monetary Amounts,Reporting Balance,Amount,
 AP04_CC07_CC08-04,BCC,4,0..1,Balance Monetary Amounts,Local Balance,Amount,
-AP04-17,ASBIE,2,0..*,Open Account Payable,has a,,Business Segment
-AP04_BS04-00,ABIE,2,__,Business Segment,,,
+AP04-17,ASBIE,2,0..*,Open Account Payable,contains,,Business Segment
+AP04_BS04,ABIE,2,__,Business Segment,,,
 AP04_BS04-01,PKBIE,3,1..1,Business Segment,Business Segment Code,Identifier,
 AP04_BS04-02,BBIE,3,0..1,Business Segment,Business Segment Name,Name,
 AP04_BS04-03,BBIE,3,0..1,Business Segment,Segment Reference Level,Reference Level,
 AP04_BS04-04,BBIE,3,0..1,Business Segment,Organization Type Name,Name,
-AP05-00,ABIE,1,__,Payment Made,,,
+AP05,ABIE,1,__,Payment Made,,,
 AP05-01,PKBIE,2,1..1,Payment Made,Payment ID,Identifier,
 AP05-02,BBIE,2,0..1,Payment Made,Payment Number,Text,
 AP05-03,RFBIE,2,0..1,Payment Made,Supplier Account ID,,Supplier
@@ -191,9 +191,9 @@ AP05-13,BBIE,2,0..1,Payment Made,Amount Credit Debit Indicator,Credit Debit_  Co
 AP05-14,BBIE,2,0..1,Payment Made,Remark,Text,
 AP05-15,RFBIE,2,0..1,Payment Made,GL Debit Account Number,,Chart Of Accounts
 AP05-16,RFBIE,2,0..1,Payment Made,GL Credit Account Number,,Chart Of Accounts
-AP05-17,ASBIE,2,0..1,Payment Made,has a,,Amount
-AP05_CC05-00,SPCC,2,__,Amount,is a,,Monetary Amounts
-AP05_CC05_CC24-00,ACC,3,__,Monetary Amounts,,,
+AP05-17,ASBIE,2,0..1,Payment Made,contains,,Amount
+AP05_CC05,SPCC,2,__,Amount,Is specialized from,,Monetary Amounts
+AP05_CC05_CC24,ACC,3,__,Monetary Amounts,,,
 AP05_CC05_CC24-01,BCC,4,0..1,Monetary Amounts,Functional Amount,Amount,
 AP05_CC05_CC24-02,RFCC,4,0..1,Monetary Amounts,Functional Currency Code,,Currency
 AP05_CC05_CC24-03,BCC,4,0..1,Monetary Amounts,Transaction Amount,Amount,
@@ -202,31 +202,31 @@ AP05_CC05_CC24-05,BCC,4,0..1,Monetary Amounts,Reporting Amount,Amount,
 AP05_CC05_CC24-06,RFCC,4,0..1,Monetary Amounts,Reporting Currency Code,,Currency
 AP05_CC05_CC24-07,BCC,4,0..1,Monetary Amounts,Local Amount,Amount,
 AP05_CC05_CC24-08,RFCC,4,0..1,Monetary Amounts,Local Currency Code,,Currency
-AP05-18,ASBIE,2,0..1,Payment Made,was,,Approved
-AP05_CC06-00,SPCC,2,__,Approved,is a,,Activity
-AP05_CC06_CC02-00,ACC,3,__,Activity,,,
+AP05-18,ASBIE,2,0..1,Payment Made,A derived attribute,,Approved
+AP05_CC06,SPCC,2,__,Approved,Is specialized from,,Activity
+AP05_CC06_CC02,ACC,3,__,Activity,,,
 AP05_CC06_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 AP05_CC06_CC02-02,BCC,4,0..1,Activity,Date,Date,
 AP05_CC06_CC02-03,BCC,4,0..1,Activity,Time,Time,
-AP05-20,ASBIE,2,0..1,Payment Made,was,,Created
-AP05_CC15-00,SPCC,2,__,Created,is a,,Activity
-AP05_CC15_CC02-00,ACC,3,__,Activity,,,
+AP05-20,ASBIE,2,0..1,Payment Made,A derived attribute,,Created
+AP05_CC15,SPCC,2,__,Created,Is specialized from,,Activity
+AP05_CC15_CC02,ACC,3,__,Activity,,,
 AP05_CC15_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 AP05_CC15_CC02-02,BCC,4,0..1,Activity,Date,Date,
 AP05_CC15_CC02-03,BCC,4,0..1,Activity,Time,Time,
-AP05-21,ASBIE,2,0..1,Payment Made,was,,Last Modified
-AP05_CC22-00,SPCC,2,__,Last Modified,is a,,Activity
-AP05_CC22_CC02-00,ACC,3,__,Activity,,,
+AP05-21,ASBIE,2,0..1,Payment Made,A derived attribute,,Last Modified
+AP05_CC22,SPCC,2,__,Last Modified,Is specialized from,,Activity
+AP05_CC22_CC02,ACC,3,__,Activity,,,
 AP05_CC22_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 AP05_CC22_CC02-02,BCC,4,0..1,Activity,Date,Date,
 AP05_CC22_CC02-03,BCC,4,0..1,Activity,Time,Time,
-AP05-19,ASBIE,2,0..*,Payment Made,has a,,Business Segment
-AP05_BS04-00,ABIE,2,__,Business Segment,,,
+AP05-19,ASBIE,2,0..*,Payment Made,contains,,Business Segment
+AP05_BS04,ABIE,2,__,Business Segment,,,
 AP05_BS04-01,PKBIE,3,1..1,Business Segment,Business Segment Code,Identifier,
 AP05_BS04-02,BBIE,3,0..1,Business Segment,Business Segment Name,Name,
 AP05_BS04-03,BBIE,3,0..1,Business Segment,Segment Reference Level,Reference Level,
 AP05_BS04-04,BBIE,3,0..1,Business Segment,Organization Type Name,Name,
-AR01-00,ABIE,1,__,Account Receivable  Adjustment,,,
+AR01,ABIE,1,__,Account Receivable  Adjustment,,,
 AR01-01,PKBIE,2,1..1,Account Receivable Adjustment,Adjustment ID,Identifier,
 AR01-02,BBIE,2,0..1,Account Receivable Adjustment,Adjustment Number,Text,
 AR01-03,BBIE,2,0..1,Account Receivable Adjustment,Adjustment Type Name,Text,
@@ -239,9 +239,9 @@ AR01-09,BBIE,2,0..1,Account Receivable Adjustment,Adjustment Date,Date,
 AR01-10,RFBIE,2,0..1,Account Receivable Adjustment,Customer Account ID,,Customer
 AR01-11,RFBIE,2,0..1,Account Receivable Adjustment,GL Debit Account Number,,Chart Of Accounts
 AR01-12,RFBIE,2,0..1,Account Receivable Adjustment,GL Credit Account Number,,Chart Of Accounts
-AR01-13,ASBIE,2,0..1,Account Receivable Adjustment,has a,,Adjustment Amount
-AR01_CC04-00,SPCC,2,__,Adjustment Amount,is a,,Monetary Amounts
-AR01_CC04_CC24-00,ACC,3,__,Monetary Amounts,,,
+AR01-13,ASBIE,2,0..1,Account Receivable Adjustment,contains,,Adjustment Amount
+AR01_CC04,SPCC,2,__,Adjustment Amount,Is specialized from,,Monetary Amounts
+AR01_CC04_CC24,ACC,3,__,Monetary Amounts,,,
 AR01_CC04_CC24-01,BCC,4,0..1,Monetary Amounts,Functional Amount,Amount,
 AR01_CC04_CC24-02,RFCC,4,0..1,Monetary Amounts,Functional Currency Code,,Currency
 AR01_CC04_CC24-03,BCC,4,0..1,Monetary Amounts,Transaction Amount,Amount,
@@ -250,39 +250,39 @@ AR01_CC04_CC24-05,BCC,4,0..1,Monetary Amounts,Reporting Amount,Amount,
 AR01_CC04_CC24-06,RFCC,4,0..1,Monetary Amounts,Reporting Currency Code,,Currency
 AR01_CC04_CC24-07,BCC,4,0..1,Monetary Amounts,Local Amount,Amount,
 AR01_CC04_CC24-08,RFCC,4,0..1,Monetary Amounts,Local Currency Code,,Currency
-AR01-14,ASBIE,2,0..1,Account Receivable Adjustment,was,,Approved
-AR01_CC06-00,SPCC,2,__,Approved,is a,,Activity
-AR01_CC06_CC02-00,ACC,3,__,Activity,,,
+AR01-14,ASBIE,2,0..1,Account Receivable Adjustment,A derived attribute,,Approved
+AR01_CC06,SPCC,2,__,Approved,Is specialized from,,Activity
+AR01_CC06_CC02,ACC,3,__,Activity,,,
 AR01_CC06_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 AR01_CC06_CC02-02,BCC,4,0..1,Activity,Date,Date,
 AR01_CC06_CC02-03,BCC,4,0..1,Activity,Time,Time,
-AR01-16,ASBIE,2,0..1,Account Receivable Adjustment,was,,Created
-AR01_CC15-00,SPCC,2,__,Created,is a,,Activity
-AR01_CC15_CC02-00,ACC,3,__,Activity,,,
+AR01-16,ASBIE,2,0..1,Account Receivable Adjustment,A derived attribute,,Created
+AR01_CC15,SPCC,2,__,Created,Is specialized from,,Activity
+AR01_CC15_CC02,ACC,3,__,Activity,,,
 AR01_CC15_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 AR01_CC15_CC02-02,BCC,4,0..1,Activity,Date,Date,
 AR01_CC15_CC02-03,BCC,4,0..1,Activity,Time,Time,
-AR01-17,ASBIE,2,0..1,Account Receivable Adjustment,was,,Last Modified
-AR01_CC22-00,SPCC,2,__,Last Modified,is a,,Activity
-AR01_CC22_CC02-00,ACC,3,__,Activity,,,
+AR01-17,ASBIE,2,0..1,Account Receivable Adjustment,A derived attribute,,Last Modified
+AR01_CC22,SPCC,2,__,Last Modified,Is specialized from,,Activity
+AR01_CC22_CC02,ACC,3,__,Activity,,,
 AR01_CC22_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 AR01_CC22_CC02-02,BCC,4,0..1,Activity,Date,Date,
 AR01_CC22_CC02-03,BCC,4,0..1,Activity,Time,Time,
-AR01-15,ASBIE,2,0..*,Account Receivable Adjustment,has a,,Business Segment
-AR01_BS04-00,ABIE,2,__,Business Segment,,,
+AR01-15,ASBIE,2,0..*,Account Receivable Adjustment,contains,,Business Segment
+AR01_BS04,ABIE,2,__,Business Segment,,,
 AR01_BS04-01,PKBIE,3,1..1,Business Segment,Business Segment Code,Identifier,
 AR01_BS04-02,BBIE,3,0..1,Business Segment,Business Segment Name,Name,
 AR01_BS04-03,BBIE,3,0..1,Business Segment,Segment Reference Level,Reference Level,
 AR01_BS04-04,BBIE,3,0..1,Business Segment,Organization Type Name,Name,
-AR01-18,ASBIE,2,0..*,Account Receivable Adjustment,has a,,Tax
-AR01_CC30-00,ACC,2,__,Tax,,,
+AR01-18,ASBIE,2,0..*,Account Receivable Adjustment,contains,,Tax
+AR01_CC30,ACC,2,__,Tax,,,
 AR01_CC30-01,RFCC,3,0..1,Tax,Tax Type Code,,Tax Type
 AR01_CC30-02,BCC,3,0..1,Tax,Tax Local Amount,Amount,
 AR01_CC30-03,BCC,3,0..1,Tax,Tax Transaction Amount,Amount,
 AR01_CC30-04,RFCC,3,0..1,Tax,GL Tax Debit Account Number,,Chart Of Accounts
 AR01_CC30-05,RFCC,3,0..1,Tax,GL Tax Credit Account Number,,Chart Of Accounts
-AR01-19,ASBIE,2,1..*,Account Receivable Adjustment,has a,,Account Receivable Adjustment Details
-AR01_AR02-00,ABIE,2,__,Account Receivable  Adjustment Details,,,
+AR01-19,ASBIE,2,1..*,Account Receivable Adjustment,contains,,Account Receivable Adjustment Details
+AR01_AR02,ABIE,2,__,Account Receivable  Adjustment Details,,,
 AR01_AR02-01,RFBIE,3,0..1,Account Receivable Adjustment Details,Adjustment ID,,Account Receivable Adjustment
 AR01_AR02-02,PKBIE,3,1..1,Account Receivable Adjustment Details,Adjustment Line ID,Identifier,
 AR01_AR02-03,BBIE,3,0..1,Account Receivable Adjustment Details,Adjustment Line Number,Text,
@@ -291,9 +291,9 @@ AR01_AR02-05,RFBIE,3,0..1,Account Receivable Adjustment Details,Invoice Line ID,
 AR01_AR02-06,RFBIE,3,0..1,Account Receivable Adjustment Details,Journal ID,,GL Details
 AR01_AR02-07,RFBIE,3,0..1,Account Receivable Adjustment Details,GL Debit Account Number,,Chart Of Accounts
 AR01_AR02-08,RFBIE,3,0..1,Account Receivable Adjustment Details,GL Credit Account Number,,Chart Of Accounts
-AR01_AR02-09,ASBIE,3,0..1,Account Receivable Adjustment Details,has a,,Adjustment Amount
-AR01_AR02_CC04-00,SPCC,3,__,Adjustment Amount,is a,,Monetary Amounts
-AR01_AR02_CC04_CC24-00,ACC,4,__,Monetary Amounts,,,
+AR01_AR02-09,ASBIE,3,0..1,Account Receivable Adjustment Details,contains,,Adjustment Amount
+AR01_AR02_CC04,SPCC,3,__,Adjustment Amount,Is specialized from,,Monetary Amounts
+AR01_AR02_CC04_CC24,ACC,4,__,Monetary Amounts,,,
 AR01_AR02_CC04_CC24-01,BCC,5,0..1,Monetary Amounts,Functional Amount,Amount,
 AR01_AR02_CC04_CC24-02,RFCC,5,0..1,Monetary Amounts,Functional Currency Code,,Currency
 AR01_AR02_CC04_CC24-03,BCC,5,0..1,Monetary Amounts,Transaction Amount,Amount,
@@ -302,20 +302,20 @@ AR01_AR02_CC04_CC24-05,BCC,5,0..1,Monetary Amounts,Reporting Amount,Amount,
 AR01_AR02_CC04_CC24-06,RFCC,5,0..1,Monetary Amounts,Reporting Currency Code,,Currency
 AR01_AR02_CC04_CC24-07,BCC,5,0..1,Monetary Amounts,Local Amount,Amount,
 AR01_AR02_CC04_CC24-08,RFCC,5,0..1,Monetary Amounts,Local Currency Code,,Currency
-AR01_AR02-10,ASBIE,3,0..*,Account Receivable Adjustment Details,has a,,Business Segment
-AR01_AR02_BS04-00,ABIE,3,__,Business Segment,,,
+AR01_AR02-10,ASBIE,3,0..*,Account Receivable Adjustment Details,contains,,Business Segment
+AR01_AR02_BS04,ABIE,3,__,Business Segment,,,
 AR01_AR02_BS04-01,PKBIE,4,1..1,Business Segment,Business Segment Code,Identifier,
 AR01_AR02_BS04-02,BBIE,4,0..1,Business Segment,Business Segment Name,Name,
 AR01_AR02_BS04-03,BBIE,4,0..1,Business Segment,Segment Reference Level,Reference Level,
 AR01_AR02_BS04-04,BBIE,4,0..1,Business Segment,Organization Type Name,Name,
-AR01_AR02-11,ASBIE,3,0..*,Account Receivable Adjustment Details,has a,,Tax
-AR01_AR02_CC30-00,ACC,3,__,Tax,,,
+AR01_AR02-11,ASBIE,3,0..*,Account Receivable Adjustment Details,contains,,Tax
+AR01_AR02_CC30,ACC,3,__,Tax,,,
 AR01_AR02_CC30-01,RFCC,4,0..1,Tax,Tax Type Code,,Tax Type
 AR01_AR02_CC30-02,BCC,4,0..1,Tax,Tax Local Amount,Amount,
 AR01_AR02_CC30-03,BCC,4,0..1,Tax,Tax Transaction Amount,Amount,
 AR01_AR02_CC30-04,RFCC,4,0..1,Tax,GL Tax Debit Account Number,,Chart Of Accounts
 AR01_AR02_CC30-05,RFCC,4,0..1,Tax,GL Tax Credit Account Number,,Chart Of Accounts
-AR03-00,ABIE,1,__,Account Receivable  Cash Application,,,
+AR03,ABIE,1,__,Account Receivable  Cash Application,,,
 AR03-01,PKBIE,2,1..1,Account Receivable Cash Application,AR Application ID,Identifier,
 AR03-02,RFBIE,2,0..1,Account Receivable Cash Application,Fiscal Year,,Accounting Period
 AR03-03,RFBIE,2,0..1,Account Receivable Cash Application,Accounting Period,,Accounting Period
@@ -327,9 +327,9 @@ AR03-08,RFBIE,2,0..1,Account Receivable Cash Application,Settlement Method Code,
 AR03-09,BBIE,2,0..1,Account Receivable Cash Application,Remark,Text,
 AR03-10,RFBIE,2,0..1,Account Receivable Cash Application,GL Debit Account Number,,Chart Of Accounts
 AR03-11,RFBIE,2,0..1,Account Receivable Cash Application,GL Credit Account Number,,Chart Of Accounts
-AR03-12,ASBIE,2,0..1,Account Receivable Cash Application,has a,,Amount
-AR03_CC05-00,SPCC,2,__,Amount,is a,,Monetary Amounts
-AR03_CC05_CC24-00,ACC,3,__,Monetary Amounts,,,
+AR03-12,ASBIE,2,0..1,Account Receivable Cash Application,contains,,Amount
+AR03_CC05,SPCC,2,__,Amount,Is specialized from,,Monetary Amounts
+AR03_CC05_CC24,ACC,3,__,Monetary Amounts,,,
 AR03_CC05_CC24-01,BCC,4,0..1,Monetary Amounts,Functional Amount,Amount,
 AR03_CC05_CC24-02,RFCC,4,0..1,Monetary Amounts,Functional Currency Code,,Currency
 AR03_CC05_CC24-03,BCC,4,0..1,Monetary Amounts,Transaction Amount,Amount,
@@ -338,31 +338,31 @@ AR03_CC05_CC24-05,BCC,4,0..1,Monetary Amounts,Reporting Amount,Amount,
 AR03_CC05_CC24-06,RFCC,4,0..1,Monetary Amounts,Reporting Currency Code,,Currency
 AR03_CC05_CC24-07,BCC,4,0..1,Monetary Amounts,Local Amount,Amount,
 AR03_CC05_CC24-08,RFCC,4,0..1,Monetary Amounts,Local Currency Code,,Currency
-AR03-13,ASBIE,2,0..1,Account Receivable Cash Application,was,,Approved
-AR03_CC06-00,SPCC,2,__,Approved,is a,,Activity
-AR03_CC06_CC02-00,ACC,3,__,Activity,,,
+AR03-13,ASBIE,2,0..1,Account Receivable Cash Application,A derived attribute,,Approved
+AR03_CC06,SPCC,2,__,Approved,Is specialized from,,Activity
+AR03_CC06_CC02,ACC,3,__,Activity,,,
 AR03_CC06_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 AR03_CC06_CC02-02,BCC,4,0..1,Activity,Date,Date,
 AR03_CC06_CC02-03,BCC,4,0..1,Activity,Time,Time,
-AR03-15,ASBIE,2,0..1,Account Receivable Cash Application,was,,Created
-AR03_CC15-00,SPCC,2,__,Created,is a,,Activity
-AR03_CC15_CC02-00,ACC,3,__,Activity,,,
+AR03-15,ASBIE,2,0..1,Account Receivable Cash Application,A derived attribute,,Created
+AR03_CC15,SPCC,2,__,Created,Is specialized from,,Activity
+AR03_CC15_CC02,ACC,3,__,Activity,,,
 AR03_CC15_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 AR03_CC15_CC02-02,BCC,4,0..1,Activity,Date,Date,
 AR03_CC15_CC02-03,BCC,4,0..1,Activity,Time,Time,
-AR03-16,ASBIE,2,0..1,Account Receivable Cash Application,was,,Last Modified
-AR03_CC22-00,SPCC,2,__,Last Modified,is a,,Activity
-AR03_CC22_CC02-00,ACC,3,__,Activity,,,
+AR03-16,ASBIE,2,0..1,Account Receivable Cash Application,A derived attribute,,Last Modified
+AR03_CC22,SPCC,2,__,Last Modified,Is specialized from,,Activity
+AR03_CC22_CC02,ACC,3,__,Activity,,,
 AR03_CC22_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 AR03_CC22_CC02-02,BCC,4,0..1,Activity,Date,Date,
 AR03_CC22_CC02-03,BCC,4,0..1,Activity,Time,Time,
-AR03-14,ASBIE,2,0..*,Account Receivable Cash Application,has a,,Business Segment
-AR03_BS04-00,ABIE,2,__,Business Segment,,,
+AR03-14,ASBIE,2,0..*,Account Receivable Cash Application,contains,,Business Segment
+AR03_BS04,ABIE,2,__,Business Segment,,,
 AR03_BS04-01,PKBIE,3,1..1,Business Segment,Business Segment Code,Identifier,
 AR03_BS04-02,BBIE,3,0..1,Business Segment,Business Segment Name,Name,
 AR03_BS04-03,BBIE,3,0..1,Business Segment,Segment Reference Level,Reference Level,
 AR03_BS04-04,BBIE,3,0..1,Business Segment,Organization Type Name,Name,
-AR04-00,ABIE,1,__,Account Receivable  Cash Received,,,
+AR04,ABIE,1,__,Account Receivable  Cash Received,,,
 AR04-01,PKBIE,2,1..1,Account Receivable Cash Received,Receipt ID,Identifier,
 AR04-02,BBIE,2,0..1,Account Receivable Cash Received,Receipt Number,Text,
 AR04-03,RFBIE,2,0..1,Account Receivable Cash Received,Customer Account ID,,Customer
@@ -379,9 +379,9 @@ AR04-13,BBIE,2,0..1,Account Receivable Cash Received,Amount Credit Debit Indicat
 AR04-14,BBIE,2,0..1,Account Receivable Cash Received,Remark,Text,
 AR04-15,RFBIE,2,0..1,Account Receivable Cash Received,GL Debit Account Number,,Chart Of Accounts
 AR04-16,RFBIE,2,0..1,Account Receivable Cash Received,GL Credit Account Number,,Chart Of Accounts
-AR04-17,ASBIE,2,0..1,Account Receivable Cash Received,has a,,Amount
-AR04_CC05-00,SPCC,2,__,Amount,is a,,Monetary Amounts
-AR04_CC05_CC24-00,ACC,3,__,Monetary Amounts,,,
+AR04-17,ASBIE,2,0..1,Account Receivable Cash Received,contains,,Amount
+AR04_CC05,SPCC,2,__,Amount,Is specialized from,,Monetary Amounts
+AR04_CC05_CC24,ACC,3,__,Monetary Amounts,,,
 AR04_CC05_CC24-01,BCC,4,0..1,Monetary Amounts,Functional Amount,Amount,
 AR04_CC05_CC24-02,RFCC,4,0..1,Monetary Amounts,Functional Currency Code,,Currency
 AR04_CC05_CC24-03,BCC,4,0..1,Monetary Amounts,Transaction Amount,Amount,
@@ -390,31 +390,31 @@ AR04_CC05_CC24-05,BCC,4,0..1,Monetary Amounts,Reporting Amount,Amount,
 AR04_CC05_CC24-06,RFCC,4,0..1,Monetary Amounts,Reporting Currency Code,,Currency
 AR04_CC05_CC24-07,BCC,4,0..1,Monetary Amounts,Local Amount,Amount,
 AR04_CC05_CC24-08,RFCC,4,0..1,Monetary Amounts,Local Currency Code,,Currency
-AR04-18,ASBIE,2,0..1,Account Receivable Cash Received,was,,Approved
-AR04_CC06-00,SPCC,2,__,Approved,is a,,Activity
-AR04_CC06_CC02-00,ACC,3,__,Activity,,,
+AR04-18,ASBIE,2,0..1,Account Receivable Cash Received,A derived attribute,,Approved
+AR04_CC06,SPCC,2,__,Approved,Is specialized from,,Activity
+AR04_CC06_CC02,ACC,3,__,Activity,,,
 AR04_CC06_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 AR04_CC06_CC02-02,BCC,4,0..1,Activity,Date,Date,
 AR04_CC06_CC02-03,BCC,4,0..1,Activity,Time,Time,
-AR04-20,ASBIE,2,0..1,Account Receivable Cash Received,was,,Created
-AR04_CC15-00,SPCC,2,__,Created,is a,,Activity
-AR04_CC15_CC02-00,ACC,3,__,Activity,,,
+AR04-20,ASBIE,2,0..1,Account Receivable Cash Received,A derived attribute,,Created
+AR04_CC15,SPCC,2,__,Created,Is specialized from,,Activity
+AR04_CC15_CC02,ACC,3,__,Activity,,,
 AR04_CC15_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 AR04_CC15_CC02-02,BCC,4,0..1,Activity,Date,Date,
 AR04_CC15_CC02-03,BCC,4,0..1,Activity,Time,Time,
-AR04-21,ASBIE,2,0..1,Account Receivable Cash Received,was,,Last Modified
-AR04_CC22-00,SPCC,2,__,Last Modified,is a,,Activity
-AR04_CC22_CC02-00,ACC,3,__,Activity,,,
+AR04-21,ASBIE,2,0..1,Account Receivable Cash Received,A derived attribute,,Last Modified
+AR04_CC22,SPCC,2,__,Last Modified,Is specialized from,,Activity
+AR04_CC22_CC02,ACC,3,__,Activity,,,
 AR04_CC22_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 AR04_CC22_CC02-02,BCC,4,0..1,Activity,Date,Date,
 AR04_CC22_CC02-03,BCC,4,0..1,Activity,Time,Time,
-AR04-19,ASBIE,2,0..*,Account Receivable Cash Received,has a,,Business Segment
-AR04_BS04-00,ABIE,2,__,Business Segment,,,
+AR04-19,ASBIE,2,0..*,Account Receivable Cash Received,contains,,Business Segment
+AR04_BS04,ABIE,2,__,Business Segment,,,
 AR04_BS04-01,PKBIE,3,1..1,Business Segment,Business Segment Code,Identifier,
 AR04_BS04-02,BBIE,3,0..1,Business Segment,Business Segment Name,Name,
 AR04_BS04-03,BBIE,3,0..1,Business Segment,Segment Reference Level,Reference Level,
 AR04_BS04-04,BBIE,3,0..1,Business Segment,Organization Type Name,Name,
-AR05-00,ABIE,1,__,Open Account Receivable,,,
+AR05,ABIE,1,__,Open Account Receivable,,,
 AR05-01,PKBIE,2,1..1,Open Account Receivable,Transaction ID,Identifier,
 AR05-02,RFBIE,2,0..1,Open Account Receivable,Invoice ID,,Invoice Generated
 AR05-03,RFBIE,2,0..1,Open Account Receivable,Customer Account ID,,Customer
@@ -429,9 +429,9 @@ AR05-11,BBIE,2,0..1,Open Account Receivable,Reference Number,Text,
 AR05-12,BBIE,2,0..1,Open Account Receivable,Reference Date,Date,
 AR05-13,BBIE,2,0..1,Open Account Receivable,Remark,Text,
 AR05-14,BBIE,2,0..1,Open Account Receivable,Grouping Code,Text,
-AR05-15,ASBIE,2,0..1,Open Account Receivable,has a,,Amount
-AR05_CC05-00,SPCC,2,__,Amount,is a,,Monetary Amounts
-AR05_CC05_CC24-00,ACC,3,__,Monetary Amounts,,,
+AR05-15,ASBIE,2,0..1,Open Account Receivable,contains,,Amount
+AR05_CC05,SPCC,2,__,Amount,Is specialized from,,Monetary Amounts
+AR05_CC05_CC24,ACC,3,__,Monetary Amounts,,,
 AR05_CC05_CC24-01,BCC,4,0..1,Monetary Amounts,Functional Amount,Amount,
 AR05_CC05_CC24-02,RFCC,4,0..1,Monetary Amounts,Functional Currency Code,,Currency
 AR05_CC05_CC24-03,BCC,4,0..1,Monetary Amounts,Transaction Amount,Amount,
@@ -440,25 +440,25 @@ AR05_CC05_CC24-05,BCC,4,0..1,Monetary Amounts,Reporting Amount,Amount,
 AR05_CC05_CC24-06,RFCC,4,0..1,Monetary Amounts,Reporting Currency Code,,Currency
 AR05_CC05_CC24-07,BCC,4,0..1,Monetary Amounts,Local Amount,Amount,
 AR05_CC05_CC24-08,RFCC,4,0..1,Monetary Amounts,Local Currency Code,,Currency
-AR05-16,ASBIE,2,0..1,Open Account Receivable,has a,,Balance
-AR05_CC07-00,SPCC,2,__,Balance,is a,,Balance Monetary Amounts
-AR05_CC07_CC08-00,ACC,3,__,Balance Monetary Amounts,,,
+AR05-16,ASBIE,2,0..1,Open Account Receivable,contains,,Balance
+AR05_CC07,SPCC,2,__,Balance,Is specialized from,,Balance Monetary Amounts
+AR05_CC07_CC08,ACC,3,__,Balance Monetary Amounts,,,
 AR05_CC07_CC08-01,BCC,4,0..1,Balance Monetary Amounts,Functional Balance,Amount,
 AR05_CC07_CC08-02,BCC,4,0..1,Balance Monetary Amounts,Transaction Balance,Amount,
 AR05_CC07_CC08-03,BCC,4,0..1,Balance Monetary Amounts,Reporting Balance,Amount,
 AR05_CC07_CC08-04,BCC,4,0..1,Balance Monetary Amounts,Local Balance,Amount,
-AR05-17,ASBIE,2,0..*,Open Account Receivable,has a,,Business Segment
-AR05_BS04-00,ABIE,2,__,Business Segment,,,
+AR05-17,ASBIE,2,0..*,Open Account Receivable,contains,,Business Segment
+AR05_BS04,ABIE,2,__,Business Segment,,,
 AR05_BS04-01,PKBIE,3,1..1,Business Segment,Business Segment Code,Identifier,
 AR05_BS04-02,BBIE,3,0..1,Business Segment,Business Segment Name,Name,
 AR05_BS04-03,BBIE,3,0..1,Business Segment,Segment Reference Level,Reference Level,
 AR05_BS04-04,BBIE,3,0..1,Business Segment,Organization Type Name,Name,
-BS01-00,ABIE,1,__,Accounting Period,,,
+BS01,ABIE,1,__,Accounting Period,,,
 BS01-01,PKBIE,2,1..1,Accounting Period,Fiscal Year,Year Identifier,
 BS01-02,PKBIE,2,1..1,Accounting Period,Accounting Period,Period Identifier,
 BS01-03,BBIE,2,0..1,Accounting Period,Accounting Period Beginning Date,Date,
 BS01-04,BBIE,2,0..1,Accounting Period,Accounting Period Ending Date,Date,
-BS02-00,ABIE,1,__,Bank Account,,,
+BS02,ABIE,1,__,Bank Account,,,
 BS02-01,PKBIE,2,1..1,Bank Account,Bank Account Number,Identifier,
 BS02-02,BBIE,2,0..1,Bank Account,Bank Account Name,Text,
 BS02-03,BBIE,2,0..1,Bank Account,Bank Code,Bank_  Code,
@@ -468,20 +468,20 @@ BS02-06,BBIE,2,0..1,Bank Account,Branch Name,Text,
 BS02-07,BBIE,2,0..1,Bank Account,Branch Country Code,Country_  Code,
 BS02-08,BBIE,2,0..1,Bank Account,Branch Region,Text,
 BS02-09,BBIE,2,0..1,Bank Account,Active Flag,Indicator,
-BS02-10,ASBIE,2,0..*,Bank Account,has a,,Business Segment
-BS02_BS04-00,ABIE,2,__,Business Segment,,,
+BS02-10,ASBIE,2,0..*,Bank Account,contains,,Business Segment
+BS02_BS04,ABIE,2,__,Business Segment,,,
 BS02_BS04-01,PKBIE,3,1..1,Business Segment,Business Segment Code,Identifier,
 BS02_BS04-02,BBIE,3,0..1,Business Segment,Business Segment Name,Name,
 BS02_BS04-03,BBIE,3,0..1,Business Segment,Segment Reference Level,Reference Level,
 BS02_BS04-04,BBIE,3,0..1,Business Segment,Organization Type Name,Name,
-BS03-00,ABIE,1,__,Bill Type,,,
+BS03,ABIE,1,__,Bill Type,,,
 BS03-01,PKBIE,2,1..1,Bill Type,Bill Type Code,Identifier,
 BS03-02,BBIE,2,0..1,Bill Type,Bill Type Name,Text,
 BS03-03,BBIE,2,0..1,Bill Type,Active Flag,Indicator,
-BS05-00,ABIE,1,__,Business Segment Hierarchy,,,
+BS05,ABIE,1,__,Business Segment Hierarchy,,,
 BS05-01,PKBIE RFBIE,2,1..1,Business Segment Hierarchy,Parent Code,Identifier,
 BS05-02,PKBIE RFBIE,2,1..1,Business Segment Hierarchy,Child Code,Identifier,
-BS06-00,ABIE,1,__,Chart Of Accounts,,,
+BS06,ABIE,1,__,Chart Of Accounts,,,
 BS06-01,PKBIE,2,1..1,Chart Of Accounts,GL Account Number,Gl Account Number,
 BS06-02,BBIE,2,0..1,Chart Of Accounts,GL Account Name,Text,
 BS06-03,BBIE,2,0..1,Chart Of Accounts,GL Account Description,Text,
@@ -492,13 +492,13 @@ BS06-07,BBIE,2,0..1,Chart Of Accounts,Account Hierarchy,Account Hierarchy,
 BS06-08,RFBIE,2,0..1,Chart Of Accounts,Parent GL Account Number,,Chart Of Accounts
 BS06-09,BBIE,2,0..1,Chart Of Accounts,Balance Debit Or Credit Code,Credit Debit_  Code,
 BS06-10,BBIE,2,0..1,Chart Of Accounts,Active Flag,Indicator,
-BS06-11,ASBIE,2,0..*,Chart Of Accounts,has a,,Business Segment
-BS06_BS04-00,ABIE,2,__,Business Segment,,,
+BS06-11,ASBIE,2,0..*,Chart Of Accounts,contains,,Business Segment
+BS06_BS04,ABIE,2,__,Business Segment,,,
 BS06_BS04-01,PKBIE,3,1..1,Business Segment,Business Segment Code,Identifier,
 BS06_BS04-02,BBIE,3,0..1,Business Segment,Business Segment Name,Name,
 BS06_BS04-03,BBIE,3,0..1,Business Segment,Segment Reference Level,Reference Level,
 BS06_BS04-04,BBIE,3,0..1,Business Segment,Organization Type Name,Name,
-BS08-00,ABIE,1,__,Customer,,,
+BS08,ABIE,1,__,Customer,,,
 BS08-01,PKBIE,2,1..1,Customer,Customer Account ID,Identifier,
 BS08-02,BBIE,2,0..1,Customer,Customer Account Number,Identifier,
 BS08-03,BBIE,2,0..1,Customer,Customer Account Name,Name,
@@ -513,68 +513,68 @@ BS08-11,BBIE,2,0..1,Customer,Total Credit Limit,Amount,
 BS08-12,BBIE,2,0..1,Customer,Terms Discount Percentage,Percentage,
 BS08-13,BBIE,2,0..1,Customer,Terms Discount Days,Number,
 BS08-14,BBIE,2,0..1,Customer,Terms Due Days,Number,
-BS08-15,ASBIE,2,0..1,Customer,was,,Approved
-BS08_CC06-00,SPCC,2,__,Approved,is a,,Activity
-BS08_CC06_CC02-00,ACC,3,__,Activity,,,
+BS08-15,ASBIE,2,0..1,Customer,A derived attribute,,Approved
+BS08_CC06,SPCC,2,__,Approved,Is specialized from,,Activity
+BS08_CC06_CC02,ACC,3,__,Activity,,,
 BS08_CC06_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 BS08_CC06_CC02-02,BCC,4,0..1,Activity,Date,Date,
 BS08_CC06_CC02-03,BCC,4,0..1,Activity,Time,Time,
-BS08-16,ASBIE,2,0..1,Customer,has a,,Billing Address
-BS08_CC10-00,SPCC,2,__,Billing Address,is a,,Address
-BS08_CC10_CC03-00,ACC,3,__,Address,,,
+BS08-16,ASBIE,2,0..1,Customer,contains,,Billing Address
+BS08_CC10,SPCC,2,__,Billing Address,Is specialized from,,Address
+BS08_CC10_CC03,ACC,3,__,Address,,,
 BS08_CC10_CC03-01,BCC,4,0..1,Address,Street Address1,Text,
 BS08_CC10_CC03-02,BCC,4,0..1,Address,Street Address2,Text,
 BS08_CC10_CC03-03,BCC,4,0..1,Address,City Name,City Name,
 BS08_CC10_CC03-04,BCC,4,0..1,Address,State Province Code,State Province_  Code,
 BS08_CC10_CC03-05,BCC,4,0..1,Address,Postal Code,Postal_  Code,
 BS08_CC10_CC03-06,BCC,4,0..1,Address,Country Code,Country_  Code,
-BS08-17,ASBIE,2,0..1,Customer,was,,Created
-BS08_CC15-00,SPCC,2,__,Created,is a,,Activity
-BS08_CC15_CC02-00,ACC,3,__,Activity,,,
+BS08-17,ASBIE,2,0..1,Customer,A derived attribute,,Created
+BS08_CC15,SPCC,2,__,Created,Is specialized from,,Activity
+BS08_CC15_CC02,ACC,3,__,Activity,,,
 BS08_CC15_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 BS08_CC15_CC02-02,BCC,4,0..1,Activity,Date,Date,
 BS08_CC15_CC02-03,BCC,4,0..1,Activity,Time,Time,
-BS08-18,ASBIE,2,0..1,Customer,was,,Last Modified
-BS08_CC22-00,SPCC,2,__,Last Modified,is a,,Activity
-BS08_CC22_CC02-00,ACC,3,__,Activity,,,
+BS08-18,ASBIE,2,0..1,Customer,A derived attribute,,Last Modified
+BS08_CC22,SPCC,2,__,Last Modified,Is specialized from,,Activity
+BS08_CC22_CC02,ACC,3,__,Activity,,,
 BS08_CC22_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 BS08_CC22_CC02-02,BCC,4,0..1,Activity,Date,Date,
 BS08_CC22_CC02-03,BCC,4,0..1,Activity,Time,Time,
-BS08-19,ASBIE,2,0..1,Customer,has a,,Physical Address
-BS08_CC27-00,SPCC,2,__,Physical Address,is a,,Address
-BS08_CC27_CC03-00,ACC,3,__,Address,,,
+BS08-19,ASBIE,2,0..1,Customer,contains,,Physical Address
+BS08_CC27,SPCC,2,__,Physical Address,Is specialized from,,Address
+BS08_CC27_CC03,ACC,3,__,Address,,,
 BS08_CC27_CC03-01,BCC,4,0..1,Address,Street Address1,Text,
 BS08_CC27_CC03-02,BCC,4,0..1,Address,Street Address2,Text,
 BS08_CC27_CC03-03,BCC,4,0..1,Address,City Name,City Name,
 BS08_CC27_CC03-04,BCC,4,0..1,Address,State Province Code,State Province_  Code,
 BS08_CC27_CC03-05,BCC,4,0..1,Address,Postal Code,Postal_  Code,
 BS08_CC27_CC03-06,BCC,4,0..1,Address,Country Code,Country_  Code,
-BS08-20,ASBIE,2,0..1,Customer,has a,,Primary Contact
-BS08_CC29-00,SPCC,2,__,Primary Contact,is a,,Contact
-BS08_CC29_CC12-00,ACC,3,__,Contact,,,
+BS08-20,ASBIE,2,0..1,Customer,contains,,Primary Contact
+BS08_CC29,SPCC,2,__,Primary Contact,Is specialized from,,Contact
+BS08_CC29_CC12,ACC,3,__,Contact,,,
 BS08_CC29_CC12-01,BCC,4,0..1,Contact,Name,Name,
 BS08_CC29_CC12-02,BCC,4,0..1,Contact,Phone,Phone Number,
 BS08_CC29_CC12-03,BCC,4,0..1,Contact,Email,Email,
-BS09-00,ABIE,1,__,Customer Type,,,
+BS09,ABIE,1,__,Customer Type,,,
 BS09-01,PKBIE,2,1..1,Customer Type,Customer Type ID,Identifier,
 BS09-02,BBIE,2,0..1,Customer Type,Customer Type Code,Customer Type_  Code,
 BS09-03,BBIE,2,0..1,Customer Type,Customer Type Name,Name,
 BS09-04,RFBIE,2,0..1,Customer Type,Parent Customer Type ID,,Customer Type
-BS10-00,ABIE,1,__,Customized Account Segment,,,
+BS10,ABIE,1,__,Customized Account Segment,,,
 BS10-01,PKBIE,2,1..1,Customized Account Segment,Customized Account Segment Code,Identifier,
 BS10-02,BBIE,2,0..1,Customized Account Segment,Customized Account Segment Name,Text,
 BS10-03,BBIE,2,0..1,Customized Account Segment,Customized Account Description,Text,
 BS10-04,BBIE,2,0..1,Customized Account Segment,Customized Account Encoding Rule,Encoding Rule_  Code,
 BS10-05,BBIE,2,0..1,Customized Account Segment,Hierarchy Flag,Indicator,
 BS10-06,BBIE,2,0..1,Customized Account Segment,Active Flag,Indicator,
-BS11-00,ABIE,1,__,Customized Account Value,,,
+BS11,ABIE,1,__,Customized Account Value,,,
 BS11-01,PKBIE,2,1..1,Customized Account Value,Customized Account Value Code,Identifier,
 BS11-02,RFBIE,2,0..1,Customized Account Value,Customized Account Segment Code,,Customized Account Segment
 BS11-03,BBIE,2,0..1,Customized Account Value,Customized Account Value Name,Text,
 BS11-04,BBIE,2,0..1,Customized Account Value,Account Value Description,Text,
 BS11-05,RFBIE,2,0..1,Customized Account Value,Parent Account Value Code,,Customized Account Value
 BS11-06,BBIE,2,0..1,Customized Account Value,Customized Account Value Hierarchy,Hierarchy Level,
-BS12-00,ABIE,1,__,Employee,,,
+BS12,ABIE,1,__,Employee,,,
 BS12-01,PKBIE,2,1..1,Employee,Employee ID,Identifier,
 BS12-02,BBIE,2,0..1,Employee,Employee Code,Text,
 BS12-03,BBIE,2,0..1,Employee,Employee Name,Name,
@@ -587,8 +587,8 @@ BS12-09,BBIE,2,0..1,Employee,Employee Academic Degree,Text,
 BS12-10,BBIE,2,0..1,Employee,Employment Date,Date,
 BS12-11,BBIE,2,0..1,Employee,Termination Date,Date,
 BS12-12,RFBIE,2,0..1,Employee,User ID,,User
-BS12-13,ASBIE,2,0..1,Employee,has a,,User
-BS12_BS24-00,ABIE,2,__,User,,,
+BS12-13,ASBIE,2,0..1,Employee,contains,,User
+BS12_BS24,ABIE,2,__,User,,,
 BS12_BS24-01,PKBIE,3,1..1,User,User ID,Identifier,
 BS12_BS24-02,BBIE,3,0..1,User,User Active Status,Indicator,
 BS12_BS24-03,BBIE,3,0..1,User,User Status Modified Date,Date,
@@ -596,23 +596,23 @@ BS12_BS24-04,BBIE,3,0..1,User,User Name,Name,
 BS12_BS24-05,BBIE,3,0..1,User,User Job Title,Text,
 BS12_BS24-06,RFBIE,3,0..1,User,Department Code,,Business Segment
 BS12_BS24-07,BBIE,3,0..1,User,User Role Responsibility,Text,
-BS13-00,ABIE,1,__,Journal Entry Type,,,
+BS13,ABIE,1,__,Journal Entry Type,,,
 BS13-01,PKBIE,2,1..1,Journal Entry Type,Journal Entry Type Code,Identifier,
 BS13-02,BBIE,2,0..1,Journal Entry Type,Journal Entry Type Name,Text,
 BS13-03,BBIE,2,0..1,Journal Entry Type,Journal Entry Type Abbreviation,Text,
 BS13-04,BBIE,2,0..1,Journal Entry Type,Active Flag,Indicator,
-BS14-00,ABIE,1,__,Measurement Unit,,,
+BS14,ABIE,1,__,Measurement Unit,,,
 BS14-01,PKBIE,2,1..1,Measurement Unit,Unit of Measurement Code,Measurement Unit_  Code,
 BS14-02,BBIE,2,0..1,Measurement Unit,Unit of Measurement Name,Text,
 BS14-03,BBIE,2,0..1,Measurement Unit,Unit of Measurement Abbreviation,Text,
 BS14-04,BBIE,2,0..1,Measurement Unit,Active Flag,Indicator,
-BS15-00,ABIE,1,__,Payment Term,,,
+BS15,ABIE,1,__,Payment Term,,,
 BS15-01,PKBIE,2,1..1,Payment Term,Payment Term Code,Payment Term_  Code,
 BS15-02,BBIE,2,0..1,Payment Term,Payment Term Name,Text,
 BS15-03,BBIE,2,0..1,Payment Term,Payment Term Line Number,Text,
 BS15-04,BBIE,2,0..1,Payment Term,Payment Term Line Description,Text,
 BS15-05,BBIE,2,0..1,Payment Term,Active Flag,Indicator,
-BS16-00,ABIE,1,__,Profile,,,
+BS16,ABIE,1,__,Profile,,,
 BS16-01,PKBIE,2,1..1,Profile,Profile Number,Identifier,
 BS16-02,BBIE,2,0..1,Profile,Profile Name,Text,
 BS16-03,BBIE,2,0..1,Profile,Fiscal Year,Year Identifier,
@@ -625,34 +625,34 @@ BS16-09,BBIE,2,0..1,Profile,Functional Currency Code,Currency_  Code,
 BS16-10,BBIE,2,0..1,Profile,Standard Version,Text,
 BS16-11,BBIE,2,0..1,Profile,Extracted Date,Date,
 BS16-12,BBIE,2,0..1,Profile,Time Zone,Time Zone,
-BS16-13,ASBIE,2,0..*,Profile,has a,,Business Segment
-BS16_BS04-00,ABIE,2,__,Business Segment,,,
+BS16-13,ASBIE,2,0..*,Profile,contains,,Business Segment
+BS16_BS04,ABIE,2,__,Business Segment,,,
 BS16_BS04-01,PKBIE,3,1..1,Business Segment,Business Segment Code,Identifier,
 BS16_BS04-02,BBIE,3,0..1,Business Segment,Business Segment Name,Name,
 BS16_BS04-03,BBIE,3,0..1,Business Segment,Segment Reference Level,Reference Level,
 BS16_BS04-04,BBIE,3,0..1,Business Segment,Organization Type Name,Name,
-BS17-00,ABIE,1,__,Project,,,
+BS17,ABIE,1,__,Project,,,
 BS17-01,PKBIE,2,1..1,Project,Project ID,Identifier,
 BS17-02,BBIE,2,0..1,Project,Project Code,Text,
 BS17-03,BBIE,2,0..1,Project,Project Name,Text,
 BS17-04,BBIE,2,0..1,Project,Project Beginning Date,Date,
 BS17-05,BBIE,2,0..1,Project,Project Ending Date,Date,
 BS17-06,BBIE,2,0..1,Project,Active Flag,Indicator,
-BS17-07,ASBIE,2,0..*,Project,has a,,Business Segment
-BS17_BS04-00,ABIE,2,__,Business Segment,,,
+BS17-07,ASBIE,2,0..*,Project,contains,,Business Segment
+BS17_BS04,ABIE,2,__,Business Segment,,,
 BS17_BS04-01,PKBIE,3,1..1,Business Segment,Business Segment Code,Identifier,
 BS17_BS04-02,BBIE,3,0..1,Business Segment,Business Segment Name,Name,
 BS17_BS04-03,BBIE,3,0..1,Business Segment,Segment Reference Level,Reference Level,
 BS17_BS04-04,BBIE,3,0..1,Business Segment,Organization Type Name,Name,
-BS18-00,ABIE,1,__,Selection Period,,,
+BS18,ABIE,1,__,Selection Period,,,
 BS18-01,PKBIE,2,1..1,Selection Period,Selection ID,Identifier,
 BS18-02,BBIE,2,0..1,Selection Period,Selection Start Date,Date,
 BS18-03,BBIE,2,0..1,Selection Period,Selection End Date,Date,
-BS19-00,ABIE,1,__,Settlement Method,,,
+BS19,ABIE,1,__,Settlement Method,,,
 BS19-01,PKBIE,2,1..1,Settlement Method,Settlement Method Code,Identifier,
 BS19-02,BBIE,2,0..1,Settlement Method,Settlement Method Name,Text,
 BS19-03,BBIE,2,0..1,Settlement Method,Active Flag,Indicator,
-BS20-00,ABIE,1,__,Supplier,,,
+BS20,ABIE,1,__,Supplier,,,
 BS20-01,PKBIE,2,1..1,Supplier,Supplier Account ID,Identifier,
 BS20-02,BBIE,2,0..1,Supplier,Supplier Account Number,Identifier,
 BS20-03,BBIE,2,0..1,Supplier,Supplier Account Name,Name,
@@ -668,54 +668,54 @@ BS20-12,BBIE,2,0..1,Supplier,Total Credit Limit,Amount,
 BS20-13,BBIE,2,0..1,Supplier,Terms Discount Percentage,Percentage,
 BS20-14,BBIE,2,0..1,Supplier,Terms Discount Days,Number,
 BS20-15,BBIE,2,0..1,Supplier,Terms Due Days,Number,
-BS20-16,ASBIE,2,0..1,Supplier,was,,Approved
-BS20_CC06-00,SPCC,2,__,Approved,is a,,Activity
-BS20_CC06_CC02-00,ACC,3,__,Activity,,,
+BS20-16,ASBIE,2,0..1,Supplier,A derived attribute,,Approved
+BS20_CC06,SPCC,2,__,Approved,Is specialized from,,Activity
+BS20_CC06_CC02,ACC,3,__,Activity,,,
 BS20_CC06_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 BS20_CC06_CC02-02,BCC,4,0..1,Activity,Date,Date,
 BS20_CC06_CC02-03,BCC,4,0..1,Activity,Time,Time,
-BS20-17,ASBIE,2,0..1,Supplier,has a,,Billing Address
-BS20_CC10-00,SPCC,2,__,Billing Address,is a,,Address
-BS20_CC10_CC03-00,ACC,3,__,Address,,,
+BS20-17,ASBIE,2,0..1,Supplier,contains,,Billing Address
+BS20_CC10,SPCC,2,__,Billing Address,Is specialized from,,Address
+BS20_CC10_CC03,ACC,3,__,Address,,,
 BS20_CC10_CC03-01,BCC,4,0..1,Address,Street Address1,Text,
 BS20_CC10_CC03-02,BCC,4,0..1,Address,Street Address2,Text,
 BS20_CC10_CC03-03,BCC,4,0..1,Address,City Name,City Name,
 BS20_CC10_CC03-04,BCC,4,0..1,Address,State Province Code,State Province_  Code,
 BS20_CC10_CC03-05,BCC,4,0..1,Address,Postal Code,Postal_  Code,
 BS20_CC10_CC03-06,BCC,4,0..1,Address,Country Code,Country_  Code,
-BS20-18,ASBIE,2,0..1,Supplier,was,,Created
-BS20_CC15-00,SPCC,2,__,Created,is a,,Activity
-BS20_CC15_CC02-00,ACC,3,__,Activity,,,
+BS20-18,ASBIE,2,0..1,Supplier,A derived attribute,,Created
+BS20_CC15,SPCC,2,__,Created,Is specialized from,,Activity
+BS20_CC15_CC02,ACC,3,__,Activity,,,
 BS20_CC15_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 BS20_CC15_CC02-02,BCC,4,0..1,Activity,Date,Date,
 BS20_CC15_CC02-03,BCC,4,0..1,Activity,Time,Time,
-BS20-19,ASBIE,2,0..1,Supplier,was,,Last Modified
-BS20_CC22-00,SPCC,2,__,Last Modified,is a,,Activity
-BS20_CC22_CC02-00,ACC,3,__,Activity,,,
+BS20-19,ASBIE,2,0..1,Supplier,A derived attribute,,Last Modified
+BS20_CC22,SPCC,2,__,Last Modified,Is specialized from,,Activity
+BS20_CC22_CC02,ACC,3,__,Activity,,,
 BS20_CC22_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 BS20_CC22_CC02-02,BCC,4,0..1,Activity,Date,Date,
 BS20_CC22_CC02-03,BCC,4,0..1,Activity,Time,Time,
-BS20-20,ASBIE,2,0..1,Supplier,has a,,Physical Address
-BS20_CC27-00,SPCC,2,__,Physical Address,is a,,Address
-BS20_CC27_CC03-00,ACC,3,__,Address,,,
+BS20-20,ASBIE,2,0..1,Supplier,contains,,Physical Address
+BS20_CC27,SPCC,2,__,Physical Address,Is specialized from,,Address
+BS20_CC27_CC03,ACC,3,__,Address,,,
 BS20_CC27_CC03-01,BCC,4,0..1,Address,Street Address1,Text,
 BS20_CC27_CC03-02,BCC,4,0..1,Address,Street Address2,Text,
 BS20_CC27_CC03-03,BCC,4,0..1,Address,City Name,City Name,
 BS20_CC27_CC03-04,BCC,4,0..1,Address,State Province Code,State Province_  Code,
 BS20_CC27_CC03-05,BCC,4,0..1,Address,Postal Code,Postal_  Code,
 BS20_CC27_CC03-06,BCC,4,0..1,Address,Country Code,Country_  Code,
-BS20-21,ASBIE,2,0..1,Supplier,has a,,Primary Contact
-BS20_CC29-00,SPCC,2,__,Primary Contact,is a,,Contact
-BS20_CC29_CC12-00,ACC,3,__,Contact,,,
+BS20-21,ASBIE,2,0..1,Supplier,contains,,Primary Contact
+BS20_CC29,SPCC,2,__,Primary Contact,Is specialized from,,Contact
+BS20_CC29_CC12,ACC,3,__,Contact,,,
 BS20_CC29_CC12-01,BCC,4,0..1,Contact,Name,Name,
 BS20_CC29_CC12-02,BCC,4,0..1,Contact,Phone,Phone Number,
 BS20_CC29_CC12-03,BCC,4,0..1,Contact,Email,Email,
-BS21-00,ABIE,1,__,Supplier Type,,,
+BS21,ABIE,1,__,Supplier Type,,,
 BS21-01,PKBIE,2,1..1,Supplier Type,Supplier Type ID,Identifier,
 BS21-02,BBIE,2,0..1,Supplier Type,Supplier Type Code,Supplier Type_  Code,
 BS21-03,BBIE,2,0..1,Supplier Type,Supplier Type Name,Name,
 BS21-04,RFBIE,2,0..1,Supplier Type,Parent Supplier Type ID,,Supplier Type
-BS22-00,ABIE,1,__,Tax Regulatory,,,
+BS22,ABIE,1,__,Tax Regulatory,,,
 BS22-01,PKBIE,2,1..1,Tax Regulatory,Regulator Code,Regulator_  Code,
 BS22-02,BBIE,2,0..1,Tax Regulatory,Regulator Country Code,Country_  Code,
 BS22-03,BBIE,2,0..1,Tax Regulatory,Regulator Region,Region,
@@ -727,51 +727,51 @@ BS22-08,RFBIE,2,0..1,Tax Regulatory,Regulator Expense Account Number,,Chart Of A
 BS22-09,BBIE,2,0..1,Tax Regulatory,Regulator ID,Identifier,
 BS22-10,RFBIE,2,0..1,Tax Regulatory,Regulator Reporting Organization,,Business Segment
 BS22-11,BBIE,2,0..1,Tax Regulatory,Regulator Active Flag,Indicator,
-BS22-12,ASBIE,2,0..*,Tax Regulatory,has a,,Business Segment
-BS22_BS04-00,ABIE,2,__,Business Segment,,,
+BS22-12,ASBIE,2,0..*,Tax Regulatory,contains,,Business Segment
+BS22_BS04,ABIE,2,__,Business Segment,,,
 BS22_BS04-01,PKBIE,3,1..1,Business Segment,Business Segment Code,Identifier,
 BS22_BS04-02,BBIE,3,0..1,Business Segment,Business Segment Name,Name,
 BS22_BS04-03,BBIE,3,0..1,Business Segment,Segment Reference Level,Reference Level,
 BS22_BS04-04,BBIE,3,0..1,Business Segment,Organization Type Name,Name,
-BS23-00,ABIE,1,__,Tax Type,,,
+BS23,ABIE,1,__,Tax Type,,,
 BS23-01,PKBIE,2,1..1,Tax Type,Tax Type Code,Tax Type_  Code,
 BS23-02,BBIE,2,0..1,Tax Type,Tax Name,Text,
 BS23-03,RFBIE,2,0..1,Tax Type,Regulator Code,,Tax Regulatory
 BS23-04,BBIE,2,0..1,Tax Type,Tax Type Description,Text,
 BS23-05,BBIE,2,0..1,Tax Type,Tax Code Description,Text,
 BS23-06,BBIE,2,0..1,Tax Type,Tax Percentage,Percentage11-,
-BS23-07,ASBIE,2,0..*,Tax Type,has a,,Business Segment
-BS23_BS04-00,ABIE,2,__,Business Segment,,,
+BS23-07,ASBIE,2,0..*,Tax Type,contains,,Business Segment
+BS23_BS04,ABIE,2,__,Business Segment,,,
 BS23_BS04-01,PKBIE,3,1..1,Business Segment,Business Segment Code,Identifier,
 BS23_BS04-02,BBIE,3,0..1,Business Segment,Business Segment Name,Name,
 BS23_BS04-03,BBIE,3,0..1,Business Segment,Segment Reference Level,Reference Level,
 BS23_BS04-04,BBIE,3,0..1,Business Segment,Organization Type Name,Name,
-CC02-00,ACC,1,__,Activity,,,
+CC02,ACC,1,__,Activity,,,
 CC02-01,RFCC,2,0..1,Activity,User ID,,User
 CC02-02,BCC,2,0..1,Activity,Date,Date,
 CC02-03,BCC,2,0..1,Activity,Time,Time,
-CC03-00,ACC,1,__,Address,,,
+CC03,ACC,1,__,Address,,,
 CC03-01,BCC,2,0..1,Address,Street Address1,Text,
 CC03-02,BCC,2,0..1,Address,Street Address2,Text,
 CC03-03,BCC,2,0..1,Address,City Name,City Name,
 CC03-04,BCC,2,0..1,Address,State Province Code,State Province_  Code,
 CC03-05,BCC,2,0..1,Address,Postal Code,Postal_  Code,
 CC03-06,BCC,2,0..1,Address,Country Code,Country_  Code,
-CC06-00,SPCC,1,__,Approved,is a,,Activity
-CC06_CC02-00,ACC,2,__,Activity,,,
+CC06,SPCC,1,__,Approved,A derived attribute,,Activity
+CC06_CC02,ACC,2,__,Activity,,,
 CC06_CC02-01,RFCC,3,0..1,Activity,User ID,,User
 CC06_CC02-02,BCC,3,0..1,Activity,Date,Date,
 CC06_CC02-03,BCC,3,0..1,Activity,Time,Time,
-CC08-00,ACC,1,__,Balance Monetary Amounts,,,
+CC08,ACC,1,__,Balance Monetary Amounts,,,
 CC08-01,BCC,2,0..1,Balance Monetary Amounts,Functional Balance,Amount,
 CC08-02,BCC,2,0..1,Balance Monetary Amounts,Transaction Balance,Amount,
 CC08-03,BCC,2,0..1,Balance Monetary Amounts,Reporting Balance,Amount,
 CC08-04,BCC,2,0..1,Balance Monetary Amounts,Local Balance,Amount,
-CC12-00,ACC,1,__,Contact,,,
+CC12,ACC,1,__,Contact,,,
 CC12-01,BCC,2,0..1,Contact,Name,Name,
 CC12-02,BCC,2,0..1,Contact,Phone,Phone Number,
 CC12-03,BCC,2,0..1,Contact,Email,Email,
-CC13-00,ACC,1,__,Contract,,,
+CC13,ACC,1,__,Contract,,,
 CC13-01,PKCC,2,1..1,Contract,Contract ID,Identifier,
 CC13-02,BCC,2,0..1,Contract,Contract Number,Text,
 CC13-03,BCC,2,0..1,Contract,Contract Type Name,Text,
@@ -788,8 +788,8 @@ CC13-13,RFCC,2,0..1,Contract,Payment Term Code,,Payment Term
 CC13-14,RFCC,2,0..1,Contract,Contract Transaction Currency Code,,Currency
 CC13-15,BCC,2,0..1,Contract,Status,Status_  Code,
 CC13-16,BCC,2,0..1,Contract,Remark,Text,
-CC13-17,ASCC,2,1..*,Contract,has a,,Contract Details
-CC13_CC14-00,ACC,2,__,Contract Details,,,
+CC13-17,ASCC,2,1..*,Contract,contains,,Contract Details
+CC13_CC14,ACC,2,__,Contract Details,,,
 CC13_CC14-01,RFCC,3,0..1,Contract Details,Contract ID,,Contract
 CC13_CC14-02,PKCC,3,1..1,Contract Details,Contract Line ID,Identifier,
 CC13_CC14-03,BCC,3,0..1,Contract Details,Contract Line Number,Text,
@@ -805,19 +805,19 @@ CC13_CC14-12,BCC,3,0..1,Contract Details,Tax Exclude Amount,Amount,
 CC13_CC14-13,BCC,3,0..1,Contract Details,Tax Include Amount,Amount,
 CC13_CC14-14,BCC,3,0..1,Contract Details,Due Date,Date,
 CC13_CC14-15,BCC,3,0..1,Contract Details,Status,Status_  Code,
-CC13_CC14-16,ASCC,3,1..*,Contract Details,has a,,Tax
-CC13_CC14_CC30-00,ACC,3,__,Tax,,,
+CC13_CC14-16,ASCC,3,1..*,Contract Details,contains,,Tax
+CC13_CC14_CC30,ACC,3,__,Tax,,,
 CC13_CC14_CC30-01,RFCC,4,0..1,Tax,Tax Type Code,,Tax Type
 CC13_CC14_CC30-02,BCC,4,0..1,Tax,Tax Local Amount,Amount,
 CC13_CC14_CC30-03,BCC,4,0..1,Tax,Tax Transaction Amount,Amount,
 CC13_CC14_CC30-04,RFCC,4,0..1,Tax,GL Tax Debit Account Number,,Chart Of Accounts
 CC13_CC14_CC30-05,RFCC,4,0..1,Tax,GL Tax Credit Account Number,,Chart Of Accounts
-CC15-00,SPCC,1,__,Created,is a,,Activity
-CC15_CC02-00,ACC,2,__,Activity,,,
+CC15,SPCC,1,__,Created,A derived attribute,,Activity
+CC15_CC02,ACC,2,__,Activity,,,
 CC15_CC02-01,RFCC,3,0..1,Activity,User ID,,User
 CC15_CC02-02,BCC,3,0..1,Activity,Date,Date,
 CC15_CC02-03,BCC,3,0..1,Activity,Time,Time,
-CC20-00,ACC,1,__,Invoice,,,
+CC20,ACC,1,__,Invoice,,,
 CC20-01,PKCC,2,1..1,Invoice,Invoice ID,Identifier,
 CC20-02,BCC,2,0..1,Invoice,Invoice Number,Text,
 CC20-03,RFCC,2,0..1,Invoice,Fiscal Year,,Accounting Period
@@ -839,15 +839,15 @@ CC20-18,BCC,2,0..1,Invoice,Terms Due Days,Number,
 CC20-19,BCC,2,0..1,Invoice,Grouping Code,Text,
 CC20-20,BCC,2,0..1,Invoice,Status,Status_  Code,
 CC20-21,BCC,2,0..1,Invoice,Remark,Text,
-CC20-22,ASCC,2,0..*,Invoice,has a,,Tax
-CC20_CC30-00,ACC,2,__,Tax,,,
+CC20-22,ASCC,2,0..*,Invoice,contains,,Tax
+CC20_CC30,ACC,2,__,Tax,,,
 CC20_CC30-01,RFCC,3,0..1,Tax,Tax Type Code,,Tax Type
 CC20_CC30-02,BCC,3,0..1,Tax,Tax Local Amount,Amount,
 CC20_CC30-03,BCC,3,0..1,Tax,Tax Transaction Amount,Amount,
 CC20_CC30-04,RFCC,3,0..1,Tax,GL Tax Debit Account Number,,Chart Of Accounts
 CC20_CC30-05,RFCC,3,0..1,Tax,GL Tax Credit Account Number,,Chart Of Accounts
-CC20-23,ASCC,2,1..*,Invoice,has a,,Invoice Details
-CC20_CC21-00,ACC,2,__,Invoice Details,,,
+CC20-23,ASCC,2,1..*,Invoice,contains,,Invoice Details
+CC20_CC21,ACC,2,__,Invoice Details,,,
 CC20_CC21-01,RFCC,3,0..1,Invoice Details,Invoice ID,,Invoice
 CC20_CC21-02,PKCC,3,1..1,Invoice Details,Invoice Line ID,Identifier,
 CC20_CC21-03,BCC,3,0..1,Invoice Details,Invoice Line Number,Text,
@@ -866,20 +866,20 @@ CC20_CC21-15,BCC,3,0..1,Invoice Details,Invoice Line Transaction Amount,Amount,
 CC20_CC21-16,BCC,3,0..1,Invoice Details,Grouping Code,Text,
 CC20_CC21-17,BCC,3,0..1,Invoice Details,GL Line Debit Account Number,Gl Account Number,
 CC20_CC21-18,BCC,3,0..1,Invoice Details,GL Line Credit Account Number,Gl Account Number,
-CC20_CC21-19,ASCC,3,0..*,Invoice Details,has a,,Tax
-CC20_CC21_CC30-00,ACC,3,__,Tax,,,
+CC20_CC21-19,ASCC,3,0..*,Invoice Details,contains,,Tax
+CC20_CC21_CC30,ACC,3,__,Tax,,,
 CC20_CC21_CC30-01,RFCC,4,0..1,Tax,Tax Type Code,,Tax Type
 CC20_CC21_CC30-02,BCC,4,0..1,Tax,Tax Local Amount,Amount,
 CC20_CC21_CC30-03,BCC,4,0..1,Tax,Tax Transaction Amount,Amount,
 CC20_CC21_CC30-04,RFCC,4,0..1,Tax,GL Tax Debit Account Number,,Chart Of Accounts
 CC20_CC21_CC30-05,RFCC,4,0..1,Tax,GL Tax Credit Account Number,,Chart Of Accounts
-CC22-00,SPCC,1,__,Last Modified,is a,,Activity
-CC22_CC02-00,ACC,2,__,Activity,,,
+CC22,SPCC,1,__,Last Modified,A derived attribute,,Activity
+CC22_CC02,ACC,2,__,Activity,,,
 CC22_CC02-01,RFCC,3,0..1,Activity,User ID,,User
 CC22_CC02-02,BCC,3,0..1,Activity,Date,Date,
 CC22_CC02-03,BCC,3,0..1,Activity,Time,Time,
-CC23-00,ACC,1,__,Message,,,
-CC24-00,ACC,1,__,Monetary Amounts,,,
+CC23,ACC,1,__,Message,,,
+CC24,ACC,1,__,Monetary Amounts,,,
 CC24-01,BCC,2,0..1,Monetary Amounts,Functional Amount,Amount,
 CC24-02,RFCC,2,0..1,Monetary Amounts,Functional Currency Code,,Currency
 CC24-03,BCC,2,0..1,Monetary Amounts,Transaction Amount,Amount,
@@ -888,7 +888,7 @@ CC24-05,BCC,2,0..1,Monetary Amounts,Reporting Amount,Amount,
 CC24-06,RFCC,2,0..1,Monetary Amounts,Reporting Currency Code,,Currency
 CC24-07,BCC,2,0..1,Monetary Amounts,Local Amount,Amount,
 CC24-08,RFCC,2,0..1,Monetary Amounts,Local Currency Code,,Currency
-CC25-00,ACC,1,__,Order,,,
+CC25,ACC,1,__,Order,,,
 CC25-01,PKCC,2,1..1,Order,Order ID,Identifier,
 CC25-02,BCC,2,0..1,Order,Order Number,Identifier,
 CC25-03,RFCC,2,0..1,Order,Fiscal Year,,Accounting Period
@@ -905,8 +905,8 @@ CC25-13,RFCC,2,0..1,Order,Payment Term Code,,Payment Term
 CC25-14,BCC,2,0..1,Order,Order Transaction Amount,Amount,
 CC25-15,BCC,2,0..1,Order,Order Transaction Currency Code,Currency_  Code,
 CC25-16,BCC,2,0..1,Order,Status,Status_  Code,
-CC25-17,ASCC,2,1..*,Order,has a,,Order Details
-CC25_CC26-00,ACC,2,__,Order Details,,,
+CC25-17,ASCC,2,1..*,Order,contains,,Order Details
+CC25_CC26,ACC,2,__,Order Details,,,
 CC25_CC26-01,RFCC,3,0..1,Order Details,Order ID,,Order
 CC25_CC26-02,PKCC,3,1..1,Order Details,Order Line ID,Identifier,
 CC25_CC26-03,BCC,3,0..1,Order Details,Order Line Number,Text,
@@ -931,19 +931,19 @@ CC25_CC26-21,BCC,3,0..1,Order Details,Tax Include Amount,Amount,
 CC25_CC26-22,RFCC,3,0..1,Order Details,Product ID,,Inventory Product
 CC25_CC26-23,BCC,3,0..1,Order Details,Order Line Transaction Amount,Amount,
 CC25_CC26-24,BCC,3,0..1,Order Details,Status,Status_  Code,
-CC25_CC26-25,ASCC,3,0..*,Order Details,has a,,Tax
-CC25_CC26_CC30-00,ACC,3,__,Tax,,,
+CC25_CC26-25,ASCC,3,0..*,Order Details,contains,,Tax
+CC25_CC26_CC30,ACC,3,__,Tax,,,
 CC25_CC26_CC30-01,RFCC,4,0..1,Tax,Tax Type Code,,Tax Type
 CC25_CC26_CC30-02,BCC,4,0..1,Tax,Tax Local Amount,Amount,
 CC25_CC26_CC30-03,BCC,4,0..1,Tax,Tax Transaction Amount,Amount,
 CC25_CC26_CC30-04,RFCC,4,0..1,Tax,GL Tax Debit Account Number,,Chart Of Accounts
 CC25_CC26_CC30-05,RFCC,4,0..1,Tax,GL Tax Credit Account Number,,Chart Of Accounts
-CC28-00,SPCC,1,__,Posted,is a,,Activity
-CC28_CC02-00,ACC,2,__,Activity,,,
+CC28,SPCC,1,__,Posted,A derived attribute,,Activity
+CC28_CC02,ACC,2,__,Activity,,,
 CC28_CC02-01,RFCC,3,0..1,Activity,User ID,,User
 CC28_CC02-02,BCC,3,0..1,Activity,Date,Date,
 CC28_CC02-03,BCC,3,0..1,Activity,Time,Time,
-GL01-00,ABIE,1,__,Account Period Balance,,,
+GL01,ABIE,1,__,Account Period Balance,,,
 GL01-01,PKBIE RFBIE,2,1..1,Account Period Balance,GL Account Number,Gl Account Number,
 GL01-02,PKBIE RFBIE,2,1..1,Account Period Balance,Fiscal Year,Year Identifier,
 GL01-03,PKBIE RFBIE,2,1..1,Account Period Balance,Accounting Period,Period Identifier,
@@ -957,16 +957,16 @@ GL01-10,BBIE,2,0..1,Account Period Balance,Ending Balance Indicator,Credit Debit
 GL01-11,RFBIE,2,0..1,Account Period Balance,Account Segment Employee,,Employee
 GL01-12,RFBIE,2,0..1,Account Period Balance,Account Segment Project,,Project
 GL01-13,RFBIE,2,0..1,Account Period Balance,Account Segment Bank Account,,Bank Account
-GL01-15,ASBIE,2,0..1,Account Period Balance,has a,,Beginning Balance
-GL01_CC09-00,SPCC,2,__,Beginning Balance,is a,,Balance Monetary Amounts
-GL01_CC09_CC08-00,ACC,3,__,Balance Monetary Amounts,,,
+GL01-15,ASBIE,2,0..1,Account Period Balance,contains,,Beginning Balance
+GL01_CC09,SPCC,2,__,Beginning Balance,Is specialized from,,Balance Monetary Amounts
+GL01_CC09_CC08,ACC,3,__,Balance Monetary Amounts,,,
 GL01_CC09_CC08-01,BCC,4,0..1,Balance Monetary Amounts,Functional Balance,Amount,
 GL01_CC09_CC08-02,BCC,4,0..1,Balance Monetary Amounts,Transaction Balance,Amount,
 GL01_CC09_CC08-03,BCC,4,0..1,Balance Monetary Amounts,Reporting Balance,Amount,
 GL01_CC09_CC08-04,BCC,4,0..1,Balance Monetary Amounts,Local Balance,Amount,
-GL01-17,ASBIE,2,0..1,Account Period Balance,has a,,Credit Amount
-GL01_CC16-00,SPCC,2,__,Credit Amount,is a,,Monetary Amounts
-GL01_CC16_CC24-00,ACC,3,__,Monetary Amounts,,,
+GL01-17,ASBIE,2,0..1,Account Period Balance,contains,,Credit Amount
+GL01_CC16,SPCC,2,__,Credit Amount,Is specialized from,,Monetary Amounts
+GL01_CC16_CC24,ACC,3,__,Monetary Amounts,,,
 GL01_CC16_CC24-01,BCC,4,0..1,Monetary Amounts,Functional Amount,Amount,
 GL01_CC16_CC24-02,RFCC,4,0..1,Monetary Amounts,Functional Currency Code,,Currency
 GL01_CC16_CC24-03,BCC,4,0..1,Monetary Amounts,Transaction Amount,Amount,
@@ -975,15 +975,15 @@ GL01_CC16_CC24-05,BCC,4,0..1,Monetary Amounts,Reporting Amount,Amount,
 GL01_CC16_CC24-06,RFCC,4,0..1,Monetary Amounts,Reporting Currency Code,,Currency
 GL01_CC16_CC24-07,BCC,4,0..1,Monetary Amounts,Local Amount,Amount,
 GL01_CC16_CC24-08,RFCC,4,0..1,Monetary Amounts,Local Currency Code,,Currency
-GL01-18,ASBIE,2,0..1,Account Period Balance,has a,,Currency
-GL01_BS07-00,ABIE,2,__,Currency,,,
+GL01-18,ASBIE,2,0..1,Account Period Balance,contains,,Currency
+GL01_BS07,ABIE,2,__,Currency,,,
 GL01_BS07-01,PKBIE,3,1..1,Currency,Currency Code,Currency_  Code,
 GL01_BS07-02,BBIE,3,0..1,Currency,Currency Name,Text,
 GL01_BS07-03,BBIE,3,0..1,Currency,Minor Unit,Unit,
 GL01_BS07-04,BBIE,3,0..1,Currency,Active Flag,Indicator,
-GL01-19,ASBIE,2,0..1,Account Period Balance,has a,,Debit Amount
-GL01_CC18-00,SPCC,2,__,Debit Amount,is a,,Monetary Amounts
-GL01_CC18_CC24-00,ACC,3,__,Monetary Amounts,,,
+GL01-19,ASBIE,2,0..1,Account Period Balance,contains,,Debit Amount
+GL01_CC18,SPCC,2,__,Debit Amount,Is specialized from,,Monetary Amounts
+GL01_CC18_CC24,ACC,3,__,Monetary Amounts,,,
 GL01_CC18_CC24-01,BCC,4,0..1,Monetary Amounts,Functional Amount,Amount,
 GL01_CC18_CC24-02,RFCC,4,0..1,Monetary Amounts,Functional Currency Code,,Currency
 GL01_CC18_CC24-03,BCC,4,0..1,Monetary Amounts,Transaction Amount,Amount,
@@ -992,80 +992,80 @@ GL01_CC18_CC24-05,BCC,4,0..1,Monetary Amounts,Reporting Amount,Amount,
 GL01_CC18_CC24-06,RFCC,4,0..1,Monetary Amounts,Reporting Currency Code,,Currency
 GL01_CC18_CC24-07,BCC,4,0..1,Monetary Amounts,Local Amount,Amount,
 GL01_CC18_CC24-08,RFCC,4,0..1,Monetary Amounts,Local Currency Code,,Currency
-GL01-20,ASBIE,2,0..1,Account Period Balance,has a,,Ending Balance
-GL01_CC19-00,SPCC,2,__,Ending Balance,is a,,Balance Monetary Amounts
-GL01_CC19_CC08-00,ACC,3,__,Balance Monetary Amounts,,,
+GL01-20,ASBIE,2,0..1,Account Period Balance,contains,,Ending Balance
+GL01_CC19,SPCC,2,__,Ending Balance,Is specialized from,,Balance Monetary Amounts
+GL01_CC19_CC08,ACC,3,__,Balance Monetary Amounts,,,
 GL01_CC19_CC08-01,BCC,4,0..1,Balance Monetary Amounts,Functional Balance,Amount,
 GL01_CC19_CC08-02,BCC,4,0..1,Balance Monetary Amounts,Transaction Balance,Amount,
 GL01_CC19_CC08-03,BCC,4,0..1,Balance Monetary Amounts,Reporting Balance,Amount,
 GL01_CC19_CC08-04,BCC,4,0..1,Balance Monetary Amounts,Local Balance,Amount,
-GL01-14,ASBIE,2,0..*,Account Period Balance,has a,,Account Segment
-GL01_GL02-00,ABIE,2,__,Account Segment,,,
+GL01-14,ASBIE,2,0..*,Account Period Balance,contains,,Account Segment
+GL01_GL02,ABIE,2,__,Account Segment,,,
 GL01_GL02-01,PKBIE RFBIE,3,1..1,Account Segment,GL Account Number,Gl Account Number,
 GL01_GL02-02,BBIE,3,0..1,Account Segment,Account Segment Number,Text,
 GL01_GL02-03,PKBIE,3,1..1,Account Segment,Account Segment Name,Identifier,
 GL01_GL02-04,BBIE,3,0..1,Account Segment,Corresponding File,Text,
 GL01_GL02-05,BBIE,3,0..1,Account Segment,Account Segment Description,Text,
 GL01_GL02-06,RFBIE,3,0..1,Account Segment,Customized Account Segment Code,,Customized Account Segment
-GL01-16,ASBIE,2,0..*,Account Period Balance,has a,,Business Segment
-GL01_BS04-00,ABIE,2,__,Business Segment,,,
+GL01-16,ASBIE,2,0..*,Account Period Balance,contains,,Business Segment
+GL01_BS04,ABIE,2,__,Business Segment,,,
 GL01_BS04-01,PKBIE,3,1..1,Business Segment,Business Segment Code,Identifier,
 GL01_BS04-02,BBIE,3,0..1,Business Segment,Business Segment Name,Name,
 GL01_BS04-03,BBIE,3,0..1,Business Segment,Segment Reference Level,Reference Level,
 GL01_BS04-04,BBIE,3,0..1,Business Segment,Organization Type Name,Name,
-GL05-00,ABIE,1,__,GL Details Characteristic,,,
+GL05,ABIE,1,__,GL Details Characteristic,,,
 GL05-01,PKBIE RFBIE,2,1..1,GL Details Characteristic,Journal ID,Identifier,
 GL05-02,PKBIE,2,1..1,GL Details Characteristic,Characteristic Type,Text,
 GL05-03,PKBIE,2,1..1,GL Details Characteristic,Characteristic Sequence Number,Text,
 GL05-04,PKBIE RFBIE,2,1..1,GL Details Characteristic,Characteristic Unit of Measurement Code,Measurement Unit_  Code,
 GL05-05,BBIE,2,0..1,GL Details Characteristic,Characteristic Value,Text,
 GL05-06,BBIE,2,0..1,GL Details Characteristic,System Characteristic Value,Text,
-GL06-00,ABIE,1,__,Source,,,
+GL06,ABIE,1,__,Source,,,
 GL06-01,PKBIE,2,1..1,Source,Source Code,Identifier,
 GL06-02,BBIE,2,0..1,Source,Source Description,Text,
 GL06-03,BBIE,2,0..1,Source,ERP Subledger Module,Text,
 GL06-04,BBIE,2,0..1,Source,System Manual Identifier,System Manual Identifier,
 GL06-05,BBIE,2,0..1,Source,Business Process Major,Text,
 GL06-06,BBIE,2,0..1,Source,Business Process Minor,Text,
-GL07-00,ABIE,1,__,Trial Balance,,,
+GL07,ABIE,1,__,Trial Balance,,,
 GL07-01,PKBIE RFBIE,2,1..1,Trial Balance,GL Account Number,Gl Account Number,
 GL07-02,PKBIE RFBIE,2,1..1,Trial Balance,Fiscal Year,Year Identifier,
 GL07-03,PKBIE RFBIE,2,1..1,Trial Balance,Accounting Period,Period Identifier,
 GL07-04,BBIE,2,0..1,Trial Balance,Balance As Of Date,Date,
-GL07-05,ASBIE,2,0..1,Trial Balance,has a,,Beginning Balance
-GL07_CC09-00,SPCC,2,__,Beginning Balance,is a,,Balance Monetary Amounts
-GL07_CC09_CC08-00,ACC,3,__,Balance Monetary Amounts,,,
+GL07-05,ASBIE,2,0..1,Trial Balance,contains,,Beginning Balance
+GL07_CC09,SPCC,2,__,Beginning Balance,Is specialized from,,Balance Monetary Amounts
+GL07_CC09_CC08,ACC,3,__,Balance Monetary Amounts,,,
 GL07_CC09_CC08-01,BCC,4,0..1,Balance Monetary Amounts,Functional Balance,Amount,
 GL07_CC09_CC08-02,BCC,4,0..1,Balance Monetary Amounts,Transaction Balance,Amount,
 GL07_CC09_CC08-03,BCC,4,0..1,Balance Monetary Amounts,Reporting Balance,Amount,
 GL07_CC09_CC08-04,BCC,4,0..1,Balance Monetary Amounts,Local Balance,Amount,
-GL07-07,ASBIE,2,0..1,Trial Balance,has a,,Currency
-GL07_BS07-00,ABIE,2,__,Currency,,,
+GL07-07,ASBIE,2,0..1,Trial Balance,contains,,Currency
+GL07_BS07,ABIE,2,__,Currency,,,
 GL07_BS07-01,PKBIE,3,1..1,Currency,Currency Code,Currency_  Code,
 GL07_BS07-02,BBIE,3,0..1,Currency,Currency Name,Text,
 GL07_BS07-03,BBIE,3,0..1,Currency,Minor Unit,Unit,
 GL07_BS07-04,BBIE,3,0..1,Currency,Active Flag,Indicator,
-GL07-08,ASBIE,2,0..1,Trial Balance,has a,,Ending Balance
-GL07_CC19-00,SPCC,2,__,Ending Balance,is a,,Balance Monetary Amounts
-GL07_CC19_CC08-00,ACC,3,__,Balance Monetary Amounts,,,
+GL07-08,ASBIE,2,0..1,Trial Balance,contains,,Ending Balance
+GL07_CC19,SPCC,2,__,Ending Balance,Is specialized from,,Balance Monetary Amounts
+GL07_CC19_CC08,ACC,3,__,Balance Monetary Amounts,,,
 GL07_CC19_CC08-01,BCC,4,0..1,Balance Monetary Amounts,Functional Balance,Amount,
 GL07_CC19_CC08-02,BCC,4,0..1,Balance Monetary Amounts,Transaction Balance,Amount,
 GL07_CC19_CC08-03,BCC,4,0..1,Balance Monetary Amounts,Reporting Balance,Amount,
 GL07_CC19_CC08-04,BCC,4,0..1,Balance Monetary Amounts,Local Balance,Amount,
-GL07-06,ASBIE,2,0..*,Trial Balance,has a,,Business Segment
-GL07_BS04-00,ABIE,2,__,Business Segment,,,
+GL07-06,ASBIE,2,0..*,Trial Balance,contains,,Business Segment
+GL07_BS04,ABIE,2,__,Business Segment,,,
 GL07_BS04-01,PKBIE,3,1..1,Business Segment,Business Segment Code,Identifier,
 GL07_BS04-02,BBIE,3,0..1,Business Segment,Business Segment Name,Name,
 GL07_BS04-03,BBIE,3,0..1,Business Segment,Segment Reference Level,Reference Level,
 GL07_BS04-04,BBIE,3,0..1,Business Segment,Organization Type Name,Name,
-GL03-00,ABIE,1,__,GL Header,,,
+GL03,ABIE,1,__,GL Header,,,
 GL03-01,PKBIE,2,1..1,GL Header,Journal Header ID,Identifier,
 GL03-06,BBIE,2,0..1,GL Header,Effective Date,Date,
 GL03-09,BBIE,2,0..1,GL Header,Journal Entry Header Description,Text,
 GL03-11,RFBIE,2,0..1,GL Header,Source Code,,Source
 GL03-22,BBIE,2,0..1,GL Header,Cancellation Sign,Indicator,
-GL03-23,ASBIE,2,1..*,GL Header,has a,,GL Details
-GL03_GL04-00,ABIE,2,__,GL Details,,,
+GL03-23,ASBIE,2,1..*,GL Header,contains,,GL Details
+GL03_GL04,ABIE,2,__,GL Details,,,
 GL03_GL04-01,PKBIE,3,1..1,GL Details,Journal ID,Identifier,
 GL03_GL04-02,BBIE,3,0..1,GL Details,Journal Number,Identifier,
 GL03_GL04-03,RFBIE,3,0..1,GL Details,GL Account Number,,Chart Of Accounts
@@ -1087,9 +1087,9 @@ GL03_GL04-21,BBIE,3,0..1,GL Details,Reversal Journal ID,Identifier,
 GL03_GL04-23,RFBIE,3,0..1,GL Details,Account Segment Employee,,Employee
 GL03_GL04-24,RFBIE,3,0..1,GL Details,Account Segment Project,,Project
 GL03_GL04-25,RFBIE,3,0..1,GL Details,Account Segment Bank Account,,Bank Account
-GL03_GL04-27,ASBIE,3,0..1,GL Details,has a,,Amount
-GL03_GL04_CC05-00,SPCC,3,__,Amount,is a,,Monetary Amounts
-GL03_GL04_CC05_CC24-00,ACC,4,__,Monetary Amounts,,,
+GL03_GL04-27,ASBIE,3,0..1,GL Details,contains,,Amount
+GL03_GL04_CC05,SPCC,3,__,Amount,Is specialized from,,Monetary Amounts
+GL03_GL04_CC05_CC24,ACC,4,__,Monetary Amounts,,,
 GL03_GL04_CC05_CC24-01,BCC,5,0..1,Monetary Amounts,Functional Amount,Amount,
 GL03_GL04_CC05_CC24-02,RFCC,5,0..1,Monetary Amounts,Functional Currency Code,,Currency
 GL03_GL04_CC05_CC24-03,BCC,5,0..1,Monetary Amounts,Transaction Amount,Amount,
@@ -1098,39 +1098,39 @@ GL03_GL04_CC05_CC24-05,BCC,5,0..1,Monetary Amounts,Reporting Amount,Amount,
 GL03_GL04_CC05_CC24-06,RFCC,5,0..1,Monetary Amounts,Reporting Currency Code,,Currency
 GL03_GL04_CC05_CC24-07,BCC,5,0..1,Monetary Amounts,Local Amount,Amount,
 GL03_GL04_CC05_CC24-08,RFCC,5,0..1,Monetary Amounts,Local Currency Code,,Currency
-GL03_GL04-28,ASBIE,3,0..1,GL Details,was,,Approved
-GL03_GL04_CC06-00,SPCC,3,__,Approved,is a,,Activity
-GL03_GL04_CC06_CC02-00,ACC,4,__,Activity,,,
+GL03_GL04-28,ASBIE,3,0..1,GL Details,A derived attribute,,Approved
+GL03_GL04_CC06,SPCC,3,__,Approved,Is specialized from,,Activity
+GL03_GL04_CC06_CC02,ACC,4,__,Activity,,,
 GL03_GL04_CC06_CC02-01,RFCC,5,0..1,Activity,User ID,,User
 GL03_GL04_CC06_CC02-02,BCC,5,0..1,Activity,Date,Date,
 GL03_GL04_CC06_CC02-03,BCC,5,0..1,Activity,Time,Time,
-GL03_GL04-30,ASBIE,3,0..1,GL Details,was,,Created
-GL03_GL04_CC15-00,SPCC,3,__,Created,is a,,Activity
-GL03_GL04_CC15_CC02-00,ACC,4,__,Activity,,,
+GL03_GL04-30,ASBIE,3,0..1,GL Details,A derived attribute,,Created
+GL03_GL04_CC15,SPCC,3,__,Created,Is specialized from,,Activity
+GL03_GL04_CC15_CC02,ACC,4,__,Activity,,,
 GL03_GL04_CC15_CC02-01,RFCC,5,0..1,Activity,User ID,,User
 GL03_GL04_CC15_CC02-02,BCC,5,0..1,Activity,Date,Date,
 GL03_GL04_CC15_CC02-03,BCC,5,0..1,Activity,Time,Time,
-GL03_GL04-31,ASBIE,3,0..1,GL Details,was,,Posted
-GL03_GL04_CC28-00,SPCC,3,__,Posted,is a,,Activity
-GL03_GL04_CC28_CC02-00,ACC,4,__,Activity,,,
+GL03_GL04-31,ASBIE,3,0..1,GL Details,A derived attribute,,Posted
+GL03_GL04_CC28,SPCC,3,__,Posted,Is specialized from,,Activity
+GL03_GL04_CC28_CC02,ACC,4,__,Activity,,,
 GL03_GL04_CC28_CC02-01,RFCC,5,0..1,Activity,User ID,,User
 GL03_GL04_CC28_CC02-02,BCC,5,0..1,Activity,Date,Date,
 GL03_GL04_CC28_CC02-03,BCC,5,0..1,Activity,Time,Time,
-GL03_GL04-26,ASBIE,3,0..*,GL Details,has a,,Account Segment
-GL03_GL04_GL02-00,ABIE,3,__,Account Segment,,,
+GL03_GL04-26,ASBIE,3,0..*,GL Details,contains,,Account Segment
+GL03_GL04_GL02,ABIE,3,__,Account Segment,,,
 GL03_GL04_GL02-01,PKBIE RFBIE,4,1..1,Account Segment,GL Account Number,Gl Account Number,
 GL03_GL04_GL02-02,BBIE,4,0..1,Account Segment,Account Segment Number,Text,
 GL03_GL04_GL02-03,PKBIE,4,1..1,Account Segment,Account Segment Name,Identifier,
 GL03_GL04_GL02-04,BBIE,4,0..1,Account Segment,Corresponding File,Text,
 GL03_GL04_GL02-05,BBIE,4,0..1,Account Segment,Account Segment Description,Text,
 GL03_GL04_GL02-06,RFBIE,4,0..1,Account Segment,Customized Account Segment Code,,Customized Account Segment
-GL03_GL04-29,ASBIE,3,0..*,GL Details,has a,,Business Segment
-GL03_GL04_BS04-00,ABIE,3,__,Business Segment,,,
+GL03_GL04-29,ASBIE,3,0..*,GL Details,contains,,Business Segment
+GL03_GL04_BS04,ABIE,3,__,Business Segment,,,
 GL03_GL04_BS04-01,PKBIE,4,1..1,Business Segment,Business Segment Code,Identifier,
 GL03_GL04_BS04-02,BBIE,4,0..1,Business Segment,Business Segment Name,Name,
 GL03_GL04_BS04-03,BBIE,4,0..1,Business Segment,Segment Reference Level,Reference Level,
 GL03_GL04_BS04-04,BBIE,4,0..1,Business Segment,Organization Type Name,Name,
-IV01-00,ABIE,1,__,Inventory Location,,,
+IV01,ABIE,1,__,Inventory Location,,,
 IV01-01,PKBIE,2,1..1,Inventory Location,Location ID,Identifier,
 IV01-02,BBIE,2,0..1,Inventory Location,Location Code,Text,
 IV01-03,BBIE,2,0..1,Inventory Location,Parent Location ID,Identifier,
@@ -1138,22 +1138,22 @@ IV01-04,BBIE,2,0..1,Inventory Location,Location Description,Text,
 IV01-05,BBIE,2,0..1,Inventory Location,Location Type,Text,
 IV01-06,RFBIE,2,0..1,Inventory Location,Inventory Organization Code,,Business Segment
 IV01-07,BBIE,2,0..1,Inventory Location,Location Active Flag,Indicator,
-IV01-09,ASBIE,2,0..1,Inventory Location,has a,,Physical Address
-IV01_CC27-00,SPCC,2,__,Physical Address,is a,,Address
-IV01_CC27_CC03-00,ACC,3,__,Address,,,
+IV01-09,ASBIE,2,0..1,Inventory Location,contains,,Physical Address
+IV01_CC27,SPCC,2,__,Physical Address,Is specialized from,,Address
+IV01_CC27_CC03,ACC,3,__,Address,,,
 IV01_CC27_CC03-01,BCC,4,0..1,Address,Street Address1,Text,
 IV01_CC27_CC03-02,BCC,4,0..1,Address,Street Address2,Text,
 IV01_CC27_CC03-03,BCC,4,0..1,Address,City Name,City Name,
 IV01_CC27_CC03-04,BCC,4,0..1,Address,State Province Code,State Province_  Code,
 IV01_CC27_CC03-05,BCC,4,0..1,Address,Postal Code,Postal_  Code,
 IV01_CC27_CC03-06,BCC,4,0..1,Address,Country Code,Country_  Code,
-IV01-08,ASBIE,2,0..*,Inventory Location,has a,,Business Segment
-IV01_BS04-00,ABIE,2,__,Business Segment,,,
+IV01-08,ASBIE,2,0..*,Inventory Location,contains,,Business Segment
+IV01_BS04,ABIE,2,__,Business Segment,,,
 IV01_BS04-01,PKBIE,3,1..1,Business Segment,Business Segment Code,Identifier,
 IV01_BS04-02,BBIE,3,0..1,Business Segment,Business Segment Name,Name,
 IV01_BS04-03,BBIE,3,0..1,Business Segment,Segment Reference Level,Reference Level,
 IV01_BS04-04,BBIE,3,0..1,Business Segment,Organization Type Name,Name,
-IV02-00,ABIE,1,__,Inventory On Hand,,,
+IV02,ABIE,1,__,Inventory On Hand,,,
 IV02-01,PKBIE,2,1..1,Inventory On Hand,Inventory ID,Identifier,
 IV02-02,RFBIE,2,0..1,Inventory On Hand,Inventory Product ID,,Inventory Product
 IV02-03,BBIE,2,0..1,Inventory On Hand,Lot Number,Text,
@@ -1182,13 +1182,13 @@ IV02-25,BBIE,2,0..1,Inventory On Hand,Specific Cost,Amount,
 IV02-26,RFBIE,2,0..1,Inventory On Hand,Functional Currency Code,,Currency
 IV02-27,BBIE,2,0..1,Inventory On Hand,Bin ID,Text,
 IV02-28,BBIE,2,0..1,Inventory On Hand,Bin Location,Text,
-IV02-29,ASBIE,2,0..*,Inventory On Hand,has a,,Business Segment
-IV02_BS04-00,ABIE,2,__,Business Segment,,,
+IV02-29,ASBIE,2,0..*,Inventory On Hand,contains,,Business Segment
+IV02_BS04,ABIE,2,__,Business Segment,,,
 IV02_BS04-01,PKBIE,3,1..1,Business Segment,Business Segment Code,Identifier,
 IV02_BS04-02,BBIE,3,0..1,Business Segment,Business Segment Name,Name,
 IV02_BS04-03,BBIE,3,0..1,Business Segment,Segment Reference Level,Reference Level,
 IV02_BS04-04,BBIE,3,0..1,Business Segment,Organization Type Name,Name,
-IV03-00,ABIE,1,__,Inventory Period Balance,,,
+IV03,ABIE,1,__,Inventory Period Balance,,,
 IV03-01,PKBIE,2,1..1,Inventory Period Balance,Inventory Product ID,Identifier,
 IV03-02,PKBIE,2,1..1,Inventory Period Balance,Location ID,Identifier,
 IV03-03,RFBIE,2,0..1,Inventory Period Balance,Fiscal Year,,Accounting Period
@@ -1206,13 +1206,13 @@ IV03-14,BBIE,2,0..1,Inventory Period Balance,Inventory Ending Balance,Amount,
 IV03-15,RFBIE,2,0..1,Inventory Period Balance,Cost Organization Code,,Business Segment
 IV03-16,RFBIE,2,0..1,Inventory Period Balance,Inventory Stocking Unit of Measurement Code,,Measurement Unit
 IV03-17,RFBIE,2,0..1,Inventory Period Balance,Inventory Costing Unit of Measurement Code,,Measurement Unit
-IV03-18,ASBIE,2,0..*,Inventory Period Balance,has a,,Business Segment
-IV03_BS04-00,ABIE,2,__,Business Segment,,,
+IV03-18,ASBIE,2,0..*,Inventory Period Balance,contains,,Business Segment
+IV03_BS04,ABIE,2,__,Business Segment,,,
 IV03_BS04-01,PKBIE,3,1..1,Business Segment,Business Segment Code,Identifier,
 IV03_BS04-02,BBIE,3,0..1,Business Segment,Business Segment Name,Name,
 IV03_BS04-03,BBIE,3,0..1,Business Segment,Segment Reference Level,Reference Level,
 IV03_BS04-04,BBIE,3,0..1,Business Segment,Organization Type Name,Name,
-IV04-00,ABIE,1,__,Physical Inventory,,,
+IV04,ABIE,1,__,Physical Inventory,,,
 IV04-01,PKBIE,2,1..1,Physical Inventory,Inventory Count Sheet ID,Identifier,
 IV04-02,BBIE,2,0..1,Physical Inventory,Inventory Count Sheet Number,Text,
 IV04-03,PKBIE,2,1..1,Physical Inventory,Inventory Count Sheet Line ID,Identifier,
@@ -1228,37 +1228,37 @@ IV04-12,RFBIE,2,0..1,Physical Inventory,Inventory Stocking Unit of Measurement C
 IV04-13,BBIE,2,0..1,Physical Inventory,System Quantity,Quantity,
 IV04-14,BBIE,2,0..1,Physical Inventory,Physical Count Quantity,Quantity,
 IV04-15,BBIE,2,0..1,Physical Inventory,Comment,Text,
-IV04-16,ASBIE,2,0..1,Physical Inventory,was,,Approved
-IV04_CC06-00,SPCC,2,__,Approved,is a,,Activity
-IV04_CC06_CC02-00,ACC,3,__,Activity,,,
+IV04-16,ASBIE,2,0..1,Physical Inventory,A derived attribute,,Approved
+IV04_CC06,SPCC,2,__,Approved,Is specialized from,,Activity
+IV04_CC06_CC02,ACC,3,__,Activity,,,
 IV04_CC06_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 IV04_CC06_CC02-02,BCC,4,0..1,Activity,Date,Date,
 IV04_CC06_CC02-03,BCC,4,0..1,Activity,Time,Time,
-IV04-18,ASBIE,2,0..1,Physical Inventory,was,,Created
-IV04_CC15-00,SPCC,2,__,Created,is a,,Activity
-IV04_CC15_CC02-00,ACC,3,__,Activity,,,
+IV04-18,ASBIE,2,0..1,Physical Inventory,A derived attribute,,Created
+IV04_CC15,SPCC,2,__,Created,Is specialized from,,Activity
+IV04_CC15_CC02,ACC,3,__,Activity,,,
 IV04_CC15_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 IV04_CC15_CC02-02,BCC,4,0..1,Activity,Date,Date,
 IV04_CC15_CC02-03,BCC,4,0..1,Activity,Time,Time,
-IV04-19,ASBIE,2,0..1,Physical Inventory,was,,Last Modified
-IV04_CC22-00,SPCC,2,__,Last Modified,is a,,Activity
-IV04_CC22_CC02-00,ACC,3,__,Activity,,,
+IV04-19,ASBIE,2,0..1,Physical Inventory,A derived attribute,,Last Modified
+IV04_CC22,SPCC,2,__,Last Modified,Is specialized from,,Activity
+IV04_CC22_CC02,ACC,3,__,Activity,,,
 IV04_CC22_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 IV04_CC22_CC02-02,BCC,4,0..1,Activity,Date,Date,
 IV04_CC22_CC02-03,BCC,4,0..1,Activity,Time,Time,
-IV04-20,ASBIE,2,0..1,Physical Inventory,was,,Posted
-IV04_CC28-00,SPCC,2,__,Posted,is a,,Activity
-IV04_CC28_CC02-00,ACC,3,__,Activity,,,
+IV04-20,ASBIE,2,0..1,Physical Inventory,A derived attribute,,Posted
+IV04_CC28,SPCC,2,__,Posted,Is specialized from,,Activity
+IV04_CC28_CC02,ACC,3,__,Activity,,,
 IV04_CC28_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 IV04_CC28_CC02-02,BCC,4,0..1,Activity,Date,Date,
 IV04_CC28_CC02-03,BCC,4,0..1,Activity,Time,Time,
-IV04-17,ASBIE,2,0..*,Physical Inventory,has a,,Business Segment
-IV04_BS04-00,ABIE,2,__,Business Segment,,,
+IV04-17,ASBIE,2,0..*,Physical Inventory,contains,,Business Segment
+IV04_BS04,ABIE,2,__,Business Segment,,,
 IV04_BS04-01,PKBIE,3,1..1,Business Segment,Business Segment Code,Identifier,
 IV04_BS04-02,BBIE,3,0..1,Business Segment,Business Segment Name,Name,
 IV04_BS04-03,BBIE,3,0..1,Business Segment,Segment Reference Level,Reference Level,
 IV04_BS04-04,BBIE,3,0..1,Business Segment,Organization Type Name,Name,
-IV05-00,ABIE,1,__,Inventory Product,,,
+IV05,ABIE,1,__,Inventory Product,,,
 IV05-01,PKBIE,2,1..1,Inventory Product,Inventory Product ID,Identifier,
 IV05-02,BBIE,2,0..1,Inventory Product,Inventory Product Code,Text,
 IV05-03,RFBIE,2,0..1,Inventory Product,Inventory Product Type ID,,Inventory Product Type
@@ -1275,13 +1275,13 @@ IV05-13,BBIE,2,0..1,Inventory Product,Out Of Service Date,Date,
 IV05-14,BBIE,2,0..1,Inventory Product,Out Of Service Flag,Indicator,
 IV05-15,BBIE,2,0..1,Inventory Product,Lot Number,Text,
 IV05-16,BBIE,2,0..1,Inventory Product,Serial Number,Text,
-IV05-17,ASBIE,2,0..*,Inventory Product,has a,,Business Segment
-IV05_BS04-00,ABIE,2,__,Business Segment,,,
+IV05-17,ASBIE,2,0..*,Inventory Product,contains,,Business Segment
+IV05_BS04,ABIE,2,__,Business Segment,,,
 IV05_BS04-01,PKBIE,3,1..1,Business Segment,Business Segment Code,Identifier,
 IV05_BS04-02,BBIE,3,0..1,Business Segment,Business Segment Name,Name,
 IV05_BS04-03,BBIE,3,0..1,Business Segment,Segment Reference Level,Reference Level,
 IV05_BS04-04,BBIE,3,0..1,Business Segment,Organization Type Name,Name,
-IV06-00,ABIE,1,__,Inventory Product Characteristic,,,
+IV06,ABIE,1,__,Inventory Product Characteristic,,,
 IV06-01,PKBIE RFBIE,2,1..1,Inventory Product Characteristic,Inventory Product ID,Identifier,
 IV06-02,PKBIE,2,1..1,Inventory Product Characteristic,Characteristic Type,Text,
 IV06-03,PKBIE,2,1..1,Inventory Product Characteristic,Characteristic Sequence Number,Text,
@@ -1292,19 +1292,19 @@ IV06-07,BBIE,2,0..1,Inventory Product Characteristic,End Date,Date,
 IV06-08,BBIE,2,0..1,Inventory Product Characteristic,End Time,Time,
 IV06-09,BBIE,2,0..1,Inventory Product Characteristic,Characteristic Value,Text,
 IV06-10,BBIE,2,0..1,Inventory Product Characteristic,System Characteristic Value,Text,
-IV07-00,ABIE,1,__,Inventory Product Type,,,
+IV07,ABIE,1,__,Inventory Product Type,,,
 IV07-01,PKBIE,2,1..1,Inventory Product Type,Inventory Product Type ID,Identifier,
 IV07-02,BBIE,2,0..1,Inventory Product Type,Inventory Product Type Code,Inventory Product Type_  Code,
 IV07-03,BBIE,2,0..1,Inventory Product Type,Inventory Product Type Name,Text,
 IV07-04,BBIE,2,0..1,Inventory Product Type,Inventory Product Type Description,Text,
 IV07-05,RFBIE,2,0..1,Inventory Product Type,Parent Inventory Product Type ID,,Inventory Product Type
-IV07-06,ASBIE,2,0..*,Inventory Product Type,has a,,Business Segment
-IV07_BS04-00,ABIE,2,__,Business Segment,,,
+IV07-06,ASBIE,2,0..*,Inventory Product Type,contains,,Business Segment
+IV07_BS04,ABIE,2,__,Business Segment,,,
 IV07_BS04-01,PKBIE,3,1..1,Business Segment,Business Segment Code,Identifier,
 IV07_BS04-02,BBIE,3,0..1,Business Segment,Business Segment Name,Name,
 IV07_BS04-03,BBIE,3,0..1,Business Segment,Segment Reference Level,Reference Level,
 IV07_BS04-04,BBIE,3,0..1,Business Segment,Organization Type Name,Name,
-IV08-00,ABIE,1,__,Inventory Transaction,,,
+IV08,ABIE,1,__,Inventory Transaction,,,
 IV08-01,PKBIE,2,1..1,Inventory Transaction,Transaction Document ID,Identifier,
 IV08-02,PKBIE,2,1..1,Inventory Transaction,Transaction Document Line ID,Identifier,
 IV08-03,RFBIE,2,0..1,Inventory Transaction,Project ID,,Project
@@ -1340,44 +1340,44 @@ IV08-32,BBIE,2,0..1,Inventory Transaction,Inventory System Or External Source,So
 IV08-33,BBIE,2,0..1,Inventory Transaction,Inventory Received And Dispatched Flag,Indicator,
 IV08-34,RFBIE,2,0..1,Inventory Transaction,GL Line Debit Account Number,,Chart Of Accounts
 IV08-35,RFBIE,2,0..1,Inventory Transaction,GL Line Credit Account Number,,Chart Of Accounts
-IV08-36,ASBIE,2,0..1,Inventory Transaction,was,,Approved
-IV08_CC06-00,SPCC,2,__,Approved,is a,,Activity
-IV08_CC06_CC02-00,ACC,3,__,Activity,,,
+IV08-36,ASBIE,2,0..1,Inventory Transaction,A derived attribute,,Approved
+IV08_CC06,SPCC,2,__,Approved,Is specialized from,,Activity
+IV08_CC06_CC02,ACC,3,__,Activity,,,
 IV08_CC06_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 IV08_CC06_CC02-02,BCC,4,0..1,Activity,Date,Date,
 IV08_CC06_CC02-03,BCC,4,0..1,Activity,Time,Time,
-IV08-38,ASBIE,2,0..1,Inventory Transaction,was,,Created
-IV08_CC15-00,SPCC,2,__,Created,is a,,Activity
-IV08_CC15_CC02-00,ACC,3,__,Activity,,,
+IV08-38,ASBIE,2,0..1,Inventory Transaction,A derived attribute,,Created
+IV08_CC15,SPCC,2,__,Created,Is specialized from,,Activity
+IV08_CC15_CC02,ACC,3,__,Activity,,,
 IV08_CC15_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 IV08_CC15_CC02-02,BCC,4,0..1,Activity,Date,Date,
 IV08_CC15_CC02-03,BCC,4,0..1,Activity,Time,Time,
-IV08-39,ASBIE,2,0..1,Inventory Transaction,was,,Last Modified
-IV08_CC22-00,SPCC,2,__,Last Modified,is a,,Activity
-IV08_CC22_CC02-00,ACC,3,__,Activity,,,
+IV08-39,ASBIE,2,0..1,Inventory Transaction,A derived attribute,,Last Modified
+IV08_CC22,SPCC,2,__,Last Modified,Is specialized from,,Activity
+IV08_CC22_CC02,ACC,3,__,Activity,,,
 IV08_CC22_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 IV08_CC22_CC02-02,BCC,4,0..1,Activity,Date,Date,
 IV08_CC22_CC02-03,BCC,4,0..1,Activity,Time,Time,
-IV08-40,ASBIE,2,0..1,Inventory Transaction,was,,Posted
-IV08_CC28-00,SPCC,2,__,Posted,is a,,Activity
-IV08_CC28_CC02-00,ACC,3,__,Activity,,,
+IV08-40,ASBIE,2,0..1,Inventory Transaction,A derived attribute,,Posted
+IV08_CC28,SPCC,2,__,Posted,Is specialized from,,Activity
+IV08_CC28_CC02,ACC,3,__,Activity,,,
 IV08_CC28_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 IV08_CC28_CC02-02,BCC,4,0..1,Activity,Date,Date,
 IV08_CC28_CC02-03,BCC,4,0..1,Activity,Time,Time,
-IV08-37,ASBIE,2,0..*,Inventory Transaction,has a,,Business Segment
-IV08_BS04-00,ABIE,2,__,Business Segment,,,
+IV08-37,ASBIE,2,0..*,Inventory Transaction,contains,,Business Segment
+IV08_BS04,ABIE,2,__,Business Segment,,,
 IV08_BS04-01,PKBIE,3,1..1,Business Segment,Business Segment Code,Identifier,
 IV08_BS04-02,BBIE,3,0..1,Business Segment,Business Segment Name,Name,
 IV08_BS04-03,BBIE,3,0..1,Business Segment,Segment Reference Level,Reference Level,
 IV08_BS04-04,BBIE,3,0..1,Business Segment,Organization Type Name,Name,
-IV09-00,ABIE,1,__,Inventory Transaction Associated Document,,,
+IV09,ABIE,1,__,Inventory Transaction Associated Document,,,
 IV09-01,PKBIE RFBIE,2,1..1,Inventory Transaction Associated Document,Transaction Document ID,Identifier,
 IV09-02,PKBIE RFBIE,2,1..1,Inventory Transaction Associated Document,Transaction Document Line ID,Identifier,
 IV09-03,PKBIE,2,1..1,Inventory Transaction Associated Document,Transaction Submitted System,Text,
 IV09-04,PKBIE,2,1..1,Inventory Transaction Associated Document,Document Code,Text,
 IV09-05,PKBIE,2,1..1,Inventory Transaction Associated Document,Document ID,Identifier,
 IV09-06,PKBIE,2,1..1,Inventory Transaction Associated Document,Document Line ID,Identifier,
-IV10-00,ABIE,1,__,Inventory Transaction Characteristic,,,
+IV10,ABIE,1,__,Inventory Transaction Characteristic,,,
 IV10-01,PKBIE RFBIE,2,1..1,Inventory Transaction Characteristic,Transaction Document ID,Identifier,
 IV10-02,PKBIE RFBIE,2,1..1,Inventory Transaction Characteristic,Transaction Document Line ID,Identifier,
 IV10-03,PKBIE,2,1..1,Inventory Transaction Characteristic,Characteristic Type,Text,
@@ -1385,7 +1385,7 @@ IV10-04,PKBIE,2,1..1,Inventory Transaction Characteristic,Characteristic Sequenc
 IV10-05,PKBIE RFBIE,2,1..1,Inventory Transaction Characteristic,Characteristic Unit of Measurement Code,Measurement Unit_  Code,
 IV10-06,BBIE,2,0..1,Inventory Transaction Characteristic,Characteristic Value,Text,
 IV10-07,BBIE,2,0..1,Inventory Transaction Characteristic,System Characteristic Value,Text,
-PE01-00,ABIE,1,__,Inventory Addition,,,
+PE01,ABIE,1,__,Inventory Addition,,,
 PE01-01,PKBIE,2,1..1,Inventory Addition,Addition ID,Identifier,
 PE01-02,RFBIE,2,0..1,Inventory Addition,"Property, Plant and Equipment ID",,Inventory Master
 PE01-03,RFBIE,2,0..1,Inventory Addition,Fiscal Year,,Accounting Period
@@ -1397,31 +1397,31 @@ PE01-08,BBIE,2,0..1,Inventory Addition,Addition Reason,Text,
 PE01-09,BBIE,2,0..1,Inventory Addition,Addition Quantity,Quantity,
 PE01-10,BBIE,2,0..1,Inventory Addition,Original Cost,Amount,
 PE01-11,RFBIE,2,0..1,Inventory Addition,Functional Currency Code,,Currency
-PE01-12,ASBIE,2,0..1,Inventory Addition,was,,Approved
-PE01_CC06-00,SPCC,2,__,Approved,is a,,Activity
-PE01_CC06_CC02-00,ACC,3,__,Activity,,,
+PE01-12,ASBIE,2,0..1,Inventory Addition,A derived attribute,,Approved
+PE01_CC06,SPCC,2,__,Approved,Is specialized from,,Activity
+PE01_CC06_CC02,ACC,3,__,Activity,,,
 PE01_CC06_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 PE01_CC06_CC02-02,BCC,4,0..1,Activity,Date,Date,
 PE01_CC06_CC02-03,BCC,4,0..1,Activity,Time,Time,
-PE01-14,ASBIE,2,0..1,Inventory Addition,was,,Created
-PE01_CC15-00,SPCC,2,__,Created,is a,,Activity
-PE01_CC15_CC02-00,ACC,3,__,Activity,,,
+PE01-14,ASBIE,2,0..1,Inventory Addition,A derived attribute,,Created
+PE01_CC15,SPCC,2,__,Created,Is specialized from,,Activity
+PE01_CC15_CC02,ACC,3,__,Activity,,,
 PE01_CC15_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 PE01_CC15_CC02-02,BCC,4,0..1,Activity,Date,Date,
 PE01_CC15_CC02-03,BCC,4,0..1,Activity,Time,Time,
-PE01-15,ASBIE,2,0..1,Inventory Addition,was,,Last Modified
-PE01_CC22-00,SPCC,2,__,Last Modified,is a,,Activity
-PE01_CC22_CC02-00,ACC,3,__,Activity,,,
+PE01-15,ASBIE,2,0..1,Inventory Addition,A derived attribute,,Last Modified
+PE01_CC22,SPCC,2,__,Last Modified,Is specialized from,,Activity
+PE01_CC22_CC02,ACC,3,__,Activity,,,
 PE01_CC22_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 PE01_CC22_CC02-02,BCC,4,0..1,Activity,Date,Date,
 PE01_CC22_CC02-03,BCC,4,0..1,Activity,Time,Time,
-PE01-13,ASBIE,2,0..*,Inventory Addition,has a,,Business Segment
-PE01_BS04-00,ABIE,2,__,Business Segment,,,
+PE01-13,ASBIE,2,0..*,Inventory Addition,contains,,Business Segment
+PE01_BS04,ABIE,2,__,Business Segment,,,
 PE01_BS04-01,PKBIE,3,1..1,Business Segment,Business Segment Code,Identifier,
 PE01_BS04-02,BBIE,3,0..1,Business Segment,Business Segment Name,Name,
 PE01_BS04-03,BBIE,3,0..1,Business Segment,Segment Reference Level,Reference Level,
 PE01_BS04-04,BBIE,3,0..1,Business Segment,Organization Type Name,Name,
-PE02-00,ABIE,1,__,Inventory Change,,,
+PE02,ABIE,1,__,Inventory Change,,,
 PE02-01,PKBIE,2,1..1,Inventory Change,Change ID,Identifier,
 PE02-02,RFBIE,2,0..1,Inventory Change,"Property, Plant and Equipment ID",,Inventory Master
 PE02-03,RFBIE,2,0..1,Inventory Change,Fiscal Year,,Accounting Period
@@ -1432,41 +1432,41 @@ PE02-07,BBIE,2,0..1,Inventory Change,Change Date,Date,
 PE02-08,BBIE,2,0..1,Inventory Change,Change Reason,Text,
 PE02-09,BBIE,2,0..1,Inventory Change,Content Before Change,Text,
 PE02-10,BBIE,2,0..1,Inventory Change,Content After Change,Text,
-PE02-11,ASBIE,2,0..1,Inventory Change,was,,Approved
-PE02_CC06-00,SPCC,2,__,Approved,is a,,Activity
-PE02_CC06_CC02-00,ACC,3,__,Activity,,,
+PE02-11,ASBIE,2,0..1,Inventory Change,A derived attribute,,Approved
+PE02_CC06,SPCC,2,__,Approved,Is specialized from,,Activity
+PE02_CC06_CC02,ACC,3,__,Activity,,,
 PE02_CC06_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 PE02_CC06_CC02-02,BCC,4,0..1,Activity,Date,Date,
 PE02_CC06_CC02-03,BCC,4,0..1,Activity,Time,Time,
-PE02-13,ASBIE,2,0..1,Inventory Change,was,,Created
-PE02_CC15-00,SPCC,2,__,Created,is a,,Activity
-PE02_CC15_CC02-00,ACC,3,__,Activity,,,
+PE02-13,ASBIE,2,0..1,Inventory Change,A derived attribute,,Created
+PE02_CC15,SPCC,2,__,Created,Is specialized from,,Activity
+PE02_CC15_CC02,ACC,3,__,Activity,,,
 PE02_CC15_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 PE02_CC15_CC02-02,BCC,4,0..1,Activity,Date,Date,
 PE02_CC15_CC02-03,BCC,4,0..1,Activity,Time,Time,
-PE02-14,ASBIE,2,0..1,Inventory Change,was,,Last Modified
-PE02_CC22-00,SPCC,2,__,Last Modified,is a,,Activity
-PE02_CC22_CC02-00,ACC,3,__,Activity,,,
+PE02-14,ASBIE,2,0..1,Inventory Change,A derived attribute,,Last Modified
+PE02_CC22,SPCC,2,__,Last Modified,Is specialized from,,Activity
+PE02_CC22_CC02,ACC,3,__,Activity,,,
 PE02_CC22_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 PE02_CC22_CC02-02,BCC,4,0..1,Activity,Date,Date,
 PE02_CC22_CC02-03,BCC,4,0..1,Activity,Time,Time,
-PE02-12,ASBIE,2,0..*,Inventory Change,has a,,Business Segment
-PE02_BS04-00,ABIE,2,__,Business Segment,,,
+PE02-12,ASBIE,2,0..*,Inventory Change,contains,,Business Segment
+PE02_BS04,ABIE,2,__,Business Segment,,,
 PE02_BS04-01,PKBIE,3,1..1,Business Segment,Business Segment Code,Identifier,
 PE02_BS04-02,BBIE,3,0..1,Business Segment,Business Segment Name,Name,
 PE02_BS04-03,BBIE,3,0..1,Business Segment,Segment Reference Level,Reference Level,
 PE02_BS04-04,BBIE,3,0..1,Business Segment,Organization Type Name,Name,
-PE03-00,ABIE,1,__,Inventory Department Allocation,,,
+PE03,ABIE,1,__,Inventory Department Allocation,,,
 PE03-01,RFBIE,2,0..1,Inventory Department Allocation,"Property, Plant and Equipment ID",,Inventory Master
 PE03-02,BBIE,2,0..1,Inventory Department Allocation,Depreciation Allocation Proportion,Percentage,
 PE03-03,RFBIE,2,0..1,Inventory Department Allocation,Department Code,,Business Segment
-PE03-04,ASBIE,2,0..*,Inventory Department Allocation,has a,,Business Segment
-PE03_BS04-00,ABIE,2,__,Business Segment,,,
+PE03-04,ASBIE,2,0..*,Inventory Department Allocation,contains,,Business Segment
+PE03_BS04,ABIE,2,__,Business Segment,,,
 PE03_BS04-01,PKBIE,3,1..1,Business Segment,Business Segment Code,Identifier,
 PE03_BS04-02,BBIE,3,0..1,Business Segment,Business Segment Name,Name,
 PE03_BS04-03,BBIE,3,0..1,Business Segment,Segment Reference Level,Reference Level,
 PE03_BS04-04,BBIE,3,0..1,Business Segment,Organization Type Name,Name,
-PE04-00,ABIE,1,__,Inventory Depreciation,,,
+PE04,ABIE,1,__,Inventory Depreciation,,,
 PE04-01,PKBIE RFBIE,2,1..1,Inventory Depreciation,"Property, Plant and Equipment ID",Identifier,
 PE04-02,RFBIE,2,0..1,Inventory Depreciation,Fiscal Year,,Accounting Period
 PE04-03,RFBIE,2,0..1,Inventory Depreciation,Accounting Period,,Accounting Period
@@ -1481,42 +1481,42 @@ PE04-11,BBIE,2,0..1,Inventory Depreciation,Accumulated Depreciation,Amount,
 PE04-12,BBIE,2,0..1,Inventory Depreciation,Carrying Amount,Amount,
 PE04-13,RFBIE,2,0..1,Inventory Depreciation,Depreciation Account Number,,Chart Of Accounts
 PE04-14,RFBIE,2,0..1,Inventory Depreciation,Accumulated Depreciation Account Number,,Chart Of Accounts
-PE04-15,ASBIE,2,0..1,Inventory Depreciation,was,,Approved
-PE04_CC06-00,SPCC,2,__,Approved,is a,,Activity
-PE04_CC06_CC02-00,ACC,3,__,Activity,,,
+PE04-15,ASBIE,2,0..1,Inventory Depreciation,A derived attribute,,Approved
+PE04_CC06,SPCC,2,__,Approved,Is specialized from,,Activity
+PE04_CC06_CC02,ACC,3,__,Activity,,,
 PE04_CC06_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 PE04_CC06_CC02-02,BCC,4,0..1,Activity,Date,Date,
 PE04_CC06_CC02-03,BCC,4,0..1,Activity,Time,Time,
-PE04-17,ASBIE,2,0..1,Inventory Depreciation,was,,Created
-PE04_CC15-00,SPCC,2,__,Created,is a,,Activity
-PE04_CC15_CC02-00,ACC,3,__,Activity,,,
+PE04-17,ASBIE,2,0..1,Inventory Depreciation,A derived attribute,,Created
+PE04_CC15,SPCC,2,__,Created,Is specialized from,,Activity
+PE04_CC15_CC02,ACC,3,__,Activity,,,
 PE04_CC15_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 PE04_CC15_CC02-02,BCC,4,0..1,Activity,Date,Date,
 PE04_CC15_CC02-03,BCC,4,0..1,Activity,Time,Time,
-PE04-18,ASBIE,2,0..1,Inventory Depreciation,was,,Last Modified
-PE04_CC22-00,SPCC,2,__,Last Modified,is a,,Activity
-PE04_CC22_CC02-00,ACC,3,__,Activity,,,
+PE04-18,ASBIE,2,0..1,Inventory Depreciation,A derived attribute,,Last Modified
+PE04_CC22,SPCC,2,__,Last Modified,Is specialized from,,Activity
+PE04_CC22_CC02,ACC,3,__,Activity,,,
 PE04_CC22_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 PE04_CC22_CC02-02,BCC,4,0..1,Activity,Date,Date,
 PE04_CC22_CC02-03,BCC,4,0..1,Activity,Time,Time,
-PE04-16,ASBIE,2,0..*,Inventory Depreciation,has a,,Business Segment
-PE04_BS04-00,ABIE,2,__,Business Segment,,,
+PE04-16,ASBIE,2,0..*,Inventory Depreciation,contains,,Business Segment
+PE04_BS04,ABIE,2,__,Business Segment,,,
 PE04_BS04-01,PKBIE,3,1..1,Business Segment,Business Segment Code,Identifier,
 PE04_BS04-02,BBIE,3,0..1,Business Segment,Business Segment Name,Name,
 PE04_BS04-03,BBIE,3,0..1,Business Segment,Segment Reference Level,Reference Level,
 PE04_BS04-04,BBIE,3,0..1,Business Segment,Organization Type Name,Name,
-PE05-00,ABIE,1,__,Inventory Depreciation Method,,,
+PE05,ABIE,1,__,Inventory Depreciation Method,,,
 PE05-01,PKBIE,2,1..1,Inventory Depreciation Method,Depreciation Method ID,Identifier,
 PE05-02,BBIE,2,0..1,Inventory Depreciation Method,Depreciation Method Name,Text,
 PE05-03,BBIE,2,0..1,Inventory Depreciation Method,Depreciation Method Description,Text,
 PE05-04,BBIE,2,0..1,Inventory Depreciation Method,Depreciation Formula,Text,
-PE05-05,ASBIE,2,0..*,Inventory Depreciation Method,has a,,Business Segment
-PE05_BS04-00,ABIE,2,__,Business Segment,,,
+PE05-05,ASBIE,2,0..*,Inventory Depreciation Method,contains,,Business Segment
+PE05_BS04,ABIE,2,__,Business Segment,,,
 PE05_BS04-01,PKBIE,3,1..1,Business Segment,Business Segment Code,Identifier,
 PE05_BS04-02,BBIE,3,0..1,Business Segment,Business Segment Name,Name,
 PE05_BS04-03,BBIE,3,0..1,Business Segment,Segment Reference Level,Reference Level,
 PE05_BS04-04,BBIE,3,0..1,Business Segment,Organization Type Name,Name,
-PE06-00,ABIE,1,__,Inventory Master,,,
+PE06,ABIE,1,__,Inventory Master,,,
 PE06-01,PKBIE,2,1..1,Inventory Master,"Property, Plant and Equipment ID",Identifier,
 PE06-02,BBIE,2,0..1,Inventory Master,"Property, Plant and Equipment Code",Text,
 PE06-03,BBIE,2,0..1,Inventory Master,Tag Number,Text,
@@ -1550,31 +1550,31 @@ PE06-30,BBIE,2,0..1,Inventory Master,Functional Currency Code,Currency_  Code,
 PE06-31,BBIE,2,0..1,Inventory Master,"Property, Plant and Equipment Account Number",Gl Account Number,
 PE06-32,BBIE,2,0..1,Inventory Master,Impairment Provision Account Number,Gl Account Number,
 PE06-33,BBIE,2,0..1,Inventory Master,Accumulated Depreciation Account Number,Gl Account Number,
-PE06-34,ASBIE,2,0..1,Inventory Master,was,,Approved
-PE06_CC06-00,SPCC,2,__,Approved,is a,,Activity
-PE06_CC06_CC02-00,ACC,3,__,Activity,,,
+PE06-34,ASBIE,2,0..1,Inventory Master,A derived attribute,,Approved
+PE06_CC06,SPCC,2,__,Approved,Is specialized from,,Activity
+PE06_CC06_CC02,ACC,3,__,Activity,,,
 PE06_CC06_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 PE06_CC06_CC02-02,BCC,4,0..1,Activity,Date,Date,
 PE06_CC06_CC02-03,BCC,4,0..1,Activity,Time,Time,
-PE06-36,ASBIE,2,0..1,Inventory Master,was,,Created
-PE06_CC15-00,SPCC,2,__,Created,is a,,Activity
-PE06_CC15_CC02-00,ACC,3,__,Activity,,,
+PE06-36,ASBIE,2,0..1,Inventory Master,A derived attribute,,Created
+PE06_CC15,SPCC,2,__,Created,Is specialized from,,Activity
+PE06_CC15_CC02,ACC,3,__,Activity,,,
 PE06_CC15_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 PE06_CC15_CC02-02,BCC,4,0..1,Activity,Date,Date,
 PE06_CC15_CC02-03,BCC,4,0..1,Activity,Time,Time,
-PE06-37,ASBIE,2,0..1,Inventory Master,was,,Last Modified
-PE06_CC22-00,SPCC,2,__,Last Modified,is a,,Activity
-PE06_CC22_CC02-00,ACC,3,__,Activity,,,
+PE06-37,ASBIE,2,0..1,Inventory Master,A derived attribute,,Last Modified
+PE06_CC22,SPCC,2,__,Last Modified,Is specialized from,,Activity
+PE06_CC22_CC02,ACC,3,__,Activity,,,
 PE06_CC22_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 PE06_CC22_CC02-02,BCC,4,0..1,Activity,Date,Date,
 PE06_CC22_CC02-03,BCC,4,0..1,Activity,Time,Time,
-PE06-35,ASBIE,2,0..*,Inventory Master,has a,,Business Segment
-PE06_BS04-00,ABIE,2,__,Business Segment,,,
+PE06-35,ASBIE,2,0..*,Inventory Master,contains,,Business Segment
+PE06_BS04,ABIE,2,__,Business Segment,,,
 PE06_BS04-01,PKBIE,3,1..1,Business Segment,Business Segment Code,Identifier,
 PE06_BS04-02,BBIE,3,0..1,Business Segment,Business Segment Name,Name,
 PE06_BS04-03,BBIE,3,0..1,Business Segment,Segment Reference Level,Reference Level,
 PE06_BS04-04,BBIE,3,0..1,Business Segment,Organization Type Name,Name,
-PE07-00,ABIE,1,__,Inventory Removal,,,
+PE07,ABIE,1,__,Inventory Removal,,,
 PE07-01,PKBIE,2,1..1,Inventory Removal,Removal ID,Identifier,
 PE07-02,RFBIE,2,0..1,Inventory Removal,"Property, Plant and Equipment ID",,Inventory Master
 PE07-03,RFBIE,2,0..1,Inventory Removal,Fiscal Year,,Accounting Period
@@ -1596,36 +1596,36 @@ PE07-18,BBIE,2,0..1,Inventory Removal,Realized Gain Loss Amount,Amount,
 PE07-19,RFBIE,2,0..1,Inventory Removal,Functional Currency Code,,Currency
 PE07-20,RFBIE,2,0..1,Inventory Removal,Unrealized Gain Loss Account Number,,Chart Of Accounts
 PE07-21,RFBIE,2,0..1,Inventory Removal,Realized Gain Loss Account Number,,Chart Of Accounts
-PE07-22,ASBIE,2,0..1,Inventory Removal,was,,Approved
-PE07_CC06-00,SPCC,2,__,Approved,is a,,Activity
-PE07_CC06_CC02-00,ACC,3,__,Activity,,,
+PE07-22,ASBIE,2,0..1,Inventory Removal,A derived attribute,,Approved
+PE07_CC06,SPCC,2,__,Approved,Is specialized from,,Activity
+PE07_CC06_CC02,ACC,3,__,Activity,,,
 PE07_CC06_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 PE07_CC06_CC02-02,BCC,4,0..1,Activity,Date,Date,
 PE07_CC06_CC02-03,BCC,4,0..1,Activity,Time,Time,
-PE07-24,ASBIE,2,0..1,Inventory Removal,was,,Created
-PE07_CC15-00,SPCC,2,__,Created,is a,,Activity
-PE07_CC15_CC02-00,ACC,3,__,Activity,,,
+PE07-24,ASBIE,2,0..1,Inventory Removal,A derived attribute,,Created
+PE07_CC15,SPCC,2,__,Created,Is specialized from,,Activity
+PE07_CC15_CC02,ACC,3,__,Activity,,,
 PE07_CC15_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 PE07_CC15_CC02-02,BCC,4,0..1,Activity,Date,Date,
 PE07_CC15_CC02-03,BCC,4,0..1,Activity,Time,Time,
-PE07-25,ASBIE,2,0..1,Inventory Removal,was,,Last Modified
-PE07_CC22-00,SPCC,2,__,Last Modified,is a,,Activity
-PE07_CC22_CC02-00,ACC,3,__,Activity,,,
+PE07-25,ASBIE,2,0..1,Inventory Removal,A derived attribute,,Last Modified
+PE07_CC22,SPCC,2,__,Last Modified,Is specialized from,,Activity
+PE07_CC22_CC02,ACC,3,__,Activity,,,
 PE07_CC22_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 PE07_CC22_CC02-02,BCC,4,0..1,Activity,Date,Date,
 PE07_CC22_CC02-03,BCC,4,0..1,Activity,Time,Time,
-PE07-23,ASBIE,2,0..*,Inventory Removal,has a,,Business Segment
-PE07_BS04-00,ABIE,2,__,Business Segment,,,
+PE07-23,ASBIE,2,0..*,Inventory Removal,contains,,Business Segment
+PE07_BS04,ABIE,2,__,Business Segment,,,
 PE07_BS04-01,PKBIE,3,1..1,Business Segment,Business Segment Code,Identifier,
 PE07_BS04-02,BBIE,3,0..1,Business Segment,Business Segment Name,Name,
 PE07_BS04-03,BBIE,3,0..1,Business Segment,Segment Reference Level,Reference Level,
 PE07_BS04-04,BBIE,3,0..1,Business Segment,Organization Type Name,Name,
-PE08-00,ABIE,1,__,Inventory Type,,,
+PE08,ABIE,1,__,Inventory Type,,,
 PE08-01,PKBIE,2,1..1,Inventory Type,Type Code,Identifier,
 PE08-02,BBIE,2,0..1,Inventory Type,Type Name,Text,
 PE08-03,RFBIE,2,0..1,Inventory Type,Parent Type ID,,Inventory Type
-PR01-00,SPBIE,1,__,Purchase Contract,is a,,Contract
-PR01_CC13-00,ACC,2,__,Contract,,,
+PR01,SPBIE,1,__,Purchase Contract,A derived attribute,,Contract
+PR01_CC13,ACC,2,__,Contract,,,
 PR01_CC13-01,PKCC,3,1..1,Contract,Contract ID,Identifier,
 PR01_CC13-02,BCC,3,0..1,Contract,Contract Number,Text,
 PR01_CC13-03,BCC,3,0..1,Contract,Contract Type Name,Text,
@@ -1642,8 +1642,8 @@ PR01_CC13-13,RFCC,3,0..1,Contract,Payment Term Code,,Payment Term
 PR01_CC13-14,RFCC,3,0..1,Contract,Contract Transaction Currency Code,,Currency
 PR01_CC13-15,BCC,3,0..1,Contract,Status,Status_  Code,
 PR01_CC13-16,BCC,3,0..1,Contract,Remark,Text,
-PR01_CC13-17,ASCC,3,1..*,Contract,has a,,Contract Details
-PR01_CC13_CC14-00,ACC,3,__,Contract Details,,,
+PR01_CC13-17,ASCC,3,1..*,Contract,contains,,Contract Details
+PR01_CC13_CC14,ACC,3,__,Contract Details,,,
 PR01_CC13_CC14-01,RFCC,4,0..1,Contract Details,Contract ID,,Contract
 PR01_CC13_CC14-02,PKCC,4,1..1,Contract Details,Contract Line ID,Identifier,
 PR01_CC13_CC14-03,BCC,4,0..1,Contract Details,Contract Line Number,Text,
@@ -1659,33 +1659,33 @@ PR01_CC13_CC14-12,BCC,4,0..1,Contract Details,Tax Exclude Amount,Amount,
 PR01_CC13_CC14-13,BCC,4,0..1,Contract Details,Tax Include Amount,Amount,
 PR01_CC13_CC14-14,BCC,4,0..1,Contract Details,Due Date,Date,
 PR01_CC13_CC14-15,BCC,4,0..1,Contract Details,Status,Status_  Code,
-PR01_CC13_CC14-16,ASCC,4,1..*,Contract Details,has a,,Tax
-PR01_CC13_CC14_CC30-00,ACC,4,__,Tax,,,
+PR01_CC13_CC14-16,ASCC,4,1..*,Contract Details,contains,,Tax
+PR01_CC13_CC14_CC30,ACC,4,__,Tax,,,
 PR01_CC13_CC14_CC30-01,RFCC,5,0..1,Tax,Tax Type Code,,Tax Type
 PR01_CC13_CC14_CC30-02,BCC,5,0..1,Tax,Tax Local Amount,Amount,
 PR01_CC13_CC14_CC30-03,BCC,5,0..1,Tax,Tax Transaction Amount,Amount,
 PR01_CC13_CC14_CC30-04,RFCC,5,0..1,Tax,GL Tax Debit Account Number,,Chart Of Accounts
 PR01_CC13_CC14_CC30-05,RFCC,5,0..1,Tax,GL Tax Credit Account Number,,Chart Of Accounts
-PR01-01,ASBIE,2,0..1,Purchase Contract,was,,Approved
-PR01_CC06-00,SPCC,2,__,Approved,is a,,Activity
-PR01_CC06_CC02-00,ACC,3,__,Activity,,,
+PR01-01,ASBIE,2,0..1,Purchase Contract,A derived attribute,,Approved
+PR01_CC06,SPCC,2,__,Approved,Is specialized from,,Activity
+PR01_CC06_CC02,ACC,3,__,Activity,,,
 PR01_CC06_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 PR01_CC06_CC02-02,BCC,4,0..1,Activity,Date,Date,
 PR01_CC06_CC02-03,BCC,4,0..1,Activity,Time,Time,
-PR01-03,ASBIE,2,0..1,Purchase Contract,was,,Created
-PR01_CC15-00,SPCC,2,__,Created,is a,,Activity
-PR01_CC15_CC02-00,ACC,3,__,Activity,,,
+PR01-03,ASBIE,2,0..1,Purchase Contract,A derived attribute,,Created
+PR01_CC15,SPCC,2,__,Created,Is specialized from,,Activity
+PR01_CC15_CC02,ACC,3,__,Activity,,,
 PR01_CC15_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 PR01_CC15_CC02-02,BCC,4,0..1,Activity,Date,Date,
 PR01_CC15_CC02-03,BCC,4,0..1,Activity,Time,Time,
-PR01-02,ASBIE,2,0..*,Purchase Contract,has a,,Business Segment
-PR01_BS04-00,ABIE,2,__,Business Segment,,,
+PR01-02,ASBIE,2,0..*,Purchase Contract,contains,,Business Segment
+PR01_BS04,ABIE,2,__,Business Segment,,,
 PR01_BS04-01,PKBIE,3,1..1,Business Segment,Business Segment Code,Identifier,
 PR01_BS04-02,BBIE,3,0..1,Business Segment,Business Segment Name,Name,
 PR01_BS04-03,BBIE,3,0..1,Business Segment,Segment Reference Level,Reference Level,
 PR01_BS04-04,BBIE,3,0..1,Business Segment,Organization Type Name,Name,
-PR02-00,SPBIE,1,__,Purchase Contract Details,is a,,Contract Details
-PR02_CC14-00,ACC,2,__,Contract Details,,,
+PR02,SPBIE,1,__,Purchase Contract Details,A derived attribute,,Contract Details
+PR02_CC14,ACC,2,__,Contract Details,,,
 PR02_CC14-01,RFCC,3,0..1,Contract Details,Contract ID,,Contract
 PR02_CC14-02,PKCC,3,1..1,Contract Details,Contract Line ID,Identifier,
 PR02_CC14-03,BCC,3,0..1,Contract Details,Contract Line Number,Text,
@@ -1701,20 +1701,20 @@ PR02_CC14-12,BCC,3,0..1,Contract Details,Tax Exclude Amount,Amount,
 PR02_CC14-13,BCC,3,0..1,Contract Details,Tax Include Amount,Amount,
 PR02_CC14-14,BCC,3,0..1,Contract Details,Due Date,Date,
 PR02_CC14-15,BCC,3,0..1,Contract Details,Status,Status_  Code,
-PR02_CC14-16,ASCC,3,1..*,Contract Details,has a,,Tax
-PR02_CC14_CC30-00,ACC,3,__,Tax,,,
+PR02_CC14-16,ASCC,3,1..*,Contract Details,contains,,Tax
+PR02_CC14_CC30,ACC,3,__,Tax,,,
 PR02_CC14_CC30-01,RFCC,4,0..1,Tax,Tax Type Code,,Tax Type
 PR02_CC14_CC30-02,BCC,4,0..1,Tax,Tax Local Amount,Amount,
 PR02_CC14_CC30-03,BCC,4,0..1,Tax,Tax Transaction Amount,Amount,
 PR02_CC14_CC30-04,RFCC,4,0..1,Tax,GL Tax Debit Account Number,,Chart Of Accounts
 PR02_CC14_CC30-05,RFCC,4,0..1,Tax,GL Tax Credit Account Number,,Chart Of Accounts
-PR02-01,ASBIE,2,0..*,Purchase Contract Details,has a,,Business Segment
-PR02_BS04-00,ABIE,2,__,Business Segment,,,
+PR02-01,ASBIE,2,0..*,Purchase Contract Details,contains,,Business Segment
+PR02_BS04,ABIE,2,__,Business Segment,,,
 PR02_BS04-01,PKBIE,3,1..1,Business Segment,Business Segment Code,Identifier,
 PR02_BS04-02,BBIE,3,0..1,Business Segment,Business Segment Name,Name,
 PR02_BS04-03,BBIE,3,0..1,Business Segment,Segment Reference Level,Reference Level,
 PR02_BS04-04,BBIE,3,0..1,Business Segment,Organization Type Name,Name,
-PR03-00,ABIE,1,__,Purchase Invoice Details Characteristic,,,
+PR03,ABIE,1,__,Purchase Invoice Details Characteristic,,,
 PR03-01,PKBIE RFBIE,2,1..1,Purchase Invoice Details Characteristic,Invoice ID,Identifier,
 PR03-02,PKBIE RFBIE,2,1..1,Purchase Invoice Details Characteristic,Invoice Line ID,Identifier,
 PR03-03,PKBIE,2,1..1,Purchase Invoice Details Characteristic,Characteristic Type,Text,
@@ -1722,8 +1722,8 @@ PR03-04,PKBIE,2,1..1,Purchase Invoice Details Characteristic,Characteristic Sequ
 PR03-05,PKBIE RFBIE,2,1..1,Purchase Invoice Details Characteristic,Characteristic Unit of Measurement Code,Measurement Unit_  Code,
 PR03-06,BBIE,2,0..1,Purchase Invoice Details Characteristic,Characteristic Value,Text,
 PR03-07,BBIE,2,0..1,Purchase Invoice Details Characteristic,System Characteristic Value,Text,
-PR04-00,SPBIE,1,__,Invoice Received,is a,,Invoice
-PR04_CC20-00,ACC,2,__,Invoice,,,
+PR04,SPBIE,1,__,Invoice Received,A derived attribute,,Invoice
+PR04_CC20,ACC,2,__,Invoice,,,
 PR04_CC20-01,PKCC,3,1..1,Invoice,Invoice ID,Identifier,
 PR04_CC20-02,BCC,3,0..1,Invoice,Invoice Number,Text,
 PR04_CC20-03,RFCC,3,0..1,Invoice,Fiscal Year,,Accounting Period
@@ -1745,15 +1745,15 @@ PR04_CC20-18,BCC,3,0..1,Invoice,Terms Due Days,Number,
 PR04_CC20-19,BCC,3,0..1,Invoice,Grouping Code,Text,
 PR04_CC20-20,BCC,3,0..1,Invoice,Status,Status_  Code,
 PR04_CC20-21,BCC,3,0..1,Invoice,Remark,Text,
-PR04_CC20-22,ASCC,3,0..*,Invoice,has a,,Tax
-PR04_CC20_CC30-00,ACC,3,__,Tax,,,
+PR04_CC20-22,ASCC,3,0..*,Invoice,contains,,Tax
+PR04_CC20_CC30,ACC,3,__,Tax,,,
 PR04_CC20_CC30-01,RFCC,4,0..1,Tax,Tax Type Code,,Tax Type
 PR04_CC20_CC30-02,BCC,4,0..1,Tax,Tax Local Amount,Amount,
 PR04_CC20_CC30-03,BCC,4,0..1,Tax,Tax Transaction Amount,Amount,
 PR04_CC20_CC30-04,RFCC,4,0..1,Tax,GL Tax Debit Account Number,,Chart Of Accounts
 PR04_CC20_CC30-05,RFCC,4,0..1,Tax,GL Tax Credit Account Number,,Chart Of Accounts
-PR04_CC20-23,ASCC,3,1..*,Invoice,has a,,Invoice Details
-PR04_CC20_CC21-00,ACC,3,__,Invoice Details,,,
+PR04_CC20-23,ASCC,3,1..*,Invoice,contains,,Invoice Details
+PR04_CC20_CC21,ACC,3,__,Invoice Details,,,
 PR04_CC20_CC21-01,RFCC,4,0..1,Invoice Details,Invoice ID,,Invoice
 PR04_CC20_CC21-02,PKCC,4,1..1,Invoice Details,Invoice Line ID,Identifier,
 PR04_CC20_CC21-03,BCC,4,0..1,Invoice Details,Invoice Line Number,Text,
@@ -1772,39 +1772,39 @@ PR04_CC20_CC21-15,BCC,4,0..1,Invoice Details,Invoice Line Transaction Amount,Amo
 PR04_CC20_CC21-16,BCC,4,0..1,Invoice Details,Grouping Code,Text,
 PR04_CC20_CC21-17,BCC,4,0..1,Invoice Details,GL Line Debit Account Number,Gl Account Number,
 PR04_CC20_CC21-18,BCC,4,0..1,Invoice Details,GL Line Credit Account Number,Gl Account Number,
-PR04_CC20_CC21-19,ASCC,4,0..*,Invoice Details,has a,,Tax
-PR04_CC20_CC21_CC30-00,ACC,4,__,Tax,,,
+PR04_CC20_CC21-19,ASCC,4,0..*,Invoice Details,contains,,Tax
+PR04_CC20_CC21_CC30,ACC,4,__,Tax,,,
 PR04_CC20_CC21_CC30-01,RFCC,5,0..1,Tax,Tax Type Code,,Tax Type
 PR04_CC20_CC21_CC30-02,BCC,5,0..1,Tax,Tax Local Amount,Amount,
 PR04_CC20_CC21_CC30-03,BCC,5,0..1,Tax,Tax Transaction Amount,Amount,
 PR04_CC20_CC21_CC30-04,RFCC,5,0..1,Tax,GL Tax Debit Account Number,,Chart Of Accounts
 PR04_CC20_CC21_CC30-05,RFCC,5,0..1,Tax,GL Tax Credit Account Number,,Chart Of Accounts
-PR04-01,ASBIE,2,0..1,Invoice Received,was,,Approved
-PR04_CC06-00,SPCC,2,__,Approved,is a,,Activity
-PR04_CC06_CC02-00,ACC,3,__,Activity,,,
+PR04-01,ASBIE,2,0..1,Invoice Received,A derived attribute,,Approved
+PR04_CC06,SPCC,2,__,Approved,Is specialized from,,Activity
+PR04_CC06_CC02,ACC,3,__,Activity,,,
 PR04_CC06_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 PR04_CC06_CC02-02,BCC,4,0..1,Activity,Date,Date,
 PR04_CC06_CC02-03,BCC,4,0..1,Activity,Time,Time,
-PR04-03,ASBIE,2,0..1,Invoice Received,was,,Created
-PR04_CC15-00,SPCC,2,__,Created,is a,,Activity
-PR04_CC15_CC02-00,ACC,3,__,Activity,,,
+PR04-03,ASBIE,2,0..1,Invoice Received,A derived attribute,,Created
+PR04_CC15,SPCC,2,__,Created,Is specialized from,,Activity
+PR04_CC15_CC02,ACC,3,__,Activity,,,
 PR04_CC15_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 PR04_CC15_CC02-02,BCC,4,0..1,Activity,Date,Date,
 PR04_CC15_CC02-03,BCC,4,0..1,Activity,Time,Time,
-PR04-04,ASBIE,2,0..1,Invoice Received,was,,Last Modified
-PR04_CC22-00,SPCC,2,__,Last Modified,is a,,Activity
-PR04_CC22_CC02-00,ACC,3,__,Activity,,,
+PR04-04,ASBIE,2,0..1,Invoice Received,A derived attribute,,Last Modified
+PR04_CC22,SPCC,2,__,Last Modified,Is specialized from,,Activity
+PR04_CC22_CC02,ACC,3,__,Activity,,,
 PR04_CC22_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 PR04_CC22_CC02-02,BCC,4,0..1,Activity,Date,Date,
 PR04_CC22_CC02-03,BCC,4,0..1,Activity,Time,Time,
-PR04-02,ASBIE,2,0..*,Invoice Received,has a,,Business Segment
-PR04_BS04-00,ABIE,2,__,Business Segment,,,
+PR04-02,ASBIE,2,0..*,Invoice Received,contains,,Business Segment
+PR04_BS04,ABIE,2,__,Business Segment,,,
 PR04_BS04-01,PKBIE,3,1..1,Business Segment,Business Segment Code,Identifier,
 PR04_BS04-02,BBIE,3,0..1,Business Segment,Business Segment Name,Name,
 PR04_BS04-03,BBIE,3,0..1,Business Segment,Segment Reference Level,Reference Level,
 PR04_BS04-04,BBIE,3,0..1,Business Segment,Organization Type Name,Name,
-PR05-00,SPBIE,1,__,Invoice Received Details,is a,,Invoice Details
-PR05_CC21-00,ACC,2,__,Invoice Details,,,
+PR05,SPBIE,1,__,Invoice Received Details,A derived attribute,,Invoice Details
+PR05_CC21,ACC,2,__,Invoice Details,,,
 PR05_CC21-01,RFCC,3,0..1,Invoice Details,Invoice ID,,Invoice
 PR05_CC21-02,PKCC,3,1..1,Invoice Details,Invoice Line ID,Identifier,
 PR05_CC21-03,BCC,3,0..1,Invoice Details,Invoice Line Number,Text,
@@ -1823,20 +1823,20 @@ PR05_CC21-15,BCC,3,0..1,Invoice Details,Invoice Line Transaction Amount,Amount,
 PR05_CC21-16,BCC,3,0..1,Invoice Details,Grouping Code,Text,
 PR05_CC21-17,BCC,3,0..1,Invoice Details,GL Line Debit Account Number,Gl Account Number,
 PR05_CC21-18,BCC,3,0..1,Invoice Details,GL Line Credit Account Number,Gl Account Number,
-PR05_CC21-19,ASCC,3,0..*,Invoice Details,has a,,Tax
-PR05_CC21_CC30-00,ACC,3,__,Tax,,,
+PR05_CC21-19,ASCC,3,0..*,Invoice Details,contains,,Tax
+PR05_CC21_CC30,ACC,3,__,Tax,,,
 PR05_CC21_CC30-01,RFCC,4,0..1,Tax,Tax Type Code,,Tax Type
 PR05_CC21_CC30-02,BCC,4,0..1,Tax,Tax Local Amount,Amount,
 PR05_CC21_CC30-03,BCC,4,0..1,Tax,Tax Transaction Amount,Amount,
 PR05_CC21_CC30-04,RFCC,4,0..1,Tax,GL Tax Debit Account Number,,Chart Of Accounts
 PR05_CC21_CC30-05,RFCC,4,0..1,Tax,GL Tax Credit Account Number,,Chart Of Accounts
-PR05-01,ASBIE,2,0..*,Invoice Received Details,has a,,Business Segment
-PR05_BS04-00,ABIE,2,__,Business Segment,,,
+PR05-01,ASBIE,2,0..*,Invoice Received Details,contains,,Business Segment
+PR05_BS04,ABIE,2,__,Business Segment,,,
 PR05_BS04-01,PKBIE,3,1..1,Business Segment,Business Segment Code,Identifier,
 PR05_BS04-02,BBIE,3,0..1,Business Segment,Business Segment Name,Name,
 PR05_BS04-03,BBIE,3,0..1,Business Segment,Segment Reference Level,Reference Level,
 PR05_BS04-04,BBIE,3,0..1,Business Segment,Organization Type Name,Name,
-PR06-00,ABIE,1,__,Materials Received,,,
+PR06,ABIE,1,__,Materials Received,,,
 PR06-01,PKBIE,2,1..1,Materials Received,Receipt ID,Identifier,
 PR06-02,BBIE,2,0..1,Materials Received,Receipt Number,Text,
 PR06-03,RFBIE,2,0..1,Materials Received,Fiscal Year,,Accounting Period
@@ -1852,32 +1852,32 @@ PR06-12,BBIE,2,0..1,Materials Received,Adjustment Indicator,Adjustment Indicator
 PR06-13,BBIE,2,0..1,Materials Received,Adjustment Description,Text,
 PR06-14,RFBIE,2,0..1,Materials Received,Supplier Account ID,,Supplier
 PR06-15,RFBIE,2,0..1,Materials Received,Purchase Order ID,,Purchase Order
-PR06-16,ASBIE,2,0..1,Materials Received,was,,Approved
-PR06_CC06-00,SPCC,2,__,Approved,is a,,Activity
-PR06_CC06_CC02-00,ACC,3,__,Activity,,,
+PR06-16,ASBIE,2,0..1,Materials Received,A derived attribute,,Approved
+PR06_CC06,SPCC,2,__,Approved,Is specialized from,,Activity
+PR06_CC06_CC02,ACC,3,__,Activity,,,
 PR06_CC06_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 PR06_CC06_CC02-02,BCC,4,0..1,Activity,Date,Date,
 PR06_CC06_CC02-03,BCC,4,0..1,Activity,Time,Time,
-PR06-18,ASBIE,2,0..1,Materials Received,was,,Created
-PR06_CC15-00,SPCC,2,__,Created,is a,,Activity
-PR06_CC15_CC02-00,ACC,3,__,Activity,,,
+PR06-18,ASBIE,2,0..1,Materials Received,A derived attribute,,Created
+PR06_CC15,SPCC,2,__,Created,Is specialized from,,Activity
+PR06_CC15_CC02,ACC,3,__,Activity,,,
 PR06_CC15_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 PR06_CC15_CC02-02,BCC,4,0..1,Activity,Date,Date,
 PR06_CC15_CC02-03,BCC,4,0..1,Activity,Time,Time,
-PR06-19,ASBIE,2,0..1,Materials Received,was,,Last Modified
-PR06_CC22-00,SPCC,2,__,Last Modified,is a,,Activity
-PR06_CC22_CC02-00,ACC,3,__,Activity,,,
+PR06-19,ASBIE,2,0..1,Materials Received,A derived attribute,,Last Modified
+PR06_CC22,SPCC,2,__,Last Modified,Is specialized from,,Activity
+PR06_CC22_CC02,ACC,3,__,Activity,,,
 PR06_CC22_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 PR06_CC22_CC02-02,BCC,4,0..1,Activity,Date,Date,
 PR06_CC22_CC02-03,BCC,4,0..1,Activity,Time,Time,
-PR06-17,ASBIE,2,0..*,Materials Received,has a,,Business Segment
-PR06_BS04-00,ABIE,2,__,Business Segment,,,
+PR06-17,ASBIE,2,0..*,Materials Received,contains,,Business Segment
+PR06_BS04,ABIE,2,__,Business Segment,,,
 PR06_BS04-01,PKBIE,3,1..1,Business Segment,Business Segment Code,Identifier,
 PR06_BS04-02,BBIE,3,0..1,Business Segment,Business Segment Name,Name,
 PR06_BS04-03,BBIE,3,0..1,Business Segment,Segment Reference Level,Reference Level,
 PR06_BS04-04,BBIE,3,0..1,Business Segment,Organization Type Name,Name,
-PR06-20,ASBIE,2,1..*,Materials Received,has a,,Materials Received Details
-PR06_PR07-00,ABIE,2,__,Materials Received Details,,,
+PR06-20,ASBIE,2,1..*,Materials Received,contains,,Materials Received Details
+PR06_PR07,ABIE,2,__,Materials Received Details,,,
 PR06_PR07-01,RFBIE,3,0..1,Materials Received Details,Receipt ID,,Materials Received
 PR06_PR07-02,PKBIE,3,1..1,Materials Received Details,Receipt Line ID,Identifier,
 PR06_PR07-03,BBIE,3,0..1,Materials Received Details,Receipt Line Number,Text,
@@ -1891,14 +1891,14 @@ PR06_PR07-10,BBIE,3,0..1,Materials Received Details,Purchase Order Line Quantity
 PR06_PR07-11,RFBIE,3,0..1,Materials Received Details,Order Line Unit of Measurement Code,,Measurement Unit
 PR06_PR07-12,BBIE,3,0..1,Materials Received Details,Order Line Unit Price,Price,
 PR06_PR07-13,BBIE,3,0..1,Materials Received Details,Order Line Transaction Amount,Amount,
-PR06_PR07-14,ASBIE,3,0..*,Materials Received Details,has a,,Business Segment
-PR06_PR07_BS04-00,ABIE,3,__,Business Segment,,,
+PR06_PR07-14,ASBIE,3,0..*,Materials Received Details,contains,,Business Segment
+PR06_PR07_BS04,ABIE,3,__,Business Segment,,,
 PR06_PR07_BS04-01,PKBIE,4,1..1,Business Segment,Business Segment Code,Identifier,
 PR06_PR07_BS04-02,BBIE,4,0..1,Business Segment,Business Segment Name,Name,
 PR06_PR07_BS04-03,BBIE,4,0..1,Business Segment,Segment Reference Level,Reference Level,
 PR06_PR07_BS04-04,BBIE,4,0..1,Business Segment,Organization Type Name,Name,
-PR08-00,SPBIE,1,__,Purchase Order,is a,,Order
-PR08_CC25-00,ACC,2,__,Order,,,
+PR08,SPBIE,1,__,Purchase Order,A derived attribute,,Order
+PR08_CC25,ACC,2,__,Order,,,
 PR08_CC25-01,PKCC,3,1..1,Order,Order ID,Identifier,
 PR08_CC25-02,BCC,3,0..1,Order,Order Number,Identifier,
 PR08_CC25-03,RFCC,3,0..1,Order,Fiscal Year,,Accounting Period
@@ -1915,8 +1915,8 @@ PR08_CC25-13,RFCC,3,0..1,Order,Payment Term Code,,Payment Term
 PR08_CC25-14,BCC,3,0..1,Order,Order Transaction Amount,Amount,
 PR08_CC25-15,BCC,3,0..1,Order,Order Transaction Currency Code,Currency_  Code,
 PR08_CC25-16,BCC,3,0..1,Order,Status,Status_  Code,
-PR08_CC25-17,ASCC,3,1..*,Order,has a,,Order Details
-PR08_CC25_CC26-00,ACC,3,__,Order Details,,,
+PR08_CC25-17,ASCC,3,1..*,Order,contains,,Order Details
+PR08_CC25_CC26,ACC,3,__,Order Details,,,
 PR08_CC25_CC26-01,RFCC,4,0..1,Order Details,Order ID,,Order
 PR08_CC25_CC26-02,PKCC,4,1..1,Order Details,Order Line ID,Identifier,
 PR08_CC25_CC26-03,BCC,4,0..1,Order Details,Order Line Number,Text,
@@ -1941,39 +1941,39 @@ PR08_CC25_CC26-21,BCC,4,0..1,Order Details,Tax Include Amount,Amount,
 PR08_CC25_CC26-22,RFCC,4,0..1,Order Details,Product ID,,Inventory Product
 PR08_CC25_CC26-23,BCC,4,0..1,Order Details,Order Line Transaction Amount,Amount,
 PR08_CC25_CC26-24,BCC,4,0..1,Order Details,Status,Status_  Code,
-PR08_CC25_CC26-25,ASCC,4,0..*,Order Details,has a,,Tax
-PR08_CC25_CC26_CC30-00,ACC,4,__,Tax,,,
+PR08_CC25_CC26-25,ASCC,4,0..*,Order Details,contains,,Tax
+PR08_CC25_CC26_CC30,ACC,4,__,Tax,,,
 PR08_CC25_CC26_CC30-01,RFCC,5,0..1,Tax,Tax Type Code,,Tax Type
 PR08_CC25_CC26_CC30-02,BCC,5,0..1,Tax,Tax Local Amount,Amount,
 PR08_CC25_CC26_CC30-03,BCC,5,0..1,Tax,Tax Transaction Amount,Amount,
 PR08_CC25_CC26_CC30-04,RFCC,5,0..1,Tax,GL Tax Debit Account Number,,Chart Of Accounts
 PR08_CC25_CC26_CC30-05,RFCC,5,0..1,Tax,GL Tax Credit Account Number,,Chart Of Accounts
-PR08-01,ASBIE,2,0..1,Purchase Order,was,,Approved
-PR08_CC06-00,SPCC,2,__,Approved,is a,,Activity
-PR08_CC06_CC02-00,ACC,3,__,Activity,,,
+PR08-01,ASBIE,2,0..1,Purchase Order,A derived attribute,,Approved
+PR08_CC06,SPCC,2,__,Approved,Is specialized from,,Activity
+PR08_CC06_CC02,ACC,3,__,Activity,,,
 PR08_CC06_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 PR08_CC06_CC02-02,BCC,4,0..1,Activity,Date,Date,
 PR08_CC06_CC02-03,BCC,4,0..1,Activity,Time,Time,
-PR08-03,ASBIE,2,0..1,Purchase Order,was,,Created
-PR08_CC15-00,SPCC,2,__,Created,is a,,Activity
-PR08_CC15_CC02-00,ACC,3,__,Activity,,,
+PR08-03,ASBIE,2,0..1,Purchase Order,A derived attribute,,Created
+PR08_CC15,SPCC,2,__,Created,Is specialized from,,Activity
+PR08_CC15_CC02,ACC,3,__,Activity,,,
 PR08_CC15_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 PR08_CC15_CC02-02,BCC,4,0..1,Activity,Date,Date,
 PR08_CC15_CC02-03,BCC,4,0..1,Activity,Time,Time,
-PR08-04,ASBIE,2,0..1,Purchase Order,was,,Last Modified
-PR08_CC22-00,SPCC,2,__,Last Modified,is a,,Activity
-PR08_CC22_CC02-00,ACC,3,__,Activity,,,
+PR08-04,ASBIE,2,0..1,Purchase Order,A derived attribute,,Last Modified
+PR08_CC22,SPCC,2,__,Last Modified,Is specialized from,,Activity
+PR08_CC22_CC02,ACC,3,__,Activity,,,
 PR08_CC22_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 PR08_CC22_CC02-02,BCC,4,0..1,Activity,Date,Date,
 PR08_CC22_CC02-03,BCC,4,0..1,Activity,Time,Time,
-PR08-02,ASBIE,2,0..*,Purchase Order,has a,,Business Segment
-PR08_BS04-00,ABIE,2,__,Business Segment,,,
+PR08-02,ASBIE,2,0..*,Purchase Order,contains,,Business Segment
+PR08_BS04,ABIE,2,__,Business Segment,,,
 PR08_BS04-01,PKBIE,3,1..1,Business Segment,Business Segment Code,Identifier,
 PR08_BS04-02,BBIE,3,0..1,Business Segment,Business Segment Name,Name,
 PR08_BS04-03,BBIE,3,0..1,Business Segment,Segment Reference Level,Reference Level,
 PR08_BS04-04,BBIE,3,0..1,Business Segment,Organization Type Name,Name,
-PR09-00,SPBIE,1,__,Purchase Order Details,is a,,Order Details
-PR09_CC26-00,ACC,2,__,Order Details,,,
+PR09,SPBIE,1,__,Purchase Order Details,A derived attribute,,Order Details
+PR09_CC26,ACC,2,__,Order Details,,,
 PR09_CC26-01,RFCC,3,0..1,Order Details,Order ID,,Order
 PR09_CC26-02,PKCC,3,1..1,Order Details,Order Line ID,Identifier,
 PR09_CC26-03,BCC,3,0..1,Order Details,Order Line Number,Text,
@@ -1998,39 +1998,39 @@ PR09_CC26-21,BCC,3,0..1,Order Details,Tax Include Amount,Amount,
 PR09_CC26-22,RFCC,3,0..1,Order Details,Product ID,,Inventory Product
 PR09_CC26-23,BCC,3,0..1,Order Details,Order Line Transaction Amount,Amount,
 PR09_CC26-24,BCC,3,0..1,Order Details,Status,Status_  Code,
-PR09_CC26-25,ASCC,3,0..*,Order Details,has a,,Tax
-PR09_CC26_CC30-00,ACC,3,__,Tax,,,
+PR09_CC26-25,ASCC,3,0..*,Order Details,contains,,Tax
+PR09_CC26_CC30,ACC,3,__,Tax,,,
 PR09_CC26_CC30-01,RFCC,4,0..1,Tax,Tax Type Code,,Tax Type
 PR09_CC26_CC30-02,BCC,4,0..1,Tax,Tax Local Amount,Amount,
 PR09_CC26_CC30-03,BCC,4,0..1,Tax,Tax Transaction Amount,Amount,
 PR09_CC26_CC30-04,RFCC,4,0..1,Tax,GL Tax Debit Account Number,,Chart Of Accounts
 PR09_CC26_CC30-05,RFCC,4,0..1,Tax,GL Tax Credit Account Number,,Chart Of Accounts
-PR09-01,ASBIE,2,0..*,Purchase Order Details,has a,,Business Segment
-PR09_BS04-00,ABIE,2,__,Business Segment,,,
+PR09-01,ASBIE,2,0..*,Purchase Order Details,contains,,Business Segment
+PR09_BS04,ABIE,2,__,Business Segment,,,
 PR09_BS04-01,PKBIE,3,1..1,Business Segment,Business Segment Code,Identifier,
 PR09_BS04-02,BBIE,3,0..1,Business Segment,Business Segment Name,Name,
 PR09_BS04-03,BBIE,3,0..1,Business Segment,Segment Reference Level,Reference Level,
 PR09_BS04-04,BBIE,3,0..1,Business Segment,Organization Type Name,Name,
-PR10-00,ABIE,1,__,Purchase Requisition,,,
+PR10,ABIE,1,__,Purchase Requisition,,,
 PR10-01,PKBIE,2,1..1,Purchase Requisition,Requisition ID,Identifier,
 PR10-02,BBIE,2,0..1,Purchase Requisition,Requisition Number,Text,
 PR10-03,BBIE,2,0..1,Purchase Requisition,Requisition Date,Date,
 PR10-04,BBIE,2,0..1,Purchase Requisition,Status,Status_  Code,
 PR10-05,BBIE,2,0..1,Purchase Requisition,Remark,Text,
-PR10-07,ASBIE,2,0..1,Purchase Requisition,was,,Created
-PR10_CC15-00,SPCC,2,__,Created,is a,,Activity
-PR10_CC15_CC02-00,ACC,3,__,Activity,,,
+PR10-07,ASBIE,2,0..1,Purchase Requisition,A derived attribute,,Created
+PR10_CC15,SPCC,2,__,Created,Is specialized from,,Activity
+PR10_CC15_CC02,ACC,3,__,Activity,,,
 PR10_CC15_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 PR10_CC15_CC02-02,BCC,4,0..1,Activity,Date,Date,
 PR10_CC15_CC02-03,BCC,4,0..1,Activity,Time,Time,
-PR10-06,ASBIE,2,0..*,Purchase Requisition,has a,,Business Segment
-PR10_BS04-00,ABIE,2,__,Business Segment,,,
+PR10-06,ASBIE,2,0..*,Purchase Requisition,contains,,Business Segment
+PR10_BS04,ABIE,2,__,Business Segment,,,
 PR10_BS04-01,PKBIE,3,1..1,Business Segment,Business Segment Code,Identifier,
 PR10_BS04-02,BBIE,3,0..1,Business Segment,Business Segment Name,Name,
 PR10_BS04-03,BBIE,3,0..1,Business Segment,Segment Reference Level,Reference Level,
 PR10_BS04-04,BBIE,3,0..1,Business Segment,Organization Type Name,Name,
-PR10-08,ASBIE,2,1..*,Purchase Requisition,has a,,Purchase Requisition Details
-PR10_PR11-00,ABIE,2,__,Purchase Requisition Details,,,
+PR10-08,ASBIE,2,1..*,Purchase Requisition,contains,,Purchase Requisition Details
+PR10_PR11,ABIE,2,__,Purchase Requisition Details,,,
 PR10_PR11-01,RFBIE,3,0..1,Purchase Requisition Details,Requisition ID,,Purchase Requisition
 PR10_PR11-02,PKBIE,3,1..1,Purchase Requisition Details,Requisition Line ID,Identifier,
 PR10_PR11-03,BBIE,3,0..1,Purchase Requisition Details,Requisition Line Number,Text,
@@ -2044,24 +2044,24 @@ PR10_PR11-10,RFBIE,3,0..1,Purchase Requisition Details,Supplier Account ID,,Supp
 PR10_PR11-11,RFBIE,3,0..1,Purchase Requisition Details,Purchase Organization Code,,Business Segment
 PR10_PR11-12,RFBIE,3,0..1,Purchase Requisition Details,Requisition Organization Code,,Business Segment
 PR10_PR11-13,BBIE,3,0..1,Purchase Requisition Details,Status,Status_  Code,
-PR10_PR11-14,ASBIE,3,0..*,Purchase Requisition Details,has a,,Business Segment
-PR10_PR11_BS04-00,ABIE,3,__,Business Segment,,,
+PR10_PR11-14,ASBIE,3,0..*,Purchase Requisition Details,contains,,Business Segment
+PR10_PR11_BS04,ABIE,3,__,Business Segment,,,
 PR10_PR11_BS04-01,PKBIE,4,1..1,Business Segment,Business Segment Code,Identifier,
 PR10_PR11_BS04-02,BBIE,4,0..1,Business Segment,Business Segment Name,Name,
 PR10_PR11_BS04-03,BBIE,4,0..1,Business Segment,Segment Reference Level,Reference Level,
 PR10_PR11_BS04-04,BBIE,4,0..1,Business Segment,Organization Type Name,Name,
-PY01-00,ABIE,1,__,Payroll Item,,,
+PY01,ABIE,1,__,Payroll Item,,,
 PY01-01,PKBIE,2,1..1,Payroll Item,Payroll Item ID,Identifier,
 PY01-02,BBIE,2,0..1,Payroll Item,Payroll Item Code,Text,
 PY01-03,BBIE,2,0..1,Payroll Item,Payroll Item Name,Text,
 PY01-04,BBIE,2,0..1,Payroll Item,Payroll Category,Text,
-PY02-00,ABIE,1,__,Payroll Period,,,
+PY02,ABIE,1,__,Payroll Period,,,
 PY02-01,PKBIE,2,1..1,Payroll Period,Payroll Year,Year Identifier,
 PY02-02,PKBIE,2,1..1,Payroll Period,Payroll Period,Period Identifier,
 PY02-03,BBIE,2,0..1,Payroll Period,Payroll Period Type,Text,
 PY02-04,BBIE,2,0..1,Payroll Period,Payroll Period Beginning Date,Date,
 PY02-05,BBIE,2,0..1,Payroll Period,Payroll Period END Date,Date,
-PY03-00,ABIE,1,__,Payslip,,,
+PY03,ABIE,1,__,Payslip,,,
 PY03-01,PKBIE,2,1..1,Payslip,Payslip ID,Identifier,
 PY03-02,RFBIE,2,0..1,Payslip,Employee ID,,Employee
 PY03-03,BBIE,2,0..1,Payslip,Employee Code,Text,
@@ -2078,8 +2078,8 @@ PY03-13,BBIE,2,0..1,Payslip,Payroll Payment State,Text,
 PY03-14,BBIE,2,0..1,Payslip,Payroll Payment Date,Date,
 PY03-15,BBIE,2,0..1,Payslip,Employee Bank Account,Identifier,
 PY03-16,BBIE,2,0..1,Payslip,Bank Name,Name,
-PY03-17,ASBIE,2,1..*,Payslip,has a,,Payslip Detail
-PY03_PY04-00,ABIE,2,__,Payslip Detail,,,
+PY03-17,ASBIE,2,1..*,Payslip,contains,,Payslip Detail
+PY03_PY04,ABIE,2,__,Payslip Detail,,,
 PY03_PY04-01,RFBIE,3,0..1,Payslip Detail,Payslip ID,,Payslip
 PY03_PY04-02,PKBIE,3,1..1,Payslip Detail,Payslip Line ID,Identifier,
 PY03_PY04-03,BBIE,3,0..1,Payslip Detail,Payslip Line Number,Text,
@@ -2089,8 +2089,8 @@ PY03_PY04-06,BBIE,3,0..1,Payslip Detail,Payroll Item Name,Text,
 PY03_PY04-07,BBIE,3,0..1,Payslip Detail,Payroll Category,Text,
 PY03_PY04-08,BBIE,3,0..1,Payslip Detail,Payroll Item Value,Text,
 PY03_PY04-09,RFBIE,3,0..1,Payslip Detail,GL Account Number,,Chart Of Accounts
-SL01-00,SPBIE,1,__,Sales Contract,is a,,Contract
-SL01_CC13-00,ACC,2,__,Contract,,,
+SL01,SPBIE,1,__,Sales Contract,A derived attribute,,Contract
+SL01_CC13,ACC,2,__,Contract,,,
 SL01_CC13-01,PKCC,3,1..1,Contract,Contract ID,Identifier,
 SL01_CC13-02,BCC,3,0..1,Contract,Contract Number,Text,
 SL01_CC13-03,BCC,3,0..1,Contract,Contract Type Name,Text,
@@ -2107,8 +2107,8 @@ SL01_CC13-13,RFCC,3,0..1,Contract,Payment Term Code,,Payment Term
 SL01_CC13-14,RFCC,3,0..1,Contract,Contract Transaction Currency Code,,Currency
 SL01_CC13-15,BCC,3,0..1,Contract,Status,Status_  Code,
 SL01_CC13-16,BCC,3,0..1,Contract,Remark,Text,
-SL01_CC13-17,ASCC,3,1..*,Contract,has a,,Contract Details
-SL01_CC13_CC14-00,ACC,3,__,Contract Details,,,
+SL01_CC13-17,ASCC,3,1..*,Contract,contains,,Contract Details
+SL01_CC13_CC14,ACC,3,__,Contract Details,,,
 SL01_CC13_CC14-01,RFCC,4,0..1,Contract Details,Contract ID,,Contract
 SL01_CC13_CC14-02,PKCC,4,1..1,Contract Details,Contract Line ID,Identifier,
 SL01_CC13_CC14-03,BCC,4,0..1,Contract Details,Contract Line Number,Text,
@@ -2124,33 +2124,33 @@ SL01_CC13_CC14-12,BCC,4,0..1,Contract Details,Tax Exclude Amount,Amount,
 SL01_CC13_CC14-13,BCC,4,0..1,Contract Details,Tax Include Amount,Amount,
 SL01_CC13_CC14-14,BCC,4,0..1,Contract Details,Due Date,Date,
 SL01_CC13_CC14-15,BCC,4,0..1,Contract Details,Status,Status_  Code,
-SL01_CC13_CC14-16,ASCC,4,1..*,Contract Details,has a,,Tax
-SL01_CC13_CC14_CC30-00,ACC,4,__,Tax,,,
+SL01_CC13_CC14-16,ASCC,4,1..*,Contract Details,contains,,Tax
+SL01_CC13_CC14_CC30,ACC,4,__,Tax,,,
 SL01_CC13_CC14_CC30-01,RFCC,5,0..1,Tax,Tax Type Code,,Tax Type
 SL01_CC13_CC14_CC30-02,BCC,5,0..1,Tax,Tax Local Amount,Amount,
 SL01_CC13_CC14_CC30-03,BCC,5,0..1,Tax,Tax Transaction Amount,Amount,
 SL01_CC13_CC14_CC30-04,RFCC,5,0..1,Tax,GL Tax Debit Account Number,,Chart Of Accounts
 SL01_CC13_CC14_CC30-05,RFCC,5,0..1,Tax,GL Tax Credit Account Number,,Chart Of Accounts
-SL01-01,ASBIE,2,0..1,Sales Contract,was,,Approved
-SL01_CC06-00,SPCC,2,__,Approved,is a,,Activity
-SL01_CC06_CC02-00,ACC,3,__,Activity,,,
+SL01-01,ASBIE,2,0..1,Sales Contract,A derived attribute,,Approved
+SL01_CC06,SPCC,2,__,Approved,Is specialized from,,Activity
+SL01_CC06_CC02,ACC,3,__,Activity,,,
 SL01_CC06_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 SL01_CC06_CC02-02,BCC,4,0..1,Activity,Date,Date,
 SL01_CC06_CC02-03,BCC,4,0..1,Activity,Time,Time,
-SL01-03,ASBIE,2,0..1,Sales Contract,was,,Created
-SL01_CC15-00,SPCC,2,__,Created,is a,,Activity
-SL01_CC15_CC02-00,ACC,3,__,Activity,,,
+SL01-03,ASBIE,2,0..1,Sales Contract,A derived attribute,,Created
+SL01_CC15,SPCC,2,__,Created,Is specialized from,,Activity
+SL01_CC15_CC02,ACC,3,__,Activity,,,
 SL01_CC15_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 SL01_CC15_CC02-02,BCC,4,0..1,Activity,Date,Date,
 SL01_CC15_CC02-03,BCC,4,0..1,Activity,Time,Time,
-SL01-02,ASBIE,2,0..*,Sales Contract,has a,,Business Segment
-SL01_BS04-00,ABIE,2,__,Business Segment,,,
+SL01-02,ASBIE,2,0..*,Sales Contract,contains,,Business Segment
+SL01_BS04,ABIE,2,__,Business Segment,,,
 SL01_BS04-01,PKBIE,3,1..1,Business Segment,Business Segment Code,Identifier,
 SL01_BS04-02,BBIE,3,0..1,Business Segment,Business Segment Name,Name,
 SL01_BS04-03,BBIE,3,0..1,Business Segment,Segment Reference Level,Reference Level,
 SL01_BS04-04,BBIE,3,0..1,Business Segment,Organization Type Name,Name,
-SL02-00,SPBIE,1,__,Sales Contract Details,is a,,Contract Details
-SL02_CC14-00,ACC,2,__,Contract Details,,,
+SL02,SPBIE,1,__,Sales Contract Details,A derived attribute,,Contract Details
+SL02_CC14,ACC,2,__,Contract Details,,,
 SL02_CC14-01,RFCC,3,0..1,Contract Details,Contract ID,,Contract
 SL02_CC14-02,PKCC,3,1..1,Contract Details,Contract Line ID,Identifier,
 SL02_CC14-03,BCC,3,0..1,Contract Details,Contract Line Number,Text,
@@ -2166,20 +2166,20 @@ SL02_CC14-12,BCC,3,0..1,Contract Details,Tax Exclude Amount,Amount,
 SL02_CC14-13,BCC,3,0..1,Contract Details,Tax Include Amount,Amount,
 SL02_CC14-14,BCC,3,0..1,Contract Details,Due Date,Date,
 SL02_CC14-15,BCC,3,0..1,Contract Details,Status,Status_  Code,
-SL02_CC14-16,ASCC,3,1..*,Contract Details,has a,,Tax
-SL02_CC14_CC30-00,ACC,3,__,Tax,,,
+SL02_CC14-16,ASCC,3,1..*,Contract Details,contains,,Tax
+SL02_CC14_CC30,ACC,3,__,Tax,,,
 SL02_CC14_CC30-01,RFCC,4,0..1,Tax,Tax Type Code,,Tax Type
 SL02_CC14_CC30-02,BCC,4,0..1,Tax,Tax Local Amount,Amount,
 SL02_CC14_CC30-03,BCC,4,0..1,Tax,Tax Transaction Amount,Amount,
 SL02_CC14_CC30-04,RFCC,4,0..1,Tax,GL Tax Debit Account Number,,Chart Of Accounts
 SL02_CC14_CC30-05,RFCC,4,0..1,Tax,GL Tax Credit Account Number,,Chart Of Accounts
-SL02-01,ASBIE,2,0..*,Sales Contract Details,has a,,Business Segment
-SL02_BS04-00,ABIE,2,__,Business Segment,,,
+SL02-01,ASBIE,2,0..*,Sales Contract Details,contains,,Business Segment
+SL02_BS04,ABIE,2,__,Business Segment,,,
 SL02_BS04-01,PKBIE,3,1..1,Business Segment,Business Segment Code,Identifier,
 SL02_BS04-02,BBIE,3,0..1,Business Segment,Business Segment Name,Name,
 SL02_BS04-03,BBIE,3,0..1,Business Segment,Segment Reference Level,Reference Level,
 SL02_BS04-04,BBIE,3,0..1,Business Segment,Organization Type Name,Name,
-SL03-00,ABIE,1,__,Sales Invoice Details Characteristic,,,
+SL03,ABIE,1,__,Sales Invoice Details Characteristic,,,
 SL03-01,PKBIE RFBIE,2,1..1,Sales Invoice Details Characteristic,Invoice ID,Identifier,
 SL03-02,PKBIE RFBIE,2,1..1,Sales Invoice Details Characteristic,Invoice Line ID,Identifier,
 SL03-03,PKBIE,2,1..1,Sales Invoice Details Characteristic,Characteristic Type,Text,
@@ -2187,8 +2187,8 @@ SL03-04,PKBIE,2,1..1,Sales Invoice Details Characteristic,Characteristic Sequenc
 SL03-05,PKBIE RFBIE,2,1..1,Sales Invoice Details Characteristic,Characteristic Unit of Measurement Code,Measurement Unit_  Code,
 SL03-06,BBIE,2,0..1,Sales Invoice Details Characteristic,Characteristic Value,Text,
 SL03-07,BBIE,2,0..1,Sales Invoice Details Characteristic,System Characteristic Value,Text,
-SL04-00,SPBIE,1,__,Invoice Generated,is a,,Invoice
-SL04_CC20-00,ACC,2,__,Invoice,,,
+SL04,SPBIE,1,__,Invoice Generated,A derived attribute,,Invoice
+SL04_CC20,ACC,2,__,Invoice,,,
 SL04_CC20-01,PKCC,3,1..1,Invoice,Invoice ID,Identifier,
 SL04_CC20-02,BCC,3,0..1,Invoice,Invoice Number,Text,
 SL04_CC20-03,RFCC,3,0..1,Invoice,Fiscal Year,,Accounting Period
@@ -2210,15 +2210,15 @@ SL04_CC20-18,BCC,3,0..1,Invoice,Terms Due Days,Number,
 SL04_CC20-19,BCC,3,0..1,Invoice,Grouping Code,Text,
 SL04_CC20-20,BCC,3,0..1,Invoice,Status,Status_  Code,
 SL04_CC20-21,BCC,3,0..1,Invoice,Remark,Text,
-SL04_CC20-22,ASCC,3,0..*,Invoice,has a,,Tax
-SL04_CC20_CC30-00,ACC,3,__,Tax,,,
+SL04_CC20-22,ASCC,3,0..*,Invoice,contains,,Tax
+SL04_CC20_CC30,ACC,3,__,Tax,,,
 SL04_CC20_CC30-01,RFCC,4,0..1,Tax,Tax Type Code,,Tax Type
 SL04_CC20_CC30-02,BCC,4,0..1,Tax,Tax Local Amount,Amount,
 SL04_CC20_CC30-03,BCC,4,0..1,Tax,Tax Transaction Amount,Amount,
 SL04_CC20_CC30-04,RFCC,4,0..1,Tax,GL Tax Debit Account Number,,Chart Of Accounts
 SL04_CC20_CC30-05,RFCC,4,0..1,Tax,GL Tax Credit Account Number,,Chart Of Accounts
-SL04_CC20-23,ASCC,3,1..*,Invoice,has a,,Invoice Details
-SL04_CC20_CC21-00,ACC,3,__,Invoice Details,,,
+SL04_CC20-23,ASCC,3,1..*,Invoice,contains,,Invoice Details
+SL04_CC20_CC21,ACC,3,__,Invoice Details,,,
 SL04_CC20_CC21-01,RFCC,4,0..1,Invoice Details,Invoice ID,,Invoice
 SL04_CC20_CC21-02,PKCC,4,1..1,Invoice Details,Invoice Line ID,Identifier,
 SL04_CC20_CC21-03,BCC,4,0..1,Invoice Details,Invoice Line Number,Text,
@@ -2237,39 +2237,39 @@ SL04_CC20_CC21-15,BCC,4,0..1,Invoice Details,Invoice Line Transaction Amount,Amo
 SL04_CC20_CC21-16,BCC,4,0..1,Invoice Details,Grouping Code,Text,
 SL04_CC20_CC21-17,BCC,4,0..1,Invoice Details,GL Line Debit Account Number,Gl Account Number,
 SL04_CC20_CC21-18,BCC,4,0..1,Invoice Details,GL Line Credit Account Number,Gl Account Number,
-SL04_CC20_CC21-19,ASCC,4,0..*,Invoice Details,has a,,Tax
-SL04_CC20_CC21_CC30-00,ACC,4,__,Tax,,,
+SL04_CC20_CC21-19,ASCC,4,0..*,Invoice Details,contains,,Tax
+SL04_CC20_CC21_CC30,ACC,4,__,Tax,,,
 SL04_CC20_CC21_CC30-01,RFCC,5,0..1,Tax,Tax Type Code,,Tax Type
 SL04_CC20_CC21_CC30-02,BCC,5,0..1,Tax,Tax Local Amount,Amount,
 SL04_CC20_CC21_CC30-03,BCC,5,0..1,Tax,Tax Transaction Amount,Amount,
 SL04_CC20_CC21_CC30-04,RFCC,5,0..1,Tax,GL Tax Debit Account Number,,Chart Of Accounts
 SL04_CC20_CC21_CC30-05,RFCC,5,0..1,Tax,GL Tax Credit Account Number,,Chart Of Accounts
-SL04-01,ASBIE,2,0..1,Invoice Generated,was,,Approved
-SL04_CC06-00,SPCC,2,__,Approved,is a,,Activity
-SL04_CC06_CC02-00,ACC,3,__,Activity,,,
+SL04-01,ASBIE,2,0..1,Invoice Generated,A derived attribute,,Approved
+SL04_CC06,SPCC,2,__,Approved,Is specialized from,,Activity
+SL04_CC06_CC02,ACC,3,__,Activity,,,
 SL04_CC06_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 SL04_CC06_CC02-02,BCC,4,0..1,Activity,Date,Date,
 SL04_CC06_CC02-03,BCC,4,0..1,Activity,Time,Time,
-SL04-03,ASBIE,2,0..1,Invoice Generated,was,,Created
-SL04_CC15-00,SPCC,2,__,Created,is a,,Activity
-SL04_CC15_CC02-00,ACC,3,__,Activity,,,
+SL04-03,ASBIE,2,0..1,Invoice Generated,A derived attribute,,Created
+SL04_CC15,SPCC,2,__,Created,Is specialized from,,Activity
+SL04_CC15_CC02,ACC,3,__,Activity,,,
 SL04_CC15_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 SL04_CC15_CC02-02,BCC,4,0..1,Activity,Date,Date,
 SL04_CC15_CC02-03,BCC,4,0..1,Activity,Time,Time,
-SL04-04,ASBIE,2,0..1,Invoice Generated,was,,Last Modified
-SL04_CC22-00,SPCC,2,__,Last Modified,is a,,Activity
-SL04_CC22_CC02-00,ACC,3,__,Activity,,,
+SL04-04,ASBIE,2,0..1,Invoice Generated,A derived attribute,,Last Modified
+SL04_CC22,SPCC,2,__,Last Modified,Is specialized from,,Activity
+SL04_CC22_CC02,ACC,3,__,Activity,,,
 SL04_CC22_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 SL04_CC22_CC02-02,BCC,4,0..1,Activity,Date,Date,
 SL04_CC22_CC02-03,BCC,4,0..1,Activity,Time,Time,
-SL04-02,ASBIE,2,0..*,Invoice Generated,has a,,Business Segment
-SL04_BS04-00,ABIE,2,__,Business Segment,,,
+SL04-02,ASBIE,2,0..*,Invoice Generated,contains,,Business Segment
+SL04_BS04,ABIE,2,__,Business Segment,,,
 SL04_BS04-01,PKBIE,3,1..1,Business Segment,Business Segment Code,Identifier,
 SL04_BS04-02,BBIE,3,0..1,Business Segment,Business Segment Name,Name,
 SL04_BS04-03,BBIE,3,0..1,Business Segment,Segment Reference Level,Reference Level,
 SL04_BS04-04,BBIE,3,0..1,Business Segment,Organization Type Name,Name,
-SL05-00,SPBIE,1,__,Invoice Generated Details,is a,,Invoice Details
-SL05_CC21-00,ACC,2,__,Invoice Details,,,
+SL05,SPBIE,1,__,Invoice Generated Details,A derived attribute,,Invoice Details
+SL05_CC21,ACC,2,__,Invoice Details,,,
 SL05_CC21-01,RFCC,3,0..1,Invoice Details,Invoice ID,,Invoice
 SL05_CC21-02,PKCC,3,1..1,Invoice Details,Invoice Line ID,Identifier,
 SL05_CC21-03,BCC,3,0..1,Invoice Details,Invoice Line Number,Text,
@@ -2288,21 +2288,21 @@ SL05_CC21-15,BCC,3,0..1,Invoice Details,Invoice Line Transaction Amount,Amount,
 SL05_CC21-16,BCC,3,0..1,Invoice Details,Grouping Code,Text,
 SL05_CC21-17,BCC,3,0..1,Invoice Details,GL Line Debit Account Number,Gl Account Number,
 SL05_CC21-18,BCC,3,0..1,Invoice Details,GL Line Credit Account Number,Gl Account Number,
-SL05_CC21-19,ASCC,3,0..*,Invoice Details,has a,,Tax
-SL05_CC21_CC30-00,ACC,3,__,Tax,,,
+SL05_CC21-19,ASCC,3,0..*,Invoice Details,contains,,Tax
+SL05_CC21_CC30,ACC,3,__,Tax,,,
 SL05_CC21_CC30-01,RFCC,4,0..1,Tax,Tax Type Code,,Tax Type
 SL05_CC21_CC30-02,BCC,4,0..1,Tax,Tax Local Amount,Amount,
 SL05_CC21_CC30-03,BCC,4,0..1,Tax,Tax Transaction Amount,Amount,
 SL05_CC21_CC30-04,RFCC,4,0..1,Tax,GL Tax Debit Account Number,,Chart Of Accounts
 SL05_CC21_CC30-05,RFCC,4,0..1,Tax,GL Tax Credit Account Number,,Chart Of Accounts
-SL05-01,ASBIE,2,0..*,Invoice Generated Details,has a,,Business Segment
-SL05_BS04-00,ABIE,2,__,Business Segment,,,
+SL05-01,ASBIE,2,0..*,Invoice Generated Details,contains,,Business Segment
+SL05_BS04,ABIE,2,__,Business Segment,,,
 SL05_BS04-01,PKBIE,3,1..1,Business Segment,Business Segment Code,Identifier,
 SL05_BS04-02,BBIE,3,0..1,Business Segment,Business Segment Name,Name,
 SL05_BS04-03,BBIE,3,0..1,Business Segment,Segment Reference Level,Reference Level,
 SL05_BS04-04,BBIE,3,0..1,Business Segment,Organization Type Name,Name,
-SL06-00,SPBIE,1,__,Sales Order,is a,,Order
-SL06_CC25-00,ACC,2,__,Order,,,
+SL06,SPBIE,1,__,Sales Order,A derived attribute,,Order
+SL06_CC25,ACC,2,__,Order,,,
 SL06_CC25-01,PKCC,3,1..1,Order,Order ID,Identifier,
 SL06_CC25-02,BCC,3,0..1,Order,Order Number,Identifier,
 SL06_CC25-03,RFCC,3,0..1,Order,Fiscal Year,,Accounting Period
@@ -2319,8 +2319,8 @@ SL06_CC25-13,RFCC,3,0..1,Order,Payment Term Code,,Payment Term
 SL06_CC25-14,BCC,3,0..1,Order,Order Transaction Amount,Amount,
 SL06_CC25-15,BCC,3,0..1,Order,Order Transaction Currency Code,Currency_  Code,
 SL06_CC25-16,BCC,3,0..1,Order,Status,Status_  Code,
-SL06_CC25-17,ASCC,3,1..*,Order,has a,,Order Details
-SL06_CC25_CC26-00,ACC,3,__,Order Details,,,
+SL06_CC25-17,ASCC,3,1..*,Order,contains,,Order Details
+SL06_CC25_CC26,ACC,3,__,Order Details,,,
 SL06_CC25_CC26-01,RFCC,4,0..1,Order Details,Order ID,,Order
 SL06_CC25_CC26-02,PKCC,4,1..1,Order Details,Order Line ID,Identifier,
 SL06_CC25_CC26-03,BCC,4,0..1,Order Details,Order Line Number,Text,
@@ -2345,39 +2345,39 @@ SL06_CC25_CC26-21,BCC,4,0..1,Order Details,Tax Include Amount,Amount,
 SL06_CC25_CC26-22,RFCC,4,0..1,Order Details,Product ID,,Inventory Product
 SL06_CC25_CC26-23,BCC,4,0..1,Order Details,Order Line Transaction Amount,Amount,
 SL06_CC25_CC26-24,BCC,4,0..1,Order Details,Status,Status_  Code,
-SL06_CC25_CC26-25,ASCC,4,0..*,Order Details,has a,,Tax
-SL06_CC25_CC26_CC30-00,ACC,4,__,Tax,,,
+SL06_CC25_CC26-25,ASCC,4,0..*,Order Details,contains,,Tax
+SL06_CC25_CC26_CC30,ACC,4,__,Tax,,,
 SL06_CC25_CC26_CC30-01,RFCC,5,0..1,Tax,Tax Type Code,,Tax Type
 SL06_CC25_CC26_CC30-02,BCC,5,0..1,Tax,Tax Local Amount,Amount,
 SL06_CC25_CC26_CC30-03,BCC,5,0..1,Tax,Tax Transaction Amount,Amount,
 SL06_CC25_CC26_CC30-04,RFCC,5,0..1,Tax,GL Tax Debit Account Number,,Chart Of Accounts
 SL06_CC25_CC26_CC30-05,RFCC,5,0..1,Tax,GL Tax Credit Account Number,,Chart Of Accounts
-SL06-01,ASBIE,2,0..1,Sales Order,was,,Approved
-SL06_CC06-00,SPCC,2,__,Approved,is a,,Activity
-SL06_CC06_CC02-00,ACC,3,__,Activity,,,
+SL06-01,ASBIE,2,0..1,Sales Order,A derived attribute,,Approved
+SL06_CC06,SPCC,2,__,Approved,Is specialized from,,Activity
+SL06_CC06_CC02,ACC,3,__,Activity,,,
 SL06_CC06_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 SL06_CC06_CC02-02,BCC,4,0..1,Activity,Date,Date,
 SL06_CC06_CC02-03,BCC,4,0..1,Activity,Time,Time,
-SL06-03,ASBIE,2,0..1,Sales Order,was,,Created
-SL06_CC15-00,SPCC,2,__,Created,is a,,Activity
-SL06_CC15_CC02-00,ACC,3,__,Activity,,,
+SL06-03,ASBIE,2,0..1,Sales Order,A derived attribute,,Created
+SL06_CC15,SPCC,2,__,Created,Is specialized from,,Activity
+SL06_CC15_CC02,ACC,3,__,Activity,,,
 SL06_CC15_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 SL06_CC15_CC02-02,BCC,4,0..1,Activity,Date,Date,
 SL06_CC15_CC02-03,BCC,4,0..1,Activity,Time,Time,
-SL06-04,ASBIE,2,0..1,Sales Order,was,,Last Modified
-SL06_CC22-00,SPCC,2,__,Last Modified,is a,,Activity
-SL06_CC22_CC02-00,ACC,3,__,Activity,,,
+SL06-04,ASBIE,2,0..1,Sales Order,A derived attribute,,Last Modified
+SL06_CC22,SPCC,2,__,Last Modified,Is specialized from,,Activity
+SL06_CC22_CC02,ACC,3,__,Activity,,,
 SL06_CC22_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 SL06_CC22_CC02-02,BCC,4,0..1,Activity,Date,Date,
 SL06_CC22_CC02-03,BCC,4,0..1,Activity,Time,Time,
-SL06-02,ASBIE,2,0..*,Sales Order,has a,,Business Segment
-SL06_BS04-00,ABIE,2,__,Business Segment,,,
+SL06-02,ASBIE,2,0..*,Sales Order,contains,,Business Segment
+SL06_BS04,ABIE,2,__,Business Segment,,,
 SL06_BS04-01,PKBIE,3,1..1,Business Segment,Business Segment Code,Identifier,
 SL06_BS04-02,BBIE,3,0..1,Business Segment,Business Segment Name,Name,
 SL06_BS04-03,BBIE,3,0..1,Business Segment,Segment Reference Level,Reference Level,
 SL06_BS04-04,BBIE,3,0..1,Business Segment,Organization Type Name,Name,
-SL07-00,SPBIE,1,__,Sales Order Details,is a,,Order Details
-SL07_CC26-00,ACC,2,__,Order Details,,,
+SL07,SPBIE,1,__,Sales Order Details,A derived attribute,,Order Details
+SL07_CC26,ACC,2,__,Order Details,,,
 SL07_CC26-01,RFCC,3,0..1,Order Details,Order ID,,Order
 SL07_CC26-02,PKCC,3,1..1,Order Details,Order Line ID,Identifier,
 SL07_CC26-03,BCC,3,0..1,Order Details,Order Line Number,Text,
@@ -2402,20 +2402,20 @@ SL07_CC26-21,BCC,3,0..1,Order Details,Tax Include Amount,Amount,
 SL07_CC26-22,RFCC,3,0..1,Order Details,Product ID,,Inventory Product
 SL07_CC26-23,BCC,3,0..1,Order Details,Order Line Transaction Amount,Amount,
 SL07_CC26-24,BCC,3,0..1,Order Details,Status,Status_  Code,
-SL07_CC26-25,ASCC,3,0..*,Order Details,has a,,Tax
-SL07_CC26_CC30-00,ACC,3,__,Tax,,,
+SL07_CC26-25,ASCC,3,0..*,Order Details,contains,,Tax
+SL07_CC26_CC30,ACC,3,__,Tax,,,
 SL07_CC26_CC30-01,RFCC,4,0..1,Tax,Tax Type Code,,Tax Type
 SL07_CC26_CC30-02,BCC,4,0..1,Tax,Tax Local Amount,Amount,
 SL07_CC26_CC30-03,BCC,4,0..1,Tax,Tax Transaction Amount,Amount,
 SL07_CC26_CC30-04,RFCC,4,0..1,Tax,GL Tax Debit Account Number,,Chart Of Accounts
 SL07_CC26_CC30-05,RFCC,4,0..1,Tax,GL Tax Credit Account Number,,Chart Of Accounts
-SL07-01,ASBIE,2,0..*,Sales Order Details,has a,,Business Segment
-SL07_BS04-00,ABIE,2,__,Business Segment,,,
+SL07-01,ASBIE,2,0..*,Sales Order Details,contains,,Business Segment
+SL07_BS04,ABIE,2,__,Business Segment,,,
 SL07_BS04-01,PKBIE,3,1..1,Business Segment,Business Segment Code,Identifier,
 SL07_BS04-02,BBIE,3,0..1,Business Segment,Business Segment Name,Name,
 SL07_BS04-03,BBIE,3,0..1,Business Segment,Segment Reference Level,Reference Level,
 SL07_BS04-04,BBIE,3,0..1,Business Segment,Organization Type Name,Name,
-SL08-00,ABIE,1,__,Shipment Made,,,
+SL08,ABIE,1,__,Shipment Made,,,
 SL08-01,PKBIE,2,1..1,Shipment Made,Shipment ID,Identifier,
 SL08-02,BBIE,2,0..1,Shipment Made,Shipment Number,Text,
 SL08-03,RFBIE,2,0..1,Shipment Made,Fiscal Year,,Accounting Period
@@ -2431,32 +2431,32 @@ SL08-12,BBIE,2,0..1,Shipment Made,Adjustment Indicator,Adjustment Indicator,
 SL08-13,BBIE,2,0..1,Shipment Made,Adjustment Description,Text,
 SL08-14,RFBIE,2,0..1,Shipment Made,Customer Account ID,,Customer
 SL08-15,RFBIE,2,0..1,Shipment Made,Sales Order ID,,Sales Order
-SL08-16,ASBIE,2,0..1,Shipment Made,was,,Approved
-SL08_CC06-00,SPCC,2,__,Approved,is a,,Activity
-SL08_CC06_CC02-00,ACC,3,__,Activity,,,
+SL08-16,ASBIE,2,0..1,Shipment Made,A derived attribute,,Approved
+SL08_CC06,SPCC,2,__,Approved,Is specialized from,,Activity
+SL08_CC06_CC02,ACC,3,__,Activity,,,
 SL08_CC06_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 SL08_CC06_CC02-02,BCC,4,0..1,Activity,Date,Date,
 SL08_CC06_CC02-03,BCC,4,0..1,Activity,Time,Time,
-SL08-18,ASBIE,2,0..1,Shipment Made,was,,Created
-SL08_CC15-00,SPCC,2,__,Created,is a,,Activity
-SL08_CC15_CC02-00,ACC,3,__,Activity,,,
+SL08-18,ASBIE,2,0..1,Shipment Made,A derived attribute,,Created
+SL08_CC15,SPCC,2,__,Created,Is specialized from,,Activity
+SL08_CC15_CC02,ACC,3,__,Activity,,,
 SL08_CC15_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 SL08_CC15_CC02-02,BCC,4,0..1,Activity,Date,Date,
 SL08_CC15_CC02-03,BCC,4,0..1,Activity,Time,Time,
-SL08-19,ASBIE,2,0..1,Shipment Made,was,,Last Modified
-SL08_CC22-00,SPCC,2,__,Last Modified,is a,,Activity
-SL08_CC22_CC02-00,ACC,3,__,Activity,,,
+SL08-19,ASBIE,2,0..1,Shipment Made,A derived attribute,,Last Modified
+SL08_CC22,SPCC,2,__,Last Modified,Is specialized from,,Activity
+SL08_CC22_CC02,ACC,3,__,Activity,,,
 SL08_CC22_CC02-01,RFCC,4,0..1,Activity,User ID,,User
 SL08_CC22_CC02-02,BCC,4,0..1,Activity,Date,Date,
 SL08_CC22_CC02-03,BCC,4,0..1,Activity,Time,Time,
-SL08-17,ASBIE,2,0..*,Shipment Made,has a,,Business Segment
-SL08_BS04-00,ABIE,2,__,Business Segment,,,
+SL08-17,ASBIE,2,0..*,Shipment Made,contains,,Business Segment
+SL08_BS04,ABIE,2,__,Business Segment,,,
 SL08_BS04-01,PKBIE,3,1..1,Business Segment,Business Segment Code,Identifier,
 SL08_BS04-02,BBIE,3,0..1,Business Segment,Business Segment Name,Name,
 SL08_BS04-03,BBIE,3,0..1,Business Segment,Segment Reference Level,Reference Level,
 SL08_BS04-04,BBIE,3,0..1,Business Segment,Organization Type Name,Name,
-SL08-20,ASBIE,2,1..*,Shipment Made,has a,,Shipment Made Details
-SL08_SL09-00,ABIE,2,__,Shipment Made Details,,,
+SL08-20,ASBIE,2,1..*,Shipment Made,contains,,Shipment Made Details
+SL08_SL09,ABIE,2,__,Shipment Made Details,,,
 SL08_SL09-01,RFBIE,3,0..1,Shipment Made Details,Shipment ID,,Shipment Made
 SL08_SL09-02,PKBIE,3,1..1,Shipment Made Details,Shipment Document Line ID,Identifier,
 SL08_SL09-03,BBIE,3,0..1,Shipment Made Details,Shipment Document Line Number,Text,
@@ -2470,9 +2470,10 @@ SL08_SL09-10,BBIE,3,0..1,Shipment Made Details,Sales Order Line Quantity,Quantit
 SL08_SL09-11,RFBIE,3,0..1,Shipment Made Details,Order Line Unit of Measurement Code,,Measurement Unit
 SL08_SL09-12,BBIE,3,0..1,Shipment Made Details,Order Line Unit Price,Price,
 SL08_SL09-13,BBIE,3,0..1,Shipment Made Details,Order Line Transaction Amount,Amount,
-SL08_SL09-14,ASBIE,3,0..*,Shipment Made Details,has a,,Business Segment
-SL08_SL09_BS04-00,ABIE,3,__,Business Segment,,,
+SL08_SL09-14,ASBIE,3,0..*,Shipment Made Details,contains,,Business Segment
+SL08_SL09_BS04,ABIE,3,__,Business Segment,,,
 SL08_SL09_BS04-01,PKBIE,4,1..1,Business Segment,Business Segment Code,Identifier,
 SL08_SL09_BS04-02,BBIE,4,0..1,Business Segment,Business Segment Name,Name,
 SL08_SL09_BS04-03,BBIE,4,0..1,Business Segment,Segment Reference Level,Reference Level,
 SL08_SL09_BS04-04,BBIE,4,0..1,Business Segment,Organization Type Name,Name,
+,END,,,,,,
