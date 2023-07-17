@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- (c) 2022 XBRL Japan  inc. -->
+<schema 
+    targetNamespace="http://www.xbrl.jp/audit-data-collection" 
+    elementFormDefault="qualified" 
+    xmlns="http://www.w3.org/2001/XMLSchema" 
+    xmlns:adc="http://www.xbrl.jp/audit-data-collection" 
+    xmlns:xlink="http://www.w3.org/1999/xlink" 
+    xmlns:link="http://www.xbrl.org/2003/linkbase" 
+    xmlns:xbrli="http://www.xbrl.org/2003/instance" 
+    xmlns:xbrldt="http://xbrl.org/2005/xbrldt"> 
+    <import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+    <import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+    <import namespace="http://www.xbrl.org/dtr/type/numeric" schemaLocation="http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd"/>
+    <import namespace="http://www.xbrl.org/dtr/type/non-numeric" schemaLocation="http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd"/>
+    <annotation>
+        <appinfo>
+            <link:linkbaseRef xlink:type="simple" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="core-lbl-en.xml"/>
+            <link:linkbaseRef xlink:type="simple" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="core-pre.xml"/>
+            <link:linkbaseRef xlink:type="simple" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="core-def.xml"/>
+            <!-- 
+                role type
+            -->
+            <link:roleType id="audit-data-collection-role" roleURI="http://www.xbrl.jp/audit-data-collection/role">
+                <link:definition>link audit-data-collection</link:definition>
+                <link:usedOn>link:definitionLink</link:usedOn>
+                <link:usedOn>link:presentationLink</link:usedOn>
+            </link:roleType>
+            <link:roleType id="link_GL03" roleURI="http://www.xbrl.jp/audit-data-collection/role/link_GL03">
+                <link:definition>gLHeader</link:definition>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType id="link_GL50" roleURI="http://www.xbrl.jp/audit-data-collection/role/link_GL50">
+                <link:definition>gLDetails</link:definition>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType id="link_GL51" roleURI="http://www.xbrl.jp/audit-data-collection/role/link_GL51">
+                <link:definition>monetaryAmounts</link:definition>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType id="link_GL52" roleURI="http://www.xbrl.jp/audit-data-collection/role/link_GL52">
+                <link:definition>activity</link:definition>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType id="link_GL53" roleURI="http://www.xbrl.jp/audit-data-collection/role/link_GL53">
+                <link:definition>activity</link:definition>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType id="link_GL54" roleURI="http://www.xbrl.jp/audit-data-collection/role/link_GL54">
+                <link:definition>activity</link:definition>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType id="link_GL55" roleURI="http://www.xbrl.jp/audit-data-collection/role/link_GL55">
+                <link:definition>accountSegment</link:definition>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType id="link_GL56" roleURI="http://www.xbrl.jp/audit-data-collection/role/link_GL56">
+                <link:definition>businessSegment</link:definition>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType id="link_GL03-GL50" roleURI="http://www.xbrl.jp/audit-data-collection/role/link_GL03-GL50">
+                <link:definition>gLHeader to gLDetails</link:definition>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType id="link_GL50-GL51" roleURI="http://www.xbrl.jp/audit-data-collection/role/link_GL50-GL51">
+                <link:definition>gLDetails to monetaryAmounts</link:definition>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType id="link_GL50-GL52" roleURI="http://www.xbrl.jp/audit-data-collection/role/link_GL50-GL52">
+                <link:definition>gLDetails to activity</link:definition>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType id="link_GL50-GL53" roleURI="http://www.xbrl.jp/audit-data-collection/role/link_GL50-GL53">
+                <link:definition>gLDetails to activity</link:definition>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType id="link_GL50-GL54" roleURI="http://www.xbrl.jp/audit-data-collection/role/link_GL50-GL54">
+                <link:definition>gLDetails to activity</link:definition>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType id="link_GL50-GL55" roleURI="http://www.xbrl.jp/audit-data-collection/role/link_GL50-GL55">
+                <link:definition>gLDetails to accountSegment</link:definition>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType id="link_GL50-GL56" roleURI="http://www.xbrl.jp/audit-data-collection/role/link_GL50-GL56">
+                <link:definition>gLDetails to businessSegment</link:definition>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <!--
+                description: roleType arcroleType
+            -->
+            <link:roleType id="description" roleURI="http://www.xbrl.jp/audit-data-collection/role/description">
+                <link:definition>description</link:definition>
+                <link:usedOn>link:label</link:usedOn>
+            </link:roleType>
+            <link:arcroleType id="concept-description" cyclesAllowed="undirected" arcroleURI="http://www.xbrl.jp/audit-data-collection/arcrole/concept-description">
+                <link:definition>concept to description</link:definition>
+                <link:usedOn>link:labelArc</link:usedOn>
+            </link:arcroleType >
+            <!--
+                primary key: roleType arcroleType
+            -->
+            <link:roleType id="primary-key" roleURI="http://www.xbrl.jp/audit-data-collection/role/primary-key">
+                <link:definition>primary key</link:definition>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:arcroleType id="concept-primary-key" cyclesAllowed="undirected" arcroleURI="http://www.xbrl.jp/audit-data-collection/arcrole/concept-primary-key">
+                <link:definition>concept primary key</link:definition>
+                <link:usedOn>link:definitionArc</link:usedOn>
+            </link:arcroleType >
+            <!--
+                reference identifier: roleType arcroleType
+            -->
+            <link:roleType id="reference-identifier" roleURI="http://www.xbrl.jp/audit-data-collection/role/reference-identifier">
+                <link:definition>reference identifier</link:definition>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:arcroleType id="concept-reference-identifier" cyclesAllowed="undirected" arcroleURI="http://www.xbrl.jp/audit-data-collection/arcrole/concept-reference-identifier">
+                <link:definition>concept reference identifier</link:definition>
+                <link:usedOn>link:definitionArc</link:usedOn>
+            </link:arcroleType >
+            <!--
+                require: roleType
+            -->
+            <link:roleType id="require" roleURI="http://www.xbrl.jp/audit-data-collection/role/require">
+                <link:definition>require</link:definition>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+        </appinfo>
+    </annotation>
+    <!-- typed dimension referenced element -->
+    <element name="_v" id="_v">
+        <simpleType>
+            <restriction base="string"/>
+        </simpleType>
+    </element>
+    <element name="_activity" id="_activity">        <simpleType>            <restriction base="string">                <pattern value="\s*(Created|Approved|LastModified|Entered|Posted)\s*"/>            </restriction>        </simpleType>    </element>    <!-- Hypercube -->
+    <element name="h_GL03" id="h_GL03" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" nillable="true" abstract="true" xbrli:periodType="instant"/>
+    <element name="h_GL50" id="h_GL50" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" nillable="true" abstract="true" xbrli:periodType="instant"/>
+    <element name="h_GL51" id="h_GL51" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" nillable="true" abstract="true" xbrli:periodType="instant"/>
+    <element name="h_GL52" id="h_GL52" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" nillable="true" abstract="true" xbrli:periodType="instant"/>
+    <element name="h_GL53" id="h_GL53" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" nillable="true" abstract="true" xbrli:periodType="instant"/>
+    <element name="h_GL54" id="h_GL54" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" nillable="true" abstract="true" xbrli:periodType="instant"/>
+    <element name="h_GL55" id="h_GL55" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" nillable="true" abstract="true" xbrli:periodType="instant"/>
+    <element name="h_GL56" id="h_GL56" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" nillable="true" abstract="true" xbrli:periodType="instant"/>
+    <element name="h_GL03-GL50" id="h_GL03-GL50" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" nillable="true" abstract="true" xbrli:periodType="instant"/>
+    <element name="h_GL50-GL51" id="h_GL50-GL51" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" nillable="true" abstract="true" xbrli:periodType="instant"/>
+    <element name="h_GL50-GL52" id="h_GL50-GL52" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" nillable="true" abstract="true" xbrli:periodType="instant"/>
+    <element name="h_GL50-GL53" id="h_GL50-GL53" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" nillable="true" abstract="true" xbrli:periodType="instant"/>
+    <element name="h_GL50-GL54" id="h_GL50-GL54" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" nillable="true" abstract="true" xbrli:periodType="instant"/>
+    <element name="h_GL50-GL55" id="h_GL50-GL55" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" nillable="true" abstract="true" xbrli:periodType="instant"/>
+    <element name="h_GL50-GL56" id="h_GL50-GL56" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType" nillable="true" abstract="true" xbrli:periodType="instant"/>
+    <!-- Dimension -->
+    <element name="d_GL03" id="d_GL03" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" abstract="true" xbrli:periodType="instant" xbrldt:typedDomainRef="#_v"/>
+    <element name="d_GL50" id="d_GL50" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" abstract="true" xbrli:periodType="instant" xbrldt:typedDomainRef="#_v"/>
+    <element name="d_GL51" id="d_GL51" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" abstract="true" xbrli:periodType="instant" xbrldt:typedDomainRef="#_v"/>
+    <element name="d_GL52" id="d_GL52" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" abstract="true" xbrli:periodType="instant" xbrldt:typedDomainRef="#_v"/>
+    <element name="d_GL53" id="d_GL53" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" abstract="true" xbrli:periodType="instant" xbrldt:typedDomainRef="#_v"/>
+    <element name="d_GL54" id="d_GL54" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" abstract="true" xbrli:periodType="instant" xbrldt:typedDomainRef="#_v"/>
+    <element name="d_GL55" id="d_GL55" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" abstract="true" xbrli:periodType="instant" xbrldt:typedDomainRef="#_v"/>
+    <element name="d_GL56" id="d_GL56" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" abstract="true" xbrli:periodType="instant" xbrldt:typedDomainRef="#_v"/>
+    <element name="d_GL03-GL50" id="d_GL03-GL50" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" abstract="true" xbrli:periodType="instant" xbrldt:typedDomainRef="#_v"/>
+    <element name="d_GL50-GL51" id="d_GL50-GL51" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" abstract="true" xbrli:periodType="instant" xbrldt:typedDomainRef="#_v"/>
+    <element name="d_GL50-GL52" id="d_GL50-GL52" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" abstract="true" xbrli:periodType="instant" xbrldt:typedDomainRef="#_v"/>
+    <element name="d_GL50-GL53" id="d_GL50-GL53" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" abstract="true" xbrli:periodType="instant" xbrldt:typedDomainRef="#_v"/>
+    <element name="d_GL50-GL54" id="d_GL50-GL54" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" abstract="true" xbrli:periodType="instant" xbrldt:typedDomainRef="#_v"/>
+    <element name="d_GL50-GL55" id="d_GL50-GL55" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" abstract="true" xbrli:periodType="instant" xbrldt:typedDomainRef="#_v"/>
+    <element name="d_GL50-GL56" id="d_GL50-GL56" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType" abstract="true" xbrli:periodType="instant" xbrldt:typedDomainRef="#_v"/>
+    <!-- item type -->
+        <complexType name="stringItemType">
+            <simpleContent>
+                <restriction base="xbrli:stringItemType"/>
+            </simpleContent>
+        </complexType>
+        <complexType name="amountItemType">
+            <simpleContent>
+                <restriction base="xbrli:monetaryItemType"/>
+            </simpleContent>
+        </complexType>
+        <complexType name="binaryObjectItemType">
+            <simpleContent>
+                <restriction base="xbrli:stringItemType"/>
+            </simpleContent>
+        </complexType>
+        <complexType name="codeItemType">
+            <simpleContent>
+                <restriction base="xbrli:tokenItemType"/>
+            </simpleContent>
+        </complexType>
+        <complexType name="dateItemType">
+            <simpleContent>
+                <restriction base="xbrli:dateItemType"/>
+            </simpleContent>
+        </complexType>
+        <complexType name="documentReferenceItemType">
+            <simpleContent>
+                <restriction base="xbrli:tokenItemType"/>
+            </simpleContent>
+        </complexType>
+        <complexType name="identifierItemType">
+            <simpleContent>
+                <restriction base="xbrli:tokenItemType"/>
+            </simpleContent>
+        </complexType>
+        <complexType name="indicatorItemType">
+            <simpleContent>
+                <restriction base="xbrli:booleanItemType"/>
+            </simpleContent>
+        </complexType>
+        <complexType name="textItemType">
+            <simpleContent>
+                <restriction base="xbrli:stringItemType"/>
+            </simpleContent>
+        </complexType>
+        <complexType name="timeItemType">
+            <simpleContent>
+                <restriction base="xbrli:timeItemType"/>
+            </simpleContent>
+        </complexType>
+        <complexType name="percentageItemType">
+            <simpleContent>
+                <restriction base="xbrli:pureItemType"/>
+            </simpleContent>
+        </complexType>
+        <complexType name="quantityItemType">
+            <simpleContent>
+                <restriction base="xbrli:intItemType"/>
+            </simpleContent>
+        </complexType>
+        <complexType name="unitPriceAmountItemType">
+            <simpleContent>
+                <restriction base="xbrli:monetaryItemType"/>
+            </simpleContent>
+        </complexType>
+    <!-- element -->
+        <element name="GL03" id="GL03" abstract="true" type="xbrli:stringItemType" nillable="true" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-01" id="GL03-01" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-06" id="GL03-06" type="adc:dateItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-09" id="GL03-09" type="adc:textItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-11" id="GL03-11" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-22" id="GL03-22" type="adc:indicatorItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL50" id="GL03-GL50" abstract="true" type="xbrli:stringItemType" nillable="true" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50" id="GL50" abstract="true" type="xbrli:stringItemType" nillable="true" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-01" id="GL50-01" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-02" id="GL50-02" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-03" id="GL50-03" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-04" id="GL50-04" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-05" id="GL50-05" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-07" id="GL50-07" type="adc:textItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-08" id="GL50-08" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-10" id="GL50-10" type="adc:textItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-12" id="GL50-12" type="adc:textItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-13" id="GL50-13" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-14" id="GL50-14" type="adc:dateItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-15" id="GL50-15" type="adc:quantityItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-16" id="GL50-16" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-17" id="GL50-17" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-18" id="GL50-18" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-19" id="GL50-19" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-20" id="GL50-20" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-21" id="GL50-21" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-23" id="GL50-23" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-24" id="GL50-24" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-25" id="GL50-25" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-GL51" id="GL50-GL51" abstract="true" type="xbrli:stringItemType" nillable="true" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL51" id="GL51" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL51-01" id="GL51-01" type="adc:amountItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL51-02" id="GL51-02" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL51-03" id="GL51-03" type="adc:amountItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL51-04" id="GL51-04" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL51-05" id="GL51-05" type="adc:amountItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL51-06" id="GL51-06" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL51-07" id="GL51-07" type="adc:amountItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL51-08" id="GL51-08" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-GL52" id="GL50-GL52" abstract="true" type="xbrli:stringItemType" nillable="true" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL52" id="GL52" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL52-01" id="GL52-01" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL52-02" id="GL52-02" type="adc:dateItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL52-03" id="GL52-03" type="adc:timeItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-GL53" id="GL50-GL53" abstract="true" type="xbrli:stringItemType" nillable="true" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL53" id="GL53" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL53-01" id="GL53-01" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL53-02" id="GL53-02" type="adc:dateItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL53-03" id="GL53-03" type="adc:timeItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-GL54" id="GL50-GL54" abstract="true" type="xbrli:stringItemType" nillable="true" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL54" id="GL54" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL54-01" id="GL54-01" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL54-02" id="GL54-02" type="adc:dateItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL54-03" id="GL54-03" type="adc:timeItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-GL55" id="GL50-GL55" abstract="true" type="xbrli:stringItemType" nillable="true" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL55" id="GL55" abstract="true" type="xbrli:stringItemType" nillable="true" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL55-01" id="GL55-01" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL55-02" id="GL55-02" type="adc:textItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL55-03" id="GL55-03" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL55-04" id="GL55-04" type="adc:textItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL55-05" id="GL55-05" type="adc:textItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL55-06" id="GL55-06" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-GL56" id="GL50-GL56" abstract="true" type="xbrli:stringItemType" nillable="true" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL56" id="GL56" abstract="true" type="xbrli:stringItemType" nillable="true" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL56-01" id="GL56-01" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL56-02" id="GL56-02" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL56-03" id="GL56-03" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL56-04" id="GL56-04" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL50-01" id="GL03-GL50-01" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL50-02" id="GL03-GL50-02" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL50-03" id="GL03-GL50-03" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL50-04" id="GL03-GL50-04" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL50-05" id="GL03-GL50-05" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL50-07" id="GL03-GL50-07" type="adc:textItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL50-08" id="GL03-GL50-08" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL50-10" id="GL03-GL50-10" type="adc:textItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL50-12" id="GL03-GL50-12" type="adc:textItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL50-13" id="GL03-GL50-13" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL50-14" id="GL03-GL50-14" type="adc:dateItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL50-15" id="GL03-GL50-15" type="adc:quantityItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL50-16" id="GL03-GL50-16" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL50-17" id="GL03-GL50-17" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL50-18" id="GL03-GL50-18" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL50-19" id="GL03-GL50-19" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL50-20" id="GL03-GL50-20" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL50-21" id="GL03-GL50-21" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL50-23" id="GL03-GL50-23" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL50-24" id="GL03-GL50-24" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL50-25" id="GL03-GL50-25" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL50-GL51" id="GL03-GL50-GL51" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL50-GL52" id="GL03-GL50-GL52" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL50-GL53" id="GL03-GL50-GL53" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL50-GL54" id="GL03-GL50-GL54" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL50-GL55" id="GL03-GL50-GL55" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL03-GL50-GL56" id="GL03-GL50-GL56" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-GL51-01" id="GL50-GL51-01" type="adc:amountItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-GL51-02" id="GL50-GL51-02" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-GL51-03" id="GL50-GL51-03" type="adc:amountItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-GL51-04" id="GL50-GL51-04" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-GL51-05" id="GL50-GL51-05" type="adc:amountItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-GL51-06" id="GL50-GL51-06" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-GL51-07" id="GL50-GL51-07" type="adc:amountItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-GL51-08" id="GL50-GL51-08" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-GL52-01" id="GL50-GL52-01" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-GL52-02" id="GL50-GL52-02" type="adc:dateItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-GL52-03" id="GL50-GL52-03" type="adc:timeItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-GL53-01" id="GL50-GL53-01" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-GL53-02" id="GL50-GL53-02" type="adc:dateItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-GL53-03" id="GL50-GL53-03" type="adc:timeItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-GL54-01" id="GL50-GL54-01" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-GL54-02" id="GL50-GL54-02" type="adc:dateItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-GL54-03" id="GL50-GL54-03" type="adc:timeItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-GL55-01" id="GL50-GL55-01" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-GL55-02" id="GL50-GL55-02" type="adc:textItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-GL55-03" id="GL50-GL55-03" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-GL55-04" id="GL50-GL55-04" type="adc:textItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-GL55-05" id="GL50-GL55-05" type="adc:textItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-GL55-06" id="GL50-GL55-06" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-GL56-01" id="GL50-GL56-01" type="adc:identifierItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-GL56-02" id="GL50-GL56-02" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-GL56-03" id="GL50-GL56-03" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+        <element name="GL50-GL56-04" id="GL50-GL56-04" type="adc:stringItemType" nillable="false" substitutionGroup="xbrli:item" xbrli:periodType="instant"/>
+</schema>
